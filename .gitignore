@@ -20,3 +20,5 @@ corpus/logic/*.tok
 corpus/logic/*.bpe
 corpus/channel/*
 !corpus/channel/README.md
+__pycache__/
+corpus/gutenberg/build/
