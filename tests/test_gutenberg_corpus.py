@@ -54,6 +54,9 @@ class CorpusTests(unittest.TestCase):
             first = (root / "braid.json").read_bytes()
             corpus.prepare(args)
             self.assertEqual(first, (root / "braid.json").read_bytes())
+            (root / "braid.json").write_text("{}")
+            with self.assertRaisesRegex(ValueError, "Prepared corpus differs"):
+                corpus.compile_corpus(args)
             raw.write_bytes(self.raw().replace(b"Alice", b"Mara"))
             with self.assertRaises(ValueError):
                 corpus.prepare(args)

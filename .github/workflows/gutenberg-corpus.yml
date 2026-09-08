@@ -1,0 +1,29 @@
+name: Gutenberg corpus
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/build_gutenberg_corpus.py'
+      - 'tests/test_gutenberg_corpus.py'
+      - 'corpus/gutenberg/**'
+      - '.github/workflows/gutenberg-corpus.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_gutenberg_corpus.py'
+      - 'tests/test_gutenberg_corpus.py'
+      - 'corpus/gutenberg/**'
+      - '.github/workflows/gutenberg-corpus.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  corpus-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -p test_gutenberg_corpus.py
