@@ -59,3 +59,24 @@ about 10.4 times at these checkpoints. The two runs have separate random
 trajectories. Calibration history and a local checkpoint receipt are included.
 Final held-out scores and the exported model will be available when training
 finishes.
+
+## Completed run
+
+The AWS run completed all 100,000 updates with exit code 0. Training and
+evaluation took 2,561.5 seconds (42.7 minutes). Throughput was about 40,012
+characters per second. The selected checkpoint is update 98,500. Its 64-window
+selection loss was 1.115566. The final evaluation uses 1,024 evenly spaced
+512-character windows per split: validation loss 1.125936 and test loss
+1.151573. These are natural-log losses per character. The wider evaluation
+uses more windows than checkpoint selection.
+
+The exported model is `models/gutenberg-5m-v1.litq8` (4,920,400 bytes).
+The downloaded best checkpoint, final checkpoint, and export match all three
+SHA-256 values produced on AWS. The native inference program generated the
+six fixed prompts in `samples.json` from this export. Text contains learned
+English phrase patterns, with frequent shifts in meaning and weak story
+coherence. This is a literary text model trained on Gutenberg prose.
+
+The local update-7,000 checkpoint scored 1.372660 validation and 1.389248
+test on the same 1,024-window evaluation, so the completed run improves both
+held-out scores. CUDA and C use separate sampling and dropout trajectories.
