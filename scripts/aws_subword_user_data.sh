@@ -43,6 +43,7 @@ python3 -m venv /opt/zero-venv
 /opt/zero-venv/bin/pip freeze > environment.txt
 aws s3 cp environment.txt "s3://$BUCKET/$PREFIX/environment.txt"
 /opt/zero-venv/bin/python -m unittest discover -s tests -p test_subword.py
+/opt/zero-venv/bin/python scripts/train_subword.py --data data --output preflight --deadline "$DEADLINE" --small-tokens 16384 --large-tokens 16384 --report 2 --selection-windows 2 --final-windows 2
 /opt/zero-venv/bin/python scripts/evaluate_character_baseline.py --data data --checkpoint character.ckpt --output output/character-baseline.json
 (
   while sleep 120; do

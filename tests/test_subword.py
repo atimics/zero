@@ -31,6 +31,15 @@ class SubwordTest(unittest.TestCase):
         torch.testing.assert_close(logits,other,atol=1e-6,rtol=1e-5)
         for p,q in zip(a.parameters(),b.parameters()):torch.testing.assert_close(p.grad,q.grad,atol=2e-6,rtol=1e-4)
 
+    def test_bfloat_attention(self):
+        model=create(dict(vocab=32,context=16,dim=16,heads=2,layers=2,ff=32))
+        with torch.autocast('cpu',dtype=torch.bfloat16):
+            logits=model(torch.arange(8)[None,:])
+            loss=logits.float().square().mean()
+        loss.backward()
+        self.assertTrue(torch.isfinite(loss))
+        self.assertTrue(all(torch.isfinite(p.grad).all() for p in model.parameters()))
+
     def test_evaluation_targets_and_bytes(self):
         class Perfect(torch.nn.Module):
             def __init__(self,context):

@@ -34,7 +34,7 @@ class Zero(nn.Module):
         b, t, _ = value.shape
         value = value.reshape(b, t, self.heads, -1).transpose(1, 2)
         even, odd = value[..., 0::2], value[..., 1::2]
-        c, s = self.rope_cos[:t], self.rope_sin[:t]
+        c, s = self.rope_cos[:t].to(even.dtype), self.rope_sin[:t].to(even.dtype)
         return torch.stack((even * c - odd * s, even * s + odd * c), dim=-1).flatten(-2)
 
     @staticmethod
