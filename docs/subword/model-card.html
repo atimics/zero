@@ -248,4 +248,10 @@ page also supports saved-example comparison when served without Python.</p>
 <pre><code class="language-sh">python scripts/sample_subword.py models/subword/5m-1024.pt experiments/subword-scaling/tokenizer.json --prompt 'The captain looked across the sea.'
 python scripts/subword_seed_grid.py
 python scripts/analyze_subword_samples.py
-</code></pre></main></html>
+</code></pre>
+<h2>Exploratory 50M checkpoint review</h2>
+<p>The <a href="../../experiments/50m-review/README.md">measured 50M review</a> reports matched-window
+losses, frozen source-name counts, exact repetition, and a repetition-1.1
+decoding control. The original scaling run has a separate budget from the
+registered 5M study. The comparison combines parameter count, architecture,
+and token budget. All sample excerpts preserve the generated text.</p></main></html>

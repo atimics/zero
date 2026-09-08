@@ -1,0 +1,1423 @@
+{
+  "method": "Generated continuation only; case-folded word n-grams, punctuation ignored. Max frequency = largest count / all n-gram positions. Repeat excess = repeated occurrences beyond first / all positions. Exact lexical measures miss paraphrases and do not distinguish useful repetition.",
+  "models": {
+    "5m-256": {
+      "mean_distinct_source_books": 0.0,
+      "passages_with_multiple_source_books": 0,
+      "rows": [
+        {
+          "prompt": "Once upon a time,",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "The",
+            "While"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 105,
+              "max_count": 8,
+              "max_ngram": "to",
+              "max_frequency": 0.0761904761904762,
+              "repeat_excess_rate": 0.4666666666666667
+            },
+            "2": {
+              "positions": 104,
+              "max_count": 3,
+              "max_ngram": "we should",
+              "max_frequency": 0.028846153846153848,
+              "repeat_excess_rate": 0.09615384615384616
+            },
+            "3": {
+              "positions": 103,
+              "max_count": 3,
+              "max_ngram": "we should be",
+              "max_frequency": 0.02912621359223301,
+              "repeat_excess_rate": 0.02912621359223301
+            },
+            "4": {
+              "positions": 102,
+              "max_count": 1,
+              "max_ngram": "and there he went",
+              "max_frequency": 0.00980392156862745,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 80,
+              "max_count": 10,
+              "max_ngram": "the",
+              "max_frequency": 0.125,
+              "repeat_excess_rate": 0.3
+            },
+            "2": {
+              "positions": 79,
+              "max_count": 1,
+              "max_ngram": "came home",
+              "max_frequency": 0.012658227848101266,
+              "repeat_excess_rate": 0.0
+            },
+            "3": {
+              "positions": 78,
+              "max_count": 1,
+              "max_ngram": "came home with",
+              "max_frequency": 0.01282051282051282,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 77,
+              "max_count": 1,
+              "max_ngram": "came home with an",
+              "max_frequency": 0.012987012987012988,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Alas",
+            "Huck"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 81,
+              "max_count": 5,
+              "max_ngram": "the",
+              "max_frequency": 0.06172839506172839,
+              "repeat_excess_rate": 0.2962962962962963
+            },
+            "2": {
+              "positions": 80,
+              "max_count": 3,
+              "max_ngram": "in the",
+              "max_frequency": 0.0375,
+              "repeat_excess_rate": 0.0375
+            },
+            "3": {
+              "positions": 79,
+              "max_count": 1,
+              "max_ngram": "alas in the",
+              "max_frequency": 0.012658227848101266,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 78,
+              "max_count": 1,
+              "max_ngram": "alas in the midst",
+              "max_frequency": 0.01282051282051282,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The warren is ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "But",
+            "Stop"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 94,
+              "max_count": 7,
+              "max_ngram": "the",
+              "max_frequency": 0.07446808510638298,
+              "repeat_excess_rate": 0.43617021276595747
+            },
+            "2": {
+              "positions": 93,
+              "max_count": 2,
+              "max_ngram": "his own",
+              "max_frequency": 0.021505376344086023,
+              "repeat_excess_rate": 0.08602150537634409
+            },
+            "3": {
+              "positions": 92,
+              "max_count": 2,
+              "max_ngram": "the same and",
+              "max_frequency": 0.021739130434782608,
+              "repeat_excess_rate": 0.010869565217391304
+            },
+            "4": {
+              "positions": 91,
+              "max_count": 1,
+              "max_ngram": "uttered in a couple",
+              "max_frequency": 0.01098901098901099,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Amer",
+            "Plower",
+            "Pyramid",
+            "Sword",
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 84,
+              "max_count": 5,
+              "max_ngram": "the",
+              "max_frequency": 0.05952380952380952,
+              "repeat_excess_rate": 0.34523809523809523
+            },
+            "2": {
+              "positions": 83,
+              "max_count": 3,
+              "max_ngram": "a man",
+              "max_frequency": 0.03614457831325301,
+              "repeat_excess_rate": 0.060240963855421686
+            },
+            "3": {
+              "positions": 82,
+              "max_count": 2,
+              "max_ngram": "a man who",
+              "max_frequency": 0.024390243902439025,
+              "repeat_excess_rate": 0.012195121951219513
+            },
+            "4": {
+              "positions": 81,
+              "max_count": 1,
+              "max_ngram": "the i have no",
+              "max_frequency": 0.012345679012345678,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Who is Mara?",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "She"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 88,
+              "max_count": 7,
+              "max_ngram": "a",
+              "max_frequency": 0.07954545454545454,
+              "repeat_excess_rate": 0.42045454545454547
+            },
+            "2": {
+              "positions": 87,
+              "max_count": 2,
+              "max_ngram": "i know",
+              "max_frequency": 0.022988505747126436,
+              "repeat_excess_rate": 0.05747126436781609
+            },
+            "3": {
+              "positions": 86,
+              "max_count": 1,
+              "max_ngram": "no not all",
+              "max_frequency": 0.011627906976744186,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 85,
+              "max_count": 1,
+              "max_ngram": "no not all i",
+              "max_frequency": 0.011764705882352941,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "5m-1024": {
+      "mean_distinct_source_books": 0.16666666666666666,
+      "passages_with_multiple_source_books": 0,
+      "rows": [
+        {
+          "prompt": "Once upon a time,",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "And",
+            "Then"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 88,
+              "max_count": 14,
+              "max_ngram": "the",
+              "max_frequency": 0.1590909090909091,
+              "repeat_excess_rate": 0.42045454545454547
+            },
+            "2": {
+              "positions": 87,
+              "max_count": 2,
+              "max_ngram": "that the",
+              "max_frequency": 0.022988505747126436,
+              "repeat_excess_rate": 0.06896551724137931
+            },
+            "3": {
+              "positions": 86,
+              "max_count": 2,
+              "max_ngram": "was gone out",
+              "max_frequency": 0.023255813953488372,
+              "repeat_excess_rate": 0.011627906976744186
+            },
+            "4": {
+              "positions": 85,
+              "max_count": 1,
+              "max_ngram": "and so soon that",
+              "max_frequency": 0.011764705882352941,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "She",
+            "The",
+            "You"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 102,
+              "max_count": 7,
+              "max_ngram": "i",
+              "max_frequency": 0.06862745098039216,
+              "repeat_excess_rate": 0.4019607843137255
+            },
+            "2": {
+              "positions": 101,
+              "max_count": 3,
+              "max_ngram": "at me",
+              "max_frequency": 0.0297029702970297,
+              "repeat_excess_rate": 0.0594059405940594
+            },
+            "3": {
+              "positions": 100,
+              "max_count": 1,
+              "max_ngram": "said in her",
+              "max_frequency": 0.01,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 99,
+              "max_count": 1,
+              "max_ngram": "said in her eyes",
+              "max_frequency": 0.010101010101010102,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 81,
+              "max_count": 11,
+              "max_ngram": "the",
+              "max_frequency": 0.13580246913580246,
+              "repeat_excess_rate": 0.4444444444444444
+            },
+            "2": {
+              "positions": 80,
+              "max_count": 4,
+              "max_ngram": "in the",
+              "max_frequency": 0.05,
+              "repeat_excess_rate": 0.125
+            },
+            "3": {
+              "positions": 79,
+              "max_count": 1,
+              "max_ngram": "he saw a",
+              "max_frequency": 0.012658227848101266,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 78,
+              "max_count": 1,
+              "max_ngram": "he saw a little",
+              "max_frequency": 0.01282051282051282,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The warren is ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "They",
+            "When"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 90,
+              "max_count": 9,
+              "max_ngram": "the",
+              "max_frequency": 0.1,
+              "repeat_excess_rate": 0.4666666666666667
+            },
+            "2": {
+              "positions": 89,
+              "max_count": 5,
+              "max_ngram": "had been",
+              "max_frequency": 0.056179775280898875,
+              "repeat_excess_rate": 0.16853932584269662
+            },
+            "3": {
+              "positions": 88,
+              "max_count": 3,
+              "max_ngram": "they had been",
+              "max_frequency": 0.03409090909090909,
+              "repeat_excess_rate": 0.045454545454545456
+            },
+            "4": {
+              "positions": 87,
+              "max_count": 1,
+              "max_ngram": "uttered but the bounds",
+              "max_frequency": 0.011494252873563218,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 9,
+              "max_count": 2,
+              "max_ngram": "to",
+              "max_frequency": 0.2222222222222222,
+              "repeat_excess_rate": 0.1111111111111111
+            },
+            "2": {
+              "positions": 8,
+              "max_count": 1,
+              "max_ngram": "to the",
+              "max_frequency": 0.125,
+              "repeat_excess_rate": 0.0
+            },
+            "3": {
+              "positions": 7,
+              "max_count": 1,
+              "max_ngram": "to the th",
+              "max_frequency": 0.14285714285714285,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 6,
+              "max_count": 1,
+              "max_ngram": "to the th a",
+              "max_frequency": 0.16666666666666666,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Who is Mara?",
+          "matched_names": {
+            "Wardle": [
+              "580"
+            ]
+          },
+          "source_books": [
+            "580"
+          ],
+          "distinct_source_books": 1,
+          "capitalized_words": [
+            "Let",
+            "She",
+            "Tartarsh",
+            "Wardle",
+            "Well",
+            "You"
+          ],
+          "coverage": 0.16666666666666666,
+          "repetition": {
+            "1": {
+              "positions": 83,
+              "max_count": 6,
+              "max_ngram": "you",
+              "max_frequency": 0.07228915662650602,
+              "repeat_excess_rate": 0.3132530120481928
+            },
+            "2": {
+              "positions": 82,
+              "max_count": 3,
+              "max_ngram": "and you",
+              "max_frequency": 0.036585365853658534,
+              "repeat_excess_rate": 0.0975609756097561
+            },
+            "3": {
+              "positions": 81,
+              "max_count": 2,
+              "max_ngram": "and you will",
+              "max_frequency": 0.024691358024691357,
+              "repeat_excess_rate": 0.037037037037037035
+            },
+            "4": {
+              "positions": 80,
+              "max_count": 2,
+              "max_ngram": "and you will not",
+              "max_frequency": 0.025,
+              "repeat_excess_rate": 0.0125
+            }
+          }
+        }
+      ]
+    },
+    "50m": {
+      "mean_distinct_source_books": 0.0,
+      "passages_with_multiple_source_books": 0,
+      "rows": [
+        {
+          "prompt": "Once upon a time,",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Camelot",
+            "There"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 94,
+              "max_count": 7,
+              "max_ngram": "i",
+              "max_frequency": 0.07446808510638298,
+              "repeat_excess_rate": 0.425531914893617
+            },
+            "2": {
+              "positions": 93,
+              "max_count": 3,
+              "max_ngram": "a little",
+              "max_frequency": 0.03225806451612903,
+              "repeat_excess_rate": 0.053763440860215055
+            },
+            "3": {
+              "positions": 92,
+              "max_count": 1,
+              "max_ngram": "and there are",
+              "max_frequency": 0.010869565217391304,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 91,
+              "max_count": 1,
+              "max_ngram": "and there are some",
+              "max_frequency": 0.01098901098901099,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Sara",
+            "She",
+            "The",
+            "Will",
+            "Yes"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 79,
+              "max_count": 6,
+              "max_ngram": "the",
+              "max_frequency": 0.0759493670886076,
+              "repeat_excess_rate": 0.4050632911392405
+            },
+            "2": {
+              "positions": 78,
+              "max_count": 4,
+              "max_ngram": "to see",
+              "max_frequency": 0.05128205128205128,
+              "repeat_excess_rate": 0.1282051282051282
+            },
+            "3": {
+              "positions": 77,
+              "max_count": 2,
+              "max_ngram": "will you please",
+              "max_frequency": 0.025974025974025976,
+              "repeat_excess_rate": 0.06493506493506493
+            },
+            "4": {
+              "positions": 76,
+              "max_count": 2,
+              "max_ngram": "will you please to",
+              "max_frequency": 0.02631578947368421,
+              "repeat_excess_rate": 0.039473684210526314
+            }
+          }
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "His",
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 87,
+              "max_count": 8,
+              "max_ngram": "the",
+              "max_frequency": 0.09195402298850575,
+              "repeat_excess_rate": 0.3218390804597701
+            },
+            "2": {
+              "positions": 86,
+              "max_count": 2,
+              "max_ngram": "to say",
+              "max_frequency": 0.023255813953488372,
+              "repeat_excess_rate": 0.03488372093023256
+            },
+            "3": {
+              "positions": 85,
+              "max_count": 1,
+              "max_ngram": "he did not",
+              "max_frequency": 0.011764705882352941,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 84,
+              "max_count": 1,
+              "max_ngram": "he did not seem",
+              "max_frequency": 0.011904761904761904,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The warren is ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Among",
+            "But"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 80,
+              "max_count": 6,
+              "max_ngram": "the",
+              "max_frequency": 0.075,
+              "repeat_excess_rate": 0.2625
+            },
+            "2": {
+              "positions": 79,
+              "max_count": 2,
+              "max_ngram": "that we",
+              "max_frequency": 0.02531645569620253,
+              "repeat_excess_rate": 0.02531645569620253
+            },
+            "3": {
+              "positions": 78,
+              "max_count": 2,
+              "max_ngram": "that we have",
+              "max_frequency": 0.02564102564102564,
+              "repeat_excess_rate": 0.01282051282051282
+            },
+            "4": {
+              "positions": 77,
+              "max_count": 1,
+              "max_ngram": "utterly identical with the",
+              "max_frequency": 0.012987012987012988,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "But",
+            "Englishman",
+            "Footnote",
+            "French",
+            "Frenchman",
+            "German",
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 72,
+              "max_count": 18,
+              "max_ngram": "french",
+              "max_frequency": 0.25,
+              "repeat_excess_rate": 0.625
+            },
+            "2": {
+              "positions": 71,
+              "max_count": 9,
+              "max_ngram": "french french",
+              "max_frequency": 0.1267605633802817,
+              "repeat_excess_rate": 0.3380281690140845
+            },
+            "3": {
+              "positions": 70,
+              "max_count": 5,
+              "max_ngram": "french french french",
+              "max_frequency": 0.07142857142857142,
+              "repeat_excess_rate": 0.15714285714285714
+            },
+            "4": {
+              "positions": 69,
+              "max_count": 2,
+              "max_ngram": "he had a french",
+              "max_frequency": 0.028985507246376812,
+              "repeat_excess_rate": 0.07246376811594203
+            }
+          }
+        },
+        {
+          "prompt": "Who is Mara?",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "They",
+            "When"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 87,
+              "max_count": 6,
+              "max_ngram": "is",
+              "max_frequency": 0.06896551724137931,
+              "repeat_excess_rate": 0.45977011494252873
+            },
+            "2": {
+              "positions": 86,
+              "max_count": 4,
+              "max_ngram": "he is",
+              "max_frequency": 0.046511627906976744,
+              "repeat_excess_rate": 0.16279069767441862
+            },
+            "3": {
+              "positions": 85,
+              "max_count": 2,
+              "max_ngram": "he is very",
+              "max_frequency": 0.023529411764705882,
+              "repeat_excess_rate": 0.047058823529411764
+            },
+            "4": {
+              "positions": 84,
+              "max_count": 1,
+              "max_ngram": "he is very old",
+              "max_frequency": 0.011904761904761904,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  "penalty_control": {
+    "mean_distinct_source_books": 0.0,
+    "passages_with_multiple_source_books": 0,
+    "rows": [
+      {
+        "prompt": "Fund uncertainty. ",
+        "matched_names": {},
+        "source_books": [],
+        "distinct_source_books": 0,
+        "capitalized_words": [
+          "But",
+          "Englishman",
+          "Footnote",
+          "French",
+          "Frenchman",
+          "German",
+          "The"
+        ],
+        "coverage": 0.0,
+        "repetition": {
+          "1": {
+            "positions": 72,
+            "max_count": 18,
+            "max_ngram": "french",
+            "max_frequency": 0.25,
+            "repeat_excess_rate": 0.625
+          },
+          "2": {
+            "positions": 71,
+            "max_count": 9,
+            "max_ngram": "french french",
+            "max_frequency": 0.1267605633802817,
+            "repeat_excess_rate": 0.3380281690140845
+          },
+          "3": {
+            "positions": 70,
+            "max_count": 5,
+            "max_ngram": "french french french",
+            "max_frequency": 0.07142857142857142,
+            "repeat_excess_rate": 0.15714285714285714
+          },
+          "4": {
+            "positions": 69,
+            "max_count": 2,
+            "max_ngram": "he had a french",
+            "max_frequency": 0.028985507246376812,
+            "repeat_excess_rate": 0.07246376811594203
+          }
+        }
+      },
+      {
+        "prompt": "Fund uncertainty. ",
+        "matched_names": {},
+        "source_books": [],
+        "distinct_source_books": 0,
+        "capitalized_words": [
+          "English",
+          "Footnote",
+          "French",
+          "Frenchman",
+          "Spaniard",
+          "Spaniards",
+          "The",
+          "There",
+          "They"
+        ],
+        "coverage": 0.0,
+        "repetition": {
+          "1": {
+            "positions": 81,
+            "max_count": 10,
+            "max_ngram": "the",
+            "max_frequency": 0.12345679012345678,
+            "repeat_excess_rate": 0.30864197530864196
+          },
+          "2": {
+            "positions": 80,
+            "max_count": 2,
+            "max_ngram": "the french",
+            "max_frequency": 0.025,
+            "repeat_excess_rate": 0.025
+          },
+          "3": {
+            "positions": 79,
+            "max_count": 1,
+            "max_ngram": "footnote the french",
+            "max_frequency": 0.012658227848101266,
+            "repeat_excess_rate": 0.0
+          },
+          "4": {
+            "positions": 78,
+            "max_count": 1,
+            "max_ngram": "footnote the french the",
+            "max_frequency": 0.01282051282051282,
+            "repeat_excess_rate": 0.0
+          }
+        }
+      }
+    ]
+  },
+  "historical_gpu_5m": {
+    "5m-256": {
+      "mean_distinct_source_books": 0.0,
+      "passages_with_multiple_source_books": 0,
+      "rows": [
+        {
+          "prompt": "Once upon a time,",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 98,
+              "max_count": 7,
+              "max_ngram": "and",
+              "max_frequency": 0.07142857142857142,
+              "repeat_excess_rate": 0.3469387755102041
+            },
+            "2": {
+              "positions": 97,
+              "max_count": 2,
+              "max_ngram": "he had",
+              "max_frequency": 0.020618556701030927,
+              "repeat_excess_rate": 0.041237113402061855
+            },
+            "3": {
+              "positions": 96,
+              "max_count": 1,
+              "max_ngram": "and we took",
+              "max_frequency": 0.010416666666666666,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 95,
+              "max_count": 1,
+              "max_ngram": "and we took this",
+              "max_frequency": 0.010526315789473684,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Captain",
+            "Thank"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 81,
+              "max_count": 7,
+              "max_ngram": "the",
+              "max_frequency": 0.08641975308641975,
+              "repeat_excess_rate": 0.345679012345679
+            },
+            "2": {
+              "positions": 80,
+              "max_count": 3,
+              "max_ngram": "said the",
+              "max_frequency": 0.0375,
+              "repeat_excess_rate": 0.0625
+            },
+            "3": {
+              "positions": 79,
+              "max_count": 2,
+              "max_ngram": "i'm a pretty",
+              "max_frequency": 0.02531645569620253,
+              "repeat_excess_rate": 0.012658227848101266
+            },
+            "4": {
+              "positions": 78,
+              "max_count": 1,
+              "max_ngram": "the fire lighted one",
+              "max_frequency": 0.01282051282051282,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Are",
+            "But",
+            "Emma",
+            "Mary",
+            "There",
+            "What"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 77,
+              "max_count": 4,
+              "max_ngram": "said",
+              "max_frequency": 0.05194805194805195,
+              "repeat_excess_rate": 0.37662337662337664
+            },
+            "2": {
+              "positions": 76,
+              "max_count": 2,
+              "max_ngram": "in the",
+              "max_frequency": 0.02631578947368421,
+              "repeat_excess_rate": 0.039473684210526314
+            },
+            "3": {
+              "positions": 75,
+              "max_count": 1,
+              "max_ngram": "he's up he",
+              "max_frequency": 0.013333333333333334,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 74,
+              "max_count": 1,
+              "max_ngram": "he's up he won't",
+              "max_frequency": 0.013513513513513514,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The warren is ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "The",
+            "Their",
+            "These"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 79,
+              "max_count": 9,
+              "max_ngram": "the",
+              "max_frequency": 0.11392405063291139,
+              "repeat_excess_rate": 0.31645569620253167
+            },
+            "2": {
+              "positions": 78,
+              "max_count": 3,
+              "max_ngram": "and the",
+              "max_frequency": 0.038461538461538464,
+              "repeat_excess_rate": 0.0641025641025641
+            },
+            "3": {
+              "positions": 77,
+              "max_count": 2,
+              "max_ngram": "to be seen",
+              "max_frequency": 0.025974025974025976,
+              "repeat_excess_rate": 0.012987012987012988
+            },
+            "4": {
+              "positions": 76,
+              "max_count": 1,
+              "max_ngram": "uttered by the astonished",
+              "max_frequency": 0.013157894736842105,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Arabella",
+            "Panthers",
+            "Spaniards",
+            "The",
+            "Tower",
+            "Transport"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 66,
+              "max_count": 9,
+              "max_ngram": "the",
+              "max_frequency": 0.13636363636363635,
+              "repeat_excess_rate": 0.3333333333333333
+            },
+            "2": {
+              "positions": 65,
+              "max_count": 2,
+              "max_ngram": "to be",
+              "max_frequency": 0.03076923076923077,
+              "repeat_excess_rate": 0.03076923076923077
+            },
+            "3": {
+              "positions": 64,
+              "max_count": 1,
+              "max_ngram": "the wan's the",
+              "max_frequency": 0.015625,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 63,
+              "max_count": 1,
+              "max_ngram": "the wan's the arabella",
+              "max_frequency": 0.015873015873015872,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Who is Mara?",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "And",
+            "Can",
+            "Gwendolen",
+            "Never",
+            "What",
+            "With"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 80,
+              "max_count": 6,
+              "max_ngram": "i",
+              "max_frequency": 0.075,
+              "repeat_excess_rate": 0.425
+            },
+            "2": {
+              "positions": 79,
+              "max_count": 3,
+              "max_ngram": "i have",
+              "max_frequency": 0.0379746835443038,
+              "repeat_excess_rate": 0.06329113924050633
+            },
+            "3": {
+              "positions": 78,
+              "max_count": 1,
+              "max_ngram": "can you see",
+              "max_frequency": 0.01282051282051282,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 77,
+              "max_count": 1,
+              "max_ngram": "can you see this",
+              "max_frequency": 0.012987012987012988,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        }
+      ]
+    },
+    "5m-1024": {
+      "mean_distinct_source_books": 0.3333333333333333,
+      "passages_with_multiple_source_books": 1,
+      "rows": [
+        {
+          "prompt": "Once upon a time,",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "She",
+            "Such"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 104,
+              "max_count": 10,
+              "max_ngram": "she",
+              "max_frequency": 0.09615384615384616,
+              "repeat_excess_rate": 0.5288461538461539
+            },
+            "2": {
+              "positions": 103,
+              "max_count": 4,
+              "max_ngram": "and she",
+              "max_frequency": 0.038834951456310676,
+              "repeat_excess_rate": 0.1941747572815534
+            },
+            "3": {
+              "positions": 102,
+              "max_count": 3,
+              "max_ngram": "she would have",
+              "max_frequency": 0.029411764705882353,
+              "repeat_excess_rate": 0.09803921568627451
+            },
+            "4": {
+              "positions": 101,
+              "max_count": 2,
+              "max_ngram": "to see her and",
+              "max_frequency": 0.019801980198019802,
+              "repeat_excess_rate": 0.039603960396039604
+            }
+          }
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Also",
+            "Dora",
+            "The"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 90,
+              "max_count": 12,
+              "max_ngram": "the",
+              "max_frequency": 0.13333333333333333,
+              "repeat_excess_rate": 0.3888888888888889
+            },
+            "2": {
+              "positions": 89,
+              "max_count": 4,
+              "max_ngram": "and the",
+              "max_frequency": 0.0449438202247191,
+              "repeat_excess_rate": 0.11235955056179775
+            },
+            "3": {
+              "positions": 88,
+              "max_count": 3,
+              "max_ngram": "the children were",
+              "max_frequency": 0.03409090909090909,
+              "repeat_excess_rate": 0.045454545454545456
+            },
+            "4": {
+              "positions": 87,
+              "max_count": 2,
+              "max_ngram": "and the children were",
+              "max_frequency": 0.022988505747126436,
+              "repeat_excess_rate": 0.011494252873563218
+            }
+          }
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "And",
+            "But",
+            "Clym",
+            "Curdie",
+            "Ellinor",
+            "Then",
+            "Well",
+            "What"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 72,
+              "max_count": 5,
+              "max_ngram": "i",
+              "max_frequency": 0.06944444444444445,
+              "repeat_excess_rate": 0.2638888888888889
+            },
+            "2": {
+              "positions": 71,
+              "max_count": 2,
+              "max_ngram": "i am",
+              "max_frequency": 0.028169014084507043,
+              "repeat_excess_rate": 0.014084507042253521
+            },
+            "3": {
+              "positions": 70,
+              "max_count": 1,
+              "max_ngram": "no father said",
+              "max_frequency": 0.014285714285714285,
+              "repeat_excess_rate": 0.0
+            },
+            "4": {
+              "positions": 69,
+              "max_count": 1,
+              "max_ngram": "no father said ellinor",
+              "max_frequency": 0.014492753623188406,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "The warren is ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "Don",
+            "Good",
+            "Hurry",
+            "These",
+            "Who"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 78,
+              "max_count": 6,
+              "max_ngram": "the",
+              "max_frequency": 0.07692307692307693,
+              "repeat_excess_rate": 0.32051282051282054
+            },
+            "2": {
+              "positions": 77,
+              "max_count": 3,
+              "max_ngram": "to be",
+              "max_frequency": 0.03896103896103896,
+              "repeat_excess_rate": 0.1038961038961039
+            },
+            "3": {
+              "positions": 76,
+              "max_count": 2,
+              "max_ngram": "i will say",
+              "max_frequency": 0.02631578947368421,
+              "repeat_excess_rate": 0.02631578947368421
+            },
+            "4": {
+              "positions": 75,
+              "max_count": 1,
+              "max_ngram": "uttered by the prisoner",
+              "max_frequency": 0.013333333333333334,
+              "repeat_excess_rate": 0.0
+            }
+          }
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "matched_names": {},
+          "source_books": [],
+          "distinct_source_books": 0,
+          "capitalized_words": [
+            "She"
+          ],
+          "coverage": 0.0,
+          "repetition": {
+            "1": {
+              "positions": 106,
+              "max_count": 14,
+              "max_ngram": "she",
+              "max_frequency": 0.1320754716981132,
+              "repeat_excess_rate": 0.5754716981132075
+            },
+            "2": {
+              "positions": 105,
+              "max_count": 8,
+              "max_ngram": "she had",
+              "max_frequency": 0.0761904761904762,
+              "repeat_excess_rate": 0.29523809523809524
+            },
+            "3": {
+              "positions": 104,
+              "max_count": 5,
+              "max_ngram": "she had been",
+              "max_frequency": 0.04807692307692308,
+              "repeat_excess_rate": 0.10576923076923077
+            },
+            "4": {
+              "positions": 103,
+              "max_count": 3,
+              "max_ngram": "she had been a",
+              "max_frequency": 0.02912621359223301,
+              "repeat_excess_rate": 0.019417475728155338
+            }
+          }
+        },
+        {
+          "prompt": "Who is Mara?",
+          "matched_names": {
+            "Bulbo": [
+              "897"
+            ],
+            "Ostrog": [
+              "775"
+            ]
+          },
+          "source_books": [
+            "775",
+            "897"
+          ],
+          "distinct_source_books": 2,
+          "capitalized_words": [
+            "Bar",
+            "Bulbo",
+            "Castle",
+            "Castlewood",
+            "City",
+            "Crump",
+            "England",
+            "Fire",
+            "French",
+            "Ostrog",
+            "Park",
+            "Poor"
+          ],
+          "coverage": 0.16666666666666666,
+          "repetition": {
+            "1": {
+              "positions": 95,
+              "max_count": 11,
+              "max_ngram": "i",
+              "max_frequency": 0.11578947368421053,
+              "repeat_excess_rate": 0.49473684210526314
+            },
+            "2": {
+              "positions": 94,
+              "max_count": 6,
+              "max_ngram": "i have",
+              "max_frequency": 0.06382978723404255,
+              "repeat_excess_rate": 0.18085106382978725
+            },
+            "3": {
+              "positions": 93,
+              "max_count": 3,
+              "max_ngram": "i have been",
+              "max_frequency": 0.03225806451612903,
+              "repeat_excess_rate": 0.07526881720430108
+            },
+            "4": {
+              "positions": 92,
+              "max_count": 2,
+              "max_ngram": "i have been a",
+              "max_frequency": 0.021739130434782608,
+              "repeat_excess_rate": 0.03260869565217391
+            }
+          }
+        }
+      ]
+    }
+  },
+  "sara_in_frozen_index": null
+}

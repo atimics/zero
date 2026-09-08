@@ -1,0 +1,79 @@
+{
+  "observed_at": "2026-09-08T21:05:44.907887+00:00",
+  "instances": [
+    {
+      "Id": "i-0a23d43054ceabc9e",
+      "State": "running",
+      "Reason": "",
+      "Launch": "2026-09-08T18:59:40+00:00"
+    }
+  ],
+  "saved_training_result_count": 15,
+  "expected_training_results": 16,
+  "elapsed_instance_seconds": 7564.907887,
+  "estimated_ec2_usd_so_far": 2.1139714817561113,
+  "budget_scope": "Four-hour maximum, $5 target for this replication instance; final billed total pending. Separate 50M instance has its own original 12-hour/$14 limit.",
+  "markers": [],
+  "objects": [
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-11/5m-1024/result.json",
+      "Updated": "2026-09-08T19:38:04+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-11/5m-256/result.json",
+      "Updated": "2026-09-08T19:29:56+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-11/5m-wide-256/result.json",
+      "Updated": "2026-09-08T20:43:01+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-19/5m-1024/result.json",
+      "Updated": "2026-09-08T19:56:19+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-19/5m-256/result.json",
+      "Updated": "2026-09-08T19:46:11+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-19/5m-wide-256/result.json",
+      "Updated": "2026-09-08T20:49:06+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-31/5m-1024/result.json",
+      "Updated": "2026-09-08T20:12:33+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-31/5m-256/result.json",
+      "Updated": "2026-09-08T20:04:26+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-31/5m-wide-256/result.json",
+      "Updated": "2026-09-08T20:55:11+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-43/5m-1024/result.json",
+      "Updated": "2026-09-08T20:28:47+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-43/5m-256/result.json",
+      "Updated": "2026-09-08T20:20:40+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-43/5m-wide-256/result.json",
+      "Updated": "2026-09-08T21:03:19+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-7/5m-1024/result.json",
+      "Updated": "2026-09-08T19:21:49+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-7/5m-256/result.json",
+      "Updated": "2026-09-08T19:11:41+00:00"
+    },
+    {
+      "Key": "experiments/subword-replication-v1/cuda-5952977cc3ed-1788908328/progress/seed-7/5m-wide-256/result.json",
+      "Updated": "2026-09-08T20:36:55+00:00"
+    }
+  ]
+}
