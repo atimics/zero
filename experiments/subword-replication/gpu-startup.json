@@ -1,0 +1,21 @@
+{
+  "instance_id": "i-0a23d43054ceabc9e",
+  "source": "EC2 console output",
+  "first_run_seed": 7,
+  "first_run": "5m-256",
+  "latest_record": {
+    "step": 900,
+    "steps": 12208,
+    "tokens": 7372800,
+    "train_loss": 4.293432121276855,
+    "validation": {
+      "bits_per_byte": 1.9462265790421593,
+      "target_bytes": 13063,
+      "target_tokens": 4096,
+      "windows": 64
+    },
+    "elapsed_seconds": 30.92604864599997,
+    "tokens_per_second": 238400.97014636273
+  },
+  "gpu_preflight_passed": true
+}

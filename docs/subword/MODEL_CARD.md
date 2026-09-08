@@ -75,7 +75,10 @@ A CPU FP32 rescore saved all 1,024 window losses for each split. A paired
 Validation gives -0.001960 with interval [-0.004273, 0.000355]. These intervals
 are conditional on the trained weights and treat sampled windows as exchangeable.
 Within-book correlation, training-seed variance and new-author variance remain
-outside their scope. The original CUDA BF16 test gap was -0.004762.
+outside their scope. The CUDA BF16 rescore reproduces the original -0.004762 test gap. Its paired
+window interval is [-0.007008, -0.002514], with 563 long-context wins. The
+validation interval is [-0.004280, 0.000354]. These remain conditional
+window intervals while training-seed replication runs.
 
 Five paired training seeds are registered: 7, 11, 19, 31 and 43. Primary analysis
 uses paired seed differences with a 95% t interval. Shelley and Stoker supply

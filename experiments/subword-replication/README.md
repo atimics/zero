@@ -42,3 +42,11 @@ Model weights are MIT-licensed in `models/LICENSE`. Engineering checks cover
 pairing, interval calculations, parameter matching, and seed controls. These
 checks verify calculations and execution; the registered statistical analysis
 will determine the experimental conclusion.
+
+## CUDA BF16 confirmation
+
+The GPU rescore reproduces the original test gap: -0.004761776 bits/byte.
+Its paired-window 95% interval is [-0.007007829, -0.002514086], with 563
+long-context wins out of 1,024 windows. Validation has an interval spanning
+zero: [-0.004280394, 0.000354189]. These are conditional window intervals;
+the five training-seed pairs are running.
