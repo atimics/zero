@@ -1,0 +1,33 @@
+{
+  "backend": "cpu fp32",
+  "splits": {
+    "validation": {
+      "long_minus_short_bpb": -0.0019597866791206276,
+      "paired_window_95_percentile_interval": [
+        -0.004273459070929014,
+        0.00035539990340872554
+      ],
+      "long_wins": 539,
+      "short_wins": 485,
+      "ties": 0,
+      "windows": 1024,
+      "bootstrap_draws": 20000,
+      "bootstrap_seed": 1701,
+      "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+    },
+    "test": {
+      "long_minus_short_bpb": -0.004859238982611153,
+      "paired_window_95_percentile_interval": [
+        -0.00710840698307381,
+        -0.0026114930550542163
+      ],
+      "long_wins": 560,
+      "short_wins": 464,
+      "ties": 0,
+      "windows": 1024,
+      "bootstrap_draws": 20000,
+      "bootstrap_seed": 1701,
+      "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "5m-256": {
+    "selected_step": 11900,
+    "source_checkpoint_sha256": "6a36199c78dd598c8bb8b4c790f1362c3f045b250691852f59cc8bcb2fef6194",
+    "weights_sha256": "dde6fa16c7111385f909ef261fbf4c22c9fbba0a3cc92ccfa2b3ff7c22b5881c",
+    "weights_bytes": 20210389
+  },
+  "5m-1024": {
+    "selected_step": 11800,
+    "source_checkpoint_sha256": "61fac60156a71b3f199c9f7c8f38dd0d0b3ff9500f2168a3167b59adc8719bc5",
+    "weights_sha256": "f0d0a7f49cd6b2c8936124c50292959642cf58ab90b32ea90da84080a1c5b8b5",
+    "weights_bytes": 20213069
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "vocabulary": 2048,
+  "training_split_only": true,
+  "prefix_space": true,
+  "encoding": "Each line includes its original newline; byte-level BPE; added line-prefix space enabled.",
+  "splits": {
+    "train": {
+      "bytes": 85944815,
+      "tokens": 27131396,
+      "source_sha256": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01",
+      "encoded_bytes": 86493784
+    },
+    "validation": {
+      "bytes": 15227112,
+      "tokens": 4801168,
+      "source_sha256": "c0ff504809a9d6d2c8c616c78719e7ca9d5519229ccf6cbfa310ac9e7fda93e9",
+      "encoded_bytes": 15312501
+    },
+    "test": {
+      "bytes": 4236866,
+      "tokens": 1340578,
+      "source_sha256": "8a9bba5c55a483ca68d10b5990cd03b31229a8662eafb42a9c0fd399e8827a58",
+      "encoded_bytes": 4269499
+    }
+  },
+  "files": {
+    "test.bin": "023953c49f9418ea9154f928bf544d7a0a9f82fa6cde9c85ba6f69b6b9567ace",
+    "token_bytes.json": "c4d41e276b4a69c6957427d53c04c1dd65fdccf51a6677d27f5cd5f4c80d58d0",
+    "tokenizer.json": "783ad9e42fdd4f7fb77647576fc16fb0e15e384cbc802cd7b69665197a2f0c8f",
+    "train.bin": "2ea573e32eb72f3ce27818dcb098d2cfe9356aa9e356af47b221576c5843bd44",
+    "validation.bin": "81cb9602708c38808db23de207de124fe9d0cf070b9a97e1d6852f2da0b88612"
+  }
+}

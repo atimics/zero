@@ -46,12 +46,13 @@ def evaluate(model,data,lengths,sequences,amp):
 def run(name,args,data,lengths,tokenizer):
     config=CONFIGS[name];device=args.device
     output=args.output/name;output.mkdir(parents=True,exist_ok=False)
-    torch.manual_seed(7); model=create(config).to(device)
+    seed=getattr(args,"seed",7)
+    torch.manual_seed(seed); model=create(config,seed).to(device)
     groups=[{'params':[w for w in model.weights if w.ndim==2],'weight_decay':.01},
             {'params':[w for w in model.weights if w.ndim==1],'weight_decay':0.}]
     optimizer=torch.optim.AdamW(groups,lr=.0003,betas=(.9,.999),eps=1e-8,fused=device=='cuda')
     amp=(lambda:torch.autocast('cuda',dtype=torch.bfloat16)) if device=='cuda' else contextlib.nullcontext
-    generator=torch.Generator(device=device).manual_seed(71)
+    generator=torch.Generator(device=device).manual_seed(seed+64)
     block=args.tokens_per_step
     if block%config['context']: raise ValueError('Batch must divide evenly into contexts')
     target=args.large_tokens if name.startswith('50m') else args.small_tokens
@@ -87,7 +88,7 @@ def run(name,args,data,lengths,tokenizer):
                 if estimate>(args.deadline-time.time()-180)*.85:
                     raise TimeoutError(f'{name} needs about {estimate/3600:.2f} more hours; saved calibration checkpoint')
     state=torch.load(output/'best.pt',map_location=device,weights_only=False);model.load_state_dict(state['model'])
-    result={'name':name,'config':config,'parameters':sum(p.numel() for p in model.parameters()),
+    result={'name':name,'training_seed':seed,'config':config,'parameters':sum(p.numel() for p in model.parameters()),
             'steps':steps,'token_presentations':steps*block,'selected_step':state['step'],
             'elapsed_seconds':time.monotonic()-started,
             'validation':evaluate(model,data['validation'],lengths,args.final_windows,amp),
@@ -101,7 +102,7 @@ def run(name,args,data,lengths,tokenizer):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--data',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--runs',nargs='+',default=list(CONFIGS));p.add_argument('--device',default='cuda');p.add_argument('--deadline',type=float,required=True)
+    p.add_argument('--runs',nargs='+',default=["5m-256","5m-1024","50m-1024"]);p.add_argument('--device',default='cuda');p.add_argument('--deadline',type=float,required=True)
     p.add_argument('--small-tokens',type=int,default=100_000_000);p.add_argument('--large-tokens',type=int,default=800_000_000)
     p.add_argument('--tokens-per-step',type=int,default=8192);p.add_argument('--report',type=int,default=100)
     p.add_argument('--selection-windows',type=int,default=64);p.add_argument('--final-windows',type=int,default=1024);args=p.parse_args()

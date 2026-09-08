@@ -14,3 +14,6 @@ jobs:
       - run: pip install numpy==2.2.6 tokenizers==0.22.0
       - run: python -m unittest discover -s tests -p test_zero_torch.py
       - run: python -m unittest discover -s tests -p test_subword.py
+      - run: python -m unittest discover -s tests -p test_subword_release.py
+      - run: python -m unittest discover -s tests -p test_replication.py
+      - run: python -m unittest discover -s tests -p test_diagnostic_controls.py

@@ -7,6 +7,7 @@ from zero_torch import Zero
 CONFIGS = {
     '5m-256': dict(vocab=2048,context=256,dim=256,heads=8,layers=6,ff=960),
     '5m-1024': dict(vocab=2048,context=1024,dim=256,heads=8,layers=6,ff=960),
+    '5m-wide-256': dict(vocab=2048,context=256,dim=384,heads=12,layers=3,ff=1080),
     '50m-1024': dict(vocab=2048,context=1024,dim=640,heads=10,layers=10,ff=2560),
 }
 
@@ -25,7 +26,7 @@ def create(config, seed=7):
     return Zero(header,arrays)
 
 @torch.no_grad()
-def sample(model, tokenizer, prompt, count=128, seed=7):
+def sample(model, tokenizer, prompt, count=128, seed=7, return_tokens=False):
     model.eval(); device=next(model.parameters()).device
     generator=torch.Generator(device=device).manual_seed(seed)
     ids=tokenizer.encode(prompt).ids
@@ -34,4 +35,5 @@ def sample(model, tokenizer, prompt, count=128, seed=7):
         scores=model(x)[0,-1].float()/.7
         values,indices=scores.topk(40)
         token=indices[torch.multinomial(values.softmax(-1),1,generator=generator)].item();ids.append(token)
-    return tokenizer.decode(ids)
+    text=tokenizer.decode(ids)
+    return (text,ids) if return_tokens else text
