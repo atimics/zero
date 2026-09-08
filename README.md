@@ -4,8 +4,12 @@ Explore the [Gutenberg subword model card](docs/subword/MODEL_CARD.md) and
 [comparison demo](docs/subword/index.html). Run `python scripts/serve_subword_demo.py`
 with the model-card dependencies to try both completed 5M models locally.
 
-Read [**The ZERO Manifesto**](MANIFESTO.md) and the
-[mathematical foundations](FOUNDATIONS.md).
+ZERO studies what small language models learn, using held-out text scores and
+trusted task checkers. The current subword comparison observed a 0.30% test
+bits/byte difference in one training seed. Its size relative to run-to-run
+variation remains unknown; [multi-seed replication is registered](experiments/subword-replication/PREREGISTRATION.md).
+Sampling examples illustrate outputs. Statistical evidence and engineering
+checks are reported separately.
 
 This project contains two dependency-free neural language models and a
 mechanically checked synthetic-corpus generator:
@@ -326,38 +330,11 @@ search at this model size.
 7. residual dropout, mini-batch gradient accumulation, gradient clipping,
    AdamW, cosine decay, early stopping, and best-validation checkpoints.
 
-There is no external tensor, automatic-differentiation, tokenizer, or machine-
-learning library. The tokenizer and every model operation are implemented in
-C; Accelerate supplies optimized matrix multiplication on macOS.
+The C path implements its tokenizer and model operations directly, with
+Accelerate supplying matrix multiplication on macOS. The subword experiments
+use PyTorch and Hugging Face Tokenizers.
 
-## What “grounded in zero” means here
+## Mathematical background
 
-The full set-theoretic construction, transformer equations, channel objective,
-recurrent-memory system, holographic index, and formal claims are given in
-[`FOUNDATIONS.md`](FOUNDATIONS.md).
-
-The finite mathematical ladder is represented concretely:
-
-| Foundational idea | C representation |
-| --- | --- |
-| `0` / empty initial state | `calloc`-allocated storage |
-| finite ordinals | array indices and dimensions |
-| ordered sequences | byte-token arrays |
-| finite functions | tables, matrices, and C functions |
-| real-valued vectors | arrays of `float` approximations |
-| function composition | transformer forward pass |
-| parameter selection | backpropagation and AdamW |
-
-Model storage begins zero-filled. Index-dependent deterministic initialization,
-tokens, attention relations, and gradient updates then introduce structure. A
-seed of zero is valid and is first taken through a successor-like `+1` operation.
-
-This distinction matters: setting every weight to exactly zero would make
-neurons permutation-symmetric, causing them to receive identical gradients.
-Grounding means that the constructed objects have a common empty basis;
-collapse means erasing the relations that distinguish those objects. The model
-does the former without doing the latter.
-
-C does not execute the ZFC axioms or construct exact set-theoretic real numbers.
-It implements a finite encoding whose mathematical specification can be
-formalized within ZFC.
+The optional [foundations essay](FOUNDATIONS.md) describes the project's
+mathematical framing. Experimental claims are scoped by the evaluations above.

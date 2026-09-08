@@ -17,9 +17,8 @@ Lower bits per byte means better prediction of held-out text.
 | Subword 5.05M, 1,024 tokens | 1.550287 | 1.563721 | 11,800 |
 
 The long-context model's test score is 0.004762 bits/byte lower than the
-short-context model, a 0.30% reduction. This is a small measured prediction
-gain in one training seed. It supplies limited evidence about general effects
-of context length. Sample pairs support observations about those particular
+short-context model, a 0.30% reduction. We observed a 0.30% difference in one training seed. Its size relative to
+run-to-run variation remains unknown. Multi-seed replication is pending. Sample pairs support observations about those particular
 outputs; a coherence advantage would require a larger, scored comparison.
 
 The subword models improve test bits/byte over the character baseline by 4.28%
@@ -53,6 +52,14 @@ seeded training-block generator, token budget, optimizer and learning-rate
 schedule. Every update chooses the same contiguous 8,192-token block. The
 short model divides it into 32 sequences and the long model into eight. Target
 exposure is identical; available context and dropout trajectories differ.
+Training difficulty also changes: there are 32 sequence starts per block in
+the short arm versus 8 in the long arm. Mean available input context is about
+128.5 versus 512.5 tokens. This compares training contexts and inference
+contexts together.
+
+Both selected checkpoints occur near the end of a fixed 12,208-update cosine
+schedule. Training runs to the full 100M-token budget; early stopping is absent.
+The finding is scoped to that budget. Longer training could change the result.
 
 Validation curves record 123 checks for each model. Their raw histories are
 in [results.json](results.json), and [curves.svg](curves.svg) shows the full
@@ -117,7 +124,7 @@ prose dominates the data; performance on contemporary text, other languages,
 instruction following, factual questions, and long narrative consistency has
 limited evidence. Inspect generated passages before reuse.
 
-The repository has no explicit model license at this release revision. Corpus
+The model weights are released under the MIT License (`models/LICENSE`). Corpus
 provenance and source records are in `corpus/gutenberg/` in the repository.
 
 ## Files and local demo
