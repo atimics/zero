@@ -1,0 +1,38 @@
+{
+  "source_commit": "48bca80",
+  "launch": {
+    "InstanceId": "i-04bfbaeda8bab32e1",
+    "State": "pending",
+    "Type": "g5.xlarge",
+    "LaunchTime": "2026-09-08T07:07:17+00:00"
+  },
+  "package": {
+    "package_sha256": "b0cb03c71fb673c97319450227dc828ec349ffbaea92ae63ecb0aeb8056395fd",
+    "package_bytes": 57136711,
+    "files": {
+      "scripts/zero_torch.py": "500195007e2bcf1c344ccda973e42f5df4b84afb3b8673ad4af67b5004121d28",
+      "scripts/train_zero_cuda.py": "da4dc4c3f32ebbc9fdc62105541f29c17cffc98b0f806a3c3b9d9ec4439c92bb",
+      "scripts/check_cuda_parity.py": "cef9551d6e9b291c700982ff86aaf71da69caca983462824a846afe180a7ee18",
+      "export_literary.c": "3aed9ac9887b1e931f3e476b1eb9dda1a3f2c43c2de575411f69aa6e04bca744",
+      "data/train.txt": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01",
+      "data/validation.txt": "c0ff504809a9d6d2c8c616c78719e7ca9d5519229ccf6cbfa310ac9e7fda93e9",
+      "data/test.txt": "8a9bba5c55a483ca68d10b5990cd03b31229a8662eafb42a9c0fd399e8827a58",
+      "initial.ckpt": "35c297d3a7f39f6c3a2f80c718047ec381c1587f5a4981c4941f7d7713ce034b",
+      "parity.json": "ea7b9ee1f3436da32a3a9bdeded0439810077b6c8626ab4f3d9ad52439dae6d6"
+    },
+    "bucket": "zero-training-022118847419",
+    "source_key": "experiments/gutenberg-5m-v1/packages/b0cb03c71fb673c97319450227dc828ec349ffbaea92ae63ecb0aeb8056395fd.tar.gz",
+    "result_prefix": "experiments/gutenberg-5m-v1/cuda-b0cb03c71fb6-1788858403",
+    "deadline": 1788858403,
+    "maximum_instance_seconds": 7200,
+    "instance_type": "g5.xlarge",
+    "hourly_ec2_usd": 1.006,
+    "two_hour_ec2_usd": 2.012,
+    "root_volume_gib": 75,
+    "requested_total_budget_usd": 3,
+    "user_data_sha256": "56a76aeaf05ae95100012b1be974b69df5f866f8553302a66d3f21ce6f9015cc",
+    "request_sha256": "c2720b9d5f3bff2398c7532336f38ed78bcb6f726dbd13d9d89392614dd30ac7"
+  },
+  "dry_run": "DryRunOperation",
+  "status": "launched"
+}
