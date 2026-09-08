@@ -5,6 +5,18 @@ the release. The input list covers adult fiction, adventure stories, children's
 stories, and fantasy from 29 authors. The build requires at least ten million
 training words and 100,000 words in each held-out split.
 
+The completed release is `zero-gutenberg-v1-0d9254dd6a65`:
+
+| Split | Books | Words | ASCII characters |
+|---|---:|---:|---:|
+| Training | 192 | 15,540,797 | 85,944,815 |
+| Validation | 24 | 2,723,726 | 15,227,112 |
+| Test | 8 | 788,256 | 4,236,866 |
+
+Braid retained 4,571 chunks. It rejected three near duplicates and two short
+chunks. All release gates and the output checks passed. The source list records
+one excluded book whose mirror URL returned HTTP 404.
+
 ## Files
 
 - `sources.json`: the selected Gutenberg catalog entries and mirror URLs.
