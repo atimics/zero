@@ -1,0 +1,329 @@
+{
+  "seeds": [
+    7,
+    11,
+    19,
+    31,
+    43
+  ],
+  "comparisons": {
+    "5m-256": {
+      "primary_alcott": {
+        "complete": true,
+        "paired_deltas": [
+          -0.0055312522153321275,
+          0.005442077008251278,
+          0.0005540474267102802,
+          0.0022706488188684038,
+          -0.002436768081357954
+        ],
+        "mean_long_minus_comparator_bpb": 5.975059142797612e-05,
+        "sample_standard_deviation": 0.004230654673318051,
+        "paired_t_95_interval": [
+          -0.005193301005263565,
+          0.005312802188119517
+        ],
+        "degrees_of_freedom": 4,
+        "direction": "unresolved",
+        "practical_equivalence_at_0_01": true,
+        "assumption": "Paired training-seed differences are treated as approximately normal; five pairs give limited precision."
+      },
+      "secondary_three_author_mean": {
+        "complete": true,
+        "paired_deltas": [
+          -0.003074882479684904,
+          0.004857822704762797,
+          0.0033572944345541997,
+          0.0032079686967539565,
+          -0.0008637398365591853
+        ],
+        "mean_long_minus_comparator_bpb": 0.0014968927039653729,
+        "sample_standard_deviation": 0.0033225908732403193,
+        "paired_t_95_interval": [
+          -0.0026286487640975464,
+          0.005622434172028292
+        ],
+        "degrees_of_freedom": 4,
+        "direction": "unresolved",
+        "practical_equivalence_at_0_01": true,
+        "assumption": "Paired training-seed differences are treated as approximately normal; five pairs give limited precision."
+      },
+      "by_seed": [
+        {
+          "seed": 7,
+          "test_delta": -0.0055312522153321275,
+          "author_deltas": {
+            "alcott": -0.0055312522153321275,
+            "shelley": 0.0004920724297572399,
+            "stoker": -0.004185467653479824
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": -0.005531252215332027,
+            "paired_window_95_percentile_interval": [
+              -0.00775524899122186,
+              -0.0033317511046497142
+            ],
+            "long_wins": 575,
+            "short_wins": 449,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 11,
+          "test_delta": 0.005442077008251278,
+          "author_deltas": {
+            "alcott": 0.005442077008251278,
+            "shelley": 0.004624731186845699,
+            "stoker": 0.004506659919191414
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.005442077008251256,
+            "paired_window_95_percentile_interval": [
+              0.0034380070407121384,
+              0.007438527592080104
+            ],
+            "long_wins": 440,
+            "short_wins": 584,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 19,
+          "test_delta": 0.0005540474267102802,
+          "author_deltas": {
+            "alcott": 0.0005540474267102802,
+            "shelley": 0.0030877443724657283,
+            "stoker": 0.00643009150448659
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.0005540474267101947,
+            "paired_window_95_percentile_interval": [
+              -0.0016058156746287086,
+              0.00273744578225518
+            ],
+            "long_wins": 522,
+            "short_wins": 502,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 31,
+          "test_delta": 0.0022706488188684038,
+          "author_deltas": {
+            "alcott": 0.0022706488188684038,
+            "shelley": 0.004169065489110224,
+            "stoker": 0.003184191782283241
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.0022706488188685104,
+            "paired_window_95_percentile_interval": [
+              0.0002817159180052017,
+              0.004254422042338531
+            ],
+            "long_wins": 457,
+            "short_wins": 567,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 43,
+          "test_delta": -0.002436768081357954,
+          "author_deltas": {
+            "alcott": -0.002436768081357954,
+            "shelley": -0.0028599742379886717,
+            "stoker": 0.0027055228096690698
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": -0.00243676808135796,
+            "paired_window_95_percentile_interval": [
+              -0.004513674577771929,
+              -0.0003234056955000358
+            ],
+            "long_wins": 538,
+            "short_wins": 486,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        }
+      ]
+    },
+    "5m-wide-256": {
+      "primary_alcott": {
+        "complete": true,
+        "paired_deltas": [
+          -0.0005865784545833197,
+          0.009666106862912693,
+          0.008278425671180534,
+          0.00985088303326842,
+          0.004679599849234162
+        ],
+        "mean_long_minus_comparator_bpb": 0.006377687392402498,
+        "sample_standard_deviation": 0.0044123150575953105,
+        "paired_t_95_interval": [
+          0.0008990746366540226,
+          0.011856300148150973
+        ],
+        "degrees_of_freedom": 4,
+        "direction": "long_higher",
+        "practical_equivalence_at_0_01": false,
+        "assumption": "Paired training-seed differences are treated as approximately normal; five pairs give limited precision."
+      },
+      "secondary_three_author_mean": {
+        "complete": true,
+        "paired_deltas": [
+          0.004923174584461121,
+          0.00954981809184289,
+          0.010436485081736668,
+          0.011293194147337685,
+          0.007558830265761651
+        ],
+        "mean_long_minus_comparator_bpb": 0.008752300434228002,
+        "sample_standard_deviation": 0.0025502563115696714,
+        "paired_t_95_interval": [
+          0.005585738985960013,
+          0.01191886188249599
+        ],
+        "degrees_of_freedom": 4,
+        "direction": "long_higher",
+        "practical_equivalence_at_0_01": false,
+        "assumption": "Paired training-seed differences are treated as approximately normal; five pairs give limited precision."
+      },
+      "by_seed": [
+        {
+          "seed": 7,
+          "test_delta": -0.0005865784545833197,
+          "author_deltas": {
+            "alcott": -0.0005865784545833197,
+            "shelley": 0.00916591076657891,
+            "stoker": 0.006190191441387771
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": -0.0005865784545829749,
+            "paired_window_95_percentile_interval": [
+              -0.0031233113921366957,
+              0.0019866722570665175
+            ],
+            "long_wins": 498,
+            "short_wins": 526,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 11,
+          "test_delta": 0.009666106862912693,
+          "author_deltas": {
+            "alcott": 0.009666106862912693,
+            "shelley": 0.009289588583145658,
+            "stoker": 0.009693758829470323
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.009666106862912485,
+            "paired_window_95_percentile_interval": [
+              0.007390786699152191,
+              0.011953309366517239
+            ],
+            "long_wins": 415,
+            "short_wins": 609,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 19,
+          "test_delta": 0.008278425671180534,
+          "author_deltas": {
+            "alcott": 0.008278425671180534,
+            "shelley": 0.011805050670482542,
+            "stoker": 0.01122597890354693
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.008278425671180608,
+            "paired_window_95_percentile_interval": [
+              0.005838930399739366,
+              0.010677160960239714
+            ],
+            "long_wins": 412,
+            "short_wins": 612,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 31,
+          "test_delta": 0.00985088303326842,
+          "author_deltas": {
+            "alcott": 0.00985088303326842,
+            "shelley": 0.013648373021133198,
+            "stoker": 0.010380326387611438
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.009850883033268414,
+            "paired_window_95_percentile_interval": [
+              0.007630955094203616,
+              0.012123463647633956
+            ],
+            "long_wins": 410,
+            "short_wins": 614,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        },
+        {
+          "seed": 43,
+          "test_delta": 0.004679599849234162,
+          "author_deltas": {
+            "alcott": 0.004679599849234162,
+            "shelley": 0.009815013862519706,
+            "stoker": 0.008181877085531086
+          },
+          "conditional_window_bootstrap": {
+            "long_minus_short_bpb": 0.004679599849233999,
+            "paired_window_95_percentile_interval": [
+              0.002316095879111645,
+              0.0070165848230690836
+            ],
+            "long_wins": 457,
+            "short_wins": 567,
+            "ties": 0,
+            "windows": 1024,
+            "bootstrap_draws": 20000,
+            "bootstrap_seed": 1701,
+            "caveat": "Conditional on these trained weights and sampled windows. Windows from the same book can be correlated; this interval excludes training-seed and author-sampling uncertainty."
+          }
+        }
+      ]
+    }
+  }
+}

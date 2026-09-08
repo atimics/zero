@@ -37,8 +37,10 @@ comparison demo.</p>
 </tbody>
 </table>
 <p>The long-context model's test score is 0.004762 bits/byte lower than the
-short-context model, a 0.30% reduction. We observed a 0.30% difference in one training seed. Its size relative to
-run-to-run variation remains unknown. Multi-seed replication is pending. Sample pairs support observations about those particular
+short-context model, a 0.30% reduction in the original training seed.
+The completed five-seed replication finds a mean difference of +0.000060
+bits/byte, with 95% interval [-0.005193, +0.005313]. The contexts meet the
+registered practical-equivalence rule; the direction is unresolved. Sample pairs support observations about those particular
 outputs; a coherence advantage would require a larger, scored comparison.</p>
 <p>The subword models improve test bits/byte over the character baseline by 4.28%
 and 4.58%. That comparison changes tokenization, text per context, training
@@ -75,8 +77,8 @@ The finding is scoped to that budget. Longer training could change the result.</
 <p>Validation curves record 123 checks for each model. Their raw histories are
 in <a href="results.json">results.json</a>, and <a href="curves.svg">curves.svg</a> shows the full
 selection history. The test split is scored after checkpoint selection.
-The experiments use one training seed and one held-out test author. The scores
-have no reported confidence interval or multi-seed training replication.</p>
+The original scores above use one training seed and one held-out test author.
+The completed replication is reported below.</p>
 <h2>Replication and conditional window analysis</h2>
 <p>A CPU FP32 rescore saved all 1,024 window losses for each split. A paired
 20,000-draw bootstrap gives long-minus-short test bits/byte -0.004859, with
@@ -87,13 +89,13 @@ Within-book correlation, training-seed variance and new-author variance remain
 outside their scope. The CUDA BF16 rescore reproduces the original -0.004762 test gap. Its paired
 window interval is [-0.007008, -0.002514], with 563 long-context wins. The
 validation interval is [-0.004280, 0.000354]. These remain conditional
-window intervals while training-seed replication runs.</p>
+window intervals, separate from the training-seed intervals below.</p>
 <p>Five paired training seeds are registered: 7, 11, 19, 31 and 43. Primary analysis
 uses paired seed differences with a 95% t interval. Shelley and Stoker supply
 additional test authors; selection remains on the original validation split.
 The registered practical-equivalence band is ±0.01 bits/byte. Full protocol,
 raw window records, and operational bounds are in the repository directory
-<code>experiments/subword-replication/</code>. The running study also includes a matched
+<code>experiments/subword-replication/</code>. The completed study also includes a matched
 width/depth/context trade and one exploratory prefix-space variant.</p>
 <h3>Recorded GPU artifact: detector positive control</h3>
 <p>The detector flags the recorded GPU <code>g irl</code> sample once. Retokenization yields
@@ -222,8 +224,8 @@ separate units. Shared wording is an overlap observation. A memorization claim
 would require comparison to source passages and an appropriate baseline.</p>
 <p>These models often produce plausible short phrases followed by repetitions,
 contradictions, malformed words, shifts of speaker, and loss of scene. The
-current evidence records a one-seed held-out score difference. Training-seed
-replication is pending, and coherence remains an open evaluation question.</p>
+completed five-seed study supports practical equivalence of the context arms
+at the registered threshold. Coherence remains an open evaluation question.</p>
 <h2>Intended use and data limits</h2>
 <p>Use these checkpoints to study small language models, context length,
 tokenization, and literary text continuation. Outputs can be inaccurate,
@@ -254,4 +256,28 @@ python scripts/analyze_subword_samples.py
 losses, frozen source-name counts, exact repetition, and a repetition-1.1
 decoding control. The original scaling run has a separate budget from the
 registered 5M study. The comparison combines parameter count, architecture,
-and token budget. All sample excerpts preserve the generated text.</p></main></html>
+and token budget. All sample excerpts preserve the generated text.</p>
+<h2>Completed study and inference improvements</h2>
+<p>All 16 registered runs completed successfully in about 2 hours 12 minutes
+from instance launch. The instance terminated. Estimated EC2 compute through
+the finish marker is $2.21; final total billing remains pending.</p>
+<p>The primary five-seed long-minus-short difference is +0.000060 bits/byte,
+95% t interval [-0.005193, +0.005313]. The three-author mean difference is
++0.001497, interval [-0.002629, +0.005622]. Both satisfy the registered ±0.01
+practical-equivalence rule, with unresolved direction.</p>
+<p>The wider three-layer, context-256 model scores lower than the six-layer,
+context-1024 model by 0.006378 bits/byte on Alcott. The long-minus-wide interval
+is [0.000899, 0.011856]. Across the three selected authors, the mean advantage
+is 0.008752, interval [0.005586, 0.011919]. This secondary comparison changes
+width, depth, and context together. Its interval overlaps the practical band
+boundary, so practical equivalence and a beyond-band gain remain unresolved.</p>
+<p><a href="../../experiments/inference-decoding/README.md">Saved results and inference report</a>
+include the complete study summary, final-checkpoint comparison, decoding
+sweep, cache validation, and speed measurements.</p>
+<p>Live generation uses a request-local KV cache. When the context window shifts,
+it rebuilds the prefix so the existing reset-position behavior is preserved.
+The default decoding settings remain temperature 0.7, top-k 40, penalty 1.0.
+The demo offers 64, 128, or 256 new tokens. Its optional sentence-end display
+uses terminal punctuation as a heuristic and retains the full raw output.
+Abbreviations can affect this heuristic; an output with no detected ending
+is shown in full. Saved research samples remain unchanged.</p></main></html>

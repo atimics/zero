@@ -26,21 +26,37 @@ def create(config, seed=7):
     return Zero(header,arrays)
 
 @torch.no_grad()
-def sample(model, tokenizer, prompt, count=128, seed=7, return_tokens=False, repetition_penalty=1.0):
+def sample(model, tokenizer, prompt, count=128, seed=7, return_tokens=False, repetition_penalty=1.0, temperature=0.7, top_k=40, use_cache=False):
     if repetition_penalty < 1.0:
         raise ValueError("repetition_penalty must be at least 1")
+    if not math.isfinite(temperature) or temperature <= 0 or not 1 <= top_k <= model.vocab:
+        raise ValueError("Use a positive temperature and valid top_k")
     model.eval(); device=next(model.parameters()).device
     generator=torch.Generator(device=device).manual_seed(seed)
     ids=tokenizer.encode(prompt).ids
+    if not ids:
+        raise ValueError("Prompt must encode at least one token")
+    cache = None
     for _ in range(count):
-        x=torch.tensor([ids[-model.context:]],device=device)
-        scores=model(x)[0,-1].float()
+        if use_cache:
+            # Sliding the window changes all hidden states. Rebuild to preserve
+            # the original sampler's reset-position behavior at the boundary.
+            if cache is None or cache[0][0].shape[2] >= model.context:
+                x = torch.tensor([ids[-model.context:]], device=device)
+                logits, cache = model.forward_cached(x)
+            else:
+                x = torch.tensor([[ids[-1]]], device=device)
+                logits, cache = model.forward_cached(x, cache)
+            scores = logits[0, -1].float()
+        else:
+            x=torch.tensor([ids[-model.context:]],device=device)
+            scores=model(x)[0,-1].float()
         # Match the C sampler: divide recent-token probability by the penalty
         # before temperature and top-k; each of the last 64 tokens counts once.
         if repetition_penalty != 1.0:
             scores[list(set(ids[-64:]))] -= math.log(repetition_penalty)
-        scores=scores/.7
-        values,indices=scores.topk(40)
+        scores=scores/temperature
+        values,indices=scores.topk(top_k)
         token=indices[torch.multinomial(values.softmax(-1),1,generator=generator)].item();ids.append(token)
     text=tokenizer.decode(ids)
     return (text,ids) if return_tokens else text

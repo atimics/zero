@@ -30,11 +30,11 @@ class Zero(nn.Module):
         self.register_buffer("rope_cos", angles.cos(), persistent=False)
         self.register_buffer("rope_sin", angles.sin(), persistent=False)
 
-    def rotate(self, value):
+    def rotate(self, value, start=0):
         b, t, _ = value.shape
         value = value.reshape(b, t, self.heads, -1).transpose(1, 2)
         even, odd = value[..., 0::2], value[..., 1::2]
-        c, s = self.rope_cos[:t].to(even.dtype), self.rope_sin[:t].to(even.dtype)
+        c, s = self.rope_cos[start:start+t].to(even.dtype), self.rope_sin[start:start+t].to(even.dtype)
         return torch.stack((even * c - odd * s, even * s + odd * c), dim=-1).flatten(-2)
 
     @staticmethod
@@ -54,6 +54,38 @@ class Zero(nn.Module):
             hidden = F.gelu(F.linear(self.norm(value, n2), w1), approximate="tanh")
             value = value + F.dropout(F.linear(hidden, w2), dropout, self.training)
         return F.linear(self.norm(value, self.weights[-1]), self.weights[0])
+
+
+    @torch.no_grad()
+    def forward_cached(self, tokens, cache=None):
+        """Append a chunk within one fixed context; return final logits and K/V."""
+        if self.training:
+            raise ValueError("Cached inference requires eval mode")
+        start = 0 if cache is None else cache[0][0].shape[2]
+        if tokens.shape[1] < 1 or start + tokens.shape[1] > self.context:
+            raise ValueError("Rebuild the cache when the context window shifts")
+        value = F.embedding(tokens, self.weights[0])
+        updated = []
+        for layer, offset in enumerate(range(1, len(self.weights) - 1, 8)):
+            n1, wq, wk, wv, wo, n2, w1, w2 = self.weights[offset:offset + 8]
+            normalized = self.norm(value, n1)
+            q = self.rotate(F.linear(normalized, wq), start)
+            k = self.rotate(F.linear(normalized, wk), start)
+            v = F.linear(normalized, wv).reshape(*tokens.shape, self.heads, -1).transpose(1, 2)
+            if cache is not None:
+                old_k, old_v = cache[layer]
+                k, v = torch.cat((old_k, k), dim=2), torch.cat((old_v, v), dim=2)
+            updated.append((k, v))
+            # A chunk after a cached prefix needs a shifted causal mask.
+            mask = None
+            if start and tokens.shape[1] > 1:
+                mask = torch.arange(k.shape[2], device=tokens.device)[None, :] <= (start + torch.arange(tokens.shape[1], device=tokens.device)[:, None])
+            attention = F.scaled_dot_product_attention(q, k, v, attn_mask=mask, is_causal=(start == 0))
+            attention = attention.transpose(1, 2).reshape(*tokens.shape, self.dim)
+            value = value + F.linear(attention, wo)
+            value = value + F.linear(F.gelu(F.linear(self.norm(value, n2), w1), approximate="tanh"), w2)
+        logits = F.linear(self.norm(value[:, -1:], self.weights[-1]), self.weights[0])
+        return logits, updated
 
 
 def load(path):
