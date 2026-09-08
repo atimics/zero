@@ -1,0 +1,15 @@
+{
+  "release_id": "zero-gutenberg-v1-0d9254dd6a65",
+  "independent_output_directories": 2,
+  "source_preparations": 2,
+  "braid_builds": 2,
+  "matching_files": {
+    "train.txt": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01",
+    "validation.txt": "c0ff504809a9d6d2c8c616c78719e7ca9d5519229ccf6cbfa310ac9e7fda93e9",
+    "test.txt": "8a9bba5c55a483ca68d10b5990cd03b31229a8662eafb42a9c0fd399e8827a58",
+    "train.jsonl": "0e1185512424486b2f6bb676fd7804d46b818b09b5a18a8f1d9487766f440bde",
+    "validation.jsonl": "d9baf10f1809cd978a1ecad20f6f35cc7c2945fce37a21e72ddc01fdd8aeaaf5",
+    "test.jsonl": "0490faa23f5e89dcd2d2f6984e7443647bf88f6cb48facd3534c3d14beb52d09",
+    "summary.json": "09ce859fda4a7c7b726188e7b8e6a9373bf35b2e96aeea203d236fd13a85d894"
+  }
+}

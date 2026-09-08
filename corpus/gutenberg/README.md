@@ -15,7 +15,9 @@ The completed release is `zero-gutenberg-v1-0d9254dd6a65`:
 
 Braid retained 4,571 chunks. It rejected three near duplicates and two short
 chunks. All release gates and the output checks passed. The source list records
-one excluded book whose mirror URL returned HTTP 404.
+one excluded book whose mirror URL returned HTTP 404. Two full builds in separate
+output directories produced the same Braid release ID and identical hashes for
+all seven ready files; `repeatability.json` records that comparison.
 
 ## Files
 
@@ -54,7 +56,8 @@ Permission guide: <https://www.gutenberg.org/policy/permission.html>
 
 ## Build
 
-Use Python 3.10+, Node 22+, Git, and pnpm 10.19.0. Prepare Braid at this commit:
+Use Python 3.10+, Node 22+, Git, and pnpm 10.19.0. The tests also use a C
+compiler with AddressSanitizer and UndefinedBehaviorSanitizer. Prepare Braid at this commit:
 
 ```sh
 git clone https://github.com/cenetex/braid.git /tmp/braid-zero
@@ -115,3 +118,14 @@ python3 -m unittest discover -s tests -p test_gutenberg_corpus.py
 The small tests cover wrapper removal, ASCII conversion, incomplete downloads,
 rights notices, fixed splits, and changed source bytes. The full build also runs
 Braid's release verification before writing its summary.
+
+## Trainer compatibility
+
+The full 85,944,815-character training file passed a one-update smoke test with
+AddressSanitizer and UndefinedBehaviorSanitizer. The test uses a 2,648-parameter
+diagnostic model to check file loading and one training step. The corpus build
+also fixes a loader buffer overflow exposed by files larger than 32 KiB. The
+regression test reads several buffer lengths and checks the total token count.
+
+The eight focused tests, Braid's four tests, and `make check` passed locally.
+The existing showcase checkpoint remains the model reviewed in PR 22.

@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -11,6 +12,22 @@ spec.loader.exec_module(corpus)
 
 
 class CorpusTests(unittest.TestCase):
+    def test_trainer_reads_multiple_byte_buffers(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            executable = root / "literary_lm"
+            subprocess.run(["cc", "-O1", "-std=c11", "-fsanitize=address,undefined",
+                            str(corpus.ROOT / "literary_lm.c"), "-o", str(executable), "-lm"], check=True)
+            text = "A small boat crossed the lake.\n" * 4000
+            data = root / "corpus.txt"
+            data.write_text(text)
+            result = subprocess.run([str(executable), "--text", str(data), "--context", "8",
+                "--dim", "8", "--heads", "2", "--layers", "1", "--ff", "16",
+                "--steps", "1", "--batch", "1", "--report", "1", "--validation", "1",
+                "--tokens", "0"], capture_output=True, text=True, check=True)
+            self.assertIn(f"corpus={len(text)} tokens", result.stdout)
+            self.assertNotIn("runtime error", result.stderr)
+
     def raw(self, body=None):
         body = body or ('“The boat,” said Alice, “is ready.”\n\n' * 200)
         return ("Title: Example\r\n*** START OF THE PROJECT GUTENBERG EBOOK EXAMPLE ***\r\n" +

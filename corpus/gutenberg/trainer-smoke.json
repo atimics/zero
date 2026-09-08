@@ -1,0 +1,16 @@
+{
+  "trainer_source_sha256": "dd9796f40238816ea4a9843e014b101ba33c737e96ba298c83deef26f393b56b",
+  "training_text_sha256": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01",
+  "read_characters": 85944815,
+  "diagnostic_model_parameters": 2648,
+  "updates": 1,
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "exit_code": 0,
+  "corpus_tests_passed": 8,
+  "braid_tests_passed": 4,
+  "make_check": "passed",
+  "bundle_verified": true
+}
