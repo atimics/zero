@@ -58,6 +58,28 @@ class CorpusTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 corpus.prepare(args)
 
+    def test_export_rejects_author_overlap(self):
+        first = corpus.split_for("author|story")
+        second = "test" if first != "test" else "train"
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            records = [{"metadata": {"work_group": f"author|work {i}", "split": split},
+                        "contentHash": str(i)} for i, split in enumerate([first, second])]
+            (root / "data/train.jsonl").write_text("\n".join(json.dumps(r) for r in records))
+            with self.assertRaisesRegex(ValueError, "Author occurs"):
+                corpus.export_corpus(root, root, 0)
+
+    def test_export_rejects_duplicate_chunks(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "data").mkdir()
+            record = {"metadata": {"work_group": "author|story", "split": corpus.split_for("author|story")},
+                      "contentHash": "same"}
+            (root / "data/train.jsonl").write_text(json.dumps(record) + "\n" + json.dumps(record))
+            with self.assertRaisesRegex(ValueError, "Duplicate chunk"):
+                corpus.export_corpus(root, root, 0)
+
 
 if __name__ == "__main__":
     unittest.main()

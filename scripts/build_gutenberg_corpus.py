@@ -135,16 +135,27 @@ def prepare(args):
                      "evaluation": {"minimumDocuments": 1000, "maximumRejectionRatio": 0.15},
                      "output": {"directory": "releases"}, "publication": {"target": "none"}}}
     write_json(args.output / "braid.json", spec)
+    write_json(args.output / "prepared.json", preparation_hashes(args))
     print(f"Prepared {len(books)} books, {sum(b['words'] for b in entries):,} words", flush=True)
 
 
+def preparation_hashes(args):
+    return {"builder_sha256": digest(Path(__file__).read_bytes()),
+            "sources_sha256": digest(args.sources.read_bytes()),
+            "source_lock_sha256": digest(args.lock.read_bytes()),
+            "braid_spec_sha256": digest((args.output / "braid.json").read_bytes())}
+
+
 def compile_corpus(args):
+    if json.loads((args.output / "prepared.json").read_text()) != preparation_hashes(args):
+        raise ValueError("Prepared corpus differs from current inputs; run prepare again")
     actual = subprocess.check_output(["git", "-C", str(args.braid), "rev-parse", "HEAD"], text=True).strip()
     if actual != BRAID_COMMIT:
         raise ValueError(f"Braid must be at {BRAID_COMMIT}")
     dirty = subprocess.check_output(["git", "-C", str(args.braid), "status", "--porcelain", "--untracked-files=no"], text=True)
     if dirty.strip():
         raise ValueError("Braid has modified tracked files")
+    subprocess.run(["corepack", "pnpm", "build"], cwd=args.braid, check=True)
     cli = args.braid / "dist" / "cli.js"
     subprocess.run(["node", str(cli), "build", str(args.output / "braid.json")], check=True)
     manifests = list((args.output / "releases").glob("zero-gutenberg/v1/*/release.json"))
@@ -152,10 +163,14 @@ def compile_corpus(args):
         raise ValueError("Use an output directory with exactly one Braid release")
     release = manifests[0].parent
     subprocess.run(["node", str(cli), "verify", str(release)], check=True)
-    export_corpus(args.output, release, args.minimum_train_words)
+    export_corpus(args.output, release, args.minimum_train_words, {
+        "builder_sha256": digest(Path(__file__).read_bytes()),
+        "sources_sha256": digest(args.sources.read_bytes()),
+        "source_lock_sha256": digest(args.lock.read_bytes()),
+    })
 
 
-def export_corpus(output, release, minimum_train_words):
+def export_corpus(output, release, minimum_train_words, inputs=None):
     records = [json.loads(line) for line in (release / "data/train.jsonl").read_text().splitlines()]
     split_records = {split: [] for split in ["train", "validation", "test"]}
     membership, author_membership, seen_hashes = {}, {}, set()
@@ -178,7 +193,7 @@ def export_corpus(output, release, minimum_train_words):
         split_records[split].append(record)
     summary = {"version": 1, "seed": SEED, "braid_commit": BRAID_COMMIT,
                "release_id": json.loads((release / "release.json").read_text())["releaseId"],
-               "split_unit": "author", "splits": {}}
+               "split_unit": "author", "inputs": inputs or {}, "splits": {}}
     ready = output / "ready"
     ready.mkdir(exist_ok=True)
     for split, items in split_records.items():
