@@ -136,8 +136,8 @@ would require comparison to source passages and an appropriate baseline.
 
 These models often produce plausible short phrases followed by repetitions,
 contradictions, malformed words, shifts of speaker, and loss of scene. The
-current evidence supports a small held-out prediction improvement from longer
-context, while coherence remains an open evaluation question.
+current evidence records a one-seed held-out score difference. Training-seed
+replication is pending, and coherence remains an open evaluation question.
 
 ## Intended use and data limits
 
