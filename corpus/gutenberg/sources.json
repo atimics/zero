@@ -2253,5 +2253,6 @@
       "catalog_url": "https://www.gutenberg.org/ebooks/15859",
       "url": "https://gutenberg.pglaf.org/cache/epub/15859/pg15859.txt"
     }
-  ]
+  ],
+  "catalog_sha256": "be459dc13eb58142320b7ba5fc2fb86c0ff0a761844a530c4d054bf7b26674d8"
 }
