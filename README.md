@@ -1,4 +1,4 @@
-# Zero-grounded language models in C
+# ZERO: small language-model experiments
 
 Explore the [Gutenberg subword model card](docs/subword/MODEL_CARD.md) and
 [comparison demo](docs/subword/index.html). Run `python scripts/serve_subword_demo.py`
