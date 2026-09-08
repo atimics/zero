@@ -67,6 +67,30 @@ selection history. The test split is scored after checkpoint selection.
 The experiments use one training seed and one held-out test author. The scores
 have no reported confidence interval or multi-seed training replication.
 
+## Replication and conditional window analysis
+
+A CPU FP32 rescore saved all 1,024 window losses for each split. A paired
+20,000-draw bootstrap gives long-minus-short test bits/byte -0.004859, with
+95% window interval [-0.007108, -0.002611]; the long model wins 560 windows.
+Validation gives -0.001960 with interval [-0.004273, 0.000355]. These intervals
+are conditional on the trained weights and treat sampled windows as exchangeable.
+Within-book correlation, training-seed variance and new-author variance remain
+outside their scope. The original CUDA BF16 test gap was -0.004762.
+
+Five paired training seeds are registered: 7, 11, 19, 31 and 43. Primary analysis
+uses paired seed differences with a 95% t interval. Shelley and Stoker supply
+additional test authors; selection remains on the original validation split.
+The registered practical-equivalence band is ±0.01 bits/byte. Full protocol,
+raw window records, and operational bounds are in the repository directory
+`experiments/subword-replication/`. The running study also includes a matched
+width/depth/context trade and one exploratory prefix-space variant.
+
+The proposed unusual word-initial token measure flagged zero cases across the
+96 CPU samples. It currently supplies no improvement signal. A conservative
+unique-book name index found mixed source names in one passage. These are
+narrow diagnostics, with coverage and false-positive limits, rather than an
+established coherence score.
+
 ## Data and architecture
 
 - Corpus: ZERO Gutenberg release `zero-gutenberg-v1-0d9254dd6a65`.
@@ -124,7 +148,7 @@ prose dominates the data; performance on contemporary text, other languages,
 instruction following, factual questions, and long narrative consistency has
 limited evidence. Inspect generated passages before reuse.
 
-The model weights are released under the MIT License (`models/LICENSE`). Corpus
+The model weights in this branch are released under the [MIT License](WEIGHTS_LICENSE.txt). Corpus
 provenance and source records are in `corpus/gutenberg/` in the repository.
 
 ## Files and local demo
