@@ -61,9 +61,9 @@ def main():
     (args.output / "user-data.sh").write_text(script)
     manifest = {"package_sha256": sha, "package_bytes": package.stat().st_size, "files": hashes,
                 "bucket": "zero-training-022118847419", "source_key": key, "result_prefix": prefix,
-                "deadline": deadline, "maximum_instance_seconds": 7200,
+                "deadline": deadline, "maximum_instance_seconds": 43200,
                 "instance_type": "g5.xlarge", "hourly_ec2_usd": 1.006,
-                "two_hour_ec2_usd": 2.012, "root_volume_gib": 75, "requested_total_budget_usd": 3,
+                "twelve_hour_ec2_usd": 12.072, "root_volume_gib": 75, "requested_total_budget_usd": 14,
                 "user_data_sha256": hashlib.sha256(script.encode()).hexdigest(),
                 "request_sha256": hashlib.sha256(request_text.encode()).hexdigest()}
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
