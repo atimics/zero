@@ -1,0 +1,2261 @@
+{
+  "version": 1,
+  "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+  "selection": "First eight eligible catalog IDs per listed author; English fiction; single named contributor; unique normalized title; collected editions excluded.",
+  "books": [
+    {
+      "id": 105,
+      "title": "Persuasion",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Psychological fiction; Young women -- Fiction; Motherless families -- Fiction; Rejection (Psychology) -- Fiction; First loves -- Fiction; Dysfunctional families -- Fiction; Ship captains -- Fiction; Love stories; Regency fiction",
+      "work_group": "Austen, Jane|persuasion",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/105",
+      "url": "https://gutenberg.pglaf.org/cache/epub/105/pg105.txt"
+    },
+    {
+      "id": 98,
+      "title": "A Tale of Two Cities",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "Historical fiction; France -- History -- Revolution, 1789-1799 -- Fiction; London (England) -- History -- 18th century -- Fiction; War stories; Executions and executioners -- Fiction; French -- England -- London -- Fiction; Lookalikes -- Fiction; British -- France -- Paris -- Fiction; Paris (France) -- History -- 1789-1799 -- Fiction",
+      "work_group": "Dickens, Charles|a tale of two cities",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/98",
+      "url": "https://gutenberg.pglaf.org/cache/epub/98/pg98.txt"
+    },
+    {
+      "id": 74,
+      "title": "The Adventures of Tom Sawyer, Complete",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Humorous stories; Bildungsromans; Boys -- Fiction; Male friendship -- Fiction; Adventure stories; Missouri -- Fiction; Sawyer, Tom (Fictitious character) -- Fiction; Child witnesses -- Fiction; Runaway children -- Fiction; Mississippi River Valley -- Fiction",
+      "work_group": "Twain, Mark|the adventures of tom sawyer complete",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/74",
+      "url": "https://gutenberg.pglaf.org/cache/epub/74/pg74.txt"
+    },
+    {
+      "id": 108,
+      "title": "The Return of Sherlock Holmes",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Holmes, Sherlock (Fictitious character) -- Fiction; Private investigators -- England -- Fiction; Detective and mystery stories, English",
+      "work_group": "Doyle, Arthur Conan|the return of sherlock holmes",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/108",
+      "url": "https://gutenberg.pglaf.org/cache/epub/108/pg108.txt"
+    },
+    {
+      "id": 42,
+      "title": "The strange case of Dr. Jekyll and Mr. Hyde",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Science fiction; Horror tales; London (England) -- Fiction; Physicians -- Fiction; Psychological fiction; Self-experimentation in medicine -- Fiction; Multiple personality -- Fiction",
+      "work_group": "Stevenson, Robert Louis|the strange case of dr jekyll and mr hyde",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/42",
+      "url": "https://gutenberg.pglaf.org/cache/epub/42/pg42.txt"
+    },
+    {
+      "id": 163,
+      "title": "Flower Fables",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Short stories; Children's stories, American; Fairy tales -- United States; Flowers -- Juvenile fiction; Flowers -- Juvenile poetry; Fairies -- Juvenile poetry",
+      "work_group": "Alcott, Louisa May|flower fables",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/163",
+      "url": "https://gutenberg.pglaf.org/cache/epub/163/pg163.txt"
+    },
+    {
+      "id": 55,
+      "title": "The Wonderful Wizard of Oz",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Courage -- Juvenile fiction; Home -- Juvenile fiction; Good and evil -- Juvenile fiction; Dreams -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Cowardly Lion (Fictitious character) -- Juvenile fiction; Cyclones -- Juvenile fiction; Scarecrow (Fictitious character from Baum) -- Juvenile fiction; Toto (Fictitious character) -- Juvenile fiction; Witches -- Juvenile fiction; Wizard of Oz (Fictitious character) -- Juvenile fiction; Tin Woodman (Fictitious character) -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the wonderful wizard of oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/55",
+      "url": "https://gutenberg.pglaf.org/cache/epub/55/pg55.txt"
+    },
+    {
+      "id": 113,
+      "title": "The Secret Garden",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Orphans -- Juvenile fiction; People with disabilities -- Juvenile fiction; Gardens -- Juvenile fiction; Yorkshire (England) -- Juvenile fiction",
+      "work_group": "Burnett, Frances Hodgson|the secret garden",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/113",
+      "url": "https://gutenberg.pglaf.org/cache/epub/113/pg113.txt"
+    },
+    {
+      "id": 770,
+      "title": "The Story of the Treasure Seekers\nBeing the Adventures of the Bastable Children in Search of a Fortune",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Siblings -- Fiction; Family life -- England -- Fiction; Imagination -- Fiction; Moneymaking projects -- Fiction; Great Britain -- History -- 19th century -- Fiction",
+      "work_group": "Nesbit, E.|the story of the treasure seekers",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/770",
+      "url": "https://gutenberg.pglaf.org/cache/epub/770/pg770.txt"
+    },
+    {
+      "id": 11,
+      "title": "Alice's Adventures in Wonderland",
+      "author": "Carroll, Lewis, 1832-1898",
+      "subjects": "Fantasy fiction; Children's stories; Imaginary places -- Juvenile fiction; Alice (Fictitious character from Carroll) -- Juvenile fiction",
+      "work_group": "Carroll, Lewis|alice s adventures in wonderland",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/11",
+      "url": "https://gutenberg.pglaf.org/cache/epub/11/pg11.txt"
+    },
+    {
+      "id": 225,
+      "title": "At the Back of the North Wind",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fairy tales",
+      "work_group": "MacDonald, George|at the back of the north wind",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/225",
+      "url": "https://gutenberg.pglaf.org/cache/epub/225/pg225.txt"
+    },
+    {
+      "id": 236,
+      "title": "The Jungle Book",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Short stories; Animals -- Fiction; Jungles -- Fiction; India -- Fiction; Jungle animals -- Fiction; Mowgli (Fictitious character) -- Fiction; Adventure stories, English; Feral children -- Fiction; India -- History -- 19th century -- Fiction",
+      "work_group": "Kipling, Rudyard|the jungle book",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/236",
+      "url": "https://gutenberg.pglaf.org/cache/epub/236/pg236.txt"
+    },
+    {
+      "id": 215,
+      "title": "The call of the wild",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Dogs -- Fiction; Adventure stories; Nature stories; Klondike River Valley (Yukon) -- Fiction; Sled dogs -- Fiction; Pet theft -- Fiction; Feral dogs -- Fiction; Animal welfare -- Fiction",
+      "work_group": "London, Jack|the call of the wild",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/215",
+      "url": "https://gutenberg.pglaf.org/cache/epub/215/pg215.txt"
+    },
+    {
+      "id": 35,
+      "title": "The Time Machine",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; Time travel -- Fiction; Dystopias -- Fiction",
+      "work_group": "Wells, H. G.|the time machine",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/35",
+      "url": "https://gutenberg.pglaf.org/cache/epub/35/pg35.txt"
+    },
+    {
+      "id": 82,
+      "title": "Ivanhoe: A Romance",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Knights and knighthood -- Fiction; Love stories; Triangles (Interpersonal relations) -- Fiction; Great Britain -- History -- Richard I, 1189-1199 -- Fiction; Jews -- England -- Fiction; Ivanhoe, Wilfred of, Sir (Fictitious character) -- Fiction; Anglo-Saxons -- Fiction; Normans -- Great Britain -- Fiction",
+      "work_group": "Scott, Walter|ivanhoe a romance",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/82",
+      "url": "https://gutenberg.pglaf.org/cache/epub/82/pg82.txt"
+    },
+    {
+      "id": 2153,
+      "title": "Mary Barton",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "Love stories; Domestic fiction; Fathers and daughters -- Fiction; Poor families -- Fiction; Political fiction; Triangles (Interpersonal relations) -- Fiction; Trials (Murder) -- Fiction; Working class women -- Fiction; Textile industry -- Fiction; Labor unions -- Fiction; Manchester (England) -- Fiction",
+      "work_group": "Gaskell, Elizabeth|mary barton",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2153",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2153/pg2153.txt"
+    },
+    {
+      "id": 145,
+      "title": "Middlemarch",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "Didactic fiction; City and town life -- Fiction; England -- Fiction; Young women -- Fiction; Love stories; Domestic fiction; Married people -- Fiction; Bildungsromans",
+      "work_group": "Eliot, George|middlemarch",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/145",
+      "url": "https://gutenberg.pglaf.org/cache/epub/145/pg145.txt"
+    },
+    {
+      "id": 599,
+      "title": "Vanity Fair",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "Satire; England -- Fiction; Married women -- Fiction; Female friendship -- Fiction; Social classes -- Fiction; British -- Europe -- Fiction; Waterloo, Battle of, Waterloo, Belgium, 1815 -- Fiction",
+      "work_group": "Thackeray, William Makepeace|vanity fair",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/599",
+      "url": "https://gutenberg.pglaf.org/cache/epub/599/pg599.txt"
+    },
+    {
+      "id": 619,
+      "title": "The Warden",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "Satire; Domestic fiction; Clergy -- Fiction; Barsetshire (England : Imaginary place) -- Fiction; Almshouses -- Fiction",
+      "work_group": "Trollope, Anthony|the warden",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/619",
+      "url": "https://gutenberg.pglaf.org/cache/epub/619/pg619.txt"
+    },
+    {
+      "id": 27,
+      "title": "Far from the Madding Crowd",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Didactic fiction; Love stories; Triangles (Interpersonal relations) -- Fiction; Pastoral fiction; Farm life -- Fiction; Women farmers -- Fiction; Wessex (England) -- Fiction",
+      "work_group": "Hardy, Thomas|far from the madding crowd",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/27",
+      "url": "https://gutenberg.pglaf.org/cache/epub/27/pg27.txt"
+    },
+    {
+      "id": 219,
+      "title": "Heart of Darkness",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Africa -- Fiction; Europeans -- Africa -- Fiction; Trading posts -- Fiction; Degeneration -- Fiction; Imperialism -- Fiction; Psychological fiction",
+      "work_group": "Conrad, Joseph|heart of darkness",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/219",
+      "url": "https://gutenberg.pglaf.org/cache/epub/219/pg219.txt"
+    },
+    {
+      "id": 176,
+      "title": "Roderick Hudson",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Man-woman relationships -- Fiction; Rome (Italy) -- Fiction; Americans -- Italy -- Fiction; Sculptors -- Fiction",
+      "work_group": "James, Henry|roderick hudson",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/176",
+      "url": "https://gutenberg.pglaf.org/cache/epub/176/pg176.txt"
+    },
+    {
+      "id": 33,
+      "title": "The Scarlet Letter",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Adultery -- Fiction; Historical fiction; Revenge -- Fiction; Psychological fiction; Married women -- Fiction; Clergy -- Fiction; Triangles (Interpersonal relations) -- Fiction; Illegitimate children -- Fiction; Women immigrants -- Fiction; Puritans -- Fiction; Boston (Mass.) -- History -- Colonial period, ca. 1600-1775 -- Fiction",
+      "work_group": "Hawthorne, Nathaniel|the scarlet letter",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/33",
+      "url": "https://gutenberg.pglaf.org/cache/epub/33/pg33.txt"
+    },
+    {
+      "id": 940,
+      "title": "The Last of the Mohicans; A narrative of 1757",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Historical fiction; War stories; United States -- History -- French and Indian War, 1754-1763 -- Fiction; Adventure stories; Frontier and pioneer life -- Fiction; Bumppo, Natty (Fictitious character) -- Fiction; Mohegan Indians -- Fiction",
+      "work_group": "Cooper, James Fenimore|the last of the mohicans a narrative of 1757",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/940",
+      "url": "https://gutenberg.pglaf.org/cache/epub/940/pg940.txt"
+    },
+    {
+      "id": 41,
+      "title": "The Legend of Sleepy Hollow",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Ghosts -- Fiction; New York (State) -- History -- 1775-1865 -- Fiction",
+      "work_group": "Irving, Washington|the legend of sleepy hollow",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/41",
+      "url": "https://gutenberg.pglaf.org/cache/epub/41/pg41.txt"
+    },
+    {
+      "id": 1018,
+      "title": "The Water-Babies",
+      "author": "Kingsley, Charles, 1819-1875",
+      "subjects": "Chimney sweeps -- Juvenile fiction; Fairy tales -- England",
+      "work_group": "Kingsley, Charles|the water babies",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1018",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1018/pg1018.txt"
+    },
+    {
+      "id": 840,
+      "title": "Lorna Doone: A Romance of Exmoor",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "Historical fiction; Monmouth's Rebellion, 1685 -- Fiction; Love stories; Exmoor (England) -- Fiction",
+      "work_group": "Blackmore, R. D.|lorna doone a romance of exmoor",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/840",
+      "url": "https://gutenberg.pglaf.org/cache/epub/840/pg840.txt"
+    },
+    {
+      "id": 370,
+      "title": "The Fortunes and Misfortunes of the Famous Moll Flanders",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "London (England) -- Fiction; Picaresque literature; Adventure stories; Criminals -- Fiction; Prostitutes -- Fiction; Children of prisoners -- Fiction; British -- Virginia -- Fiction; Women -- England -- Fiction; Repentance -- Fiction; Virginia -- Fiction",
+      "work_group": "Defoe, Daniel|the fortunes and misfortunes of the famous moll flanders",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/370",
+      "url": "https://gutenberg.pglaf.org/cache/epub/370/pg370.txt"
+    },
+    {
+      "id": 15,
+      "title": "Moby-Dick; or, The Whale",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Whaling -- Fiction; Sea stories; Psychological fiction; Ship captains -- Fiction; Adventure stories; Mentally ill -- Fiction; Ahab, Captain (Fictitious character) -- Fiction; Whales -- Fiction; Whaling ships -- Fiction",
+      "work_group": "Melville, Herman|moby dick or the whale",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/15",
+      "url": "https://gutenberg.pglaf.org/cache/epub/15/pg15.txt"
+    },
+    {
+      "id": 121,
+      "title": "Northanger Abbey",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Satire; England -- Fiction; Young women -- Fiction; Love stories; Gothic fiction; Horror tales -- Appreciation -- Fiction; Books and reading -- Fiction; Gentry -- England -- Fiction; Marriage -- Economic aspects -- Fiction",
+      "work_group": "Austen, Jane|northanger abbey",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/121",
+      "url": "https://gutenberg.pglaf.org/cache/epub/121/pg121.txt"
+    },
+    {
+      "id": 564,
+      "title": "The Mystery of Edwin Drood",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "England -- Fiction; Psychological fiction; Triangles (Interpersonal relations) -- Fiction; Cathedrals -- Fiction; Missing persons -- Fiction; Choral conductors -- Fiction; Separation (Psychology) -- Fiction; Mystery fiction",
+      "work_group": "Dickens, Charles|the mystery of edwin drood",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/564",
+      "url": "https://gutenberg.pglaf.org/cache/epub/564/pg564.txt"
+    },
+    {
+      "id": 86,
+      "title": "A Connecticut Yankee in King Arthur's Court",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Fantasy fiction; Satire; Knights and knighthood -- Fiction; Arthurian romances -- Adaptations; Time travel -- Fiction; Americans -- Great Britain -- Fiction; Kings and rulers -- Fiction; Britons -- Fiction",
+      "work_group": "Twain, Mark|a connecticut yankee in king arthur s court",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/86",
+      "url": "https://gutenberg.pglaf.org/cache/epub/86/pg86.txt"
+    },
+    {
+      "id": 126,
+      "title": "The Poison Belt",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Science fiction; Challenger, Professor (Fictitious character) -- Fiction",
+      "work_group": "Doyle, Arthur Conan|the poison belt",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/126",
+      "url": "https://gutenberg.pglaf.org/cache/epub/126/pg126.txt"
+    },
+    {
+      "id": 322,
+      "title": "St. Ives: Being the Adventures of a French Prisoner in England",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Prisoners of war -- Fiction; French -- England -- Fiction",
+      "work_group": "Stevenson, Robert Louis|st ives being the adventures of a french prisoner in england",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/322",
+      "url": "https://gutenberg.pglaf.org/cache/epub/322/pg322.txt"
+    },
+    {
+      "id": 514,
+      "title": "Little Women",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Autobiographical fiction; Young women -- Fiction; Sisters -- Fiction; Domestic fiction; Family life -- New England -- Fiction; New England -- Fiction; Bildungsromans; Mothers and daughters -- Fiction; March family (Fictitious characters) -- Fiction",
+      "work_group": "Alcott, Louisa May|little women",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/514",
+      "url": "https://gutenberg.pglaf.org/cache/epub/514/pg514.txt"
+    },
+    {
+      "id": 419,
+      "title": "The Magic of Oz",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Islands -- Juvenile fiction; Friendship -- Juvenile fiction; Revenge -- Juvenile fiction; Birthdays -- Juvenile fiction; Rescues -- Juvenile fiction; Magic -- Juvenile fiction; Cats -- Juvenile fiction; Princesses -- Juvenile fiction; Kings and rulers -- Juvenile fiction; Courage -- Juvenile fiction; Animals, Mythical -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Princess Ozma (Fictitious character) -- Juvenile fiction; Cowardly Lion (Fictitious character) -- Juvenile fiction; Wizard of Oz (Fictitious character) -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the magic of oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/419",
+      "url": "https://gutenberg.pglaf.org/cache/epub/419/pg419.txt"
+    },
+    {
+      "id": 137,
+      "title": "Sara Crewe; Or, What Happened at Miss Minchin's Boarding School",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Orphans -- Juvenile fiction; Schools -- Juvenile fiction; Boarding schools -- Juvenile fiction; Girls -- Juvenile fiction; London (England) -- Juvenile fiction",
+      "work_group": "Burnett, Frances Hodgson|sara crewe or what happened at miss minchin s boarding school",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/137",
+      "url": "https://gutenberg.pglaf.org/cache/epub/137/pg137.txt"
+    },
+    {
+      "id": 778,
+      "title": "Five Children and It",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Siblings -- Fiction; Wishes -- Fiction; Fairies -- Fiction; Great Britain -- History -- Edward VII, 1901-1910 -- Fiction",
+      "work_group": "Nesbit, E.|five children and it",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/778",
+      "url": "https://gutenberg.pglaf.org/cache/epub/778/pg778.txt"
+    },
+    {
+      "id": 12,
+      "title": "Through the Looking-Glass",
+      "author": "Carroll, Lewis, 1832-1898",
+      "subjects": "Fantasy fiction; Children's stories; Imaginary places -- Juvenile fiction; Alice (Fictitious character from Carroll) -- Juvenile fiction",
+      "work_group": "Carroll, Lewis|through the looking glass",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/12",
+      "url": "https://gutenberg.pglaf.org/cache/epub/12/pg12.txt"
+    },
+    {
+      "id": 325,
+      "title": "Phantastes: A Faerie Romance for Men and Women",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fantasy fiction",
+      "work_group": "MacDonald, George|phantastes a faerie romance for men and women",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/325",
+      "url": "https://gutenberg.pglaf.org/cache/epub/325/pg325.txt"
+    },
+    {
+      "id": 556,
+      "title": "Rewards and Fairies",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Fantasy literature; Fairies -- Juvenile fiction; Siblings -- Juvenile fiction; Short stories, English",
+      "work_group": "Kipling, Rudyard|rewards and fairies",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/556",
+      "url": "https://gutenberg.pglaf.org/cache/epub/556/pg556.txt"
+    },
+    {
+      "id": 310,
+      "title": "Before Adam",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Fantasy fiction; Prehistoric peoples -- Fiction; Dreams -- Fiction",
+      "work_group": "London, Jack|before adam",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/310",
+      "url": "https://gutenberg.pglaf.org/cache/epub/310/pg310.txt"
+    },
+    {
+      "id": 36,
+      "title": "The war of the worlds",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; War stories; Martians -- Fiction; Mars (Planet) -- Fiction; Space warfare -- Fiction; Imaginary wars and battles -- Fiction; Life on other planets -- Fiction",
+      "work_group": "Wells, H. G.|the war of the worlds",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/36",
+      "url": "https://gutenberg.pglaf.org/cache/epub/36/pg36.txt"
+    },
+    {
+      "id": 471,
+      "title": "The Bride of Lammermoor",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Psychological fiction; Love stories; Scotland -- Fiction; Women murderers -- Fiction; Arranged marriage -- Fiction",
+      "work_group": "Scott, Walter|the bride of lammermoor",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/471",
+      "url": "https://gutenberg.pglaf.org/cache/epub/471/pg471.txt"
+    },
+    {
+      "id": 2521,
+      "title": "Lizzie Leigh",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|lizzie leigh",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2521",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2521/pg2521.txt"
+    },
+    {
+      "id": 507,
+      "title": "Adam Bede",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "Didactic fiction; England -- Fiction; Love stories; Triangles (Interpersonal relations) -- Fiction; Illegitimate children -- Fiction; Women clergy -- Fiction; Infanticide -- Fiction; Carpenters -- Fiction",
+      "work_group": "Eliot, George|adam bede",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/507",
+      "url": "https://gutenberg.pglaf.org/cache/epub/507/pg507.txt"
+    },
+    {
+      "id": 897,
+      "title": "The Rose and the Ring",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "Fairy tales; Children's stories",
+      "work_group": "Thackeray, William Makepeace|the rose and the ring",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/897",
+      "url": "https://gutenberg.pglaf.org/cache/epub/897/pg897.txt"
+    },
+    {
+      "id": 2158,
+      "title": "The Prime Minister",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "London (England) -- Fiction; Political fiction; Palliser, Plantagenet (Fictitious character) -- Fiction; Prime ministers -- Fiction",
+      "work_group": "Trollope, Anthony|the prime minister",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2158",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2158/pg2158.txt"
+    },
+    {
+      "id": 110,
+      "title": "Tess of the d'Urbervilles: A Pure Woman",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Didactic fiction; Poor families -- Fiction; Children of the rich -- Fiction; Triangles (Interpersonal relations) -- Fiction; Pastoral fiction; Children of clergy -- Fiction; Wessex (England) -- Fiction; Man-woman relationships -- Fiction; Women murderers -- Fiction; Rape victims -- Fiction; Women household employees -- Fiction",
+      "work_group": "Hardy, Thomas|tess of the d urbervilles a pure woman",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/110",
+      "url": "https://gutenberg.pglaf.org/cache/epub/110/pg110.txt"
+    },
+    {
+      "id": 220,
+      "title": "The Secret Sharer",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Sea stories; Psychological fiction; Ship captains -- Fiction; Fugitives from justice -- Fiction",
+      "work_group": "Conrad, Joseph|the secret sharer",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/220",
+      "url": "https://gutenberg.pglaf.org/cache/epub/220/pg220.txt"
+    },
+    {
+      "id": 177,
+      "title": "The American",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Psychological fiction; Love stories; Widows -- Fiction; Courtship -- Fiction; Paris (France) -- Fiction; Aristocracy (Social class) -- Fiction; Culture conflict -- Fiction; Separation (Psychology) -- Fiction; Americans -- France -- Fiction",
+      "work_group": "James, Henry|the american",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/177",
+      "url": "https://gutenberg.pglaf.org/cache/epub/177/pg177.txt"
+    },
+    {
+      "id": 77,
+      "title": "The House of the Seven Gables",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Historical fiction; Domestic fiction; Paranormal fiction; Haunted houses -- Fiction; Salem (Mass.) -- Fiction",
+      "work_group": "Hawthorne, Nathaniel|the house of the seven gables",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/77",
+      "url": "https://gutenberg.pglaf.org/cache/epub/77/pg77.txt"
+    },
+    {
+      "id": 1880,
+      "title": "The Pathfinder; Or, The Inland Sea",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Historical fiction; Indians of North America -- Fiction; War stories; United States -- History -- French and Indian War, 1754-1763 -- Fiction; Love stories; Frontier and pioneer life -- Fiction; Bumppo, Natty (Fictitious character) -- Fiction; Ontario, Lake (N.Y. and Ont.) -- Fiction",
+      "work_group": "Cooper, James Fenimore|the pathfinder or the inland sea",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1880",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1880/pg1880.txt"
+    },
+    {
+      "id": 877,
+      "title": "Little Britain",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Short stories; London (England) -- Fiction",
+      "work_group": "Irving, Washington|little britain",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/877",
+      "url": "https://gutenberg.pglaf.org/cache/epub/877/pg877.txt"
+    },
+    {
+      "id": 1860,
+      "title": "Westward Ho! Or, The Voyages and Adventures of Sir Amyas Leigh, Knight, of Burrough, in the County of Devon, in the Reign of Her Most Glorious Majesty Queen Elizabeth",
+      "author": "Kingsley, Charles, 1819-1875",
+      "subjects": "Great Britain -- History -- Elizabeth, 1558-1603 -- Fiction",
+      "work_group": "Kingsley, Charles|westward ho or the voyages and adventures of sir amyas leigh knight of burrough in the county of devon in the reign of her most glorious majesty queen elizabeth",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1860",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1860/pg1860.txt"
+    },
+    {
+      "id": 6824,
+      "title": "Mary Anerley: A Yorkshire Tale",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "Yorkshire (England) -- Fiction",
+      "work_group": "Blackmore, R. D.|mary anerley a yorkshire tale",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/6824",
+      "url": "https://gutenberg.pglaf.org/cache/epub/6824/pg6824.txt"
+    },
+    {
+      "id": 376,
+      "title": "A Journal of the Plague Year\nBeing Observations or Memorials of the Most Remarkable Occurrences, as Well Public as Private, Which Happened in London During the Last Great Visitation in 1665. Written by a Citizen Who Continued All the While in London",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Historical fiction; Great Fire, London, England, 1666 -- Fiction; Plague -- Fiction; London (England) -- History -- 17th century -- Fiction",
+      "work_group": "Defoe, Daniel|a journal of the plague year",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/376",
+      "url": "https://gutenberg.pglaf.org/cache/epub/376/pg376.txt"
+    },
+    {
+      "id": 2694,
+      "title": "I and My Chimney",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Family life -- Fiction",
+      "work_group": "Melville, Herman|i and my chimney",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2694",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2694/pg2694.txt"
+    },
+    {
+      "id": 141,
+      "title": "Mansfield Park",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Fiction; Young women -- Fiction; Love stories; Domestic fiction; Country homes -- Fiction; Adoptees -- Fiction; Children of the rich -- Fiction; Cousins -- Fiction; Uncles -- Fiction",
+      "work_group": "Austen, Jane|mansfield park",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/141",
+      "url": "https://gutenberg.pglaf.org/cache/epub/141/pg141.txt"
+    },
+    {
+      "id": 580,
+      "title": "The Pickwick Papers",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "Humorous stories; England -- Fiction; Men -- Societies and clubs -- Fiction; Male friendship -- Fiction",
+      "work_group": "Dickens, Charles|the pickwick papers",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/580",
+      "url": "https://gutenberg.pglaf.org/cache/epub/580/pg580.txt"
+    },
+    {
+      "id": 91,
+      "title": "Tom Sawyer Abroad",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Adventure stories; Sawyer, Tom (Fictitious character) -- Fiction; Balloon ascensions -- Fiction; Americans -- Foreign countries -- Fiction",
+      "work_group": "Twain, Mark|tom sawyer abroad",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/91",
+      "url": "https://gutenberg.pglaf.org/cache/epub/91/pg91.txt"
+    },
+    {
+      "id": 139,
+      "title": "The Lost World",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Challenger, Professor (Fictitious character) -- Fiction; Fantasy fiction; South America -- Fiction; Prehistoric peoples -- Fiction; Dinosaurs -- Fiction",
+      "work_group": "Doyle, Arthur Conan|the lost world",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/139",
+      "url": "https://gutenberg.pglaf.org/cache/epub/139/pg139.txt"
+    },
+    {
+      "id": 329,
+      "title": "Island Nights' Entertainments",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Short stories; Islands of the Pacific -- Fiction",
+      "work_group": "Stevenson, Robert Louis|island nights entertainments",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/329",
+      "url": "https://gutenberg.pglaf.org/cache/epub/329/pg329.txt"
+    },
+    {
+      "id": 2726,
+      "title": "Eight Cousins",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Orphans -- Juvenile fiction; Cousins -- Juvenile fiction; Family life -- Juvenile fiction",
+      "work_group": "Alcott, Louisa May|eight cousins",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2726",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2726/pg2726.txt"
+    },
+    {
+      "id": 420,
+      "title": "Dorothy and the Wizard in Oz",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Friendship -- Juvenile fiction; Dragons -- Juvenile fiction; Cousins -- Juvenile fiction; Mountains -- Juvenile fiction; Magic -- Juvenile fiction; Cats -- Juvenile fiction; Ranches -- Juvenile fiction; Earthquakes -- Juvenile fiction; Kittens -- Juvenile fiction; Nephews -- Juvenile fiction; Trials -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Wizard of Oz (Fictitious character) -- Juvenile fiction; Piglets -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|dorothy and the wizard in oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/420",
+      "url": "https://gutenberg.pglaf.org/cache/epub/420/pg420.txt"
+    },
+    {
+      "id": 146,
+      "title": "A Little Princess\nBeing the whole story of Sara Crewe now told for the first time",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Orphans -- Juvenile fiction; Schools -- Juvenile fiction; Boarding schools -- Juvenile fiction; Girls -- Juvenile fiction; London (England) -- Juvenile fiction",
+      "work_group": "Burnett, Frances Hodgson|a little princess",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/146",
+      "url": "https://gutenberg.pglaf.org/cache/epub/146/pg146.txt"
+    },
+    {
+      "id": 794,
+      "title": "The Wouldbegoods: Being the Further Adventures of the Treasure Seekers",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Adventure stories; Siblings -- Juvenile fiction; England -- Juvenile fiction; Country life -- Juvenile fiction; Children -- Juvenile fiction; Families -- Juvenile fiction",
+      "work_group": "Nesbit, E.|the wouldbegoods being the further adventures of the treasure seekers",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/794",
+      "url": "https://gutenberg.pglaf.org/cache/epub/794/pg794.txt"
+    },
+    {
+      "id": 620,
+      "title": "Sylvie and Bruno",
+      "author": "Carroll, Lewis, 1832-1898",
+      "subjects": "Fantasy fiction",
+      "work_group": "Carroll, Lewis|sylvie and bruno",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/620",
+      "url": "https://gutenberg.pglaf.org/cache/epub/620/pg620.txt"
+    },
+    {
+      "id": 697,
+      "title": "The Light Princess",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fairy tales; Children's stories, English; Fairy tales -- Great Britain",
+      "work_group": "MacDonald, George|the light princess",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/697",
+      "url": "https://gutenberg.pglaf.org/cache/epub/697/pg697.txt"
+    },
+    {
+      "id": 557,
+      "title": "Puck of Pook's Hill",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Fantasy fiction; Space and time -- Fiction; Great Britain -- History -- Fiction",
+      "work_group": "Kipling, Rudyard|puck of pook s hill",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/557",
+      "url": "https://gutenberg.pglaf.org/cache/epub/557/pg557.txt"
+    },
+    {
+      "id": 746,
+      "title": "Burning Daylight",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Western stories; Women pioneers -- Fiction; Gold mines and mining -- Alaska -- Fiction; Bankruptcy -- Fiction; Oakland (Calif.) -- Fiction",
+      "work_group": "London, Jack|burning daylight",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/746",
+      "url": "https://gutenberg.pglaf.org/cache/epub/746/pg746.txt"
+    },
+    {
+      "id": 159,
+      "title": "The island of Doctor Moreau",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; Shipwreck survival -- Fiction; Animal experimentation -- Fiction; Islands -- Fiction; Science -- Ethics -- Fiction",
+      "work_group": "Wells, H. G.|the island of doctor moreau",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/159",
+      "url": "https://gutenberg.pglaf.org/cache/epub/159/pg159.txt"
+    },
+    {
+      "id": 1377,
+      "title": "The Talisman",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Knights and knighthood -- Fiction; Crusades -- Third, 1189-1192 -- Fiction; Jerusalem -- History -- Latin Kingdom, 1099-1244 -- Fiction; Richard I, King of England, 1157-1199 -- Fiction",
+      "work_group": "Scott, Walter|the talisman",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1377",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1377/pg1377.txt"
+    },
+    {
+      "id": 2522,
+      "title": "A Dark Night's Work",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|a dark night s work",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2522",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2522/pg2522.txt"
+    },
+    {
+      "id": 550,
+      "title": "Silas Marner",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "England -- Fiction; Domestic fiction; Fathers and daughters -- Fiction; Adopted children -- Fiction; Foundlings -- Fiction; Weavers -- Fiction",
+      "work_group": "Eliot, George|silas marner",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/550",
+      "url": "https://gutenberg.pglaf.org/cache/epub/550/pg550.txt"
+    },
+    {
+      "id": 1933,
+      "title": "The History of Samuel Titmarsh and the Great Hoggarty Diamond",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "English fiction -- 19th century; Great Britain -- Social life and customs -- Fiction",
+      "work_group": "Thackeray, William Makepeace|the history of samuel titmarsh and the great hoggarty diamond",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1933",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1933/pg1933.txt"
+    },
+    {
+      "id": 2432,
+      "title": "Barchester Towers",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "Barchester (England : Imaginary place) -- Fiction; Domestic fiction; Clergy -- Fiction; Barsetshire (England : Imaginary place) -- Fiction",
+      "work_group": "Trollope, Anthony|barchester towers",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2432",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2432/pg2432.txt"
+    },
+    {
+      "id": 122,
+      "title": "The Return of the Native",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Adultery -- Fiction; Didactic fiction; Love stories; Mate selection -- Fiction; Wessex (England) -- Fiction; Mothers and sons -- Fiction; People with visual disabilities -- Fiction; Heathlands -- Fiction",
+      "work_group": "Hardy, Thomas|the return of the native",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/122",
+      "url": "https://gutenberg.pglaf.org/cache/epub/122/pg122.txt"
+    },
+    {
+      "id": 451,
+      "title": "The Shadow Line: A Confession",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Sea stories; Ship captains -- Fiction",
+      "work_group": "Conrad, Joseph|the shadow line a confession",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/451",
+      "url": "https://gutenberg.pglaf.org/cache/epub/451/pg451.txt"
+    },
+    {
+      "id": 178,
+      "title": "Confidence",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Male friendship -- Fiction; Man-woman relationships -- Fiction; British -- Europe -- Fiction; Americans -- Europe -- Fiction",
+      "work_group": "James, Henry|confidence",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/178",
+      "url": "https://gutenberg.pglaf.org/cache/epub/178/pg178.txt"
+    },
+    {
+      "id": 508,
+      "title": "Twice-Told Tales",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Short stories; New England -- Social life and customs -- Fiction; Historical fiction, American",
+      "work_group": "Hawthorne, Nathaniel|twice told tales",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/508",
+      "url": "https://gutenberg.pglaf.org/cache/epub/508/pg508.txt"
+    },
+    {
+      "id": 2275,
+      "title": "The Pioneers; Or, The Sources of the Susquehanna",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Historical fiction; Adventure stories; Bumppo, Natty (Fictitious character) -- Fiction; Frontier and pioneer life -- New York (State) -- Fiction; New York (State) -- History -- 1775-1865 -- Fiction; American fiction; United States -- History -- 1783-1815 -- Fiction",
+      "work_group": "Cooper, James Fenimore|the pioneers or the sources of the susquehanna",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2275",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2275/pg2275.txt"
+    },
+    {
+      "id": 1850,
+      "title": "Old Christmas",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Christmas stories, American; Christmas -- England",
+      "work_group": "Irving, Washington|old christmas",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1850",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1850/pg1850.txt"
+    },
+    {
+      "id": 6308,
+      "title": "Hypatia \u2014 or New Foes with an Old Face",
+      "author": "Kingsley, Charles, 1819-1875",
+      "subjects": "Historical fiction; Biographical fiction; Egypt -- History -- 30 B.C.-640 A.D. -- Fiction; Alexandria (Egypt) -- Fiction; Hypatia, -415 -- Fiction; Women philosophers -- Fiction",
+      "work_group": "Kingsley, Charles|hypatia or new foes with an old face",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/6308",
+      "url": "https://gutenberg.pglaf.org/cache/epub/6308/pg6308.txt"
+    },
+    {
+      "id": 7112,
+      "title": "Erema; Or, My Father's Sin",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "Young women -- Fiction; Fathers and daughters -- Fiction; California -- History -- 19th century -- Fiction",
+      "work_group": "Blackmore, R. D.|erema or my father s sin",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7112",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7112/pg7112.txt"
+    },
+    {
+      "id": 521,
+      "title": "The Life and Adventures of Robinson Crusoe",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Shipwreck survival -- Fiction; Islands -- Fiction; Crusoe, Robinson (Fictitious character) -- Fiction; Atlantic Ocean -- Fiction; Adventure stories; Castaways -- Fiction",
+      "work_group": "Defoe, Daniel|the life and adventures of robinson crusoe",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/521",
+      "url": "https://gutenberg.pglaf.org/cache/epub/521/pg521.txt"
+    },
+    {
+      "id": 4045,
+      "title": "Omoo: Adventures in the South Seas",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Polynesia -- Description and travel -- Fiction; Adventure stories",
+      "work_group": "Melville, Herman|omoo adventures in the south seas",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/4045",
+      "url": "https://gutenberg.pglaf.org/cache/epub/4045/pg4045.txt"
+    },
+    {
+      "id": 158,
+      "title": "Emma",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "Humorous stories; England -- Fiction; Young women -- Fiction; Love stories; Fathers and daughters -- Fiction; Bildungsromans; Mate selection -- Fiction; Female friendship -- Fiction",
+      "work_group": "Austen, Jane|emma",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/158",
+      "url": "https://gutenberg.pglaf.org/cache/epub/158/pg158.txt"
+    },
+    {
+      "id": 588,
+      "title": "Master Humphrey's Clock",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "Historical fiction; England -- Social life and customs -- 19th century -- Fiction; Gordon Riots, 1780 -- Fiction; Great Britain -- History -- 18th century -- Fiction",
+      "work_group": "Dickens, Charles|master humphrey s clock",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/588",
+      "url": "https://gutenberg.pglaf.org/cache/epub/588/pg588.txt"
+    },
+    {
+      "id": 93,
+      "title": "Tom Sawyer, Detective",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Sawyer, Tom (Fictitious character) -- Fiction; Mystery fiction",
+      "work_group": "Twain, Mark|tom sawyer detective",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/93",
+      "url": "https://gutenberg.pglaf.org/cache/epub/93/pg93.txt"
+    },
+    {
+      "id": 244,
+      "title": "A Study in Scarlet",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Holmes, Sherlock (Fictitious character) -- Fiction; Private investigators -- England -- Fiction; Detective and mystery stories; England -- Fiction",
+      "work_group": "Doyle, Arthur Conan|a study in scarlet",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/244",
+      "url": "https://gutenberg.pglaf.org/cache/epub/244/pg244.txt"
+    },
+    {
+      "id": 343,
+      "title": "Fables",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Fiction; Short stories; Fables, Scottish",
+      "work_group": "Stevenson, Robert Louis|fables",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/343",
+      "url": "https://gutenberg.pglaf.org/cache/epub/343/pg343.txt"
+    },
+    {
+      "id": 2786,
+      "title": "Jack and Jill",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Friendship -- Juvenile fiction; Winter -- Juvenile fiction; Family life -- Juvenile fiction; New England -- Social life and customs -- Juvenile fiction; Children's accidents -- Juvenile fiction",
+      "work_group": "Alcott, Louisa May|jack and jill",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2786",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2786/pg2786.txt"
+    },
+    {
+      "id": 436,
+      "title": "The Master Key\nAn Electrical Fairy Tale Founded Upon the Mysteries of Electricity",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Fantasy literature; Conduct of life -- Juvenile fiction; Adventure stories; Pirates -- Juvenile fiction; Voyages and travels -- Juvenile fiction; Youth -- Conduct of life -- Juvenile fiction; Thieves -- Juvenile fiction; Parent and child -- Juvenile fiction; Electricity -- Juvenile fiction; War -- Juvenile fiction; Physical sciences -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the master key",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/436",
+      "url": "https://gutenberg.pglaf.org/cache/epub/436/pg436.txt"
+    },
+    {
+      "id": 384,
+      "title": "The Lost Prince",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "People with disabilities -- Fiction; Fathers and sons -- Fiction; Princes -- Fiction; Refugees -- Fiction",
+      "work_group": "Burnett, Frances Hodgson|the lost prince",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/384",
+      "url": "https://gutenberg.pglaf.org/cache/epub/384/pg384.txt"
+    },
+    {
+      "id": 836,
+      "title": "The Phoenix and the Carpet",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Fantasy fiction; Siblings -- Juvenile fiction; Magic -- Juvenile fiction; Great Britain -- History -- Edward VII, 1901-1910 -- Juvenile fiction; Phoenix (Mythical bird) -- Juvenile fiction",
+      "work_group": "Nesbit, E.|the phoenix and the carpet",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/836",
+      "url": "https://gutenberg.pglaf.org/cache/epub/836/pg836.txt"
+    },
+    {
+      "id": 19002,
+      "title": "Alice's Adventures Under Ground\nBeing a facsimile of the original Ms. book afterwards developed into \"Alice's Adventures in Wonderland\"",
+      "author": "Carroll, Lewis, 1832-1898",
+      "subjects": "Fantasy fiction; Children's stories; Imaginary places -- Juvenile fiction; Alice (Fictitious character from Carroll) -- Juvenile fiction",
+      "work_group": "Carroll, Lewis|alice s adventures under ground",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/19002",
+      "url": "https://gutenberg.pglaf.org/cache/epub/19002/pg19002.txt"
+    },
+    {
+      "id": 708,
+      "title": "The Princess and the Goblin",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fantasy literature; Fairy tales; Children's stories; Goblins -- Juvenile fiction; Princesses -- Juvenile fiction",
+      "work_group": "MacDonald, George|the princess and the goblin",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/708",
+      "url": "https://gutenberg.pglaf.org/cache/epub/708/pg708.txt"
+    },
+    {
+      "id": 1858,
+      "title": "Plain Tales from the Hills",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "India -- History -- British occupation, 1765-1947 -- Fiction; British -- India -- Fiction; Short stories, English",
+      "work_group": "Kipling, Rudyard|plain tales from the hills",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1858",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1858/pg1858.txt"
+    },
+    {
+      "id": 788,
+      "title": "The Red One",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Fiction; Short stories; Adventure stories, American",
+      "work_group": "London, Jack|the red one",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/788",
+      "url": "https://gutenberg.pglaf.org/cache/epub/788/pg788.txt"
+    },
+    {
+      "id": 456,
+      "title": "The Door in the Wall, and Other Stories",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Short stories; Science fiction, English; Fantasy fiction, English",
+      "work_group": "Wells, H. G.|the door in the wall and other stories",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/456",
+      "url": "https://gutenberg.pglaf.org/cache/epub/456/pg456.txt"
+    },
+    {
+      "id": 1460,
+      "title": "The Black Dwarf",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Scotland -- Fiction",
+      "work_group": "Scott, Walter|the black dwarf",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1460",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1460/pg1460.txt"
+    },
+    {
+      "id": 2524,
+      "title": "My Lady Ludlow",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|my lady ludlow",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2524",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2524/pg2524.txt"
+    },
+    {
+      "id": 2165,
+      "title": "The Lifted Veil",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "Psychological fiction; Paranormal fiction",
+      "work_group": "Eliot, George|the lifted veil",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2165",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2165/pg2165.txt"
+    },
+    {
+      "id": 1935,
+      "title": "The Tremendous Adventures of Major Gahagan",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "India -- History -- British occupation, 1765-1947 -- Fiction",
+      "work_group": "Thackeray, William Makepeace|the tremendous adventures of major gahagan",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1935",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1935/pg1935.txt"
+    },
+    {
+      "id": 2860,
+      "title": "Framley Parsonage",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "Domestic fiction; Clergy -- Fiction; Barsetshire (England : Imaginary place) -- Fiction",
+      "work_group": "Trollope, Anthony|framley parsonage",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2860",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2860/pg2860.txt"
+    },
+    {
+      "id": 143,
+      "title": "The Mayor of Casterbridge",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Psychological fiction; Fathers and daughters -- Fiction; Men -- England -- Fiction; Wessex (England) -- Fiction; Runaway husbands -- Fiction; Atonement -- Fiction; Mayors -- Fiction",
+      "work_group": "Hardy, Thomas|the mayor of casterbridge",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/143",
+      "url": "https://gutenberg.pglaf.org/cache/epub/143/pg143.txt"
+    },
+    {
+      "id": 493,
+      "title": "Falk: A Reminiscence",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Man-woman relationships -- Fiction; Seafaring life -- Fiction",
+      "work_group": "Conrad, Joseph|falk a reminiscence",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/493",
+      "url": "https://gutenberg.pglaf.org/cache/epub/493/pg493.txt"
+    },
+    {
+      "id": 179,
+      "title": "The Europeans",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Humorous stories; Domestic fiction; Siblings -- Fiction; Boston (Mass.) -- Fiction; Upper class -- Fiction; Europeans -- United States -- Fiction",
+      "work_group": "James, Henry|the europeans",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/179",
+      "url": "https://gutenberg.pglaf.org/cache/epub/179/pg179.txt"
+    },
+    {
+      "id": 512,
+      "title": "Mosses from an old manse",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Short stories, American; New England -- Social life and customs -- Fiction",
+      "work_group": "Hawthorne, Nathaniel|mosses from an old manse",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/512",
+      "url": "https://gutenberg.pglaf.org/cache/epub/512/pg512.txt"
+    },
+    {
+      "id": 2282,
+      "title": "Tales for Fifteen; Or, Imagination and Heart",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Girls -- Conduct of life -- Juvenile fiction; New York (N.Y.) -- Juvenile fiction",
+      "work_group": "Cooper, James Fenimore|tales for fifteen or imagination and heart",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2282",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2282/pg2282.txt"
+    },
+    {
+      "id": 2048,
+      "title": "The Sketch-Book of Geoffrey Crayon",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Irving, Washington, 1783-1859 -- Travel -- England; England -- Social life and customs -- 19th century; Fantasy fiction, American; Hudson River Valley (N.Y. and N.J.) -- Fiction; Americans -- England -- History -- 19th century; Catskill Mountains Region (N.Y.) -- Fiction",
+      "work_group": "Irving, Washington|the sketch book of geoffrey crayon",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2048",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2048/pg2048.txt"
+    },
+    {
+      "id": 7815,
+      "title": "Hereward, the Last of the English",
+      "author": "Kingsley, Charles, 1819-1875",
+      "subjects": "Great Britain -- History -- To 1066 -- Fiction",
+      "work_group": "Kingsley, Charles|hereward the last of the english",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7815",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7815/pg7815.txt"
+    },
+    {
+      "id": 7435,
+      "title": "Springhaven: A Tale of the Great War",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "Great Britain -- History -- Regency, 1800-1837 -- Fiction",
+      "work_group": "Blackmore, R. D.|springhaven a tale of the great war",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7435",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7435/pg7435.txt"
+    },
+    {
+      "id": 561,
+      "title": "The Further Adventures of Robinson Crusoe",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Crusoe, Robinson (Fictitious character) -- Fiction; Adventure and adventurers -- Fiction",
+      "work_group": "Defoe, Daniel|the further adventures of robinson crusoe",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/561",
+      "url": "https://gutenberg.pglaf.org/cache/epub/561/pg561.txt"
+    },
+    {
+      "id": 8118,
+      "title": "Redburn. His First Voyage\nBeing the Sailor Boy Confessions and Reminiscences of the Son-Of-A-Gentleman in the Merchant Navy",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Sea stories; Autobiographical fiction; Bildungsromans; Young men -- Fiction; Americans -- England -- Fiction; Sailors -- Fiction; Seafaring life -- Fiction; Merchant mariners -- Fiction; Liverpool (England) -- Fiction",
+      "work_group": "Melville, Herman|redburn his first voyage",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/8118",
+      "url": "https://gutenberg.pglaf.org/cache/epub/8118/pg8118.txt"
+    },
+    {
+      "id": 161,
+      "title": "Sense and Sensibility",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Inheritance and succession -- Fiction; England -- Fiction; Young women -- Fiction; Love stories; Sisters -- Fiction; Domestic fiction; Mate selection -- Fiction; Social classes -- Fiction; Gentry -- England -- Fiction; Regency fiction",
+      "work_group": "Austen, Jane|sense and sensibility",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/161",
+      "url": "https://gutenberg.pglaf.org/cache/epub/161/pg161.txt"
+    },
+    {
+      "id": 644,
+      "title": "The Haunted Man and the Ghost's Bargain",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "Christmas stories; Ghost stories",
+      "work_group": "Dickens, Charles|the haunted man and the ghost s bargain",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/644",
+      "url": "https://gutenberg.pglaf.org/cache/epub/644/pg644.txt"
+    },
+    {
+      "id": 102,
+      "title": "The Tragedy of Pudd'nhead Wilson",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Impostors and imposture -- Fiction; Missouri -- Fiction; Trials (Murder) -- Fiction; Legal stories; Race relations -- Fiction; Infants switched at birth -- Fiction; Passing (Identity) -- Fiction",
+      "work_group": "Twain, Mark|the tragedy of pudd nhead wilson",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/102",
+      "url": "https://gutenberg.pglaf.org/cache/epub/102/pg102.txt"
+    },
+    {
+      "id": 290,
+      "title": "The Stark Munro Letters\nBeing series of twelve letters written by J. Stark Munro, M.B., to his friend and former fellow-student, Herbert Swanborough, of Lowell, Massachusetts, during the years 1881-1884",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Epistolary fiction",
+      "work_group": "Doyle, Arthur Conan|the stark munro letters",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/290",
+      "url": "https://gutenberg.pglaf.org/cache/epub/290/pg290.txt"
+    },
+    {
+      "id": 344,
+      "title": "The Merry Men, and Other Tales and Fables",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Boys -- Fiction; Treasure troves -- Fiction; Paranormal fiction; Great Britain -- History -- 19th century -- Fiction",
+      "work_group": "Stevenson, Robert Louis|the merry men and other tales and fables",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/344",
+      "url": "https://gutenberg.pglaf.org/cache/epub/344/pg344.txt"
+    },
+    {
+      "id": 2787,
+      "title": "An Old-Fashioned Girl",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "City and town life -- Fiction; New England -- Fiction; Friendship -- Juvenile fiction; Boston (Mass.) -- History -- 19th century -- Fiction",
+      "work_group": "Alcott, Louisa May|an old fashioned girl",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2787",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2787/pg2787.txt"
+    },
+    {
+      "id": 485,
+      "title": "The Road to Oz",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Voyages and travels -- Juvenile fiction; Uncles -- Juvenile fiction; Magic -- Juvenile fiction; Kings and rulers -- Juvenile fiction; Farms -- Juvenile fiction; Good and evil -- Juvenile fiction; Animals, Mythical -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Princess Ozma (Fictitious character) -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the road to oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/485",
+      "url": "https://gutenberg.pglaf.org/cache/epub/485/pg485.txt"
+    },
+    {
+      "id": 459,
+      "title": "The White People",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Castles -- Fiction; Country life -- Fiction; Scotland -- Fiction; Ghost stories",
+      "work_group": "Burnett, Frances Hodgson|the white people",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/459",
+      "url": "https://gutenberg.pglaf.org/cache/epub/459/pg459.txt"
+    },
+    {
+      "id": 837,
+      "title": "The Story of the Amulet",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Fantasy literature; Siblings -- Juvenile fiction; England -- Juvenile fiction; Wishes -- Juvenile fiction",
+      "work_group": "Nesbit, E.|the story of the amulet",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/837",
+      "url": "https://gutenberg.pglaf.org/cache/epub/837/pg837.txt"
+    },
+    {
+      "id": 709,
+      "title": "The Princess and Curdie",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fantasy literature; Fairy tales; Children's stories",
+      "work_group": "MacDonald, George|the princess and curdie",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/709",
+      "url": "https://gutenberg.pglaf.org/cache/epub/709/pg709.txt"
+    },
+    {
+      "id": 1937,
+      "title": "The Second Jungle Book",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "India -- Fiction; Jungle animals -- Fiction; Mowgli (Fictitious character) -- Fiction",
+      "work_group": "Kipling, Rudyard|the second jungle book",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1937",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1937/pg1937.txt"
+    },
+    {
+      "id": 910,
+      "title": "White Fang",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Wolfdogs -- Fiction; Adventure stories; Canada, Northern -- Fiction",
+      "work_group": "London, Jack|white fang",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/910",
+      "url": "https://gutenberg.pglaf.org/cache/epub/910/pg910.txt"
+    },
+    {
+      "id": 524,
+      "title": "Ann Veronica: A Modern Love Story",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Feminism -- Fiction; Love stories; Sex role -- Fiction; Great Britain -- Social conditions -- Fiction",
+      "work_group": "Wells, H. G.|ann veronica a modern love story",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/524",
+      "url": "https://gutenberg.pglaf.org/cache/epub/524/pg524.txt"
+    },
+    {
+      "id": 1461,
+      "title": "A Legend of Montrose",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Montrose, James Graham, Marquis of, 1612-1650 -- Fiction; Scotland -- History -- Charles I, 1625-1649 -- Fiction",
+      "work_group": "Scott, Walter|a legend of montrose",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1461",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1461/pg1461.txt"
+    },
+    {
+      "id": 2532,
+      "title": "The Half-Brothers",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|the half brothers",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2532",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2532/pg2532.txt"
+    },
+    {
+      "id": 2171,
+      "title": "Brother Jacob",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "England -- Fiction; Impostors and imposture -- Fiction; Brothers -- Fiction; Confectioners -- Fiction; Men with mental disabilities -- Fiction",
+      "work_group": "Eliot, George|brother jacob",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2171",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2171/pg2171.txt"
+    },
+    {
+      "id": 1969,
+      "title": "Catherine: A Story",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "Biographical fiction; Executions and executioners -- Fiction; Women murderers -- Fiction; Hayes, Catharine Hall, 1690-1726 -- Fiction",
+      "work_group": "Thackeray, William Makepeace|catherine a story",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1969",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1969/pg1969.txt"
+    },
+    {
+      "id": 3045,
+      "title": "The Last Chronicle of Barset",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Clergy -- England -- Fiction; Psychological fiction; Love stories; Domestic fiction; Clergy -- Fiction; Barsetshire (England : Imaginary place) -- Fiction",
+      "work_group": "Trollope, Anthony|the last chronicle of barset",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3045",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3045/pg3045.txt"
+    },
+    {
+      "id": 153,
+      "title": "Jude the Obscure",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Adultery -- Fiction; Didactic fiction; Love stories; Illegitimate children -- Fiction; Wessex (England) -- Fiction; Stonemasons -- Fiction; Children -- Death -- Fiction; Unmarried couples -- Fiction",
+      "work_group": "Hardy, Thomas|jude the obscure",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/153",
+      "url": "https://gutenberg.pglaf.org/cache/epub/153/pg153.txt"
+    },
+    {
+      "id": 494,
+      "title": "To-morrow",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Ship captains -- Fiction; Man-woman relationships -- Fiction",
+      "work_group": "Conrad, Joseph|to morrow",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/494",
+      "url": "https://gutenberg.pglaf.org/cache/epub/494/pg494.txt"
+    },
+    {
+      "id": 208,
+      "title": "Daisy Miller: A Study",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Psychological fiction; Young women -- Fiction; Europe -- Fiction; Americans -- Europe -- Fiction",
+      "work_group": "James, Henry|daisy miller a study",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/208",
+      "url": "https://gutenberg.pglaf.org/cache/epub/208/pg208.txt"
+    },
+    {
+      "id": 513,
+      "title": "The snow-image, and other twice-told tales",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Short stories, American; New England -- Social life and customs -- Fiction; Historical fiction, American",
+      "work_group": "Hawthorne, Nathaniel|the snow image and other twice told tales",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/513",
+      "url": "https://gutenberg.pglaf.org/cache/epub/513/pg513.txt"
+    },
+    {
+      "id": 2328,
+      "title": "The Lake Gun",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Curiosities and wonders -- Fiction; Seneca Lake (N.Y.) -- Fiction",
+      "work_group": "Cooper, James Fenimore|the lake gun",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2328",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2328/pg2328.txt"
+    },
+    {
+      "id": 8571,
+      "title": "Wolfert's Roost, and Miscellanies",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Short stories, American; American essays",
+      "work_group": "Irving, Washington|wolfert s roost and miscellanies",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/8571",
+      "url": "https://gutenberg.pglaf.org/cache/epub/8571/pg8571.txt"
+    },
+    {
+      "id": 10364,
+      "title": "Yeast: a Problem",
+      "author": "Kingsley, Charles, 1819-1875",
+      "subjects": "Country life -- England -- Fiction; England -- Social conditions -- 19th century -- Fiction; Rural poor -- England -- Fiction",
+      "work_group": "Kingsley, Charles|yeast a problem",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/10364",
+      "url": "https://gutenberg.pglaf.org/cache/epub/10364/pg10364.txt"
+    },
+    {
+      "id": 22315,
+      "title": "Slain By The Doones",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Blackmore, R. D.|slain by the doones",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/22315",
+      "url": "https://gutenberg.pglaf.org/cache/epub/22315/pg22315.txt"
+    },
+    {
+      "id": 2051,
+      "title": "Dickory Cronke: The Dumb Philosopher, or, Great Britain's Wonder",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Didactic fiction; Philosophers -- Fiction",
+      "work_group": "Defoe, Daniel|dickory cronke the dumb philosopher or great britain s wonder",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2051",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2051/pg2051.txt"
+    },
+    {
+      "id": 10712,
+      "title": "White Jacket; Or, The World on a Man-of-War",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Sea stories; Sailors -- Fiction; Naval discipline -- Fiction; Flagellation -- Fiction; Warships -- Fiction; United States -- History, Naval -- 19th century -- Fiction",
+      "work_group": "Melville, Herman|white jacket or the world on a man of war",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/10712",
+      "url": "https://gutenberg.pglaf.org/cache/epub/10712/pg10712.txt"
+    },
+    {
+      "id": 946,
+      "title": "Lady Susan",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Fiction; Widows -- Fiction; Mate selection -- Fiction; Mothers and daughters -- Fiction; Epistolary fiction",
+      "work_group": "Austen, Jane|lady susan",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/946",
+      "url": "https://gutenberg.pglaf.org/cache/epub/946/pg946.txt"
+    },
+    {
+      "id": 653,
+      "title": "The Chimes\nA Goblin Story of Some Bells That Rang an Old Year out and a New Year In",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "Christmas stories; Holidays -- Fiction",
+      "work_group": "Dickens, Charles|the chimes",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/653",
+      "url": "https://gutenberg.pglaf.org/cache/epub/653/pg653.txt"
+    },
+    {
+      "id": 119,
+      "title": "A Tramp Abroad",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Humorous stories; Europe -- Fiction; Americans -- Europe -- Fiction; Walking -- Fiction",
+      "work_group": "Twain, Mark|a tramp abroad",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/119",
+      "url": "https://gutenberg.pglaf.org/cache/epub/119/pg119.txt"
+    },
+    {
+      "id": 294,
+      "title": "The Captain of the Polestar, and Other Tales",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Great Britain -- Social life and customs -- 19th century -- Fiction; Short stories, English",
+      "work_group": "Doyle, Arthur Conan|the captain of the polestar and other tales",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/294",
+      "url": "https://gutenberg.pglaf.org/cache/epub/294/pg294.txt"
+    },
+    {
+      "id": 372,
+      "title": "Prince Otto, a Romance",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Nobility -- Fiction; Man-woman relationships -- Fiction",
+      "work_group": "Stevenson, Robert Louis|prince otto a romance",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/372",
+      "url": "https://gutenberg.pglaf.org/cache/epub/372/pg372.txt"
+    },
+    {
+      "id": 2788,
+      "title": "Little Men: Life at Plumfield With Jo's Boys",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Boarding schools -- Fiction; Schools -- Fiction; Family life -- New England -- Fiction; New England -- History -- 19th century -- Fiction",
+      "work_group": "Alcott, Louisa May|little men life at plumfield with jo s boys",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2788",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2788/pg2788.txt"
+    },
+    {
+      "id": 486,
+      "title": "Ozma of Oz\nA Record of Her Adventures with Dorothy Gale of Kansas, the Yellow Hen, the Scarecrow, the Tin Woodman, Tiktok, the Cowardly Lion, and the Hungry Tiger; Besides Other Good People too Numerous to Mention Faithfully Recorded Herein",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Vacations -- Juvenile fiction; Voyages and travels -- Juvenile fiction; Uncles -- Juvenile fiction; Magic -- Juvenile fiction; Physicians -- Juvenile fiction; Kings and rulers -- Juvenile fiction; Steamboats -- Juvenile fiction; Hens -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Princess Ozma (Fictitious character) -- Juvenile fiction; Cowardly Lion (Fictitious character) -- Juvenile fiction; Scarecrow (Fictitious character from Baum) -- Juvenile fiction; Tin Woodman (Fictitious character) -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|ozma of oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/486",
+      "url": "https://gutenberg.pglaf.org/cache/epub/486/pg486.txt"
+    },
+    {
+      "id": 479,
+      "title": "Little Lord Fauntleroy",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Conduct of life -- Juvenile fiction; Children -- Conduct of life -- Juvenile fiction; Family -- Juvenile fiction; England -- Juvenile fiction; Grandparent and child -- Juvenile fiction; Inheritance and succession -- Juvenile fiction; Grandfathers -- Juvenile fiction; Wealth -- Juvenile fiction; Altruism -- Juvenile fiction; Mother and child -- Juvenile fiction",
+      "work_group": "Burnett, Frances Hodgson|little lord fauntleroy",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/479",
+      "url": "https://gutenberg.pglaf.org/cache/epub/479/pg479.txt"
+    },
+    {
+      "id": 1874,
+      "title": "The Railway Children",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Railroads -- Fiction; Country life -- England -- Fiction; England -- Fiction; Family life -- Fiction; Siblings -- Fiction",
+      "work_group": "Nesbit, E.|the railway children",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1874",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1874/pg1874.txt"
+    },
+    {
+      "id": 1640,
+      "title": "Lilith: A Romance",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Fantasy fiction",
+      "work_group": "MacDonald, George|lilith a romance",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1640",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1640/pg1640.txt"
+    },
+    {
+      "id": 2138,
+      "title": "The Day's Work - Part 1",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Manners and customs -- Fiction; Short stories, English",
+      "work_group": "Kipling, Rudyard|the day s work part 1",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2138",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2138/pg2138.txt"
+    },
+    {
+      "id": 911,
+      "title": "Tales of the Fish Patrol",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Short stories; Immigrants -- Fiction; Fishers -- Fiction; Fishing villages -- Fiction; San Francisco Bay Area (Calif.) -- Fiction",
+      "work_group": "London, Jack|tales of the fish patrol",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/911",
+      "url": "https://gutenberg.pglaf.org/cache/epub/911/pg911.txt"
+    },
+    {
+      "id": 718,
+      "title": "Tono-Bungay",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; Satire; England -- Fiction; Patent medicines -- Marketing -- Fiction; Pharmaceutical industry -- Fiction",
+      "work_group": "Wells, H. G.|tono bungay",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/718",
+      "url": "https://gutenberg.pglaf.org/cache/epub/718/pg718.txt"
+    },
+    {
+      "id": 1606,
+      "title": "Kenilworth",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Historical fiction; Great Britain -- History -- Elizabeth, 1558-1603 -- Fiction; Leicester, Robert Dudley, Earl of, 1532?-1588 -- Fiction; Dudley, Amy Robsart, Lady, 1532?-1560 -- Fiction; Kenilworth Castle (Kenilworth, England) -- Fiction",
+      "work_group": "Scott, Walter|kenilworth",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1606",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1606/pg1606.txt"
+    },
+    {
+      "id": 2533,
+      "title": "Round the Sofa",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|round the sofa",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2533",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2533/pg2533.txt"
+    },
+    {
+      "id": 6688,
+      "title": "The Mill on the Floss",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "England -- Fiction; Psychological fiction; Young women -- Fiction; Love stories; Domestic fiction; Siblings -- Fiction; Conflict of generations -- Fiction; Vendetta -- Fiction; Loss (Psychology) -- Fiction; Water mills -- Fiction",
+      "work_group": "Eliot, George|the mill on the floss",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/6688",
+      "url": "https://gutenberg.pglaf.org/cache/epub/6688/pg6688.txt"
+    },
+    {
+      "id": 1985,
+      "title": "Men's Wives",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "Great Britain -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Thackeray, William Makepeace|men s wives",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1985",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1985/pg1985.txt"
+    },
+    {
+      "id": 3166,
+      "title": "Doctor Thorne",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Inheritance and succession -- Fiction; Physicians -- Fiction; Love stories; Domestic fiction; Country life -- Fiction; Barsetshire (England : Imaginary place) -- Fiction; Great Britain -- History -- 19th century -- Fiction; Nieces -- Fiction",
+      "work_group": "Trollope, Anthony|doctor thorne",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3166",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3166/pg3166.txt"
+    },
+    {
+      "id": 224,
+      "title": "A pair of blue eyes",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Didactic fiction; Triangles (Interpersonal relations) -- Fiction; Wessex (England) -- Fiction; Separation (Psychology) -- Fiction; Elopement -- Fiction",
+      "work_group": "Hardy, Thomas|a pair of blue eyes",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/224",
+      "url": "https://gutenberg.pglaf.org/cache/epub/224/pg224.txt"
+    },
+    {
+      "id": 495,
+      "title": "Amy Foster",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Man-woman relationships -- Fiction",
+      "work_group": "Conrad, Joseph|amy foster",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/495",
+      "url": "https://gutenberg.pglaf.org/cache/epub/495/pg495.txt"
+    },
+    {
+      "id": 209,
+      "title": "The Turn of the Screw",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "England -- Fiction; Psychological fiction; Governesses -- Fiction; Ghost stories; Children -- Fiction",
+      "work_group": "James, Henry|the turn of the screw",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/209",
+      "url": "https://gutenberg.pglaf.org/cache/epub/209/pg209.txt"
+    },
+    {
+      "id": 1916,
+      "title": "The Great Stone Face, and Other Tales of the White Mountains",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Short stories; Historical fiction, American; White Mountains (N.H. and Me.) -- Fiction; Old Man of the Mountain (N.H.) -- Fiction",
+      "work_group": "Hawthorne, Nathaniel|the great stone face and other tales of the white mountains",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1916",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1916/pg1916.txt"
+    },
+    {
+      "id": 2329,
+      "title": "Autobiography of a Pocket-Handkerchief",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Fables; Handkerchiefs -- Fiction",
+      "work_group": "Cooper, James Fenimore|autobiography of a pocket handkerchief",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2329",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2329/pg2329.txt"
+    },
+    {
+      "id": 13514,
+      "title": "Tales of a Traveller",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Germany -- Social life and customs -- Fiction",
+      "work_group": "Irving, Washington|tales of a traveller",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/13514",
+      "url": "https://gutenberg.pglaf.org/cache/epub/13514/pg13514.txt"
+    },
+    {
+      "id": 22316,
+      "title": "Frida; or, the lover's leap: a legend of the West Country\nFrom \"Slain by the Doones\" by R. D. Blackmore",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Blackmore, R. D.|frida or the lover s leap a legend of the west country",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/22316",
+      "url": "https://gutenberg.pglaf.org/cache/epub/22316/pg22316.txt"
+    },
+    {
+      "id": 6422,
+      "title": "The Life, Adventures & Piracies of the Famous Captain Singleton",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Sea stories; Picaresque literature; Adventure stories; Pirates -- Fiction",
+      "work_group": "Defoe, Daniel|the life adventures piracies of the famous captain singleton",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/6422",
+      "url": "https://gutenberg.pglaf.org/cache/epub/6422/pg6422.txt"
+    },
+    {
+      "id": 11231,
+      "title": "Bartleby, the Scrivener: A Story of Wall-Street",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "New York (N.Y.) -- Fiction; Psychological fiction; Young men -- Fiction; Wall Street (New York, N.Y.) -- Fiction; Copyists -- Fiction",
+      "work_group": "Melville, Herman|bartleby the scrivener a story of wall street",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/11231",
+      "url": "https://gutenberg.pglaf.org/cache/epub/11231/pg11231.txt"
+    },
+    {
+      "id": 1212,
+      "title": "Love and Freindship [sic]",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "Essays; Epistolary fiction; England -- Social life and customs -- 18th century -- Fiction",
+      "work_group": "Austen, Jane|love and freindship sic",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1212",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1212/pg1212.txt"
+    },
+    {
+      "id": 676,
+      "title": "The Battle of Life",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Christmas stories, English",
+      "work_group": "Dickens, Charles|the battle of life",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/676",
+      "url": "https://gutenberg.pglaf.org/cache/epub/676/pg676.txt"
+    },
+    {
+      "id": 142,
+      "title": "The $30,000 Bequest, and Other Stories",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Humorous stories, American; United States -- Social life and customs -- Fiction; Short stories, American",
+      "work_group": "Twain, Mark|the 30 000 bequest and other stories",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/142",
+      "url": "https://gutenberg.pglaf.org/cache/epub/142/pg142.txt"
+    },
+    {
+      "id": 355,
+      "title": "The Parasite: A Story",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Horror tales; Mesmerism -- Fiction",
+      "work_group": "Doyle, Arthur Conan|the parasite a story",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/355",
+      "url": "https://gutenberg.pglaf.org/cache/epub/355/pg355.txt"
+    },
+    {
+      "id": 380,
+      "title": "Weir of Hermiston: An Unfinished Romance",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Fathers and sons -- Fiction; Domestic fiction; Young men -- Fiction; Country life -- Fiction; Scotland -- Fiction; Judges -- Fiction",
+      "work_group": "Stevenson, Robert Louis|weir of hermiston an unfinished romance",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/380",
+      "url": "https://gutenberg.pglaf.org/cache/epub/380/pg380.txt"
+    },
+    {
+      "id": 2804,
+      "title": "Rose in Bloom\nA Sequel to \"Eight Cousins\"",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Orphans -- Fiction; Family life -- Fiction; Cousins -- Fiction",
+      "work_group": "Alcott, Louisa May|rose in bloom",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2804",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2804/pg2804.txt"
+    },
+    {
+      "id": 517,
+      "title": "The Emerald City of Oz",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Oz (Imaginary place) -- Juvenile fiction; Fantasy literature; Voyages and travels -- Juvenile fiction; Uncles -- Juvenile fiction; Magic -- Juvenile fiction; Aunts -- Juvenile fiction; Kings and rulers -- Juvenile fiction; Battles -- Juvenile fiction; Good and evil -- Juvenile fiction; Animals, Mythical -- Juvenile fiction; Gale, Dorothy (Fictitious character) -- Juvenile fiction; Princess Ozma (Fictitious character) -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the emerald city of oz",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/517",
+      "url": "https://gutenberg.pglaf.org/cache/epub/517/pg517.txt"
+    },
+    {
+      "id": 506,
+      "title": "The Shuttle",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Sisters -- Fiction; Children of the rich -- Fiction; Americans -- England -- Fiction; Marriage -- Fiction",
+      "work_group": "Burnett, Frances Hodgson|the shuttle",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/506",
+      "url": "https://gutenberg.pglaf.org/cache/epub/506/pg506.txt"
+    },
+    {
+      "id": 3536,
+      "title": "The Enchanted Castle",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Fantasy fiction, English; Friendship -- Juvenile fiction; Siblings -- Juvenile fiction; Magic -- Juvenile fiction; Wishes -- Juvenile fiction; Castles -- Juvenile fiction; Rings -- Juvenile fiction; Great Britain -- History -- Edward VII, 1901-1910 -- Juvenile fiction",
+      "work_group": "Nesbit, E.|the enchanted castle",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3536",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3536/pg3536.txt"
+    },
+    {
+      "id": 2163,
+      "title": "The Bridge-Builders",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Short stories; India -- Fiction; Bridges -- Design and construction -- Fiction",
+      "work_group": "Kipling, Rudyard|the bridge builders",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2163",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2163/pg2163.txt"
+    },
+    {
+      "id": 1029,
+      "title": "The Night-Born",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Short stories; Adventure and adventurers -- Fiction",
+      "work_group": "London, Jack|the night born",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1029",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1029/pg1029.txt"
+    },
+    {
+      "id": 775,
+      "title": "When the Sleeper Wakes",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; London (England) -- Fiction; Time travel -- Fiction; Twenty-first century -- Fiction; Dystopias -- Fiction; Technological innovations -- Fiction",
+      "work_group": "Wells, H. G.|when the sleeper wakes",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/775",
+      "url": "https://gutenberg.pglaf.org/cache/epub/775/pg775.txt"
+    },
+    {
+      "id": 1667,
+      "title": "My Aunt Margaret's Mirror",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Scotland -- Social life and customs -- Fiction; Magic -- Fiction",
+      "work_group": "Scott, Walter|my aunt margaret s mirror",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1667",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1667/pg1667.txt"
+    },
+    {
+      "id": 2547,
+      "title": "Half a Life-Time Ago",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Gaskell, Elizabeth|half a life time ago",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2547",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2547/pg2547.txt"
+    },
+    {
+      "id": 7469,
+      "title": "Daniel Deronda",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "Didactic fiction; England -- Fiction; Jewish fiction; Jews -- England -- Fiction; Zionists -- Fiction",
+      "work_group": "Eliot, George|daniel deronda",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7469",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7469/pg7469.txt"
+    },
+    {
+      "id": 1990,
+      "title": "The Bedford-Row Conspiracy",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Thackeray, William Makepeace|the bedford row conspiracy",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1990",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1990/pg1990.txt"
+    },
+    {
+      "id": 3550,
+      "title": "La Mere Bauche\nFrom Tales of All Countries",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "Short stories; Mate selection -- Fiction; France -- Fiction",
+      "work_group": "Trollope, Anthony|la mere bauche",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3550",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3550/pg3550.txt"
+    },
+    {
+      "id": 482,
+      "title": "The Woodlanders",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Psychological fiction; Love stories; Triangles (Interpersonal relations) -- Fiction; Pastoral fiction; Social classes -- Fiction; Forests and forestry -- Fiction; Arranged marriage -- Fiction; Dorset (England) -- Fiction",
+      "work_group": "Hardy, Thomas|the woodlanders",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/482",
+      "url": "https://gutenberg.pglaf.org/cache/epub/482/pg482.txt"
+    },
+    {
+      "id": 525,
+      "title": "Youth, a Narrative",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Fiction; Sea stories; Adventure stories",
+      "work_group": "Conrad, Joseph|youth a narrative",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/525",
+      "url": "https://gutenberg.pglaf.org/cache/epub/525/pg525.txt"
+    },
+    {
+      "id": 210,
+      "title": "An International Episode",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Americans -- England -- Fiction; Manners and customs -- Fiction; British -- United States -- Fiction; New York (State) -- Social life and customs -- Fiction; London (England) -- Social life and customs -- Fiction",
+      "work_group": "James, Henry|an international episode",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/210",
+      "url": "https://gutenberg.pglaf.org/cache/epub/210/pg210.txt"
+    },
+    {
+      "id": 2081,
+      "title": "The Blithedale Romance",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Autobiographical fiction; Psychological fiction; Farm life -- Fiction; Massachusetts -- Fiction; Collective farms -- Fiction; Communal living -- Fiction",
+      "work_group": "Hawthorne, Nathaniel|the blithedale romance",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2081",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2081/pg2081.txt"
+    },
+    {
+      "id": 3285,
+      "title": "The Deerslayer",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Historical fiction; War stories; Delaware Indians -- Fiction; New York (State) -- History -- French and Indian War, 1754-1763 -- Fiction; Bildungsromans; Male friendship -- Fiction; Frontier and pioneer life -- Fiction; Bumppo, Natty (Fictitious character) -- Fiction; Hunters -- Fiction; Scouting (Reconnaissance) -- Fiction",
+      "work_group": "Cooper, James Fenimore|the deerslayer",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3285",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3285/pg3285.txt"
+    },
+    {
+      "id": 13515,
+      "title": "Bracebridge Hall, or The Humorists",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; National characteristics, English -- Fiction",
+      "work_group": "Irving, Washington|bracebridge hall or the humorists",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/13515",
+      "url": "https://gutenberg.pglaf.org/cache/epub/13515/pg13515.txt"
+    },
+    {
+      "id": 22317,
+      "title": "George Bowring - A Tale Of Cader Idris\nFrom \"Slain By The Doones\" By R. D. Blackmore",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Blackmore, R. D.|george bowring a tale of cader idris",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/22317",
+      "url": "https://gutenberg.pglaf.org/cache/epub/22317/pg22317.txt"
+    },
+    {
+      "id": 7089,
+      "title": "The Consolidator; or, Memoirs of Sundry Transactions from the World in the Moon",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Fantasy fiction; Satire; Political fiction; Moon -- Fiction; Interplanetary voyages -- Fiction",
+      "work_group": "Defoe, Daniel|the consolidator or memoirs of sundry transactions from the world in the moon",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7089",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7089/pg7089.txt"
+    },
+    {
+      "id": 15422,
+      "title": "Israel Potter: His Fifty Years of Exile",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Potter, Israel, 1744-1826? -- Fiction",
+      "work_group": "Melville, Herman|israel potter his fifty years of exile",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/15422",
+      "url": "https://gutenberg.pglaf.org/cache/epub/15422/pg15422.txt"
+    },
+    {
+      "id": 1342,
+      "title": "Pride and Prejudice",
+      "author": "Austen, Jane, 1775-1817",
+      "subjects": "England -- Fiction; Young women -- Fiction; Love stories; Sisters -- Fiction; Domestic fiction; Courtship -- Fiction; Social classes -- Fiction",
+      "work_group": "Austen, Jane|pride and prejudice",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1342",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1342/pg1342.txt"
+    },
+    {
+      "id": 678,
+      "title": "The Cricket on the Hearth: A Fairy Tale of Home",
+      "author": "Dickens, Charles, 1812-1870",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Christmas stories, English; Holidays -- Fiction",
+      "work_group": "Dickens, Charles|the cricket on the hearth a fairy tale of home",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/678",
+      "url": "https://gutenberg.pglaf.org/cache/epub/678/pg678.txt"
+    },
+    {
+      "id": 1044,
+      "title": "Extract from Captain Stormfield's Visit to Heaven",
+      "author": "Twain, Mark, 1835-1910",
+      "subjects": "Satire; Voyages, Imaginary; Ship captains -- Fiction; Religious fiction; Heaven -- Fiction",
+      "work_group": "Twain, Mark|extract from captain stormfield s visit to heaven",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1044",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1044/pg1044.txt"
+    },
+    {
+      "id": 356,
+      "title": "Beyond the City",
+      "author": "Doyle, Arthur Conan, 1859-1930",
+      "subjects": "Suburbs -- Great Britain -- Fiction",
+      "work_group": "Doyle, Arthur Conan|beyond the city",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/356",
+      "url": "https://gutenberg.pglaf.org/cache/epub/356/pg356.txt"
+    },
+    {
+      "id": 421,
+      "title": "Kidnapped",
+      "author": "Stevenson, Robert Louis, 1850-1894",
+      "subjects": "Historical fiction; Scotland -- History -- 18th century -- Fiction; Adventure and adventurers -- Fiction; Kidnapping -- Fiction",
+      "work_group": "Stevenson, Robert Louis|kidnapped",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/421",
+      "url": "https://gutenberg.pglaf.org/cache/epub/421/pg421.txt"
+    },
+    {
+      "id": 3499,
+      "title": "Jo's Boys",
+      "author": "Alcott, Louisa May, 1832-1888",
+      "subjects": "Boarding schools -- Fiction; Schools -- Fiction; Family life -- New England -- Fiction; New England -- Fiction",
+      "work_group": "Alcott, Louisa May|jo s boys",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3499",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3499/pg3499.txt"
+    },
+    {
+      "id": 518,
+      "title": "The Enchanted Island of Yew\nWhereon Prince Marvel Encountered the High Ki of Twi and Other Surprising People",
+      "author": "Baum, L. Frank (Lyman Frank), 1856-1919",
+      "subjects": "Fantasy fiction; Twins -- Juvenile fiction; Friendship -- Juvenile fiction; Fairies -- Juvenile fiction; Dragons -- Juvenile fiction; Adventure and adventurers -- Juvenile fiction; Princes -- Juvenile fiction; Brigands and robbers -- Juvenile fiction; Knights and knighthood -- Juvenile fiction; Good and evil -- Juvenile fiction; Magicians -- Juvenile fiction; Boredom -- Juvenile fiction",
+      "work_group": "Baum, L. Frank|the enchanted island of yew",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/518",
+      "url": "https://gutenberg.pglaf.org/cache/epub/518/pg518.txt"
+    },
+    {
+      "id": 1550,
+      "title": "A Lady of Quality\nBeing a Most Curious, Hitherto Unknown History, as Related by Mr. Isaac Bickerstaff but Not Presented to the World of Fashion Through the Pages of The Tatler, and Now for the First Time Written Down",
+      "author": "Burnett, Frances Hodgson, 1849-1924",
+      "subjects": "Nobility -- Fiction",
+      "work_group": "Burnett, Frances Hodgson|a lady of quality",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1550",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1550/pg1550.txt"
+    },
+    {
+      "id": 4378,
+      "title": "In Homespun",
+      "author": "Nesbit, E. (Edith), 1858-1924",
+      "subjects": "Fiction; Short stories, English",
+      "work_group": "Nesbit, E.|in homespun",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/4378",
+      "url": "https://gutenberg.pglaf.org/cache/epub/4378/pg4378.txt"
+    },
+    {
+      "id": 2370,
+      "title": "Sir Gibbie",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Orphans -- Fiction; Bildungsromans; Boys -- Fiction; Child witnesses -- Fiction; Mute persons -- Fiction; Highlands (Scotland) -- Fiction",
+      "work_group": "MacDonald, George|sir gibbie",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2370",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2370/pg2370.txt"
+    },
+    {
+      "id": 2186,
+      "title": "\"Captains Courageous\": A Story of the Grand Banks",
+      "author": "Kipling, Rudyard, 1865-1936",
+      "subjects": "Sea stories; Bildungsromans; Children of the rich -- Fiction; Saltwater fishing -- Fiction; Fishing boats -- Fiction; Teenage boys -- Fiction; Rescues -- Fiction; Fishers -- Fiction; Grand Banks of Newfoundland -- Fiction",
+      "work_group": "Kipling, Rudyard|captains courageous a story of the grand banks",
+      "domain": "children",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2186",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2186/pg2186.txt"
+    },
+    {
+      "id": 1056,
+      "title": "Martin Eden",
+      "author": "London, Jack, 1876-1916",
+      "subjects": "Working class -- Fiction; Authors -- Fiction; Autobiographical fiction; Bildungsromans; Young men -- Fiction; San Francisco (Calif.) -- Fiction",
+      "work_group": "London, Jack|martin eden",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1056",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1056/pg1056.txt"
+    },
+    {
+      "id": 780,
+      "title": "The War in the Air",
+      "author": "Wells, H. G. (Herbert George), 1866-1946",
+      "subjects": "Science fiction; War stories; Air warfare -- Fiction",
+      "work_group": "Wells, H. G.|the war in the air",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/780",
+      "url": "https://gutenberg.pglaf.org/cache/epub/780/pg780.txt"
+    },
+    {
+      "id": 1668,
+      "title": "The Tapestried Chamber, and Death of the Laird's Jock",
+      "author": "Scott, Walter, 1771-1832",
+      "subjects": "Ghost stories; Scotland -- Social life and customs -- Fiction",
+      "work_group": "Scott, Walter|the tapestried chamber and death of the laird s jock",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/1668",
+      "url": "https://gutenberg.pglaf.org/cache/epub/1668/pg1668.txt"
+    },
+    {
+      "id": 2548,
+      "title": "The Poor Clare",
+      "author": "Gaskell, Elizabeth Cleghorn, 1810-1865",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction; Horror tales, English",
+      "work_group": "Gaskell, Elizabeth|the poor clare",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2548",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2548/pg2548.txt"
+    },
+    {
+      "id": 10762,
+      "title": "Impressions of Theophrastus Such",
+      "author": "Eliot, George, 1819-1880",
+      "subjects": "Authors -- Fiction; England -- Fiction; Character sketches",
+      "work_group": "Eliot, George|impressions of theophrastus such",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/10762",
+      "url": "https://gutenberg.pglaf.org/cache/epub/10762/pg10762.txt"
+    },
+    {
+      "id": 2511,
+      "title": "The History of Henry Esmond, Esq., a Colonel in the Service of Her Majesty Queen Anne",
+      "author": "Thackeray, William Makepeace, 1811-1863",
+      "subjects": "Historical fiction; Great Britain -- History -- Anne, 1702-1714 -- Fiction",
+      "work_group": "Thackeray, William Makepeace|the history of henry esmond esq a colonel in the service of her majesty queen anne",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2511",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2511/pg2511.txt"
+    },
+    {
+      "id": 3615,
+      "title": "John Bull on the Guadalquivir\nFrom \"Tales from All Countries\"",
+      "author": "Trollope, Anthony, 1815-1882",
+      "subjects": "Short stories; Courtship -- Fiction; British -- Spain -- Fiction",
+      "work_group": "Trollope, Anthony|john bull on the guadalquivir",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/3615",
+      "url": "https://gutenberg.pglaf.org/cache/epub/3615/pg3615.txt"
+    },
+    {
+      "id": 2662,
+      "title": "Under the Greenwood Tree; Or, The Mellstock Quire\nA Rural Painting of the Dutch School",
+      "author": "Hardy, Thomas, 1840-1928",
+      "subjects": "Musical fiction; Love stories; Courtship -- Fiction; Pastoral fiction; Wessex (England) -- Fiction; Church musicians -- Fiction; Choirs (Music) -- Fiction; Women teachers -- Fiction",
+      "work_group": "Hardy, Thomas|under the greenwood tree or the mellstock quire",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2662",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2662/pg2662.txt"
+    },
+    {
+      "id": 527,
+      "title": "The End of the Tether",
+      "author": "Conrad, Joseph, 1857-1924",
+      "subjects": "Ship captains -- Fiction; Fathers and daughters -- Fiction; Seafaring life -- Fiction; Older men -- Fiction",
+      "work_group": "Conrad, Joseph|the end of the tether",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/527",
+      "url": "https://gutenberg.pglaf.org/cache/epub/527/pg527.txt"
+    },
+    {
+      "id": 211,
+      "title": "The Aspern Papers",
+      "author": "James, Henry, 1843-1916",
+      "subjects": "Venice (Italy) -- Fiction; Psychological fiction; Man-woman relationships -- Fiction; Poets -- Fiction; Manuscripts -- Collectors and collecting -- Fiction",
+      "work_group": "James, Henry|the aspern papers",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/211",
+      "url": "https://gutenberg.pglaf.org/cache/epub/211/pg211.txt"
+    },
+    {
+      "id": 7085,
+      "title": "Fanshawe",
+      "author": "Hawthorne, Nathaniel, 1804-1864",
+      "subjects": "Fiction",
+      "work_group": "Hawthorne, Nathaniel|fanshawe",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7085",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7085/pg7085.txt"
+    },
+    {
+      "id": 4092,
+      "title": "The Monikins",
+      "author": "Cooper, James Fenimore, 1789-1851",
+      "subjects": "Fantasy fiction; Satire; American fiction -- 19th century; Human behavior -- Humor -- Fiction; Monkeys -- Fiction",
+      "work_group": "Cooper, James Fenimore|the monikins",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/4092",
+      "url": "https://gutenberg.pglaf.org/cache/epub/4092/pg4092.txt"
+    },
+    {
+      "id": 49947,
+      "title": "The Alhambra",
+      "author": "Irving, Washington, 1783-1859",
+      "subjects": "Spain -- Social life and customs; Spain -- Social life and customs -- Fiction; Alhambra (Granada, Spain); Irving, Washington, 1783-1859 -- Travel -- Spain; Alhambra (Granada, Spain) -- Fiction; Palaces -- Spain -- Granada; Palaces -- Spain -- Granada -- Fiction",
+      "work_group": "Irving, Washington|the alhambra",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/49947",
+      "url": "https://gutenberg.pglaf.org/cache/epub/49947/pg49947.txt"
+    },
+    {
+      "id": 22318,
+      "title": "Crocker's Hole\nFrom \"Slain By The Doones\" By R. D. Blackmore",
+      "author": "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+      "subjects": "England -- Social life and customs -- 19th century -- Fiction",
+      "work_group": "Blackmore, R. D.|crocker s hole",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/22318",
+      "url": "https://gutenberg.pglaf.org/cache/epub/22318/pg22318.txt"
+    },
+    {
+      "id": 7779,
+      "title": "Of Captain Mission",
+      "author": "Defoe, Daniel, 1661?-1731",
+      "subjects": "Pirates -- Fiction",
+      "work_group": "Defoe, Daniel|of captain mission",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/7779",
+      "url": "https://gutenberg.pglaf.org/cache/epub/7779/pg7779.txt"
+    },
+    {
+      "id": 15859,
+      "title": "The Piazza Tales",
+      "author": "Melville, Herman, 1819-1891",
+      "subjects": "Short stories; Manners and customs -- Fiction",
+      "work_group": "Melville, Herman|the piazza tales",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/15859",
+      "url": "https://gutenberg.pglaf.org/cache/epub/15859/pg15859.txt"
+    }
+  ],
+  "catalog_sha256": "be459dc13eb58142320b7ba5fc2fb86c0ff0a761844a530c4d054bf7b26674d8",
+  "excluded": [
+    {
+      "id": 2291,
+      "title": "David Elginbrod",
+      "author": "MacDonald, George, 1824-1905",
+      "subjects": "Scotland -- Fiction; Christian fiction",
+      "work_group": "MacDonald, George|david elginbrod",
+      "domain": "fiction",
+      "catalog_url": "https://www.gutenberg.org/ebooks/2291",
+      "url": "https://gutenberg.pglaf.org/cache/epub/2291/pg2291.txt",
+      "reason": "The listed mirror returned HTTP 404 after three attempts during the initial build."
+    }
+  ]
+}

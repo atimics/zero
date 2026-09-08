@@ -1215,7 +1215,7 @@ static void corpus_append(Corpus *corpus, const Token *data,
 
 static void corpus_add_file(Corpus *corpus, const char *path, int token_width)
 {
-    unsigned char byte_buffer[65536];
+    unsigned char byte_buffer[32768];
     Token token_buffer[32768];
     FILE *file = fopen(path, "rb");
     size_t amount;

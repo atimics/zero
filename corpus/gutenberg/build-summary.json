@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "seed": "zero-gutenberg-v1",
+  "braid_commit": "0b8d9bb66d83e8c2dfd75daff4db5a48d911237f",
+  "release_id": "zero-gutenberg-v1-0d9254dd6a65",
+  "split_unit": "author",
+  "inputs": {
+    "builder_sha256": "0b91e10f26c8a6567ede0dd3f113ddfbc6a078fea1ec4697079f07b49cd3f057",
+    "sources_sha256": "c991b455bbb51fa8d64c546a8777068013259ee181f27fbeedc01671ec83154c",
+    "source_lock_sha256": "86b4694d7cb1a3f7e8a8cce4e57d7adfc5a42c937ce232e9101d63be8d9d9495"
+  },
+  "splits": {
+    "train": {
+      "words": 15540797,
+      "characters": 85944815,
+      "chunks": 3734,
+      "books": 192,
+      "authors": [
+        "Austen, Jane, 1775-1817",
+        "Baum, L. Frank (Lyman Frank), 1856-1919",
+        "Blackmore, R. D. (Richard Doddridge), 1825-1900",
+        "Burnett, Frances Hodgson, 1849-1924",
+        "Carroll, Lewis, 1832-1898",
+        "Conrad, Joseph, 1857-1924",
+        "Cooper, James Fenimore, 1789-1851",
+        "Defoe, Daniel, 1661?-1731",
+        "Dickens, Charles, 1812-1870",
+        "Doyle, Arthur Conan, 1859-1930",
+        "Eliot, George, 1819-1880",
+        "Gaskell, Elizabeth Cleghorn, 1810-1865",
+        "Hardy, Thomas, 1840-1928",
+        "Irving, Washington, 1783-1859",
+        "James, Henry, 1843-1916",
+        "Kingsley, Charles, 1819-1875",
+        "Kipling, Rudyard, 1865-1936",
+        "London, Jack, 1876-1916",
+        "MacDonald, George, 1824-1905",
+        "Nesbit, E. (Edith), 1858-1924",
+        "Scott, Walter, 1771-1832",
+        "Stevenson, Robert Louis, 1850-1894",
+        "Thackeray, William Makepeace, 1811-1863",
+        "Twain, Mark, 1835-1910",
+        "Wells, H. G. (Herbert George), 1866-1946"
+      ],
+      "text_sha256": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01"
+    },
+    "validation": {
+      "words": 2723726,
+      "characters": 15227112,
+      "chunks": 655,
+      "books": 24,
+      "authors": [
+        "Hawthorne, Nathaniel, 1804-1864",
+        "Melville, Herman, 1819-1891",
+        "Trollope, Anthony, 1815-1882"
+      ],
+      "text_sha256": "c0ff504809a9d6d2c8c616c78719e7ca9d5519229ccf6cbfa310ac9e7fda93e9"
+    },
+    "test": {
+      "words": 788256,
+      "characters": 4236866,
+      "chunks": 182,
+      "books": 8,
+      "authors": [
+        "Alcott, Louisa May, 1832-1888"
+      ],
+      "text_sha256": "8a9bba5c55a483ca68d10b5990cd03b31229a8662eafb42a9c0fd399e8827a58"
+    }
+  },
+  "checks": {
+    "work_groups_disjoint": true,
+    "authors_disjoint": true,
+    "exact_chunk_hashes_unique": true,
+    "braid_release_verified": true,
+    "ascii_only": true
+  }
+}
