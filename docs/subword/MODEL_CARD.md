@@ -246,3 +246,11 @@ python scripts/sample_subword.py models/subword/5m-1024.pt experiments/subword-s
 python scripts/subword_seed_grid.py
 python scripts/analyze_subword_samples.py
 ```
+
+## Exploratory 50M checkpoint review
+
+The [measured 50M review](../../experiments/50m-review/README.md) reports matched-window
+losses, frozen source-name counts, exact repetition, and a repetition-1.1
+decoding control. The original scaling run has a separate budget from the
+registered 5M study. The comparison combines parameter count, architecture,
+and token budget. All sample excerpts preserve the generated text.

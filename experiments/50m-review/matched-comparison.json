@@ -1,0 +1,49 @@
+{
+  "backend": "CPU FP32",
+  "models": {
+    "50m": {
+      "validation": {
+        "bits_per_byte": 1.340899895381149,
+        "bytes": 206379,
+        "windows": 1024
+      },
+      "test": {
+        "bits_per_byte": 1.3913700465267647,
+        "bytes": 207306,
+        "windows": 1024
+      }
+    },
+    "5m-256": {
+      "validation": {
+        "bits_per_byte": 1.552207078606019,
+        "bytes": 206379,
+        "windows": 1024,
+        "large_minus_small": -0.21130718322486985,
+        "relative_reduction": 0.13613337172424
+      },
+      "test": {
+        "bits_per_byte": 1.5685280672874353,
+        "bytes": 207306,
+        "windows": 1024,
+        "large_minus_small": -0.17715802076067066,
+        "relative_reduction": 0.11294539412803906
+      }
+    },
+    "5m-1024": {
+      "validation": {
+        "bits_per_byte": 1.5502472919268984,
+        "bytes": 206379,
+        "windows": 1024,
+        "large_minus_small": -0.2093473965457493,
+        "relative_reduction": 0.13504129156422418
+      },
+      "test": {
+        "bits_per_byte": 1.5636688283048243,
+        "bytes": 207306,
+        "windows": 1024,
+        "large_minus_small": -0.17229878177805968,
+        "relative_reduction": 0.11018879359822564
+      }
+    }
+  }
+}
