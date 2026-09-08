@@ -1,0 +1,13 @@
+{
+  "windows_checked": 3072,
+  "splits": [
+    "alcott",
+    "shelley",
+    "stoker"
+  ],
+  "trimmed_target_bytes_total": 3,
+  "all_targets_nonempty": true,
+  "all_token_spans_contiguous": true,
+  "all_target_spans_below_256_tokens": true,
+  "purpose": "Preflight of exact shared-byte target boundaries before the prefix model evaluation."
+}
