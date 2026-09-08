@@ -1,6 +1,6 @@
-# ZERO blind continuation review
+# ZERO A/B review
 
-Rate participant, setting, and action consistency from 1 (frequent contradictions) to 5 (consistent throughout). Read each full continuation. Record A and B independently. The settings key is stored separately.
+Which continuation is better? Pick A, B, or skip. Review as many as you like. The case order and A/B assignments match the original packet.
 
 ## Case 1
 
@@ -20,8 +20,6 @@ The little girl opened the door and spoke. She stood there in the middle of the 
 
 "I should be glad to see you here," said the man with the white face. "I shall be obliged to you
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and spoke. She stood there in the middle of the room, her eyes resting on the floor. The white-haired man was standing near, and looking up at her, he was pale and thin. Betty stood with her face turned up to him.
@@ -30,7 +28,7 @@ The little girl opened the door and spoke. She stood there in the middle of the 
 
 "No," said he, "and not much. It is only you who are with me. I am here to see you. You have not been here long, and I have been here--and you are here. My mother was here with that little girl
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 2
 
@@ -40,15 +38,13 @@ Opening: Fund uncertainty.
 
 Fund uncertainty. [Footnote: _Weltwater and the Pope_ [Footnote 6: _Covent Garden of the State_ 27: _The Fear of the Moon_ 27: _Petite Must_ 27: _Matthmall of the Moon_ 22, _Adventures of Misfortune_ 28: _Matthmall of the Byzantine Magazine_, _Universally of the P
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. [Footnote: _Weltwater and the Pope_ [Footnote 6: _Covent Garden of the State_ 27 "The School of Justice, in which we are to be pronounced a man, to be a monarch; and may not be credited by his own pride in the service of his own people.]
 
 [Footnote 6: Nature, vigorous, vigorous, innocent, and ill-fated
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 3
 
@@ -60,15 +56,13 @@ Once upon a time, and the picture was illuminated, and would have seemed to me t
 
 I was now no longer inclined to plead my intention, but to repeat my communications in the house of Mrs. Westmacott, and proceed to inquire, if the picture I had made, that my friend Westmacott had received the name of "Walker." I was then to be in town, the place being a regular member of the family. As to any one
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, and the picture was illuminated, and showed a gleam of light as a candle shot through the panels. At length it seemed as if the whole scene were closed--being a regular centre-tree in the walls of the cottage.
 
 All this time I was looking in at the window, and then I saw a woman of the same fashion, standing with her face turned upward and her eyes closed. At first I was frightened; but the sight of her pale blue
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 4
 
@@ -84,8 +78,6 @@ Once upon a time, I have had a great deal to say to you, and I thought you might
 
 "And
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, I have had a great deal to say to you, and to keep a man awake in the night. He's a pale-faced butcher, and a stabler, and a bachelor like myself."
@@ -94,7 +86,7 @@ Once upon a time, I have had a great deal to say to you, and to keep a man awake
 
 "Ah, yes, yes; there is no such thing. There's no such thing as a man's being a burnt-out piece; if you had not been asleep, I should have been ashamed of myself, but I was rather at fault
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 5
 
@@ -110,8 +102,6 @@ The captain looked across the sea.
 
 "No one knows there," returned the other; "but there was one, of whom I could tell you. That was the name I was the mother. My name was John Fry. I knew his name was John Fry. His name was John Fry. I knew his name was John Fry, John Fry, and was one of the name of the Lord Jeffry, though the Maj
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea.
@@ -124,7 +114,7 @@ The captain looked across the sea.
 
 "It's a lieutenant's name," said the captain, "and that's the only one I've had. But, sir, I'm the braver of
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 6
 
@@ -136,13 +126,11 @@ The warren is utterly injudicious to the mind, and I cannot but reflect that a m
 
 I must not lose my authority, however, if it be not too late to give the reader a hint of my own position, or to reflect upon your opinions on the probability of his success. On the contrary
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is utterly ignoble; but he was a novitary and a foul-mouthed personage, and he was a rough-hearted, well-known, and most valuable man. He was a parson, and he was a gentleman-like to a man of the world. He was the name of the great Marquis of Montserrat, the Friar of Old. He was a great favourite with the Old Spirit, who had been a great deal in the Friar of Old,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 7
 
@@ -158,8 +146,6 @@ The little girl opened the door and stood behind the captain. "Which do you thin
 
 "He is a gentleman," said the Captain. "I must tell you, sir, that I will give you a few particulars, and then, if my name is Saviour, you will see what he is. Do you know,
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and stood behind the captain. "The captain's orders," she said, and went out of the next room and out into the back room.
@@ -168,7 +154,7 @@ The little girl opened the door and stood behind the captain. "The captain's ord
 
 She came close to the door, and found herself in a dark corner, the captain's room, with a window, and a table, and a pair of gloves, and a couple of panels, and a couple of pigeons, and a
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 8
 
@@ -180,15 +166,13 @@ Once upon a time, and no other.
 
 But that which is so clear and true, is the way which is not the way to aid the people of the place. Perhaps the market will be the same, for there are no other way than to give the order to the people who come to a certain stage, as the people in the neighborhood say, and the people who are not so numerous as to be in a great band of them; and if the people are not there, they come to be told that they are not only a good sort of people, but a good sort of
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, and no other.
 
 But that which is so clear and true, is the way which is not the way to put them in the way of living in the world. It is the way of the world to live in the world that God may be brought to know, and to know the world and to keep its own way. To be in the world of all things, to be in the world of many, and to be punished by those who talk of them, may be in the world to be left unalterable, and to have no other guide but what God may be willing to do,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 9
 
@@ -210,8 +194,6 @@ The little girl opened the door and walked to the bed.
 
 "Yes,
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and walked to the bed.
@@ -226,7 +208,7 @@ She looked at the rose pinnacle slowly, as if she could not have imagined she ha
 
 "I am sure you know everything--
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 10
 
@@ -242,8 +224,6 @@ The Major made no reply; but the Major, who was not a little surprised, had a cu
 
 "Why, sir, you are not a young man, I dare say," cried the Major, "or you would
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? What is the difference?"
@@ -252,7 +232,7 @@ Who is Mara? What is the difference?"
 
 "Well, you would not like a word of what he says, if you had seen him. I have told you so, and you have never even heard of him. But the Major never came to tell you, I have had a very good time
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 11
 
@@ -262,15 +242,13 @@ Opening: Fund uncertainty.
 
 Fund uncertainty. ingenious, as it were, and valuable to be able to make the basin, even in the most highest point of the most provocative period of the century, in order to supplementaries, the most despicable and a most extraordinary associations, or to be piled some number of tall chalks at midnight, were all made to the hotels. It was a small hall, with a wide open space divided by a thick
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. ingenious, ingenious, and ingenious.
 
 All this time Felix was absent. He had been living in a very small house, a very small income, and a very large one; he had a great way of working out his way, sometimes in company with other people; he had been, in fact, in the neighborhood of many a long time; he had made so many visits, such as he had not yet entered into, from a great deal of employment, and he was a wonderful man; he had been
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 12
 
@@ -284,15 +262,13 @@ CHAPTER XI.
 
 [The Laurentius Floro, Who sits in the Baltic, with the great chivalry of the Ladies, Assizes, and Dragons; Among the greatest Protestants of the earth, Among the most famous among the Spanish tribes of the Nation, and the most ancient Spaniards of all the Fairies.]
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. --MISTER TWO DOUBLES THE MARRIACY OF THE RESCUMMAN
 
 A few days after the fatal ceremony the receipt of the letter, the Master of Ravenswood and his sister appeared, as he called them, in a large and tall dressing-house, and supported by the Marquis of A----. They were of the same rank as the Master of Ravenswood's, and who, though un
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 13
 
@@ -308,8 +284,6 @@ I answered him very seriously, and answered, "I was not ready to go," says he; "
 
 "You have given me a little credit for the kindness of your fellow-traveller," says the captain; "I am for going to be a gentleman to be the first man in the
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea. "Come, come, Pretty soon, I have a couple of captains."
@@ -320,7 +294,7 @@ Between us I went to the bow, and laid my hand on the mate.
 
 "See!" I whispered, as I cocked my pipe. "See yon lighted mate,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 14
 
@@ -332,15 +306,13 @@ Once upon a time, and he was not to be a great philosopher, and it was not for m
 
 I went up the hill to the bottom and looked down with a cautious curiosity at the thought of the Prophet. He was a very odd-looking fellow, and I was a man of forty, with a face
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, and he was not to be dressed like a dog. The dog was not there, but he must eat a straw at the end of the meat. When the dog was drinking, the driver was drunk, and the dog sat drunk and drunk; and when he had finished his dinner, he was drunk and drunk.
 
 "Ah! I remember that wasn't man enough," he said. "I remember the rowl in the chime. I remember I was dressed in a muddy
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 15
 
@@ -360,8 +332,6 @@ The little girl opened the door and looked out.
 
 'Who
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and looked out.
@@ -374,7 +344,7 @@ The little girl opened the door and looked out.
 
 And Dicky went out at the back door, with a candle in his hand, and took up his crossbow,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 16
 
@@ -394,8 +364,6 @@ The captain looked across the sea.
 
 "Why, sir,
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea.
@@ -412,7 +380,7 @@ The captain looked across the sea.
 
 "I think I have. I was a little afraid of you. You think I was a little frightened of you
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 17
 
@@ -424,15 +392,13 @@ Fund uncertainty. [Footnote: The French Frenchman, and he is the German Frenchma
 
 He never was a Englishman. It was true, he had a French French name. But he died in the French French French French, and he was a French fox. He was a French Frenchman, and a Frenchman too, though he showed his French blood. He had a French name in the French French French French tongue, and his French French French troops
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. [Footnote: The French]
 
 The following morning brought with it a very narrow telegram. The French lantern was received by the Spaniard, who began to play at ball with his horse. The Spaniards first came to the game on a long stretch of ground. They had not yet found a tree, or a hole into the tree. The English were all in a tree and the Frenchman had made a rush of roaring and roaring. There was no sign of them. The
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 18
 
@@ -442,8 +408,6 @@ Opening: Who is Mara?
 
 Who is Mara? It is my cause, and I must not be angry with her. My father, a gentleman, has died for him; and he is dead, and I am a gentleman. But I must not be angry with my mother. It is an offence, now that we have been together. Make no reproach to her, sir. No, no; it is too late. She cannot go on living, and I am ashamed of her. We have been together all the time, but now we have always had a great deal of trouble. We have given her a great deal of trouble
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? It is my cause, and I must not be angry with her. My father, a gentleman, has died for him; and I have been a gentleman, and have been a gentleman, and they have been friends. This is my story, as the world takes it."
@@ -452,7 +416,7 @@ The Mara had begun to look at the pictures there, and, with a very nice, comfort
 
 "I do not know, either, that I have an idea," she said. "I have always thought of
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 19
 
@@ -466,8 +430,6 @@ Who is Mara? The girl?"
 
 "No, you don't mean that. It's only a sort of civilised civilisation. If it was only a wolf's-head, it wouldn't be the civilisation of a civilised man. And one thing I'm sure wouldn't make me
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? The girl?"
@@ -478,7 +440,7 @@ Who is Mara? The girl?"
 
 "Yes, but she _couldn't_ see her. She's so tired, and seemed so tired, too, that she'd
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 20
 
@@ -498,8 +460,6 @@ The little girl opened the door and stood in the middle of the room.
 
 "Oh, don't, don't, don't!" said Mab
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and stood in the middle of the room.
@@ -510,7 +470,7 @@ The little girl opened the door and stood in the middle of the room.
 
 "We have a taste for the cook's meat," said the girl. "Now, then,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 21
 
@@ -519,8 +479,6 @@ Opening: Once upon a time,
 ### A
 
 Once upon a time, in which I have been accustomed by the ruffians in the neighbourhood of Aldermanbury. I was an old man, and had the best of it; he had the best of the household for his purpose; but his face was a kind of heath-coloured flower, that had been burnt down by the ragged screeches of the old mansion. I have been struck by the sudden change in the air which had been aimed at the spot, and which, as I look at the spot, is
-
-Consistency (1–5): _____
 
 ### B
 
@@ -532,7 +490,7 @@ Once upon a time, in a place like the old timely treatment of the babies, the ol
 
 'Well?' said the old man.
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 22
 
@@ -546,8 +504,6 @@ Who is Mara?
 
 Nature, who had been so obviously winning, gave her consent in so celebrated a manner, and proceeded to reply, "The gentleman is my choice; he's my choice, and I'm a gentleman of fortune. He knows me, and he gives me his word of honour and honour, and his
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara?
@@ -556,7 +512,7 @@ Who is Mara?
 
 "I'm not a fool, Cousin Mara," said my mother. "I know you have a woman, Cous
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 23
 
@@ -567,8 +523,6 @@ Opening: The captain looked across the sea.
 The captain looked across the sea. He said nothing, but he said nothing. He seemed to be a man of the name of the Sawyer--the name of the Sawyer, of the House of the Shadow--and took a long pinch of snuff. Inside of the crest of the Desprez' pinched faces, he was a man whose name was Virginie, and who was called Dan Jenkins, and was a man of great penetration.
 
 "And the man that lives," said Robert in
-
-Consistency (1–5): _____
 
 ### B
 
@@ -582,7 +536,7 @@ The _Victoire_ 33.--THE DEAD OF THE STILL BEY
 
 The _Victoire_ 34.--THE STILL OF THE UNKN
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 24
 
@@ -598,8 +552,6 @@ The warren is - and that is more than a month."
 
 "
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is - I am not inclined to believe that this is not all."
@@ -608,7 +560,7 @@ The warren is - I am not inclined to believe that this is not all."
 
 "I remember, sir,
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 25
 
@@ -618,15 +570,13 @@ Opening: The warren is
 
 The warren is utterly unreasonable in our path, and I am sure you will be injustice if his cause be so long forgotten. But my hand and eye are injured by this time, Master Simon, and you may be ready to meet me in an instant. I know the signs of the Hurons, and how to proceed. If you be offended with me, I will not forget your manner and looks, and you will be forced to sit quietly, with your gifts and your gifts, and forget that I
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is utterly unreasonable in our path, and I am sure you will be injustice if his cause be so long forgotten. But my hand and eye are of no small value; in the meanwhile, I will conceal that you are not more than ten thousand feet above the hollow of a hill."
 
 "You are a good fellow, Sir John; and I have no other reason. My hand may be pressed, but I am not so sure. For your sake, I had no other. These were the faces of the people on
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 26
 
@@ -638,13 +588,11 @@ Once upon a time, and nowhere to be seen. In the mean time, in the midst of this
 
 This was the first time I had seen the Doones at Chatham, and the Doones; and the first thing I had been in the beginning of this new
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, and nowhere to be seen. In the mean time, in the midst of this, I was treated as a jury, and that was a different thing from what it was; and in these days I thought there had been some very peculiar phenomena, in which I had no doubt that the midwife of the commonwealth, and the narrative, had been taught by them, had been existing in the intervals of life. The midwife of the commonwealth, which seemed to have been the greatest gift of
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 27
 
@@ -660,15 +608,13 @@ The captain looked across the sea.
 
 'By carrying it, sir, without any casks,' said the captain. 'I've
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea.
 
 'It's a cruelty to me, for I know you're all right,' said the Jones. 'I'll see you, Jones; I'll see you yourself, and be the first to understand you, and the second, and the third, and the third. But don't you be so cross, Jones, for I'm the only one here, and I'm the only one that's got all the crew together. I'm the first, though; I'm the only one that's not the crew I was, and I'm the only one that
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 28
 
@@ -678,13 +624,11 @@ Opening: Who is Mara?
 
 Who is Mara? I had never seen her before--come with her, I knew she was. And yet I knew that she was Mara. I knew it because she was so young and beautiful. I thought she was a sort of picture of a man who lived in a place like this, but I was not like her. When I first saw her we were not so young as she was, and I was a man who was a kind of gentleman, and I, who was a gentleman, was a kind friend to me and the little girl I was. She was a kind of a kind, kind, joyous, kind
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? I had never seen her before--come with her, I knew she was. And yet I knew her well enough now: I knew her. It was a pity she was not asleep. And yet, what was she to do? I did not see her. I did not see her. As she is trying to imagine, I do not see her. She is a pity for us both. She has no other feeling. She knew that she was only a pitying one. The one thing that was not a pitying one has been punished for her is that she is not
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 29
 
@@ -700,8 +644,6 @@ The captain looked across the sea. "See," said he, "that I have a right to be a 
 
 "He is a gentleman," returned the captain, "and I know by his name; but he is
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea. "See," said he, "that I have a right to be a friend, and this I can't believe."
@@ -712,7 +654,7 @@ The captain looked across the sea. "See," said he, "that I have a right to be a 
 
 "It's very likely
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 30
 
@@ -726,8 +668,6 @@ He did not seem to know what it was, but he did not seem to know, and a few seco
 
 "You are the best masters of this country, and must do you the honor to live in the land, as you used to do. I think you would be quite right if you had lived here, for you were a gentleman, and you would not have been brought up in the tree to live there, unless you had got a few p
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea.
@@ -736,7 +676,7 @@ He did not seem to know what to say, but he looked up at me with a sort of puzzl
 
 The ship was in the midst of the great captain's stories. The crew was very much like a ship's crew, except with two or three sails. I had seen men run out
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 31
 
@@ -748,13 +688,11 @@ The warren is verified to the eye of the victim, and by cunningly refusing to dr
 
 "You may well do so, Delaware," he said, "and all of us would think better of this affair than of the rest of us. I am not so sure of the valour of the Mingos, as you can be of the true pale faces that used to be the last time. But, if I were to be found in this strange country, how
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is verified to the eye of a man who is the most ancient and desirable of the testator. These are the principal officers of the law, and the populace the laws of the place are so highly admired by the people of the country as to have been selected by the laws of the country to associate with the laws in which they were proposed. As for the laws of the country, there is no other law than the laws of the country; and if we are not to be denied them
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 32
 
@@ -770,8 +708,6 @@ I
 
 Near to this day I had a little talk with the French officer, whose name was Wilson. I was one of the French officers, of that name, and an honest officer. I made the STATE OF THE MOOR. I was about to make the name of the officer, and to take
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. [Footnote: Technicals of Middlemarch, Apathetic, Preservative, Poetick, and German.]
@@ -780,7 +716,7 @@ When the Firm Gale, to whom the greatest title of Spyhowa, was written, had been
 
 The latter had not forgotten the meaning of the story; and the Firm had not forgott
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 33
 
@@ -792,13 +728,11 @@ Fund uncertainty. 400,000 squasides of his, to a pennyweight of 10,000,000 (1).
 
 More than forty pounds of 10,000 pounds; but he had a very good pennyweight of money, and bought a pound of creditable stock, in which the quantity of gold was burnt; for when he was gone, a portable pennyworth of "portable port, and a good deal of money" was p
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. 400.--I mean Lord Gilbert of Ghent.--I saw him, Mr. Gilbert, on the ground of his wishes, but I was not in a hurry. I was in a hurry, and could not go to him. He had been a couple of years old, and he had been a good kind old fellow, and the missis had never been a couple of years old. My Lady Dunstanwolde was a very good-looking old lady, and I was not the less shy in the business
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 34
 
@@ -818,8 +752,6 @@ The little girl opened the door and turned into the room.
 
 "Oh, don
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and held it.
@@ -836,7 +768,7 @@ The king sighed. "Isn't she?"
 
 
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 35
 
@@ -854,13 +786,11 @@ Who is Mara? He is very old and very old, and is very fond of children. He can't
 
 "To be sure
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? He is very old and very old, and is very fond of children. He can't do anything more than make them happy. When Anthea says, he is only fond of children, and he was trying to make them happy, and he used to say, 'Here they are!' and he says it like the children he was so kind to them. He says it was because the children said that they'd been with him ever since he was a little boy. And they said they'd never have any children, and they'd give him some water and he wouldn't have them all by themselves.
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 36
 
@@ -876,8 +806,6 @@ The captain looked across the sea. He had seen the pig's head in a corner, a whi
 
 "What's the name
 
-Consistency (1–5): _____
-
 ### B
 
 The captain looked across the sea. He had seen the pig's head in a corner, a white hand glowering in the sunlight, and the pig's head on the pig's back.
@@ -890,7 +818,7 @@ The captain looked across the sea. He had seen the pig's head in a corner, a whi
 
 "The center of the crew," the pig went on. "The center of the crew is a m
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 37
 
@@ -908,8 +836,6 @@ Who is Mara? I have been to the Cavaliere to see Jem, and have been there before
 
 Mr. Sclater had been very angry, and went to the door after his depart
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara? I have been to the Cavaliere to see Jem, and have been there before in the morning."
@@ -922,7 +848,7 @@ Who is Mara? I have been to the Cavaliere to see Jem, and have been there before
 
 "Will the Lord se
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 38
 
@@ -934,15 +860,13 @@ Fund uncertainty. [Footnote 34: "LITTLE MOTHER."]
 
 This was the first of the three days that Gabriel had been in the habit of finding himself in the centre of the tree. The mention of the name of the Master, the author of the "Regency of the Horican", was received with the most profound respect for his identity. The former did not exclude the name of "The Master of Ravenswood, or the
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. [Footnote 34: "LITTLE MOTHER."]
 
 This was the first of the three days that Gabriel had been in the habit of finding himself in the centre of the tree. The mention of the name of the Master, the author of the "Regency of the Horican", was received with the most profound respect for the circumstance, and was well aware of the truth of the circumstance, in the course of which time he had repeated
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 39
 
@@ -960,8 +884,6 @@ At this moment, the two daughters were hurrying in on the machine, and Mrs. Rush
 
 "They're only children, and he's a gentleman, and a gentleman's name is Emperor
 
-Consistency (1–5): _____
-
 ### B
 
 Who is Mara?
@@ -976,7 +898,7 @@ At this moment, the two daughters were assembled in the hall. One of the daughte
 
 "No, no," said the nurse, and pulled at
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 40
 
@@ -988,13 +910,11 @@ Once upon a time, she was soothed by the exercise of the other two. I have notic
 
 When I found the manager she told me that she had been very kind to me, and that she was very thankful that he meant to be so kind as to
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, she was soothed by the exercise of her rank and fortitude, that the old woman withdrew a little from the picture she had made of the old woman's dress, and placed it on a footstool for her young mistress; she had not been sent for long. The old woman's hair was thin, and had a long, short round shaving, and curled hair, and showed that the old woman was no other than her own daughter's. It was a luxurious face, and the face is a little pale; but
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 41
 
@@ -1006,8 +926,6 @@ The little girl opened the door and looked out with the air of a well-suppressed
 
 "I didn't say anything to 'em, for there was a way of doing it in a good deal of time, and I've had the highest trial in the world until I've got 'em. I've seen the latest pieces in the world. Well, I'm glad, to be sure, that as I've
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and looked out with a bow to the captain.
@@ -1016,7 +934,7 @@ The little girl opened the door and looked out with a bow to the captain.
 
 'I don't see that you're a nice gentleman,' said
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 42
 
@@ -1032,15 +950,13 @@ The little girl opened the door and the others followed the door. The sound was 
 
 "I don't see any way to find you," said the woman, "but I'm in a hurry, and I've got a little scrape down you. And I'm just coming along the passage to
 
-Consistency (1–5): _____
-
 ### B
 
 The little girl opened the door and began to open it.
 
 That night she had found the princess awake, and she had found a very good place for her; but the children did not sleep much for this, for she did not sleep long. When she awoke the princess awoke in bed and sat down to rest. She found the princess sleeping in bed, and the princess catching up the basin and scattered it, she went to sleep. She dreamed that she was going to sleep in the morning. The princess took the key in her pocket and the kitchen door
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 43
 
@@ -1052,15 +968,13 @@ Once upon a time, and there are some who wouldn't have had the money, I believe.
 
 
 
-Consistency (1–5): _____
-
 ### B
 
 Once upon a time, and there are some who wouldn't have had the money, I believe, if it hadn't been for me to avoid the loss, if they hadn't been taken a little longer. There are more things than those which I think I am worth, and which, of course, are a little too bad--more likely to be a bad one than I am.
 
 I hadn't had a much luckier time of it than the rest of us, but it was a long time before I got to Camelot. I was lucky enough to have a little
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 44
 
@@ -1072,15 +986,13 @@ Fund uncertainty. [Footnote: i. p. 6.]
 
 [Footnote 9: I. NOTE 7. NOTE 9: NOTE 8. NOTE 8. NOTE 8. NOTE 9. NOTE 9. NOTE 7. NOTE 9. NOTE 9. NOTE 6. NORTE 9. NOTE 9. NOTE 9. NO
 
-Consistency (1–5): _____
-
 ### B
 
 Fund uncertainty. [Footnote: i. p. 6.]
 
 [Footnote 9: I. NOTE 7. NOTE 8: NOTE 8. NOTE 8. NOTE 8. NOTE 9. NOTE 9. NOTE 7. NOTE 9. NOTE 8. NOTE 6. NORTE 9. NOTE 9. NOTE 9. NO
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 45
 
@@ -1096,13 +1008,11 @@ The warren is utterly identical with the shore."
 
 "Among those that we have seen so serenely, and so highly, the language that we have in the world, which is more than usually a matter of course, would be very much likely to prove to me that such an experience is a little less the labor of the
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is utterly innocent; and the savage, like many other vagabonds, will never perish in the flesh. It may seem that there are too many of them who feel a savage's sword, and a rifle of their own, and a bullet, as a bullet, or a bullet. Is it not that they will, when their hearts are at rest? But the old man is a savage; and will not disdain to be spoiled by a bullet which has been brought from the hands of
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 46
 
@@ -1112,15 +1022,13 @@ Opening: The warren is
 
 The warren is essentially the same, and the bond is, as is usual in the land, in a breeze. For in this matter, our ancient soldier is the name of a fatal connexion, and would have held the battle against a lawless posterity. But the band is nowhere to be seen; the birds are more apt to be seen in battle than in war, and the songs were so fiery, that they could not well be heard of, until the fiery beasts began to
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is essentially the same, and the bond is, as I have said, not the same as usual, but the same as if it had been born in the same age, or an inability to prevent an accident from dwelling on the proceeds of the medium of the laws of the country. These are the mediums of many who would not be thought a better education, than the tongues of a languisher.
 
 These are the scattered and scratching tool
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 47
 
@@ -1130,15 +1038,13 @@ Opening: The warren is
 
 The warren is utterly unsuccessful, and it is hard to believe that the rule of the warrior is to be convinced that the powers of history are not so far off as to recommend the powers of the great and beautiful lands of the Indians to be thought so; but there is something in the very truth of the rule that will be remembered as regards a warrior who knows all the gifts of the powers of the woods, and the warrior who is to be his prot
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is utterly unsuccessful, and it is hard to believe that the rule of the warrior to be prevented from making the conquest of a tribe. After this, the tale that followed was heard in the woods was told, and all the evil that followed, the desolation of the forest, had been abandoned to the tree of their enemies.
 
 "The Serpent and I," said the Delaware at the same time, "was the Mingos yonder. This warlike arm
 
-Consistency (1–5): _____
+Pick: A / B / skip
 
 ## Case 48
 
@@ -1148,12 +1054,10 @@ Opening: The warren is
 
 The warren is identical with his own narratives in the stage of the publication of the Eastern bands. The first band of the banditti, a few miles from the city, lay on a couch with the pennon of the Queen, who was as civil to the tete-a-tete as to the populace of the Generalife. The banditti lay scattered about the camp, the panic-master was rapidly challeng
 
-Consistency (1–5): _____
-
 ### B
 
 The warren is identical with his own narratives in the narrative.
 
 "It is a very different thing," said the Miller, "that he may have been at the head of his own country, and that he may be a little in want of proper civility. The narrative is so different from what it is that men may have been brought upon the top of the earth, that they may have been united in the narrative of some inhabitants of the settlements. The first is the birthday of the set
 
-Consistency (1–5): _____
+Pick: A / B / skip
