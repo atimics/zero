@@ -32,11 +32,12 @@ class CorpusTests(unittest.TestCase):
             corpus.clean_book(b"Copyright 2025\n" + self.raw())
 
     def test_split_membership(self):
-        groups = [f"author|work {i}" for i in range(1000)]
+        groups = [f"author {i}|work" for i in range(1000)]
         forward = {g: corpus.split_for(g) for g in groups}
         reverse = {g: corpus.split_for(g) for g in reversed(groups)}
         self.assertEqual(forward, reverse)
         self.assertEqual(set(forward.values()), {"train", "validation", "test"})
+        self.assertEqual(corpus.split_for("author|story"), corpus.split_for("author|collected stories"))
 
     def test_lock_detects_changed_source(self):
         with tempfile.TemporaryDirectory() as directory:

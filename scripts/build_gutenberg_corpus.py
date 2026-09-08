@@ -25,7 +25,9 @@ def write_json(path, value):
 
 
 def split_for(work_group):
-    bucket = int(digest((SEED + "\0" + work_group).encode())[:8], 16) % 20
+    # A story can also appear in an anthology under another title.
+    author_group = work_group.split("|", 1)[0]
+    bucket = int(digest((SEED + "\0" + author_group).encode())[:8], 16) % 20
     return "test" if bucket == 0 else "validation" if bucket == 1 else "train"
 
 
@@ -156,7 +158,7 @@ def compile_corpus(args):
 def export_corpus(output, release, minimum_train_words):
     records = [json.loads(line) for line in (release / "data/train.jsonl").read_text().splitlines()]
     split_records = {split: [] for split in ["train", "validation", "test"]}
-    membership, seen_hashes = {}, set()
+    membership, author_membership, seen_hashes = {}, {}, set()
     for record in records:
         metadata = record["metadata"]
         split = metadata["split"]
@@ -164,6 +166,10 @@ def export_corpus(output, release, minimum_train_words):
         if group in membership and membership[group] != split:
             raise ValueError("Work occurs in multiple splits")
         membership[group] = split
+        author_group = group.split("|", 1)[0]
+        if author_group in author_membership and author_membership[author_group] != split:
+            raise ValueError("Author occurs in multiple splits")
+        author_membership[author_group] = split
         if record["contentHash"] in seen_hashes:
             raise ValueError("Duplicate chunk survived Braid")
         seen_hashes.add(record["contentHash"])
@@ -172,7 +178,7 @@ def export_corpus(output, release, minimum_train_words):
         split_records[split].append(record)
     summary = {"version": 1, "seed": SEED, "braid_commit": BRAID_COMMIT,
                "release_id": json.loads((release / "release.json").read_text())["releaseId"],
-               "split_unit": "normalized author and work title", "splits": {}}
+               "split_unit": "author", "splits": {}}
     ready = output / "ready"
     ready.mkdir(exist_ok=True)
     for split, items in split_records.items():
@@ -186,8 +192,9 @@ def export_corpus(output, release, minimum_train_words):
         (ready / f"{split}.jsonl").write_text("".join(json.dumps(r) + "\n" for r in items))
         summary["splits"][split] = {"words": words, "characters": len(data), "chunks": len(items),
                                    "books": len({r['metadata']['book_id'] for r in items}),
+                                   "authors": sorted({r['metadata']['author'] for r in items}),
                                    "text_sha256": digest(data)}
-    summary["checks"] = {"work_groups_disjoint": True, "exact_chunk_hashes_unique": True,
+    summary["checks"] = {"work_groups_disjoint": True, "authors_disjoint": True, "exact_chunk_hashes_unique": True,
                          "braid_release_verified": True, "ascii_only": True}
     write_json(ready / "summary.json", summary)
     print(json.dumps(summary, indent=2))

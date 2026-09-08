@@ -73,12 +73,14 @@ memory; larger collections will need a more efficient index.
 
 ## Splits and evaluation
 
-The SHA-256 hash of a fixed seed and normalized author/title assigns each work
-to training (18 of 20 buckets), validation (one bucket), or test (one bucket).
-The assignment happens before chunking. Every surviving chunk from a work stays
-in its assigned split. Word proportions vary with book lengths.
+The SHA-256 hash of a fixed seed and normalized author assigns all that author's
+works to training (18 of 20 buckets), validation (one bucket), or test (one bucket).
+The assignment happens before chunking. This keeps alternate editions and stories
+that also appear in anthologies together. Word proportions vary with book lengths.
+Alcott supplies the test books. Hawthorne, Melville, and Trollope supply validation.
+This is a test of transfer to held-out authors; scores should also be read per book.
 
-The final checks cover disjoint work groups, unique exact chunk hashes, the
+The final checks cover disjoint authors and work groups, unique exact chunk hashes, the
 Braid release checksums, the fixed split rule, and ASCII output. Near-duplicate
 matching is an approximate filter; passage-level review remains useful for
 anthologies and alternate editions.
