@@ -1,0 +1,33 @@
+{
+  "package_sha256": "370f794e283bf0cdd8b59b0789e7f7ad7f352aa51c20a8bf86c7524c5dce5ce8",
+  "package_bytes": 90408192,
+  "files": {
+    "scripts/zero_torch.py": "e2af0e4c1f660133c51a4a14dfe604110d0531037557456acd87145f0e6e2ca1",
+    "scripts/subword_model.py": "396aaf24272f13d0ffc56d815d522e2468e9cc362a0255c70d69db2f32835266",
+    "scripts/train_subword.py": "c3b94cfeb07d83eb52ee300ca673cc95a546fc1b87bf8e4b3b8736ee9bae0809",
+    "scripts/evaluate_character_baseline.py": "50a134a267cd9d491701fd296cea995d45882e8f9d506a1fd3798fa2e7222a1f",
+    "tests/test_subword.py": "f5ca83ee20c7b4dd7c84eea60581e4e01bde618f90cb0352740d89f267ad4e3c",
+    "data/train.bin": "b733e17de9fc6cf8635a5fe8e84f2df8d606491b583032ff9fc7663a88c75a79",
+    "data/tokenizer.json": "90cdcc504c5311586cbe1f9c27b402e11c57ba5475521536f28beb6762939d43",
+    "data/token_bytes.json": "48c0f3ef6da93d58e658de6a0bcff31410852606e4fd10eb8703b8bb63d34194",
+    "data/validation.bin": "bd7a453c6a0ba5edd7c3460b9cfc2d703435c703d1d104a07d957a8cd965230b",
+    "data/manifest.json": "eea98d59768eb276d83c0f0fc6fd024ccd5f915f59715f1c14830ba686452ad6",
+    "data/test.bin": "ea6ff2fd3dfcd60b4e8ecadd0ef61397c5e8cd8290d30d4511e490cb5599a875",
+    "character.ckpt": "9ea700a76eed50eb2f13e57cd00567e80a7e43449a562829ba74d35363021244"
+  },
+  "bucket": "zero-training-022118847419",
+  "source_key": "experiments/subword-scaling-v1/packages/370f794e283bf0cdd8b59b0789e7f7ad7f352aa51c20a8bf86c7524c5dce5ce8.tar.gz",
+  "result_prefix": "experiments/subword-scaling-v1/cuda-370f794e283b-1788927071",
+  "deadline": 1788927071,
+  "maximum_instance_seconds": 43200,
+  "instance_type": "g5.xlarge",
+  "hourly_ec2_usd": 1.006,
+  "twelve_hour_ec2_usd": 12.072,
+  "root_volume_gib": 75,
+  "requested_total_budget_usd": 14,
+  "user_data_sha256": "be9cdc3216ae3e9e7ee48f2a38c6af45fee83ab095eb8de321473423d471df3c",
+  "request_sha256": "9b3e3c04730776aaacf43609321a298f00eb01749e509e1b986323f7134c48a1",
+  "instance_id": "i-00d3c850a142f4dde",
+  "launch_time": "2026-09-08T16:11:37+00:00",
+  "source_commit": "bd7f940"
+}

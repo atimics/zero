@@ -1,0 +1,258 @@
+{
+  "instance_id": "i-00d3c850a142f4dde",
+  "gpu_smoke": "All three configurations completed two updates, checkpoint reload, evaluation and sampling.",
+  "first_run_measurements": [
+    {
+      "step": 2,
+      "steps": 2,
+      "tokens": 16384,
+      "train_loss": 7.512561798095703,
+      "validation": {
+        "bits_per_byte": 4.315226998777961,
+        "target_bytes": 318,
+        "target_tokens": 128,
+        "windows": 2
+      },
+      "elapsed_seconds": 0.5326963869999872,
+      "tokens_per_second": 30756.731976859443
+    },
+    {
+      "step": 100,
+      "steps": 12208,
+      "tokens": 819200,
+      "train_loss": 6.913781461715698,
+      "validation": {
+        "bits_per_byte": 2.8144988805938773,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 3.2046025939999936,
+      "tokens_per_second": 255632.32131615808
+    },
+    {
+      "step": 200,
+      "steps": 12208,
+      "tokens": 1638400,
+      "train_loss": 5.777374682426452,
+      "validation": {
+        "bits_per_byte": 2.4612200852414587,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 6.546253196999999,
+      "tokens_per_second": 250280.5728245956
+    },
+    {
+      "step": 300,
+      "steps": 12208,
+      "tokens": 2457600,
+      "train_loss": 5.19076003074646,
+      "validation": {
+        "bits_per_byte": 2.291724250794936,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 10.05207494800004,
+      "tokens_per_second": 244486.8360724831
+    },
+    {
+      "step": 400,
+      "steps": 12208,
+      "tokens": 3276800,
+      "train_loss": 4.8890525817871096,
+      "validation": {
+        "bits_per_byte": 2.1763468197508127,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 13.546158160999994,
+      "tokens_per_second": 241898.84401571925
+    },
+    {
+      "step": 500,
+      "steps": 12208,
+      "tokens": 4096000,
+      "train_loss": 4.686046748161316,
+      "validation": {
+        "bits_per_byte": 2.110887594024354,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 17.03954804099999,
+      "tokens_per_second": 240381.96260513144
+    },
+    {
+      "step": 600,
+      "steps": 12208,
+      "tokens": 4915200,
+      "train_loss": 4.552424025535584,
+      "validation": {
+        "bits_per_byte": 2.060056722660788,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 20.527827260000038,
+      "tokens_per_second": 239440.83013488838
+    },
+    {
+      "step": 700,
+      "steps": 12208,
+      "tokens": 5734400,
+      "train_loss": 4.450248904228211,
+      "validation": {
+        "bits_per_byte": 2.0055573829661455,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 24.01904844200004,
+      "tokens_per_second": 238743.8459041012
+    },
+    {
+      "step": 800,
+      "steps": 12208,
+      "tokens": 6553600,
+      "train_loss": 4.356714720726013,
+      "validation": {
+        "bits_per_byte": 1.9759952669670964,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 27.50563291000003,
+      "tokens_per_second": 238263.9229369397
+    },
+    {
+      "step": 900,
+      "steps": 12208,
+      "tokens": 7372800,
+      "train_loss": 4.293432121276855,
+      "validation": {
+        "bits_per_byte": 1.9462265790421593,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 31.017350875000034,
+      "tokens_per_second": 237699.2164712065
+    },
+    {
+      "step": 1000,
+      "steps": 12208,
+      "tokens": 8192000,
+      "train_loss": 4.239586651325226,
+      "validation": {
+        "bits_per_byte": 1.9202633359475652,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 34.51559001600003,
+      "tokens_per_second": 237342.0241752356
+    },
+    {
+      "step": 1100,
+      "steps": 12208,
+      "tokens": 9011200,
+      "train_loss": 4.180405392646789,
+      "validation": {
+        "bits_per_byte": 1.9024360253901575,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 38.011947494000026,
+      "tokens_per_second": 237062.3078815514
+    },
+    {
+      "step": 1200,
+      "steps": 12208,
+      "tokens": 9830400,
+      "train_loss": 4.176297874450683,
+      "validation": {
+        "bits_per_byte": 1.869835697769303,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 41.51912426300004,
+      "tokens_per_second": 236767.99967480064
+    },
+    {
+      "step": 1300,
+      "steps": 12208,
+      "tokens": 10649600,
+      "train_loss": 4.093149485588074,
+      "validation": {
+        "bits_per_byte": 1.8611674962141704,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 45.01989655800003,
+      "tokens_per_second": 236553.1867955296
+    },
+    {
+      "step": 1400,
+      "steps": 12208,
+      "tokens": 11468800,
+      "train_loss": 4.059696776866913,
+      "validation": {
+        "bits_per_byte": 1.8455624988385437,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 48.51815580900001,
+      "tokens_per_second": 236381.6144444749
+    },
+    {
+      "step": 1500,
+      "steps": 12208,
+      "tokens": 12288000,
+      "train_loss": 4.0363955760002135,
+      "validation": {
+        "bits_per_byte": 1.823762178870056,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 52.086985200000015,
+      "tokens_per_second": 235913.05875771816
+    },
+    {
+      "step": 1600,
+      "steps": 12208,
+      "tokens": 13107200,
+      "train_loss": 3.98709349155426,
+      "validation": {
+        "bits_per_byte": 1.8118696470505102,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 55.54337530800001,
+      "tokens_per_second": 235981.3375999882
+    },
+    {
+      "step": 1700,
+      "steps": 12208,
+      "tokens": 13926400,
+      "train_loss": 3.91264573097229,
+      "validation": {
+        "bits_per_byte": 1.8051288400942738,
+        "target_bytes": 13063,
+        "target_tokens": 4096,
+        "windows": 64
+      },
+      "elapsed_seconds": 59.05405992300001,
+      "tokens_per_second": 235824.5989887654
+    }
+  ]
+}
