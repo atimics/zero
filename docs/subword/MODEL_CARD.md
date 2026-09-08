@@ -88,11 +88,80 @@ raw window records, and operational bounds are in the repository directory
 `experiments/subword-replication/`. The running study also includes a matched
 width/depth/context trade and one exploratory prefix-space variant.
 
-The proposed unusual word-initial token measure flagged zero cases across the
-96 CPU samples. It currently supplies no improvement signal. A conservative
-unique-book name index found mixed source names in one passage. These are
-narrow diagnostics, with coverage and false-positive limits, rather than an
-established coherence score.
+### Recorded GPU artifact: detector positive control
+
+The detector flags the recorded GPU `g irl` sample once. Retokenization yields
+` g` (token 300), a standalone space (220), then `irl` (1009). The training
+index records zero word-initial uses of `irl`. Replacing `g irl` with `girl`
+in a labelled negative-control copy removes the flag. The original recorded
+sample remains unchanged.
+
+Across all 12 recorded GPU samples, the detector reports one flag. Across the
+separate 96 CPU generation-grid samples, it reports zero. Those are distinct
+sample sets. This establishes sensitivity on the known positive case, while
+broader detector sensitivity and precision remain unmeasured.
+
+The historical GPU samples lack original generation token IDs. The trace above
+is a retokenization of the preserved text. The new training runs save original
+IDs; their outputs cannot establish the token history of an older sample.
+The tested seed-7 rerun sample differs from the historical sample, so no exact
+replay claim is made. The tokenizer explanation remains a hypothesis.
+
+### Per-author validation and book-clustered intervals
+
+The saved CUDA BF16 window losses give the following breakdown, retaining all
+1,024 validation windows and assigning them by target-start book:
+
+| Author | Short bits/byte | Long bits/byte | Long minus short | Windows |
+| --- | ---: | ---: | ---: | ---: |
+| Hawthorne | 1.564724 | 1.566040 | +0.001316 | 249 |
+| Melville | 1.717790 | 1.719611 | +0.001822 | 303 |
+| Trollope | 1.449088 | 1.443248 | -0.005840 | 472 |
+
+The observed direction differs by author. This is descriptive evidence for
+these weights and passages; replicated author-specific effects remain pending.
+
+A whole-book bootstrap resamples eight test books with replacement and retains
+all windows within each drawn book. Over 20,000 draws, the test interval is
+**[-0.008693, +0.000404] bits/byte**, which crosses zero. This uses all 1,024
+test windows and the original -0.004762 point estimate.
+
+As a boundary sensitivity check, exclude windows whose input context or target
+crosses a book boundary: six test windows and one validation window. The test
+interval becomes [-0.008785, +0.000369] over 1,018 windows; the validation
+interval is [-0.005514, +0.002462] over 1,023 windows and 24 books. Both cross
+zero. Raw rows preserve source book/author, losses, bytes, and exclusion flags.
+Only eight test-book clusters are available. This analysis still conditions on
+one test author and the trained weights, while allowing within-book dependence.
+
+### Detectability and the registered equivalence band
+
+The registered ±0.01 bits/byte band is a declared practical threshold. If the
+five-seed interval is tightly centred near the existing -0.0048 difference,
+excludes zero, and lies entirely inside that band, the reported outcome will be
+**statistically detectable and practically equivalent at the registered threshold**.
+Both labels can hold at once. The rule is fixed before results; the observed
+seed results will determine whether its conditions are met. The threshold is
+a research decision, rather than a measured threshold for writing quality.
+
+The width/depth arm is five training seeds of one configuration: width 384,
+three layers, context 256, 5,046,912 parameters. Seeds are 7, 11, 19, 31 and 43,
+paired against the same five long-context training seeds. It is a width/depth/
+context trade, with the token budget fixed.
+
+### Evaluation-path precision check
+
+Across both models and both splits, individual CPU FP32 and CUDA BF16 aggregate
+scores differ by at most **0.0000525 bits/byte**. The test gap changes by
+**0.0000975 bits/byte**. This supports numerical agreement of the two evaluation
+paths on these checkpoints and target windows. It gives an execution check
+separate from statistical uncertainty and from generation-output agreement.
+
+The [saved review evidence](../../experiments/subword-replication/README.md#review-controls-and-book-analysis)
+contains the detector controls, precision scores, book assignments, and bootstrap results.
+
+The conservative source-name index found mixed source names in one CPU-grid
+passage. Coverage and false-positive limits accompany that narrow proxy.
 
 ## Data and architecture
 

@@ -1,0 +1,227 @@
+{
+  "samples": 12,
+  "unusual_initial_count": 1,
+  "word_initial_opportunities": 985,
+  "unusual_initial_rate": 0.0010152284263959391,
+  "passages_with_multiple_source_books": 1,
+  "rows": [
+    {
+      "prompt": "Once upon a time,",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 97,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 0,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The little girl opened the door and",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 74,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 2,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The captain looked across the sea.",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 70,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 6,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The warren is ",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 79,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 3,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "Fund uncertainty. ",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 66,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 6,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "Who is Mara?",
+      "seed": 7,
+      "model": "5m-256",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 72,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 6,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "Once upon a time,",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 104,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 2,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The little girl opened the door and",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 85,
+      "unusual_initial_count": 1,
+      "unusual_initial_examples": [
+        {
+          "position": 46,
+          "token": 1009,
+          "text": "irl"
+        }
+      ],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 3,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The captain looked across the sea.",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 66,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 8,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "The warren is ",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 72,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 5,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "Fund uncertainty. ",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 106,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {},
+      "distinct_source_books": 0,
+      "source_books": [],
+      "capitalized_words": 1,
+      "matched_name_coverage": 0.0
+    },
+    {
+      "prompt": "Who is Mara?",
+      "seed": 7,
+      "model": "5m-1024",
+      "token_source": "retokenized decoded output; original generation IDs unavailable",
+      "word_initial_opportunities": 94,
+      "unusual_initial_count": 0,
+      "unusual_initial_examples": [],
+      "matched_source_names": {
+        "Bulbo": [
+          "897"
+        ],
+        "Ostrog": [
+          "775"
+        ]
+      },
+      "distinct_source_books": 2,
+      "source_books": [
+        "775",
+        "897"
+      ],
+      "capitalized_words": 12,
+      "matched_name_coverage": 0.16666666666666666
+    }
+  ],
+  "positive_control": {
+    "text": "g irl",
+    "tokenization_source": "Retokenized historical text; original generation token IDs were not saved.",
+    "tokens": [
+      {
+        "token_id": 300,
+        "decoded": " g",
+        "offset": [
+          139,
+          141
+        ],
+        "word_initial_training_count": 42733
+      },
+      {
+        "token_id": 220,
+        "decoded": " ",
+        "offset": [
+          141,
+          142
+        ],
+        "word_initial_training_count": 0
+      },
+      {
+        "token_id": 1009,
+        "decoded": "irl",
+        "offset": [
+          142,
+          145
+        ],
+        "word_initial_training_count": 0
+      }
+    ],
+    "detected": true
+  }
+}

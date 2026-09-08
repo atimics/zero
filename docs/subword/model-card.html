@@ -95,11 +95,93 @@ The registered practical-equivalence band is ±0.01 bits/byte. Full protocol,
 raw window records, and operational bounds are in the repository directory
 <code>experiments/subword-replication/</code>. The running study also includes a matched
 width/depth/context trade and one exploratory prefix-space variant.</p>
-<p>The proposed unusual word-initial token measure flagged zero cases across the
-96 CPU samples. It currently supplies no improvement signal. A conservative
-unique-book name index found mixed source names in one passage. These are
-narrow diagnostics, with coverage and false-positive limits, rather than an
-established coherence score.</p>
+<h3>Recorded GPU artifact: detector positive control</h3>
+<p>The detector flags the recorded GPU <code>g irl</code> sample once. Retokenization yields
+<code>g</code> (token 300), a standalone space (220), then <code>irl</code> (1009). The training
+index records zero word-initial uses of <code>irl</code>. Replacing <code>g irl</code> with <code>girl</code>
+in a labelled negative-control copy removes the flag. The original recorded
+sample remains unchanged.</p>
+<p>Across all 12 recorded GPU samples, the detector reports one flag. Across the
+separate 96 CPU generation-grid samples, it reports zero. Those are distinct
+sample sets. This establishes sensitivity on the known positive case, while
+broader detector sensitivity and precision remain unmeasured.</p>
+<p>The historical GPU samples lack original generation token IDs. The trace above
+is a retokenization of the preserved text. The new training runs save original
+IDs; their outputs cannot establish the token history of an older sample.
+The tested seed-7 rerun sample differs from the historical sample, so no exact
+replay claim is made. The tokenizer explanation remains a hypothesis.</p>
+<h3>Per-author validation and book-clustered intervals</h3>
+<p>The saved CUDA BF16 window losses give the following breakdown, retaining all
+1,024 validation windows and assigning them by target-start book:</p>
+<table>
+<thead>
+<tr>
+<th>Author</th>
+<th style="text-align: right;">Short bits/byte</th>
+<th style="text-align: right;">Long bits/byte</th>
+<th style="text-align: right;">Long minus short</th>
+<th style="text-align: right;">Windows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hawthorne</td>
+<td style="text-align: right;">1.564724</td>
+<td style="text-align: right;">1.566040</td>
+<td style="text-align: right;">+0.001316</td>
+<td style="text-align: right;">249</td>
+</tr>
+<tr>
+<td>Melville</td>
+<td style="text-align: right;">1.717790</td>
+<td style="text-align: right;">1.719611</td>
+<td style="text-align: right;">+0.001822</td>
+<td style="text-align: right;">303</td>
+</tr>
+<tr>
+<td>Trollope</td>
+<td style="text-align: right;">1.449088</td>
+<td style="text-align: right;">1.443248</td>
+<td style="text-align: right;">-0.005840</td>
+<td style="text-align: right;">472</td>
+</tr>
+</tbody>
+</table>
+<p>The observed direction differs by author. This is descriptive evidence for
+these weights and passages; replicated author-specific effects remain pending.</p>
+<p>A whole-book bootstrap resamples eight test books with replacement and retains
+all windows within each drawn book. Over 20,000 draws, the test interval is
+<strong>[-0.008693, +0.000404] bits/byte</strong>, which crosses zero. This uses all 1,024
+test windows and the original -0.004762 point estimate.</p>
+<p>As a boundary sensitivity check, exclude windows whose input context or target
+crosses a book boundary: six test windows and one validation window. The test
+interval becomes [-0.008785, +0.000369] over 1,018 windows; the validation
+interval is [-0.005514, +0.002462] over 1,023 windows and 24 books. Both cross
+zero. Raw rows preserve source book/author, losses, bytes, and exclusion flags.
+Only eight test-book clusters are available. This analysis still conditions on
+one test author and the trained weights, while allowing within-book dependence.</p>
+<h3>Detectability and the registered equivalence band</h3>
+<p>The registered ±0.01 bits/byte band is a declared practical threshold. If the
+five-seed interval is tightly centred near the existing -0.0048 difference,
+excludes zero, and lies entirely inside that band, the reported outcome will be
+<strong>statistically detectable and practically equivalent at the registered threshold</strong>.
+Both labels can hold at once. The rule is fixed before results; the observed
+seed results will determine whether its conditions are met. The threshold is
+a research decision, rather than a measured threshold for writing quality.</p>
+<p>The width/depth arm is five training seeds of one configuration: width 384,
+three layers, context 256, 5,046,912 parameters. Seeds are 7, 11, 19, 31 and 43,
+paired against the same five long-context training seeds. It is a width/depth/
+context trade, with the token budget fixed.</p>
+<h3>Evaluation-path precision check</h3>
+<p>Across both models and both splits, individual CPU FP32 and CUDA BF16 aggregate
+scores differ by at most <strong>0.0000525 bits/byte</strong>. The test gap changes by
+<strong>0.0000975 bits/byte</strong>. This supports numerical agreement of the two evaluation
+paths on these checkpoints and target windows. It gives an execution check
+separate from statistical uncertainty and from generation-output agreement.</p>
+<p>The <a href="../../experiments/subword-replication/README.md#review-controls-and-book-analysis">saved review evidence</a>
+contains the detector controls, precision scores, book assignments, and bootstrap results.</p>
+<p>The conservative source-name index found mixed source names in one CPU-grid
+passage. Coverage and false-positive limits accompany that narrow proxy.</p>
 <h2>Data and architecture</h2>
 <ul>
 <li>Corpus: ZERO Gutenberg release <code>zero-gutenberg-v1-0d9254dd6a65</code>.</li>

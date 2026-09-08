@@ -21,8 +21,8 @@ outside this interval. The GPU replication saves per-window losses too.
 ## Diagnostic baseline
 
 The 96 CPU FP32 samples produced zero word-initial tokens that were never
-word-initial in training. This criterion has zero observed baseline errors on
-that grid. It cannot support an improvement claim there. Retokenizing decoded
+word-initial in training. This criterion has zero observed flags on
+that grid. Retokenizing decoded
 samples can differ from their original generation IDs; the new runs save IDs.
 
 A conservative source-name index found multiple source books in one of the 48
@@ -50,3 +50,36 @@ Its paired-window 95% interval is [-0.007007829, -0.002514086], with 563
 long-context wins out of 1,024 windows. Validation has an interval spanning
 zero: [-0.004280394, 0.000354189]. These are conditional window intervals;
 the five training-seed pairs are running.
+
+
+## Review controls and book analysis
+
+The detector catches the historical GPU `g irl` positive control. Its repaired
+`girl` control has zero flags. The 12 recorded GPU samples contain one flag;
+the separate 96 CPU samples contain zero. Historical token traces use
+retokenization. New runs save generation IDs. See
+[gpu-sample-detector-control.json](gpu-sample-detector-control.json).
+
+The whole-book bootstrap of all 1,024 test windows gives a 95% interval of
+[-0.008693, +0.000404] bits/byte. This crosses zero. Per-author validation gaps
+are +0.001316 for Hawthorne, +0.001822 for Melville, and -0.005840 for Trollope.
+[Book analysis](book-cluster-analysis.json) includes source hashes, raw rows,
+per-author scores, and a sensitivity check excluding book-boundary windows.
+Reproduce it with the frozen corpus, token data, and saved CUDA window losses:
+
+```sh
+python scripts/analyze_book_clusters.py --ready CORPUS_READY --tokens TOKEN_DATA --losses SAVED_RESCORES --output book-cluster-analysis.json
+```
+
+The loss directory contains `existing-window-rescore-5m-256-windows.json` and
+`existing-window-rescore-5m-1024-windows.json`. The analysis verifies corpus
+ordering and byte denominators before resampling whole books.
+
+The [evaluation-path precision check](eval-precision-check.json) finds at most
+0.0000525 bits/byte difference between individual CPU FP32 and CUDA BF16 scores.
+The test gap changes by 0.0000975 bits/byte.
+
+The width/depth arm runs five seeds of one configuration: width 384, three
+layers, context 256. The same five seeds pair with the long-context arm.
+Under the registered ±0.01 band, a tight interval near -0.0048 that excludes
+zero will be labelled statistically detectable and practically equivalent.
