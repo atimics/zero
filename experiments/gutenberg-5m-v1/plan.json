@@ -1,0 +1,97 @@
+{
+  "name": "gutenberg-5m-v1",
+  "repository": "/private/tmp/zero-gutenberg-5m",
+  "output": "/private/tmp/zero-gutenberg-5m-run",
+  "steps": 100000,
+  "batch": 2,
+  "texts": {
+    "train": "/private/tmp/zero-gutenberg-data/ready/train.txt",
+    "validation": "/private/tmp/zero-gutenberg-data/ready/validation.txt",
+    "test": "/private/tmp/zero-gutenberg-data/ready/test.txt"
+  },
+  "training_arguments": [
+    "--preset",
+    "literary",
+    "--text",
+    "/private/tmp/zero-gutenberg-data/ready/train.txt",
+    "--validation-text",
+    "/private/tmp/zero-gutenberg-data/ready/validation.txt",
+    "--steps",
+    "100000",
+    "--batch",
+    "2",
+    "--lr",
+    "0.0003",
+    "--warmup",
+    "1000",
+    "--dropout",
+    "0.1",
+    "--weight-decay",
+    "0.01",
+    "--clip",
+    "1",
+    "--cosine",
+    "--report",
+    "500",
+    "--validation",
+    "64",
+    "--seed",
+    "7",
+    "--save",
+    "/private/tmp/zero-gutenberg-5m-run/last.ckpt",
+    "--save-every",
+    "500",
+    "--best",
+    "/private/tmp/zero-gutenberg-5m-run/best.ckpt",
+    "--tokens",
+    "0"
+  ],
+  "inputs": [
+    {
+      "path": "/private/tmp/zero-gutenberg-data/ready/train.txt",
+      "sha256": "a70e3323e719b86cfd03f7f10d7892d7d4ba40eb95bbf7d2e3db1a151b423e01"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-data/ready/validation.txt",
+      "sha256": "c0ff504809a9d6d2c8c616c78719e7ca9d5519229ccf6cbfa310ac9e7fda93e9"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-data/ready/test.txt",
+      "sha256": "8a9bba5c55a483ca68d10b5990cd03b31229a8662eafb42a9c0fd399e8827a58"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/literary_lm.c",
+      "sha256": "4978faeb28e229cfaef339b8928fcc7da591c1f0ec99701e28fa701f3c8e80dc"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/scripts/train_gutenberg_5m.py",
+      "sha256": "ae88803cc99dbad1aca3c3bc6ae6c4dd1020a51a802981d25c4fab96909e5f1b"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/docs/model.litq8",
+      "sha256": "32d0c500c62840ceff635130fd4dbc02c65001c27f729fe302bba859ae9f73b5"
+    }
+  ],
+  "binaries": [
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/literary_lm",
+      "sha256": "1ee232d6096fb89f05e670015c9aa710e74d2d25aac46d253dd1228b555f8bbd"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/export_literary",
+      "sha256": "6a2c0b176b46b1da893e60e2d799389c7addca3d3ae575bc000de2e78dac5834"
+    },
+    {
+      "path": "/private/tmp/zero-gutenberg-5m/literary_infer",
+      "sha256": "94d5de46cc0c2989366ab37850e39ab6829fe6d5c225f2ab6e810d9a13779945"
+    }
+  ],
+  "prompts": [
+    "Once upon a time,",
+    "The little girl opened the door and",
+    "The captain looked across the sea.",
+    "The warren is ",
+    "Fund uncertainty. ",
+    "Who is Mara?"
+  ]
+}

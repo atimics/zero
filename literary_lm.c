@@ -155,6 +155,8 @@ typedef struct {
     long warmup;
     long report_every;
     int validation_batches;
+    const char *validation_path;
+    const char *evaluate_path;
     const char *save_path;
     long save_every;
     const char *resume_path;
@@ -1896,6 +1898,8 @@ static void print_usage(const char *program)
     printf("  --warmup N           linear warmup updates (default: 100)\n");
     printf("  --report N           report interval (default: 100)\n");
     printf("  --validation N       validation sequences per report (default: 8)\n");
+    printf("  --validation-text F  use a separate validation text and all training text\n");
+    printf("  --evaluate F         score a text after training or with --steps 0\n");
     printf("  --dropout X          residual dropout probability (default: 0.1)\n");
     printf("  --cosine             cosine-decay the learning rate over this run\n");
     printf("  --best FILE          save each new best-validation checkpoint\n");
@@ -2032,6 +2036,7 @@ int main(int argc, char **argv)
     Tokenizer tokenizer = {0};
     uint64_t update = 0;
     Corpus corpus = {0};
+    Corpus heldout = {0};
     size_t training_length = 0;
     size_t validation_length = 0;
     double training_start;
@@ -2121,6 +2126,10 @@ int main(int argc, char **argv)
         } else if (strcmp(argv[i], "--validation") == 0 && i + 1 < argc) {
             options.validation_batches =
                 (int)parse_long(argv[++i], "--validation");
+        } else if (strcmp(argv[i], "--validation-text") == 0 && i + 1 < argc) {
+            options.validation_path = argv[++i];
+        } else if (strcmp(argv[i], "--evaluate") == 0 && i + 1 < argc) {
+            options.evaluate_path = argv[++i];
         } else if (strcmp(argv[i], "--dropout") == 0 && i + 1 < argc) {
             options.dropout = parse_float(argv[++i], "--dropout");
         } else if (strcmp(argv[i], "--cosine") == 0) {
@@ -2220,6 +2229,19 @@ int main(int argc, char **argv)
            cfg.rotary ? "rotary" : "learned",
            model_parameter_total(&model));
 
+    if (options.validation_path != NULL) {
+        if (text_count == 0) fail("--validation-text requires --text");
+        for (i = 0; i < text_count; ++i) {
+            if (text_channel[i]) fail("--validation-text supports plain text training");
+        }
+        corpus_add_file(&heldout, options.validation_path,
+                        tokenizer.loaded ? tokenizer.token_width : 1);
+        if (heldout.length <= (size_t)cfg.context) fail("validation text is too short");
+        for (size_t token = 0; token < heldout.length; ++token) {
+            if (heldout.data[token] >= cfg.vocab) fail("validation token outside vocabulary");
+        }
+    }
+
     if (options.steps > 0) {
         size_t minimum;
         if (text_count == 0) {
@@ -2263,6 +2285,12 @@ int main(int argc, char **argv)
                     prepare_channel_range(range, &corpus, cfg.context,
                                           text_paths[i]);
                 } else {
+                    if (options.validation_path != NULL) {
+                        if (range->length <= (size_t)cfg.context) fail("training text is too short");
+                        range->training_length = range->length;
+                        training_length += range->training_length;
+                        continue;
+                    }
                     if (range->length < minimum) {
                         fprintf(stderr,
                                 "error: training file '%s' is too short for a "
@@ -2283,6 +2311,7 @@ int main(int argc, char **argv)
                 validation_length += range->validation_length;
             }
         }
+        if (options.validation_path != NULL) validation_length = heldout.length;
         printf("corpus=%zu tokens train=%zu validation=%zu tokens/update=%d "
                "sampling=%s\n",
                corpus.length, training_length, validation_length,
@@ -2361,7 +2390,10 @@ int main(int argc, char **argv)
                 double now = wall_seconds();
                 double elapsed = now - interval_start;
                 float validation_loss;
-                if (text_count > 0) {
+                if (options.validation_path != NULL) {
+                    validation_loss = evaluate(&model, heldout.data, heldout.length,
+                                               options.validation_batches);
+                } else if (text_count > 0) {
                     int validation_batches = options.validation_batches;
                     if (validation_batches < text_count) {
                         validation_batches = text_count;
@@ -2421,6 +2453,20 @@ int main(int argc, char **argv)
         }
     }
 
+    if (options.evaluate_path != NULL) {
+        Corpus evaluation = {0};
+        corpus_add_file(&evaluation, options.evaluate_path,
+                        tokenizer.loaded ? tokenizer.token_width : 1);
+        if (evaluation.length <= (size_t)cfg.context) fail("evaluation text is too short");
+        for (size_t token = 0; token < evaluation.length; ++token) {
+            if (evaluation.data[token] >= cfg.vocab) fail("evaluation token outside vocabulary");
+        }
+        printf("evaluation tokens=%zu sequences=%d loss=%.6f\n", evaluation.length,
+               options.validation_batches,
+               evaluate(&model, evaluation.data, evaluation.length, options.validation_batches));
+        corpus_destroy(&evaluation);
+    }
+
     if (options.generate_tokens > 0) {
         generate(&model, &tokenizer, options.prompt, options.generate_tokens,
                  options.temperature, options.top_k,
@@ -2428,6 +2474,7 @@ int main(int argc, char **argv)
     }
 
     corpus_destroy(&corpus);
+    corpus_destroy(&heldout);
     model_destroy(&model);
     for (i = 0; i < text_count; ++i) free(text_ranges[i].record_starts);
     free(text_paths);
