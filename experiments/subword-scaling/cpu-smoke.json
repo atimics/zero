@@ -1,0 +1,61 @@
+{
+  "purpose": "One-update pipeline smoke test; quality scores are untrained checks only.",
+  "results": {
+    "5m-256": {
+      "name": "5m-256",
+      "config": {
+        "vocab": 2048,
+        "context": 256,
+        "dim": 256,
+        "heads": 8,
+        "layers": 6,
+        "ff": 960
+      },
+      "parameters": 5049600,
+      "steps": 1,
+      "token_presentations": 1024,
+      "selected_step": 1,
+      "elapsed_seconds": 0.3678283328190446,
+      "validation": {
+        "bits_per_byte": 4.326633320843939,
+        "target_bytes": 318,
+        "target_tokens": 128,
+        "windows": 2
+      },
+      "test": {
+        "bits_per_byte": 3.3054620168774513,
+        "target_bytes": 414,
+        "target_tokens": 128,
+        "windows": 2
+      }
+    },
+    "5m-1024": {
+      "name": "5m-1024",
+      "config": {
+        "vocab": 2048,
+        "context": 1024,
+        "dim": 256,
+        "heads": 8,
+        "layers": 6,
+        "ff": 960
+      },
+      "parameters": 5049600,
+      "steps": 1,
+      "token_presentations": 1024,
+      "selected_step": 1,
+      "elapsed_seconds": 0.3978198328986764,
+      "validation": {
+        "bits_per_byte": 4.32618806100581,
+        "target_bytes": 318,
+        "target_tokens": 128,
+        "windows": 2
+      },
+      "test": {
+        "bits_per_byte": 3.308002109238948,
+        "target_bytes": 414,
+        "target_tokens": 128,
+        "windows": 2
+      }
+    }
+  }
+}

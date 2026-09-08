@@ -50,3 +50,25 @@ reload, evaluation and sampling for both small configurations. GPU throughput
 and final quality are live results.
 
 Tokenizer API reference: https://huggingface.co/docs/tokenizers/
+
+## Use the experiment
+
+Install `torch==2.8.0`, `numpy==2.2.6` and `tokenizers==0.22.0` in a Python
+3.12 environment. Build the token data from the released corpus:
+
+```sh
+python scripts/build_subword.py --source /path/to/corpus/ready --output /path/to/token-data
+```
+
+Download a run's `best.pt` from the S3 result prefix in `launch.json`. Generate
+text with the checkpoint and the frozen tokenizer in this directory:
+
+```sh
+python scripts/sample_subword.py /path/to/best.pt experiments/subword-scaling/tokenizer.json --prompt 'The captain looked across the sea.'
+```
+
+Subword checkpoints use the Python inference path and carry their architecture
+settings. Each AWS run writes `history.json`, `best.pt`, `last.pt`, `result.json`
+and `samples.json` under its run name. The top-level `character-baseline.json`
+contains the baseline on the shared targets. Full optimizer and random states
+are saved with each checkpoint for a future explicit continuation plan.
