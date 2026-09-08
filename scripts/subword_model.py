@@ -27,7 +27,7 @@ def create(config, seed=7):
 
 @torch.no_grad()
 def sample(model, tokenizer, prompt, count=128, seed=7, return_tokens=False, repetition_penalty=1.0, temperature=0.7, top_k=40, use_cache=False):
-    if repetition_penalty < 1.0:
+    if not math.isfinite(repetition_penalty) or repetition_penalty < 1.0:
         raise ValueError("repetition_penalty must be at least 1")
     if not math.isfinite(temperature) or temperature <= 0 or not 1 <= top_k <= model.vocab:
         raise ValueError("Use a positive temperature and valid top_k")

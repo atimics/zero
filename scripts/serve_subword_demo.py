@@ -24,7 +24,10 @@ def generation_options(data):
     sentence_end = data.get('sentence_end', False)
     if type(count) is not int or count not in [64, 128, 256] or type(sentence_end) is not bool:
         raise ValueError('Choose a supported length and ending option.')
-    return count, sentence_end
+    penalty = data.get('repetition_penalty', 1.0)
+    if type(penalty) not in [int, float] or penalty not in [1.0, 1.1]:
+        raise ValueError('Choose a supported repetition setting.')
+    return count, sentence_end, penalty
 
 
 def main():
@@ -54,14 +57,14 @@ def main():
                 data=json.loads(self.rfile.read(size))
                 if not isinstance(data,dict):raise ValueError('Expected a prompt object')
                 prompt=data.get('prompt')
-                count,sentence_end=generation_options(data)
+                count,sentence_end,penalty=generation_options(data)
                 if not isinstance(prompt,str) or not prompt.strip() or len(prompt)>2000:raise ValueError('Enter a prompt of 1 to 2,000 characters.')
             except (ValueError,TypeError):return self.respond(400,{'error':'Enter a prompt of 1 to 2,000 characters.'})
             if not lock.acquire(blocking=False):return self.respond(409,{'error':'Generation is in progress. Try again shortly.'})
             try:
-                raw={name:sample(model,tokenizer,prompt,count,7,use_cache=True) for name,model in models.items()}
+                raw={name:sample(model,tokenizer,prompt,count,7,use_cache=True,repetition_penalty=penalty) for name,model in models.items()}
                 outputs={name:present_continuation(prompt,text,sentence_end) for name,text in raw.items()}
-                self.respond(200,{'outputs':outputs,'raw_outputs':raw,'count':count,'sentence_end':sentence_end,'trimmed':{name:outputs[name]!=raw[name] for name in raw},'mode':'Live · CPU FP32 · seed 7 · KV cache'})
+                self.respond(200,{'outputs':outputs,'raw_outputs':raw,'count':count,'repetition_penalty':penalty,'sentence_end':sentence_end,'trimmed':{name:outputs[name]!=raw[name] for name in raw},'mode':'Live · CPU FP32 · seed 7 · KV cache'})
             except Exception:
                 self.respond(500,{'error':'Generation failed. Check the model files and try again.'})
             finally:lock.release()

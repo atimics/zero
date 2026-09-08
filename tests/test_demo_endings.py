@@ -13,7 +13,9 @@ class DemoEndings(unittest.TestCase):
     def test_no_boundary_keeps_generated_text(self):
         self.assertEqual(present_continuation('Who? ', 'Who? A girl was', True), 'Who? A girl was')
     def test_bounded_options(self):
-        self.assertEqual(generation_options({}), (128,False))
+        self.assertEqual(generation_options({}), (128,False,1.0))
+        for penalty in [True, 2.0, float('nan')]:
+            with self.assertRaises(ValueError): generation_options({'repetition_penalty':penalty})
         for value in [True, 100000, '128']:
             with self.assertRaises(ValueError): generation_options({'count':value})
 

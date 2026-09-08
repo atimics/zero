@@ -4,3 +4,5 @@
 .curves{margin-top:45px}.curves img{width:100%;height:auto}.curves p{font-size:14px;color:var(--muted)}select{font:inherit;font-size:13px;padding:8px 12px;background:#fffdf8;border:1px solid var(--line);border-radius:4px;margin-bottom:15px}
 
 .card{max-width:950px}.card h1{font-size:50px}.card h2{margin-top:40px}.card table{border-collapse:collapse;width:100%;font-size:13px;display:block;overflow:auto}.card td,.card th{border-bottom:1px solid var(--line);padding:12px;text-align:left}.card pre{font:13px/1.7 monospace;background:#e9ece1;padding:18px;min-height:0}.card code{font-size:.86em}.card p,.card li{font-size:15px}
+
+.generation-options{margin-top:18px}.generation-options label:has(input){display:inline-flex;align-items:center;gap:6px;margin-right:20px;font-weight:400}.generation-options input{accent-color:var(--green)}

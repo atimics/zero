@@ -1,0 +1,33 @@
+{
+  "backend": "CPU FP32",
+  "best_step": 35500,
+  "final_step": 97657,
+  "best": {
+    "validation": {
+      "bits_per_byte": 1.340899895381149,
+      "bytes": 206379,
+      "windows": 1024
+    },
+    "test": {
+      "bits_per_byte": 1.3913700465267647,
+      "bytes": 207306,
+      "windows": 1024
+    }
+  },
+  "final": {
+    "validation": {
+      "bits_per_byte": 1.4036467981559295,
+      "bytes": 206379,
+      "windows": 1024
+    },
+    "test": {
+      "bits_per_byte": 1.4539925289223543,
+      "bytes": 207306,
+      "windows": 1024
+    }
+  },
+  "final_minus_best": {
+    "validation": 0.06274690277478046,
+    "test": 0.06262248239558965
+  }
+}

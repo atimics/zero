@@ -280,4 +280,18 @@ The default decoding settings remain temperature 0.7, top-k 40, penalty 1.0.
 The demo offers 64, 128, or 256 new tokens. Its optional sentence-end display
 uses terminal punctuation as a heuristic and retains the full raw output.
 Abbreviations can affect this heuristic; an output with no detected ending
-is shown in full. Saved research samples remain unchanged.</p></main></html>
+is shown in full. Saved research samples remain unchanged.</p>
+<p>The selected 50M checkpoint scores 1.391370 test bits/byte; the final checkpoint
+scores 1.453993 on the identical 1,024 CPU FP32 windows. The selected checkpoint
+remains the generation candidate.</p>
+<p>The completed 576-output decoding sweep finds that penalty 1.1 at temperature
+0.7/top-k 40 lowers average bigram repeat excess from 12.86% to 11.56% and
+four-gram excess from 2.41% to 1.68%. The demo offers this as an optional
+repetition control. The blind consistency review packet is ready; human
+ratings remain pending.</p>
+<p>The local cache benchmark gives 4.30× speedup for 50M on the short prompt with
+128 generated tokens, and 3.26–3.43× for 5M. All 18 tested prompt/model samples
+preserve token IDs. Maximum observed logit difference is 0.00002480 in FP32.
+Near the context limit the measured speedup is 1.83–1.99×, with rebuilds
+preserving the existing window behavior. Raw timings and scope are in the
+linked inference report.</p></main></html>

@@ -1,0 +1,39 @@
+{
+  "checkpoint_sha256": "637dd0204b48a00e4020b5c1ea495477a7d08d727f586d7a277035f502a8adac",
+  "tokenizer_sha256": "90cdcc504c5311586cbe1f9c27b402e11c57ba5475521536f28beb6762939d43",
+  "backend": "CPU FP32, two threads, KV cache",
+  "step": 35500,
+  "new_tokens": 128,
+  "temperatures": [
+    0.6,
+    0.7,
+    0.8
+  ],
+  "top_k": [
+    20,
+    40
+  ],
+  "repetition_penalties": [
+    1.0,
+    1.1
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "prompts": [
+    "Once upon a time,",
+    "The little girl opened the door and",
+    "The captain looked across the sea.",
+    "The warren is ",
+    "Fund uncertainty. ",
+    "Who is Mara?"
+  ],
+  "claim": "Exploratory decoding comparison. Report repetition and diversity by prompt. Blind human coherence ratings remain separate."
+}

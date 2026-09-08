@@ -1,0 +1,205 @@
+{
+  "backend": "CPU FP32, two threads",
+  "torch": "2.8.0",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "models": {
+    "5m-256": {
+      "checkpoint_sha256": "dde6fa16c7111385f909ef261fbf4c22c9fbba0a3cc92ccfa2b3ff7c22b5881c",
+      "max_absolute_logit_difference": 7.152557373046875e-06,
+      "sample_agreement": [
+        {
+          "prompt": "Once upon a time,",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The warren is ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Who is Mara?",
+          "identical_ids": true
+        }
+      ],
+      "timing": [
+        {
+          "case": "short",
+          "prompt_tokens": 7,
+          "new_tokens": 128,
+          "uncached_seconds": [
+            0.4236070839688182,
+            0.4284949591383338,
+            0.42782512539997697
+          ],
+          "cached_seconds": [
+            0.12472787499427795,
+            0.12587454123422503,
+            0.12367629166692495
+          ],
+          "median_speedup": 3.4300682619631258,
+          "identical_ids": true
+        },
+        {
+          "case": "near_context_limit",
+          "prompt_tokens": 252,
+          "new_tokens": 8,
+          "uncached_seconds": [
+            0.07759566605091095,
+            0.07899808324873447,
+            0.07959300000220537
+          ],
+          "cached_seconds": [
+            0.043915209360420704,
+            0.04318049969151616,
+            0.043113875202834606
+          ],
+          "median_speedup": 1.8294851567976536,
+          "identical_ids": true
+        }
+      ]
+    },
+    "5m-1024": {
+      "checkpoint_sha256": "f0d0a7f49cd6b2c8936124c50292959642cf58ab90b32ea90da84080a1c5b8b5",
+      "max_absolute_logit_difference": 6.67572021484375e-06,
+      "sample_agreement": [
+        {
+          "prompt": "Once upon a time,",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The warren is ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Who is Mara?",
+          "identical_ids": true
+        }
+      ],
+      "timing": [
+        {
+          "case": "short",
+          "prompt_tokens": 7,
+          "new_tokens": 128,
+          "uncached_seconds": [
+            0.446345207747072,
+            0.4238045406527817,
+            0.41547404089942575
+          ],
+          "cached_seconds": [
+            0.12980633275583386,
+            0.12992416694760323,
+            0.12802437460049987
+          ],
+          "median_speedup": 3.2648988046674075,
+          "identical_ids": true
+        },
+        {
+          "case": "near_context_limit",
+          "prompt_tokens": 1020,
+          "new_tokens": 8,
+          "uncached_seconds": [
+            0.3562371670268476,
+            0.34271749993786216,
+            0.3424587920308113
+          ],
+          "cached_seconds": [
+            0.18328674975782633,
+            0.17919341614469886,
+            0.18228804180398583
+          ],
+          "median_speedup": 1.8800876708434116,
+          "identical_ids": true
+        }
+      ]
+    },
+    "50m": {
+      "checkpoint_sha256": "637dd0204b48a00e4020b5c1ea495477a7d08d727f586d7a277035f502a8adac",
+      "max_absolute_logit_difference": 2.47955322265625e-05,
+      "sample_agreement": [
+        {
+          "prompt": "Once upon a time,",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The little girl opened the door and",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The captain looked across the sea.",
+          "identical_ids": true
+        },
+        {
+          "prompt": "The warren is ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Fund uncertainty. ",
+          "identical_ids": true
+        },
+        {
+          "prompt": "Who is Mara?",
+          "identical_ids": true
+        }
+      ],
+      "timing": [
+        {
+          "case": "short",
+          "prompt_tokens": 7,
+          "new_tokens": 128,
+          "uncached_seconds": [
+            2.018572499975562,
+            2.020260500255972,
+            2.091491584200412
+          ],
+          "cached_seconds": [
+            0.4602749580517411,
+            0.47146004205569625,
+            0.4700653748586774
+          ],
+          "median_speedup": 4.297828787885839,
+          "identical_ids": true
+        },
+        {
+          "case": "near_context_limit",
+          "prompt_tokens": 1020,
+          "new_tokens": 8,
+          "uncached_seconds": [
+            1.1889328341931105,
+            1.2169459578581154,
+            1.1686576660722494
+          ],
+          "cached_seconds": [
+            0.6017893329262733,
+            0.5970610422082245,
+            0.5868931659497321
+          ],
+          "median_speedup": 1.9913086772432074,
+          "identical_ids": true
+        }
+      ]
+    }
+  }
+}
