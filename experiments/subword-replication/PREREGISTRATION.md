@@ -94,3 +94,11 @@ continues under its separate original limit. A calibration failure preserves
 completed evidence and is reported. Statistical results, missing runs, and
 engineering/CI checks appear as separate sections. This plan will be committed
 and pushed before dispatch. Subsequent changes are recorded as amendments.
+
+### Amendment 1: exact byte boundaries for the prefix comparison
+
+Before running the variant, specify shared-boundary trimming: encode each
+canonical prefix-plus-target with both tokenizers, trim the target edges to
+boundaries shared by both encodings, and score only full tokens covering those
+same bytes. Report trimmed byte counts. Added line-prefix spaces remain outside
+targets. This avoids fractional token-loss allocation at a byte boundary.

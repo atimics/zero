@@ -15,3 +15,4 @@ jobs:
       - run: python -m unittest discover -s tests -p test_zero_torch.py
       - run: python -m unittest discover -s tests -p test_subword.py
       - run: python -m unittest discover -s tests -p test_subword_release.py
+      - run: python -m unittest discover -s tests -p test_replication.py

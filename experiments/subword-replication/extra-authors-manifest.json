@@ -1,0 +1,24 @@
+{
+  "shelley": {
+    "book_id": 84,
+    "source_url": "https://gutenberg.pglaf.org/cache/epub/84/pg84.txt",
+    "raw_sha256": "7810cd483cffcf2cc8a1d8f0d5807931e69d4f48cd14149b8c76f88af82fead3",
+    "clean_sha256": "8c2a4dd16d46e068271cf505b652730b773c4d35fe6081b438fc94489f9d2ac2",
+    "tokens": 128641,
+    "candidate_windows": 1024,
+    "retained_windows": 1024,
+    "excluded_64_word_overlap_starts": [],
+    "overlap_method": "Exact whitespace-normalized final 64 words in the prefix-plus-target span, searched against the complete training text."
+  },
+  "stoker": {
+    "book_id": 345,
+    "source_url": "https://gutenberg.pglaf.org/cache/epub/345/pg345.txt",
+    "raw_sha256": "96cd16eacdbfebae8fdda5591f66e0cc8ee76be18e0cd1aca02bc00615782d28",
+    "clean_sha256": "3d16a052c8de663e5e8e6746083d89a94bad66fed99a8775a4a9f054174525fe",
+    "tokens": 262480,
+    "candidate_windows": 1024,
+    "retained_windows": 1024,
+    "excluded_64_word_overlap_starts": [],
+    "overlap_method": "Exact whitespace-normalized final 64 words in the prefix-plus-target span, searched against the complete training text."
+  }
+}
