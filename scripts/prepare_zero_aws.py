@@ -50,20 +50,23 @@ def main():
         "NetworkInterfaces": [{"DeviceIndex": 0, "SubnetId": "subnet-eb3e2f8e", "Groups": ["sg-0059d0413ff74df6e"],
                                "AssociatePublicIpAddress": True, "DeleteOnTermination": True}],
         "MetadataOptions": {"HttpTokens": "required", "HttpEndpoint": "enabled"},
-        "BlockDeviceMappings": [{"DeviceName": "/dev/sda1", "Ebs": {"VolumeSize": 50, "VolumeType": "gp3",
+        "BlockDeviceMappings": [{"DeviceName": "/dev/sda1", "Ebs": {"VolumeSize": 75, "VolumeType": "gp3",
                                   "Encrypted": True, "DeleteOnTermination": True}}],
         "InstanceInitiatedShutdownBehavior": "terminate", "ClientToken": f"zero-g5-{sha[:24]}-{deadline}",
         "UserData": base64.b64encode(script.encode()).decode(),
         "TagSpecifications": [{"ResourceType": resource, "Tags": [{"Key": "Project", "Value": "zero"},
               {"Key": "Name", "Value": "gutenberg-5m-cuda"}, {"Key": "SourceSha256", "Value": sha},
               {"Key": "Deadline", "Value": str(deadline)}]} for resource in ["instance", "volume"]]}
-    (args.output / "request.json").write_text(json.dumps(request, indent=2) + "\n")
+    request_text = json.dumps(request, indent=2) + "\n"
+    (args.output / "request.json").write_text(request_text)
     (args.output / "user-data.sh").write_text(script)
     manifest = {"package_sha256": sha, "package_bytes": package.stat().st_size, "files": hashes,
                 "bucket": "zero-training-022118847419", "source_key": key, "result_prefix": prefix,
                 "deadline": deadline, "maximum_instance_seconds": 7200,
                 "instance_type": "g5.xlarge", "hourly_ec2_usd": 1.006,
-                "two_hour_ec2_usd": 2.012, "requested_total_budget_usd": 3}
+                "two_hour_ec2_usd": 2.012, "root_volume_gib": 75, "requested_total_budget_usd": 3,
+                "user_data_sha256": hashlib.sha256(script.encode()).hexdigest(),
+                "request_sha256": hashlib.sha256(request_text.encode()).hexdigest()}
     (args.output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     print(json.dumps({k: v for k, v in manifest.items() if k != "files"}, indent=2))
 
