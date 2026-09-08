@@ -57,8 +57,7 @@ The local C run was stopped after update 7,108 and saved its final checkpoint.
 Its last report was 3,833 characters per second, giving a measured speedup of
 about 10.4 times at these checkpoints. The two runs have separate random
 trajectories. Calibration history and a local checkpoint receipt are included.
-Final held-out scores and the exported model will be available when training
-finishes.
+Final held-out scores and the exported model are recorded below.
 
 ## Completed run
 
