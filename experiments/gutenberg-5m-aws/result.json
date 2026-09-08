@@ -1,0 +1,14 @@
+{
+  "parameters": 4852992,
+  "backend": "PyTorch 2.8.0 CUDA FP32",
+  "seed": 7,
+  "device": "NVIDIA A10G",
+  "updates": 100000,
+  "character_presentations": 102400000,
+  "selected_update": 98500,
+  "validation_loss": 1.125935981515795,
+  "test_loss": 1.1515732044354081,
+  "evaluation_sequences_per_split": 1024,
+  "sampled_characters_per_split": 524288,
+  "elapsed_seconds": 2561.504755612
+}

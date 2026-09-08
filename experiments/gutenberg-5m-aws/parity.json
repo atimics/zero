@@ -1,0 +1,7 @@
+{
+  "native_loss": 4.851513,
+  "torch_cpu_loss": 4.851512432098389,
+  "absolute_difference": 5.679016110704538e-07,
+  "parameters": 4852992,
+  "tiny_forward_gradient_update_test": "passed"
+}
