@@ -1458,6 +1458,9 @@ static void checkpoint_save(const char *path, const Model *model, uint64_t step,
         free(temporary);
         fail_path("close checkpoint", path);
     }
+#ifdef _WIN32
+    remove(path); /* Windows rename() does not replace an existing target */
+#endif
     if (rename(temporary, path) != 0) {
         remove(temporary);
         free(temporary);

@@ -17,6 +17,8 @@
 #define HOLO_DIMENSION 256
 #define HOLO_CAPACITY 32
 
+#include "continuity_circuit.h"
+
 typedef struct {
     char magic[8];
     uint32_t version, vocab, context, dim, heads, layers, ff;
@@ -217,6 +219,100 @@ API int lm_holo_recall(const unsigned char *text, int length)
 
 API float lm_holo_get_score(void) { return holo_score; }
 API int lm_holo_get_count(void) { return holo_count; }
+
+/* ═════════════════════════════════════════════════════════════════════════
+ * THE CONTINUITY CIRCUIT
+ * Welded on top of ZERO.3's holographic memory. Reuses holo_vectors /
+ * holo_next / holo_count (the local ring buffer = the chronicle) and the
+ * FNV-1a hashing family already used by holo_encode. No reimplementation.
+ *
+ * Protocol (two avatars meet):
+ *   A -> HANDSHAKE          "I am here, send your imprint"
+ *   B -> VECTOR(packet)     its latest compressed state-imprint, signed
+ *   A -> RECOGNIZED         validates, lodges foreign echo, replies
+ *   (symmetric on B's side) — exchange is instantaneous, channel keeps
+ *   nothing. Significance settles only in each node's ring buffer.
+ * ═════════════════════════════════════════════════════════════════════════ */
+
+/* FNV-1a over the raw float bytes of a vector. Same family ZERO.3 uses
+ * internally (FNV-1a in holo_encode); we hash the serialized floats so a
+ * receiver can recompute and compare without trusting the sender. */
+API uint64_t cc_sign_vector(const float *vec, int dim)
+{
+    uint64_t hash = UINT64_C(14695981039346656037);
+    int i;
+    const unsigned char *bytes = (const unsigned char *)vec;
+    for (i = 0; i < dim * (int)sizeof(float); ++i) {
+        hash ^= bytes[i];
+        hash *= UINT64_C(1099511628211);
+    }
+    return hash;
+}
+
+API int cc_validate_packet(const ContinuityPacket *pkt)
+{
+    if (pkt == NULL) return 0;
+    return (cc_sign_vector(pkt->vector, HOLO_DIMENSION) == pkt->signature) ? 1 : 0;
+}
+
+/* Receiver side of the instantaneous handshake.
+ * Validates the foreign packet, then writes its vector into the LOCAL ring
+ * buffer as a foreign echo — using the same slot-advance holo_remember uses,
+ * so the chronicle treats a foreign imprint identically to a local memory.
+ * Returns the slot + resonance (cosine of the new echo vs the local chronicle
+ * before insert) + accepted flag. */
+API HandshakeResult cc_receive_foreign(const ContinuityPacket *pkt)
+{
+    HandshakeResult r;
+    int slot;
+    int index;
+    float cosine = 0.0f;
+
+    r.slot = -1;
+    r.resonance = 0.0f;
+    r.accepted = 0;
+
+    if (!cc_validate_packet(pkt)) return r;   /* reject tampered imprints */
+
+    /* Resonance: cosine of the incoming vector against the current chronicle
+     * (pre-insert), so the node knows how much the foreign echo aligns.
+     * Vectors are L2-normalized by holo_encode, so dot == cosine. */
+    if (holo_count > 0) {
+        for (slot = 0; slot < holo_count; ++slot) {
+            float dot = 0.0f;
+            int k;
+            for (k = 0; k < HOLO_DIMENSION; ++k)
+                dot += pkt->vector[k] * holo_vectors[slot][k];
+            if (dot > cosine) cosine = dot;
+        }
+    }
+
+    /* Lodge the foreign echo into the local ring buffer. */
+    slot = holo_next;
+    for (index = 0; index < HOLO_DIMENSION; ++index)
+        holo_vectors[slot][index] = pkt->vector[index];
+    holo_next = (holo_next + 1) % HOLO_CAPACITY;
+    if (holo_count < HOLO_CAPACITY) ++holo_count;
+
+    r.slot = slot;
+    r.resonance = cosine;
+    r.accepted = 1;
+    return r;
+}
+
+/* Sender side: build a packet from this node's latest local imprint.
+ * Pass the vector you want to broadcast (typically holo_vectors[last_slot]).
+ * Signature is computed here; the channel carries only the packet. */
+API void cc_make_packet(const float *local_vec, uint32_t sender_id,
+                        uint32_t epoch, ContinuityPacket *out)
+{
+    int i;
+    if (out == NULL || local_vec == NULL) return;
+    for (i = 0; i < HOLO_DIMENSION; ++i) out->vector[i] = local_vec[i];
+    out->sender_id = sender_id;
+    out->epoch = epoch;
+    out->signature = cc_sign_vector(out->vector, HOLO_DIMENSION);
+}
 
 static void release_working_memory(void)
 {
