@@ -706,6 +706,7 @@ static const char *style_summary(char style)
     if (style == 'S') return "Shakespearean dramatic scene";
     if (style == 'C') return "Crowleyan dramatic scene";
     if (style == 'B') return "Blakean visionary verse";
+    if (style == 'W') return "the warren chronicle; fracture, continuity, load-bearing survival";
     return "mixed literary conversation";
 }
 

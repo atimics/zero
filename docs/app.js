@@ -37,6 +37,7 @@ const protocol = {
 };
 
 const voiceSettings = {
+  warrenmind: { style: "W", summary: "the warren chronicle; fracture, continuity, load-bearing survival" },
   mixed: { style: "D", summary: "mixed literary conversation; strange, attentive, intimate" },
   shakespeare: { style: "S", summary: "Shakespearean dramatic scene; answer as a present companion" },
   blake: { style: "B", summary: "Blakean visionary verse; symbolic, lucid, wondering" },
