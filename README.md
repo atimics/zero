@@ -1,5 +1,9 @@
 # Zero-grounded language models in C
 
+Explore the [Gutenberg subword model card](docs/subword/MODEL_CARD.md) and
+[comparison demo](docs/subword/index.html). Run `python scripts/serve_subword_demo.py`
+with the model-card dependencies to try both completed 5M models locally.
+
 Read [**The ZERO Manifesto**](MANIFESTO.md) and the
 [mathematical foundations](FOUNDATIONS.md).
 

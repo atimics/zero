@@ -1,0 +1,123 @@
+{
+  "method": "Case-sensitive words and punctuation; prompt excluded. Shared n-grams describe overlap, not training-data memorization.",
+  "rows": [
+    {
+      "prompt": "Once upon a time,",
+      "overlap": {
+        "3": {
+          "shared": 0,
+          "jaccard": 0.0,
+          "examples": []
+        },
+        "4": {
+          "shared": 0,
+          "jaccard": 0.0,
+          "examples": []
+        }
+      }
+    },
+    {
+      "prompt": "The little girl opened the door and",
+      "overlap": {
+        "3": {
+          "shared": 4,
+          "jaccard": 0.018518518518518517,
+          "examples": [
+            "' m sure",
+            ", \" said",
+            ", and the",
+            "I ' m"
+          ]
+        },
+        "4": {
+          "shared": 1,
+          "jaccard": 0.004310344827586207,
+          "examples": [
+            "I ' m sure"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The captain looked across the sea.",
+      "overlap": {
+        "3": {
+          "shared": 5,
+          "jaccard": 0.022123893805309734,
+          "examples": [
+            ", \" said",
+            ". \" \"",
+            ". \" What",
+            "I don '",
+            "don ' t"
+          ]
+        },
+        "4": {
+          "shared": 1,
+          "jaccard": 0.004291845493562232,
+          "examples": [
+            "I don ' t"
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The warren is ",
+      "overlap": {
+        "3": {
+          "shared": 4,
+          "jaccard": 0.02247191011235955,
+          "examples": [
+            ", and the",
+            "uttered by the",
+            "was a little",
+            "was not so"
+          ]
+        },
+        "4": {
+          "shared": 0,
+          "jaccard": 0.0,
+          "examples": []
+        }
+      }
+    },
+    {
+      "prompt": "Fund uncertainty. ",
+      "overlap": {
+        "3": {
+          "shared": 1,
+          "jaccard": 0.005405405405405406,
+          "examples": [
+            "to be a"
+          ]
+        },
+        "4": {
+          "shared": 0,
+          "jaccard": 0.0,
+          "examples": []
+        }
+      }
+    },
+    {
+      "prompt": "Who is Mara?",
+      "overlap": {
+        "3": {
+          "shared": 3,
+          "jaccard": 0.015306122448979591,
+          "examples": [
+            ", and I",
+            "I have not",
+            "and I have"
+          ]
+        },
+        "4": {
+          "shared": 1,
+          "jaccard": 0.004878048780487805,
+          "examples": [
+            ", and I have"
+          ]
+        }
+      }
+    }
+  ]
+}
