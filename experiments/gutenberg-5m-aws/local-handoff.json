@@ -1,0 +1,18 @@
+{
+  "status": {
+    "phase": "superseded",
+    "pid": 96579,
+    "started_at": 1788850016.42786,
+    "plan_sha256": "2ae32a2c0cfc9ee122a1586d1672a67f47c3087f560c1a89dfd22b844db5aa67",
+    "parameters": 4852992,
+    "finished_at": 1788851727.635017,
+    "runner_exit_note": "Training ended before the planned update count",
+    "reason": "Stopped by request after the AWS GPU run passed speed calibration.",
+    "last_update": 7108,
+    "aws_instance": "i-04bfbaeda8bab32e1"
+  },
+  "checkpoints": {
+    "best.ckpt": "a697762e6737065a1bc9b7d594594c207fd5d6b82e787794b293c3be7998fd41",
+    "last.ckpt": "d8e7b0a1edf09ea14a1f3311652b43dcd3cf2ce7bb96478b8e4c00cd3589cca6"
+  }
+}

@@ -51,5 +51,11 @@ and file hashes. The request contains a deadline, so regenerate it immediately
 before launch. Upload the package under the content-addressed S3 key in
 `manifest.json`, then use that exact request for the authorized launch.
 
-CUDA speed remains a live calibration result. The local C run can continue
-while this path is prepared and checked.
+The AWS run passed calibration and reached update 9,000 at 39,913 characters
+per second. At that rate, 100,000 updates take about 43 minutes of training.
+The local C run was stopped after update 7,108 and saved its final checkpoint.
+Its last report was 3,833 characters per second, giving a measured speedup of
+about 10.4 times at these checkpoints. The two runs have separate random
+trajectories. Calibration history and a local checkpoint receipt are included.
+Final held-out scores and the exported model will be available when training
+finishes.
