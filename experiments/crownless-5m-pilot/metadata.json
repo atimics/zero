@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "base": "/private/tmp/zero-gutenberg-aws-final/output/best.ckpt",
+    "data": "/private/tmp/crownless-core-corpus/out/corpus/core-v2",
+    "output": "/private/tmp/crownless-zero-5m-pilot",
+    "device": "mps",
+    "steps": 1000,
+    "batch_size": 8,
+    "eval_every": 100,
+    "lr": 0.0001,
+    "seed": 17,
+    "max_seconds": 900
+  },
+  "base_sha256": "9ea700a76eed50eb2f13e57cd00567e80a7e43449a562829ba74d35363021244",
+  "base_step": 98500,
+  "parameters": 4852992,
+  "torch": "2.8.0",
+  "source_sha256": {
+    "tune_crownless.py": "76d836dcf071ba54bea21dfddffe0ced2f7d98ed26df6fb8d1791c693af0b1eb",
+    "zero_torch.py": "e2af0e4c1f660133c51a4a14dfe604110d0531037557456acd87145f0e6e2ca1"
+  },
+  "data_sha256": {
+    "validation.audit.jsonl": "fcdc3ea827dcc0c4466f53c1869e802528d36ff6192b15ac5e0a3d68f7f24931",
+    "editorial_test.audit.jsonl": "09131d08fb4f13a076130970ed8a087d8f56f1015527f8ecdaf245f710289edd",
+    "train.txt": "223fec2e0deedcafae09a8b37b27c270091e5c4d0decbc2499adf0c92a420c96",
+    "train.audit.jsonl": "dee218ff68221f4c635f66f2644744b305d5467fe94a7cc450934412e5e22328",
+    "validation.txt": "e7f29bbc0abf90d7f7c4b22235d7018dd96922c2ae68312b1a97c2ad78228487",
+    "test.audit.jsonl": "7841bb0b0987ecf37149cf31a0897513d0cad90f74ae01574c6dfd9472a50b64",
+    "editorial_test.txt": "0d60f4625eb9e081f298b65be7d2e7cdc6929190adab3e7582cc974928f4580c",
+    "test.txt": "7ce6876e6501b24b9a2fa904049cbb0b48dc35dffbcb1dec1b0fdcad874f8790"
+  },
+  "splits": {
+    "train": {
+      "rows": 4000,
+      "dropped_events": 0
+    },
+    "validation": {
+      "rows": 500,
+      "dropped_events": 0
+    },
+    "test": {
+      "rows": 500,
+      "dropped_events": 0
+    },
+    "editorial_test": {
+      "rows": 16,
+      "dropped_events": 0
+    }
+  },
+  "optimizer": "fresh Adam moments"
+}
