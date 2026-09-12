@@ -4,12 +4,12 @@ import unittest
 from crownless_conversation import response
 from crownless_performance import CREATURES, EMOTIONS, control_text, styled, score, corpus
 from crownless_v2 import encode_row
-from test_crownless_conversation import ConversationTests
+import test_crownless_conversation as fixtures
 
 
 class PerformanceTests(unittest.TestCase):
     def setUp(self):
-        fixture = ConversationTests(); fixture.setUp()
+        fixture = fixtures.ConversationTests(); fixture.setUp()
         self.row, self.rule, self.tokenizer = fixture.row, fixture.rule, fixture.tokenizer
         self.row.update(pair='test:0', rule='notice', kind='NOTICE_POSTED')
 
@@ -56,6 +56,20 @@ class PerformanceTests(unittest.TestCase):
         self.assertEqual(one, corpus([self.row], rules, 1, 2))
         self.assertEqual(len(one), 9)
         self.assertEqual(corpus([self.row], rules, 1, 2, held_rules=['notice']), [])
+
+    def test_fear_and_confidence_are_separate_inputs(self):
+        ordinary = response(self.row, self.rule, 'start', random.Random(1))
+        afraid = styled(ordinary, 'goblin', 'afraid')
+        calm = styled(ordinary, 'goblin', 'calm')
+        unsure = copy.deepcopy(afraid); unsure['confidence'] = 20
+        def prefix(row):
+            r = encode_row(self.tokenizer, row, slots=True, conversation=True)
+            return self.tokenizer.decode(r['tokens'][:r['prefix_length']])
+        self.assertIn('feeling: afraid', prefix(afraid))
+        self.assertIn('feeling: calm', prefix(calm))
+        self.assertIn('feeling: afraid', prefix(unsure))
+        self.assertIn('? ', prefix(unsure))
+        self.assertNotIn('? ', prefix(afraid))
 
 
 if __name__ == '__main__': unittest.main()
