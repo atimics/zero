@@ -1,0 +1,3798 @@
+[
+  {
+    "id": "test-0-0",
+    "kind": "NOTICE",
+    "events": "- ? ~ The Kadel March raids Tarenmere: 17 Wheat, 16 crowns.\n- ? In Matifenwatch, Riti Viem put up a repair contract.\n",
+    "expected": "Riti Viem posted something in Matifenwatch.",
+    "generated": "Rian Field posted something in Maplewatch.",
+    "stopped": true,
+    "required": {
+      "person": "Riti Viem",
+      "place": "Matifenwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-0",
+    "changed_field": "person",
+    "changed_value": "Riti Viem",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-0-1",
+    "kind": "NOTICE",
+    "events": "- ? ~ The Kadel March raids Tarenmere: 17 Wheat, 16 crowns.\n- ? In Matifenwatch, Vacar Lielverward put up a repair contract.\n",
+    "expected": "Vacar Lielverward posted something in Matifenwatch.",
+    "generated": "Vela League put up a repair contract in Maplewatch, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Vacar Lielverward",
+      "place": "Matifenwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-0",
+    "changed_field": "person",
+    "changed_value": "Vacar Lielverward",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-1-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Zelglama Glotha lived in Thorarford and has died.\n",
+    "expected": "Zelglama Glotha had lived in Thorarford and died, if the story is right.",
+    "generated": "Thorn Gardener died after a life in Thornford, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Zelglama Glotha",
+      "place": "Thorarford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-1",
+    "changed_field": "place",
+    "changed_value": "Thorarford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-1-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Zelglama Glotha lived in Cardala and has died.\n",
+    "expected": "Zelglama Glotha had lived in Cardala and died, if the story is right.",
+    "generated": "Galen Gardener had lived in Cedarland and died, if the story is right.",
+    "stopped": true,
+    "required": {
+      "person": "Zelglama Glotha",
+      "place": "Cardala"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-1",
+    "changed_field": "place",
+    "changed_value": "Cardala",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-2-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Safa Fordorward died at age 74 after a life in Talkirbank.\n- ? ~ Stolen hoard money led Zakamiwing to burn Foryenwick.\n",
+    "expected": "Zakamiwing burned Foryenwick. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "Stonemaw burned Food over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Zakamiwing",
+      "place": "Foryenwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-2",
+    "changed_field": "place",
+    "changed_value": "Foryenwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-2-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Safa Fordorward died at age 74 after a life in Talkirbank.\n- ? ~ Stolen hoard money led Zakamiwing to burn Norulwatch.\n",
+    "expected": "Zakamiwing burned Norulwatch. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "Stonemaw burned Rosewatch over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Zakamiwing",
+      "place": "Norulwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-2",
+    "changed_field": "place",
+    "changed_value": "Norulwatch",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-3-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Garvaltiwatch saw smoke in its chimneys; readers feared Miranros the Pale.\n",
+    "expected": "The old readers in Garvaltiwatch took the smoke as a warning of Miranros the Pale, I hear.",
+    "generated": "The old readers in Galen took the smoke as a warning of Mistwatch, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Miranros the Pale",
+      "place": "Garvaltiwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-3",
+    "changed_field": "dragon",
+    "changed_value": "Miranros the Pale",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-3-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Garvaltiwatch saw smoke in its chimneys; readers feared Martha the Red.\n",
+    "expected": "The old readers in Garvaltiwatch took the smoke as a warning of Martha the Red, I hear.",
+    "generated": "The old readers in Galen took the smoke as a warning of Maplewing, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Martha the Red",
+      "place": "Garvaltiwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-3",
+    "changed_field": "dragon",
+    "changed_value": "Martha the Red",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-4-0",
+    "kind": "GOBLIN RAID",
+    "events": "- The Yorla Court raids Eranmere: 13 Bread, 15 crowns.\n",
+    "expected": "Have you heard the news? Eranmere had been raided by The Yorla Court.",
+    "generated": "The relief convoy was delayed when Thornmere closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Yorla Court",
+      "place": "Eranmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-4",
+    "changed_field": "faction",
+    "changed_value": "The Yorla Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-4-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Mama Tithe raids Eranmere: 13 Bread, 15 crowns.\n",
+    "expected": "Have you heard the news? Eranmere had been raided by Mama Tithe.",
+    "generated": "Have you heard the news? Elmmere had been raided by Maple Throne.",
+    "stopped": true,
+    "required": {
+      "faction": "Mama Tithe",
+      "place": "Eranmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-4",
+    "changed_field": "faction",
+    "changed_value": "Mama Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-5-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Belrosglagate has 31 food in store. Its reserve target is 78.\n- ~ Cedar Covenant raids Glacarmere: 20 Wheat, 16 crowns.\n- ~ Yorfabarrow was running short of food.\n",
+    "expected": "Have you heard? Yorfabarrow was short of food. That's the word going round.",
+    "generated": "Have you heard? Food was running short in Wintermarsh. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Yorfabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-5",
+    "changed_field": "place",
+    "changed_value": "Yorfabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-5-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Belrosglagate has 31 food in store. Its reserve target is 78.\n- ~ Cedar Covenant raids Glacarmere: 20 Wheat, 16 crowns.\n- ~ Ankawick was running short of food.\n",
+    "expected": "Have you heard? Ankawick was short of food. That's the word going round.",
+    "generated": "Have you heard? Amberwick was short of food. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Ankawick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-5",
+    "changed_field": "place",
+    "changed_value": "Ankawick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-6-0",
+    "kind": "HARVEST",
+    "events": "- Enshawick's drought harvest fell short of the northern settlements' needs.\n",
+    "expected": "Have you heard the news? Enshawick's drought harvest fell short of what the northern settlements needed.",
+    "generated": "The drought harvest in Elmwick fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Enshawick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-6",
+    "changed_field": "place",
+    "changed_value": "Enshawick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-6-1",
+    "kind": "HARVEST",
+    "events": "- Winterhaven's drought harvest fell short of the northern settlements' needs.\n",
+    "expected": "Have you heard the news? Winterhaven's drought harvest fell short of what the northern settlements needed.",
+    "generated": "The drought harvest in Winterhaven fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Winterhaven"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-6",
+    "changed_field": "place",
+    "changed_value": "Winterhaven",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-7-0",
+    "kind": "ROUTE",
+    "events": "- Kakatorbank shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Kakatorbank closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Kalen closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Kakatorbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-7",
+    "changed_field": "place",
+    "changed_value": "Kakatorbank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-7-1",
+    "kind": "ROUTE",
+    "events": "- Tacardorwatch shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Tacardorwatch closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Thornwatch closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Tacardorwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-7",
+    "changed_field": "place",
+    "changed_value": "Tacardorwatch",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-8-0",
+    "kind": "PEACE",
+    "events": "- ? ~ Wendelna Nasha died at age 68 after a life in Arinwick.\n- ~ The Wenul March agreed to peace with Mergla Tithe.\n",
+    "expected": "Have you heard? The Wenul March and Mergla Tithe made peace. That's the word going round.",
+    "generated": "Have you heard? The drought harvest in Maplen Throne fell short of supplies for the eastern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Wenul March",
+      "other": "Mergla Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-8",
+    "changed_field": "faction",
+    "changed_value": "The Wenul March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-8-1",
+    "kind": "PEACE",
+    "events": "- ? ~ Wendelna Nasha died at age 68 after a life in Arinwick.\n- ~ The Corkagal Parliament agreed to peace with Mergla Tithe.\n",
+    "expected": "Have you heard? The Corkagal Parliament and Mergla Tithe made peace. That's the word going round.",
+    "generated": "Have you heard? The drought harvest in Mossmeadow fell short of supplies for the eastern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Corkagal Parliament",
+      "other": "Mergla Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-8",
+    "changed_field": "faction",
+    "changed_value": "The Corkagal Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-10-0",
+    "kind": "BANDITS",
+    "events": "- ? ~ The Olsel Throne recruited hungry debtors and unpaid households.\n",
+    "expected": "Hungry debtors and people from unpaid households were being recruited by The Olsel Throne, if the story is right.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Thorn Throne, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "The Olsel Throne"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-10",
+    "changed_field": "faction",
+    "changed_value": "The Olsel Throne",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-10-1",
+    "kind": "BANDITS",
+    "events": "- ? ~ Arjarcor Tithe recruited hungry debtors and unpaid households.\n",
+    "expected": "Hungry debtors and people from unpaid households were being recruited by Arjarcor Tithe, if the story is right.",
+    "generated": "Arlen Throne recruited hungry debtors and people from unpaid households, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Arjarcor Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-10",
+    "changed_field": "faction",
+    "changed_value": "Arjarcor Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-12-0",
+    "kind": "NOTICE",
+    "events": "- ? Forforjar Thaemenwright posted a supply request in Kavabank.\n",
+    "expected": "Someone put up a supply request in Kavabank.",
+    "generated": "Someone put up a supply request in King took the smoke as a supply raided Kinscale, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Kavabank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-12",
+    "changed_field": "place",
+    "changed_value": "Kavabank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-12-1",
+    "kind": "NOTICE",
+    "events": "- ? Forforjar Thaemenwright posted a supply request in Yenwenbraford.\n",
+    "expected": "Someone put up a supply request in Yenwenbraford.",
+    "generated": "Food was running short in Fernburn, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Yenwenbraford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-12",
+    "changed_field": "place",
+    "changed_value": "Yenwenbraford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-13-0",
+    "kind": "DEATH",
+    "events": "- ~ Ilzawick has 0 food in store. Its reserve target is 75.\n- ~ Kirta Vendalorward lived in Inorwick and has died.\n",
+    "expected": "Have you heard? Kirta Vendalorward had lived in Inorwick and died. That's the word going round.",
+    "generated": "Have you heard? Kinbarrow was short of food. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Kirta Vendalorward",
+      "place": "Inorwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-13",
+    "changed_field": "person",
+    "changed_value": "Kirta Vendalorward",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-13-1",
+    "kind": "DEATH",
+    "events": "- ~ Ilzawick has 0 food in store. Its reserve target is 75.\n- ~ Neltorren Glatelwright lived in Inorwick and has died.\n",
+    "expected": "Have you heard? Neltorren Glatelwright had lived in Inorwick and died. That's the word going round.",
+    "generated": "Have you heard? Nera Gardener had lived in Ironwick and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Neltorren Glatelwright",
+      "place": "Inorwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-13",
+    "changed_field": "person",
+    "changed_value": "Neltorren Glatelwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-14-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Stolen hoard money led Miril the Red to burn Samorwatch.\n",
+    "expected": "Miril the Red burned Samorwatch over crowns missing from the hoard, if the story is right.",
+    "generated": "Mistwatch closed the treaty bridge, delaying the relief convoy, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "dragon": "Miril the Red",
+      "place": "Samorwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-14",
+    "changed_field": "dragon",
+    "changed_value": "Miril the Red",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-14-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Stolen hoard money led Maolwing to burn Samorwatch.\n",
+    "expected": "Maolwing burned Samorwatch over crowns missing from the hoard, if the story is right.",
+    "generated": "Maplewing burned Sagewatch over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Maolwing",
+      "place": "Samorwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-14",
+    "changed_field": "dragon",
+    "changed_value": "Maolwing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-16-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ Harir Knives raided Ranlatibarrow and took supplies.\n",
+    "expected": "Ranlatibarrow had been raided by Harir Knives, if there's truth in the rumour.",
+    "generated": "Rose Knives raided Rosevale, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "Harir Knives",
+      "place": "Ranlatibarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-16",
+    "changed_field": "faction",
+    "changed_value": "Harir Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-16-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ Bridelren Throne raided Ranlatibarrow and took supplies.\n",
+    "expected": "Ranlatibarrow had been raided by Bridelren Throne, if there's truth in the rumour.",
+    "generated": "Rose Throne raided Roseland, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "Bridelren Throne",
+      "place": "Ranlatibarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-16",
+    "changed_field": "faction",
+    "changed_value": "Bridelren Throne",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-17-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Vimidamere has 0 weeks of food; hunger reaches pressure level 3.\n- ? ~ Stoneridge has 35 food in store. Its reserve target is 78.\n",
+    "expected": "Food was running short in Stoneridge, if there's truth in the rumour.",
+    "generated": "Stoneridge was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Stoneridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-17",
+    "changed_field": "place",
+    "changed_value": "Stoneridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-17-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Vimidamere has 0 weeks of food; hunger reaches pressure level 3.\n- ? ~ Valsamelspire has 35 food in store. Its reserve target is 78.\n",
+    "expected": "Food was running short in Valsamelspire, if there's truth in the rumour.",
+    "generated": "Food was running short in Valen, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Valsamelspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-17",
+    "changed_field": "place",
+    "changed_value": "Valsamelspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-18-0",
+    "kind": "HARVEST",
+    "events": "- Vilenspire's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Have you heard the news? Vilenspire's drought harvest fell short of what the northern settlements needed.",
+    "generated": "The drought harvest in Vindenspire fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Vilenspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-18",
+    "changed_field": "place",
+    "changed_value": "Vilenspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-18-1",
+    "kind": "HARVEST",
+    "events": "- Delrobarrow's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Have you heard the news? Delrobarrow's drought harvest fell short of what the northern settlements needed.",
+    "generated": "The drought harvest in Duskbarrow fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Delrobarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-18",
+    "changed_field": "place",
+    "changed_value": "Delrobarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-19-0",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Nelyaspire shut the treaty bridge.\n",
+    "expected": "Have you heard the news? Nelyaspire closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Reedburn closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Nelyaspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-19",
+    "changed_field": "place",
+    "changed_value": "Nelyaspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-19-1",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Noryorvalgate shut the treaty bridge.\n",
+    "expected": "Have you heard the news? Noryorvalgate closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Rosegate closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Noryorvalgate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-19",
+    "changed_field": "place",
+    "changed_value": "Noryorvalgate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-20-0",
+    "kind": "PEACE",
+    "events": "- ~ Selmarhalbank has 11 food in store. Its reserve target is 75.\n- Holsaglo Republic's courier reaches The Erka Knives: peace now binds the three courts.\n",
+    "expected": "Have you heard the news? Holsaglo Republic and The Erka Knives made peace.",
+    "generated": "Have you heard the news? Halen Reed put up a road compact in Thorn Knives.",
+    "stopped": true,
+    "required": {
+      "faction": "Holsaglo Republic",
+      "other": "The Erka Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-20",
+    "changed_field": "faction",
+    "changed_value": "Holsaglo Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-20-1",
+    "kind": "PEACE",
+    "events": "- ~ Selmarhalbank has 11 food in store. Its reserve target is 75.\n- The Belan March's courier reaches The Erka Knives: peace now binds the three courts.\n",
+    "expected": "Have you heard the news? The Belan March and The Erka Knives made peace.",
+    "generated": "Have you heard the news? Thorn Mason put up a road compact in Thornhaven.",
+    "stopped": true,
+    "required": {
+      "faction": "The Belan March",
+      "other": "The Erka Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-20",
+    "changed_field": "faction",
+    "changed_value": "The Belan March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-21-0",
+    "kind": "TREASURE",
+    "events": "- Gloyador Throne raids Tharamere: 16 Bread, 16 crowns, and a named treasure.\n- ~ The Noryor Knives recruits from hungry debtors and unpaid households; road control reaches 38%.\n- ~ Ranrilthaford finished making Libelta Cup.\n",
+    "expected": "Ranrilthaford finished making Libelta Cup, so people say.",
+    "generated": "Have you heard? Rosefield completed Linden Cup. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Libelta Cup",
+      "place": "Ranrilthaford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-21",
+    "changed_field": "place",
+    "changed_value": "Ranrilthaford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-21-1",
+    "kind": "TREASURE",
+    "events": "- Gloyador Throne raids Tharamere: 16 Bread, 16 crowns, and a named treasure.\n- ~ The Noryor Knives recruits from hungry debtors and unpaid households; road control reaches 38%.\n- ~ Globabarrow finished making Libelta Cup.\n",
+    "expected": "Globabarrow finished making Libelta Cup, so people say.",
+    "generated": "Have you heard? Galen Carter put up a road compact in Lindenbarrow. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Libelta Cup",
+      "place": "Globabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-21",
+    "changed_field": "place",
+    "changed_value": "Globabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-22-0",
+    "kind": "BANDITS",
+    "events": "- ~ The Holan Parliament recruits from hungry debtors and unpaid households; road control reaches 36%.\n",
+    "expected": "The Holan Parliament recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Knives. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Holan Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-22",
+    "changed_field": "faction",
+    "changed_value": "The Holan Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-22-1",
+    "kind": "BANDITS",
+    "events": "- ~ The Zasha Company recruits from hungry debtors and unpaid households; road control reaches 36%.\n",
+    "expected": "The Zasha Company recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Company. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Zasha Company"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-22",
+    "changed_field": "faction",
+    "changed_value": "The Zasha Company",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-23-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Rawil Oath recruits from hungry debtors and unpaid households; road control reaches 53%.\n- Bramelri Court gathers 1 new tithe-bearers; Emra the Red's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Bramelri Court. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Bram Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Bramelri Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-23",
+    "changed_field": "faction",
+    "changed_value": "Bramelri Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-23-1",
+    "kind": "CULT RALLIES",
+    "events": "- The Rawil Oath recruits from hungry debtors and unpaid households; road control reaches 53%.\n- The Dasa Oath gathers 1 new tithe-bearers; Emra the Red's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining The Dasa Oath. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Thorn Oath was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dasa Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-23",
+    "changed_field": "faction",
+    "changed_value": "The Dasa Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-24-0",
+    "kind": "NOTICE",
+    "events": "- Elva Rosbamender posts a notice at Valkabank: repair contract.\n",
+    "expected": "Elva Rosbamender put up a repair contract in Valkabank, I hear.",
+    "generated": "Have you heard the news? Elin Roper put up a repair contract in Vola Keeper.",
+    "stopped": true,
+    "required": {
+      "person": "Elva Rosbamender",
+      "place": "Valkabank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-24",
+    "changed_field": "place",
+    "changed_value": "Valkabank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-24-1",
+    "kind": "NOTICE",
+    "events": "- Elva Rosbamender posts a notice at Irselspire: repair contract.\n",
+    "expected": "Elva Rosbamender put up a repair contract in Irselspire, I hear.",
+    "generated": "Have you heard the news? Elin Roper put up a repair contract in Ironspire.",
+    "stopped": true,
+    "required": {
+      "person": "Elva Rosbamender",
+      "place": "Irselspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-24",
+    "changed_field": "place",
+    "changed_value": "Irselspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-25-0",
+    "kind": "DEATH",
+    "events": "- Darthor Bribelwright died after living in Bavenvalgate.\n",
+    "expected": "Have you heard the news? Darthor Bribelwright died after a life in Bavenvalgate.",
+    "generated": "Have you heard the news? Dain Baker died after a life in Briargate.",
+    "stopped": true,
+    "required": {
+      "person": "Darthor Bribelwright",
+      "place": "Bavenvalgate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-25",
+    "changed_field": "person",
+    "changed_value": "Darthor Bribelwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-25-1",
+    "kind": "DEATH",
+    "events": "- Vencar Rilberward died after living in Bavenvalgate.\n",
+    "expected": "Have you heard the news? Vencar Rilberward died after a life in Bavenvalgate.",
+    "generated": "Have you heard the news? Vela Rilla died after a life in Brackengate.",
+    "stopped": true,
+    "required": {
+      "person": "Vencar Rilberward",
+      "place": "Bavenvalgate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-25",
+    "changed_field": "person",
+    "changed_value": "Vencar Rilberward",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-26-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ The Morla Court raids Vorsilford: 20 Wheat, 15 crowns.\n- ~ Telgar the Unappeased burns Delyenashwick because 18 stolen crowns remain missing.\n",
+    "expected": "Have you heard? Telgar the Unappeased burned Delyenashwick over crowns missing from the hoard. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Thornwick closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Telgar the Unappeased",
+      "place": "Delyenashwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-26",
+    "changed_field": "dragon",
+    "changed_value": "Telgar the Unappeased",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-26-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ The Morla Court raids Vorsilford: 20 Wheat, 15 crowns.\n- ~ Vorver the Pale burns Delyenashwick because 18 stolen crowns remain missing.\n",
+    "expected": "Have you heard? Vorver the Pale burned Delyenashwick over crowns missing from the hoard. That's the word going round.",
+    "generated": "Have you heard? Volas was short of food. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Vorver the Pale",
+      "place": "Delyenashwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-26",
+    "changed_field": "dragon",
+    "changed_value": "Vorver the Pale",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-27-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Mossmere's chimneys; old readers count 14 nights until Vorren the Red comes.\n",
+    "expected": "The old readers in Mossmere took the smoke as a warning of Vorren the Red, if the story is right.",
+    "generated": "The old readers in Mossmere took the smoke as a warning of Reedmere, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Vorren the Red",
+      "place": "Mossmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-27",
+    "changed_field": "place",
+    "changed_value": "Mossmere",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-27-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Tallenkelspire's chimneys; old readers count 14 nights until Vorren the Red comes.\n",
+    "expected": "The old readers in Tallenkelspire took the smoke as a warning of Vorren the Red, if the story is right.",
+    "generated": "The old readers in Thornspire took the smoke as a warning of Reedscale, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Vorren the Red",
+      "place": "Tallenkelspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-27",
+    "changed_field": "place",
+    "changed_value": "Tallenkelspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-28-0",
+    "kind": "GOBLIN RAID",
+    "events": "- The Dorwen Parliament raids Corsawick: 20 Wheat, 15 crowns.\n",
+    "expected": "Have you heard the news? Corsawick had been raided by The Dorwen Parliament.",
+    "generated": "The goblin court was gathering again, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dorwen Parliament",
+      "place": "Corsawick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-28",
+    "changed_field": "place",
+    "changed_value": "Corsawick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-28-1",
+    "kind": "GOBLIN RAID",
+    "events": "- The Dorwen Parliament raids Yencorbarrow: 20 Wheat, 15 crowns.\n",
+    "expected": "Have you heard the news? Yencorbarrow had been raided by The Dorwen Parliament.",
+    "generated": "The goblin court was gathering again, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dorwen Parliament",
+      "place": "Yencorbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-28",
+    "changed_field": "place",
+    "changed_value": "Yencorbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-30-0",
+    "kind": "HARVEST",
+    "events": "- Sararspire's drought harvest cannot supply the western settlements.\n",
+    "expected": "The drought harvest in Sararspire fell short of supplies for the western settlements, I hear.",
+    "generated": "The drought harvest in Sagespire fell short of supplies for the western settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Sararspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-30",
+    "changed_field": "place",
+    "changed_value": "Sararspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-30-1",
+    "kind": "HARVEST",
+    "events": "- Corlenyorford's drought harvest cannot supply the western settlements.\n",
+    "expected": "The drought harvest in Corlenyorford fell short of supplies for the western settlements, I hear.",
+    "generated": "The drought harvest in Copperford fell short of supplies for the western settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Corlenyorford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-30",
+    "changed_field": "place",
+    "changed_value": "Corlenyorford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-31-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Ivyshore closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Ivyshore closed the treaty bridge, if the story is right.",
+    "generated": "Ivyshore closed the treaty bridge, delaying the relief convoy, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Ivyshore"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-31",
+    "changed_field": "place",
+    "changed_value": "Ivyshore",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-31-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Fayormere closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Fayormere closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Fara Cooper closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Fayormere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-31",
+    "changed_field": "place",
+    "changed_value": "Fayormere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-32-0",
+    "kind": "PEACE",
+    "events": "- The Ilrossil Republic agreed to peace with Ulir Knives.\n",
+    "expected": "Have you heard the news? The Ilrossil Republic and Ulir Knives made peace.",
+    "generated": "The relief convoy was delayed when Thorn Knives and Winter Knives made peace, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Ilrossil Republic",
+      "other": "Ulir Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-32",
+    "changed_field": "faction",
+    "changed_value": "The Ilrossil Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-32-1",
+    "kind": "PEACE",
+    "events": "- Talil Oath agreed to peace with Ulir Knives.\n",
+    "expected": "Have you heard the news? Talil Oath and Ulir Knives made peace.",
+    "generated": "The drought harvest in Thorn Oath fell short of supplies for the eastern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Talil Oath",
+      "other": "Ulir Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-32",
+    "changed_field": "faction",
+    "changed_value": "Talil Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-33-0",
+    "kind": "TREASURE",
+    "events": "- ~ Viberbarrow finishes Melzelspire Glona Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Have you heard? Viberbarrow completed Melzelspire Glona Crown. That's the word going round.",
+    "generated": "Have you heard? Vistbarrow completed Mist Crown. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Melzelspire Glona Crown",
+      "place": "Viberbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-33",
+    "changed_field": "place",
+    "changed_value": "Viberbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-33-1",
+    "kind": "TREASURE",
+    "events": "- ~ Yordelwick finishes Melzelspire Glona Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Have you heard? Yordelwick completed Melzelspire Glona Crown. That's the word going round.",
+    "generated": "Have you heard? someone put up a road compact in Mossspire.",
+    "stopped": true,
+    "required": {
+      "object": "Melzelspire Glona Crown",
+      "place": "Yordelwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-33",
+    "changed_field": "place",
+    "changed_value": "Yordelwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-34-0",
+    "kind": "BANDITS",
+    "events": "- ~ Zaravi Company recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Zaravi Company. That's the word going round.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Sage Company. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Zaravi Company"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-34",
+    "changed_field": "faction",
+    "changed_value": "Zaravi Company",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-34-1",
+    "kind": "BANDITS",
+    "events": "- ~ Ashvi Knives recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Ashvi Knives. That's the word going round.",
+    "generated": "Ash Knives recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Ashvi Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-34",
+    "changed_field": "faction",
+    "changed_value": "Ashvi Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-35-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Oltelor Parliament gathers 1 new tithe-bearers; Rimerza's court returns to 47.\n",
+    "expected": "Have you heard the news? The Oltelor Parliament was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Potter was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Oltelor Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-35",
+    "changed_field": "faction",
+    "changed_value": "The Oltelor Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-35-1",
+    "kind": "CULT RALLIES",
+    "events": "- Lorvi Court gathers 1 new tithe-bearers; Rimerza's court returns to 47.\n",
+    "expected": "Have you heard the news? Lorvi Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Loren Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Lorvi Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-35",
+    "changed_field": "faction",
+    "changed_value": "Lorvi Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-36-0",
+    "kind": "NOTICE",
+    "events": "- ~ Iltel Company recruits from hungry debtors and unpaid households; road control reaches 55%.\n- Viil Ragalwright posts a notice at Ashtorthorwick: guard commission.\n",
+    "expected": "Have you heard the news? Viil Ragalwright put up a guard commission in Ashtorthorwick.",
+    "generated": "Have you heard the news? Viren Reed put up a guard commission in Ashview.",
+    "stopped": true,
+    "required": {
+      "person": "Viil Ragalwright",
+      "place": "Ashtorthorwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-36",
+    "changed_field": "person",
+    "changed_value": "Viil Ragalwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-36-1",
+    "kind": "NOTICE",
+    "events": "- ~ Iltel Company recruits from hungry debtors and unpaid households; road control reaches 55%.\n- Laber Nathorwright posts a notice at Ashtorthorwick: guard commission.\n",
+    "expected": "Have you heard the news? Laber Nathorwright put up a guard commission in Ashtorthorwick.",
+    "generated": "Have you heard the news? Larkwick finished making Ash Cup.",
+    "stopped": true,
+    "required": {
+      "person": "Laber Nathorwright",
+      "place": "Ashtorthorwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-36",
+    "changed_field": "person",
+    "changed_value": "Laber Nathorwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-37-0",
+    "kind": "DEATH",
+    "events": "- Rensa Galnor died at age 73 after a life in Taliford.\n",
+    "expected": "Rensa Galnor had lived in Taliford and died, I hear.",
+    "generated": "Have you heard the news? Rena Gardener died after a life in Thornford.",
+    "stopped": true,
+    "required": {
+      "person": "Rensa Galnor",
+      "place": "Taliford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-37",
+    "changed_field": "person",
+    "changed_value": "Rensa Galnor",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-37-1",
+    "kind": "DEATH",
+    "events": "- Saka Kirwa died at age 73 after a life in Taliford.\n",
+    "expected": "Saka Kirwa had lived in Taliford and died, I hear.",
+    "generated": "Have you heard the news? Sageford finished making Thorn Icon.",
+    "stopped": true,
+    "required": {
+      "person": "Saka Kirwa",
+      "place": "Taliford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-37",
+    "changed_field": "person",
+    "changed_value": "Saka Kirwa",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-38-0",
+    "kind": "DRAGON FIRE",
+    "events": "- Ercaspire's drought harvest cannot supply the eastern settlements.\n- ? ~ Talriwick has 35 food in store. Its reserve target is 78.\n- ? ~ Enmorwing burns Ashridge because 17 stolen crowns remain missing.\n",
+    "expected": "Enmorwing burned Ashridge over crowns missing from the hoard, if the story is right.",
+    "generated": "Elmwing burned Ashridge over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Enmorwing",
+      "place": "Ashridge"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-38",
+    "changed_field": "dragon",
+    "changed_value": "Enmorwing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-38-1",
+    "kind": "DRAGON FIRE",
+    "events": "- Ercaspire's drought harvest cannot supply the eastern settlements.\n- ? ~ Talriwick has 35 food in store. Its reserve target is 78.\n- ? ~ Harmel burns Ashridge because 17 stolen crowns remain missing.\n",
+    "expected": "Harmel burned Ashridge over crowns missing from the hoard, if the story is right.",
+    "generated": "Hazelmaw burned Ashridge over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Harmel",
+      "place": "Ashridge"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-38",
+    "changed_field": "dragon",
+    "changed_value": "Harmel",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-39-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Carselroswick has 32 food in store. Its reserve target is 78.\n- Dartal Mororval died at age 74 after a life in Inorwick.\n- ? ~ Belcargate saw smoke in its chimneys; readers feared Silholash the Unappeased.\n",
+    "expected": "The old readers in Belcargate took the smoke as a warning of Silholash the Unappeased, if the story is right.",
+    "generated": "The old readers in Brackengate took the smoke as a warning of Silvermaw, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silholash the Unappeased",
+      "place": "Belcargate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-39",
+    "changed_field": "place",
+    "changed_value": "Belcargate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-39-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Carselroswick has 32 food in store. Its reserve target is 78.\n- Dartal Mororval died at age 74 after a life in Inorwick.\n- ? ~ Viulwick saw smoke in its chimneys; readers feared Silholash the Unappeased.\n",
+    "expected": "The old readers in Viulwick took the smoke as a warning of Silholash the Unappeased, if the story is right.",
+    "generated": "The old readers in Vinderwick took the smoke as a warning of Silverwing, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silholash the Unappeased",
+      "place": "Viulwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-39",
+    "changed_field": "place",
+    "changed_value": "Viulwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-40-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ The Thacorfir Throne recruits from hungry debtors and unpaid households; road control reaches 51%.\n- ? ~ Enem Tithe raided Maryorbarrow and took supplies.\n",
+    "expected": "Enem Tithe raided Maryorbarrow, if the story is right.",
+    "generated": "Maplebarrow had been raided by Elm Throne, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Enem Tithe",
+      "place": "Maryorbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-40",
+    "changed_field": "faction",
+    "changed_value": "Enem Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-40-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ The Thacorfir Throne recruits from hungry debtors and unpaid households; road control reaches 51%.\n- ? ~ Satel Parliament raided Maryorbarrow and took supplies.\n",
+    "expected": "Satel Parliament raided Maryorbarrow, if the story is right.",
+    "generated": "Maplebarrow had been raided by Sage Knives, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Satel Parliament",
+      "place": "Maryorbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-40",
+    "changed_field": "faction",
+    "changed_value": "Satel Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-41-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Ashjarmerford's drought harvest cannot supply the southern settlements.\n- Frostfield was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Frostfield.",
+    "generated": "Frostfield was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Frostfield"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-41",
+    "changed_field": "place",
+    "changed_value": "Frostfield",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-41-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Ashjarmerford's drought harvest cannot supply the southern settlements.\n- Thadatimere was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Thadatimere.",
+    "generated": "The relief convoy was delayed when Thornview closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Thadatimere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-41",
+    "changed_field": "place",
+    "changed_value": "Thadatimere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-42-0",
+    "kind": "HARVEST",
+    "events": "- ~ Drought in Beryengarbarrow left too little harvest for the western settlements.\n",
+    "expected": "Have you heard? The drought harvest in Beryengarbarrow fell short of supplies for the western settlements. That's the word going round.",
+    "generated": "Bernbarrow's drought harvest fell short of what the western settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Beryengarbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-42",
+    "changed_field": "place",
+    "changed_value": "Beryengarbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-42-1",
+    "kind": "HARVEST",
+    "events": "- ~ Drought in Kaashwick left too little harvest for the western settlements.\n",
+    "expected": "Have you heard? The drought harvest in Kaashwick fell short of supplies for the western settlements. That's the word going round.",
+    "generated": "Have you heard? The drought harvest in King fell short of supplies for the western settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Kaashwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-42",
+    "changed_field": "place",
+    "changed_value": "Kaashwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-43-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Vafenmere shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Vafenmere closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Valen closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Vafenmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-43",
+    "changed_field": "place",
+    "changed_value": "Vafenmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-43-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Sarhargate shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Sarhargate closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Sablegate closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Sarhargate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-43",
+    "changed_field": "place",
+    "changed_value": "Sarhargate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-44-0",
+    "kind": "PEACE",
+    "events": "- ? ~ Vorros Company raids Briarglen: 20 Wheat, 0 crowns.\n- ~ Irranmere has 31 food in store. Its reserve target is 78.\n- The Mornel Court agreed to peace with The Aldar Tithe.\n",
+    "expected": "Have you heard the news? The Mornel Court and The Aldar Tithe made peace.",
+    "generated": "The drought harvest in Thorn Throne fell short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Mornel Court",
+      "other": "The Aldar Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-44",
+    "changed_field": "other",
+    "changed_value": "The Aldar Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-44-1",
+    "kind": "PEACE",
+    "events": "- ? ~ Vorros Company raids Briarglen: 20 Wheat, 0 crowns.\n- ~ Irranmere has 31 food in store. Its reserve target is 78.\n- The Mornel Court agreed to peace with The Talfen March.\n",
+    "expected": "Have you heard the news? The Mornel Court and The Talfen March made peace.",
+    "generated": "The relief convoy was delayed when Thorn Throne and Thorn Throne made peace, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Mornel Court",
+      "other": "The Talfen March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-44",
+    "changed_field": "other",
+    "changed_value": "The Talfen March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-45-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Craftspeople in Talviford completed Jarverriwatch Fendel Cup.\n",
+    "expected": "Talviford completed Jarverriwatch Fendel Cup, if the story is right.",
+    "generated": "Thornford completed Juniper Cup, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Jarverriwatch Fendel Cup",
+      "place": "Talviford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-45",
+    "changed_field": "object",
+    "changed_value": "Jarverriwatch Fendel Cup",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-45-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Craftspeople in Talviford completed Bellizawick Silgaltor Cup.\n",
+    "expected": "Talviford completed Bellizawick Silgaltor Cup, if the story is right.",
+    "generated": "Thornford completed Birch Cup, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Bellizawick Silgaltor Cup",
+      "place": "Talviford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-45",
+    "changed_field": "object",
+    "changed_value": "Bellizawick Silgaltor Cup",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-46-0",
+    "kind": "BANDITS",
+    "events": "- ~ The Forba March recruited hungry debtors and unpaid households.\n",
+    "expected": "The Forba March recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Mason. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Forba March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-46",
+    "changed_field": "faction",
+    "changed_value": "The Forba March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-46-1",
+    "kind": "BANDITS",
+    "events": "- ~ Jarulglo Court recruited hungry debtors and unpaid households.\n",
+    "expected": "Jarulglo Court recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Juniper Court recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Jarulglo Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-46",
+    "changed_field": "faction",
+    "changed_value": "Jarulglo Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-47-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Kirrilran Oath gathers 1 new tithe-bearers; Kasha the Pale's court returns to 47.\n",
+    "expected": "Have you heard the news? The Kirrilran Oath was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Oath was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Kirrilran Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-47",
+    "changed_field": "faction",
+    "changed_value": "The Kirrilran Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-47-1",
+    "kind": "CULT RALLIES",
+    "events": "- The Caash Court gathers 1 new tithe-bearers; Kasha the Pale's court returns to 47.\n",
+    "expected": "Have you heard the news? The Caash Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Caash Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-47",
+    "changed_field": "faction",
+    "changed_value": "The Caash Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-48-0",
+    "kind": "NOTICE",
+    "events": "- Alver Taldorwright died at age 75 after a life in Oakhall.\n- ~ Harwenhol Wakel posts a notice at Alderlake: repair contract.\n",
+    "expected": "Harwenhol Wakel put up a repair contract in Alderlake, so people say.",
+    "generated": "Have you heard? Hazel Weaver put up a repair contract in Alderlake. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Harwenhol Wakel",
+      "place": "Alderlake"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-48",
+    "changed_field": "person",
+    "changed_value": "Harwenhol Wakel",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-48-1",
+    "kind": "NOTICE",
+    "events": "- Alver Taldorwright died at age 75 after a life in Oakhall.\n- ~ Naemyen Venranmender posts a notice at Alderlake: repair contract.\n",
+    "expected": "Naemyen Venranmender put up a repair contract in Alderlake, so people say.",
+    "generated": "Have you heard? Nola Vela put up a repair contract in Alderlake. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Naemyen Venranmender",
+      "place": "Alderlake"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-48",
+    "changed_field": "person",
+    "changed_value": "Naemyen Venranmender",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-49-0",
+    "kind": "DEATH",
+    "events": "- Galal Throne raids Flintmeadow: 8 Wheat, 15 crowns.\n- ~ Brawil Corkelmender lived in Mabairwatch and has died.\n",
+    "expected": "Have you heard? Brawil Corkelmender had lived in Mabairwatch and died. That's the word going round.",
+    "generated": "Brackenmere had lived in Maplewatch and died, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Brawil Corkelmender",
+      "place": "Mabairwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-49",
+    "changed_field": "person",
+    "changed_value": "Brawil Corkelmender",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-49-1",
+    "kind": "DEATH",
+    "events": "- Galal Throne raids Flintmeadow: 8 Wheat, 15 crowns.\n- ~ Thorranlen Irfirfenmender lived in Mabairwatch and has died.\n",
+    "expected": "Have you heard? Thorranlen Irfirfenmender had lived in Mabairwatch and died. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Maplewatch closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Thorranlen Irfirfenmender",
+      "place": "Mabairwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-49",
+    "changed_field": "person",
+    "changed_value": "Thorranlen Irfirfenmender",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-50-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Renvalvimere has 0 food in store. Its reserve target is 62.\n- ? ~ Ilfirros March recruits from hungry debtors and unpaid households; road control reaches 53%.\n- Stolen hoard money led Galinholwing to burn Deltelmere.\n",
+    "expected": "Galinholwing burned Deltelmere over crowns missing from the hoard, I hear.",
+    "generated": "Have you heard the news? Galen Dyer put up a road compact in Duskwick.",
+    "stopped": true,
+    "required": {
+      "dragon": "Galinholwing",
+      "place": "Deltelmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-50",
+    "changed_field": "place",
+    "changed_value": "Deltelmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-50-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Renvalvimere has 0 food in store. Its reserve target is 62.\n- ? ~ Ilfirros March recruits from hungry debtors and unpaid households; road control reaches 53%.\n- Stolen hoard money led Galinholwing to burn Firwilbarrow.\n",
+    "expected": "Galinholwing burned Firwilbarrow over crowns missing from the hoard, I hear.",
+    "generated": "Have you heard the news? Galen Fisher put up a road compact in Fishbarrow.",
+    "stopped": true,
+    "required": {
+      "dragon": "Galinholwing",
+      "place": "Firwilbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-50",
+    "changed_field": "place",
+    "changed_value": "Firwilbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-51-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke in Beryafenwatch's chimneys warns of Zelnorwing.\n",
+    "expected": "Have you heard? The old readers in Beryafenwatch took the smoke as a warning of Zelnorwing. That's the word going round.",
+    "generated": "Smoke fell into Birchwatch's chimneys. The old readers feared Birchwing was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Zelnorwing",
+      "place": "Beryafenwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-51",
+    "changed_field": "dragon",
+    "changed_value": "Zelnorwing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-51-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke in Beryafenwatch's chimneys warns of Valri.\n",
+    "expected": "Have you heard? The old readers in Beryafenwatch took the smoke as a warning of Valri. That's the word going round.",
+    "generated": "Smoke fell into Birchwatch's chimneys. The old readers feared Vela Wright was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Valri",
+      "place": "Beryafenwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-51",
+    "changed_field": "dragon",
+    "changed_value": "Valri",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-52-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Arza burns Thornfield because 18 stolen crowns remain missing.\n- ? ~ Harinmere has 0 food in store. Its reserve target is 62.\n- ~ Taramorford lost supplies in a raid by Ilti Company.\n",
+    "expected": "Taramorford had been raided by Ilti Company, so people say.",
+    "generated": "Thornford had been raided by Iron Company, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Ilti Company",
+      "place": "Taramorford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-52",
+    "changed_field": "faction",
+    "changed_value": "Ilti Company",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-52-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Arza burns Thornfield because 18 stolen crowns remain missing.\n- ? ~ Harinmere has 0 food in store. Its reserve target is 62.\n- ~ Taramorford lost supplies in a raid by The Jarrotel Parliament.\n",
+    "expected": "Taramorford had been raided by The Jarrotel Parliament, so people say.",
+    "generated": "Have you heard? The relief convoy was delayed when Thornford closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Jarrotel Parliament",
+      "place": "Taramorford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-52",
+    "changed_field": "faction",
+    "changed_value": "The Jarrotel Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-53-0",
+    "kind": "SHORTAGE",
+    "events": "- ? Food reserves were low in Rirosemspire.\n",
+    "expected": "Rirosemspire was short of food, if the story is right.",
+    "generated": "Rilla Wright was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Rirosemspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-53",
+    "changed_field": "place",
+    "changed_value": "Rirosemspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-53-1",
+    "kind": "SHORTAGE",
+    "events": "- ? Food reserves were low in Firorford.\n",
+    "expected": "Firorford was short of food, if the story is right.",
+    "generated": "Food was running short in Fistford, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Firorford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-53",
+    "changed_field": "place",
+    "changed_value": "Firorford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-54-0",
+    "kind": "HARVEST",
+    "events": "- Fenanranspire's drought harvest fell short of the northern settlements' needs.\n",
+    "expected": "The drought harvest in Fenanranspire fell short of supplies for the northern settlements, I hear.",
+    "generated": "The drought harvest in Fernspire fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Fenanranspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-54",
+    "changed_field": "place",
+    "changed_value": "Fenanranspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-54-1",
+    "kind": "HARVEST",
+    "events": "- Inwabrimere's drought harvest fell short of the northern settlements' needs.\n",
+    "expected": "The drought harvest in Inwabrimere fell short of supplies for the northern settlements, I hear.",
+    "generated": "The drought harvest in Ironwall fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Inwabrimere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-54",
+    "changed_field": "place",
+    "changed_value": "Inwabrimere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-55-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Rosverbarrow closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Rosverbarrow closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Rosebarrow closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Rosverbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-55",
+    "changed_field": "place",
+    "changed_value": "Rosverbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-55-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Holinen closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Holinen closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Hollymere closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Holinen"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-55",
+    "changed_field": "place",
+    "changed_value": "Holinen",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-56-0",
+    "kind": "PEACE",
+    "events": "- The Ertor Throne and The Yordor Parliament made peace.\n",
+    "expected": "Have you heard the news? The Ertor Throne and The Yordor Parliament made peace.",
+    "generated": "The drought harvest in Thorn Throne fell short of supplies for the eastern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Ertor Throne",
+      "other": "The Yordor Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-56",
+    "changed_field": "other",
+    "changed_value": "The Yordor Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-56-1",
+    "kind": "PEACE",
+    "events": "- The Ertor Throne and Fenfir Parliament made peace.\n",
+    "expected": "Have you heard the news? The Ertor Throne and Fenfir Parliament made peace.",
+    "generated": "The relief convoy was delayed when Thorn Potter closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Ertor Throne",
+      "other": "Fenfir Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-56",
+    "changed_field": "other",
+    "changed_value": "Fenfir Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-58-0",
+    "kind": "BANDITS",
+    "events": "- The Jarvor Republic raids Fabaford: 20 Wheat, 16 crowns.\n- ? ~ The Kelber Oath recruited hungry debtors and unpaid households.\n",
+    "expected": "Hungry debtors and people from unpaid households were being recruited by The Kelber Oath, if the story is right.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Thorn Oath, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "The Kelber Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-58",
+    "changed_field": "faction",
+    "changed_value": "The Kelber Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-58-1",
+    "kind": "BANDITS",
+    "events": "- The Jarvor Republic raids Fabaford: 20 Wheat, 16 crowns.\n- ? ~ Lorar Court recruited hungry debtors and unpaid households.\n",
+    "expected": "Hungry debtors and people from unpaid households were being recruited by Lorar Court, if the story is right.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Loren Court, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "Lorar Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-58",
+    "changed_field": "faction",
+    "changed_value": "Lorar Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-59-0",
+    "kind": "CULT RALLIES",
+    "events": "- Mitordor Republic recruits from hungry debtors and unpaid households; road control reaches 55%.\n- New tithe-bearers joined Camar Court at Renra the Unappeased's court.\n",
+    "expected": "New tithe-bearers were joining Camar Court. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Capter Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Camar Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-59",
+    "changed_field": "faction",
+    "changed_value": "Camar Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-59-1",
+    "kind": "CULT RALLIES",
+    "events": "- Mitordor Republic recruits from hungry debtors and unpaid households; road control reaches 55%.\n- New tithe-bearers joined Holor Republic at Renra the Unappeased's court.\n",
+    "expected": "New tithe-bearers were joining Holor Republic. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Have you heard the news? Holly Republic was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Holor Republic"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-59",
+    "changed_field": "faction",
+    "changed_value": "Holor Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-60-0",
+    "kind": "NOTICE",
+    "events": "- Olsa Darroskirward posts a notice at Thordormere: supply request.\n",
+    "expected": "Have you heard the news? Olsa Darroskirward put up a supply request in Thordormere.",
+    "generated": "Have you heard the news? Oakwater finished making Thorn Cup.",
+    "stopped": true,
+    "required": {
+      "person": "Olsa Darroskirward",
+      "place": "Thordormere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-60",
+    "changed_field": "person",
+    "changed_value": "Olsa Darroskirward",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-60-1",
+    "kind": "NOTICE",
+    "events": "- Rilla Keeper posts a notice at Thordormere: supply request.\n",
+    "expected": "Have you heard the news? Rilla Keeper put up a supply request in Thordormere.",
+    "generated": "Have you heard the news? Rilla Keeper put up a supply request in Thornmere.",
+    "stopped": true,
+    "required": {
+      "person": "Rilla Keeper",
+      "place": "Thordormere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-60",
+    "changed_field": "person",
+    "changed_value": "Rilla Keeper",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-61-0",
+    "kind": "DEATH",
+    "events": "- ? ~ The Bafada Throne raids Olverdawatch: 16 Bread, 16 crowns.\n- ? ~ The Ashrilmi Knives recruits from hungry debtors and unpaid households; road control reaches 35%.\n- ? ~ Wilkir Thordormawright died after living in Forsilemford.\n",
+    "expected": "Wilkir Thordormawright had lived in Forsilemford and died, if the story is right.",
+    "generated": "Willowmaw had been raided by Willow Throne, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Wilkir Thordormawright",
+      "place": "Forsilemford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-61",
+    "changed_field": "person",
+    "changed_value": "Wilkir Thordormawright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-61-1",
+    "kind": "DEATH",
+    "events": "- ? ~ The Bafada Throne raids Olverdawatch: 16 Bread, 16 crowns.\n- ? ~ The Ashrilmi Knives recruits from hungry debtors and unpaid households; road control reaches 35%.\n- ? ~ Ernel Catal died after living in Forsilemford.\n",
+    "expected": "Ernel Catal had lived in Forsilemford and died, if the story is right.",
+    "generated": "Eren Carter died after a life in Food in Food and died, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Ernel Catal",
+      "place": "Forsilemford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-61",
+    "changed_field": "person",
+    "changed_value": "Ernel Catal",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-63-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Smoke in Roslainmere's chimneys warns of Rolenros the Pale.\n",
+    "expected": "Have you heard the news? Smoke fell into Roslainmere's chimneys. The old readers feared Rolenros the Pale was coming.",
+    "generated": "The old readers in Rosemere took the smoke as a warning of Rosemere, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Rolenros the Pale",
+      "place": "Roslainmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-63",
+    "changed_field": "place",
+    "changed_value": "Roslainmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-63-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Smoke in Intabarrow's chimneys warns of Rolenros the Pale.\n",
+    "expected": "Have you heard the news? Smoke fell into Intabarrow's chimneys. The old readers feared Rolenros the Pale was coming.",
+    "generated": "The old readers in Ironland took the smoke as a warning of Roseland, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Rolenros the Pale",
+      "place": "Intabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-63",
+    "changed_field": "place",
+    "changed_value": "Intabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-64-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ? Firro Melromender died at age 69 after a life in Venzelvenbarrow.\n- ~ Miverwick lost supplies in a raid by The Gloholthor Republic.\n",
+    "expected": "Have you heard? The Gloholthor Republic raided Miverwick. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Thornholt closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Gloholthor Republic",
+      "place": "Miverwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-64",
+    "changed_field": "place",
+    "changed_value": "Miverwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-64-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ? Firro Melromender died at age 69 after a life in Venzelvenbarrow.\n- ~ Telbraspire lost supplies in a raid by The Gloholthor Republic.\n",
+    "expected": "Have you heard? The Gloholthor Republic raided Telbraspire. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Thornholt closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Gloholthor Republic",
+      "place": "Telbraspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-64",
+    "changed_field": "place",
+    "changed_value": "Telbraspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-65-0",
+    "kind": "SHORTAGE",
+    "events": "- Food reserves were low in Lordargate.\n",
+    "expected": "Lordargate was short of food, I hear.",
+    "generated": "Have you heard the news? Food was running short in Loren.",
+    "stopped": true,
+    "required": {
+      "place": "Lordargate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-65",
+    "changed_field": "place",
+    "changed_value": "Lordargate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-65-1",
+    "kind": "SHORTAGE",
+    "events": "- Food reserves were low in Mosscrest.\n",
+    "expected": "Mosscrest was short of food, I hear.",
+    "generated": "Have you heard the news? Food was running short in Mosscrest.",
+    "stopped": true,
+    "required": {
+      "place": "Mosscrest"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-65",
+    "changed_field": "place",
+    "changed_value": "Mosscrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-67-0",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Selfamere shut the treaty bridge.\n",
+    "expected": "Have you heard the news? Selfamere closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Sablefen closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Selfamere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-67",
+    "changed_field": "place",
+    "changed_value": "Selfamere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-67-1",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Selmakaspire shut the treaty bridge.\n",
+    "expected": "Have you heard the news? Selmakaspire closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Sablemarsh closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Selmakaspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-67",
+    "changed_field": "place",
+    "changed_value": "Selmakaspire",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-68-0",
+    "kind": "PEACE",
+    "events": "- Bagla Tithe and Forzel Parliament made peace.\n",
+    "expected": "Bagla Tithe and Forzel Parliament made peace, I hear.",
+    "generated": "Bracken Throne and Food was running short in Flintden, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Bagla Tithe",
+      "other": "Forzel Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-68",
+    "changed_field": "faction",
+    "changed_value": "Bagla Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-68-1",
+    "kind": "PEACE",
+    "events": "- Rohol Company and Forzel Parliament made peace.\n",
+    "expected": "Rohol Company and Forzel Parliament made peace, I hear.",
+    "generated": "Rose Company and Food was running short in Flintmeadow, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Rohol Company",
+      "other": "Forzel Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-68",
+    "changed_field": "faction",
+    "changed_value": "Rohol Company",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-69-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Carenrilwick finishes Lifenspire Jarza Cup from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Carenrilwick completed Lifenspire Jarza Cup, if the story is right.",
+    "generated": "Copperwick finished making Linden Cup, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Lifenspire Jarza Cup",
+      "place": "Carenrilwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-69",
+    "changed_field": "object",
+    "changed_value": "Lifenspire Jarza Cup",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-69-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Carenrilwick finishes Tatel Faem Reliquary from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Carenrilwick completed Tatel Faem Reliquary, if the story is right.",
+    "generated": "Copperfell finished making Thorn Ring, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Tatel Faem Reliquary",
+      "place": "Carenrilwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-69",
+    "changed_field": "object",
+    "changed_value": "Tatel Faem Reliquary",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-70-0",
+    "kind": "BANDITS",
+    "events": "- Hungry debtors and unpaid households joined The Enfenthor Oath.\n",
+    "expected": "Have you heard the news? The Enfenthor Oath recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Thorn Throne recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "The Enfenthor Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-70",
+    "changed_field": "faction",
+    "changed_value": "The Enfenthor Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-70-1",
+    "kind": "BANDITS",
+    "events": "- Hungry debtors and unpaid households joined Globridel March.\n",
+    "expected": "Have you heard the news? Globridel March recruited hungry debtors and people from unpaid households.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Galen, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Globridel March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-70",
+    "changed_field": "faction",
+    "changed_value": "Globridel March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-71-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Zelri Company gathered new tithe-bearers for Alka the Red's court.\n",
+    "expected": "Have you heard the news? The Zelri Company was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Company was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Zelri Company"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-71",
+    "changed_field": "faction",
+    "changed_value": "The Zelri Company",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-71-1",
+    "kind": "CULT RALLIES",
+    "events": "- Doryamor Knives gathered new tithe-bearers for Alka the Red's court.\n",
+    "expected": "Have you heard the news? Doryamor Knives was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Doran Keeper died after a life in Aldermeadow.",
+    "stopped": true,
+    "required": {
+      "faction": "Doryamor Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-71",
+    "changed_field": "faction",
+    "changed_value": "Doryamor Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-72-0",
+    "kind": "NOTICE",
+    "events": "- ? Yenmarvi Ticamender posts a notice at Vormerdarmere: relief charter.\n",
+    "expected": "Yenmarvi Ticamender posted something in Vormerdarmere.",
+    "generated": "Someone put up a relief charter in Vola Court.",
+    "stopped": true,
+    "required": {
+      "person": "Yenmarvi Ticamender",
+      "place": "Vormerdarmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-72",
+    "changed_field": "place",
+    "changed_value": "Vormerdarmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-72-1",
+    "kind": "NOTICE",
+    "events": "- ? Yenmarvi Ticamender posts a notice at Entabarrow: relief charter.\n",
+    "expected": "Yenmarvi Ticamender posted something in Entabarrow.",
+    "generated": "Someone put up a relief charter in Elmmarsh.",
+    "stopped": true,
+    "required": {
+      "person": "Yenmarvi Ticamender",
+      "place": "Entabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-72",
+    "changed_field": "place",
+    "changed_value": "Entabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-73-0",
+    "kind": "DEATH",
+    "events": "- ~ Carerca Jarsarenward died after living in Thabrabarrow.\n",
+    "expected": "Carerca Jarsarenward died after a life in Thabrabarrow, so people say.",
+    "generated": "Have you heard? Cora Juniper had lived in Thornwater and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Carerca Jarsarenward",
+      "place": "Thabrabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-73",
+    "changed_field": "person",
+    "changed_value": "Carerca Jarsarenward",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-73-1",
+    "kind": "DEATH",
+    "events": "- ~ Ranemba Brivalbawright died after living in Thabrabarrow.\n",
+    "expected": "Ranemba Brivalbawright died after a life in Thabrabarrow, so people say.",
+    "generated": "Have you heard? Rabermaw burned Thornbarrow over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Ranemba Brivalbawright",
+      "place": "Thabrabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-73",
+    "changed_field": "person",
+    "changed_value": "Ranemba Brivalbawright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-74-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Toror the Red burned Ashbelbarrow over stolen hoard money.\n",
+    "expected": "Toror the Red burned Ashbelbarrow. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "The relief convoy was delayed when Thornbarrow closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Toror the Red",
+      "place": "Ashbelbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-74",
+    "changed_field": "place",
+    "changed_value": "Ashbelbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-74-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Toror the Red burned Nelyornorford over stolen hoard money.\n",
+    "expected": "Toror the Red burned Nelyornorford. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "The relief convoy was delayed when Thornford closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Toror the Red",
+      "place": "Nelyornorford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-74",
+    "changed_field": "place",
+    "changed_value": "Nelyornorford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-75-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke falls into Sarenbarrow's chimneys; old readers count 14 nights until Wadava comes.\n",
+    "expected": "Have you heard? The old readers in Sarenbarrow took the smoke as a warning of Wadava. That's the word going round.",
+    "generated": "Smoke fell into Sagebarrow's chimneys. The old readers feared Willowbarrow was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Wadava",
+      "place": "Sarenbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-75",
+    "changed_field": "place",
+    "changed_value": "Sarenbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-75-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke falls into Olcawick's chimneys; old readers count 14 nights until Wadava comes.\n",
+    "expected": "Have you heard? The old readers in Olcawick took the smoke as a warning of Wadava. That's the word going round.",
+    "generated": "Smoke fell into Oakwick's chimneys. The old readers feared Willowwing was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Wadava",
+      "place": "Olcawick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-75",
+    "changed_field": "place",
+    "changed_value": "Olcawick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-76-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Kirfen Company raids Coppergrove: 20 Wheat, 0 crowns.\n",
+    "expected": "Kirfen Company raided Coppergrove, I hear.",
+    "generated": "Have you heard the news? Copperfen had been raided by King Cooper.",
+    "stopped": true,
+    "required": {
+      "faction": "Kirfen Company",
+      "place": "Coppergrove"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-76",
+    "changed_field": "place",
+    "changed_value": "Coppergrove",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-76-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Kirfen Company raids Tilifirgate: 20 Wheat, 0 crowns.\n",
+    "expected": "Kirfen Company raided Tilifirgate, I hear.",
+    "generated": "Have you heard the news? Thornfen had been raided by King Company.",
+    "stopped": true,
+    "required": {
+      "faction": "Kirfen Company",
+      "place": "Tilifirgate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-76",
+    "changed_field": "place",
+    "changed_value": "Tilifirgate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-78-0",
+    "kind": "HARVEST",
+    "events": "- Belbraford's drought harvest cannot supply the northern settlements.\n",
+    "expected": "The drought harvest in Belbraford fell short of supplies for the northern settlements, I hear.",
+    "generated": "The drought harvest in Brackenbrook fell short of supplies for the northern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Belbraford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-78",
+    "changed_field": "place",
+    "changed_value": "Belbraford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-78-1",
+    "kind": "HARVEST",
+    "events": "- Vensilthaford's drought harvest cannot supply the northern settlements.\n",
+    "expected": "The drought harvest in Vensilthaford fell short of supplies for the northern settlements, I hear.",
+    "generated": "The drought harvest in Vela The made peace and died, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Vensilthaford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-78",
+    "changed_field": "place",
+    "changed_value": "Vensilthaford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-79-0",
+    "kind": "ROUTE",
+    "events": "- ~ The relief convoy was delayed after Garmernabarrow shut the treaty bridge.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Garmernabarrow closed the treaty bridge. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Galen Shepherd put up a relief charter in Galen. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Garmernabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-79",
+    "changed_field": "place",
+    "changed_value": "Garmernabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-79-1",
+    "kind": "ROUTE",
+    "events": "- ~ The relief convoy was delayed after Firwenwatch shut the treaty bridge.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Firwenwatch closed the treaty bridge. That's the word going round.",
+    "generated": "Fira The relief convoy was delayed when Fira Thatcher closed the treaty bridge, delaying the relief convoy.",
+    "stopped": true,
+    "required": {
+      "place": "Firwenwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-79",
+    "changed_field": "place",
+    "changed_value": "Firwenwatch",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-80-0",
+    "kind": "PEACE",
+    "events": "- Nelli Nelgar died at age 70 after a life in Injarwick.\n- Bain Parliament's courier reaches Laros March: peace now binds the three courts.\n",
+    "expected": "Bain Parliament and Laros March made peace, I hear.",
+    "generated": "Have you heard the news? Bracken Pater died after a life in Larkmeadow.",
+    "stopped": true,
+    "required": {
+      "faction": "Bain Parliament",
+      "other": "Laros March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-80",
+    "changed_field": "other",
+    "changed_value": "Laros March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-80-1",
+    "kind": "PEACE",
+    "events": "- Nelli Nelgar died at age 70 after a life in Injarwick.\n- Bain Parliament's courier reaches The Norzel Republic: peace now binds the three courts.\n",
+    "expected": "Bain Parliament and The Norzel Republic made peace, I hear.",
+    "generated": "Have you heard the news? Bracken Throne and Thorn Republic made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Bain Parliament",
+      "other": "The Norzel Republic"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-80",
+    "changed_field": "other",
+    "changed_value": "The Norzel Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-81-0",
+    "kind": "TREASURE",
+    "events": "- The Dortha Company recruits from hungry debtors and unpaid households; road control reaches 32%.\n- ~ Jarshavenford finished making Brasel Icon.\n",
+    "expected": "Have you heard? Jarshavenford completed Brasel Icon. That's the word going round.",
+    "generated": "Have you heard? Juniperford completed Bracken Icon. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Brasel Icon",
+      "place": "Jarshavenford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-81",
+    "changed_field": "object",
+    "changed_value": "Brasel Icon",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-81-1",
+    "kind": "TREASURE",
+    "events": "- The Dortha Company recruits from hungry debtors and unpaid households; road control reaches 32%.\n- ~ Jarshavenford finished making Firbrithorgate Enbel Bell.\n",
+    "expected": "Have you heard? Jarshavenford completed Firbrithorgate Enbel Bell. That's the word going round.",
+    "generated": "Have you heard? Juniperford completed Fisher Cup. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Firbrithorgate Enbel Bell",
+      "place": "Jarshavenford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-81",
+    "changed_field": "object",
+    "changed_value": "Firbrithorgate Enbel Bell",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-82-0",
+    "kind": "BANDITS",
+    "events": "- ~ The Kelca March recruited hungry debtors and unpaid households.\n",
+    "expected": "The Kelca March recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Knives. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Kelca March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-82",
+    "changed_field": "faction",
+    "changed_value": "The Kelca March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-82-1",
+    "kind": "BANDITS",
+    "events": "- ~ The Arval Oath recruited hungry debtors and unpaid households.\n",
+    "expected": "The Arval Oath recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Oath. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Arval Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-82",
+    "changed_field": "faction",
+    "changed_value": "The Arval Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-83-0",
+    "kind": "CULT RALLIES",
+    "events": "- Selnel Knives gathers 1 new tithe-bearers; Zelbri the Unappeased's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Selnel Knives. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Stone Knives was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Selnel Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-83",
+    "changed_field": "faction",
+    "changed_value": "Selnel Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-83-1",
+    "kind": "CULT RALLIES",
+    "events": "- Selcar Oath gathers 1 new tithe-bearers; Zelbri the Unappeased's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Selcar Oath. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Silver Oath was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Selcar Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-83",
+    "changed_field": "faction",
+    "changed_value": "Selcar Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-84-0",
+    "kind": "NOTICE",
+    "events": "- ? ~ In Talkirbank, Yorin Vortimender put up a quiet commission.\n",
+    "expected": "Someone put up a quiet commission in Talkirbank.",
+    "generated": "Someone put up a quiet commission in Thornbank.",
+    "stopped": true,
+    "required": {
+      "place": "Talkirbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-84",
+    "changed_field": "place",
+    "changed_value": "Talkirbank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-84-1",
+    "kind": "NOTICE",
+    "events": "- ? ~ In Kanamere, Yorin Vortimender put up a quiet commission.\n",
+    "expected": "Someone put up a quiet commission in Kanamere.",
+    "generated": "Someone put up a quiet commission in Kingden.",
+    "stopped": true,
+    "required": {
+      "place": "Kanamere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-84",
+    "changed_field": "place",
+    "changed_value": "Kanamere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-85-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Yatha Bertimender died at age 71 after a life in Corulspire.\n- ~ Waver Ulka lived in Riwenspire and has died.\n",
+    "expected": "Have you heard? Waver Ulka had lived in Riwenspire and died. That's the word going round.",
+    "generated": "Walen Fisher died after a life in Ring, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Waver Ulka",
+      "place": "Riwenspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-85",
+    "changed_field": "person",
+    "changed_value": "Waver Ulka",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-85-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Yatha Bertimender died at age 71 after a life in Corulspire.\n- ~ Emwenmi Lisa lived in Riwenspire and has died.\n",
+    "expected": "Have you heard? Emwenmi Lisa had lived in Riwenspire and died. That's the word going round.",
+    "generated": "Have you heard? Elin Linden had lived in Ring. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Emwenmi Lisa",
+      "place": "Riwenspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-85",
+    "changed_field": "person",
+    "changed_value": "Emwenmi Lisa",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-86-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Elwentaspire has 17 food in store. Its reserve target is 75.\n- ~ Valtalwawing burned Wilarwatch over stolen hoard money.\n",
+    "expected": "Valtalwawing burned Wilarwatch. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Vela Wright put up a road compact in Willowwatch. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Valtalwawing",
+      "place": "Wilarwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-86",
+    "changed_field": "dragon",
+    "changed_value": "Valtalwawing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-86-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Elwentaspire has 17 food in store. Its reserve target is 75.\n- ~ Mellawing burned Wilarwatch over stolen hoard money.\n",
+    "expected": "Mellawing burned Wilarwatch. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Mera Wright put up a road compact in Willowwatch. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mellawing",
+      "place": "Wilarwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-86",
+    "changed_field": "dragon",
+    "changed_value": "Mellawing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-87-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Cormar Oath recruits from hungry debtors and unpaid households; road control reaches 51%.\n- Smoke in Selshamibarrow's chimneys warns of Voranzelwing.\n",
+    "expected": "The old readers in Selshamibarrow took the smoke as a warning of Voranzelwing, I hear.",
+    "generated": "Have you heard the news? Smoke fell into Stoneland's chimneys. The old readers feared Vela Reed was coming.",
+    "stopped": true,
+    "required": {
+      "dragon": "Voranzelwing",
+      "place": "Selshamibarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-87",
+    "changed_field": "dragon",
+    "changed_value": "Voranzelwing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-87-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Cormar Oath recruits from hungry debtors and unpaid households; road control reaches 51%.\n- Smoke in Selshamibarrow's chimneys warns of Merbahal the Pale.\n",
+    "expected": "The old readers in Selshamibarrow took the smoke as a warning of Merbahal the Pale, I hear.",
+    "generated": "The old readers in Stoneland took the smoke as a warning of Maplescale, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Merbahal the Pale",
+      "place": "Selshamibarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-87",
+    "changed_field": "dragon",
+    "changed_value": "Merbahal the Pale",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-88-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Ulelti Wacawright died at age 74 after a life in Olcaspire.\n- ? ~ Dorzelanmere has 14 food in store. Its reserve target is 75.\n- Wenmer Throne raided Thornfield and took supplies.\n",
+    "expected": "Wenmer Throne raided Thornfield, I hear.",
+    "generated": "Have you heard the news? Thornmill had been raided by Wood Throne.",
+    "stopped": true,
+    "required": {
+      "faction": "Wenmer Throne",
+      "place": "Thornfield"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-88",
+    "changed_field": "faction",
+    "changed_value": "Wenmer Throne",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-88-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Ulelti Wacawright died at age 74 after a life in Olcaspire.\n- ? ~ Dorzelanmere has 14 food in store. Its reserve target is 75.\n- The Rosyor Parliament raided Thornfield and took supplies.\n",
+    "expected": "The Rosyor Parliament raided Thornfield, I hear.",
+    "generated": "The relief convoy was delayed when Thornfield had been raided by Thorn Potter, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "The Rosyor Parliament",
+      "place": "Thornfield"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-88",
+    "changed_field": "faction",
+    "changed_value": "The Rosyor Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-89-0",
+    "kind": "SHORTAGE",
+    "events": "- Gloyorwatch was running short of food.\n",
+    "expected": "Gloyorwatch was short of food, I hear.",
+    "generated": "Have you heard the news? Food was running short in Galen Oath.",
+    "stopped": true,
+    "required": {
+      "place": "Gloyorwatch"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-89",
+    "changed_field": "place",
+    "changed_value": "Gloyorwatch",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-89-1",
+    "kind": "SHORTAGE",
+    "events": "- Rojarven was running short of food.\n",
+    "expected": "Rojarven was short of food, I hear.",
+    "generated": "Have you heard the news? Food was running short in Rosemere.",
+    "stopped": true,
+    "required": {
+      "place": "Rojarven"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-89",
+    "changed_field": "place",
+    "changed_value": "Rojarven",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-90-0",
+    "kind": "HARVEST",
+    "events": "- Corrosilwick's drought harvest cannot supply the eastern settlements.\n",
+    "expected": "Have you heard the news? Corrosilwick's drought harvest fell short of what the eastern settlements needed.",
+    "generated": "The drought harvest in Copperwick fell short of supplies for the eastern settlements, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Corrosilwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-90",
+    "changed_field": "place",
+    "changed_value": "Corrosilwick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-90-1",
+    "kind": "HARVEST",
+    "events": "- Zaholford's drought harvest cannot supply the eastern settlements.\n",
+    "expected": "Have you heard the news? Zaholford's drought harvest fell short of what the eastern settlements needed.",
+    "generated": "The drought harvest in Hazelford fell short of supplies for the eastern settlements, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Zaholford"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-90",
+    "changed_field": "place",
+    "changed_value": "Zaholford",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-91-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Selramere closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Selramere closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Sablemere closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Selramere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-91",
+    "changed_field": "place",
+    "changed_value": "Selramere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-91-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Lenvenvermere closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Lenvenvermere closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Lindenmere closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Lenvenvermere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-91",
+    "changed_field": "place",
+    "changed_value": "Lenvenvermere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-92-0",
+    "kind": "PEACE",
+    "events": "- Lorash Republic agreed to peace with Rensar Tithe.\n",
+    "expected": "Lorash Republic and Rensar Tithe made peace, I hear.",
+    "generated": "Have you heard the news? Loren Republic and Reed Throne made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Lorash Republic",
+      "other": "Rensar Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-92",
+    "changed_field": "other",
+    "changed_value": "Rensar Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-92-1",
+    "kind": "PEACE",
+    "events": "- Lorash Republic agreed to peace with The Dorkir Republic.\n",
+    "expected": "Lorash Republic and The Dorkir Republic made peace, I hear.",
+    "generated": "Have you heard the news? Loren Reed put up a road compact in Thornmeadow.",
+    "stopped": true,
+    "required": {
+      "faction": "Lorash Republic",
+      "other": "The Dorkir Republic"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-92",
+    "changed_field": "other",
+    "changed_value": "The Dorkir Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-93-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Wahalberbank has 0 food in store. Its reserve target is 78.\n- ? ~ Wenran finishes Holril Icon from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Wenran finished making Holril Icon, if there's truth in the rumour.",
+    "generated": "Weedonridge completed Holly Icon, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Holril Icon",
+      "place": "Wenran"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-93",
+    "changed_field": "place",
+    "changed_value": "Wenran",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-93-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Wahalberbank has 0 food in store. Its reserve target is 78.\n- ? ~ Anyabank finishes Holril Icon from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Anyabank finished making Holril Icon, if there's truth in the rumour.",
+    "generated": "Amberbank finished making Holly Icon, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Holril Icon",
+      "place": "Anyabank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-93",
+    "changed_field": "place",
+    "changed_value": "Anyabank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-94-0",
+    "kind": "BANDITS",
+    "events": "- ~ Hungry debtors and unpaid households joined Wilzelca Parliament.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Wilzelca Parliament. That's the word going round.",
+    "generated": "Willow Potter recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Wilzelca Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-94",
+    "changed_field": "faction",
+    "changed_value": "Wilzelca Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-94-1",
+    "kind": "BANDITS",
+    "events": "- ~ Hungry debtors and unpaid households joined The Haldel Knives.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by The Haldel Knives. That's the word going round.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Knives. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Haldel Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-94",
+    "changed_field": "faction",
+    "changed_value": "The Haldel Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-95-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Dabri Oath gathered new tithe-bearers for Galmarsa the Pale's court.\n",
+    "expected": "New tithe-bearers were joining The Dabri Oath. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Thorn Oath was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dabri Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-95",
+    "changed_field": "faction",
+    "changed_value": "The Dabri Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-95-1",
+    "kind": "CULT RALLIES",
+    "events": "- The Dormel Republic gathered new tithe-bearers for Galmarsa the Pale's court.\n",
+    "expected": "New tithe-bearers were joining The Dormel Republic. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Thorn Republic was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dormel Republic"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-95",
+    "changed_field": "faction",
+    "changed_value": "The Dormel Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-96-0",
+    "kind": "NOTICE",
+    "events": "- Nayaspire has 0 food in store. Its reserve target is 78.\n- ~ Irven Garmelmender posts a notice at Risargate: guard commission.\n",
+    "expected": "Irven Garmelmender put up a guard commission in Risargate, so people say.",
+    "generated": "Ira Gardener put up a guard commission in Ring, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Irven Garmelmender",
+      "place": "Risargate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-96",
+    "changed_field": "place",
+    "changed_value": "Risargate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-96-1",
+    "kind": "NOTICE",
+    "events": "- Nayaspire has 0 food in store. Its reserve target is 78.\n- ~ Irven Garmelmender posts a notice at Winterhaven: guard commission.\n",
+    "expected": "Irven Garmelmender put up a guard commission in Winterhaven, so people say.",
+    "generated": "Ira Gardener put up a guard commission in Winterhaven, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Irven Garmelmender",
+      "place": "Winterhaven"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-96",
+    "changed_field": "place",
+    "changed_value": "Winterhaven",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-97-0",
+    "kind": "DEATH",
+    "events": "- Dargla Norholnawright lived in Wamawick and has died.\n",
+    "expected": "Dargla Norholnawright had lived in Wamawick and died, I hear.",
+    "generated": "Have you heard the news? Dain Forester died after a life in Willowwick.",
+    "stopped": true,
+    "required": {
+      "person": "Dargla Norholnawright",
+      "place": "Wamawick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-97",
+    "changed_field": "place",
+    "changed_value": "Wamawick",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-97-1",
+    "kind": "DEATH",
+    "events": "- Dargla Norholnawright lived in Fayormere and has died.\n",
+    "expected": "Dargla Norholnawright had lived in Fayormere and died, I hear.",
+    "generated": "Have you heard the news? Dain Forester died after a life in Frostmere.",
+    "stopped": true,
+    "required": {
+      "person": "Dargla Norholnawright",
+      "place": "Fayormere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-97",
+    "changed_field": "place",
+    "changed_value": "Fayormere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-98-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Halilvawing burned Thabrabarrow over stolen hoard money.\n",
+    "expected": "Halilvawing burned Thabrabarrow over crowns missing from the hoard, if the story is right.",
+    "generated": "Halen Thatcher posted something in Thornwater.",
+    "stopped": true,
+    "required": {
+      "dragon": "Halilvawing",
+      "place": "Thabrabarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-98",
+    "changed_field": "place",
+    "changed_value": "Thabrabarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-98-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Halilvawing burned Sarsel over stolen hoard money.\n",
+    "expected": "Halilvawing burned Sarsel over crowns missing from the hoard, if the story is right.",
+    "generated": "Halen Stonewing burned Sagegrove over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Halilvawing",
+      "place": "Sarsel"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-98",
+    "changed_field": "place",
+    "changed_value": "Sarsel",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-99-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Smoke falls into Viberbarrow's chimneys; old readers count 14 nights until Firnazawing comes.\n",
+    "expected": "Have you heard the news? Smoke fell into Viberbarrow's chimneys. The old readers feared Firnazawing was coming.",
+    "generated": "The old readers in Vina took the smoke as a warning of Fishwing, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Firnazawing",
+      "place": "Viberbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-99",
+    "changed_field": "dragon",
+    "changed_value": "Firnazawing",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-99-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Smoke falls into Viberbarrow's chimneys; old readers count 14 nights until Ravitel comes.\n",
+    "expected": "Have you heard the news? Smoke fell into Viberbarrow's chimneys. The old readers feared Ravitel was coming.",
+    "generated": "The old readers in Vistbarrow took the smoke as a warning of Roseclaw, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ravitel",
+      "place": "Viberbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-99",
+    "changed_field": "dragon",
+    "changed_value": "Ravitel",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-100-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ The Dorfa Court raids Nelsarmere: 16 Bread, 16 crowns, and a named treasure.\n",
+    "expected": "Have you heard? The Dorfa Court raided Nelsarmere. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Thornmere closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Dorfa Court",
+      "place": "Nelsarmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-100",
+    "changed_field": "faction",
+    "changed_value": "The Dorfa Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-100-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Silver Throne raids Nelsarmere: 16 Bread, 16 crowns, and a named treasure.\n",
+    "expected": "Have you heard? Silver Throne raided Nelsarmere. That's the word going round.",
+    "generated": "Have you heard? Silvermere completed Bracken Throne. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Silver Throne",
+      "place": "Nelsarmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-100",
+    "changed_field": "faction",
+    "changed_value": "Silver Throne",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-101-0",
+    "kind": "SHORTAGE",
+    "events": "- ~ Olna the Unappeased burns Thornglen because 16 stolen crowns remain missing.\n- ? Food reserves were low in Zarilrenbarrow.\n",
+    "expected": "Zarilrenbarrow was short of food, if the story is right.",
+    "generated": "Food was running short in Food was running short in Food was running short in Food was running short in Food was running short in Food was running short in Food",
+    "stopped": false,
+    "required": {
+      "place": "Zarilrenbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-101",
+    "changed_field": "place",
+    "changed_value": "Zarilrenbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-101-1",
+    "kind": "SHORTAGE",
+    "events": "- ~ Olna the Unappeased burns Thornglen because 16 stolen crowns remain missing.\n- ? Food reserves were low in Lenwilmere.\n",
+    "expected": "Lenwilmere was short of food, if the story is right.",
+    "generated": "Loren Wright was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Lenwilmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-101",
+    "changed_field": "place",
+    "changed_value": "Lenwilmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-102-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Drought in Verbrahargate left too little harvest for the southern settlements.\n",
+    "expected": "Verbrahargate's drought harvest fell short of what the southern settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Vela fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Verbrahargate"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-102",
+    "changed_field": "place",
+    "changed_value": "Verbrahargate",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-102-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Drought in Viarbank left too little harvest for the southern settlements.\n",
+    "expected": "Viarbank's drought harvest fell short of what the southern settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Vinebank fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Viarbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-102",
+    "changed_field": "place",
+    "changed_value": "Viarbank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-103-0",
+    "kind": "ROUTE",
+    "events": "- ~ Vormerdarmere closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Vormerdarmere closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Have you heard? The relief convoy was delayed when you heard the news? That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Vormerdarmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-103",
+    "changed_field": "place",
+    "changed_value": "Vormerdarmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-103-1",
+    "kind": "ROUTE",
+    "events": "- ~ Saashbarrow closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Saashbarrow closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Sagebarrow closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Saashbarrow"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-103",
+    "changed_field": "place",
+    "changed_value": "Saashbarrow",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-104-0",
+    "kind": "PEACE",
+    "events": "- Firsha Republic's courier reaches The Galnor Court: peace now binds the three courts.\n",
+    "expected": "Have you heard the news? Firsha Republic and The Galnor Court made peace.",
+    "generated": "Fira Reed put up a road compact in Thornheath, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Firsha Republic",
+      "other": "The Galnor Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-104",
+    "changed_field": "faction",
+    "changed_value": "Firsha Republic",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-104-1",
+    "kind": "PEACE",
+    "events": "- The Rilashza Court's courier reaches The Galnor Court: peace now binds the three courts.\n",
+    "expected": "Have you heard the news? The Rilashza Court and The Galnor Court made peace.",
+    "generated": "Have you heard the news? Thorn Court and Thorn Court made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "The Rilashza Court",
+      "other": "The Galnor Court"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-104",
+    "changed_field": "faction",
+    "changed_value": "The Rilashza Court",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-105-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Ulmel March recruits from hungry debtors and unpaid households; road control reaches 52%.\n- ~ Craftspeople in Corforspire completed Yordor Bell.\n",
+    "expected": "Have you heard? Corforspire completed Yordor Bell. That's the word going round.",
+    "generated": "Have you heard? Copperfen completed Bracken Bell. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Yordor Bell",
+      "place": "Corforspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-105",
+    "changed_field": "object",
+    "changed_value": "Yordor Bell",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-105-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Ulmel March recruits from hungry debtors and unpaid households; road control reaches 52%.\n- ~ Craftspeople in Corforspire completed Firza Rosolen Bell.\n",
+    "expected": "Have you heard? Corforspire completed Firza Rosolen Bell. That's the word going round.",
+    "generated": "Have you heard? Copperfen completed Fisher Ring. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Firza Rosolen Bell",
+      "place": "Corforspire"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-105",
+    "changed_field": "object",
+    "changed_value": "Firza Rosolen Bell",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-106-0",
+    "kind": "BANDITS",
+    "events": "- ~ Shaharkelspire has 22 food in store. Its reserve target is 75.\n- Hungry debtors and unpaid households joined The Erdor March.\n",
+    "expected": "Have you heard the news? The Erdor March recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Thorn Mason recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "The Erdor March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-106",
+    "changed_field": "faction",
+    "changed_value": "The Erdor March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-106-1",
+    "kind": "BANDITS",
+    "events": "- ~ Shaharkelspire has 22 food in store. Its reserve target is 75.\n- Hungry debtors and unpaid households joined The Ulel Tithe.\n",
+    "expected": "Have you heard the news? The Ulel Tithe recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Thorn Throne recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "The Ulel Tithe"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-106",
+    "changed_field": "faction",
+    "changed_value": "The Ulel Tithe",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-107-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Tajar Parliament gathers 1 new tithe-bearers; Venem the Pale's court returns to 47.\n",
+    "expected": "Have you heard the news? The Tajar Parliament was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Potter was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Tajar Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-107",
+    "changed_field": "faction",
+    "changed_value": "The Tajar Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-107-1",
+    "kind": "CULT RALLIES",
+    "events": "- The Ildor Parliament gathers 1 new tithe-bearers; Venem the Pale's court returns to 47.\n",
+    "expected": "Have you heard the news? The Ildor Parliament was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Potter was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Ildor Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-107",
+    "changed_field": "faction",
+    "changed_value": "The Ildor Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-108-0",
+    "kind": "NOTICE",
+    "events": "- The Olmar Tithe raids Berzel: 17 Wheat, 16 crowns.\n- In Yaolwick, Belza Kellorwright put up a road compact.\n",
+    "expected": "Belza Kellorwright put up a road compact in Yaolwick, I hear.",
+    "generated": "Bera Keeper put up a road compact in Fernwick, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Belza Kellorwright",
+      "place": "Yaolwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-108",
+    "changed_field": "person",
+    "changed_value": "Belza Kellorwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-108-1",
+    "kind": "NOTICE",
+    "events": "- The Olmar Tithe raids Berzel: 17 Wheat, 16 crowns.\n- In Yaolwick, Yendorcar Galhalmender put up a road compact.\n",
+    "expected": "Yendorcar Galhalmender put up a road compact in Yaolwick, I hear.",
+    "generated": "Have you heard the news? Iona Gardener put up a road compact in Fernhaven.",
+    "stopped": true,
+    "required": {
+      "person": "Yendorcar Galhalmender",
+      "place": "Yaolwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-108",
+    "changed_field": "person",
+    "changed_value": "Yendorcar Galhalmender",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-109-0",
+    "kind": "DEATH",
+    "events": "- Garva Wiltelwright lived in Valvafa and has died.\n",
+    "expected": "Have you heard the news? Garva Wiltelwright died after a life in Valvafa.",
+    "generated": "Have you heard the news? Galen Wright died after a life in Vinewater.",
+    "stopped": true,
+    "required": {
+      "person": "Garva Wiltelwright",
+      "place": "Valvafa"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-109",
+    "changed_field": "person",
+    "changed_value": "Garva Wiltelwright",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-109-1",
+    "kind": "DEATH",
+    "events": "- Ranvibri Mersamender lived in Valvafa and has died.\n",
+    "expected": "Have you heard the news? Ranvibri Mersamender died after a life in Valvafa.",
+    "generated": "Have you heard the news? Rainmere finished making Vela Icon.",
+    "stopped": true,
+    "required": {
+      "person": "Ranvibri Mersamender",
+      "place": "Valvafa"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-109",
+    "changed_field": "person",
+    "changed_value": "Ranvibri Mersamender",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-110-0",
+    "kind": "DRAGON FIRE",
+    "events": "- Shaarcormere has 0 food in store. Its reserve target is 75.\n- ~ Canorwing burned Irzagarmere over stolen hoard money.\n",
+    "expected": "Canorwing burned Irzagarmere. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Copperwing burned Ironmere over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Canorwing",
+      "place": "Irzagarmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-110",
+    "changed_field": "place",
+    "changed_value": "Irzagarmere",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-110-1",
+    "kind": "DRAGON FIRE",
+    "events": "- Shaarcormere has 0 food in store. Its reserve target is 75.\n- ~ Canorwing burned Lendarnabank over stolen hoard money.\n",
+    "expected": "Canorwing burned Lendarnabank. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Capterwing burned Lindenbank over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Canorwing",
+      "place": "Lendarnabank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-110",
+    "changed_field": "place",
+    "changed_value": "Lendarnabank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-115-0",
+    "kind": "ROUTE",
+    "events": "- ~ Rowanstone has 34 food in store. Its reserve target is 78.\n- ? ~ Loralbank closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Loralbank closed the treaty bridge, delaying the relief convoy, if there's truth in the rumour.",
+    "generated": "The relief convoy was delayed when Loren closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Loralbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-115",
+    "changed_field": "place",
+    "changed_value": "Loralbank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-115-1",
+    "kind": "ROUTE",
+    "events": "- ~ Rowanstone has 34 food in store. Its reserve target is 78.\n- ? ~ Merranbank closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Merranbank closed the treaty bridge, delaying the relief convoy, if there's truth in the rumour.",
+    "generated": "The relief convoy was delayed when Mossbank closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Merranbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-115",
+    "changed_field": "place",
+    "changed_value": "Merranbank",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-116-0",
+    "kind": "PEACE",
+    "events": "- ~ The Mavorros Republic's courier reaches The Silgal Oath: peace now binds the three courts.\n",
+    "expected": "The Mavorros Republic and The Silgal Oath made peace, so people say.",
+    "generated": "Have you heard? The drought harvest in Thornhall fell short of supplies for the eastern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Mavorros Republic",
+      "other": "The Silgal Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-116",
+    "changed_field": "other",
+    "changed_value": "The Silgal Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-116-1",
+    "kind": "PEACE",
+    "events": "- ~ The Mavorros Republic's courier reaches Shama Parliament: peace now binds the three courts.\n",
+    "expected": "The Mavorros Republic and Shama Parliament made peace, so people say.",
+    "generated": "Have you heard? The drought harvest in Sagemeadow fell short of supplies for the eastern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Mavorros Republic",
+      "other": "Shama Parliament"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-116",
+    "changed_field": "other",
+    "changed_value": "Shama Parliament",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-117-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Venlorbank finished making Sathor Icon.\n",
+    "expected": "Venlorbank finished making Sathor Icon, if there's truth in the rumour.",
+    "generated": "Vela Ishbank finished making Sage Icon, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Sathor Icon",
+      "place": "Venlorbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-117",
+    "changed_field": "object",
+    "changed_value": "Sathor Icon",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-117-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Venlorbank finished making Thorda Torc.\n",
+    "expected": "Venlorbank finished making Thorda Torc, if there's truth in the rumour.",
+    "generated": "Vela Thatcher finished making Thorn Throne, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Thorda Torc",
+      "place": "Venlorbank"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-117",
+    "changed_field": "object",
+    "changed_value": "Thorda Torc",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-118-0",
+    "kind": "BANDITS",
+    "events": "- ~ The Angar Knives recruited hungry debtors and unpaid households.\n",
+    "expected": "The Angar Knives recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Thorn Knives. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "The Angar Knives"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-118",
+    "changed_field": "faction",
+    "changed_value": "The Angar Knives",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-118-1",
+    "kind": "BANDITS",
+    "events": "- ~ Gloval March recruited hungry debtors and unpaid households.\n",
+    "expected": "Gloval March recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Galen. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Gloval March"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-118",
+    "changed_field": "faction",
+    "changed_value": "Gloval March",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-119-0",
+    "kind": "CULT RALLIES",
+    "events": "- The Valtha Oath gathers 1 new tithe-bearers; Wakirnor the Unappeased's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining The Valtha Oath. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Thorn Oath was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Valtha Oath"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-119",
+    "changed_field": "faction",
+    "changed_value": "The Valtha Oath",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-119-1",
+    "kind": "CULT RALLIES",
+    "events": "- The Lorar Throne gathers 1 new tithe-bearers; Wakirnor the Unappeased's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining The Lorar Throne. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Thorn Throne was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "The Lorar Throne"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-119",
+    "changed_field": "faction",
+    "changed_value": "The Lorar Throne",
+    "changed_fact_match": false
+  }
+]

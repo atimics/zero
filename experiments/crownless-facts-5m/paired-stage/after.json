@@ -1,0 +1,98 @@
+[
+  {
+    "id": "validation-0-0",
+    "kind": "NOTICE",
+    "events": "- Rilla Fisher posts a notice at Amberholt: supply request.\n",
+    "expected": "Have you heard the news? Rilla Fisher put up a supply request in Amberholt.",
+    "generated": "Have you heard the news? Rilla Fisher put up a supply request in Amberholt.",
+    "stopped": true
+  },
+  {
+    "id": "validation-1-0",
+    "kind": "DEATH",
+    "events": "- ? Alden Roper died at age 69 after a life in Brackenspire.\n- ? ~ Willow Company's courier reaches Silver Court: peace now binds the three courts.\n- ? ~ Della Wood lived in Briarcoast and has died.\n",
+    "expected": "Della Wood died after a life in Briarcoast, if there's truth in the rumour.",
+    "generated": "Della Wood died after a life in Briarcoast, if there's truth in the rumour.",
+    "stopped": true
+  },
+  {
+    "id": "validation-2-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Reedflame burns Mosswatch because 18 stolen crowns remain missing.\n",
+    "expected": "Reedflame burned Mosswatch. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Reedflame burned Mosswatch over crowns missing from the hoard. That's the word going round.",
+    "stopped": true
+  },
+  {
+    "id": "validation-3-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Oakmeadow has 2 food in store. Its reserve target is 75.\n- ? ~ Smoke falls into Sablecliff's chimneys; old readers count 14 nights until Laureltail comes.\n",
+    "expected": "Smoke fell into Sablecliff's chimneys. The old readers feared Laureltail was coming, if there's truth in the rumour.",
+    "generated": "The old readers in Sablecliff took the smoke as a warning of Laureltail, if the story is right.",
+    "stopped": true
+  },
+  {
+    "id": "validation-4-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Sage Republic recruits from hungry debtors and unpaid households; road control reaches 50%.\n- Willow League raided Maplewell and took supplies.\n",
+    "expected": "Have you heard the news? Maplewell had been raided by Willow League.",
+    "generated": "Have you heard the news? Maplewell had been raided by Willow League.",
+    "stopped": true
+  },
+  {
+    "id": "validation-5-0",
+    "kind": "SHORTAGE",
+    "events": "- ~ Copperspire was running short of food.\n",
+    "expected": "Food was running short in Copperspire, so people say.",
+    "generated": "Have you heard? Copperspire was short of food. That's the word going round.",
+    "stopped": true
+  },
+  {
+    "id": "validation-6-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Drought in Juniperwall left too little harvest for the eastern settlements.\n",
+    "expected": "Juniperwall's drought harvest fell short of what the eastern settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Juniperwall fell short of supplies for the eastern settlements, if the story is right.",
+    "stopped": true
+  },
+  {
+    "id": "validation-7-0",
+    "kind": "ROUTE",
+    "events": "- ~ Hollymoor shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Hollymoor closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Hollymoor closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true
+  },
+  {
+    "id": "validation-8-0",
+    "kind": "PEACE",
+    "events": "- Ash Council and Winter Order made peace.\n",
+    "expected": "Have you heard the news? Ash Council and Winter Order made peace.",
+    "generated": "Ash Council and Winter Order made peace, I hear.",
+    "stopped": true
+  },
+  {
+    "id": "validation-9-0",
+    "kind": "TREASURE",
+    "events": "- ~ Craftspeople in Frostwell completed Maple Lark.\n",
+    "expected": "Have you heard? Frostwell completed Maple Lark. That's the word going round.",
+    "generated": "Frostwell finished making Maple Lark, so people say.",
+    "stopped": true
+  },
+  {
+    "id": "validation-10-0",
+    "kind": "BANDITS",
+    "events": "- Hungry debtors and unpaid households joined Flint Oath.\n",
+    "expected": "Have you heard the news? Flint Oath recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Flint Oath recruited hungry debtors and people from unpaid households.",
+    "stopped": true
+  },
+  {
+    "id": "validation-11-0",
+    "kind": "CULT RALLIES",
+    "events": "- Sable Knives gathered new tithe-bearers for Rosewing's court.\n",
+    "expected": "Have you heard the news? Sable Knives was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Sable Knives was gathering new tithe-bearers for the goblin court.",
+    "stopped": true
+  }
+]

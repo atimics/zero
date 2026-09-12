@@ -1,0 +1,98 @@
+[
+  {
+    "id": "validation-0-0",
+    "kind": "NOTICE",
+    "events": "- ? ~ Jartel Nelkirgal posted a quiet commission in Danabarrow.\n",
+    "expected": "Jartel Nelkirgal posted something in Danabarrow.",
+    "generated": "Someone put up a quiet commission in Danabarrow.",
+    "stopped": true
+  },
+  {
+    "id": "validation-1-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Nasil Jarviwaward died at age 75 after a life in Pineshore.\n",
+    "expected": "Nasil Jarviwaward had lived in Pineshore and died, if the story is right.",
+    "generated": "Nasil Jarviwaward died after a life in Pineshore, if there's truth in the rumour.",
+    "stopped": true
+  },
+  {
+    "id": "validation-2-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Verver the Unappeased burns Alderhollow because 16 stolen crowns remain missing.\n",
+    "expected": "Verver the Unappeased burned Alderhollow. The telling blamed stolen hoard money, so people say.",
+    "generated": "Verver the Unappeased burned Alderhollow. The telling blamed stolen hoard money, so people say.",
+    "stopped": true
+  },
+  {
+    "id": "validation-3-0",
+    "kind": "DRAGON OMEN",
+    "events": "- The Orkator Court recruits from hungry debtors and unpaid households; road control reaches 34%.\n- ? ~ Maplestead saw smoke in its chimneys; readers feared Harolna the Red.\n",
+    "expected": "Smoke fell into Maplestead's chimneys. The old readers feared Harolna the Red was coming, if there's truth in the rumour.",
+    "generated": "Smoke fell into Maplestead's chimneys. The old readers feared Harolna the Red was coming, if there's truth in the rumour.",
+    "stopped": true
+  },
+  {
+    "id": "validation-4-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Displaced workers reinforce Cael March on the old road.\n- ? ~ The Viol Oath raids Elmbridge: 20 Wheat, 0 crowns.\n",
+    "expected": "Elmbridge had been raided by The Viol Oath, if there's truth in the rumour.",
+    "generated": "Elmbridge had been raided by The Viol Oath, if there's truth in the rumour.",
+    "stopped": true
+  },
+  {
+    "id": "validation-5-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Food reserves were low in Annelwabarrow.\n",
+    "expected": "Food was running short in Annelwabarrow, if there's truth in the rumour.",
+    "generated": "Annelwabarrow was short of food, if the story is right.",
+    "stopped": true
+  },
+  {
+    "id": "validation-6-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Nelren Rilnel died at age 74 after a life in Miyorwick.\n- Lindenmoor's drought harvest cannot supply the southern settlements.\n",
+    "expected": "The drought harvest in Lindenmoor fell short of supplies for the southern settlements, I hear.",
+    "generated": "Have you heard the news? Lindenmoor's drought harvest fell short of what the southern settlements needed.",
+    "stopped": true
+  },
+  {
+    "id": "validation-7-0",
+    "kind": "ROUTE",
+    "events": "- ~ Miti Thormimender posts a notice at Yenberbank: repair contract.\n- Mosswatch finishes Elgarmor Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n- ~ Sataltagate closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Sataltagate closed the treaty bridge. That's the word going round.",
+    "generated": "Sataltagate closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true
+  },
+  {
+    "id": "validation-8-0",
+    "kind": "PEACE",
+    "events": "- ~ Displaced workers reinforce The Mamor Company on the old road.\n- ~ Silash Throne agreed to peace with The Vibra Court.\n",
+    "expected": "Silash Throne and The Vibra Court made peace, so people say.",
+    "generated": "Silash Throne and The Vibra Court made peace, so people say.",
+    "stopped": true
+  },
+  {
+    "id": "validation-9-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Illaingate finishes Kelmorbarrow Tayor Cup from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Illaingate finished making Kelmorbarrow Tayor Cup, if there's truth in the rumour.",
+    "generated": "Illaingate completed Kelmorbarrow Tayor Cup, if the story is right.",
+    "stopped": true
+  },
+  {
+    "id": "validation-10-0",
+    "kind": "BANDITS",
+    "events": "- Vabadarspire has 2 food in store. Its reserve target is 75.\n- ? ~ Hungry debtors and unpaid households joined The Vahar Throne.\n",
+    "expected": "Hungry debtors and people from unpaid households were being recruited by The Vahar Throne, if the story is right.",
+    "generated": "The Vahar Throne recruited hungry debtors and people from unpaid households, if there's truth in the rumour.",
+    "stopped": true
+  },
+  {
+    "id": "validation-11-0",
+    "kind": "CULT RALLIES",
+    "events": "- ~ Hollymoor has 0 weeks of food; hunger reaches pressure level 3.\n- Emval March gathers 1 new tithe-bearers; Delglabri's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Emval March. The goblin court was gathering again, I hear.",
+    "generated": "New tithe-bearers were joining Emval March. The goblin court was gathering again, I hear.",
+    "stopped": true
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "seed": 29,
+  "source_sha256": "dee218ff68221f4c635f66f2644744b305d5467fe94a7cc450934412e5e22328",
+  "source_manifest_sha256": "130c9035a19d260b3e11e8b4dcdd7840443f96787f80fd8e7937ab71e63624a1",
+  "templates": 415,
+  "source": "Crownless v2 training split",
+  "splits": {
+    "train": {
+      "rows": 24000,
+      "bytes": 4309646,
+      "sha256": "df2df6851725bac4f1e5d8f2132aefb602aa95c19625688042c11db1108d2a03"
+    },
+    "validation": {
+      "rows": 240,
+      "bytes": 43990,
+      "sha256": "70c940e024ccdeab6e3149d1ab00b0072852256447990788d731d175efd26b1a"
+    },
+    "test": {
+      "rows": 240,
+      "bytes": 44058,
+      "sha256": "7cf45da37a52b66d06ca1b4b49ad0f7b1fc667983e8ba8a7fe772f07e773ff4d"
+    },
+    "wording_test": {
+      "rows": 240,
+      "bytes": 42852,
+      "sha256": "b3e6a9fc19af4a894b9d0b681ea18a74ef0cafd329d89198e391d2c8f84b20c8"
+    }
+  },
+  "note": "Synthetic fact substitutions preserve source event rules; earlier events are distractors."
+}

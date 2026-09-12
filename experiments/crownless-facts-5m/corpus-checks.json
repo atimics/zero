@@ -1,0 +1,22 @@
+{
+  "train": {
+    "rows": 24000,
+    "distinct_names": 3346,
+    "paired_changes": 12000
+  },
+  "validation": {
+    "rows": 240,
+    "distinct_names": 210,
+    "paired_changes": 120
+  },
+  "test": {
+    "rows": 240,
+    "distinct_names": 205,
+    "paired_changes": 120
+  },
+  "wording_test": {
+    "rows": 240,
+    "distinct_names": 205,
+    "paired_changes": 120
+  }
+}
