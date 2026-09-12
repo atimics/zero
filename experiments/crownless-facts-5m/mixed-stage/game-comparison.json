@@ -1,0 +1,18 @@
+{
+  "mixed": {
+    "checkpoint_sha256": "cfa7d76c1609bd861147040f657b947c33eca5c68e6939737b032ce462d24dcc",
+    "scores": {
+      "test": {
+        "rows": 500,
+        "nonempty": 500,
+        "stopped": 500,
+        "exact_reference": 261,
+        "required_names_match": 435,
+        "required_names_scored": 500,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  }
+}

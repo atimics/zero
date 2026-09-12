@@ -1,0 +1,178 @@
+[
+  {
+    "id": "editorial-001",
+    "kind": "SHORTAGE",
+    "events": "- Food stores in Bellmere fell below the reserve target.\n",
+    "expected": "Bellmere was running short of food, I hear.",
+    "generated": "Have you heard the news? Ferris Barleycroft put up a relief charter in Thornford.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-002",
+    "kind": "SHORTAGE",
+    "events": "- ? Food was scarce in Reedbank when the courier passed through.\n",
+    "expected": "Reedbank was short of food, if the story is right.",
+    "generated": "The relief convoy was delayed when Alderwatch closed the treaty bridge, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-003",
+    "kind": "HARVEST",
+    "events": "- Drought left Dunmere with too little grain to supply the southern villages.\n",
+    "expected": "Dunmere's drought harvest fell short of the southern villages' needs, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced The Unpaid Company on the old road.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-004",
+    "kind": "ROUTE",
+    "events": "- The council of Fernwatch shut the treaty bridge. The relief convoy was delayed.\n",
+    "expected": "Have you heard? The relief convoy was delayed after Fernwatch's council shut the treaty bridge.",
+    "generated": "Have you heard the news? The relief convoy was delayed when Alderwatch closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-005",
+    "kind": "BANDITS",
+    "events": "- ~ Displaced merchants gave the Hollow Banner support along the old road.\n",
+    "expected": "Displaced merchants supported the Hollow Banner on the old road, so people say.",
+    "generated": "Have you heard? Displaced merchants gave The Unpaid Company support on the old road. That's the word going round.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-006",
+    "kind": "NOTICE",
+    "events": "- A notice about a relief charter was posted in Birchhaven by Oren Vale.\n",
+    "expected": "Have you heard the news? Oren Vale put up a relief charter in Birchhaven.",
+    "generated": "Have you heard the news? Smoke fell into Gloamgate's chimneys. The old readers feared Varkesh the Unappeased was coming.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-007",
+    "kind": "DEATH",
+    "events": "- Selda Marr died after spending her life in Greyfen.\n",
+    "expected": "Selda Marr died after a life in Greyfen, I hear.",
+    "generated": "Have you heard the news? Some Compact and Rose Dominion made peace.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-008",
+    "kind": "TREASURE",
+    "events": "- Craftspeople in Mistford completed the Copper Lark after weeks of work.\n",
+    "expected": "Have you heard? Mistford's craftspeople finished the Copper Lark.",
+    "generated": "Have you heard the news? Displaced workers reinforced The Unpaid Company on the old road.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-009",
+    "kind": "WAR DECLARED",
+    "events": "- A courier brought news that Rowan Court and Flint Court had entered war.\n",
+    "expected": "Rowan Court and Flint Court went to war, I hear.",
+    "generated": "Have you heard the news? Smoke fell into Gloamgate's chimneys. The old readers feared Varkesh the Unappeased was coming.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-010",
+    "kind": "PEACE",
+    "events": "- ? ~ The report says Rowan Court and Flint Court agreed to peace.\n",
+    "expected": "Rowan Court and Flint Court made peace, if the story is right.",
+    "generated": "The relief convoy was delayed when Alderwatch closed the treaty bridge, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-011",
+    "kind": "GOBLIN RAID",
+    "events": "- The Ember Court raided Lowmarsh and carried off supplies.\n",
+    "expected": "Have you heard? The Ember Court raided Lowmarsh and took supplies.",
+    "generated": "Have you heard the news? The Unpaid Company recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-012",
+    "kind": "DRAGON OMEN",
+    "events": "- Smoke entered Brackenford's chimneys. Local readers feared Ashwing was coming.\n",
+    "expected": "Smoke entered Brackenford's chimneys, and the local readers feared Ashwing was coming, I hear.",
+    "generated": "Have you heard the news? Smoke fell into Gloamgate's chimneys. The old readers feared Varkesh the Unappeased was coming.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-013",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Ashwing burned Highmere. The telling blamed money stolen from the hoard.\n",
+    "expected": "Ashwing burned Highmere over stolen hoard money, so the story goes.",
+    "generated": "Have you heard? The relief convoy was delayed when Alderwatch closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-014",
+    "kind": "DRAGON BROOD",
+    "events": "- Ashwing laid a clutch, and goblin Ashkeepers sealed the brood hoard.\n",
+    "expected": "Have you heard? Ashwing laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+    "generated": "Have you heard the news? Smoke fell into Gloamgate's chimneys. The old readers feared Varkesh the Unappeased was coming.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-015",
+    "kind": "SHORTAGE",
+    "events": "- Bellmere was short of food last winter; the teller had heard nothing since.\n",
+    "expected": "Bellmere was short of food last winter, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced The Unpaid Company on the old road.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  },
+  {
+    "id": "editorial-016",
+    "kind": "GOBLIN RAID",
+    "events": "- ? A traveller said the Ember Court raided Lowmarsh; the listener had only that report.\n",
+    "expected": "The Ember Court raided Lowmarsh, if the story is right.",
+    "generated": "The Cinder Tithe was gathering new tithe-bearers for the goblin court, I hear.",
+    "stopped": true,
+    "required": {},
+    "required_names_match": false,
+    "exact_reference": false
+  }
+]

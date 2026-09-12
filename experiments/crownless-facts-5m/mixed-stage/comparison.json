@@ -1,0 +1,116 @@
+{
+  "first": {
+    "checkpoint_sha256": "036dae6aed14cb425f6092fcd1c1a0e7b5edc69e43dda4f712077c6266cb3c12",
+    "scores": {
+      "strict_test": {
+        "rows": 216,
+        "nonempty": 216,
+        "stopped": 216,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 216,
+        "changed_pairs_match": 0,
+        "pairs": 108,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "strict_wording_test": {
+        "rows": 206,
+        "nonempty": 206,
+        "stopped": 206,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 206,
+        "changed_pairs_match": 0,
+        "pairs": 103,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "editorial_test": {
+        "rows": 16,
+        "nonempty": 16,
+        "stopped": 16,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 0,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  },
+  "paired": {
+    "checkpoint_sha256": "7f627e8429424e41e795d4dec3fb9458e2896786f3745a53fff79997198e6f44",
+    "scores": {
+      "strict_test": {
+        "rows": 216,
+        "nonempty": 216,
+        "stopped": 215,
+        "exact_reference": 0,
+        "required_names_match": 5,
+        "required_names_scored": 216,
+        "changed_pairs_match": 0,
+        "pairs": 108,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "strict_wording_test": {
+        "rows": 206,
+        "nonempty": 206,
+        "stopped": 206,
+        "exact_reference": 0,
+        "required_names_match": 8,
+        "required_names_scored": 206,
+        "changed_pairs_match": 0,
+        "pairs": 103,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "editorial_test": {
+        "rows": 16,
+        "nonempty": 16,
+        "stopped": 16,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 0,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  },
+  "mixed": {
+    "checkpoint_sha256": "cfa7d76c1609bd861147040f657b947c33eca5c68e6939737b032ce462d24dcc",
+    "scores": {
+      "strict_test": {
+        "rows": 216,
+        "nonempty": 216,
+        "stopped": 216,
+        "exact_reference": 96,
+        "required_names_match": 211,
+        "required_names_scored": 216,
+        "changed_pairs_match": 105,
+        "pairs": 108,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "strict_wording_test": {
+        "rows": 206,
+        "nonempty": 206,
+        "stopped": 204,
+        "exact_reference": 32,
+        "required_names_match": 100,
+        "required_names_scored": 206,
+        "changed_pairs_match": 48,
+        "pairs": 103,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "editorial_test": {
+        "rows": 16,
+        "nonempty": 16,
+        "stopped": 16,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 0,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  }
+}
