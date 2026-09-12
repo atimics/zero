@@ -59,7 +59,9 @@ def main():
     cards = ''
     for i, row in enumerate(samples):
         p = row['performance']
-        cards += f'<article><h2>{esc(p["creature"].title())} · {esc(p["emotion"])}</h2><p>{esc(row["text"])}</p><audio controls preload="none" src="sample-{i}.wav"></audio><small>Meaning: {row["meaning"]}; style: {row["identity"]}; emotion: {row["emotion"]}</small></article>'
+        checks = ' · '.join(label if row[key] else label + ': review' for key,label in
+                            (('meaning','Facts kept'),('identity','Creature matched'),('emotion','Feeling matched')))
+        cards += f'<article><h2>{esc(p["creature"].title())} · {esc(p["emotion"])}</h2><p>{esc(row["text"])}</p><audio aria-label="Play {esc(p["creature"])} {esc(p["emotion"])}" controls preload="none" src="sample-{i}.wav"></audio><small>{checks}</small></article>'
     chats = ''
     for exchange in exchanges:
         chats += '<section><h2>'+esc(exchange['creature'].title())+' conversation</h2>'
