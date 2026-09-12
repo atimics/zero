@@ -72,7 +72,7 @@ Higher-temperature settings often repeat less. A quality decision also needs
 consistency ratings. The default remains temperature 0.7, top-k 40, penalty
 1.0. The demo exposes penalty 1.1 as an optional control.
 
-## Blind consistency review
+## A/B preference review
 
 [Review packet](sweep/blind-review.md) contains 48 paired cases (96
 continuations) comparing penalty 1.0 and 1.1 at temperature 0.7/top-k 40.
@@ -80,10 +80,21 @@ The pair was chosen from the earlier control, independently of this grid's
 scores. Prompt order and A/B assignment use a fixed random seed. The settings
 key is stored separately from the review page.
 
-The standalone `sweep/blind-review.html` offers ratings from 1 to 5 and a JSON
-export. The rubric asks about consistent participants, setting, and actions.
-Human ratings are pending. These files provide the review materials; the
-repetition and diversity scores above are separate measurements.
+The review now asks one question: which continuation is better? It shows one
+pair at a time, with A, B, and skip buttons, keyboard shortcuts, undo, browser
+saving, and five-pair rounds. JSON export and import support resuming a review.
+The case ordering and A/B map remain identical to the original packet.
+
+The first reviewer supplied choices for cases 1–15: 14 preferences and one
+skip. The original decoder received seven preferences; repetition 1.1 received
+seven. This is an even result from a partial voluntary review by one person.
+The dash is recorded as a skip, separate from a preference or tie. These are
+overall preferences, separate from the previously proposed 1–5 consistency
+ratings. Records and the decoded count are in `reviews/`.
+
+The human review supplies no preference advantage for either setting in this
+batch. The original decoding default remains in place. Repetition measurements
+and human preferences remain separate evidence.
 
 ## Reproduce
 
@@ -123,3 +134,28 @@ request caches, C-style repetition math, bounded generation options, raw-text
 recovery, and the existing C/PyTorch parity and subword tests. Browser checks
 covered live generation, 64-token output, repetition 1.1, sentence trimming,
 and recovery of the full generated text.
+
+## Collecting A/B picks
+
+```sh
+python scripts/build_ab_review.py --directory experiments/inference-decoding/sweep
+python scripts/serve_ab_review.py --directory experiments/inference-decoding/sweep --responses /path/to/local-picks.jsonl --port 8795
+python scripts/rank_ab_reviews.py --directory experiments/inference-decoding/sweep --events /path/to/local-picks.jsonl --output /path/to/ranking.json
+```
+
+The standalone page saves progress in its browser and exports JSON. The local
+server also appends votes to a file and confirms them after flushing to disk.
+Each vote carries a packet digest, reviewer ID, event ID, case ID, and A/B/skip
+choice. Retries reuse event IDs. Revised answers and undo events resolve to
+one effective choice per reviewer and case. Model settings stay in the
+separate key file. The collector binds to loopback.
+
+To continue the first review, import `reviews/review-001.json` into a fresh
+review page. It resumes at case 16 and preserves the reviewer ID. The ranking command accepts several JSONL collector files or exported JSON
+files after `--events`; repeated reviewer/case answers count once.
+Importing plain A/B/– lines also works, starting at case 1.
+
+A future Hugging Face deployment can reuse this packet and vote format. That
+release will need durable shared storage, a reviewer identity policy, and an
+explicit collection/privacy description. Local collection and export are
+available now; hosting is a separate step.

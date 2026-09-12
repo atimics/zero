@@ -1,0 +1,15 @@
+{
+  "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+  "reviewers": 1,
+  "choices": 14,
+  "skips": 1,
+  "letter_picks": {
+    "A": 8,
+    "B": 6
+  },
+  "wins_by_repetition_penalty": {
+    "1.0": 7,
+    "1.1": 7
+  },
+  "scope": "Descriptive preference counts. Skips are excluded from wins. Repeated events and revised answers count once per reviewer/case. Partial voluntary reviews can be selective; these counts alone do not establish a population preference."
+}
