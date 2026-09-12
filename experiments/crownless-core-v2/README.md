@@ -84,6 +84,17 @@ Seeds **29** and **43** check repeatability on 244 rows per split, covering each
 pattern twice as paired cases. Results and source identities are in the
 adjacent `results.json` and `evidence` directory.
 
+| Final run | Approved meanings per split | Required names per split |
+|---|---:|---:|
+| Seed 17, full frozen set | 1,250/1,250 | 1,170/1,170 |
+| Seed 29, repeat check | 244/244 | 228/228 |
+| Seed 43, repeat check | 244/244 | 228/228 |
+| Saved 8-bit seed 17 | 1,250/1,250 | 1,170/1,170 |
+
+Both the usual-source and source-paraphrase splits have these scores. The
+8-bit export gives exactly the same text and stopping behavior as float
+weights on all 2,500 frozen inputs and all 119 recognized game cases.
+
 `models/crownless-core-v2/core.ccv2` contains **5,044,760 bytes** including scales
 and metadata. The export stores matrices at 8 bits and vectors at float32.
 The Python reference loader expands those weights to float32. The artifact
