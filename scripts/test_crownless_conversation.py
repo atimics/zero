@@ -7,6 +7,8 @@ from unittest.mock import patch
 from tokenizers import Tokenizer
 from crownless_conversation import response, ACTS
 from crownless_v2 import encode_row
+from crownless_v2 import generate
+from crownless_v2_export import load_export
 from chat_crownless import chat
 
 
@@ -65,6 +67,21 @@ class ConversationTests(unittest.TestCase):
         self.assertEqual(turns[1]['history'][-1], {'speaker': 'other', 'text': turns[0]['text']})
         self.assertEqual(turns[2]['history'][-1], {'speaker': 'other', 'text': turns[1]['text']})
         self.assertEqual(turns[2]['history'][0]['speaker'], 'self')
+
+    def test_published_model_changes_its_reply(self):
+        root = Path(__file__).resolve().parents[1]
+        model, metadata = load_export(root / 'models/crownless-conversation/core.ccv2',
+                                      root / 'models/crownless-core-v2/tokenizer.json')
+        self.row['kind_id'] = metadata['meaning_ids']['notice_posted_0']
+        answers = []
+        for act in ('agree', 'disagree'):
+            row = response(self.row, self.rule, act, random.Random(1))
+            result = generate(model, self.tokenizer, encode_row(self.tokenizer, row, slots=True, conversation=True))
+            self.assertTrue(result['stopped'])
+            answers.append(result['text'])
+        self.assertTrue(answers[0].startswith("That's what I heard too."))
+        self.assertTrue(answers[1].startswith('I heard a different account.'))
+        for name in ('Éva', 'Newhaven', 'Flood relief'): self.assertIn(name, answers[1])
 
 
 if __name__ == '__main__': unittest.main()
