@@ -1,0 +1,554 @@
+{
+  "model_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "avatars": [
+    {
+      "name": "Grenwin Longmead",
+      "kind": 0,
+      "confidence": 93,
+      "retellings": 1,
+      "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+      "source_world_seed": 73,
+      "source_day": 10
+    },
+    {
+      "name": "Lamwyn Shaftward",
+      "kind": 0,
+      "confidence": 56,
+      "retellings": 5,
+      "account": "Thornford's drought harvest cannot supply the southern settlements.",
+      "source_world_seed": 73,
+      "source_day": 20
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "speaker": "Grenwin Longmead",
+      "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+      "confidence": 93,
+      "history": [],
+      "text": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 836
+        },
+        {
+          "token": 872
+        },
+        {
+          "token": 533
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 1132
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 786
+        },
+        {
+          "token": 22
+        }
+      ],
+      "input_sha256": "b9a556aeab89df65b479074fc38a7f182ce976350e976e1ad0084fd85440cffc"
+    },
+    {
+      "turn": 2,
+      "speaker": "Lamwyn Shaftward",
+      "account": "Thornford's drought harvest cannot supply the southern settlements.",
+      "confidence": 56,
+      "history": [
+        {
+          "speaker": "other",
+          "text": "Thornford's drought harvest fell short of what the eastern settlements needed."
+        }
+      ],
+      "text": "I heard a different account. The drought harvest in Thornford fell short of supplies for the southern settlements, according to the word going round. How sure are you?",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 49
+        },
+        {
+          "token": 1073
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 313
+        },
+        {
+          "token": 81
+        },
+        {
+          "token": 78
+        },
+        {
+          "token": 78
+        },
+        {
+          "token": 274
+        },
+        {
+          "token": 610
+        },
+        {
+          "token": 464
+        },
+        {
+          "token": 75
+        },
+        {
+          "token": 297
+        },
+        {
+          "token": 86
+        },
+        {
+          "token": 92
+        },
+        {
+          "token": 22
+        },
+        {
+          "token": 354
+        },
+        {
+          "token": 836
+        },
+        {
+          "token": 872
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 533
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 1442
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 486
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 484
+        },
+        {
+          "token": 474
+        },
+        {
+          "token": 483
+        },
+        {
+          "token": 22
+        },
+        {
+          "token": 229
+        },
+        {
+          "token": 48
+        },
+        {
+          "token": 275
+        },
+        {
+          "token": 283
+        },
+        {
+          "token": 93
+        },
+        {
+          "token": 388
+        },
+        {
+          "token": 1430
+        },
+        {
+          "token": 77
+        },
+        {
+          "token": 229
+        },
+        {
+          "token": 97
+        },
+        {
+          "token": 297
+        },
+        {
+          "token": 39
+        }
+      ],
+      "input_sha256": "de88dbb766a8d87b31e3c4b61e594c8aca53537d9e2296a90b015583a7bd7ad9"
+    },
+    {
+      "turn": 3,
+      "speaker": "Grenwin Longmead",
+      "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+      "confidence": 93,
+      "history": [
+        {
+          "speaker": "self",
+          "text": "Thornford's drought harvest fell short of what the eastern settlements needed."
+        },
+        {
+          "speaker": "other",
+          "text": "I heard a different account. The drought harvest in Thornford fell short of supplies for the southern settlements, according to the word going round. How sure are you?"
+        }
+      ],
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1422
+        },
+        {
+          "token": 300
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 464
+        },
+        {
+          "token": 75
+        },
+        {
+          "token": 297
+        },
+        {
+          "token": 86
+        },
+        {
+          "token": 92
+        },
+        {
+          "token": 229
+        },
+        {
+          "token": 49
+        },
+        {
+          "token": 229
+        },
+        {
+          "token": 321
+        },
+        {
+          "token": 76
+        },
+        {
+          "token": 22
+        },
+        {
+          "token": 440
+        },
+        {
+          "token": 77
+        },
+        {
+          "token": 404
+        },
+        {
+          "token": 297
+        },
+        {
+          "token": 84
+        },
+        {
+          "token": 76
+        },
+        {
+          "token": 395
+        },
+        {
+          "token": 83
+        },
+        {
+          "token": 1109
+        },
+        {
+          "token": 1369
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 388
+        },
+        {
+          "token": 22
+        }
+      ],
+      "input_sha256": "a9d5913cfb265d81966d7eae8d222ea1a9822b74a23ab06c18351a7c2b2466f1"
+    },
+    {
+      "turn": 4,
+      "speaker": "Lamwyn Shaftward",
+      "account": "Thornford's drought harvest cannot supply the southern settlements.",
+      "confidence": 56,
+      "history": [
+        {
+          "speaker": "other",
+          "text": "Thornford's drought harvest fell short of what the eastern settlements needed."
+        },
+        {
+          "speaker": "self",
+          "text": "I heard a different account. The drought harvest in Thornford fell short of supplies for the southern settlements, according to the word going round. How sure are you?"
+        },
+        {
+          "speaker": "other",
+          "text": "That is the account I hold. We should ask someone who was there."
+        }
+      ],
+      "text": "Let's ask around before we pass it on.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 52
+        },
+        {
+          "token": 958
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 395
+        },
+        {
+          "token": 83
+        },
+        {
+          "token": 1430
+        },
+        {
+          "token": 419
+        },
+        {
+          "token": 303
+        },
+        {
+          "token": 573
+        },
+        {
+          "token": 487
+        },
+        {
+          "token": 287
+        },
+        {
+          "token": 77
+        },
+        {
+          "token": 1273
+        },
+        {
+          "token": 309
+        },
+        {
+          "token": 92
+        },
+        {
+          "token": 988
+        },
+        {
+          "token": 22
+        }
+      ],
+      "input_sha256": "1ce672230a4941388d9365df1371a81b37427bdf94b0a2a8fd9a86a563bb9ad2"
+    },
+    {
+      "turn": 5,
+      "speaker": "Grenwin Longmead",
+      "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+      "confidence": 93,
+      "history": [
+        {
+          "speaker": "self",
+          "text": "Thornford's drought harvest fell short of what the eastern settlements needed."
+        },
+        {
+          "speaker": "other",
+          "text": "I heard a different account. The drought harvest in Thornford fell short of supplies for the southern settlements, according to the word going round. How sure are you?"
+        },
+        {
+          "speaker": "self",
+          "text": "That is the account I hold. We should ask someone who was there."
+        },
+        {
+          "speaker": "other",
+          "text": "Let's ask around before we pass it on."
+        }
+      ],
+      "text": "Agreed. Let's leave it there for now.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 41
+        },
+        {
+          "token": 79
+        },
+        {
+          "token": 388
+        },
+        {
+          "token": 282
+        },
+        {
+          "token": 22
+        },
+        {
+          "token": 229
+        },
+        {
+          "token": 52
+        },
+        {
+          "token": 958
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 764
+        },
+        {
+          "token": 73
+        },
+        {
+          "token": 967
+        },
+        {
+          "token": 309
+        },
+        {
+          "token": 92
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 388
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 765
+        },
+        {
+          "token": 22
+        }
+      ],
+      "input_sha256": "8ca30beabd4da29fb094afaa1fc4c3c6a96fd664c4e0414944c7a03160bba221"
+    },
+    {
+      "turn": 6,
+      "speaker": "Lamwyn Shaftward",
+      "account": "Thornford's drought harvest cannot supply the southern settlements.",
+      "confidence": 56,
+      "history": [
+        {
+          "speaker": "self",
+          "text": "I heard a different account. The drought harvest in Thornford fell short of supplies for the southern settlements, according to the word going round. How sure are you?"
+        },
+        {
+          "speaker": "other",
+          "text": "That is the account I hold. We should ask someone who was there."
+        },
+        {
+          "speaker": "self",
+          "text": "Let's ask around before we pass it on."
+        },
+        {
+          "speaker": "other",
+          "text": "Agreed. Let's leave it there for now."
+        }
+      ],
+      "text": "Very well.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 62
+        },
+        {
+          "token": 1205
+        },
+        {
+          "token": 287
+        },
+        {
+          "token": 314
+        },
+        {
+          "token": 22
+        }
+      ],
+      "input_sha256": "3b44311969d85af59297f33ca5895daa6c7d1f059c415f1984a119073a2ded92"
+    }
+  ]
+}

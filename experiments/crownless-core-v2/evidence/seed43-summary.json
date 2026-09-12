@@ -1,0 +1,22 @@
+{
+  "packet": {
+    "parameters": 4935937,
+    "training_seconds": 115.09733012504876,
+    "splits": {
+      "test": {
+        "count": 244,
+        "exact_reference": 140,
+        "all_names": 244,
+        "stopped": 244,
+        "scope": "Reference match and required-name presence; independent full-fidelity review remains separate."
+      },
+      "wording": {
+        "count": 244,
+        "exact_reference": 140,
+        "all_names": 244,
+        "stopped": 244,
+        "scope": "Reference match and required-name presence; independent full-fidelity review remains separate."
+      }
+    }
+  }
+}

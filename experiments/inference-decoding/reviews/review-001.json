@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+  "reviewer_id": "reviewer-001",
+  "source": "User supplied ordered A/B picks in this conversation, interpreted as cases 1\u201315 of the original frozen packet. Dash recorded as skip.",
+  "completion": "Partial voluntary review; stopped after 15 cases.",
+  "votes": [
+    {
+      "case_id": 1,
+      "choice": "A"
+    },
+    {
+      "case_id": 2,
+      "choice": "B"
+    },
+    {
+      "case_id": 3,
+      "choice": "B"
+    },
+    {
+      "case_id": 4,
+      "choice": "A"
+    },
+    {
+      "case_id": 5,
+      "choice": "B"
+    },
+    {
+      "case_id": 6,
+      "choice": "B"
+    },
+    {
+      "case_id": 7,
+      "choice": "A"
+    },
+    {
+      "case_id": 8,
+      "choice": "skip"
+    },
+    {
+      "case_id": 9,
+      "choice": "A"
+    },
+    {
+      "case_id": 10,
+      "choice": "A"
+    },
+    {
+      "case_id": 11,
+      "choice": "B"
+    },
+    {
+      "case_id": 12,
+      "choice": "B"
+    },
+    {
+      "case_id": 13,
+      "choice": "A"
+    },
+    {
+      "case_id": 14,
+      "choice": "A"
+    },
+    {
+      "case_id": 15,
+      "choice": "A"
+    }
+  ],
+  "events": [
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "ca3f8066-45ac-4bf3-8b2e-c107fac80d09",
+      "case_id": 1,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "c9e96c11-89a4-4e06-bffd-54ead12b9a05",
+      "case_id": 2,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "2ec14b71-90bb-4047-9dd4-bc8bd2132254",
+      "case_id": 3,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "b4f76df1-b518-4a35-bf51-d222a08646c7",
+      "case_id": 4,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "600f7d64-eb09-48f8-a0a5-693fb12a3289",
+      "case_id": 5,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "c3a7722e-bef6-4dff-9e37-dc4586f5ca14",
+      "case_id": 6,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "95318aac-1224-4cf0-8f3c-614a5a6d5946",
+      "case_id": 7,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "98ec57b5-170b-4902-9953-a40857145875",
+      "case_id": 8,
+      "choice": "skip"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "1bd57841-c76e-44c1-8e63-f6d86efb0d22",
+      "case_id": 9,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "868ab11c-c166-4e4a-9608-81524725f741",
+      "case_id": 10,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "86079d80-4540-44fb-afbc-0830a3b03f7e",
+      "case_id": 11,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "49d39314-e37c-4c0c-a386-370f24d607c5",
+      "case_id": 12,
+      "choice": "B"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "a2de8d93-6ef9-4d40-9187-da866c61b058",
+      "case_id": 13,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "449d1ff5-7787-4cde-92f4-2513ef6b1a89",
+      "case_id": 14,
+      "choice": "A"
+    },
+    {
+      "packet_id": "zero-ab-b6f83e8ed0c2b56c",
+      "reviewer_id": "reviewer-001",
+      "event_id": "caa6d5aa-2e2d-4ba4-9afb-9a9333adf385",
+      "case_id": 15,
+      "choice": "A"
+    }
+  ],
+  "criterion": "Overall A/B preference supplied by the reviewer; a separate measure from 1\u20135 consistency ratings."
+}

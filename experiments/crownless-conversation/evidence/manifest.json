@@ -1,0 +1,33 @@
+{
+  "source_commit": "7cf61c6df77f83bb259820264dc8b5548d34198e",
+  "source_hashes": {
+    "crownless_v2.py": "8599f8a0c9520cf2c56ab5586c9d49a642d066c46bf2a9e46b098f5007e23f0c",
+    "crownless_conversation.py": "29b9d02edd031c74eb9c4b649d4eff584aa33dd9e1d894abf52ec3e8623ef32e",
+    "train_crownless_conversation.py": "e9e20980eb56c5a0be529cde412c3d22272ad08052f9dbb07b746983ee03bdf1"
+  },
+  "base_sha256": "fdc469199c10ed24795b8f66248738c24b9f3bf4d12c52342d7f588ae95f2c02",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "data_manifest_sha256": "41f9af4c17ce282a437504656baa739902b8b9b40cd8e2f71d1b64b6e431c76f",
+  "seed": 73,
+  "steps": 3000,
+  "batch_size": 16,
+  "files": {
+    "train": {
+      "rows": 50000,
+      "sha256": "20e7d635788bd7491cd92855c49d30ed9c36328168c5c50a4fe823b5665a381f"
+    },
+    "validation": {
+      "rows": 1250,
+      "sha256": "0dafd41a8271637d1f94f59c0baa217e47a696e13c7dd15fdf1d361471f37864"
+    },
+    "test": {
+      "rows": 1250,
+      "sha256": "35c5e2042b5e847dc11a80c686bb1aa0697e38373bc77c6592ff7ad8b7ef6ef8"
+    },
+    "wording": {
+      "rows": 1250,
+      "sha256": "af87785a326057f2ac3555ca0ea6425300c8d4cf33e4045feb43c4ef9e29da54"
+    }
+  },
+  "scope": "Authored response families over held-out account names; new question wording scored separately."
+}

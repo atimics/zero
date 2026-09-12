@@ -1,0 +1,2457 @@
+{
+  "count": 244,
+  "approved": 0,
+  "stopped": 244,
+  "acts": {
+    "agree": {
+      "count": 130,
+      "approved": 0
+    },
+    "disagree": {
+      "count": 114,
+      "approved": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "test:0:0:strict:agree",
+      "rule": "notice_posted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yoraenmere Yoraowfor posted a notice about Yorumumwick Book in Kelumamoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:0:0:strict:disagree",
+      "rule": "notice_posted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. In Kelumamoor, Yoraenmere Yoraowfor put up a notice about Yorumumwick Book. How sure are you?",
+      "text": "Yoraenmere Yoraowfor posted a notice about Yorumumwick Book in Kelumamoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:0:1:strict:agree",
+      "rule": "notice_posted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowilgate Yorowowf posted a notice about Yorumumwick Book in Kelumamoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:0:1:strict:disagree",
+      "rule": "notice_posted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. In Kelumamoor, Kelowilgate Yorowowf put up a notice about Yorumumwick Book. How sure are you?",
+      "text": "Kelowilgate Yorowowf posted a notice about Yorumumwick Book in Kelumamoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:1:0:strict:agree",
+      "rule": "war_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yororamoor Kelenenfo and Yorenengate Yorilowf went to war.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:1:0:strict:disagree",
+      "rule": "war_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yororamoor Kelenenfo and Yorenengate Yorilowf went to war. How sure are you?",
+      "text": "Yororamoor Kelenenfo and Yorenengate Yorilowf went to war.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:1:1:strict:agree",
+      "rule": "war_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaumford Kelumashw and Yorenengate Yorilowf went to war.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:1:1:strict:disagree",
+      "rule": "war_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaumford Kelumashw and Yorenengate Yorilowf went to war. How sure are you?",
+      "text": "Kelaumford Kelumashw and Yorenengate Yorilowf went to war.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:2:0:strict:agree",
+      "rule": "peace_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashaden Yororowga and Kelethethwick Kelumo made peace, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:2:0:strict:disagree",
+      "rule": "peace_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorashaden Yororowga and Kelethethwick Kelumo made peace, so people say. How sure are you?",
+      "text": "Yorashaden Yororowga and Kelethethwick Kelumo made peace, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:2:1:strict:agree",
+      "rule": "peace_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashaden Yororowga and Yorenethmoor Yororen made peace, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:2:1:strict:disagree",
+      "rule": "peace_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorashaden Yororowga and Yorenethmoor Yororen made peace, so people say. How sure are you?",
+      "text": "Yorashaden Yororowga and Yorenethmoor Yororen made peace, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:3:0:strict:agree",
+      "rule": "alliance_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenowgate Yorowowm and Kelaashmere Yorumumg formed an alliance.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:3:0:strict:disagree",
+      "rule": "alliance_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenowgate Yorowowm and Kelaashmere Yorumumg formed an alliance. How sure are you?",
+      "text": "Kelenowgate Yorowowm and Kelaashmere Yorumumg formed an alliance.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:3:1:strict:agree",
+      "rule": "alliance_declared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaenholt Kelenorme and Kelaashmere Yorumumg formed an alliance.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:3:1:strict:disagree",
+      "rule": "alliance_declared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaenholt Kelenorme and Kelaashmere Yorumumg formed an alliance. How sure are you?",
+      "text": "Kelaenholt Kelenorme and Kelaashmere Yorumumg formed an alliance.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:4:0:strict:agree",
+      "rule": "character_died_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethumfell Yoraumf died after a life in Yororashmoor, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:4:0:strict:disagree",
+      "rule": "character_died_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. After living in Yororashmoor, Kelethumfell Yoraumf died, according to the word going round. How sure are you?",
+      "text": "Kelethumfell Yoraumf died after a life in Yororashmoor, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:4:1:strict:agree",
+      "rule": "character_died_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethumfell Yoraumf died after a life in Kelethilden, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:4:1:strict:disagree",
+      "rule": "character_died_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. After living in Kelethilden, Kelethumfell Yoraumf died, according to the word going round. How sure are you?",
+      "text": "Kelethumfell Yoraumf died after a life in Kelethilden, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:5:0:strict:agree",
+      "rule": "character_born_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yorumumfell, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:5:0:strict:disagree",
+      "rule": "character_born_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yorumumfell, if the story is right. How sure are you?",
+      "text": "Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yorumumfell, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:5:1:strict:agree",
+      "rule": "character_born_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yoroworford, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:5:1:strict:disagree",
+      "rule": "character_born_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yoroworford, if the story is right. How sure are you?",
+      "text": "Kelorowden Kelumorme was born to the family of Kelumamere Yorowawic in Yoroworford, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:6:0:strict:agree",
+      "rule": "bakery_production_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethilford made bread from wheat, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:6:0:strict:disagree",
+      "rule": "bakery_production_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethilford made bread from wheat, so people say. How sure are you?",
+      "text": "Kelethilford made bread from wheat, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:6:1:strict:agree",
+      "rule": "bakery_production_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaenden made bread from wheat, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:6:1:strict:disagree",
+      "rule": "bakery_production_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaenden made bread from wheat, so people say. How sure are you?",
+      "text": "Kelaenden made bread from wheat, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:7:0:strict:agree",
+      "rule": "paper_milled_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelumaholt made paper from Wood, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:7:0:strict:disagree",
+      "rule": "paper_milled_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelumaholt made paper from Wood, so people say. How sure are you?",
+      "text": "Kelumaholt made paper from Wood, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:7:1:strict:agree",
+      "rule": "paper_milled_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorowowwick made paper from Wood, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:7:1:strict:disagree",
+      "rule": "paper_milled_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorowowwick made paper from Wood, so people say. How sure are you?",
+      "text": "Yorowowwick made paper from Wood, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:8:0:strict:agree",
+      "rule": "woodlot_harvest_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelumashmoor cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:8:0:strict:disagree",
+      "rule": "woodlot_harvest_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelumashmoor cut wood and wore out tools, so people say. How sure are you?",
+      "text": "Kelumashmoor cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:8:1:strict:agree",
+      "rule": "woodlot_harvest_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorilaford cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:8:1:strict:disagree",
+      "rule": "woodlot_harvest_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorilaford cut wood and wore out tools, so people say. How sure are you?",
+      "text": "Yorilaford cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:9:0:strict:agree",
+      "rule": "woodlot_harvest_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaashmoor cut wood by hand without working tools.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:9:0:strict:disagree",
+      "rule": "woodlot_harvest_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaashmoor cut wood by hand without working tools. How sure are you?",
+      "text": "Kelaashmoor cut wood by hand without working tools.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:9:1:strict:agree",
+      "rule": "woodlot_harvest_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethaden cut wood by hand without working tools.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:9:1:strict:disagree",
+      "rule": "woodlot_harvest_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethaden cut wood by hand without working tools. How sure are you?",
+      "text": "Kelethaden cut wood by hand without working tools.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:10:0:strict:agree",
+      "rule": "quarry_output_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yoraethfell quarried stone for roads and public works, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:10:0:strict:disagree",
+      "rule": "quarry_output_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yoraethfell quarried stone for roads and public works, so people say. How sure are you?",
+      "text": "Yoraethfell quarried stone for roads and public works, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:10:1:strict:agree",
+      "rule": "quarry_output_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethethden quarried stone for roads and public works, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:10:1:strict:disagree",
+      "rule": "quarry_output_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethethden quarried stone for roads and public works, so people say. How sure are you?",
+      "text": "Kelethethden quarried stone for roads and public works, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:11:0:strict:agree",
+      "rule": "masonry_repair_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaaholt repaired public buildings with stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:11:0:strict:disagree",
+      "rule": "masonry_repair_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaaholt repaired public buildings with stone, if the story is right. How sure are you?",
+      "text": "Kelaaholt repaired public buildings with stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:11:1:strict:agree",
+      "rule": "masonry_repair_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenethmere repaired public buildings with stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:11:1:strict:disagree",
+      "rule": "masonry_repair_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorenethmere repaired public buildings with stone, if the story is right. How sure are you?",
+      "text": "Yorenethmere repaired public buildings with stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:12:0:strict:agree",
+      "rule": "masonry_repair_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenenford delayed public repairs for lack of stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:12:0:strict:disagree",
+      "rule": "masonry_repair_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenenford delayed public repairs for lack of stone, if the story is right. How sure are you?",
+      "text": "Kelenenford delayed public repairs for lack of stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:12:1:strict:agree",
+      "rule": "masonry_repair_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashilfell delayed public repairs for lack of stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:12:1:strict:disagree",
+      "rule": "masonry_repair_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorashilfell delayed public repairs for lack of stone, if the story is right. How sure are you?",
+      "text": "Yorashilfell delayed public repairs for lack of stone, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:13:0:strict:agree",
+      "rule": "masonry_repair_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaowgate used wood, stone, and tools to repair fire damage.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:13:0:strict:disagree",
+      "rule": "masonry_repair_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaowgate used wood, stone, and tools to repair fire damage. How sure are you?",
+      "text": "Kelaowgate used wood, stone, and tools to repair fire damage.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:13:1:strict:agree",
+      "rule": "masonry_repair_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenormoor used wood, stone, and tools to repair fire damage.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:13:1:strict:disagree",
+      "rule": "masonry_repair_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorenormoor used wood, stone, and tools to repair fire damage. How sure are you?",
+      "text": "Yorenormoor used wood, stone, and tools to repair fire damage.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:14:0:strict:agree",
+      "rule": "sheep_sheared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelailford sheared the spring flock and stored wool.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:14:0:strict:disagree",
+      "rule": "sheep_sheared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelailford sheared the spring flock and stored wool. How sure are you?",
+      "text": "Kelailford sheared the spring flock and stored wool.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:14:1:strict:agree",
+      "rule": "sheep_sheared_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowaden sheared the spring flock and stored wool.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:14:1:strict:disagree",
+      "rule": "sheep_sheared_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelowaden sheared the spring flock and stored wool. How sure are you?",
+      "text": "Kelowaden sheared the spring flock and stored wool.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:15:0:strict:agree",
+      "rule": "cow_slaughtered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorilamoor slaughtered cattle for beef when fodder ran short, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:15:0:strict:disagree",
+      "rule": "cow_slaughtered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorilamoor slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you?",
+      "text": "Yorilamoor slaughtered cattle for beef when fodder ran short, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:15:1:strict:agree",
+      "rule": "cow_slaughtered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenorford slaughtered cattle for beef when fodder ran short, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:15:1:strict:disagree",
+      "rule": "cow_slaughtered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenorford slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you?",
+      "text": "Kelenorford slaughtered cattle for beef when fodder ran short, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:16:0:strict:agree",
+      "rule": "cow_calving_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumorford raised calves and added older calves to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:16:0:strict:disagree",
+      "rule": "cow_calving_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorumorford raised calves and added older calves to the working herd, so people say. How sure are you?",
+      "text": "Yorumorford raised calves and added older calves to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:16:1:strict:agree",
+      "rule": "cow_calving_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaethmoor raised calves and added older calves to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:16:1:strict:disagree",
+      "rule": "cow_calving_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaethmoor raised calves and added older calves to the working herd, so people say. How sure are you?",
+      "text": "Kelaethmoor raised calves and added older calves to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:17:0:strict:agree",
+      "rule": "king_anointed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumashden Yorenorm anointed Kelethengate Yororen of The Yorowowgate Cour, making the crown lawful.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:17:0:strict:disagree",
+      "rule": "king_anointed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The crown of The Yorowowgate Cour became lawful when Yorumashden Yorenorm anointed Kelethengate Yororen. How sure are you?",
+      "text": "Yorumashden Yorenorm anointed Kelethengate Yororen of The Yorowowgate Cour, making the crown lawful.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:17:1:strict:agree",
+      "rule": "king_anointed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenummoor Yoreneth anointed Kelethengate Yororen of The Yorowowgate Cour, making the crown lawful.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:17:1:strict:disagree",
+      "rule": "king_anointed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The crown of The Yorowowgate Cour became lawful when Kelenummoor Yoreneth anointed Kelethengate Yororen. How sure are you?",
+      "text": "Kelenummoor Yoreneth anointed Kelethengate Yororen of The Yorowowgate Cour, making the crown lawful.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:18:0:strict:agree",
+      "rule": "pretender_crisis_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Abbey silence brought a pretender forward in The Kelororden Court.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:18:0:strict:disagree",
+      "rule": "pretender_crisis_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. A pretender arose in The Kelororden Court after a long silence from the abbey. How sure are you?",
+      "text": "Abbey silence brought a pretender forward in The Kelororden Court.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:18:1:strict:agree",
+      "rule": "pretender_crisis_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Abbey silence brought a pretender forward in The Yorethamere Cour.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:18:1:strict:disagree",
+      "rule": "pretender_crisis_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. A pretender arose in The Yorethamere Cour after a long silence from the abbey. How sure are you?",
+      "text": "Abbey silence brought a pretender forward in The Yorethamere Cour.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:19:0:strict:agree",
+      "rule": "monastic_succession_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenashgate Yorashe became Abbot of the Scriptorium and keeper of the anointing roll.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:19:0:strict:disagree",
+      "rule": "monastic_succession_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The Scriptorium gained Yorenashgate Yorashe as abbot and keeper of the anointing roll. How sure are you?",
+      "text": "Yorenashgate Yorashe became Abbot of the Scriptorium and keeper of the anointing roll.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:19:1:strict:agree",
+      "rule": "monastic_succession_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilawick Keletheth became Abbot of the Scriptorium and keeper of the anointing roll.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:19:1:strict:disagree",
+      "rule": "monastic_succession_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The Scriptorium gained Kelilawick Keletheth as abbot and keeper of the anointing roll. How sure are you?",
+      "text": "Kelilawick Keletheth became Abbot of the Scriptorium and keeper of the anointing roll.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:20:0:strict:agree",
+      "rule": "monastic_succession_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Someone succeeded Yororowden Yorethash as Abbot of the Scriptorium.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:20:0:strict:disagree",
+      "rule": "monastic_succession_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The office of Abbot of the Scriptorium passed from Yororowden Yorethash to someone. How sure are you?",
+      "text": "Someone succeeded Yororowden Yorethash as Abbot of the Scriptorium.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:20:1:strict:agree",
+      "rule": "monastic_succession_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Someone succeeded Yorenowgate Kelilafe as Abbot of the Scriptorium.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:20:1:strict:disagree",
+      "rule": "monastic_succession_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The office of Abbot of the Scriptorium passed from Yorenowgate Kelilafe to someone. How sure are you?",
+      "text": "Someone succeeded Yorenowgate Kelilafe as Abbot of the Scriptorium.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:21:0:strict:agree",
+      "rule": "royal_succession_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorethormere Yorumil took power in The Kelashethgate Co and sought the abbot's blessing, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:21:0:strict:disagree",
+      "rule": "royal_succession_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorethormere Yorumil took power in The Kelashethgate Co and sought the abbot's blessing, so people say. How sure are you?",
+      "text": "Yorethormere Yorumil took power in The Kelashethgate Co and sought the abbot's blessing, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:21:1:strict:agree",
+      "rule": "royal_succession_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenorgate Kelethad took power in The Kelashethgate Co and sought the abbot's blessing, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:21:1:strict:disagree",
+      "rule": "royal_succession_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenorgate Kelethad took power in The Kelashethgate Co and sought the abbot's blessing, so people say. How sure are you?",
+      "text": "Kelenorgate Kelethad took power in The Kelashethgate Co and sought the abbot's blessing, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:22:0:strict:agree",
+      "rule": "royal_succession_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The rule of The Yorenummere Cour passed from Kelumethgate Yorenow to someone, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:22:0:strict:disagree",
+      "rule": "royal_succession_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The rule of The Yorenummere Cour passed from Kelumethgate Yorenow to someone, if the rumour is true. How sure are you?",
+      "text": "The rule of The Yorenummere Cour passed from Kelumethgate Yorenow to someone, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:22:1:strict:agree",
+      "rule": "royal_succession_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The rule of The Yorilowgate Cour passed from Kelumethgate Yorenow to someone, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:22:1:strict:disagree",
+      "rule": "royal_succession_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The rule of The Yorilowgate Cour passed from Kelumethgate Yorenow to someone, if the rumour is true. How sure are you?",
+      "text": "The rule of The Yorilowgate Cour passed from Kelumethgate Yorenow to someone, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:23:0:strict:agree",
+      "rule": "dragon_patron_named_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorilgate Kelumumh funded the dragon host and named Kelashormere Kelenet its champion.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:23:0:strict:disagree",
+      "rule": "dragon_patron_named_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The dragon host gained funding from Kelorilgate Kelumumh, who named Kelashormere Kelenet its champion. How sure are you?",
+      "text": "Kelorilgate Kelumumh funded the dragon host and named Kelashormere Kelenet its champion.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:23:1:strict:agree",
+      "rule": "dragon_patron_named_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelashashden Yorowor funded the dragon host and named Kelashormere Kelenet its champion.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:23:1:strict:disagree",
+      "rule": "dragon_patron_named_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The dragon host gained funding from Kelashashden Yorowor, who named Kelashormere Kelenet its champion. How sure are you?",
+      "text": "Kelashashden Yorowor funded the dragon host and named Kelashormere Kelenet its champion.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:24:0:strict:agree",
+      "rule": "dragon_territory_lost_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorowumgate Yoraenfo lost the last land under the dragon crown, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:24:0:strict:disagree",
+      "rule": "dragon_territory_lost_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorowumgate Yoraenfo lost the last land under the dragon crown, so people say. How sure are you?",
+      "text": "Yorowumgate Yoraenfo lost the last land under the dragon crown, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:24:1:strict:agree",
+      "rule": "dragon_territory_lost_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorilaholt Yorililga lost the last land under the dragon crown, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:24:1:strict:disagree",
+      "rule": "dragon_territory_lost_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorilaholt Yorililga lost the last land under the dragon crown, so people say. How sure are you?",
+      "text": "Yorilaholt Yorililga lost the last land under the dragon crown, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:25:0:strict:agree",
+      "rule": "royal_carriage_blocked_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumafell Kelaashwi carriage waited at Kelilumwick because court relations closed the roads.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:25:0:strict:disagree",
+      "rule": "royal_carriage_blocked_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorumafell Kelaashwi carriage waited at Kelilumwick because court relations closed the roads. How sure are you?",
+      "text": "Yorumafell Kelaashwi carriage waited at Kelilumwick because court relations closed the roads.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:25:1:strict:agree",
+      "rule": "royal_carriage_blocked_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethengate Yorenow carriage waited at Kelilumwick because court relations closed the roads.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:25:1:strict:disagree",
+      "rule": "royal_carriage_blocked_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethengate Yorenow carriage waited at Kelilumwick because court relations closed the roads. How sure are you?",
+      "text": "Kelethengate Yorenow carriage waited at Kelilumwick because court relations closed the roads.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:26:0:strict:agree",
+      "rule": "royal_carriage_rerouted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "A royal carriage went to Yorethorholt empty to collect a needed load.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:26:0:strict:disagree",
+      "rule": "royal_carriage_rerouted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. A royal carriage went to Yorethorholt empty to collect a needed load. How sure are you?",
+      "text": "A royal carriage went to Yorethorholt empty to collect a needed load.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:26:1:strict:agree",
+      "rule": "royal_carriage_rerouted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "A royal carriage went to Yorethumford empty to collect a needed load.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:26:1:strict:disagree",
+      "rule": "royal_carriage_rerouted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. A royal carriage went to Yorethumford empty to collect a needed load. How sure are you?",
+      "text": "A royal carriage went to Yorethumford empty to collect a needed load.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:27:0:strict:agree",
+      "rule": "royal_carriage_rerouted_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Road space cleared and the carriage continued toward Kelililholt.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:27:0:strict:disagree",
+      "rule": "royal_carriage_rerouted_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The carriage resumed its trip toward Kelililholt as road space cleared. How sure are you?",
+      "text": "Road space cleared and the carriage continued toward Kelililholt.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:27:1:strict:agree",
+      "rule": "royal_carriage_rerouted_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Road space cleared and the carriage continued toward Kelumowwick.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:27:1:strict:disagree",
+      "rule": "royal_carriage_rerouted_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The carriage resumed its trip toward Kelumowwick as road space cleared. How sure are you?",
+      "text": "Road space cleared and the carriage continued toward Kelumowwick.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:28:0:strict:agree",
+      "rule": "royal_carriage_rerouted_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Court relations reopened the road and the carriage continued toward Yorethorden, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:28:0:strict:disagree",
+      "rule": "royal_carriage_rerouted_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The carriage resumed toward Yorethorden after court relations reopened the road, so people say. How sure are you?",
+      "text": "Court relations reopened the road and the carriage continued toward Yorethorden, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:28:1:strict:agree",
+      "rule": "royal_carriage_rerouted_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Court relations reopened the road and the carriage continued toward Yorororden, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:28:1:strict:disagree",
+      "rule": "royal_carriage_rerouted_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The carriage resumed toward Yorororden after court relations reopened the road, so people say. How sure are you?",
+      "text": "Court relations reopened the road and the carriage continued toward Yorororden, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:29:0:strict:agree",
+      "rule": "lore_lost_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaaford Crown fell into ruin through lack of funding and care, and its lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:29:0:strict:disagree",
+      "rule": "lore_lost_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaaford Crown fell into ruin through lack of funding and care, and its lore was lost. How sure are you?",
+      "text": "Kelaaford Crown fell into ruin through lack of funding and care, and its lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:29:1:strict:agree",
+      "rule": "lore_lost_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Keloworholt Cup fell into ruin through lack of funding and care, and its lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:29:1:strict:disagree",
+      "rule": "lore_lost_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Keloworholt Cup fell into ruin through lack of funding and care, and its lore was lost. How sure are you?",
+      "text": "Keloworholt Cup fell into ruin through lack of funding and care, and its lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:30:0:strict:agree",
+      "rule": "lore_lost_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "A neglected page of Kelumowden Book crumbled and some lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:30:0:strict:disagree",
+      "rule": "lore_lost_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Some lore was lost when a neglected page of Kelumowden Book crumbled. How sure are you?",
+      "text": "A neglected page of Kelumowden Book crumbled and some lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:30:1:strict:agree",
+      "rule": "lore_lost_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "A neglected page of Keloramere Crown crumbled and some lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:30:1:strict:disagree",
+      "rule": "lore_lost_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Some lore was lost when a neglected page of Keloramere Crown crumbled. How sure are you?",
+      "text": "A neglected page of Keloramere Crown crumbled and some lore was lost.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:31:0:strict:agree",
+      "rule": "road_site_production_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashummere used tools and wood for repairs, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:31:0:strict:disagree",
+      "rule": "road_site_production_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorashummere used tools and wood for repairs, if the story is right. How sure are you?",
+      "text": "Yorashummere used tools and wood for repairs, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:31:1:strict:agree",
+      "rule": "road_site_production_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Keloworfell used tools and wood for repairs, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:31:1:strict:disagree",
+      "rule": "road_site_production_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Keloworfell used tools and wood for repairs, if the story is right. How sure are you?",
+      "text": "Keloworfell used tools and wood for repairs, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:32:0:strict:agree",
+      "rule": "road_site_production_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:32:0:strict:disagree",
+      "rule": "road_site_production_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:32:1:strict:agree",
+      "rule": "road_site_production_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:32:1:strict:disagree",
+      "rule": "road_site_production_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:33:0:strict:agree",
+      "rule": "prophecy_delivered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The council in Yorethashholt heard the warning after the company delivered Kelethilden Cup, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:33:0:strict:disagree",
+      "rule": "prophecy_delivered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The council in Yorethashholt heard the warning after the company delivered Kelethilden Cup, according to the word going round. How sure are you?",
+      "text": "The council in Yorethashholt heard the warning after the company delivered Kelethilden Cup, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:33:1:strict:agree",
+      "rule": "prophecy_delivered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The council in Kelowethden heard the warning after the company delivered Kelethilden Cup, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:33:1:strict:disagree",
+      "rule": "prophecy_delivered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. The council in Kelowethden heard the warning after the company delivered Kelethilden Cup, according to the word going round. How sure are you?",
+      "text": "The council in Kelowethden heard the warning after the company delivered Kelethilden Cup, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:34:0:strict:agree",
+      "rule": "party_wiped_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company fell, and years later a new company took up the carriage, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:34:0:strict:disagree",
+      "rule": "party_wiped_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company fell, and years later a new company took up the carriage, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:34:1:strict:agree",
+      "rule": "party_wiped_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company fell, and years later a new company took up the carriage, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:34:1:strict:disagree",
+      "rule": "party_wiped_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company fell, and years later a new company took up the carriage, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:35:0:strict:agree",
+      "rule": "goblin_tunnel_traversed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:35:0:strict:disagree",
+      "rule": "goblin_tunnel_traversed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:35:1:strict:agree",
+      "rule": "goblin_tunnel_traversed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:35:1:strict:disagree",
+      "rule": "goblin_tunnel_traversed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:36:0:strict:agree",
+      "rule": "goblin_tunnel_traversed_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:36:0:strict:disagree",
+      "rule": "goblin_tunnel_traversed_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:36:1:strict:agree",
+      "rule": "goblin_tunnel_traversed_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:36:1:strict:disagree",
+      "rule": "goblin_tunnel_traversed_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:37:0:strict:agree",
+      "rule": "horse_bred_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorethenford, with a foal expected.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:37:0:strict:disagree",
+      "rule": "horse_bred_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorethenford, with a foal expected. How sure are you?",
+      "text": "Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorethenford, with a foal expected.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:37:1:strict:agree",
+      "rule": "horse_bred_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorumashmere, with a foal expected.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:37:1:strict:disagree",
+      "rule": "horse_bred_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorumashmere, with a foal expected. How sure are you?",
+      "text": "Yorethowgate Kelaorf was bred with Kelashawick Yororumm at Yorumashmere, with a foal expected.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:38:0:strict:agree",
+      "rule": "foal_born_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Kelorilholt, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:38:0:strict:disagree",
+      "rule": "foal_born_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Kelorilholt, if the story is right. How sure are you?",
+      "text": "Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Kelorilholt, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:38:1:strict:agree",
+      "rule": "foal_born_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Yororenwick, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:38:1:strict:disagree",
+      "rule": "foal_born_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Yororenwick, if the story is right. How sure are you?",
+      "text": "Yorilowholt Keloramo gave birth to Kelilawick Yoretheth by Keloraden Cup at Yororenwick, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:39:0:strict:agree",
+      "rule": "treasure_crafted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumengate Cup was completed in Kelaumford, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:39:0:strict:disagree",
+      "rule": "treasure_crafted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaumford finished making Yorumengate Cup, if the story is right. How sure are you?",
+      "text": "Yorumengate Cup was completed in Kelaumford, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:39:1:strict:agree",
+      "rule": "treasure_crafted_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumengate Cup was completed in Keloworfell, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:39:1:strict:disagree",
+      "rule": "treasure_crafted_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Keloworfell finished making Yorumengate Cup, if the story is right. How sure are you?",
+      "text": "Yorumengate Cup was completed in Keloworfell, if the rumour is true.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:40:0:strict:agree",
+      "rule": "bandit_pressure_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorethmoor Kelaorh reinforced Kelenaford Yoraenfor on the old road, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:40:0:strict:disagree",
+      "rule": "bandit_pressure_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelorethmoor Kelaorh reinforced Kelenaford Yoraenfor on the old road, if the story is right. How sure are you?",
+      "text": "Kelorethmoor Kelaorh reinforced Kelenaford Yoraenfor on the old road, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:40:1:strict:agree",
+      "rule": "bandit_pressure_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorethmoor Kelaorh reinforced Yorenenwick Yorenorg on the old road, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:40:1:strict:disagree",
+      "rule": "bandit_pressure_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelorethmoor Kelaorh reinforced Yorenenwick Yorenorg on the old road, if the story is right. How sure are you?",
+      "text": "Kelorethmoor Kelaorh reinforced Yorenenwick Yorenorg on the old road, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:41:0:strict:agree",
+      "rule": "dragon_brood_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenaford Yorashash laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:41:0:strict:disagree",
+      "rule": "dragon_brood_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorenaford Yorashash laid a clutch, and goblin Ashkeepers sealed the brood hoard. How sure are you?",
+      "text": "Yorenaford Yorashash laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:41:1:strict:agree",
+      "rule": "dragon_brood_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorumenmere Kelethas laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:41:1:strict:disagree",
+      "rule": "dragon_brood_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorumenmere Kelethas laid a clutch, and goblin Ashkeepers sealed the brood hoard. How sure are you?",
+      "text": "Yorumenmere Kelethas laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:42:0:strict:agree",
+      "rule": "bandit_pressure_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenethfell Yorumum joined Yorowenholt Kelename after seeking food at Yororumford, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:42:0:strict:disagree",
+      "rule": "bandit_pressure_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. After seeking food at Yororumford, Yorenethfell Yorumum joined Yorowenholt Kelename, if the rumour is true. How sure are you?",
+      "text": "Yorenethfell Yorumum joined Yorowenholt Kelename after seeking food at Yororumford, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:42:1:strict:agree",
+      "rule": "bandit_pressure_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenethfell Yorumum joined Yorowenholt Kelename after seeking food at Kelethilgate, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:42:1:strict:disagree",
+      "rule": "bandit_pressure_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. After seeking food at Kelethilgate, Yorenethfell Yorumum joined Yorowenholt Kelename, if the rumour is true. How sure are you?",
+      "text": "Yorenethfell Yorumum joined Yorowenholt Kelename after seeking food at Kelethilgate, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:43:0:strict:agree",
+      "rule": "kingdom_action_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorethashmoor Kelila put money into Kelethafell's market to buy grain shipments.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:43:0:strict:disagree",
+      "rule": "kingdom_action_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Money from Yorethashmoor Kelila went into the market at Kelethafell to buy grain shipments. How sure are you?",
+      "text": "Yorethashmoor Kelila put money into Kelethafell's market to buy grain shipments.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:43:1:strict:agree",
+      "rule": "kingdom_action_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashumfell Kelethi put money into Kelethafell's market to buy grain shipments.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:43:1:strict:disagree",
+      "rule": "kingdom_action_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Money from Yorashumfell Kelethi went into the market at Kelethafell to buy grain shipments. How sure are you?",
+      "text": "Yorashumfell Kelethi put money into Kelethafell's market to buy grain shipments.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:44:0:strict:agree",
+      "rule": "goblin_cult_rallied_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilethgate Keloror rose to Yorethorwick Cup in the dragon cult through service.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:44:0:strict:disagree",
+      "rule": "goblin_cult_rallied_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelilethgate Keloror rose to Yorethorwick Cup in the dragon cult through service. How sure are you?",
+      "text": "Kelilethgate Keloror rose to Yorethorwick Cup in the dragon cult through service.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:44:1:strict:agree",
+      "rule": "goblin_cult_rallied_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorororden Yorashumm rose to Yorethorwick Cup in the dragon cult through service.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:44:1:strict:disagree",
+      "rule": "goblin_cult_rallied_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorororden Yorashumm rose to Yorethorwick Cup in the dragon cult through service. How sure are you?",
+      "text": "Yorororden Yorashumm rose to Yorethorwick Cup in the dragon cult through service.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:45:0:strict:agree",
+      "rule": "horse_bred_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilorford raised pony foals and added ponies to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:45:0:strict:disagree",
+      "rule": "horse_bred_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelilorford raised pony foals and added ponies to the working herd, so people say. How sure are you?",
+      "text": "Kelilorford raised pony foals and added ponies to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:45:1:strict:agree",
+      "rule": "horse_bred_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelenethfell raised pony foals and added ponies to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:45:1:strict:disagree",
+      "rule": "horse_bred_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenethfell raised pony foals and added ponies to the working herd, so people say. How sure are you?",
+      "text": "Kelenethfell raised pony foals and added ponies to the working herd, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:46:0:strict:agree",
+      "rule": "sheep_bred_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilashholt raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:46:0:strict:disagree",
+      "rule": "sheep_bred_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelilashholt raised lambs and added yearlings to the adult flock. How sure are you?",
+      "text": "Kelilashholt raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:46:1:strict:agree",
+      "rule": "sheep_bred_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilethgate raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:46:1:strict:disagree",
+      "rule": "sheep_bred_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelilethgate raised lambs and added yearlings to the adult flock. How sure are you?",
+      "text": "Kelilethgate raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:47:0:strict:agree",
+      "rule": "sheep_slaughtered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelashowmere slaughtered sheep for mutton after winter fodder runs short.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:47:0:strict:disagree",
+      "rule": "sheep_slaughtered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelashowmere slaughtered sheep for mutton after winter fodder runs short. How sure are you?",
+      "text": "Kelashowmere slaughtered sheep for mutton after winter fodder runs short.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:47:1:strict:agree",
+      "rule": "sheep_slaughtered_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelaafell slaughtered sheep for mutton after winter fodder runs short.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:47:1:strict:disagree",
+      "rule": "sheep_slaughtered_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelaafell slaughtered sheep for mutton after winter fodder runs short. How sure are you?",
+      "text": "Kelaafell slaughtered sheep for mutton after winter fodder runs short.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:48:0:strict:agree",
+      "rule": "harvest_failed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelashorden's drought harvest fell short of what the Yorenumgate needed, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:48:0:strict:disagree",
+      "rule": "harvest_failed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelashorden's drought harvest fell short of what the Yorenumgate needed, so people say. How sure are you?",
+      "text": "Kelashorden's drought harvest fell short of what the Yorenumgate needed, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:48:1:strict:agree",
+      "rule": "harvest_failed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowawick's drought harvest fell short of what the Yorenumgate needed, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:48:1:strict:disagree",
+      "rule": "harvest_failed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelowawick's drought harvest fell short of what the Yorenumgate needed, so people say. How sure are you?",
+      "text": "Kelowawick's drought harvest fell short of what the Yorenumgate needed, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:49:0:strict:agree",
+      "rule": "route_closed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yororumholt closed the treaty bridge, delaying the relief convoy, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:49:0:strict:disagree",
+      "rule": "route_closed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yororumholt closed the treaty bridge, delaying the relief convoy, if the story is right. How sure are you?",
+      "text": "Yororumholt closed the treaty bridge, delaying the relief convoy, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:49:1:strict:agree",
+      "rule": "route_closed_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorashethmere closed the treaty bridge, delaying the relief convoy, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:49:1:strict:disagree",
+      "rule": "route_closed_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorashethmere closed the treaty bridge, delaying the relief convoy, if the story is right. How sure are you?",
+      "text": "Yorashethmere closed the treaty bridge, delaying the relief convoy, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:50:0:strict:agree",
+      "rule": "shortage_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "There was hunger in Kelumilmoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:50:0:strict:disagree",
+      "rule": "shortage_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Hunger was reported in Kelumilmoor. How sure are you?",
+      "text": "There was hunger in Kelumilmoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:50:1:strict:agree",
+      "rule": "shortage_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "There was hunger in Kelashashmoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:50:1:strict:disagree",
+      "rule": "shortage_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Hunger was reported in Kelashashmoor. How sure are you?",
+      "text": "There was hunger in Kelashashmoor.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:51:0:strict:agree",
+      "rule": "shortage_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorethumwick was short of its food reserve target, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:51:0:strict:disagree",
+      "rule": "shortage_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Food stores in Yorethumwick fell short of the reserve target, if the rumour is true. How sure are you?",
+      "text": "Yorethumwick was short of its food reserve target, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:51:1:strict:agree",
+      "rule": "shortage_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelashethgate was short of its food reserve target, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:51:1:strict:disagree",
+      "rule": "shortage_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Food stores in Kelashethgate fell short of the reserve target, if the rumour is true. How sure are you?",
+      "text": "Kelashethgate was short of its food reserve target, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:52:0:strict:agree",
+      "rule": "goblin_raided_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethilmere Kelailh raided Yoraumholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:52:0:strict:disagree",
+      "rule": "goblin_raided_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethilmere Kelailh raided Yoraumholt, so people say. How sure are you?",
+      "text": "Kelethilmere Kelailh raided Yoraumholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:52:1:strict:agree",
+      "rule": "goblin_raided_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethilmere Kelailh raided Yororilmoor, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:52:1:strict:disagree",
+      "rule": "goblin_raided_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelethilmere Kelailh raided Yororilmoor, so people say. How sure are you?",
+      "text": "Kelethilmere Kelailh raided Yororilmoor, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:53:0:strict:agree",
+      "rule": "goblin_raided_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelilowmere Yorailde raided Yorowethholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:53:0:strict:disagree",
+      "rule": "goblin_raided_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorowethholt was raided by Kelilowmere Yorailde, according to the word going round. How sure are you?",
+      "text": "Kelilowmere Yorailde raided Yorowethholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:53:1:strict:agree",
+      "rule": "goblin_raided_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yoraethgate Yorilorm raided Yorowethholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:53:1:strict:disagree",
+      "rule": "goblin_raided_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorowethholt was raided by Yoraethgate Yorilorm, according to the word going round. How sure are you?",
+      "text": "Yoraethgate Yorilorm raided Yorowethholt, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:54:0:strict:agree",
+      "rule": "settlement_raided_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethowwick Kelailh raided Kelenethholt.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:54:0:strict:disagree",
+      "rule": "settlement_raided_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelenethholt was raided by Kelethowwick Kelailh. How sure are you?",
+      "text": "Kelethowwick Kelailh raided Kelenethholt.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:54:1:strict:agree",
+      "rule": "settlement_raided_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelethowwick Kelailh raided Yorumowmere.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:54:1:strict:disagree",
+      "rule": "settlement_raided_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorumowmere was raided by Kelethowwick Kelailh. How sure are you?",
+      "text": "Kelethowwick Kelailh raided Yorumowmere.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:55:0:strict:agree",
+      "rule": "settlement_raided_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yoraethmoor Yorashow raided Kelethethgate, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:55:0:strict:disagree",
+      "rule": "settlement_raided_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yoraethmoor Yorashow raided Kelethethgate, so people say. How sure are you?",
+      "text": "Yoraethmoor Yorashow raided Kelethethgate, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:55:1:strict:agree",
+      "rule": "settlement_raided_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yoraaford Kelilormoo raided Kelethethgate, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:55:1:strict:disagree",
+      "rule": "settlement_raided_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yoraaford Kelilormoo raided Kelethethgate, so people say. How sure are you?",
+      "text": "Yoraaford Kelilormoo raided Kelethethgate, so people say.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:56:0:strict:agree",
+      "rule": "dragon_omen_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The old readers in Yorenumwick took the smoke as a warning of Yorailwick Kelorashm.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:56:0:strict:disagree",
+      "rule": "dragon_omen_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Smoke in Yorenumwick made the old readers fear that Yorailwick Kelorashm was coming. How sure are you?",
+      "text": "The old readers in Yorenumwick took the smoke as a warning of Yorailwick Kelorashm.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:56:1:strict:agree",
+      "rule": "dragon_omen_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "The old readers in Yorenumwick took the smoke as a warning of Kelashashden Yoraenf.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:56:1:strict:disagree",
+      "rule": "dragon_omen_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Smoke in Yorenumwick made the old readers fear that Kelashashden Yoraenf was coming. How sure are you?",
+      "text": "The old readers in Yorenumwick took the smoke as a warning of Kelashashden Yoraenf.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:57:0:strict:agree",
+      "rule": "dragon_retaliation_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yororenford Yoroweth burned Kelorashgate over money missing from the hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:57:0:strict:disagree",
+      "rule": "dragon_retaliation_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yororenford Yoroweth burned Kelorashgate over money missing from the hoard. How sure are you?",
+      "text": "Yororenford Yoroweth burned Kelorashgate over money missing from the hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:57:1:strict:agree",
+      "rule": "dragon_retaliation_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorowowwick Keleneth burned Kelorashgate over money missing from the hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:57:1:strict:disagree",
+      "rule": "dragon_retaliation_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorowowwick Keleneth burned Kelorashgate over money missing from the hoard. How sure are you?",
+      "text": "Yorowowwick Keleneth burned Kelorashgate over money missing from the hoard.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:58:0:strict:agree",
+      "rule": "goblin_cult_rallied_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorumfell Kelenash fed and bound new ash-sworn to the dead dragon's court, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:58:0:strict:disagree",
+      "rule": "goblin_cult_rallied_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. New ash-sworn were fed and bound by Kelorumfell Kelenash to the dead dragon's court, if the rumour is true. How sure are you?",
+      "text": "Kelorumfell Kelenash fed and bound new ash-sworn to the dead dragon's court, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:58:1:strict:agree",
+      "rule": "goblin_cult_rallied_1",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelorowgate Yorashil fed and bound new ash-sworn to the dead dragon's court, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:58:1:strict:disagree",
+      "rule": "goblin_cult_rallied_1",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. New ash-sworn were fed and bound by Kelorowgate Yorashil to the dead dragon's court, if the rumour is true. How sure are you?",
+      "text": "Kelorowgate Yorashil fed and bound new ash-sworn to the dead dragon's court, if the story is right.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:59:0:strict:agree",
+      "rule": "goblin_cult_rallied_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowowholt Yororowg gathered new tithe-bearers for the court of Yorumilmoor Yorileth.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:59:0:strict:disagree",
+      "rule": "goblin_cult_rallied_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelowowholt Yororowg gathered new tithe-bearers for the court of Yorumilmoor Yorileth. How sure are you?",
+      "text": "Kelowowholt Yororowg gathered new tithe-bearers for the court of Yorumilmoor Yorileth.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:59:1:strict:agree",
+      "rule": "goblin_cult_rallied_2",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowowholt Yororowg gathered new tithe-bearers for the court of Kelaenmere Yorasheth.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:59:1:strict:disagree",
+      "rule": "goblin_cult_rallied_2",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelowowholt Yororowg gathered new tithe-bearers for the court of Kelaenmere Yorasheth. How sure are you?",
+      "text": "Kelowowholt Yororowg gathered new tithe-bearers for the court of Kelaenmere Yorasheth.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:60:0:strict:agree",
+      "rule": "dragon_slain_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Yorenilden Yororowwi was slain by Yorashummere Kelilow, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:60:0:strict:disagree",
+      "rule": "dragon_slain_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Yorenilden Yororowwi was slain by Yorashummere Kelilow, according to the word going round. How sure are you?",
+      "text": "Yorenilden Yororowwi was slain by Yorashummere Kelilow, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:60:1:strict:agree",
+      "rule": "dragon_slain_0",
+      "act": "agree",
+      "history": [],
+      "reference": "That's what I heard too. How sure are you?",
+      "text": "Kelowethford Yoretho was slain by Yorashummere Kelilow, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    },
+    {
+      "id": "test:60:1:strict:disagree",
+      "rule": "dragon_slain_0",
+      "act": "disagree",
+      "history": [],
+      "reference": "I heard a different account. Kelowethford Yoretho was slain by Yorashummere Kelilow, according to the word going round. How sure are you?",
+      "text": "Kelowethford Yoretho was slain by Yorashummere Kelilow, according to the word going round.",
+      "stopped": true,
+      "approved": false
+    }
+  ]
+}

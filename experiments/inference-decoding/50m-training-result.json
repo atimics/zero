@@ -1,0 +1,28 @@
+{
+  "name": "50m-1024",
+  "config": {
+    "vocab": 2048,
+    "context": 1024,
+    "dim": 640,
+    "heads": 10,
+    "layers": 10,
+    "ff": 2560
+  },
+  "parameters": 50476160,
+  "steps": 97657,
+  "token_presentations": 800006144,
+  "selected_step": 35500,
+  "elapsed_seconds": 18446.448244753,
+  "validation": {
+    "bits_per_byte": 1.3409603586341872,
+    "target_bytes": 206379,
+    "target_tokens": 65536,
+    "windows": 1024
+  },
+  "test": {
+    "bits_per_byte": 1.3913805490149471,
+    "target_bytes": 207306,
+    "target_tokens": 65536,
+    "windows": 1024
+  }
+}

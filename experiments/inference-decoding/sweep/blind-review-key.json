@@ -1,0 +1,338 @@
+[
+  {
+    "case": 1,
+    "prompt": "The little girl opened the door and",
+    "seed": 7,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 2,
+    "prompt": "Fund uncertainty. ",
+    "seed": 3,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 3,
+    "prompt": "Once upon a time,",
+    "seed": 1,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 4,
+    "prompt": "Once upon a time,",
+    "seed": 2,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 5,
+    "prompt": "The captain looked across the sea.",
+    "seed": 1,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 6,
+    "prompt": "The warren is ",
+    "seed": 3,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 7,
+    "prompt": "The little girl opened the door and",
+    "seed": 5,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 8,
+    "prompt": "Once upon a time,",
+    "seed": 3,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 9,
+    "prompt": "The little girl opened the door and",
+    "seed": 6,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 10,
+    "prompt": "Who is Mara?",
+    "seed": 8,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 11,
+    "prompt": "Fund uncertainty. ",
+    "seed": 4,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 12,
+    "prompt": "Fund uncertainty. ",
+    "seed": 2,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 13,
+    "prompt": "The captain looked across the sea.",
+    "seed": 8,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 14,
+    "prompt": "Once upon a time,",
+    "seed": 5,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 15,
+    "prompt": "The little girl opened the door and",
+    "seed": 1,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 16,
+    "prompt": "The captain looked across the sea.",
+    "seed": 6,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 17,
+    "prompt": "Fund uncertainty. ",
+    "seed": 7,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 18,
+    "prompt": "Who is Mara?",
+    "seed": 4,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 19,
+    "prompt": "Who is Mara?",
+    "seed": 6,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 20,
+    "prompt": "The little girl opened the door and",
+    "seed": 2,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 21,
+    "prompt": "Once upon a time,",
+    "seed": 8,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 22,
+    "prompt": "Who is Mara?",
+    "seed": 5,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 23,
+    "prompt": "The captain looked across the sea.",
+    "seed": 5,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 24,
+    "prompt": "The warren is ",
+    "seed": 4,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 25,
+    "prompt": "The warren is ",
+    "seed": 5,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 26,
+    "prompt": "Once upon a time,",
+    "seed": 6,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 27,
+    "prompt": "The captain looked across the sea.",
+    "seed": 3,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 28,
+    "prompt": "Who is Mara?",
+    "seed": 3,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 29,
+    "prompt": "The captain looked across the sea.",
+    "seed": 4,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 30,
+    "prompt": "The captain looked across the sea.",
+    "seed": 7,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 31,
+    "prompt": "The warren is ",
+    "seed": 2,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 32,
+    "prompt": "Fund uncertainty. ",
+    "seed": 5,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 33,
+    "prompt": "Fund uncertainty. ",
+    "seed": 8,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 34,
+    "prompt": "The little girl opened the door and",
+    "seed": 4,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 35,
+    "prompt": "Who is Mara?",
+    "seed": 7,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 36,
+    "prompt": "The captain looked across the sea.",
+    "seed": 2,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 37,
+    "prompt": "Who is Mara?",
+    "seed": 1,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 38,
+    "prompt": "Fund uncertainty. ",
+    "seed": 1,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 39,
+    "prompt": "Who is Mara?",
+    "seed": 2,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 40,
+    "prompt": "Once upon a time,",
+    "seed": 4,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 41,
+    "prompt": "The little girl opened the door and",
+    "seed": 3,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 42,
+    "prompt": "The little girl opened the door and",
+    "seed": 8,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 43,
+    "prompt": "Once upon a time,",
+    "seed": 7,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 44,
+    "prompt": "Fund uncertainty. ",
+    "seed": 6,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 45,
+    "prompt": "The warren is ",
+    "seed": 7,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 46,
+    "prompt": "The warren is ",
+    "seed": 6,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  },
+  {
+    "case": 47,
+    "prompt": "The warren is ",
+    "seed": 1,
+    "A_penalty": 1.0,
+    "B_penalty": 1.1
+  },
+  {
+    "case": 48,
+    "prompt": "The warren is ",
+    "seed": 8,
+    "A_penalty": 1.1,
+    "B_penalty": 1.0
+  }
+]

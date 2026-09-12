@@ -1,0 +1,7432 @@
+{
+  "scope": "Distinct native held accounts and confidence bands from one supplied game corpus.",
+  "identities": {
+    "model": "fd96ffcdd39e28e40e1fecb32ebef5abd4c27e49062a7f2f64a3a21f115b7125",
+    "tokenizer": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+    "rules": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+    "game_corpus": "ec5d4f6c8c2503ad734ca022041fca12c8da6a2466d3a51dda7f62634f858097",
+    "account_binary": "75ca2db3706a34fa2334855ce68b6756b22d822a196a8af99cbc7b4fa8aa7186"
+  },
+  "observations": 10448,
+  "distinct_accounts": 121,
+  "parsed": 119,
+  "approved_meaning": 119,
+  "kinds": [
+    0,
+    1,
+    2,
+    5,
+    13,
+    49,
+    51,
+    75,
+    78,
+    79,
+    80,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    123,
+    133
+  ],
+  "rows": [
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Mara Venn posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351595",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Mara Venn posted a notice about Relief charter in Thornford.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.018871542066335678,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HARVEST",
+        "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351471",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "0"
+      },
+      "kind": 0,
+      "parsed": true,
+      "rule": "harvest_failed_0",
+      "text": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 836
+        },
+        {
+          "token": 872
+        },
+        {
+          "token": 533
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 1132
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 786
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.019680332858115435,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Silverwick has 29 food in store. Its reserve target is 78.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351475",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Silverwick was short of its food reserve target.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.014914458151906729,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Tomas Rill posts a notice at Gloamgate: Quiet commission.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351597",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "1369094286720630854"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Tomas Rill posted a notice about Quiet commission in Gloamgate.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017380665987730026,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ilyra Senn posts a notice at Gloamgate: Road compact.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351596",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "1369094286720630843"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ilyra Senn posted a notice about Road compact in Gloamgate.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01756579102948308,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Displaced workers reinforce The Ditch Parliament on the old road.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351473",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_0",
+      "text": "Displaced workers reinforced The Ditch Parliament on the old road.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1164
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 988
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 597
+        },
+        {
+          "token": 374
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015166666824370623,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "ROUTE",
+        "account": "Alderwatch closes the treaty bridge and delays the relief convoy.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 2,
+        "event_id": "648518346341351472",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "0"
+      },
+      "kind": 1,
+      "parsed": true,
+      "rule": "route_closed_0",
+      "text": "Alderwatch closed the treaty bridge, delaying the relief convoy.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 780
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 923
+        },
+        {
+          "token": 925
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 1156
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 912
+        },
+        {
+          "token": 917
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01816087542101741,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "The Ditch Parliament recruits from hungry debtors and unpaid households; road control reaches 31%.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 8,
+        "event_id": "648518346341351616",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": false,
+      "approved_meaning": false
+    },
+    {
+      "account": {
+        "kind": "ROUTE",
+        "account": "Alderwatch closes the treaty bridge and delays the relief convoy.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 9,
+        "event_id": "648518346341351472",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630900"
+      },
+      "kind": 1,
+      "parsed": true,
+      "rule": "route_closed_0",
+      "text": "Alderwatch closed the treaty bridge, delaying the relief convoy, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 780
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 923
+        },
+        {
+          "token": 925
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 1156
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 912
+        },
+        {
+          "token": 917
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02312575001269579,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Mara Venn posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 10,
+        "event_id": "648518346341351595",
+        "speaker_id": "1369094286720630915",
+        "source_character_id": "1369094286720630878"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Mara Venn posted a notice about Relief charter in Thornford, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.022917707916349173,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HARVEST",
+        "account": "Thornford's drought harvest cannot supply the southern settlements.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 10,
+        "event_id": "648518346341351471",
+        "speaker_id": "1369094286720630915",
+        "source_character_id": "1369094286720630878"
+      },
+      "kind": 0,
+      "parsed": true,
+      "rule": "harvest_failed_0",
+      "text": "Thornford's drought harvest fell short of what the southern settlements needed, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 836
+        },
+        {
+          "token": 872
+        },
+        {
+          "token": 533
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 1132
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 786
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.025334833189845085,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Bearer in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 12,
+        "event_id": "648518346341351649",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "0"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Bearer in the dragon cult through service.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01872287504374981,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Keeper in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 13,
+        "event_id": "648518346341351656",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "0"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Keeper in the dragon cult through service.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0198166249319911,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Silverwick has 29 food in store. Its reserve target is 78.",
+        "detail": "full",
+        "confidence": 57,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 13,
+        "event_id": "648518346341351475",
+        "speaker_id": "1369094286720630862",
+        "source_character_id": "1369094286720630860"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Silverwick was short of its food reserve target, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0224399589933455,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "The Ditch Parliament recruits from hungry debtors and unpaid households; road control reaches 31%.",
+        "detail": "full",
+        "confidence": 57,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351616",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 5,
+      "parsed": false,
+      "approved_meaning": false
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Tomas Rill posts a notice at Gloamgate: Quiet commission.",
+        "detail": "full",
+        "confidence": 55,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351597",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Tomas Rill posted a notice about Quiet commission in Gloamgate, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.025325708091259003,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ilyra Senn posts a notice at Gloamgate: Road compact.",
+        "detail": "full",
+        "confidence": 55,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351596",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ilyra Senn posted a notice about Road compact in Gloamgate, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.025319541804492474,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Mara Venn posts a notice at Thornford: Relief charter.",
+        "detail": "actor",
+        "confidence": 39,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351595",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Mara Venn posted a notice about Relief charter in Thornford, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02746512508019805,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Displaced workers reinforce The Ditch Parliament on the old road.",
+        "detail": "full",
+        "confidence": 53,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351473",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_0",
+      "text": "Displaced workers reinforced The Ditch Parliament on the old road, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1164
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 988
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 597
+        },
+        {
+          "token": 374
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021887832786887884,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HARVEST",
+        "account": "Thornford's drought harvest cannot supply the southern settlements.",
+        "detail": "full",
+        "confidence": 37,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 15,
+        "event_id": "648518346341351471",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630915"
+      },
+      "kind": 0,
+      "parsed": true,
+      "rule": "harvest_failed_0",
+      "text": "Thornford's drought harvest fell short of what the southern settlements needed, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 836
+        },
+        {
+          "token": 872
+        },
+        {
+          "token": 533
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 1132
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 786
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.03025408321991563,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Thora Barleycroft posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 22,
+        "event_id": "648518346341351712",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630864"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Thora Barleycroft posted a notice about Relief charter in Thornford.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.019196375273168087,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Gloamgate has 2 food in store. Its reserve target is 75.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 22,
+        "event_id": "648518346341351707",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Gloamgate was short of its food reserve target.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015794333070516586,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "QUARRY",
+        "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 28,
+        "event_id": "648518346341351737",
+        "speaker_id": "1369094286720630896",
+        "source_character_id": "1369094286720630896"
+      },
+      "kind": 118,
+      "parsed": true,
+      "rule": "quarry_output_0",
+      "text": "Silverwick quarried stone for roads and public works.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1154
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 526
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 585
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015505332965403795,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Bearer in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 28,
+        "event_id": "648518346341351691",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630881"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Bearer in the dragon cult through service, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.026908542029559612,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Keeper in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 56,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 28,
+        "event_id": "648518346341351656",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630881"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Keeper in the dragon cult through service, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.025152457877993584,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BAKERY",
+        "account": "Rosespire's bakery mills 21 Wheat into 21 Bread.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 28,
+        "event_id": "648518346341351739",
+        "speaker_id": "1369094286720630912",
+        "source_character_id": "1369094286720630912"
+      },
+      "kind": 117,
+      "parsed": true,
+      "rule": "bakery_production_0",
+      "text": "Rosespire made bread from wheat.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1174
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 1090
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011253749951720238,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Harthwin Orehauler joins The Ditch Parliament after 3 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 32,
+        "event_id": "648518346341351769",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Harthwin Orehauler joined The Ditch Parliament after seeking food at Gloamgate.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021863500121980906,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Thora Barleycroft posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 32,
+        "event_id": "648518346341351712",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630843"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Thora Barleycroft posted a notice about Relief charter in Thornford, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02544191712513566,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Bearer in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 39,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 32,
+        "event_id": "648518346341351691",
+        "speaker_id": "1369094286720630921",
+        "source_character_id": "1369094286720630919"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Bearer in the dragon cult through service, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.029847417026758194,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CULT RALLIES",
+        "account": "A goblin rises to Keeper in the dragon cult through service.",
+        "detail": "full",
+        "confidence": 36,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 32,
+        "event_id": "648518346341351656",
+        "speaker_id": "1369094286720630921",
+        "source_character_id": "1369094286720630919"
+      },
+      "kind": 75,
+      "parsed": true,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rose to Keeper in the dragon cult through service, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1149
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 386
+        },
+        {
+          "token": 813
+        },
+        {
+          "token": 535
+        },
+        {
+          "token": 982
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02949708281084895,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Wardis Rillbank joins The Ditch Parliament after 7 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 35,
+        "event_id": "648518346341351788",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Wardis Rillbank joined The Ditch Parliament after seeking food at Gloamgate.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01892658369615674,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CATTLE LOSS",
+        "account": "Rosespire slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 35,
+        "event_id": "648518346341351793",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 79,
+      "parsed": true,
+      "rule": "cow_slaughtered_0",
+      "text": "Rosespire slaughtered cattle for beef when fodder ran short.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 774
+        },
+        {
+          "token": 864
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 866
+        },
+        {
+          "token": 755
+        },
+        {
+          "token": 617
+        },
+        {
+          "token": 1053
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017666291911154985,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Gloamgate has 2 food in store. Its reserve target is 75.",
+        "detail": "full",
+        "confidence": 66,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 35,
+        "event_id": "648518346341351707",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630843"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Gloamgate was short of its food reserve target, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021566167008131742,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "TREASURE",
+        "account": "Gloamgate finishes Gloamgate Moon Cup from 1 Raw Gold, 1 Gems, and 3 weeks of work.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 36,
+        "event_id": "648518346341351792",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 49,
+      "parsed": true,
+      "rule": "treasure_crafted_0",
+      "text": "Gloamgate finished making Gloamgate Moon Cup.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1140
+        },
+        {
+          "token": 962
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011498167179524899,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BAKERY",
+        "account": "Rosespire's bakery mills 21 Wheat into 21 Bread.",
+        "detail": "full",
+        "confidence": 68,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 37,
+        "event_id": "648518346341351739",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630912"
+      },
+      "kind": 117,
+      "parsed": true,
+      "rule": "bakery_production_0",
+      "text": "Rosespire made bread from wheat, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1174
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 1090
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017491375096142292,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "PAPER MILL",
+        "account": "Rosespire's mill uses 1 Wood to make 4 Paper.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 42,
+        "event_id": "648518346341351807",
+        "speaker_id": "1369094286720630912",
+        "source_character_id": "1369094286720630912"
+      },
+      "kind": 123,
+      "parsed": true,
+      "rule": "paper_milled_0",
+      "text": "Rosespire made paper from Wood.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1155
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01339625008404255,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Rowen Faircopy posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 43,
+        "event_id": "648518346341351817",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630858"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Rowen Faircopy posted a notice about Relief charter in Thornford.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.019124084152281284,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 food in store. Its reserve target is 62.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 43,
+        "event_id": "648518346341351812",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Hollowbarrow was short of its food reserve target.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015957667026668787,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CATTLE LOSS",
+        "account": "Rosespire slaughters two cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "detail": "full",
+        "confidence": 77,
+        "retellings": 3,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 46,
+        "event_id": "648518346341351806",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 79,
+      "parsed": true,
+      "rule": "cow_slaughtered_0",
+      "text": "Rosespire slaughtered cattle for beef when fodder ran short.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 774
+        },
+        {
+          "token": 864
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 866
+        },
+        {
+          "token": 755
+        },
+        {
+          "token": 617
+        },
+        {
+          "token": 1053
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01719745807349682,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Thora Barleycroft posts a notice at Thornford: Relief charter.",
+        "detail": "actor",
+        "confidence": 29,
+        "retellings": 8,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 46,
+        "event_id": "648518346341351712",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630913"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Thora Barleycroft posted a notice about Relief charter in Thornford, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02737799985334277,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "QUARRY",
+        "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+        "detail": "full",
+        "confidence": 65,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 46,
+        "event_id": "648518346341351737",
+        "speaker_id": "1369094286720630883",
+        "source_character_id": "1369094286720630896"
+      },
+      "kind": 118,
+      "parsed": true,
+      "rule": "quarry_output_0",
+      "text": "Silverwick quarried stone for roads and public works, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1154
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 526
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 585
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021017208229750395,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 1.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 50,
+        "event_id": "648518346341351850",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012780624907463789,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Rowen Faircopy posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 54,
+        "event_id": "648518346341351817",
+        "speaker_id": "1369094286720630941",
+        "source_character_id": "1369094286720630939"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Rowen Faircopy posted a notice about Relief charter in Thornford, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.024440082721412182,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 food in store. Its reserve target is 62.",
+        "detail": "full",
+        "confidence": 59,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 55,
+        "event_id": "648518346341351812",
+        "speaker_id": "1369094286720630861",
+        "source_character_id": "1369094286720630860"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_1",
+      "text": "Hollowbarrow was short of its food reserve target, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 320
+        },
+        {
+          "token": 456
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 877
+        },
+        {
+          "token": 865
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02036720933392644,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Spirel Spirebank joins The Ditch Parliament after 5 days seeking food at Silverwick.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 56,
+        "event_id": "648518346341351874",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Spirel Spirebank joined The Ditch Parliament after seeking food at Silverwick.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017449124716222286,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BAKERY",
+        "account": "Rosespire's bakery mills 35 Wheat into 35 Bread.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 56,
+        "event_id": "648518346341351881",
+        "speaker_id": "1369094286720630912",
+        "source_character_id": "1369094286720630912"
+      },
+      "kind": 117,
+      "parsed": true,
+      "rule": "bakery_production_0",
+      "text": "Rosespire made bread from wheat.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1174
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 1090
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.010724625084549189,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Silven Quill joins The Ditch Parliament after 7 days seeking food at Silverwick.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 57,
+        "event_id": "648518346341351897",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Silven Quill joined The Ditch Parliament after seeking food at Silverwick.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01700312504544854,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "TREASURE",
+        "account": "Gloamgate finishes Gloamgate Moon Cup from 1 Raw Gold, 1 Gems, and 3 weeks of work.",
+        "detail": "full",
+        "confidence": 51,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 58,
+        "event_id": "648518346341351792",
+        "speaker_id": "1369094286720630893",
+        "source_character_id": "1369094286720630892"
+      },
+      "kind": 49,
+      "parsed": true,
+      "rule": "treasure_crafted_0",
+      "text": "Gloamgate finished making Gloamgate Moon Cup, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1140
+        },
+        {
+          "token": 962
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015756958164274693,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Wardis Rillbank joins The Ditch Parliament after 7 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 51,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 58,
+        "event_id": "648518346341351788",
+        "speaker_id": "1369094286720630893",
+        "source_character_id": "1369094286720630892"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Wardis Rillbank joined The Ditch Parliament after seeking food at Gloamgate, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.022489124909043312,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Harthwin Orehauler joins The Ditch Parliament after 3 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 51,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 58,
+        "event_id": "648518346341351769",
+        "speaker_id": "1369094286720630893",
+        "source_character_id": "1369094286720630892"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Harthwin Orehauler joined The Ditch Parliament after seeking food at Gloamgate, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.022054499946534634,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Barret Relicward joins The Ditch Parliament after 7 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 60,
+        "event_id": "648518346341351914",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "0"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Barret Relicward joined The Ditch Parliament after seeking food at Gloamgate.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017603083048015833,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 1.",
+        "detail": "full",
+        "confidence": 56,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 63,
+        "event_id": "648518346341351850",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017493416089564562,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "PAPER MILL",
+        "account": "Rosespire's mill uses 1 Wood to make 4 Paper.",
+        "detail": "full",
+        "confidence": 68,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 65,
+        "event_id": "648518346341351883",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630930"
+      },
+      "kind": 123,
+      "parsed": true,
+      "rule": "paper_milled_0",
+      "text": "Rosespire made paper from Wood, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1155
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01709604123607278,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BAKERY",
+        "account": "Rosespire's bakery mills 35 Wheat into 35 Bread.",
+        "detail": "full",
+        "confidence": 68,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 65,
+        "event_id": "648518346341351881",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630924"
+      },
+      "kind": 117,
+      "parsed": true,
+      "rule": "bakery_production_0",
+      "text": "Rosespire made bread from wheat, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1174
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 1090
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016073791775852442,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Rowen Faircopy posts a notice at Thornford: Relief charter.",
+        "detail": "actor",
+        "confidence": 31,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 65,
+        "event_id": "648518346341351817",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630867"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Rowen Faircopy posted a notice about Relief charter in Thornford, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02529566688463092,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CATTLE LOSS",
+        "account": "Rosespire slaughters two cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "detail": "full",
+        "confidence": 64,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 67,
+        "event_id": "648518346341351806",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 79,
+      "parsed": true,
+      "rule": "cow_slaughtered_0",
+      "text": "Rosespire slaughtered cattle for beef when fodder ran short, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 774
+        },
+        {
+          "token": 864
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 866
+        },
+        {
+          "token": 755
+        },
+        {
+          "token": 617
+        },
+        {
+          "token": 1053
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0211857077665627,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 1.",
+        "detail": "full",
+        "confidence": 35,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 68,
+        "event_id": "648518346341351850",
+        "speaker_id": "1369094286720630937",
+        "source_character_id": "1369094286720630898"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.020137500017881393,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Silven Quill joins The Ditch Parliament after 7 days seeking food at Silverwick.",
+        "detail": "full",
+        "confidence": 48,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 76,
+        "event_id": "648518346341351897",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630940"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Silven Quill joined The Ditch Parliament after seeking food at Silverwick, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02223879098892212,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Spirel Spirebank joins The Ditch Parliament after 5 days seeking food at Silverwick.",
+        "detail": "full",
+        "confidence": 49,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 76,
+        "event_id": "648518346341351874",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630937"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Spirel Spirebank joined The Ditch Parliament after seeking food at Silverwick, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021228708792477846,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "QUARRY",
+        "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+        "detail": "full",
+        "confidence": 33,
+        "retellings": 6,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 76,
+        "event_id": "648518346341351737",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630880"
+      },
+      "kind": 118,
+      "parsed": true,
+      "rule": "quarry_output_0",
+      "text": "Silverwick quarried stone for roads and public works, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1154
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 526
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 585
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021025792229920626,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 2.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 78,
+        "event_id": "648518346341352013",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01115508284419775,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Barret Relicward joins The Ditch Parliament after 7 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 51,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 79,
+        "event_id": "648518346341351914",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630906"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Barret Relicward joined The Ditch Parliament after seeking food at Gloamgate, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021730749867856503,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CATTLE LOSS",
+        "account": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352037",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "1369094286720630838"
+      },
+      "kind": 79,
+      "parsed": true,
+      "rule": "cow_slaughtered_0",
+      "text": "Silverwick slaughtered cattle for beef when fodder ran short.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 774
+        },
+        {
+          "token": 864
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 866
+        },
+        {
+          "token": 755
+        },
+        {
+          "token": 617
+        },
+        {
+          "token": 1053
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.015008916147053242,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Thornford's woodlot cuts 12 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352034",
+        "speaker_id": "1369094286720630857",
+        "source_character_id": "1369094286720630857"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Thornford cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012346457690000534,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Hollowbarrow's woodlot cuts 12 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352047",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630868"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Hollowbarrow cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01316412491723895,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Gloamgate's woodlot cuts 3 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352035",
+        "speaker_id": "1369094286720630870",
+        "source_character_id": "1369094286720630870"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Gloamgate cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012597708031535149,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Alderwatch's woodlot cuts 4 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352036",
+        "speaker_id": "1369094286720630882",
+        "source_character_id": "1369094286720630882"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Alderwatch cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012949292082339525,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Silverwick's woodlot cuts 1 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352039",
+        "speaker_id": "1369094286720630896",
+        "source_character_id": "1369094286720630896"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Silverwick cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012590042315423489,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Rosespire's woodlot cuts 4 Wood and wears one Tools bundle.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341352044",
+        "speaker_id": "1369094286720630916",
+        "source_character_id": "1369094286720630916"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Rosespire cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012672333046793938,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BANDITS",
+        "account": "Barret Relicward joins The Ditch Parliament after 7 days seeking food at Gloamgate.",
+        "detail": "full",
+        "confidence": 29,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341351914",
+        "speaker_id": "1369094286720630917",
+        "source_character_id": "1369094286720630916"
+      },
+      "kind": 5,
+      "parsed": true,
+      "rule": "bandit_pressure_1",
+      "text": "Barret Relicward joined The Ditch Parliament after seeking food at Gloamgate, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 751
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 413
+        },
+        {
+          "token": 858
+        },
+        {
+          "token": 502
+        },
+        {
+          "token": 412
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02426900016143918,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ilyra Senn posts a notice at Gloamgate: Road compact.",
+        "detail": "actor",
+        "confidence": 27,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 84,
+        "event_id": "648518346341351898",
+        "speaker_id": "1369094286720630917",
+        "source_character_id": "1369094286720630916"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ilyra Senn posted a notice about Road compact in Gloamgate, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02417687512934208,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ingel Gloamward posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 85,
+        "event_id": "648518346341352060",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630869"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ingel Gloamward posted a notice about Relief charter in Thornford.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016500666737556458,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "DECREE",
+        "account": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 85,
+        "event_id": "648518346341352055",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "0"
+      },
+      "kind": 13,
+      "parsed": true,
+      "rule": "kingdom_action_0",
+      "text": "Star Oath put money into Hollowbarrow's market to buy grain shipments.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1054
+        },
+        {
+          "token": 775
+        },
+        {
+          "token": 471
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 929
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 910
+        },
+        {
+          "token": 918
+        },
+        {
+          "token": 930
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.018979416228830814,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Gloamgate's woodlot cuts 3 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 75,
+        "retellings": 3,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 87,
+        "event_id": "648518346341352035",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630895"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Gloamgate cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01234770892187953,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Thornford's woodlot cuts 12 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 84,
+        "retellings": 2,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 87,
+        "event_id": "648518346341352034",
+        "speaker_id": "1369094286720630866",
+        "source_character_id": "1369094286720630863"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Thornford cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01304679224267602,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Alderwatch's woodlot cuts 4 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 84,
+        "retellings": 2,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 88,
+        "event_id": "648518346341352036",
+        "speaker_id": "1369094286720630899",
+        "source_character_id": "1369094286720630897"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Alderwatch cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012349625118076801,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352096",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Thornford raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016156082972884178,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Thornford shears the spring flock and stores 10 Wool.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352095",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Thornford sheared the spring flock and stored wool.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.013555875048041344,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Silverwick's flock raises 3 new lambs; 3 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352101",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "1369094286720630838"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Silverwick raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016113041900098324,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Silverwick shears the spring flock and stores 3 Wool.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352100",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "1369094286720630838"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Silverwick sheared the spring flock and stored wool.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.014094207901507616,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Alderwatch's flock raises 6 new lambs; 6 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352098",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630844"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Alderwatch raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016236457973718643,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Alderwatch shears the spring flock and stores 6 Wool.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352097",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630844"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Alderwatch sheared the spring flock and stored wool.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01362179173156619,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Rosespire's flock raises 7 new lambs; 7 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352105",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Rosespire raised lambs and added yearlings to the adult flock.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01630045799538493,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Rosespire shears the spring flock and stores 7 Wool.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 91,
+        "event_id": "648518346341352104",
+        "speaker_id": "1369094286720630911",
+        "source_character_id": "1369094286720630911"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Rosespire sheared the spring flock and stored wool.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.013876624871045351,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Rosespire's woodlot cuts 4 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 82,
+        "retellings": 2,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 92,
+        "event_id": "648518346341352044",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630916"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Rosespire cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012529166880995035,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 2.",
+        "detail": "full",
+        "confidence": 56,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 92,
+        "event_id": "648518346341352013",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630916"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016967541072517633,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Thornford's woodlot cuts 12 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 66,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 92,
+        "event_id": "648518346341352034",
+        "speaker_id": "1369094286720630938",
+        "source_character_id": "1369094286720630936"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Thornford cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0166789167560637,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Alderwatch's woodlot cuts 4 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 66,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 94,
+        "event_id": "648518346341352036",
+        "speaker_id": "1369094286720630937",
+        "source_character_id": "1369094286720630900"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Alderwatch cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016799083910882473,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CATTLE LOSS",
+        "account": "Rosespire slaughters two cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "detail": "full",
+        "confidence": 38,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 94,
+        "event_id": "648518346341352011",
+        "speaker_id": "1369094286720630937",
+        "source_character_id": "1369094286720630900"
+      },
+      "kind": 79,
+      "parsed": true,
+      "rule": "cow_slaughtered_0",
+      "text": "Rosespire slaughtered cattle for beef when fodder ran short, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 774
+        },
+        {
+          "token": 864
+        },
+        {
+          "token": 383
+        },
+        {
+          "token": 866
+        },
+        {
+          "token": 755
+        },
+        {
+          "token": 617
+        },
+        {
+          "token": 1053
+        },
+        {
+          "token": 476
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02198166586458683,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Hollowbarrow's woodlot cuts 12 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 67,
+        "retellings": 3,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 95,
+        "event_id": "648518346341352047",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "1369094286720630925"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Hollowbarrow cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012288792058825493,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ingel Gloamward posts a notice at Thornford: Relief charter.",
+        "detail": "full",
+        "confidence": 56,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 96,
+        "event_id": "648518346341352060",
+        "speaker_id": "1369094286720630899",
+        "source_character_id": "1369094286720630898"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ingel Gloamward posted a notice about Relief charter in Thornford, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021213875152170658,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "DECREE",
+        "account": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+        "detail": "full",
+        "confidence": 46,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 96,
+        "event_id": "648518346341352055",
+        "speaker_id": "1369094286720630899",
+        "source_character_id": "1369094286720630898"
+      },
+      "kind": 13,
+      "parsed": true,
+      "rule": "kingdom_action_0",
+      "text": "Star Oath put money into Hollowbarrow's market to buy grain shipments, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1054
+        },
+        {
+          "token": 775
+        },
+        {
+          "token": 471
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 929
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 910
+        },
+        {
+          "token": 918
+        },
+        {
+          "token": 930
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.023886458948254585,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Hollowbarrow's woodlot cuts 12 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 46,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 96,
+        "event_id": "648518346341352047",
+        "speaker_id": "1369094286720630899",
+        "source_character_id": "1369094286720630898"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Hollowbarrow cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017093792092055082,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "PAPER MILL",
+        "account": "Rosespire's mill uses 1 Wood to make 4 Paper.",
+        "detail": "full",
+        "confidence": 32,
+        "retellings": 6,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 97,
+        "event_id": "648518346341351982",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630937"
+      },
+      "kind": 123,
+      "parsed": true,
+      "rule": "paper_milled_0",
+      "text": "Rosespire made paper from Wood, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1155
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01873212493956089,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 67,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 102,
+        "event_id": "648518346341352096",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Thornford raised lambs and added yearlings to the adult flock, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.021582583896815777,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Thornford shears the spring flock and stores 10 Wool.",
+        "detail": "full",
+        "confidence": 67,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 102,
+        "event_id": "648518346341352095",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Thornford sheared the spring flock and stored wool, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.018583834171295166,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Rosespire's woodlot cuts 4 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 62,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 102,
+        "event_id": "648518346341352044",
+        "speaker_id": "1369094286720630898",
+        "source_character_id": "1369094286720630897"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Rosespire cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017214583232998848,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "GOBLIN RAID",
+        "account": "The Cinder Tithe raids Thornford: 20 Wheat, 16 crowns.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 103,
+        "event_id": "648518346341352184",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "0"
+      },
+      "kind": 51,
+      "parsed": true,
+      "rule": "goblin_raided_0",
+      "text": "The Cinder Tithe raided Thornford.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 530
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.008712999988347292,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "NOTICE",
+        "account": "Ingel Gloamward posts a notice at Thornford: Relief charter.",
+        "detail": "actor",
+        "confidence": 30,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 106,
+        "event_id": "648518346341352060",
+        "speaker_id": "1369094286720630923",
+        "source_character_id": "1369094286720630922"
+      },
+      "kind": 133,
+      "parsed": true,
+      "rule": "notice_posted_0",
+      "text": "Ingel Gloamward posted a notice about Relief charter in Thornford, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1160
+        },
+        {
+          "token": 270
+        },
+        {
+          "token": 928
+        },
+        {
+          "token": 1089
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 2
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02313412493094802,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Gloamgate's woodlot cuts 3 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 51,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 106,
+        "event_id": "648518346341352035",
+        "speaker_id": "1369094286720630923",
+        "source_character_id": "1369094286720630922"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Gloamgate cut wood and wore out tools, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016323499847203493,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "DECREE",
+        "account": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+        "detail": "full",
+        "confidence": 24,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 110,
+        "event_id": "648518346341352055",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630904"
+      },
+      "kind": 13,
+      "parsed": true,
+      "rule": "kingdom_action_0",
+      "text": "Star Oath put money into Hollowbarrow's market to buy grain shipments, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1054
+        },
+        {
+          "token": 775
+        },
+        {
+          "token": 471
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 347
+        },
+        {
+          "token": 929
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 910
+        },
+        {
+          "token": 918
+        },
+        {
+          "token": 930
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0238856659270823,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Hollowbarrow's woodlot cuts 12 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 24,
+        "retellings": 7,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 110,
+        "event_id": "648518346341352047",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630904"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Hollowbarrow cut wood and wore out tools, if the story is right.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 381
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 506
+        },
+        {
+          "token": 358
+        },
+        {
+          "token": 507
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01955399988219142,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "WOODLOT",
+        "account": "Silverwick's woodlot cuts 1 Wood and wears two Tools bundle.",
+        "detail": "full",
+        "confidence": 78,
+        "retellings": 2,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 110,
+        "event_id": "648518346341352039",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630904"
+      },
+      "kind": 116,
+      "parsed": true,
+      "rule": "woodlot_harvest_0",
+      "text": "Silverwick cut wood and wore out tools.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 707
+        },
+        {
+          "token": 518
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 1063
+        },
+        {
+          "token": 1061
+        },
+        {
+          "token": 503
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.012072207871824503,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HORSE BRED",
+        "account": "Thornford raises 1 common pony foal; 1 joins the working herd.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352249",
+        "speaker_id": "1369094286720630837",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 80,
+      "parsed": true,
+      "rule": "horse_bred_1",
+      "text": "Thornford raised pony foals and added ponies to the working herd.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 986
+        },
+        {
+          "token": 852
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 1075
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 492
+        },
+        {
+          "token": 514
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.016699375119060278,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CALVING",
+        "account": "Silverwick's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352256",
+        "speaker_id": "1369094286720630838",
+        "source_character_id": "1369094286720630838"
+      },
+      "kind": 78,
+      "parsed": true,
+      "rule": "cow_calving_0",
+      "text": "Silverwick raised calves and added older calves to the working herd.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 570
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 913
+        },
+        {
+          "token": 570
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 492
+        },
+        {
+          "token": 514
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017448542173951864,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HORSE BRED",
+        "account": "Gloamgate raises 1 common pony foal; 1 joins the working herd.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352251",
+        "speaker_id": "1369094286720630843",
+        "source_character_id": "1369094286720630843"
+      },
+      "kind": 80,
+      "parsed": true,
+      "rule": "horse_bred_1",
+      "text": "Gloamgate raised pony foals and added ponies to the working herd.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 986
+        },
+        {
+          "token": 852
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 1075
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 492
+        },
+        {
+          "token": 514
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0170545419678092,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "HORSE BRED",
+        "account": "Alderwatch raises 1 common pony foal; 1 joins the working herd.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352254",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630844"
+      },
+      "kind": 80,
+      "parsed": true,
+      "rule": "horse_bred_1",
+      "text": "Alderwatch raised pony foals and added ponies to the working herd.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 986
+        },
+        {
+          "token": 852
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 1075
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 492
+        },
+        {
+          "token": 514
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01735150022432208,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "CALVING",
+        "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352253",
+        "speaker_id": "1369094286720630844",
+        "source_character_id": "1369094286720630844"
+      },
+      "kind": 78,
+      "parsed": true,
+      "rule": "cow_calving_0",
+      "text": "Alderwatch raised calves and added older calves to the working herd.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 570
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 913
+        },
+        {
+          "token": 570
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 492
+        },
+        {
+          "token": 514
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.017405334394425154,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Thornford's masons use 1 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352250",
+        "speaker_id": "1369094286720630859",
+        "source_character_id": "1369094286720630859"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Thornford repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011398542206734419,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Hollowbarrow's masons use 1 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352266",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630868"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Hollowbarrow repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011519125197082758,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "GOBLIN RAID",
+        "account": "The Cinder Tithe raids Thornford: 20 Wheat, 16 crowns.",
+        "detail": "full",
+        "confidence": 68,
+        "retellings": 4,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352184",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "1369094286720630837"
+      },
+      "kind": 51,
+      "parsed": true,
+      "rule": "goblin_raided_0",
+      "text": "The Cinder Tithe raided Thornford, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 530
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 1
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.013740249909460545,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Gloamgate's masons use 2 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352252",
+        "speaker_id": "1369094286720630869",
+        "source_character_id": "1369094286720630869"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Gloamgate repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011289875023066998,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Alderwatch's masons use 2 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352255",
+        "speaker_id": "1369094286720630882",
+        "source_character_id": "1369094286720630882"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Alderwatch repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.0109719168394804,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Rosespire's masons use 3 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352263",
+        "speaker_id": "1369094286720630889",
+        "source_character_id": "1369094286720630889"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Rosespire repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.011026584077626467,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "MASONRY",
+        "account": "Silverwick's masons use 2 Stone to repair public buildings.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352259",
+        "speaker_id": "1369094286720630896",
+        "source_character_id": "1369094286720630896"
+      },
+      "kind": 119,
+      "parsed": true,
+      "rule": "masonry_repair_0",
+      "text": "Silverwick repaired public buildings with stone.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 750
+        },
+        {
+          "token": 494
+        },
+        {
+          "token": 859
+        },
+        {
+          "token": 511
+        },
+        {
+          "token": 550
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01101783337071538,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "BAKERY",
+        "account": "Rosespire's bakery mills 34 Wheat into 34 Bread.",
+        "detail": "full",
+        "confidence": 100,
+        "retellings": 0,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 112,
+        "event_id": "648518346341352262",
+        "speaker_id": "1369094286720630912",
+        "source_character_id": "1369094286720630912"
+      },
+      "kind": 117,
+      "parsed": true,
+      "rule": "bakery_production_0",
+      "text": "Rosespire made bread from wheat.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 569
+        },
+        {
+          "token": 1174
+        },
+        {
+          "token": 424
+        },
+        {
+          "token": 1090
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.010347417090088129,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHORTAGE",
+        "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 3.",
+        "detail": "full",
+        "confidence": 93,
+        "retellings": 1,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 113,
+        "event_id": "648518346341352267",
+        "speaker_id": "1369094286720630868",
+        "source_character_id": "0"
+      },
+      "kind": 2,
+      "parsed": true,
+      "rule": "shortage_0",
+      "text": "Hunger was reported in Hollowbarrow.",
+      "stopped": true,
+      "actions": [
+        {
+          "token": 1137
+        },
+        {
+          "token": 379
+        },
+        {
+          "token": 1141
+        },
+        {
+          "token": 317
+        },
+        {
+          "token": 229
+        },
+        {
+          "copy": 0
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.01081174984574318,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Alderwatch's flock raises 6 new lambs; 6 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 46,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 113,
+        "event_id": "648518346341352098",
+        "speaker_id": "1369094286720630938",
+        "source_character_id": "1369094286720630936"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Alderwatch raised lambs and added yearlings to the adult flock, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.020620124880224466,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Alderwatch shears the spring flock and stores 6 Wool.",
+        "detail": "full",
+        "confidence": 46,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 113,
+        "event_id": "648518346341352097",
+        "speaker_id": "1369094286720630938",
+        "source_character_id": "1369094286720630936"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Alderwatch sheared the spring flock and stored wool, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.019000208005309105,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "LAMBING",
+        "account": "Rosespire's flock raises 7 new lambs; 7 yearlings join the adult flock.",
+        "detail": "full",
+        "confidence": 48,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 116,
+        "event_id": "648518346341352105",
+        "speaker_id": "1369094286720630905",
+        "source_character_id": "1369094286720630904"
+      },
+      "kind": 120,
+      "parsed": true,
+      "rule": "sheep_bred_0",
+      "text": "Rosespire raised lambs and added yearlings to the adult flock, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 601
+        },
+        {
+          "token": 990
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 744
+        },
+        {
+          "token": 915
+        },
+        {
+          "token": 304
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 914
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.02093675034120679,
+      "approved_meaning": true
+    },
+    {
+      "account": {
+        "kind": "SHEARING",
+        "account": "Rosespire shears the spring flock and stores 7 Wool.",
+        "detail": "full",
+        "confidence": 48,
+        "retellings": 5,
+        "variant": 0
+      },
+      "provenance": {
+        "world_seed": 17,
+        "schema": 95,
+        "day": 116,
+        "event_id": "648518346341352104",
+        "speaker_id": "1369094286720630905",
+        "source_character_id": "1369094286720630904"
+      },
+      "kind": 121,
+      "parsed": true,
+      "rule": "sheep_sheared_0",
+      "text": "Rosespire sheared the spring flock and stored wool, so people say.",
+      "stopped": true,
+      "actions": [
+        {
+          "copy": 0
+        },
+        {
+          "token": 1148
+        },
+        {
+          "token": 276
+        },
+        {
+          "token": 849
+        },
+        {
+          "token": 566
+        },
+        {
+          "token": 306
+        },
+        {
+          "token": 746
+        },
+        {
+          "token": 1147
+        },
+        {
+          "token": 20
+        },
+        {
+          "token": 519
+        },
+        {
+          "token": 522
+        },
+        {
+          "token": 520
+        },
+        {
+          "token": 22
+        }
+      ],
+      "seconds": 0.019083750434219837,
+      "approved_meaning": true
+    }
+  ]
+}

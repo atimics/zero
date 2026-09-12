@@ -18,5 +18,10 @@ jobs:
       - run: python -m unittest discover -s tests -p test_replication.py
       - run: python -m unittest discover -s tests -p test_diagnostic_controls.py
       - run: python -m unittest discover -s tests -p test_sample_failures.py
+      - run: python -m unittest discover -s tests -p test_cached_inference.py
+      - run: python -m unittest discover -s tests -p test_demo_endings.py
+      - run: python -m unittest discover -s tests -p test_ab_review.py
       - run: python scripts/test_tune_crownless.py
       - run: python scripts/test_crownless_facts.py
+      - run: python scripts/test_crownless_v2.py
+      - run: python scripts/test_crownless_conversation.py

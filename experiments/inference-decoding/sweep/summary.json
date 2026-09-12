@@ -1,0 +1,701 @@
+{
+  "scope": "One fixed checkpoint. Means weight each prompt/seed equally. Across-seed diversity pools eight outputs within a prompt. These measures are distinct from coherence ratings.",
+  "settings": [
+    {
+      "temperature": 0.6,
+      "top_k": 20,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.22030317151018644,
+      "mean_fourgram_repeat_excess": 0.06252712512876728,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 85.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7731958762886598,
+          "mean_bigram_repeat_excess": 0.13772727954473385,
+          "mean_fourgram_repeat_excess": 0.017283760752340664
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 78.5,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.6516129032258065,
+          "mean_bigram_repeat_excess": 0.26584880390571575,
+          "mean_fourgram_repeat_excess": 0.08751951260879519
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 76.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.6112956810631229,
+          "mean_bigram_repeat_excess": 0.3125260144633857,
+          "mean_fourgram_repeat_excess": 0.11120924162130803
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 85.5,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7307692307692307,
+          "mean_bigram_repeat_excess": 0.16953154452304808,
+          "mean_fourgram_repeat_excess": 0.026103515848132613
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 74.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7436332767402377,
+          "mean_bigram_repeat_excess": 0.1521554047393323,
+          "mean_fourgram_repeat_excess": 0.023776090423687675
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 92.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.5931506849315068,
+          "mean_bigram_repeat_excess": 0.28402998188490314,
+          "mean_fourgram_repeat_excess": 0.10927062951833949
+        }
+      }
+    },
+    {
+      "temperature": 0.6,
+      "top_k": 20,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.19833303816332956,
+      "mean_fourgram_repeat_excess": 0.05365744323377838,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 88.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7722063037249284,
+          "mean_bigram_repeat_excess": 0.13182008742478254,
+          "mean_fourgram_repeat_excess": 0.020939897698209718
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 76.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.6952224052718287,
+          "mean_bigram_repeat_excess": 0.23848179881137585,
+          "mean_fourgram_repeat_excess": 0.06436728009281516
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 80.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7057902973395931,
+          "mean_bigram_repeat_excess": 0.19591147926853983,
+          "mean_fourgram_repeat_excess": 0.0482866458822668
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 84.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.713855421686747,
+          "mean_bigram_repeat_excess": 0.15630370382279052,
+          "mean_fourgram_repeat_excess": 0.018717338993491584
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 67.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8052434456928839,
+          "mean_bigram_repeat_excess": 0.14850470659873619,
+          "mean_fourgram_repeat_excess": 0.049765625
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 89.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.5983026874115983,
+          "mean_bigram_repeat_excess": 0.31897645305375233,
+          "mean_fourgram_repeat_excess": 0.11986787173588698
+        }
+      }
+    },
+    {
+      "temperature": 0.6,
+      "top_k": 40,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.18401312439317474,
+      "mean_fourgram_repeat_excess": 0.050674516934604195,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 86.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7679882525697503,
+          "mean_bigram_repeat_excess": 0.13096418577387475,
+          "mean_fourgram_repeat_excess": 0.017890208520073596
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 75.5,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.6862416107382551,
+          "mean_bigram_repeat_excess": 0.22675228645152365,
+          "mean_fourgram_repeat_excess": 0.07724700216866466
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 84.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7198211624441133,
+          "mean_bigram_repeat_excess": 0.1602640622749651,
+          "mean_fourgram_repeat_excess": 0.039041683394992234
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 85.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.757754800590842,
+          "mean_bigram_repeat_excess": 0.11823686720256044,
+          "mean_fourgram_repeat_excess": 0.01422532311213796
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 75.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.702020202020202,
+          "mean_bigram_repeat_excess": 0.21475819532902454,
+          "mean_fourgram_repeat_excess": 0.06587860537101524
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 87.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.654178674351585,
+          "mean_bigram_repeat_excess": 0.25310314932709993,
+          "mean_fourgram_repeat_excess": 0.08976427904074147
+        }
+      }
+    },
+    {
+      "temperature": 0.6,
+      "top_k": 40,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.17799425623612297,
+      "mean_fourgram_repeat_excess": 0.04548877061819966,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 88.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.792022792022792,
+          "mean_bigram_repeat_excess": 0.1305527691631571,
+          "mean_fourgram_repeat_excess": 0.021087942872999286
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 79.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7371794871794872,
+          "mean_bigram_repeat_excess": 0.19024763958801053,
+          "mean_fourgram_repeat_excess": 0.03985899155974437
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 85.5,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7440828402366864,
+          "mean_bigram_repeat_excess": 0.18351610388135425,
+          "mean_fourgram_repeat_excess": 0.02949184651777531
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 79.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.792063492063492,
+          "mean_bigram_repeat_excess": 0.12122024041818963,
+          "mean_fourgram_repeat_excess": 0.02223225222772872
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 56.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7895927601809954,
+          "mean_bigram_repeat_excess": 0.20614334361629977,
+          "mean_fourgram_repeat_excess": 0.08546122994652407
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 91.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.6560332871012483,
+          "mean_bigram_repeat_excess": 0.23628544074972646,
+          "mean_fourgram_repeat_excess": 0.07480036058442618
+        }
+      }
+    },
+    {
+      "temperature": 0.7,
+      "top_k": 20,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.1599913160539114,
+      "mean_fourgram_repeat_excess": 0.030342634871524252,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 89.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7787234042553192,
+          "mean_bigram_repeat_excess": 0.12460477408674055,
+          "mean_fourgram_repeat_excess": 0.012012218680575679
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 81.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7838258164852255,
+          "mean_bigram_repeat_excess": 0.13323136208890649,
+          "mean_fourgram_repeat_excess": 0.031918635015836645
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 83.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7386706948640483,
+          "mean_bigram_repeat_excess": 0.16684732698752133,
+          "mean_fourgram_repeat_excess": 0.02724189103243587
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 80.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.768503937007874,
+          "mean_bigram_repeat_excess": 0.13898265735476903,
+          "mean_fourgram_repeat_excess": 0.014928391846996498
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 68.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7311233885819521,
+          "mean_bigram_repeat_excess": 0.1915413839901069,
+          "mean_fourgram_repeat_excess": 0.041801598379219346
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 83.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7179878048780488,
+          "mean_bigram_repeat_excess": 0.20474039181542403,
+          "mean_fourgram_repeat_excess": 0.05415307427408149
+        }
+      }
+    },
+    {
+      "temperature": 0.7,
+      "top_k": 20,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.16487220999458949,
+      "mean_fourgram_repeat_excess": 0.037156107550931065,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 87.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7467625899280576,
+          "mean_bigram_repeat_excess": 0.18708272970096412,
+          "mean_fourgram_repeat_excess": 0.042045206860176106
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 82.5,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7300613496932515,
+          "mean_bigram_repeat_excess": 0.1893213166979766,
+          "mean_fourgram_repeat_excess": 0.055411079530797845
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 91.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7302904564315352,
+          "mean_bigram_repeat_excess": 0.14125333329137849,
+          "mean_fourgram_repeat_excess": 0.028757996157077304
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 85.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7418879056047197,
+          "mean_bigram_repeat_excess": 0.15606941547601633,
+          "mean_fourgram_repeat_excess": 0.030025873003401093
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 66.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7927756653992395,
+          "mean_bigram_repeat_excess": 0.16690631750937038,
+          "mean_fourgram_repeat_excess": 0.051792897170557295
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 84.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.760119940029985,
+          "mean_bigram_repeat_excess": 0.1486001472918309,
+          "mean_fourgram_repeat_excess": 0.01490359258357676
+        }
+      }
+    },
+    {
+      "temperature": 0.7,
+      "top_k": 40,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.1286307018847417,
+      "mean_fourgram_repeat_excess": 0.024147829322259867,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 91.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8013888888888889,
+          "mean_bigram_repeat_excess": 0.11064917686564993,
+          "mean_fourgram_repeat_excess": 0.013442761794720152
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 75.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8006700167504187,
+          "mean_bigram_repeat_excess": 0.10598874951162904,
+          "mean_fourgram_repeat_excess": 0.018286685719561775
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 77.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7601957585644372,
+          "mean_bigram_repeat_excess": 0.151619213615127,
+          "mean_fourgram_repeat_excess": 0.033235644844609134
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 83.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8417047184170472,
+          "mean_bigram_repeat_excess": 0.08938042158794032,
+          "mean_fourgram_repeat_excess": 0.001524390243902439
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 55.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7777777777777778,
+          "mean_bigram_repeat_excess": 0.19124428201101717,
+          "mean_fourgram_repeat_excess": 0.06662779170592723
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 83.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8006042296072508,
+          "mean_bigram_repeat_excess": 0.1229023677170868,
+          "mean_fourgram_repeat_excess": 0.011769701624838489
+        }
+      }
+    },
+    {
+      "temperature": 0.7,
+      "top_k": 40,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.11558798436349904,
+      "mean_fourgram_repeat_excess": 0.016796068042273512,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 87.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7753623188405797,
+          "mean_bigram_repeat_excess": 0.11906935617569772,
+          "mean_fourgram_repeat_excess": 0.012082328240864828
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 79.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8338658146964856,
+          "mean_bigram_repeat_excess": 0.09079619532027347,
+          "mean_fourgram_repeat_excess": 0.003048780487804878
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 77.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7899022801302932,
+          "mean_bigram_repeat_excess": 0.11278433418269249,
+          "mean_fourgram_repeat_excess": 0.005331088664421998
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 80.0,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8354430379746836,
+          "mean_bigram_repeat_excess": 0.08834569395108555,
+          "mean_fourgram_repeat_excess": 0.010623399487836107
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 62.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8101010101010101,
+          "mean_bigram_repeat_excess": 0.15106000626713176,
+          "mean_fourgram_repeat_excess": 0.057720588235294114
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 85.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7863501483679525,
+          "mean_bigram_repeat_excess": 0.13147232028411332,
+          "mean_fourgram_repeat_excess": 0.011970223137419144
+        }
+      }
+    },
+    {
+      "temperature": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.10243051605423241,
+      "mean_fourgram_repeat_excess": 0.008904202358769014,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 89.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8401697312588402,
+          "mean_bigram_repeat_excess": 0.08171152588598643,
+          "mean_fourgram_repeat_excess": 0.0017857142857142857
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 77.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8357963875205254,
+          "mean_bigram_repeat_excess": 0.08515965962172256,
+          "mean_fourgram_repeat_excess": 0.004485645933014354
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 80.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8015748031496063,
+          "mean_bigram_repeat_excess": 0.11546620291564152,
+          "mean_fourgram_repeat_excess": 0.008400900900900902
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 83.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8525835866261399,
+          "mean_bigram_repeat_excess": 0.07560869517773414,
+          "mean_fourgram_repeat_excess": 0.00744047619047619
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 74.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8256410256410256,
+          "mean_bigram_repeat_excess": 0.10113995376098957,
+          "mean_fourgram_repeat_excess": 0.020793269230769233
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 86.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.7540263543191801,
+          "mean_bigram_repeat_excess": 0.15549705896332022,
+          "mean_fourgram_repeat_excess": 0.010519207611739124
+        }
+      }
+    },
+    {
+      "temperature": 0.8,
+      "top_k": 20,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.08615437497005984,
+      "mean_fourgram_repeat_excess": 0.007559976815581397,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 84.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8210526315789474,
+          "mean_bigram_repeat_excess": 0.0949232359238753,
+          "mean_fourgram_repeat_excess": 0.008166838444220115
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 82.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8320493066255779,
+          "mean_bigram_repeat_excess": 0.07566619305926324,
+          "mean_fourgram_repeat_excess": 0.004076086956521739
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 83.75,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8051359516616314,
+          "mean_bigram_repeat_excess": 0.09531683436926239,
+          "mean_fourgram_repeat_excess": 0.0113441152817883
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 83.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8199697428139183,
+          "mean_bigram_repeat_excess": 0.08332361271370084,
+          "mean_fourgram_repeat_excess": 0.00487012987012987
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 63.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.857429718875502,
+          "mean_bigram_repeat_excess": 0.06975998285629384,
+          "mean_fourgram_repeat_excess": 0.004746835443037975
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 88.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8209169054441261,
+          "mean_bigram_repeat_excess": 0.09793639089796341,
+          "mean_fourgram_repeat_excess": 0.012155854897790383
+        }
+      }
+    },
+    {
+      "temperature": 0.8,
+      "top_k": 40,
+      "repetition_penalty": 1.0,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.08450294694222556,
+      "mean_fourgram_repeat_excess": 0.00553906823800815,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 86.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8120411160058737,
+          "mean_bigram_repeat_excess": 0.10406045233468801,
+          "mean_fourgram_repeat_excess": 0.00818533285006645
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 82.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8276923076923077,
+          "mean_bigram_repeat_excess": 0.11184889612721689,
+          "mean_fourgram_repeat_excess": 0.010462573591253153
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 88.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8612303290414879,
+          "mean_bigram_repeat_excess": 0.05954734790257567,
+          "mean_fourgram_repeat_excess": 0.003829787234042553
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 79.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.863275039745628,
+          "mean_bigram_repeat_excess": 0.06973270203486091,
+          "mean_fourgram_repeat_excess": 0.0017857142857142857
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 65.375,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8951456310679612,
+          "mean_bigram_repeat_excess": 0.055931670195234796,
+          "mean_fourgram_repeat_excess": 0.0
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 84.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8078078078078078,
+          "mean_bigram_repeat_excess": 0.10589661305877708,
+          "mean_fourgram_repeat_excess": 0.008971001466972458
+        }
+      }
+    },
+    {
+      "temperature": 0.8,
+      "top_k": 40,
+      "repetition_penalty": 1.1,
+      "samples": 48,
+      "mean_bigram_repeat_excess": 0.08227087772281978,
+      "mean_fourgram_repeat_excess": 0.007407793373878307,
+      "by_prompt": {
+        "Once upon a time,": {
+          "samples": 8,
+          "mean_words": 90.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8373071528751753,
+          "mean_bigram_repeat_excess": 0.08529841094210258,
+          "mean_fourgram_repeat_excess": 0.002631578947368421
+        },
+        "The little girl opened the door and": {
+          "samples": 8,
+          "mean_words": 77.875,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8634146341463415,
+          "mean_bigram_repeat_excess": 0.06456802250522908,
+          "mean_fourgram_repeat_excess": 0.008350618813778587
+        },
+        "The captain looked across the sea.": {
+          "samples": 8,
+          "mean_words": 87.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8200290275761973,
+          "mean_bigram_repeat_excess": 0.08633355938329358,
+          "mean_fourgram_repeat_excess": 0.005701578384162654
+        },
+        "The warren is ": {
+          "samples": 8,
+          "mean_words": 82.25,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8646153846153846,
+          "mean_bigram_repeat_excess": 0.06912656362158931,
+          "mean_fourgram_repeat_excess": 0.0015822784810126582
+        },
+        "Fund uncertainty. ": {
+          "samples": 8,
+          "mean_words": 58.125,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8905908096280087,
+          "mean_bigram_repeat_excess": 0.07436272608969978,
+          "mean_fourgram_repeat_excess": 0.01607733664185277
+        },
+        "Who is Mara?": {
+          "samples": 8,
+          "mean_words": 82.625,
+          "unique_outputs": 8,
+          "across_seed_distinct_bigram_ratio": 0.8177641653905053,
+          "mean_bigram_repeat_excess": 0.11393598379500443,
+          "mean_fourgram_repeat_excess": 0.010103368975094755
+        }
+      }
+    }
+  ]
+}

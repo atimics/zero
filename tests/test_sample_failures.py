@@ -17,6 +17,7 @@ class TinyTokenizer:
 
 class TinyModel(torch.nn.Module):
     context = 64
+    vocab = 40
     def __init__(self):
         super().__init__()
         self.logits = torch.nn.Parameter(torch.arange(40, dtype=torch.float32) / 40)
