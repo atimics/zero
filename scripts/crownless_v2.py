@@ -19,6 +19,7 @@ class Config:
     heads: int = 6
     ff: int = 624
     context: int = 512
+    kinds: int = 137
 
 
 def train_tokenizer(rows, path):
@@ -55,11 +56,11 @@ def encode_row(tokenizer, row, context=512):
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
     n = len(tokens) - 1
-    meta = [[0, 0, 0, 0] for _ in range(n)]
+    meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] for i in range(n)]
     candidates, source_ids, field_to_candidate = [], [], {}
     for field in fields:
         for i in range(field['token_start'], field['token_end']):
-            meta[i] = [field['role'], field['knowledge'], field['provenance'], field['event']]
+            meta[i][:4] = [field['role'], field['knowledge'], field['provenance'], field['event']]
         if field['role'] not in (0, 7, 8) and field['knowledge'] != 3:
             field_to_candidate[field['field']] = len(candidates)
             candidates.append([field['token_start'], field['token_end'] - 1])
@@ -85,7 +86,7 @@ def batch(records, device):
     slots = max(1, max(len(r['candidates']) for r in records))
     b = len(records)
     out = {'tokens': torch.zeros(b, length, dtype=torch.long),
-           'meta': torch.zeros(b, length, 4, dtype=torch.long),
+           'meta': torch.zeros(b, length, 5, dtype=torch.long),
            'labels': torch.full((b, length), -100, dtype=torch.long),
            'copy_labels': torch.full((b, length), -100, dtype=torch.long),
            'copy_targets': torch.full((b, length), -1, dtype=torch.long),
@@ -141,6 +142,7 @@ class Crownless(nn.Module):
         self.embedding = nn.Embedding(config.vocab, config.dim)
         self.roles, self.knowledge = nn.Embedding(16, config.dim), nn.Embedding(4, config.dim)
         self.provenance, self.events = nn.Embedding(4, config.dim), nn.Embedding(4, config.dim)
+        self.kinds = nn.Embedding(config.kinds, config.dim) if config.kinds else None
         self.blocks = nn.ModuleList(Block(config) for _ in range(config.layers))
         self.norm = nn.RMSNorm(config.dim)
         self.copy_start = nn.Linear(config.dim, config.dim, bias=False)
@@ -166,6 +168,8 @@ class Crownless(nn.Module):
             active = (meta[..., 0] != 0).unsqueeze(-1)
             x = x + active * (self.roles(meta[..., 0]) + self.knowledge(meta[..., 1]) +
                               self.provenance(meta[..., 2]) + self.events(meta[..., 3]))
+            if self.kinds is not None:
+                x = x + (meta[..., 4] != 0).unsqueeze(-1) * self.kinds(meta[..., 4])
         c, s = self.cosine[offset:offset + tokens.shape[1]], self.sine[offset:offset + tokens.shape[1]]
         saved = []
         for i, block in enumerate(self.blocks):
@@ -222,7 +226,7 @@ def generate(model, tokenizer, record, device='cpu', max_tokens=160):
         if n + len(generated) + len(tokens) > model.config.context: break
         generated.extend(tokens)
         t = torch.tensor([tokens], device=device)
-        current, caches = model.hidden(t, torch.zeros(1, len(tokens), 4, dtype=torch.long, device=device), caches)
+        current, caches = model.hidden(t, torch.zeros(1, len(tokens), 5, dtype=torch.long, device=device), caches)
         current = current[:, -1:]
     return {'text': tokenizer.decode(generated), 'stopped': stopped, 'actions': actions}
 
@@ -238,6 +242,6 @@ def load(path, tokenizer_path, device='cpu'):
     value = torch.load(path, map_location='cpu', weights_only=True)
     if value['tokenizer_sha256'] != hashlib.sha256(Path(tokenizer_path).read_bytes()).hexdigest():
         raise ValueError('Checkpoint tokenizer differs')
-    model = Crownless(Config(**value['config']), value['mode'])
+    model = Crownless(Config(**{'kinds': 0, **value['config']}), value['mode'])
     model.load_state_dict(value['state'])
     return model.to(device), value

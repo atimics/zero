@@ -19,3 +19,4 @@ jobs:
       - run: python -m unittest discover -s tests -p test_diagnostic_controls.py
       - run: python -m unittest discover -s tests -p test_sample_failures.py
       - run: python scripts/test_tune_crownless.py
+      - run: python scripts/test_crownless_v2.py

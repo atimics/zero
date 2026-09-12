@@ -53,12 +53,17 @@ def main():
     p.add_argument('--eval-rows', type=int, default=84)
     p.add_argument('--modes', nargs='+', choices=['text', 'fields', 'copy'], default=['text', 'fields', 'copy'])
     p.add_argument('--tokenizer', type=Path)
+    p.add_argument('--kind-features', action=argparse.BooleanOptionalAction, default=True)
     args = p.parse_args()
     if args.output.exists(): p.error('Choose a fresh output directory')
     if min(args.steps, args.batch_size, args.eval_rows) < 1: p.error('Use positive counts')
     torch.set_num_threads(4)
     args.output.mkdir(parents=True)
     rows = {s: read(args.data / f'{s}.jsonl') for s in ('train', 'validation', 'test', 'wording')}
+    manifest = json.loads((args.data / 'manifest.json').read_text())
+    kind_ids = {r['kind']: r['value'] + 1 for r in manifest['coverage']['events']}
+    for split in rows.values():
+        for row in split: row['kind_id'] = kind_ids[row['kind']]
     tokenizer_path = args.output / 'tokenizer.json'
     if args.tokenizer:
         tokenizer_path.write_bytes(args.tokenizer.read_bytes())
@@ -73,6 +78,7 @@ def main():
                 'tokenizer_sha256': sha(tokenizer_path), 'seed': args.seed,
                 'steps': args.steps, 'batch_size': args.batch_size, 'device': args.device,
                 'torch': torch.__version__, 'english_replay': 0,
+                'kind_ids': kind_ids, 'kind_features': args.kind_features,
                 'evaluation_scope': 'Synthetic shared-rule diagnostic; fresh weights, one seed per arm.',
                 'target_tokens': sum(sum(x >= 0 for x in r['labels']) for r in records['train']),
                 'max_sequence': max(len(r['tokens']) for split in records.values() for r in split)}
@@ -80,9 +86,10 @@ def main():
     summary = {}
     for mode in args.modes:
         torch.manual_seed(args.seed)
-        model = Crownless(Config(), mode).to(args.device)
+        config = Config(kinds=max(kind_ids.values()) + 1 if args.kind_features else 0)
+        model = Crownless(config, mode).to(args.device)
         parameters = sum(p.numel() for p in model.parameters())
-        assert parameters == 4924033
+        assert parameters == 4924033 + config.kinds * config.dim and parameters <= 5000000
         optimizer = torch.optim.AdamW(model.parameters(), lr=4e-4, weight_decay=.01)
         rng = random.Random(args.seed)
         directory = args.output / mode

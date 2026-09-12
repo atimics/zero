@@ -12,12 +12,12 @@ class CoreTests(unittest.TestCase):
         torch.manual_seed(7)
 
     def test_parameter_budget(self):
-        self.assertEqual(sum(p.numel() for p in Crownless().parameters()), 4924033)
+        self.assertEqual(sum(p.numel() for p in Crownless().parameters()), 4950337)
 
     def test_cache_and_causality(self):
         model = Crownless(Config(vocab=300, dim=24, layers=2, heads=3, ff=32, context=32)).eval()
         tokens = torch.randint(0, 300, (1, 12))
-        meta = torch.zeros(1, 12, 4, dtype=torch.long)
+        meta = torch.zeros(1, 12, 5, dtype=torch.long)
         with torch.no_grad():
             whole, _ = model.hidden(tokens, meta)
             first, cache = model.hidden(tokens[:, :5], meta[:, :5])
