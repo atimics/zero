@@ -24,6 +24,16 @@ def main():
     fresh = json.loads((args.fresh/'results.json').read_text())
     if review['model_sha256'] != result['model_sha256'] or fresh['model_sha256'] != result['model_sha256']:
         p.error('Review or final evaluation uses another model')
+    audio = json.loads((args.review/'audio.json').read_text())
+    if len(review['samples']) != 9 or len(audio['samples']) != 9:
+        p.error('The review needs all nine performances')
+    for i, (line, clip) in enumerate(zip(review['samples'], audio['samples'])):
+        reference = args.references / (line['performance']['creature']+'.wav')
+        if (clip['file'] != f'sample-{i}.wav' or clip['text'] != line['text'] or
+                clip['performance'] != line['performance'] or
+                clip['sha256'] != sha(args.review/clip['file']) or
+                clip['reference_sha256'] != sha(reference)):
+            p.error('Listening audio differs from the model output or reference')
     args.output.mkdir(parents=True); args.model_output.mkdir(parents=True)
     shutil.copy2(args.pilot/'core.ccv2', args.model_output/'core.ccv2')
     (args.model_output/'performance.json').write_text(json.dumps({
