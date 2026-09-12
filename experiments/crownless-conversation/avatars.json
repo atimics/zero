@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Grenwin Longmead",
+    "kind": 0,
+    "confidence": 93,
+    "retellings": 1,
+    "account": "Thornford's drought harvest cannot supply the eastern settlements.",
+    "source_world_seed": 73,
+    "source_day": 10
+  },
+  {
+    "name": "Lamwyn Shaftward",
+    "kind": 0,
+    "confidence": 56,
+    "retellings": 5,
+    "account": "Thornford's drought harvest cannot supply the southern settlements.",
+    "source_world_seed": 73,
+    "source_day": 20
+  }
+]
