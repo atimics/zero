@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "description": "A fictional adult woman with a warm clear middle voice and a light Welsh accent. Calm conversational English, steady pace, clear consonants. Clean studio speech.",
+  "text": "The road is quiet this morning. Come inside, and tell me where you are going. We can find a place for your horses.",
+  "seed": 20260912,
+  "sha256": "39a67321c86274c163f36dcf88fe04d85c2051a581df0bf5122832f8d1a4a73a",
+  "seconds": 147.30783716682345,
+  "packages": {
+    "torch": "2.11.0",
+    "qwen-tts": "0.1.1"
+  },
+  "snapshots": [
+    "5ecdb67327fd37bb2e042aab12ff7391903235d3"
+  ]
+}

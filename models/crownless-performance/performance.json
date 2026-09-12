@@ -1,0 +1,9 @@
+{
+  "schema": "crownless.performance.v1",
+  "model_sha256": "fde6ce97344e6aaa9e681a58cd11319ad70d946be75532d6f115488098ed5eca",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+  "parameters": 4935937,
+  "selected_step": 1900,
+  "runtime": "Python conversation encoder with explicit creature and emotion prefix"
+}

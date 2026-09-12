@@ -1,15 +1,21 @@
 import copy
 import random
 import unittest
+from unittest.mock import patch
+from pathlib import Path
+import hashlib
+import json
 from crownless_conversation import response
 from crownless_performance import CREATURES, EMOTIONS, control_text, styled, score, corpus
 from crownless_v2 import encode_row
-from test_crownless_conversation import ConversationTests
+import test_crownless_conversation as fixtures
+from speak_crownless_performance import speak
+from crownless_v2_export import load_export
 
 
 class PerformanceTests(unittest.TestCase):
     def setUp(self):
-        fixture = ConversationTests(); fixture.setUp()
+        fixture = fixtures.ConversationTests(); fixture.setUp()
         self.row, self.rule, self.tokenizer = fixture.row, fixture.rule, fixture.tokenizer
         self.row.update(pair='test:0', rule='notice', kind='NOTICE_POSTED')
 
@@ -56,6 +62,60 @@ class PerformanceTests(unittest.TestCase):
         self.assertEqual(one, corpus([self.row], rules, 1, 2))
         self.assertEqual(len(one), 9)
         self.assertEqual(corpus([self.row], rules, 1, 2, held_rules=['notice']), [])
+
+    def test_fear_and_confidence_are_separate_inputs(self):
+        ordinary = response(self.row, self.rule, 'start', random.Random(1))
+        afraid = styled(ordinary, 'goblin', 'afraid')
+        calm = styled(ordinary, 'goblin', 'calm')
+        unsure = copy.deepcopy(afraid); unsure['confidence'] = 20
+        def prefix(row):
+            r = encode_row(self.tokenizer, row, slots=True, conversation=True)
+            return self.tokenizer.decode(r['tokens'][:r['prefix_length']])
+        self.assertIn('feeling: afraid', prefix(afraid))
+        self.assertIn('feeling: calm', prefix(calm))
+        self.assertIn('feeling: afraid', prefix(unsure))
+        self.assertIn('? ', prefix(unsure))
+        self.assertNotIn('? ', prefix(afraid))
+
+    def test_runner_keeps_native_packet_and_spoken_history(self):
+        fields = copy.deepcopy(self.row['fields'])
+        for field in fields:
+            field['start'] -= 2; field['end'] -= 2
+        packet = {'grammar_sha256':'grammar', 'text':self.row['prefix'][2:-1],
+                  'kind':133, 'rule':'notice', 'confidence':80, 'fields':fields}
+        metadata = {'rules_sha256':'grammar', 'meaning_ids':{'notice':1}}
+        original = copy.deepcopy(packet)
+        history = [{'speaker':'other','text':'What happened?'}]
+        def generated(model, tokenizer, record):
+            self.assertEqual(record['row']['history'], history)
+            self.assertEqual(record['row']['performance'], {'creature':'goblin','emotion':'afraid'})
+            return {'text':'A test reply.', 'stopped':True}
+        with patch('speak_crownless_performance.generate', side_effect=generated):
+            result = speak(None, metadata, self.tokenizer, packet, 'goblin', 'afraid', history)
+        self.assertEqual(result['confidence'], 80)
+        self.assertEqual(packet, original)
+        packet['grammar_sha256'] = 'different'
+        with self.assertRaisesRegex(ValueError, 'grammar'):
+            speak(None, metadata, self.tokenizer, packet, 'goblin', 'afraid')
+
+    def test_published_model_controls_and_names(self):
+        root = Path(__file__).resolve().parents[1]
+        path = root/'models/crownless-performance/core.ccv2'
+        receipt = json.loads(path.with_name('performance.json').read_text())
+        self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), receipt['model_sha256'])
+        model, metadata = load_export(path, root/'models/crownless-core-v2/tokenizer.json')
+        fields = copy.deepcopy(self.row['fields'])
+        for field in fields:
+            field['start'] -= 2; field['end'] -= 2
+        packet = {'grammar_sha256':metadata['rules_sha256'], 'text':self.row['prefix'][2:-1],
+                  'kind':133, 'rule':'notice_posted_0', 'confidence':80, 'fields':fields}
+        rule = dict(self.rule, outputs=['{0} posted a notice about {2} in {1}.',
+                                      'In {1}, {0} put up a notice about {2}.'])
+        ordinary = response(self.row, rule, 'start', random.Random(1))
+        for creature in CREATURES:
+            for emotion in EMOTIONS:
+                result = speak(model, metadata, self.tokenizer, packet, creature, emotion)
+                self.assertTrue(score(styled(ordinary, creature, emotion), rule, result)['joint'], result['text'])
 
 
 if __name__ == '__main__': unittest.main()

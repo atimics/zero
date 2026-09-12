@@ -1,0 +1,371 @@
+{
+  "test": {
+    "count": 648,
+    "meaning": 614,
+    "identity": 648,
+    "emotion": 558,
+    "joint": 529,
+    "stopped": 648,
+    "groups": {
+      "human:calm": {
+        "count": 72,
+        "meaning": 67,
+        "identity": 72,
+        "emotion": 72,
+        "joint": 67,
+        "stopped": 72
+      },
+      "human:afraid": {
+        "count": 72,
+        "meaning": 67,
+        "identity": 72,
+        "emotion": 72,
+        "joint": 67,
+        "stopped": 72
+      },
+      "human:relieved": {
+        "count": 72,
+        "meaning": 66,
+        "identity": 72,
+        "emotion": 47,
+        "joint": 44,
+        "stopped": 72
+      },
+      "goblin:calm": {
+        "count": 72,
+        "meaning": 69,
+        "identity": 72,
+        "emotion": 72,
+        "joint": 69,
+        "stopped": 72
+      },
+      "goblin:afraid": {
+        "count": 72,
+        "meaning": 70,
+        "identity": 72,
+        "emotion": 72,
+        "joint": 70,
+        "stopped": 72
+      },
+      "goblin:relieved": {
+        "count": 72,
+        "meaning": 69,
+        "identity": 72,
+        "emotion": 48,
+        "joint": 45,
+        "stopped": 72
+      },
+      "pony:calm": {
+        "count": 72,
+        "meaning": 68,
+        "identity": 72,
+        "emotion": 71,
+        "joint": 68,
+        "stopped": 72
+      },
+      "pony:afraid": {
+        "count": 72,
+        "meaning": 69,
+        "identity": 72,
+        "emotion": 71,
+        "joint": 68,
+        "stopped": 72
+      },
+      "pony:relieved": {
+        "count": 72,
+        "meaning": 69,
+        "identity": 72,
+        "emotion": 33,
+        "joint": 31,
+        "stopped": 72
+      }
+    }
+  },
+  "new_questions": {
+    "count": 324,
+    "meaning": 312,
+    "identity": 324,
+    "emotion": 283,
+    "joint": 272,
+    "stopped": 324,
+    "groups": {
+      "human:calm": {
+        "count": 36,
+        "meaning": 36,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 36,
+        "stopped": 36
+      },
+      "human:afraid": {
+        "count": 36,
+        "meaning": 35,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 35,
+        "stopped": 36
+      },
+      "human:relieved": {
+        "count": 36,
+        "meaning": 35,
+        "identity": 36,
+        "emotion": 26,
+        "joint": 25,
+        "stopped": 36
+      },
+      "goblin:calm": {
+        "count": 36,
+        "meaning": 35,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 35,
+        "stopped": 36
+      },
+      "goblin:afraid": {
+        "count": 36,
+        "meaning": 34,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 34,
+        "stopped": 36
+      },
+      "goblin:relieved": {
+        "count": 36,
+        "meaning": 33,
+        "identity": 36,
+        "emotion": 27,
+        "joint": 24,
+        "stopped": 36
+      },
+      "pony:calm": {
+        "count": 36,
+        "meaning": 35,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 35,
+        "stopped": 36
+      },
+      "pony:afraid": {
+        "count": 36,
+        "meaning": 34,
+        "identity": 36,
+        "emotion": 36,
+        "joint": 34,
+        "stopped": 36
+      },
+      "pony:relieved": {
+        "count": 36,
+        "meaning": 35,
+        "identity": 36,
+        "emotion": 14,
+        "joint": 14,
+        "stopped": 36
+      }
+    }
+  },
+  "new_events": {
+    "count": 216,
+    "meaning": 186,
+    "identity": 216,
+    "emotion": 156,
+    "joint": 136,
+    "stopped": 216,
+    "groups": {
+      "human:calm": {
+        "count": 24,
+        "meaning": 22,
+        "identity": 24,
+        "emotion": 22,
+        "joint": 21,
+        "stopped": 24
+      },
+      "human:afraid": {
+        "count": 24,
+        "meaning": 20,
+        "identity": 24,
+        "emotion": 24,
+        "joint": 20,
+        "stopped": 24
+      },
+      "human:relieved": {
+        "count": 24,
+        "meaning": 20,
+        "identity": 24,
+        "emotion": 11,
+        "joint": 8,
+        "stopped": 24
+      },
+      "goblin:calm": {
+        "count": 24,
+        "meaning": 21,
+        "identity": 24,
+        "emotion": 22,
+        "joint": 20,
+        "stopped": 24
+      },
+      "goblin:afraid": {
+        "count": 24,
+        "meaning": 20,
+        "identity": 24,
+        "emotion": 24,
+        "joint": 20,
+        "stopped": 24
+      },
+      "goblin:relieved": {
+        "count": 24,
+        "meaning": 20,
+        "identity": 24,
+        "emotion": 6,
+        "joint": 5,
+        "stopped": 24
+      },
+      "pony:calm": {
+        "count": 24,
+        "meaning": 21,
+        "identity": 24,
+        "emotion": 22,
+        "joint": 20,
+        "stopped": 24
+      },
+      "pony:afraid": {
+        "count": 24,
+        "meaning": 21,
+        "identity": 24,
+        "emotion": 24,
+        "joint": 21,
+        "stopped": 24
+      },
+      "pony:relieved": {
+        "count": 24,
+        "meaning": 21,
+        "identity": 24,
+        "emotion": 1,
+        "joint": 1,
+        "stopped": 24
+      }
+    }
+  },
+  "retention": {
+    "count": 122,
+    "meaning": 120,
+    "identity": 122,
+    "emotion": 122,
+    "joint": 120,
+    "stopped": 122,
+    "groups": {
+      "ordinary": {
+        "count": 122,
+        "meaning": 120,
+        "identity": 122,
+        "emotion": 122,
+        "joint": 120,
+        "stopped": 122
+      }
+    }
+  },
+  "base": {
+    "test": {
+      "count": 648,
+      "meaning": 146,
+      "identity": 0,
+      "emotion": 0,
+      "joint": 0,
+      "stopped": 648,
+      "groups": {
+        "human:calm": {
+          "count": 72,
+          "meaning": 16,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "human:afraid": {
+          "count": 72,
+          "meaning": 13,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "human:relieved": {
+          "count": 72,
+          "meaning": 15,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "goblin:calm": {
+          "count": 72,
+          "meaning": 17,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "goblin:afraid": {
+          "count": 72,
+          "meaning": 16,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "goblin:relieved": {
+          "count": 72,
+          "meaning": 19,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "pony:calm": {
+          "count": 72,
+          "meaning": 17,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "pony:afraid": {
+          "count": 72,
+          "meaning": 17,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        },
+        "pony:relieved": {
+          "count": 72,
+          "meaning": 16,
+          "identity": 0,
+          "emotion": 0,
+          "joint": 0,
+          "stopped": 72
+        }
+      }
+    },
+    "retention": {
+      "count": 122,
+      "meaning": 122,
+      "identity": 122,
+      "emotion": 122,
+      "joint": 122,
+      "stopped": 122,
+      "groups": {
+        "ordinary": {
+          "count": 122,
+          "meaning": 122,
+          "identity": 122,
+          "emotion": 122,
+          "joint": 122,
+          "stopped": 122
+        }
+      }
+    }
+  },
+  "model_sha256": "534966a0200795fc125a4ccbedd299762fe38ef7e4819f728039982a99e723fb",
+  "model_bytes": 5044766,
+  "selected_step": 1000
+}
