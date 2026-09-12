@@ -51,7 +51,7 @@ def main():
     p.add_argument('--seed', type=int, default=17)
     p.add_argument('--device', default='mps')
     p.add_argument('--eval-rows', type=int, default=84)
-    p.add_argument('--modes', nargs='+', choices=['text', 'fields', 'copy', 'slots'], default=['text', 'fields', 'copy', 'slots'])
+    p.add_argument('--modes', nargs='+', choices=['text', 'fields', 'copy', 'slots', 'packet'], default=['text', 'fields', 'copy', 'slots', 'packet'])
     p.add_argument('--tokenizer', type=Path)
     p.add_argument('--kind-features', action=argparse.BooleanOptionalAction, default=True)
     args = p.parse_args()
@@ -62,6 +62,8 @@ def main():
     rows = {s: read(args.data / f'{s}.jsonl') for s in ('train', 'validation', 'test', 'wording')}
     manifest = json.loads((args.data / 'manifest.json').read_text())
     kind_ids = {r['kind']: r['value'] + 1 for r in manifest['coverage']['events']}
+    rules = json.loads((args.data / 'rules.json').read_text())['rules']
+    meaning_ids = {r['id']: i + 1 for i, r in enumerate(rules)}
     for split in rows.values():
         for row in split: row['kind_id'] = kind_ids[row['kind']]
     tokenizer_path = args.output / 'tokenizer.json'
@@ -79,16 +81,20 @@ def main():
                 'steps': args.steps, 'batch_size': args.batch_size, 'device': args.device,
                 'torch': torch.__version__, 'english_replay': 0,
                 'kind_ids': kind_ids, 'kind_features': args.kind_features,
+                'meaning_ids': meaning_ids, 'rules_sha256': sha(args.data / 'rules.json'),
                 'evaluation_scope': 'Synthetic shared-rule diagnostic; fresh weights, one seed per arm.',
                 'target_tokens': sum(sum(x >= 0 for x in r['labels']) for r in records['train']),
                 'max_sequence': max(len(r['tokens']) for split in records.values() for r in split)}
     (args.output / 'metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
     summary = {}
     for mode in args.modes:
-        active_records = {s: [encode_row(tokenizer, row, slots=True) for row in values]
-                          for s, values in rows.items()} if mode == 'slots' else records
+        active_rows = {s: [{**r, 'kind_id': meaning_ids[r['rule']]} for r in values]
+                       for s, values in rows.items()} if mode == 'packet' else rows
+        active_records = {s: [encode_row(tokenizer, row, slots=True, packet=mode == 'packet') for row in values]
+                          for s, values in active_rows.items()} if mode in ('slots', 'packet') else records
         torch.manual_seed(args.seed)
         config = Config(kinds=max(kind_ids.values()) + 1 if args.kind_features else 0)
+        if mode == 'packet': config.kinds = len(meaning_ids) + 1
         model = Crownless(config, mode).to(args.device)
         parameters = sum(p.numel() for p in model.parameters())
         assert parameters == 4924033 + config.kinds * config.dim and parameters <= 5000000
@@ -121,7 +127,9 @@ def main():
                 print(json.dumps({'mode': mode, **item}), flush=True)
                 if val < best:
                     best = val
-                    save(directory / 'best.pt', model, tokenizer_path, {'step': step, 'seed': args.seed})
+                    save(directory / 'best.pt', model, tokenizer_path,
+                         {'step': step, 'seed': args.seed, 'meaning_ids': meaning_ids,
+                          'kind_ids': kind_ids, 'rules_sha256': sha(args.data / 'rules.json')})
         model.load_state_dict(torch.load(directory / 'best.pt', map_location=args.device, weights_only=True)['state'])
         result = {'parameters': parameters, 'training_seconds': time.monotonic() - started, 'splits': {}}
         for split in ('test', 'wording'):

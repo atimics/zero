@@ -43,7 +43,7 @@ def encode_parts(tokenizer, text, spans, slots=False):
         tokens.extend(tokenizer.encode(raw[at:start].decode()).ids)
         first = len(tokens)
         literal = tokenizer.encode(raw[start:end].decode()).ids
-        if slots and span['role'] not in (0, 7, 8) and span.get('knowledge', 0) != 3:
+        if slots and span.get('spoken', span['role'] not in (0, 7, 8)) and span.get('knowledge', 0) != 3:
             token = tokenizer.token_to_id(f"[F{span['field']}]")
             if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
             tokens.append(token)
@@ -56,8 +56,21 @@ def encode_parts(tokenizer, text, spans, slots=False):
     return tokens, mapped
 
 
-def encode_row(tokenizer, row, context=512, slots=False):
+def encode_row(tokenizer, row, context=512, slots=False, packet=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
+    if packet:
+        cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '')
+        prefix = tokenizer.encode(cue).ids
+        selected = []
+        for field in sorted(fields, key=lambda f: f['field']):
+            if not field.get('spoken', field['role'] not in (0, 7, 8)): continue
+            start = len(prefix)
+            marker = tokenizer.token_to_id(f"[F{field['field']}]")
+            if marker is None: raise ValueError('Packet tokenizer needs field markers')
+            prefix.append(marker)
+            selected.append({**field, 'token_start': start, 'token_end': len(prefix), 'event': 1})
+        prefix.extend(tokenizer.encode('\n').ids)
+        fields = selected
     output, copies = encode_parts(tokenizer, row['output'], row['copies'], slots)
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
@@ -67,7 +80,7 @@ def encode_row(tokenizer, row, context=512, slots=False):
     for field in fields:
         for i in range(field['token_start'], field['token_end']):
             meta[i][:4] = [field['role'], field['knowledge'], field['provenance'], field['event']]
-        if field['role'] not in (0, 7, 8) and field['knowledge'] != 3:
+        if field.get('spoken', field['role'] not in (0, 7, 8)) and field['knowledge'] != 3:
             field_to_candidate[field['field']] = len(candidates)
             candidates.append([field['token_start'], field['token_end'] - 1])
             source_ids.append(field['literal_ids'])
@@ -145,7 +158,7 @@ class Block(nn.Module):
 class Crownless(nn.Module):
     def __init__(self, config=Config(), mode='copy'):
         super().__init__()
-        if mode not in ('text', 'fields', 'copy', 'slots'): raise ValueError('Unknown comparison arm')
+        if mode not in ('text', 'fields', 'copy', 'slots', 'packet'): raise ValueError('Unknown comparison arm')
         self.config, self.mode = config, mode
         self.embedding = nn.Embedding(config.vocab, config.dim)
         self.roles, self.knowledge = nn.Embedding(16, config.dim), nn.Embedding(4, config.dim)
@@ -198,7 +211,7 @@ class Crownless(nn.Module):
     def loss(self, inputs):
         h, _ = self.hidden(inputs['tokens'], inputs['meta'])
         logits, gate, scores = self.heads(h, inputs['candidates'], inputs['candidate_mask'])
-        if self.mode not in ('copy', 'slots'):
+        if self.mode not in ('copy', 'slots', 'packet'):
             return F.cross_entropy(logits.flatten(0, 1), inputs['labels'].flatten(), ignore_index=-100)
         labels, target = inputs['copy_labels'], inputs['copy_targets']
         valid, copying = labels != -100, target >= 0
@@ -221,7 +234,7 @@ def generate(model, tokenizer, record, device='cpu', max_tokens=160):
     used = n
     for _ in range(max_tokens):
         logits, gate, scores = model.heads(current, inputs['candidates'], inputs['candidate_mask'], source)
-        if model.mode in ('copy', 'slots') and record['source_ids'] and gate.item() > 0:
+        if model.mode in ('copy', 'slots', 'packet') and record['source_ids'] and gate.item() > 0:
             choice = scores[0, -1].argmax().item()
             tokens = record['source_ids'][choice]
             feedback = record['feedback_ids'][choice]

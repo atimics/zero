@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import torch
 from crownless_v2 import Crownless, Config, batch, encode_row, generate, train_tokenizer
+from crownless_v2_export import export, load_export
 
 
 class CoreTests(unittest.TestCase):
@@ -72,6 +73,25 @@ class CoreTests(unittest.TestCase):
             self.assertEqual(one['actions'], two['actions'])
             self.assertEqual(one['text'], 'ÉvaÉva')
             self.assertEqual(two['text'], replacement * 2)
+            reordered = copy.deepcopy(row)
+            reordered['prefix'] = '- Mara was met by Éva.\n'
+            for field in reordered['fields']:
+                start = reordered['prefix'].index(field['text'])
+                field['start'] = len(reordered['prefix'][:start].encode())
+                field['end'] = field['start'] + len(field['text'].encode())
+            packet = encode_row(tokenizer, row, slots=True, packet=True)
+            paraphrase = encode_row(tokenizer, reordered, slots=True, packet=True)
+            self.assertEqual(packet['tokens'], paraphrase['tokens'])
+            self.assertEqual(packet['meta'], paraphrase['meta'])
+            exported = Path(temporary) / 'core.ccv2'
+            token_path = Path(temporary) / 'tokenizer.json'
+            export(model, token_path, exported)
+            quantized, _ = load_export(exported, token_path)
+            self.assertEqual(generate(quantized, tokenizer, a, max_tokens=2), one)
+            damaged = bytearray(exported.read_bytes())
+            damaged[-1] ^= 1
+            exported.write_bytes(damaged)
+            with self.assertRaisesRegex(ValueError, 'payload'): load_export(exported, token_path)
 
 
 if __name__ == '__main__': unittest.main()
