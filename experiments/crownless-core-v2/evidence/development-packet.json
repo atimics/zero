@@ -1,0 +1,4332 @@
+{
+  "scope": "Approved grammar forms preserve the complete selected meaning. Other forms need review.",
+  "rules_sha256": "da5c6ac11f2f90fbf08881f7c57c7a8358fd086d59d233882ce60f0abeb0635b",
+  "splits": {
+    "test": {
+      "count": 192,
+      "approved_meaning": 192,
+      "needs_review": 0,
+      "named_cases": 176,
+      "all_names_in_named_cases": 176,
+      "complete_pairs": 96,
+      "approved_pairs": 96,
+      "kinds": {
+        "NOTICE_POSTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "WAR_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PEACE_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "ALLIANCE_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "CHARACTER_DIED": {
+          "count": 4,
+          "approved": 4
+        },
+        "CHARACTER_BORN": {
+          "count": 4,
+          "approved": 4
+        },
+        "BAKERY_PRODUCTION": {
+          "count": 4,
+          "approved": 4
+        },
+        "PAPER_MILLED": {
+          "count": 4,
+          "approved": 4
+        },
+        "WOODLOT_HARVEST": {
+          "count": 8,
+          "approved": 8
+        },
+        "QUARRY_OUTPUT": {
+          "count": 4,
+          "approved": 4
+        },
+        "MASONRY_REPAIR": {
+          "count": 12,
+          "approved": 12
+        },
+        "SHEEP_SHEARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "COW_SLAUGHTERED": {
+          "count": 4,
+          "approved": 4
+        },
+        "COW_CALVING": {
+          "count": 4,
+          "approved": 4
+        },
+        "KING_ANOINTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PRETENDER_CRISIS": {
+          "count": 4,
+          "approved": 4
+        },
+        "MONASTIC_SUCCESSION": {
+          "count": 8,
+          "approved": 8
+        },
+        "ROYAL_SUCCESSION": {
+          "count": 8,
+          "approved": 8
+        },
+        "DRAGON_PATRON_NAMED": {
+          "count": 4,
+          "approved": 4
+        },
+        "DRAGON_TERRITORY_LOST": {
+          "count": 4,
+          "approved": 4
+        },
+        "ROYAL_CARRIAGE_BLOCKED": {
+          "count": 4,
+          "approved": 4
+        },
+        "ROYAL_CARRIAGE_REROUTED": {
+          "count": 12,
+          "approved": 12
+        },
+        "LORE_LOST": {
+          "count": 8,
+          "approved": 8
+        },
+        "ROAD_SITE_PRODUCTION": {
+          "count": 8,
+          "approved": 8
+        },
+        "PROPHECY_DELIVERED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PARTY_WIPED": {
+          "count": 4,
+          "approved": 4
+        },
+        "GOBLIN_TUNNEL_TRAVERSED": {
+          "count": 8,
+          "approved": 8
+        },
+        "HORSE_BRED": {
+          "count": 8,
+          "approved": 8
+        },
+        "FOAL_BORN": {
+          "count": 4,
+          "approved": 4
+        },
+        "TREASURE_CRAFTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "BANDIT_PRESSURE": {
+          "count": 8,
+          "approved": 8
+        },
+        "DRAGON_BROOD": {
+          "count": 4,
+          "approved": 4
+        },
+        "KINGDOM_ACTION": {
+          "count": 4,
+          "approved": 4
+        },
+        "GOBLIN_CULT_RALLIED": {
+          "count": 4,
+          "approved": 4
+        },
+        "SHEEP_BRED": {
+          "count": 4,
+          "approved": 4
+        },
+        "SHEEP_SLAUGHTERED": {
+          "count": 4,
+          "approved": 4
+        }
+      },
+      "rows": [
+        {
+          "id": "test:0:0",
+          "text": "Yorumorwick Yorashen posted a notice about Kelowowford Book in Kelumilholt.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowford Book",
+            "Kelumilholt",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:0:1",
+          "text": "Yorumorwick Yorashen posted a notice about Kelowowford Book in Kelenenholt.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenholt",
+            "Kelowowford Book",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:1:0",
+          "text": "Yorashashgate Kelilo and Yorililgate Kelaenwi went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yorililgate Kelaenwi"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:1:1",
+          "text": "Yorashashgate Kelilo and Yoraummoor Kelorashd went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yoraummoor Kelorashd"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:2:0",
+          "text": "Kelumumford Keloweth and Kelowenden Kelilorwi made peace, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Kelumumford Keloweth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:2:1",
+          "text": "Yorowumwick Yororamo and Kelowenden Kelilorwi made peace, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Yorowumwick Yororamo"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:3:0",
+          "text": "Kelilowfell Yorenorf and Kelethengate Yoraash formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Kelilowfell Yorenorf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:3:1",
+          "text": "Yorashashford Kelile and Kelethengate Yoraash formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Yorashashford Kelile"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:4:0",
+          "text": "Someone died after a life in Kelilumford.",
+          "stopped": true,
+          "required_names": [
+            "Kelilumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:4:1",
+          "text": "Someone died after a life in Kelenowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:5:0",
+          "text": "Kelenethgate Keletha was born to the family of Kelowagate Kelenenfe in Yororenmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe",
+            "Yororenmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:5:1",
+          "text": "Kelenethgate Keletha was born to the family of Kelowagate Kelenenfe in Kelailmere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelailmere",
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:6:0",
+          "text": "Yorumowwick made bread from wheat.",
+          "stopped": true,
+          "required_names": [
+            "Yorumowwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:6:1",
+          "text": "Kelaethmere made bread from wheat.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:7:0",
+          "text": "Yorenowgate made paper from Rags.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorenowgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:7:1",
+          "text": "Yorethenholt made paper from Rags.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorethenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:8:0",
+          "text": "Yororumgate cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yororumgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:8:1",
+          "text": "Yorilowford cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yorilowford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:9:0",
+          "text": "Yoroworden cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Yoroworden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:9:1",
+          "text": "Kelenormoor cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:10:0",
+          "text": "Yororumwick quarried stone for roads and public works, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yororumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:10:1",
+          "text": "Kelorowmoor quarried stone for roads and public works, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:11:0",
+          "text": "Kelethafell repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:11:1",
+          "text": "Yorilafell repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Yorilafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:12:0",
+          "text": "Kelilormoor delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilormoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:12:1",
+          "text": "Kelowowmere delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:13:0",
+          "text": "Kelaorwick used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:13:1",
+          "text": "Kelilethford used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:14:0",
+          "text": "Kelilagate sheared the spring flock and stored wool, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilagate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:14:1",
+          "text": "Yorenowford sheared the spring flock and stored wool, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorenowford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:15:0",
+          "text": "Yoraenmoor slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:15:1",
+          "text": "Kelorilwick slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:16:0",
+          "text": "Kelaengate raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:16:1",
+          "text": "Yoraashmere raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:17:0",
+          "text": "Kelumowwick Yoraummo anointed Kelenummere Yorumowm of The Kelethashgate Co, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenummere Yorumowm",
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:17:1",
+          "text": "Kelumowwick Yoraummo anointed Yororawick Yorethaho of The Kelethashgate Co, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co",
+            "Yororawick Yorethaho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:18:0",
+          "text": "Abbey silence brought a pretender forward in The Kelethenholt Cou, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethenholt Cou"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:18:1",
+          "text": "Abbey silence brought a pretender forward in The Kelethethfell Co, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethethfell Co"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:19:0",
+          "text": "Kelaashfell Kelumorg became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashfell Kelumorg"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:19:1",
+          "text": "Kelorethden Yorililm became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethden Yorililm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:20:0",
+          "text": "Yorororden Yorethash succeeded Kelaenden Yororenfel as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenden Yororenfel",
+            "Yorororden Yorethash"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:20:1",
+          "text": "Yorororden Yorethash succeeded Yorumengate Yorethum as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorororden Yorethash",
+            "Yorumengate Yorethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:21:0",
+          "text": "Yorowormere Yorowenm took power in The Kelenowfell Cour and sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelenowfell Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:21:1",
+          "text": "Yorowormere Yorowenm took power in The Kelilethden Cour and sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelilethden Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:22:0",
+          "text": "Kelorumford Kelorumm succeeded Kelorafell Kelethumf as ruler of The Yorumowholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Yorumowholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:22:1",
+          "text": "Kelorumford Kelorumm succeeded Kelorafell Kelethumf as ruler of The Kelilenholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Kelilenholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:23:0",
+          "text": "Kelaashford Kelaashf funded the dragon host and named Kelaafell Yororilfor its champion.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelaashford Kelaashf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:23:1",
+          "text": "Kelenummoor Kelethum funded the dragon host and named Kelaafell Yororilfor its champion.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelenummoor Kelethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:24:0",
+          "text": "Yorenenwick Yorethum lost the last land under the dragon crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenenwick Yorethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:24:1",
+          "text": "Keloworden Yororilho lost the last land under the dragon crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Keloworden Yororilho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:25:0",
+          "text": "Yororowmere Kelename carriage waited at Yorililmoor because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Yorililmoor",
+            "Yororowmere Kelename"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:25:1",
+          "text": "Kelilowden Kelaethfo carriage waited at Yorililmoor because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelilowden Kelaethfo",
+            "Yorililmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:26:0",
+          "text": "An empty royal carriage headed to Kelumowden to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:26:1",
+          "text": "An empty royal carriage headed to Kelumafell to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:27:0",
+          "text": "The carriage resumed its trip toward Kelenowmoor as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:27:1",
+          "text": "The carriage resumed its trip toward Kelumaden as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelumaden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:28:0",
+          "text": "Court relations reopened the road and the carriage continued toward Yorilumfell.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:28:1",
+          "text": "Court relations reopened the road and the carriage continued toward Kelorenmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelorenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:29:0",
+          "text": "Kelililholt Crown fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelililholt Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:29:1",
+          "text": "Yorilethden Book fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Yorilethden Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:30:0",
+          "text": "A neglected page of Yorashenford Cup crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:30:1",
+          "text": "A neglected page of Yororashfell Crown crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yororashfell Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:31:0",
+          "text": "Kelowilfell used tools and wood for repairs, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:31:1",
+          "text": "Kelethilholt used tools and wood for repairs, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:32:0",
+          "text": "Goods were stored locally and roads repaired by roadside works, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:32:1",
+          "text": "Goods were stored locally and roads repaired by roadside works, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:33:0",
+          "text": "The company delivered Kelashashfell Cup to Kelumethden, where the council heard the warning, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashfell Cup",
+            "Kelumethden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:33:1",
+          "text": "The company delivered Kelashashfell Cup to Kelaethmere, where the council heard the warning, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere",
+            "Kelashashfell Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:34:0",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:34:1",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:35:0",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:35:1",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:36:0",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:36:1",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:37:0",
+          "text": "Kelaenmoor Yororowme was bred with Yorashummoor Yorumet at Yorenashford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Yorashummoor Yorumet",
+            "Yorenashford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:37:1",
+          "text": "Kelaenmoor Yororowme was bred with Kelenowmere Yoriloww at Yorenashford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Kelenowmere Yoriloww",
+            "Yorenashford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:38:0",
+          "text": "Kelaaholt Kelororden gave birth to Kelilumgate Yorenade by Yorethormoor Book at Kelailmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Yorethormoor Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:38:1",
+          "text": "Kelaaholt Kelororden gave birth to Kelilumgate Yorenade by Kelorenmoor Book at Kelailmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Kelorenmoor Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:39:0",
+          "text": "Kelethashfell finished making Kelethashholt Book, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashfell",
+            "Kelethashholt Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:39:1",
+          "text": "Yorethethmoor finished making Kelethashholt Book, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashholt Book",
+            "Yorethethmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:40:0",
+          "text": "Yorenafell Kelenowde reinforced Yoraashford Kelilorf on the old road.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashford Kelilorf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:40:1",
+          "text": "Yorenafell Kelenowde reinforced Kelowashden Yoroworf on the old road.",
+          "stopped": true,
+          "required_names": [
+            "Kelowashden Yoroworf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:41:0",
+          "text": "Yorilorgate Yorethil laid a clutch, and goblin Ashkeepers sealed the brood hoard, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorgate Yorethil"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:41:1",
+          "text": "Yororethgate Yororet laid a clutch, and goblin Ashkeepers sealed the brood hoard, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yororethgate Yororet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:42:0",
+          "text": "Yorethowgate Yorenum joined Kelowowwick Keloworg after seeking food at Yorenummere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowwick Keloworg",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:42:1",
+          "text": "Yorethowgate Yorenum joined Kelowowmoor Yorowowm after seeking food at Yorenummere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor Yorowowm",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:43:0",
+          "text": "Yorumashford Kelumet put money into Kelowenford's market to buy grain shipments.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenford",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:43:1",
+          "text": "Yorumashford Kelumet put money into Kelashawick's market to buy grain shipments.",
+          "stopped": true,
+          "required_names": [
+            "Kelashawick",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:44:0",
+          "text": "Kelilethfell Kelethe rose to Kelowaden Crown in the dragon cult through service.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethfell Kelethe",
+            "Kelowaden Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:44:1",
+          "text": "Kelilethfell Kelethe rose to Kelethaden Cup in the dragon cult through service.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaden Cup",
+            "Kelilethfell Kelethe"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:45:0",
+          "text": "Kelailfell raised pony foals and added ponies to the working herd, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelailfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:45:1",
+          "text": "Yorashorfell raised pony foals and added ponies to the working herd, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorashorfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:46:0",
+          "text": "Kelilethgate raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:46:1",
+          "text": "Yorilorford raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:47:0",
+          "text": "Kelenethmoor slaughtered sheep for mutton after winter fodder runs short, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethmoor",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:47:1",
+          "text": "Yorethashgate slaughtered sheep for mutton after winter fodder runs short, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorethashgate",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:48:0",
+          "text": "Yorilashmere Keloren posted a notice about Kelashorholt Crown in Kelashowmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelashorholt Crown",
+            "Kelashowmoor",
+            "Yorilashmere Keloren"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:48:1",
+          "text": "Yorilashmere Keloren posted a notice about Kelowilden Cup in Kelashowmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelashowmoor",
+            "Kelowilden Cup",
+            "Yorilashmere Keloren"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:49:0",
+          "text": "Kelowilfell Kelenorh and Kelenashmoor Kelilum went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenashmoor Kelilum",
+            "Kelowilfell Kelenorh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:49:1",
+          "text": "Kelaumford Kelaummer and Kelenashmoor Kelilum went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelaumford Kelaummer",
+            "Kelenashmoor Kelilum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:50:0",
+          "text": "Yoraaholt Yoroworfel and Kelilorholt Yorenilg made peace, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilorholt Yorenilg",
+            "Yoraaholt Yoroworfel"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:50:1",
+          "text": "Yoraormoor Yorumashf and Kelilorholt Yorenilg made peace, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilorholt Yorenilg",
+            "Yoraormoor Yorumashf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:51:0",
+          "text": "Kelowethwick Yorenah and Yoraafell Kelenethme formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelowethwick Yorenah",
+            "Yoraafell Kelenethme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:51:1",
+          "text": "Kelowethwick Yorenah and Kelailwick Kelorashg formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelailwick Kelorashg",
+            "Kelowethwick Yorenah"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:52:0",
+          "text": "Yoraaford Kelorethme died after a life in Kelethowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelethowfell",
+            "Yoraaford Kelorethme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:52:1",
+          "text": "Yorashowholt Yorilet died after a life in Kelethowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelethowfell",
+            "Yorashowholt Yorilet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:53:0",
+          "text": "Yorethenmoor Yoraeth was born to the family of Yorenashgate Kelashe in Kelashenden, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashenden",
+            "Yorenashgate Kelashe",
+            "Yorethenmoor Yoraeth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:53:1",
+          "text": "Yorethenmoor Yoraeth was born to the family of Yorenashgate Kelashe in Yorethamere, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorenashgate Kelashe",
+            "Yorethamere",
+            "Yorethenmoor Yoraeth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:54:0",
+          "text": "Keloragate made bread from wheat, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloragate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:54:1",
+          "text": "Yorashilfell made bread from wheat, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashilfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:55:0",
+          "text": "Kelenormoor made paper from Rags, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor",
+            "Rags"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:55:1",
+          "text": "Kelorilfell made paper from Rags, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilfell",
+            "Rags"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:56:0",
+          "text": "Kelethaholt cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:56:1",
+          "text": "Yoraummere cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yoraummere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:57:0",
+          "text": "Yorenethholt cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Yorenethholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:57:1",
+          "text": "Kelaethmoor cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:58:0",
+          "text": "Kelilethgate quarried stone for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:58:1",
+          "text": "Kelaenholt quarried stone for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:59:0",
+          "text": "Kelorowmere repaired public buildings with stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:59:1",
+          "text": "Yoriladen repaired public buildings with stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoriladen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:60:0",
+          "text": "Kelashumwick delayed public repairs for lack of stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:60:1",
+          "text": "Kelethethmere delayed public repairs for lack of stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:61:0",
+          "text": "Kelumashwick used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelumashwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:61:1",
+          "text": "Yorowenholt used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Yorowenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:62:0",
+          "text": "Yorethorwick sheared the spring flock and stored wool, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorethorwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:62:1",
+          "text": "Kelethengate sheared the spring flock and stored wool, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:63:0",
+          "text": "Kelethumford slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelethumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:63:1",
+          "text": "Kelashumford slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:64:0",
+          "text": "Yorilumfell raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:64:1",
+          "text": "Kelowowmoor raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:65:0",
+          "text": "Kelethumden Yorashor anointed Kelenormere Yorumash of The Kelumaden Court, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormere Yorumash",
+            "Kelethumden Yorashor",
+            "The Kelumaden Court"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:65:1",
+          "text": "Yorililgate Kelumilm anointed Kelenormere Yorumash of The Kelumaden Court, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormere Yorumash",
+            "The Kelumaden Court",
+            "Yorililgate Kelumilm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:66:0",
+          "text": "Abbey silence brought a pretender forward in The Yororowholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "The Yororowholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:66:1",
+          "text": "Abbey silence brought a pretender forward in The Kelethorford Cou.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethorford Cou"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:67:0",
+          "text": "Kelaowholt Yorumowho became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaowholt Yorumowho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:67:1",
+          "text": "Yorethaden Kelumethf became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Yorethaden Kelumethf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:68:0",
+          "text": "Yorenumgate Kelenumg succeeded Yorashashholt Yorowu as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashholt Yorowu",
+            "Yorenumgate Kelenumg"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:68:1",
+          "text": "Yorethashholt Kelumu succeeded Yorashashholt Yorowu as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashholt Yorowu",
+            "Yorethashholt Kelumu"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:69:0",
+          "text": "Yorethowwick Yorumet took power in The Kelaenmoor Court and sought the abbot's blessing, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "The Kelaenmoor Court",
+            "Yorethowwick Yorumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:69:1",
+          "text": "Yorethowwick Yorumet took power in The Kelumethmere Cou and sought the abbot's blessing, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "The Kelumethmere Cou",
+            "Yorethowwick Yorumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:70:0",
+          "text": "Kelumumden Kelorethd succeeded Yorilethmere Yorumor as ruler of The Yorororford Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelumumden Kelorethd",
+            "The Yorororford Cour",
+            "Yorilethmere Yorumor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:70:1",
+          "text": "Kelumumden Kelorethd succeeded Kelowilgate Yorashag as ruler of The Yorororford Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilgate Yorashag",
+            "Kelumumden Kelorethd",
+            "The Yorororford Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:71:0",
+          "text": "Yoraaford Yoraafell funded the dragon host and named Yorililford Kelilumh its champion, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoraaford Yoraafell",
+            "Yorililford Kelilumh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:71:1",
+          "text": "Keloworgate Yorileth funded the dragon host and named Yorililford Kelilumh its champion, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloworgate Yorileth",
+            "Yorililford Kelilumh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:72:0",
+          "text": "Kelashorgate Yorashu lost the last land under the dragon crown, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashorgate Yorashu"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:72:1",
+          "text": "Keloramoor Kelethowm lost the last land under the dragon crown, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloramoor Kelethowm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:73:0",
+          "text": "Yorashenholt Keloras carriage waited at Kelilashmere because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelilashmere",
+            "Yorashenholt Keloras"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:73:1",
+          "text": "Yorashenholt Keloras carriage waited at Kelashethmere because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelashethmere",
+            "Yorashenholt Keloras"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:74:0",
+          "text": "An empty royal carriage headed to Kelenorholt to collect a load.",
+          "stopped": true,
+          "required_names": [
+            "Kelenorholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:74:1",
+          "text": "An empty royal carriage headed to Yororethwick to collect a load.",
+          "stopped": true,
+          "required_names": [
+            "Yororethwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:75:0",
+          "text": "The carriage resumed its trip toward Kelenumwick as road space cleared, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:75:1",
+          "text": "The carriage resumed its trip toward Kelorethmere as road space cleared, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:76:0",
+          "text": "Court relations reopened the road and the carriage continued toward Kelashumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:76:1",
+          "text": "Court relations reopened the road and the carriage continued toward Yorilashwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorilashwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:77:0",
+          "text": "Kelowilford Cup fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:77:1",
+          "text": "Kelowilholt Book fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilholt Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:78:0",
+          "text": "A neglected page of Yorilenholt Crown crumbled and some lore was lost, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorilenholt Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:78:1",
+          "text": "A neglected page of Kelilamoor Crown crumbled and some lore was lost, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilamoor Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:79:0",
+          "text": "Kelenumford used tools and wood for repairs, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:79:1",
+          "text": "Kelumafell used tools and wood for repairs, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:80:0",
+          "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:80:1",
+          "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:81:0",
+          "text": "The company delivered Yororilwick Cup to Yorashashden, where the council heard the warning.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashden",
+            "Yororilwick Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:81:1",
+          "text": "The company delivered Yororilwick Cup to Yorenorwick, where the council heard the warning.",
+          "stopped": true,
+          "required_names": [
+            "Yorenorwick",
+            "Yororilwick Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:82:0",
+          "text": "The company fell, and years later a new company took up the carriage.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:82:1",
+          "text": "The company fell, and years later a new company took up the carriage.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:83:0",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:83:1",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:84:0",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:84:1",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:85:0",
+          "text": "Yorowilfell Kelenorm was bred with Kelaashmere Kelaormo at Yoraethford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashmere Kelaormo",
+            "Yoraethford",
+            "Yorowilfell Kelenorm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:85:1",
+          "text": "Yorowilfell Kelenorm was bred with Yorenengate Kelethow at Yoraethford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yoraethford",
+            "Yorenengate Kelethow",
+            "Yorowilfell Kelenorm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:86:0",
+          "text": "Kelashashmere Yorora gave birth to Yorashumden Kelowilh by Yoroworford Cup at Kelowenholt, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashmere Yorora",
+            "Kelowenholt",
+            "Yorashumden Kelowilh",
+            "Yoroworford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:86:1",
+          "text": "Kelashashmere Yorora gave birth to Yorashumden Kelowilh by Yoroworford Cup at Kelethaden, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashmere Yorora",
+            "Kelethaden",
+            "Yorashumden Kelowilh",
+            "Yoroworford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:87:0",
+          "text": "Yorumenmere finished making Yorethenmere Book, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorethenmere Book",
+            "Yorumenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:87:1",
+          "text": "Yorumenmere finished making Yorenaford Crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenaford Crown",
+            "Yorumenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:88:0",
+          "text": "Kelenenwick Kelorash reinforced Yoraenford Kelorenme on the old road, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenwick Kelorash",
+            "Yoraenford Kelorenme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:88:1",
+          "text": "Yoraormoor Yorenumho reinforced Yoraenford Kelorenme on the old road, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenford Kelorenme",
+            "Yoraormoor Yorenumho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:89:0",
+          "text": "Yorashenmoor Yorowaf laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenmoor Yorowaf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:89:1",
+          "text": "Yorenethmere Kelailw laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+          "stopped": true,
+          "required_names": [
+            "Yorenethmere Kelailw"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:90:0",
+          "text": "Yorowethgate Kelilas joined Yorowethden Yorumorf after seeking food at Kelumowford.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowford",
+            "Yorowethden Yorumorf",
+            "Yorowethgate Kelilas"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:90:1",
+          "text": "Yororethwick Kelashu joined Yorowethden Yorumorf after seeking food at Kelumowford.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowford",
+            "Yororethwick Kelashu",
+            "Yorowethden Yorumorf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:91:0",
+          "text": "Kelorashholt Yoretha put money into Yorumaford's market to buy grain shipments, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorashholt Yoretha",
+            "Yorumaford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:91:1",
+          "text": "Kelorashholt Yoretha put money into Kelumumgate's market to buy grain shipments, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorashholt Yoretha",
+            "Kelumumgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:92:0",
+          "text": "Yorororwick Yorenumf rose to Kelilafell Crown in the dragon cult through service, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilafell Crown",
+            "Yorororwick Yorenumf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:92:1",
+          "text": "Yorororwick Yorenumf rose to Yorenaden Cup in the dragon cult through service, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenaden Cup",
+            "Yorororwick Yorenumf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:93:0",
+          "text": "Yororengate raised pony foals and added ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yororengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:93:1",
+          "text": "Yorashethfell raised pony foals and added ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorashethfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:94:0",
+          "text": "Yorororford raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Yorororford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:94:1",
+          "text": "Kelethilgate raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:95:0",
+          "text": "Kelaorfell slaughtered sheep for mutton after winter fodder runs short, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorfell",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:95:1",
+          "text": "Kelumummere slaughtered sheep for mutton after winter fodder runs short, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelumummere",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        }
+      ]
+    },
+    "wording": {
+      "count": 192,
+      "approved_meaning": 192,
+      "needs_review": 0,
+      "named_cases": 176,
+      "all_names_in_named_cases": 176,
+      "complete_pairs": 96,
+      "approved_pairs": 96,
+      "kinds": {
+        "NOTICE_POSTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "WAR_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PEACE_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "ALLIANCE_DECLARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "CHARACTER_DIED": {
+          "count": 4,
+          "approved": 4
+        },
+        "CHARACTER_BORN": {
+          "count": 4,
+          "approved": 4
+        },
+        "BAKERY_PRODUCTION": {
+          "count": 4,
+          "approved": 4
+        },
+        "PAPER_MILLED": {
+          "count": 4,
+          "approved": 4
+        },
+        "WOODLOT_HARVEST": {
+          "count": 8,
+          "approved": 8
+        },
+        "QUARRY_OUTPUT": {
+          "count": 4,
+          "approved": 4
+        },
+        "MASONRY_REPAIR": {
+          "count": 12,
+          "approved": 12
+        },
+        "SHEEP_SHEARED": {
+          "count": 4,
+          "approved": 4
+        },
+        "COW_SLAUGHTERED": {
+          "count": 4,
+          "approved": 4
+        },
+        "COW_CALVING": {
+          "count": 4,
+          "approved": 4
+        },
+        "KING_ANOINTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PRETENDER_CRISIS": {
+          "count": 4,
+          "approved": 4
+        },
+        "MONASTIC_SUCCESSION": {
+          "count": 8,
+          "approved": 8
+        },
+        "ROYAL_SUCCESSION": {
+          "count": 8,
+          "approved": 8
+        },
+        "DRAGON_PATRON_NAMED": {
+          "count": 4,
+          "approved": 4
+        },
+        "DRAGON_TERRITORY_LOST": {
+          "count": 4,
+          "approved": 4
+        },
+        "ROYAL_CARRIAGE_BLOCKED": {
+          "count": 4,
+          "approved": 4
+        },
+        "ROYAL_CARRIAGE_REROUTED": {
+          "count": 12,
+          "approved": 12
+        },
+        "LORE_LOST": {
+          "count": 8,
+          "approved": 8
+        },
+        "ROAD_SITE_PRODUCTION": {
+          "count": 8,
+          "approved": 8
+        },
+        "PROPHECY_DELIVERED": {
+          "count": 4,
+          "approved": 4
+        },
+        "PARTY_WIPED": {
+          "count": 4,
+          "approved": 4
+        },
+        "GOBLIN_TUNNEL_TRAVERSED": {
+          "count": 8,
+          "approved": 8
+        },
+        "HORSE_BRED": {
+          "count": 8,
+          "approved": 8
+        },
+        "FOAL_BORN": {
+          "count": 4,
+          "approved": 4
+        },
+        "TREASURE_CRAFTED": {
+          "count": 4,
+          "approved": 4
+        },
+        "BANDIT_PRESSURE": {
+          "count": 8,
+          "approved": 8
+        },
+        "DRAGON_BROOD": {
+          "count": 4,
+          "approved": 4
+        },
+        "KINGDOM_ACTION": {
+          "count": 4,
+          "approved": 4
+        },
+        "GOBLIN_CULT_RALLIED": {
+          "count": 4,
+          "approved": 4
+        },
+        "SHEEP_BRED": {
+          "count": 4,
+          "approved": 4
+        },
+        "SHEEP_SLAUGHTERED": {
+          "count": 4,
+          "approved": 4
+        }
+      },
+      "rows": [
+        {
+          "id": "test:0:0",
+          "text": "Yorumorwick Yorashen posted a notice about Kelowowford Book in Kelumilholt.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowford Book",
+            "Kelumilholt",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:0:1",
+          "text": "Yorumorwick Yorashen posted a notice about Kelowowford Book in Kelenenholt.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenholt",
+            "Kelowowford Book",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:1:0",
+          "text": "Yorashashgate Kelilo and Yorililgate Kelaenwi went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yorililgate Kelaenwi"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:1:1",
+          "text": "Yorashashgate Kelilo and Yoraummoor Kelorashd went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yoraummoor Kelorashd"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:2:0",
+          "text": "Kelumumford Keloweth and Kelowenden Kelilorwi made peace, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Kelumumford Keloweth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:2:1",
+          "text": "Yorowumwick Yororamo and Kelowenden Kelilorwi made peace, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Yorowumwick Yororamo"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:3:0",
+          "text": "Kelilowfell Yorenorf and Kelethengate Yoraash formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Kelilowfell Yorenorf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:3:1",
+          "text": "Yorashashford Kelile and Kelethengate Yoraash formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Yorashashford Kelile"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:4:0",
+          "text": "Someone died after a life in Kelilumford.",
+          "stopped": true,
+          "required_names": [
+            "Kelilumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:4:1",
+          "text": "Someone died after a life in Kelenowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:5:0",
+          "text": "Kelenethgate Keletha was born to the family of Kelowagate Kelenenfe in Yororenmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe",
+            "Yororenmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:5:1",
+          "text": "Kelenethgate Keletha was born to the family of Kelowagate Kelenenfe in Kelailmere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelailmere",
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:6:0",
+          "text": "Yorumowwick made bread from wheat.",
+          "stopped": true,
+          "required_names": [
+            "Yorumowwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:6:1",
+          "text": "Kelaethmere made bread from wheat.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:7:0",
+          "text": "Yorenowgate made paper from Rags.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorenowgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:7:1",
+          "text": "Yorethenholt made paper from Rags.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorethenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:8:0",
+          "text": "Yororumgate cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yororumgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:8:1",
+          "text": "Yorilowford cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yorilowford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:9:0",
+          "text": "Yoroworden cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Yoroworden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:9:1",
+          "text": "Kelenormoor cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:10:0",
+          "text": "Yororumwick quarried stone for roads and public works, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yororumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:10:1",
+          "text": "Kelorowmoor quarried stone for roads and public works, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:11:0",
+          "text": "Kelethafell repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:11:1",
+          "text": "Yorilafell repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Yorilafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:12:0",
+          "text": "Kelilormoor delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilormoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:12:1",
+          "text": "Kelowowmere delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:13:0",
+          "text": "Kelaorwick used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:13:1",
+          "text": "Kelilethford used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:14:0",
+          "text": "Kelilagate sheared the spring flock and stored wool, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilagate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:14:1",
+          "text": "Yorenowford sheared the spring flock and stored wool, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorenowford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:15:0",
+          "text": "Yoraenmoor slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:15:1",
+          "text": "Kelorilwick slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:16:0",
+          "text": "Kelaengate raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:16:1",
+          "text": "Yoraashmere raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:17:0",
+          "text": "Kelumowwick Yoraummo anointed Kelenummere Yorumowm of The Kelethashgate Co, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenummere Yorumowm",
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:17:1",
+          "text": "Kelumowwick Yoraummo anointed Yororawick Yorethaho of The Kelethashgate Co, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co",
+            "Yororawick Yorethaho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:18:0",
+          "text": "Abbey silence brought a pretender forward in The Kelethenholt Cou, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethenholt Cou"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:18:1",
+          "text": "Abbey silence brought a pretender forward in The Kelethethfell Co, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethethfell Co"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:19:0",
+          "text": "Kelaashfell Kelumorg became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashfell Kelumorg"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:19:1",
+          "text": "Kelorethden Yorililm became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethden Yorililm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:20:0",
+          "text": "Yorororden Yorethash succeeded Kelaenden Yororenfel as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenden Yororenfel",
+            "Yorororden Yorethash"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:20:1",
+          "text": "Yorororden Yorethash succeeded Yorumengate Yorethum as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorororden Yorethash",
+            "Yorumengate Yorethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:21:0",
+          "text": "Yorowormere Yorowenm took power in The Kelenowfell Cour and sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelenowfell Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:21:1",
+          "text": "Yorowormere Yorowenm took power in The Kelilethden Cour and sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelilethden Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:22:0",
+          "text": "Kelorumford Kelorumm succeeded Kelorafell Kelethumf as ruler of The Yorumowholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Yorumowholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:22:1",
+          "text": "Kelorumford Kelorumm succeeded Kelorafell Kelethumf as ruler of The Kelilenholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Kelilenholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:23:0",
+          "text": "Kelaashford Kelaashf funded the dragon host and named Kelaafell Yororilfor its champion.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelaashford Kelaashf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:23:1",
+          "text": "Kelenummoor Kelethum funded the dragon host and named Kelaafell Yororilfor its champion.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelenummoor Kelethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:24:0",
+          "text": "Yorenenwick Yorethum lost the last land under the dragon crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenenwick Yorethum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:24:1",
+          "text": "Keloworden Yororilho lost the last land under the dragon crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Keloworden Yororilho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:25:0",
+          "text": "Yororowmere Kelename carriage waited at Yorililmoor because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Yorililmoor",
+            "Yororowmere Kelename"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:25:1",
+          "text": "Kelilowden Kelaethfo carriage waited at Yorililmoor because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelilowden Kelaethfo",
+            "Yorililmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:26:0",
+          "text": "An empty royal carriage headed to Kelumowden to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:26:1",
+          "text": "An empty royal carriage headed to Kelumafell to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:27:0",
+          "text": "The carriage resumed its trip toward Kelenowmoor as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:27:1",
+          "text": "The carriage resumed its trip toward Kelumaden as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelumaden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:28:0",
+          "text": "Court relations reopened the road and the carriage continued toward Yorilumfell.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:28:1",
+          "text": "Court relations reopened the road and the carriage continued toward Kelorenmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelorenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:29:0",
+          "text": "Kelililholt Crown fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelililholt Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:29:1",
+          "text": "Yorilethden Book fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Yorilethden Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:30:0",
+          "text": "A neglected page of Yorashenford Cup crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:30:1",
+          "text": "A neglected page of Yororashfell Crown crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yororashfell Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:31:0",
+          "text": "Kelowilfell used tools and wood for repairs, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:31:1",
+          "text": "Kelethilholt used tools and wood for repairs, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:32:0",
+          "text": "Goods were stored locally and roads repaired by roadside works, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:32:1",
+          "text": "Goods were stored locally and roads repaired by roadside works, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:33:0",
+          "text": "The company delivered Kelashashfell Cup to Kelumethden, where the council heard the warning, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashfell Cup",
+            "Kelumethden"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:33:1",
+          "text": "The company delivered Kelashashfell Cup to Kelaethmere, where the council heard the warning, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere",
+            "Kelashashfell Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:34:0",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:34:1",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:35:0",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:35:1",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:36:0",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:36:1",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:37:0",
+          "text": "Kelaenmoor Yororowme was bred with Yorashummoor Yorumet at Yorenashford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Yorashummoor Yorumet",
+            "Yorenashford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:37:1",
+          "text": "Kelaenmoor Yororowme was bred with Kelenowmere Yoriloww at Yorenashford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Kelenowmere Yoriloww",
+            "Yorenashford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:38:0",
+          "text": "Kelaaholt Kelororden gave birth to Kelilumgate Yorenade by Yorethormoor Book at Kelailmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Yorethormoor Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:38:1",
+          "text": "Kelaaholt Kelororden gave birth to Kelilumgate Yorenade by Kelorenmoor Book at Kelailmere.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Kelorenmoor Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:39:0",
+          "text": "Kelethashfell finished making Kelethashholt Book, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashfell",
+            "Kelethashholt Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:39:1",
+          "text": "Yorethethmoor finished making Kelethashholt Book, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashholt Book",
+            "Yorethethmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:40:0",
+          "text": "Yorenafell Kelenowde reinforced Yoraashford Kelilorf on the old road.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashford Kelilorf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:40:1",
+          "text": "Yorenafell Kelenowde reinforced Kelowashden Yoroworf on the old road.",
+          "stopped": true,
+          "required_names": [
+            "Kelowashden Yoroworf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:41:0",
+          "text": "Yorilorgate Yorethil laid a clutch, and goblin Ashkeepers sealed the brood hoard, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorgate Yorethil"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:41:1",
+          "text": "Yororethgate Yororet laid a clutch, and goblin Ashkeepers sealed the brood hoard, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yororethgate Yororet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:42:0",
+          "text": "Yorethowgate Yorenum joined Kelowowwick Keloworg after seeking food at Yorenummere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowwick Keloworg",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:42:1",
+          "text": "Yorethowgate Yorenum joined Kelowowmoor Yorowowm after seeking food at Yorenummere, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor Yorowowm",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:43:0",
+          "text": "Yorumashford Kelumet put money into Kelowenford's market to buy grain shipments.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenford",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:43:1",
+          "text": "Yorumashford Kelumet put money into Kelashawick's market to buy grain shipments.",
+          "stopped": true,
+          "required_names": [
+            "Kelashawick",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:44:0",
+          "text": "Kelilethfell Kelethe rose to Kelowaden Crown in the dragon cult through service.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethfell Kelethe",
+            "Kelowaden Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:44:1",
+          "text": "Kelilethfell Kelethe rose to Kelethaden Cup in the dragon cult through service.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaden Cup",
+            "Kelilethfell Kelethe"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:45:0",
+          "text": "Kelailfell raised pony foals and added ponies to the working herd, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelailfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:45:1",
+          "text": "Yorashorfell raised pony foals and added ponies to the working herd, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorashorfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:46:0",
+          "text": "Kelilethgate raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:46:1",
+          "text": "Yorilorford raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:47:0",
+          "text": "Kelenethmoor slaughtered sheep for mutton after winter fodder runs short, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethmoor",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:47:1",
+          "text": "Yorethashgate slaughtered sheep for mutton after winter fodder runs short, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorethashgate",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:48:0",
+          "text": "Yorilashmere Keloren posted a notice about Kelashorholt Crown in Kelashowmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelashorholt Crown",
+            "Kelashowmoor",
+            "Yorilashmere Keloren"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:48:1",
+          "text": "Yorilashmere Keloren posted a notice about Kelowilden Cup in Kelashowmoor, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelashowmoor",
+            "Kelowilden Cup",
+            "Yorilashmere Keloren"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:49:0",
+          "text": "Kelowilfell Kelenorh and Kelenashmoor Kelilum went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenashmoor Kelilum",
+            "Kelowilfell Kelenorh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:49:1",
+          "text": "Kelaumford Kelaummer and Kelenashmoor Kelilum went to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelaumford Kelaummer",
+            "Kelenashmoor Kelilum"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:50:0",
+          "text": "Yoraaholt Yoroworfel and Kelilorholt Yorenilg made peace, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilorholt Yorenilg",
+            "Yoraaholt Yoroworfel"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:50:1",
+          "text": "Yoraormoor Yorumashf and Kelilorholt Yorenilg made peace, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilorholt Yorenilg",
+            "Yoraormoor Yorumashf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:51:0",
+          "text": "Kelowethwick Yorenah and Yoraafell Kelenethme formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelowethwick Yorenah",
+            "Yoraafell Kelenethme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:51:1",
+          "text": "Kelowethwick Yorenah and Kelailwick Kelorashg formed an alliance.",
+          "stopped": true,
+          "required_names": [
+            "Kelailwick Kelorashg",
+            "Kelowethwick Yorenah"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:52:0",
+          "text": "Yoraaford Kelorethme died after a life in Kelethowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelethowfell",
+            "Yoraaford Kelorethme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:52:1",
+          "text": "Yorashowholt Yorilet died after a life in Kelethowfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelethowfell",
+            "Yorashowholt Yorilet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:53:0",
+          "text": "Yorethenmoor Yoraeth was born to the family of Yorenashgate Kelashe in Kelashenden, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashenden",
+            "Yorenashgate Kelashe",
+            "Yorethenmoor Yoraeth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:53:1",
+          "text": "Yorethenmoor Yoraeth was born to the family of Yorenashgate Kelashe in Yorethamere, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorenashgate Kelashe",
+            "Yorethamere",
+            "Yorethenmoor Yoraeth"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:54:0",
+          "text": "Keloragate made bread from wheat, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloragate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:54:1",
+          "text": "Yorashilfell made bread from wheat, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashilfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:55:0",
+          "text": "Kelenormoor made paper from Rags, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor",
+            "Rags"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:55:1",
+          "text": "Kelorilfell made paper from Rags, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilfell",
+            "Rags"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:56:0",
+          "text": "Kelethaholt cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:56:1",
+          "text": "Yoraummere cut wood and wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yoraummere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:57:0",
+          "text": "Yorenethholt cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Yorenethholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:57:1",
+          "text": "Kelaethmoor cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:58:0",
+          "text": "Kelilethgate quarried stone for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:58:1",
+          "text": "Kelaenholt quarried stone for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:59:0",
+          "text": "Kelorowmere repaired public buildings with stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:59:1",
+          "text": "Yoriladen repaired public buildings with stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoriladen"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:60:0",
+          "text": "Kelashumwick delayed public repairs for lack of stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:60:1",
+          "text": "Kelethethmere delayed public repairs for lack of stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:61:0",
+          "text": "Kelumashwick used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelumashwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:61:1",
+          "text": "Yorowenholt used wood, stone, and tools to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Yorowenholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:62:0",
+          "text": "Yorethorwick sheared the spring flock and stored wool, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorethorwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:62:1",
+          "text": "Kelethengate sheared the spring flock and stored wool, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:63:0",
+          "text": "Kelethumford slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelethumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:63:1",
+          "text": "Kelashumford slaughtered cattle for beef when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:64:0",
+          "text": "Yorilumfell raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:64:1",
+          "text": "Kelowowmoor raised calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:65:0",
+          "text": "Kelethumden Yorashor anointed Kelenormere Yorumash of The Kelumaden Court, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormere Yorumash",
+            "Kelethumden Yorashor",
+            "The Kelumaden Court"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:65:1",
+          "text": "Yorililgate Kelumilm anointed Kelenormere Yorumash of The Kelumaden Court, making the crown lawful.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormere Yorumash",
+            "The Kelumaden Court",
+            "Yorililgate Kelumilm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:66:0",
+          "text": "Abbey silence brought a pretender forward in The Yororowholt Cour.",
+          "stopped": true,
+          "required_names": [
+            "The Yororowholt Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:66:1",
+          "text": "Abbey silence brought a pretender forward in The Kelethorford Cou.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethorford Cou"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:67:0",
+          "text": "Kelaowholt Yorumowho became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaowholt Yorumowho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:67:1",
+          "text": "Yorethaden Kelumethf became Abbot of the Scriptorium and keeper of the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Yorethaden Kelumethf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:68:0",
+          "text": "Yorenumgate Kelenumg succeeded Yorashashholt Yorowu as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashholt Yorowu",
+            "Yorenumgate Kelenumg"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:68:1",
+          "text": "Yorethashholt Kelumu succeeded Yorashashholt Yorowu as Abbot of the Scriptorium.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashholt Yorowu",
+            "Yorethashholt Kelumu"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:69:0",
+          "text": "Yorethowwick Yorumet took power in The Kelaenmoor Court and sought the abbot's blessing, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "The Kelaenmoor Court",
+            "Yorethowwick Yorumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:69:1",
+          "text": "Yorethowwick Yorumet took power in The Kelumethmere Cou and sought the abbot's blessing, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "The Kelumethmere Cou",
+            "Yorethowwick Yorumet"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:70:0",
+          "text": "Kelumumden Kelorethd succeeded Yorilethmere Yorumor as ruler of The Yorororford Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelumumden Kelorethd",
+            "The Yorororford Cour",
+            "Yorilethmere Yorumor"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:70:1",
+          "text": "Kelumumden Kelorethd succeeded Kelowilgate Yorashag as ruler of The Yorororford Cour.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilgate Yorashag",
+            "Kelumumden Kelorethd",
+            "The Yorororford Cour"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:71:0",
+          "text": "Yoraaford Yoraafell funded the dragon host and named Yorililford Kelilumh its champion, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoraaford Yoraafell",
+            "Yorililford Kelilumh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:71:1",
+          "text": "Keloworgate Yorileth funded the dragon host and named Yorililford Kelilumh its champion, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloworgate Yorileth",
+            "Yorililford Kelilumh"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:72:0",
+          "text": "Kelashorgate Yorashu lost the last land under the dragon crown, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashorgate Yorashu"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:72:1",
+          "text": "Keloramoor Kelethowm lost the last land under the dragon crown, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Keloramoor Kelethowm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:73:0",
+          "text": "Yorashenholt Keloras carriage waited at Kelilashmere because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelilashmere",
+            "Yorashenholt Keloras"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:73:1",
+          "text": "Yorashenholt Keloras carriage waited at Kelashethmere because court relations closed the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelashethmere",
+            "Yorashenholt Keloras"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:74:0",
+          "text": "An empty royal carriage headed to Kelenorholt to collect a load.",
+          "stopped": true,
+          "required_names": [
+            "Kelenorholt"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:74:1",
+          "text": "An empty royal carriage headed to Yororethwick to collect a load.",
+          "stopped": true,
+          "required_names": [
+            "Yororethwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:75:0",
+          "text": "The carriage resumed its trip toward Kelenumwick as road space cleared, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:75:1",
+          "text": "The carriage resumed its trip toward Kelorethmere as road space cleared, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:76:0",
+          "text": "Court relations reopened the road and the carriage continued toward Kelashumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelashumwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:76:1",
+          "text": "Court relations reopened the road and the carriage continued toward Yorilashwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorilashwick"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:77:0",
+          "text": "Kelowilford Cup fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:77:1",
+          "text": "Kelowilholt Book fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilholt Book"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:78:0",
+          "text": "A neglected page of Yorilenholt Crown crumbled and some lore was lost, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorilenholt Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:78:1",
+          "text": "A neglected page of Kelilamoor Crown crumbled and some lore was lost, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilamoor Crown"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:79:0",
+          "text": "Kelenumford used tools and wood for repairs, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenumford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:79:1",
+          "text": "Kelumafell used tools and wood for repairs, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:80:0",
+          "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:80:1",
+          "text": "Goods were stored locally and roads repaired by roadside works, if the rumour is true.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:81:0",
+          "text": "The company delivered Yororilwick Cup to Yorashashden, where the council heard the warning.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashden",
+            "Yororilwick Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:81:1",
+          "text": "The company delivered Yororilwick Cup to Yorenorwick, where the council heard the warning.",
+          "stopped": true,
+          "required_names": [
+            "Yorenorwick",
+            "Yororilwick Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:82:0",
+          "text": "The company fell, and years later a new company took up the carriage.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:82:1",
+          "text": "The company fell, and years later a new company took up the carriage.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:83:0",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:83:1",
+          "text": "After going through the goblin dungeon, the company returned to the hidden trailhead, according to the word going round.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:84:0",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:84:1",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:85:0",
+          "text": "Yorowilfell Kelenorm was bred with Kelaashmere Kelaormo at Yoraethford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashmere Kelaormo",
+            "Yoraethford",
+            "Yorowilfell Kelenorm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:85:1",
+          "text": "Yorowilfell Kelenorm was bred with Yorenengate Kelethow at Yoraethford, with a foal expected, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yoraethford",
+            "Yorenengate Kelethow",
+            "Yorowilfell Kelenorm"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:86:0",
+          "text": "Kelashashmere Yorora gave birth to Yorashumden Kelowilh by Yoroworford Cup at Kelowenholt, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashmere Yorora",
+            "Kelowenholt",
+            "Yorashumden Kelowilh",
+            "Yoroworford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:86:1",
+          "text": "Kelashashmere Yorora gave birth to Yorashumden Kelowilh by Yoroworford Cup at Kelethaden, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashmere Yorora",
+            "Kelethaden",
+            "Yorashumden Kelowilh",
+            "Yoroworford Cup"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:87:0",
+          "text": "Yorumenmere finished making Yorethenmere Book, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorethenmere Book",
+            "Yorumenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:87:1",
+          "text": "Yorumenmere finished making Yorenaford Crown, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenaford Crown",
+            "Yorumenmere"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:88:0",
+          "text": "Kelenenwick Kelorash reinforced Yoraenford Kelorenme on the old road, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenwick Kelorash",
+            "Yoraenford Kelorenme"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:88:1",
+          "text": "Yoraormoor Yorenumho reinforced Yoraenford Kelorenme on the old road, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenford Kelorenme",
+            "Yoraormoor Yorenumho"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:89:0",
+          "text": "Yorashenmoor Yorowaf laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenmoor Yorowaf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:89:1",
+          "text": "Yorenethmere Kelailw laid a clutch, and goblin Ashkeepers sealed the brood hoard.",
+          "stopped": true,
+          "required_names": [
+            "Yorenethmere Kelailw"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:90:0",
+          "text": "Yorowethgate Kelilas joined Yorowethden Yorumorf after seeking food at Kelumowford.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowford",
+            "Yorowethden Yorumorf",
+            "Yorowethgate Kelilas"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:90:1",
+          "text": "Yororethwick Kelashu joined Yorowethden Yorumorf after seeking food at Kelumowford.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowford",
+            "Yororethwick Kelashu",
+            "Yorowethden Yorumorf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:91:0",
+          "text": "Kelorashholt Yoretha put money into Yorumaford's market to buy grain shipments, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorashholt Yoretha",
+            "Yorumaford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:91:1",
+          "text": "Kelorashholt Yoretha put money into Kelumumgate's market to buy grain shipments, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorashholt Yoretha",
+            "Kelumumgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:92:0",
+          "text": "Yorororwick Yorenumf rose to Kelilafell Crown in the dragon cult through service, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelilafell Crown",
+            "Yorororwick Yorenumf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:92:1",
+          "text": "Yorororwick Yorenumf rose to Yorenaden Cup in the dragon cult through service, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Yorenaden Cup",
+            "Yorororwick Yorenumf"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:93:0",
+          "text": "Yororengate raised pony foals and added ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yororengate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:93:1",
+          "text": "Yorashethfell raised pony foals and added ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorashethfell"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:94:0",
+          "text": "Yorororford raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Yorororford"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:94:1",
+          "text": "Kelethilgate raised lambs and added yearlings to the adult flock.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilgate"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:95:0",
+          "text": "Kelaorfell slaughtered sheep for mutton after winter fodder runs short, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorfell",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:95:1",
+          "text": "Kelumummere slaughtered sheep for mutton after winter fodder runs short, if the story is right.",
+          "stopped": true,
+          "required_names": [
+            "Kelumummere",
+            "after winter fodder runs short"
+          ],
+          "all_names": true,
+          "approved_meaning": true
+        }
+      ]
+    }
+  }
+}

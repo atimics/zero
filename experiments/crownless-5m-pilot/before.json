@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0b1394144d3bf54c9ac92694caecc9929bca31ebb39f29c22c236ff7ad95d0a1",
+    "kind": "BANDITS",
+    "events": "- ? ~ Thornford's drought harvest cannot supply the southern settlements.\n- Alderwatch closes the treaty bridge and delays the relief convoy.\n- Displaced workers reinforce The Tallow Knives on the old road.\n",
+    "expected": "Displaced workers gave The Tallow Knives support on the old road, I hear.",
+    "generated": "",
+    "stopped": true
+  },
+  {
+    "id": "138f6fdb834363f43587a78af3caffd430fa3aaf221aadffe8631ed22938b0e2",
+    "kind": "DEATH",
+    "events": "- Tomas Rill posts a notice at Gloamgate: Quiet commission.\n- Ilyra Senn posts a notice at Gloamgate: Road compact.\n- Mara Venn died at age 72 after a life in Thornford.\n",
+    "expected": "Have you heard the news? Mara Venn died after a life in Thornford.",
+    "generated": "",
+    "stopped": true
+  },
+  {
+    "id": "137501db109826234107dd56a7b3f67928c2f60969ad601eddf143deb7224bbe",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Forga Rillbank posts a notice at Thornford: Relief charter.\n- ~ Ilyra Senn posts a notice at Gloamgate: Road compact.\n- ? ~ Varkesh the Unappeased burns Silverwick because 17 stolen crowns remain missing.\n",
+    "expected": "Varkesh the Unappeased burned Silverwick. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "",
+    "stopped": true
+  },
+  {
+    "id": "01e6ad7a56d91bf16e9ea609c2e4d59f72255bb3a57287f357dc71d69796018a",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Silverwick has 0 weeks of food; hunger reaches pressure level 1.\n- Silverwick has 0 weeks of food; hunger reaches pressure level 1.\n- Smoke falls into Silverwick's chimneys; old readers count 14 nights until Varkesh the Unappeased comes.\n",
+    "expected": "The old readers in Silverwick took the smoke as a warning of Varkesh the Unappeased, I hear.",
+    "generated": "",
+    "stopped": true
+  },
+  {
+    "id": "006e7808fd8356abec6abb122fe421f1413c3593c349f1c7cb39d39559011c23",
+    "kind": "NOTICE",
+    "events": "- ~ The Cinder Tithe raids Rosespire: 16 Bread, 16 crowns.\n- Gloamgate has 18 food in store. Its reserve target is 75.\n- Talla Oldstone posts a notice at Thornford: Relief charter.\n",
+    "expected": "Talla Oldstone put up a relief charter in Thornford, I hear.",
+    "generated": "",
+    "stopped": true
+  },
+  {
+    "id": "6448bafa209f8291cd922d16948b2aee612bec59e0cbbf7145c26aad495778cf",
+    "kind": "TREASURE",
+    "events": "- ~ Alderwatch closes the treaty bridge and delays the relief convoy.\n- Silverwick has 28 food in store. Its reserve target is 78.\n- Rosespire finishes Rosespire Moon Cup from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Have you heard the news? Rosespire finished making Rosespire Moon Cup.",
+    "generated": "",
+    "stopped": true
+  }
+]

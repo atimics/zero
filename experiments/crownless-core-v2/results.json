@@ -1,0 +1,130 @@
+{
+  "date": "2026-09-12",
+  "parameters": 4935937,
+  "compact_bytes": 5044760,
+  "final_seeds": {
+    "17": {
+      "test": {
+        "count": 1250,
+        "approved_meaning": 1250,
+        "needs_review": 0,
+        "named_cases": 1170,
+        "all_names_in_named_cases": 1170,
+        "complete_pairs": 625,
+        "approved_pairs": 625
+      },
+      "wording": {
+        "count": 1250,
+        "approved_meaning": 1250,
+        "needs_review": 0,
+        "named_cases": 1170,
+        "all_names_in_named_cases": 1170,
+        "complete_pairs": 625,
+        "approved_pairs": 625
+      }
+    },
+    "29": {
+      "test": {
+        "count": 244,
+        "approved_meaning": 244,
+        "needs_review": 0,
+        "named_cases": 228,
+        "all_names_in_named_cases": 228,
+        "complete_pairs": 122,
+        "approved_pairs": 122
+      },
+      "wording": {
+        "count": 244,
+        "approved_meaning": 244,
+        "needs_review": 0,
+        "named_cases": 228,
+        "all_names_in_named_cases": 228,
+        "complete_pairs": 122,
+        "approved_pairs": 122
+      }
+    },
+    "43": {
+      "test": {
+        "count": 244,
+        "approved_meaning": 244,
+        "needs_review": 0,
+        "named_cases": 228,
+        "all_names_in_named_cases": 228,
+        "complete_pairs": 122,
+        "approved_pairs": 122
+      },
+      "wording": {
+        "count": 244,
+        "approved_meaning": 244,
+        "needs_review": 0,
+        "named_cases": 228,
+        "all_names_in_named_cases": 228,
+        "complete_pairs": 122,
+        "approved_pairs": 122
+      }
+    }
+  },
+  "compact": {
+    "test": {
+      "count": 1250,
+      "approved_meaning": 1250,
+      "needs_review": 0,
+      "named_cases": 1170,
+      "all_names_in_named_cases": 1170,
+      "complete_pairs": 625,
+      "approved_pairs": 625
+    },
+    "wording": {
+      "count": 1250,
+      "approved_meaning": 1250,
+      "needs_review": 0,
+      "named_cases": 1170,
+      "all_names_in_named_cases": 1170,
+      "complete_pairs": 625,
+      "approved_pairs": 625
+    }
+  },
+  "compact_parity": {
+    "test": {
+      "count": 1250,
+      "identical_text_and_stop": 1250
+    },
+    "wording": {
+      "count": 1250,
+      "identical_text_and_stop": 1250
+    }
+  },
+  "game": {
+    "scope": "Distinct native held accounts and confidence bands from one supplied game corpus.",
+    "observations": 10448,
+    "distinct_accounts": 121,
+    "parsed": 119,
+    "approved_meaning": 119,
+    "kinds": [
+      0,
+      1,
+      2,
+      5,
+      13,
+      49,
+      51,
+      75,
+      78,
+      79,
+      80,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      123,
+      133
+    ],
+    "float_q8_identical_text_and_stop": 119
+  },
+  "artifact_hashes": {
+    "models/crownless-core-v2/core.ccv2": "fdc469199c10ed24795b8f66248738c24b9f3bf4d12c52342d7f588ae95f2c02",
+    "models/crownless-core-v2/tokenizer.json": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4"
+  }
+}
