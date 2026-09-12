@@ -6,6 +6,7 @@ import unittest
 import torch
 from crownless_v2 import Crownless, Config, batch, encode_row, generate, train_tokenizer
 from crownless_v2_export import export, load_export
+from score_crownless_v2 import accepted_forms
 
 
 class CoreTests(unittest.TestCase):
@@ -15,6 +16,19 @@ class CoreTests(unittest.TestCase):
 
     def test_parameter_budget(self):
         self.assertEqual(sum(p.numel() for p in Crownless().parameters()), 4950337)
+
+    def test_meaning_score_checks_roles_and_uncertainty(self):
+        rule = {'roles': ['actor', 'recipient', 'quantity'],
+                'outputs': ['{0} helped {1}.', '{1} received help from {0}.']}
+        row = {'fields': [{'field': 1, 'text': 'Tomas'}, {'field': 0, 'text': 'Mara'}],
+               'confidence': 20, 'retold': False}
+        forms = accepted_forms(row, rule)
+        self.assertIn('Mara helped Tomas, if the story is right.', forms)
+        self.assertIn('Tomas received help from Mara, if the rumour is true.', forms)
+        self.assertNotIn('Tomas helped Mara, if the story is right.', forms)
+        self.assertNotIn('Mara helped Tomas.', forms)
+        row.update(confidence=80, retold=True)
+        self.assertIn('Mara helped Tomas, so people say.', accepted_forms(row, rule))
 
     def test_cache_and_causality(self):
         model = Crownless(Config(vocab=300, dim=24, layers=2, heads=3, ff=32, context=32)).eval()
