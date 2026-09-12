@@ -78,6 +78,9 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
                 messages.append(part)
             while sum(map(len, messages)) > 256: messages.pop(0)
             prefix = [token for message in messages for token in message]
+            if 'performance' in row:
+                from crownless_performance import control_text
+                prefix.extend(tokenizer.encode(control_text(row['performance'])).ids)
         prefix.extend(tokenizer.encode(cue).ids)
         selected = []
         for field in sorted(fields, key=lambda f: f['field']):
