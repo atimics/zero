@@ -17,8 +17,10 @@ Lower bits per byte means better prediction of held-out text.
 | Subword 5.05M, 1,024 tokens | 1.550287 | 1.563721 | 11,800 |
 
 The long-context model's test score is 0.004762 bits/byte lower than the
-short-context model, a 0.30% reduction. We observed a 0.30% difference in one training seed. Its size relative to
-run-to-run variation remains unknown. Multi-seed replication is pending. Sample pairs support observations about those particular
+short-context model, a 0.30% reduction in the original training seed.
+The completed five-seed replication finds a mean difference of +0.000060
+bits/byte, with 95% interval [-0.005193, +0.005313]. The contexts meet the
+registered practical-equivalence rule; the direction is unresolved. Sample pairs support observations about those particular
 outputs; a coherence advantage would require a larger, scored comparison.
 
 The subword models improve test bits/byte over the character baseline by 4.28%
@@ -64,8 +66,8 @@ The finding is scoped to that budget. Longer training could change the result.
 Validation curves record 123 checks for each model. Their raw histories are
 in [results.json](results.json), and [curves.svg](curves.svg) shows the full
 selection history. The test split is scored after checkpoint selection.
-The experiments use one training seed and one held-out test author. The scores
-have no reported confidence interval or multi-seed training replication.
+The original scores above use one training seed and one held-out test author.
+The completed replication is reported below.
 
 ## Replication and conditional window analysis
 
@@ -78,14 +80,14 @@ Within-book correlation, training-seed variance and new-author variance remain
 outside their scope. The CUDA BF16 rescore reproduces the original -0.004762 test gap. Its paired
 window interval is [-0.007008, -0.002514], with 563 long-context wins. The
 validation interval is [-0.004280, 0.000354]. These remain conditional
-window intervals while training-seed replication runs.
+window intervals, separate from the training-seed intervals below.
 
 Five paired training seeds are registered: 7, 11, 19, 31 and 43. Primary analysis
 uses paired seed differences with a 95% t interval. Shelley and Stoker supply
 additional test authors; selection remains on the original validation split.
 The registered practical-equivalence band is ±0.01 bits/byte. Full protocol,
 raw window records, and operational bounds are in the repository directory
-`experiments/subword-replication/`. The running study also includes a matched
+`experiments/subword-replication/`. The completed study also includes a matched
 width/depth/context trade and one exploratory prefix-space variant.
 
 ### Recorded GPU artifact: detector positive control
@@ -208,8 +210,8 @@ would require comparison to source passages and an appropriate baseline.
 
 These models often produce plausible short phrases followed by repetitions,
 contradictions, malformed words, shifts of speaker, and loss of scene. The
-current evidence records a one-seed held-out score difference. Training-seed
-replication is pending, and coherence remains an open evaluation question.
+completed five-seed study supports practical equivalence of the context arms
+at the registered threshold. Coherence remains an open evaluation question.
 
 ## Intended use and data limits
 
@@ -254,3 +256,50 @@ losses, frozen source-name counts, exact repetition, and a repetition-1.1
 decoding control. The original scaling run has a separate budget from the
 registered 5M study. The comparison combines parameter count, architecture,
 and token budget. All sample excerpts preserve the generated text.
+
+## Completed study and inference improvements
+
+All 16 registered runs completed successfully in about 2 hours 12 minutes
+from instance launch. The instance terminated. Estimated EC2 compute through
+the finish marker is $2.21; final total billing remains pending.
+
+The primary five-seed long-minus-short difference is +0.000060 bits/byte,
+95% t interval [-0.005193, +0.005313]. The three-author mean difference is
++0.001497, interval [-0.002629, +0.005622]. Both satisfy the registered ±0.01
+practical-equivalence rule, with unresolved direction.
+
+The wider three-layer, context-256 model scores lower than the six-layer,
+context-1024 model by 0.006378 bits/byte on Alcott. The long-minus-wide interval
+is [0.000899, 0.011856]. Across the three selected authors, the mean advantage
+is 0.008752, interval [0.005586, 0.011919]. This secondary comparison changes
+width, depth, and context together. Its interval overlaps the practical band
+boundary, so practical equivalence and a beyond-band gain remain unresolved.
+
+[Saved results and inference report](../../experiments/inference-decoding/README.md)
+include the complete study summary, final-checkpoint comparison, decoding
+sweep, cache validation, and speed measurements.
+
+Live generation uses a request-local KV cache. When the context window shifts,
+it rebuilds the prefix so the existing reset-position behavior is preserved.
+The default decoding settings remain temperature 0.7, top-k 40, penalty 1.0.
+The demo offers 64, 128, or 256 new tokens. Its optional sentence-end display
+uses terminal punctuation as a heuristic and retains the full raw output.
+Abbreviations can affect this heuristic; an output with no detected ending
+is shown in full. Saved research samples remain unchanged.
+
+The selected 50M checkpoint scores 1.391370 test bits/byte; the final checkpoint
+scores 1.453993 on the identical 1,024 CPU FP32 windows. The selected checkpoint
+remains the generation candidate.
+
+The completed 576-output decoding sweep finds that penalty 1.1 at temperature
+0.7/top-k 40 lowers average bigram repeat excess from 12.86% to 11.56% and
+four-gram excess from 2.41% to 1.68%. The demo offers this as an optional
+repetition control. The blind consistency review packet is ready; human
+ratings remain pending.
+
+The local cache benchmark gives 4.30× speedup for 50M on the short prompt with
+128 generated tokens, and 3.26–3.43× for 5M. All 18 tested prompt/model samples
+preserve token IDs. Maximum observed logit difference is 0.00002480 in FP32.
+Near the context limit the measured speedup is 1.83–1.99×, with rebuilds
+preserving the existing window behavior. Raw timings and scope are in the
+linked inference report.
