@@ -50,7 +50,46 @@ def wide_pools(source,seed):
     return result,known
 
 
-def mixed(source,output,pairs=12000,seed=73):
+def add_strict_splits(root, prior_data=None):
+    """Keep complete pairs whose topic names never appear in tuning text."""
+    train=(root/'train.txt').read_text().lower()
+    if prior_data is not None: train+='\n'+(prior_data/'train.txt').read_text().lower()
+    def seen(name):
+        name=name.lower(); start=0
+        while (i:=train.find(name,start))>=0:
+            end=i+len(name)
+            word=lambda c:c.isalnum() or c=='_'
+            if (i==0 or not word(train[i-1])) and (end==len(train) or not word(train[end])):return True
+            start=i+1
+        return False
+    checks={}
+    for split in ['validation','test','wording_test']:
+        source=(root/(split+'.txt')).read_bytes()
+        rows=[json.loads(l) for l in (root/(split+'.audit.jsonl')).read_text().splitlines()]
+        excluded=[]; kept=[]; data=bytearray()
+        for i in range(0,len(rows),2):
+            pair=rows[i:i+2]
+            if len(pair)!=2 or pair[0]['pair_id']!=pair[1]['pair_id']:raise ValueError('Broken pair')
+            names={n for r in pair for k,n in r['facts'].items() if k not in ['subject','direction']}
+            overlap=sorted(n for n in names if seen(n))
+            if overlap:
+                excluded.append(dict(pair_id=pair[0]['pair_id'],names=overlap));continue
+            for row in pair:
+                r=dict(row); start=r['text_start']
+                r['output_start']=len(data)+r['output_start']-start
+                r['text_start']=len(data)
+                data.extend(source[start:start+r['text_bytes']]);kept.append(r)
+        name='strict_'+split
+        (root/(name+'.txt')).write_bytes(data)
+        (root/(name+'.audit.jsonl')).write_text(''.join(json.dumps(r,sort_keys=True)+'\n' for r in kept))
+        checks[name]=dict(rows=len(kept),pairs=len(kept)//2,sha256=sha(data),excluded_pairs=excluded)
+    checks['training_sha256']=sha((root/'train.txt').read_bytes())
+    checks['prior_training_sha256']=sha((prior_data/'train.txt').read_bytes()) if prior_data else None
+    (root/'strict-name-checks.json').write_text(json.dumps(checks,indent=2)+'\n')
+    return checks
+
+
+def mixed(source,output,pairs=12000,seed=73,prior_data=None):
     names,known=wide_pools(source,seed)
     manifest=build(source,output,pairs,seed,name_pools=names)
     text=bytearray((output/'train.txt').read_bytes())
@@ -72,6 +111,7 @@ def mixed(source,output,pairs=12000,seed=73):
                     name_pools={s:{k:len(v) for k,v in ps.items()} for s,ps in names.items()},
                     generator_sha256={n:sha((Path(__file__).parent/n).read_bytes()) for n in ['build_crownless_facts.py','build_crownless_mixed.py']})
     manifest['splits']['train']=dict(rows=len(audit),bytes=len(text),sha256=sha(text))
+    manifest['strict_name_checks']=add_strict_splits(output,prior_data)
     (output/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     return manifest
 
@@ -82,6 +122,7 @@ if __name__=='__main__':
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--pairs',type=int,default=12000)
     p.add_argument('--seed',type=int,default=73)
+    p.add_argument('--prior-data',type=Path)
     a=p.parse_args()
     if a.pairs<12:p.error('Use at least twelve pairs')
-    print(json.dumps(mixed(a.source,a.output,a.pairs,a.seed),indent=2))
+    print(json.dumps(mixed(a.source,a.output,a.pairs,a.seed,a.prior_data),indent=2))

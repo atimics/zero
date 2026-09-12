@@ -1,0 +1,361 @@
+{
+  "strict_validation": {
+    "rows": 188,
+    "pairs": 94,
+    "sha256": "98158f7a73355e3741ac7a44018fa9a9e3c40efa9d5a3a36a92268bd30994619",
+    "excluded_pairs": [
+      {
+        "pair_id": "validation-0",
+        "names": [
+          "Danabarrow"
+        ]
+      },
+      {
+        "pair_id": "validation-11",
+        "names": [
+          "Melil Parliament"
+        ]
+      },
+      {
+        "pair_id": "validation-14",
+        "names": [
+          "Sarhar"
+        ]
+      },
+      {
+        "pair_id": "validation-15",
+        "names": [
+          "Taber"
+        ]
+      },
+      {
+        "pair_id": "validation-16",
+        "names": [
+          "Tawilbarrow"
+        ]
+      },
+      {
+        "pair_id": "validation-21",
+        "names": [
+          "Rilkir"
+        ]
+      },
+      {
+        "pair_id": "validation-33",
+        "names": [
+          "Faelholbank"
+        ]
+      },
+      {
+        "pair_id": "validation-36",
+        "names": [
+          "Dormi"
+        ]
+      },
+      {
+        "pair_id": "validation-38",
+        "names": [
+          "Yasil"
+        ]
+      },
+      {
+        "pair_id": "validation-51",
+        "names": [
+          "Brafenmere"
+        ]
+      },
+      {
+        "pair_id": "validation-54",
+        "names": [
+          "Loren",
+          "Vorgalmere"
+        ]
+      },
+      {
+        "pair_id": "validation-60",
+        "names": [
+          "Arran",
+          "Olul"
+        ]
+      },
+      {
+        "pair_id": "validation-62",
+        "names": [
+          "Lifa"
+        ]
+      },
+      {
+        "pair_id": "validation-63",
+        "names": [
+          "Inir"
+        ]
+      },
+      {
+        "pair_id": "validation-65",
+        "names": [
+          "Bamar"
+        ]
+      },
+      {
+        "pair_id": "validation-67",
+        "names": [
+          "Rior"
+        ]
+      },
+      {
+        "pair_id": "validation-73",
+        "names": [
+          "Renhal"
+        ]
+      },
+      {
+        "pair_id": "validation-74",
+        "names": [
+          "Kelyen"
+        ]
+      },
+      {
+        "pair_id": "validation-86",
+        "names": [
+          "Nelsamawick"
+        ]
+      },
+      {
+        "pair_id": "validation-88",
+        "names": [
+          "Lababank"
+        ]
+      },
+      {
+        "pair_id": "validation-94",
+        "names": [
+          "Nelem Throne"
+        ]
+      },
+      {
+        "pair_id": "validation-97",
+        "names": [
+          "Rilkir"
+        ]
+      },
+      {
+        "pair_id": "validation-98",
+        "names": [
+          "Selligate"
+        ]
+      },
+      {
+        "pair_id": "validation-99",
+        "names": [
+          "Anran"
+        ]
+      },
+      {
+        "pair_id": "validation-100",
+        "names": [
+          "Emsil Parliament"
+        ]
+      },
+      {
+        "pair_id": "validation-117",
+        "names": [
+          "Glaros"
+        ]
+      }
+    ]
+  },
+  "strict_test": {
+    "rows": 216,
+    "pairs": 108,
+    "sha256": "48253a9aedf036ba82024d79c5593749d70332eebb826c44249821a0d515f3d1",
+    "excluded_pairs": [
+      {
+        "pair_id": "test-9",
+        "names": [
+          "Anmormere",
+          "Ilmor"
+        ]
+      },
+      {
+        "pair_id": "test-11",
+        "names": [
+          "Lenti"
+        ]
+      },
+      {
+        "pair_id": "test-15",
+        "names": [
+          "Meror"
+        ]
+      },
+      {
+        "pair_id": "test-29",
+        "names": [
+          "Silba"
+        ]
+      },
+      {
+        "pair_id": "test-57",
+        "names": [
+          "Mersha"
+        ]
+      },
+      {
+        "pair_id": "test-62",
+        "names": [
+          "Yata"
+        ]
+      },
+      {
+        "pair_id": "test-66",
+        "names": [
+          "Halrilbarrow"
+        ]
+      },
+      {
+        "pair_id": "test-77",
+        "names": [
+          "Galel",
+          "Talfenmere"
+        ]
+      },
+      {
+        "pair_id": "test-111",
+        "names": [
+          "Yormergate"
+        ]
+      },
+      {
+        "pair_id": "test-112",
+        "names": [
+          "Enmar"
+        ]
+      },
+      {
+        "pair_id": "test-113",
+        "names": [
+          "Bagla"
+        ]
+      },
+      {
+        "pair_id": "test-114",
+        "names": [
+          "Yengalbarrow"
+        ]
+      }
+    ]
+  },
+  "strict_wording_test": {
+    "rows": 206,
+    "pairs": 103,
+    "sha256": "cce9ba9abdde0c99790106ec3df5ee2ca5b15b3511e9f8edf9bdd22dad49c910",
+    "excluded_pairs": [
+      {
+        "pair_id": "wording_test-3",
+        "names": [
+          "Talfenmere",
+          "Valwenbank"
+        ]
+      },
+      {
+        "pair_id": "wording_test-4",
+        "names": [
+          "Berbel"
+        ]
+      },
+      {
+        "pair_id": "wording_test-24",
+        "names": [
+          "Wenir"
+        ]
+      },
+      {
+        "pair_id": "wording_test-25",
+        "names": [
+          "Viilspire"
+        ]
+      },
+      {
+        "pair_id": "wording_test-26",
+        "names": [
+          "Shain"
+        ]
+      },
+      {
+        "pair_id": "wording_test-27",
+        "names": [
+          "Elli"
+        ]
+      },
+      {
+        "pair_id": "wording_test-50",
+        "names": [
+          "Faash"
+        ]
+      },
+      {
+        "pair_id": "wording_test-61",
+        "names": [
+          "Marna"
+        ]
+      },
+      {
+        "pair_id": "wording_test-63",
+        "names": [
+          "Faash",
+          "Verna"
+        ]
+      },
+      {
+        "pair_id": "wording_test-73",
+        "names": [
+          "Venfen"
+        ]
+      },
+      {
+        "pair_id": "wording_test-75",
+        "names": [
+          "Bagla"
+        ]
+      },
+      {
+        "pair_id": "wording_test-86",
+        "names": [
+          "Elhal"
+        ]
+      },
+      {
+        "pair_id": "wording_test-89",
+        "names": [
+          "Mimarkamere"
+        ]
+      },
+      {
+        "pair_id": "wording_test-102",
+        "names": [
+          "Beltorwatch"
+        ]
+      },
+      {
+        "pair_id": "wording_test-103",
+        "names": [
+          "Rilthorzawick"
+        ]
+      },
+      {
+        "pair_id": "wording_test-110",
+        "names": [
+          "Kawa"
+        ]
+      },
+      {
+        "pair_id": "wording_test-111",
+        "names": [
+          "Roslorgate"
+        ]
+      }
+    ]
+  },
+  "training_sha256": "714af90cd5e602d1b268ba845ca01a830c5059de0d3086134a8479828101558e",
+  "prior_training_sha256": "df2df6851725bac4f1e5d8f2132aefb602aa95c19625688042c11db1108d2a03"
+}

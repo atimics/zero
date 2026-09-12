@@ -1,0 +1,76 @@
+{
+  "validation": {
+    "checked_names": 314,
+    "names_seen_in_training_text": [
+      "Sarhar",
+      "Loren",
+      "Lababank",
+      "Faelholbank",
+      "Rior",
+      "Danabarrow",
+      "Inir",
+      "Kelyen",
+      "Brafenmere",
+      "Melil Parliament",
+      "Tawilbarrow",
+      "Yasil",
+      "Vorgalmere",
+      "Nelem Throne",
+      "Taber",
+      "Renhal",
+      "Nelsamawick",
+      "Selligate",
+      "Emsil Parliament",
+      "Rilkir",
+      "Anran",
+      "Lifa",
+      "Dormi",
+      "Glaros",
+      "Arran",
+      "Bamar",
+      "Olul"
+    ]
+  },
+  "test": {
+    "checked_names": 314,
+    "names_seen_in_training_text": [
+      "Meror",
+      "Lenti",
+      "Anmormere",
+      "Halrilbarrow",
+      "Yengalbarrow",
+      "Mersha",
+      "Bagla",
+      "Yormergate",
+      "Silba",
+      "Ilmor",
+      "Enmar",
+      "Galel",
+      "Talfenmere",
+      "Yata"
+    ]
+  },
+  "wording_test": {
+    "checked_names": 311,
+    "names_seen_in_training_text": [
+      "Berbel",
+      "Faash",
+      "Marna",
+      "Mimarkamere",
+      "Beltorwatch",
+      "Venfen",
+      "Rilthorzawick",
+      "Viilspire",
+      "Shain",
+      "Bagla",
+      "Valwenbank",
+      "Kawa",
+      "Wenir",
+      "Elhal",
+      "Verna",
+      "Talfenmere",
+      "Elli",
+      "Roslorgate"
+    ]
+  }
+}

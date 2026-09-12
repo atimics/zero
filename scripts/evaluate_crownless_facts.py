@@ -91,7 +91,7 @@ def main():
     p.add_argument('--data',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--device',default='cpu',choices=['cpu','mps','cuda'])
-    p.add_argument('--split',action='append',choices=['test','wording_test','editorial_test'])
+    p.add_argument('--split',action='append',choices=['test','wording_test','editorial_test','strict_test','strict_wording_test','strict_validation'])
     args=p.parse_args()
     args.output.mkdir(parents=True,exist_ok=False)
     torch.set_num_threads(4)

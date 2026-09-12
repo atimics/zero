@@ -10,7 +10,7 @@ from evaluate_crownless_facts import contains, measure, generate_batch
 from tune_crownless import generate, read_split
 from zero_torch import Zero
 from zero_cached import CachedZero
-from build_crownless_mixed import mixed, wide_pools
+from build_crownless_mixed import mixed, wide_pools, add_strict_splits
 
 
 class FactTests(unittest.TestCase):
@@ -39,6 +39,32 @@ class FactTests(unittest.TestCase):
         result=measure(samples,rows)
         self.assertEqual(result['required_names_match'],1)
         self.assertEqual(result['changed_pairs_match'],0)
+
+    def test_strict_names_exclude_names_inside_other_names(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            (root/'train.txt').write_text('The Ashford Cup was made in Elmfordbridge.')
+            raw=bytearray();rows=[]
+            for i,name in enumerate(['Ashford','Oakford','Elmford','Elmhaven']):
+                prefix='- '+name+' has little food.\n';target=name+' was short of food.'
+                rows.append(dict(id=str(i),pair_id=str(i//2),facts=dict(place=name),input=dict(kind='SHORTAGE'),
+                                 output=target,text_start=len(raw),output_start=len(raw)+len(prefix),text_bytes=len(prefix+target+'\n\n')))
+                raw.extend((prefix+target+'\n\n').encode())
+            for split in ['validation','test','wording_test']:
+                (root/(split+'.txt')).write_bytes(raw)
+                (root/(split+'.audit.jsonl')).write_text('\n'.join(json.dumps(r) for r in rows))
+            checks=add_strict_splits(root)
+            self.assertEqual(checks['strict_test']['rows'],2)
+            self.assertEqual(checks['strict_test']['excluded_pairs'][0]['names'],['Ashford'])
+            self.assertEqual([e['id'] for e in read_split(root,'strict_test',512)],['2','3'])
+
+    def test_original_game_scoring_respects_omitted_actor(self):
+        row=dict(id='old',input=dict(kind='NOTICE',account='Ada Bell posts a notice at Oakford: Relief charter.'),
+                 output='Someone put up a relief charter in Oakford.')
+        sample=dict(id='old',generated=row['output'],expected=row['output'],stopped=True)
+        scores=measure([sample],[row])
+        self.assertEqual(sample['required'],dict(place='Oakford'))
+        self.assertEqual(scores['required_names_match'],1)
 
     def test_builder_keeps_pairs_and_splits_intact(self):
         accounts = [
