@@ -58,6 +58,9 @@ def main():
     paths = [(path,destination) for path in sorted(args.review.glob('sample-*.wav'))]
     paths += [(path,references) for path in sorted(args.references.glob('*.wav'))]
     for source, target in paths:
+        if target == references:
+            # Keep exact reference masters for repeatable voice conditioning.
+            shutil.copy2(source, target/source.name)
         with wave.open(str(source),'rb') as wav:
             if wav.getnchannels()!=1 or wav.getsampwidth()!=2 or wav.getnframes()==0:
                 raise ValueError('Expected nonempty mono PCM16 audio')

@@ -1,0 +1,459 @@
+{
+  "schema": "crownless.performance.v1",
+  "model_sha256": "fde6ce97344e6aaa9e681a58cd11319ad70d946be75532d6f115488098ed5eca",
+  "samples": [
+    {
+      "id": "test:6:0:human:calm:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "human",
+        "emotion": "calm"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Here is what I heard. Kelethilford made bread from wheat, so people say. Take your time.",
+      "history": [],
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. Take your time.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:human:afraid:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "human",
+        "emotion": "afraid"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Here is what I heard. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "history": [],
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:human:relieved:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "human",
+        "emotion": "relieved"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Here is what I heard. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "history": [],
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:goblin:calm:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "calm"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Listen close, you. Kelethilford made bread from wheat, so people say. Take your time.",
+      "history": [],
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. Take your time.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:goblin:afraid:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "afraid"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Listen close, you. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "history": [],
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:goblin:relieved:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "relieved"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Listen close, you. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "history": [],
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:pony:calm:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "pony",
+        "emotion": "calm"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. Take your time.",
+      "history": [],
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. Take your time.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:pony:afraid:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "pony",
+        "emotion": "afraid"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "history": [],
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    },
+    {
+      "id": "test:6:0:pony:relieved:0",
+      "rule": "bakery_production_0",
+      "act": "start",
+      "performance": {
+        "creature": "pony",
+        "emotion": "relieved"
+      },
+      "confidence": 80,
+      "retold": true,
+      "reference": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "history": [],
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "stopped": true,
+      "meaning": true,
+      "identity": true,
+      "emotion": true,
+      "joint": true,
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n"
+    }
+  ],
+  "exchanges": [
+    {
+      "creature": "human",
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n",
+      "turns": [
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            }
+          ],
+          "text": "Let me tell you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Let me tell you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            }
+          ],
+          "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time.",
+          "stopped": true
+        },
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "human",
+            "emotion": "relieved"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "self",
+              "text": "Let me tell you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "other",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            }
+          ],
+          "text": "Let me tell you. Let's leave it there for now. What a relief.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Let me tell you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "self",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            },
+            {
+              "speaker": "other",
+              "text": "Let me tell you. Let's leave it there for now. What a relief."
+            }
+          ],
+          "text": "Let me tell you. Very well. We can talk quietly.",
+          "stopped": true
+        }
+      ]
+    },
+    {
+      "creature": "goblin",
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n",
+      "turns": [
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "goblin",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            }
+          ],
+          "text": "Got a tale for you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Got a tale for you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            }
+          ],
+          "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time.",
+          "stopped": true
+        },
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "goblin",
+            "emotion": "relieved"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "self",
+              "text": "Got a tale for you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "other",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            }
+          ],
+          "text": "Got a tale for you. Let's leave it there for now. What a relief.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Got a tale for you. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "self",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            },
+            {
+              "speaker": "other",
+              "text": "Got a tale for you. Let's leave it there for now. What a relief."
+            }
+          ],
+          "text": "Let me tell you. Let's ask around before we pass it on. We can talk quietly.",
+          "stopped": true
+        }
+      ]
+    },
+    {
+      "creature": "pony",
+      "account": "- ~ Kelethilford's bakery mills 28 Wheat into 31 Bread.\n",
+      "turns": [
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "pony",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            }
+          ],
+          "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            }
+          ],
+          "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time.",
+          "stopped": true
+        },
+        {
+          "speaker": 0,
+          "performance": {
+            "creature": "pony",
+            "emotion": "relieved"
+          },
+          "history": [
+            {
+              "speaker": "other",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "self",
+              "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "other",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            }
+          ],
+          "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. What a relief.",
+          "stopped": true
+        },
+        {
+          "speaker": 1,
+          "performance": {
+            "creature": "human",
+            "emotion": "calm"
+          },
+          "history": [
+            {
+              "speaker": "self",
+              "text": "What happened?"
+            },
+            {
+              "speaker": "other",
+              "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. We can talk quietly."
+            },
+            {
+              "speaker": "self",
+              "text": "Here is what I heard. That is the account I hold. We should ask someone who was there. Take your time."
+            },
+            {
+              "speaker": "other",
+              "text": "Gather close, dear. Bread was made from wheat in Kelethilford, according to the word going round. What a relief."
+            }
+          ],
+          "text": "Let me tell you. Let's ask around before we pass it on. We can talk quietly.",
+          "stopped": true
+        }
+      ]
+    }
+  ],
+  "review_status": "Listening and open-ended style judgement await review."
+}

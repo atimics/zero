@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "description": "A fictional magical talking pony with a bright rounded musical voice, soft warm resonance, bouncy gentle rhythm, and very clear conversational English. Friendly and curious with an airy playful quality. Calm delivery. Clean studio speech.",
+  "text": "The road is quiet this morning. Come inside, and tell me where you are going. We can find a place for your horses.",
+  "seed": 20260914,
+  "sha256": "5e3089e06a08afed98f0743c41654ea1d5fde9b82ef8a9d2f928edab6850388b",
+  "seconds": 192.29107791697606,
+  "packages": {
+    "torch": "2.11.0",
+    "qwen-tts": "0.1.1"
+  },
+  "snapshots": [
+    "5ecdb67327fd37bb2e042aab12ff7391903235d3"
+  ]
+}

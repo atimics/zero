@@ -1,0 +1,70 @@
+{
+  "schema": "crownless.performance.v1",
+  "source_commit": "e7cc859dbb34cd4b155971f772fe00744f534424",
+  "source_hashes": {
+    "crownless_performance.py": "d0ab5c516fb6abb4fcfe3248f6708ce177c191e99d247c5ebea5865362682d6a",
+    "train_crownless_performance.py": "2feb0bafcb4e1c6e29e1f4fd4c689f3c50ebe26c4a94f6fbe4c32be29c1455d7",
+    "crownless_v2.py": "7a5be9277a7dd855a59c981a713b569b014cc9cb0d03e98a61ebfdd4372326cf",
+    "crownless_conversation.py": "29b9d02edd031c74eb9c4b649d4eff584aa33dd9e1d894abf52ec3e8623ef32e",
+    "crownless_v2_export.py": "59249330258aff74b7f206a03f85024cad0200e536df3d1a4eab2fde245c0a6a",
+    "score_crownless_v2.py": "d0581b7ab7c175417e097579465e605048c6ae446b7ef5d562ea11d6eecdec02"
+  },
+  "base_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "data_manifest_sha256": "41f9af4c17ce282a437504656baa739902b8b9b40cd8e2f71d1b64b6e431c76f",
+  "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+  "seed": 91,
+  "steps": 3000,
+  "device": "mps",
+  "batch_size": 16,
+  "rehearsal_fraction": 0.5,
+  "held_event_kinds": [
+    "ALLIANCE_DECLARED",
+    "DRAGON_PATRON_NAMED",
+    "HORSE_BRED",
+    "PEACE_DECLARED",
+    "SETTLEMENT_RAIDED"
+  ],
+  "held_rules": [
+    "alliance_declared_0",
+    "dragon_patron_named_0",
+    "horse_bred_0",
+    "horse_bred_1",
+    "peace_declared_0",
+    "settlement_raided_0",
+    "settlement_raided_1"
+  ],
+  "files": {
+    "train": {
+      "rows": 10800,
+      "sha256": "589f9cc32cd26b0c8caedb63d6460ae23beedff849036a28ba088d156665b2c9"
+    },
+    "rehearsal": {
+      "rows": 1200,
+      "sha256": "9b0a5b49d31ac3518fe4c4af7072f487b99f2b5c47c8df8fd7e5a70808322342"
+    },
+    "validation": {
+      "rows": 324,
+      "sha256": "04b33b8fd66394acd153192249e58d80e322f24f60c07f01e83a974bdd82bfef"
+    },
+    "test": {
+      "rows": 648,
+      "sha256": "9b6db75582f5d0dcca1ef306ac7f01d887f3ae2e7efbd0cea2ade47b9c42bf45"
+    },
+    "new_questions": {
+      "rows": 324,
+      "sha256": "debd21e1ed43a92f2e05ecd096d57361b9aa9ef4c4a6e8d507ba7c3b6108d82a"
+    },
+    "new_events": {
+      "rows": 216,
+      "sha256": "779f5c7cffeaf62c91703f05827ee36233fae31a44e3f0391cb17c3206a50046"
+    },
+    "retention": {
+      "rows": 122,
+      "sha256": "1d6fe6b653944736f596b8576078811645b0147b6314991fa27854068d581dfb"
+    }
+  },
+  "parameters": 4935937,
+  "torch": "2.8.0",
+  "scope": "Authored style forms; exact meaning and style scored separately."
+}

@@ -35,7 +35,44 @@ test sets are development checks for that follow-up. A separate evaluation
 uses account pairs excluded from all earlier development checks and changes
 the question wording. Both runs and the fresh evaluation retain raw outputs.
 
-## Reproduce
+## Measured results
+
+The follow-up selected update 1,900 by validation loss from its 3,000 updates.
+The model remains 4,935,937 parameters and 5,044,766 bytes on disk.
+
+| Check | First run: complete response and style | Follow-up: complete response and style |
+| --- | ---: | ---: |
+| Development responses | 529 / 648 | 637 / 648 |
+| Changed question wording | 272 / 324 | 296 / 324 |
+| Held-out event kinds | 136 / 216 | 215 / 216 |
+| Ordinary conversation retention | 120 / 122 | 121 / 122 |
+| Fresh account pairs and changed questions | — | 548 / 648 |
+
+All 648 fresh responses finished and matched the requested creature and
+emotion forms. 548 also matched an approved complete response (84.6%).
+Approval includes the conversation task and permitted wording as well as
+the held claim. A failure can be an answer to a different question, an
+unapproved wording, or a factual error. The compressed raw results retain
+the reference, actual words, controls, confidence, and preceding speech.
+Of the 100 fresh failures, 51 concern source questions, 18 disagreement,
+14 opening accounts, nine news questions, and eight confidence questions.
+For example, one brood account keeps the dragon laying a clutch and drops
+the Ashkeepers sealing the hoard. Several source replies answer with uncertainty.
+
+The original core scored 122/122 on the ordinary retention set. For the
+changed-question development set, meaning-only approval changed from 312/324
+in the first run to 296/324 in the follow-up, while emotion control improved
+from 283/324 to 324/324. This is a measured tradeoff. The fresh evaluation
+sets the boundary for broader response quality; these figures describe the
+authored test forms and one training seed.
+
+The listening page contains nine matched lines and three actual four-turn
+exchanges. Audio identity and emotional performance remain listening judgements.
+The next writing and training work should broaden response families and include
+styled preceding speech. The current generator supplies ordinary preceding
+speech, while the review exchanges exercise actual styled model output.
+
+## Reproduce the experiment
 
 Install `scripts/requirements-crownless-v2.txt`. Generate the held-account
 corpus with Crownless's `tools/build_core_diagnostic.py`, seed 20260919.
@@ -75,6 +112,7 @@ four-turn exchanges. Exchanges pass each model-generated line to the next
 speaker. Their open conversation quality is for human review.
 
 Audio uses one fixed synthetic reference per creature across all three moods.
+The package includes the original reference WAVs and compact MP3 listening copies.
 Qwen VoiceDesign creates the references. Pocket TTS speaks the saved model's
 exact words. Emotion reaches Pocket through the wording. This experiment tunes
 the language core; the audio weights come from the existing speech models.

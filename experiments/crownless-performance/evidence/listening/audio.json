@@ -1,0 +1,130 @@
+{
+  "model": "Pocket TTS",
+  "packages": {
+    "torch": "2.14.0",
+    "pocket-tts": "3.1.0"
+  },
+  "snapshots": [
+    "39592ff23c9ef80098bb74895d104c26275fe2c9"
+  ],
+  "scope": "Fixed reference per creature; emotion reaches Pocket through spoken wording. Acoustic control requires listening review.",
+  "samples": [
+    {
+      "file": "sample-0.wav",
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. Take your time.",
+      "performance": {
+        "creature": "human",
+        "emotion": "calm"
+      },
+      "sha256": "2efea9d2b03733dfd9c38e696ef276236a7bbc8586d71171627d726f5e109cb4",
+      "reference_sha256": "39a67321c86274c163f36dcf88fe04d85c2051a581df0bf5122832f8d1a4a73a",
+      "generation_seconds": 0.6394141246564686,
+      "audio_seconds": 6.8,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-1.wav",
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "performance": {
+        "creature": "human",
+        "emotion": "afraid"
+      },
+      "sha256": "66f51065bb0f6289fa133a964508c305282f93345616531fb6a85d671375bc76",
+      "reference_sha256": "39a67321c86274c163f36dcf88fe04d85c2051a581df0bf5122832f8d1a4a73a",
+      "generation_seconds": 0.6446744580753148,
+      "audio_seconds": 6.96,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-2.wav",
+      "text": "Here is what I heard. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "performance": {
+        "creature": "human",
+        "emotion": "relieved"
+      },
+      "sha256": "c65e66f939caa470bb6697709034454e45517e30ab58cc2c848b6b214187653d",
+      "reference_sha256": "39a67321c86274c163f36dcf88fe04d85c2051a581df0bf5122832f8d1a4a73a",
+      "generation_seconds": 0.6541217919439077,
+      "audio_seconds": 7.04,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-3.wav",
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. Take your time.",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "calm"
+      },
+      "sha256": "3c16780606f77954e37c35f4dc38d4feb8c32c18164230986db9456374690763",
+      "reference_sha256": "83f46f15e9a0fbf4097cc367e0add968ce6f978bf6c7ac66607aaf803c8408ec",
+      "generation_seconds": 0.6149857081472874,
+      "audio_seconds": 6.4,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-4.wav",
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "afraid"
+      },
+      "sha256": "fb0f13b20f707e786b70c4544eaafff54f9071820130fba6dcf84d0e53645e78",
+      "reference_sha256": "83f46f15e9a0fbf4097cc367e0add968ce6f978bf6c7ac66607aaf803c8408ec",
+      "generation_seconds": 0.6619495418854058,
+      "audio_seconds": 6.48,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-5.wav",
+      "text": "Listen close, you. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "performance": {
+        "creature": "goblin",
+        "emotion": "relieved"
+      },
+      "sha256": "7408e9d6a17bf768dc33b7c97140dbbce6305a809e2ec11eec280ed5aa3004c0",
+      "reference_sha256": "83f46f15e9a0fbf4097cc367e0add968ce6f978bf6c7ac66607aaf803c8408ec",
+      "generation_seconds": 0.6250802082940936,
+      "audio_seconds": 6.56,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-6.wav",
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. Take your time.",
+      "performance": {
+        "creature": "pony",
+        "emotion": "calm"
+      },
+      "sha256": "f027e790da941897ca39c101d93e79ddebb90f83d88558fae58678bc8b5f88d9",
+      "reference_sha256": "5e3089e06a08afed98f0743c41654ea1d5fde9b82ef8a9d2f928edab6850388b",
+      "generation_seconds": 0.6332427081651986,
+      "audio_seconds": 6.88,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-7.wav",
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I am frightened.",
+      "performance": {
+        "creature": "pony",
+        "emotion": "afraid"
+      },
+      "sha256": "1511588b1f357b4fb3b2c75af1ebf0120d702ab0009725dda2fcc6ed441dcd6e",
+      "reference_sha256": "5e3089e06a08afed98f0743c41654ea1d5fde9b82ef8a9d2f928edab6850388b",
+      "generation_seconds": 0.6878984579816461,
+      "audio_seconds": 7.44,
+      "seed": 20260912
+    },
+    {
+      "file": "sample-8.wav",
+      "text": "Oh, listen, dear. Kelethilford made bread from wheat, so people say. I can breathe again.",
+      "performance": {
+        "creature": "pony",
+        "emotion": "relieved"
+      },
+      "sha256": "81c709d5bfdcf33b4dadadf43437b4543a119e4514150335896d221b4538874a",
+      "reference_sha256": "5e3089e06a08afed98f0743c41654ea1d5fde9b82ef8a9d2f928edab6850388b",
+      "generation_seconds": 0.720656624995172,
+      "audio_seconds": 8.0,
+      "seed": 20260912
+    }
+  ]
+}

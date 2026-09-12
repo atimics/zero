@@ -2,11 +2,15 @@ import copy
 import random
 import unittest
 from unittest.mock import patch
+from pathlib import Path
+import hashlib
+import json
 from crownless_conversation import response
 from crownless_performance import CREATURES, EMOTIONS, control_text, styled, score, corpus
 from crownless_v2 import encode_row
 import test_crownless_conversation as fixtures
 from speak_crownless_performance import speak
+from crownless_v2_export import load_export
 
 
 class PerformanceTests(unittest.TestCase):
@@ -93,6 +97,25 @@ class PerformanceTests(unittest.TestCase):
         packet['grammar_sha256'] = 'different'
         with self.assertRaisesRegex(ValueError, 'grammar'):
             speak(None, metadata, self.tokenizer, packet, 'goblin', 'afraid')
+
+    def test_published_model_controls_and_names(self):
+        root = Path(__file__).resolve().parents[1]
+        path = root/'models/crownless-performance/core.ccv2'
+        receipt = json.loads(path.with_name('performance.json').read_text())
+        self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), receipt['model_sha256'])
+        model, metadata = load_export(path, root/'models/crownless-core-v2/tokenizer.json')
+        fields = copy.deepcopy(self.row['fields'])
+        for field in fields:
+            field['start'] -= 2; field['end'] -= 2
+        packet = {'grammar_sha256':metadata['rules_sha256'], 'text':self.row['prefix'][2:-1],
+                  'kind':133, 'rule':'notice_posted_0', 'confidence':80, 'fields':fields}
+        rule = dict(self.rule, outputs=['{0} posted a notice about {2} in {1}.',
+                                      'In {1}, {0} put up a notice about {2}.'])
+        ordinary = response(self.row, rule, 'start', random.Random(1))
+        for creature in CREATURES:
+            for emotion in EMOTIONS:
+                result = speak(model, metadata, self.tokenizer, packet, creature, emotion)
+                self.assertTrue(score(styled(ordinary, creature, emotion), rule, result)['joint'], result['text'])
 
 
 if __name__ == '__main__': unittest.main()

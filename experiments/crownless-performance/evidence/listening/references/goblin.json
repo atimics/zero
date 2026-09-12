@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "description": "A fictional small adult goblin with a wiry raspy nasal voice, a low mischievous chuckle in the tone, quick clipped consonants, and clear conversational English. A distinctive fantasy creature, alert and curious. Calm delivery. Clean studio speech.",
+  "text": "The road is quiet this morning. Come inside, and tell me where you are going. We can find a place for your horses.",
+  "seed": 20260913,
+  "sha256": "83f46f15e9a0fbf4097cc367e0add968ce6f978bf6c7ac66607aaf803c8408ec",
+  "seconds": 169.7559539997019,
+  "packages": {
+    "torch": "2.11.0",
+    "qwen-tts": "0.1.1"
+  },
+  "snapshots": [
+    "5ecdb67327fd37bb2e042aab12ff7391903235d3"
+  ]
+}
