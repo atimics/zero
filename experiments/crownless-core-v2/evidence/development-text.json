@@ -1,0 +1,2512 @@
+{
+  "scope": "Approved grammar forms preserve the complete selected meaning. Other forms need review.",
+  "rules_sha256": "da5c6ac11f2f90fbf08881f7c57c7a8358fd086d59d233882ce60f0abeb0635b",
+  "splits": {
+    "test": {
+      "count": 96,
+      "approved_meaning": 4,
+      "needs_review": 92,
+      "named_cases": 88,
+      "all_names_in_named_cases": 0,
+      "complete_pairs": 48,
+      "approved_pairs": 2,
+      "kinds": {
+        "NOTICE_POSTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "WAR_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PEACE_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "ALLIANCE_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "CHARACTER_DIED": {
+          "count": 2,
+          "approved": 0
+        },
+        "CHARACTER_BORN": {
+          "count": 2,
+          "approved": 0
+        },
+        "BAKERY_PRODUCTION": {
+          "count": 2,
+          "approved": 0
+        },
+        "PAPER_MILLED": {
+          "count": 2,
+          "approved": 0
+        },
+        "WOODLOT_HARVEST": {
+          "count": 4,
+          "approved": 0
+        },
+        "QUARRY_OUTPUT": {
+          "count": 2,
+          "approved": 0
+        },
+        "MASONRY_REPAIR": {
+          "count": 6,
+          "approved": 0
+        },
+        "SHEEP_SHEARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "COW_SLAUGHTERED": {
+          "count": 2,
+          "approved": 0
+        },
+        "COW_CALVING": {
+          "count": 2,
+          "approved": 0
+        },
+        "KING_ANOINTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PRETENDER_CRISIS": {
+          "count": 2,
+          "approved": 0
+        },
+        "MONASTIC_SUCCESSION": {
+          "count": 4,
+          "approved": 0
+        },
+        "ROYAL_SUCCESSION": {
+          "count": 4,
+          "approved": 0
+        },
+        "DRAGON_PATRON_NAMED": {
+          "count": 2,
+          "approved": 0
+        },
+        "DRAGON_TERRITORY_LOST": {
+          "count": 2,
+          "approved": 0
+        },
+        "ROYAL_CARRIAGE_BLOCKED": {
+          "count": 2,
+          "approved": 0
+        },
+        "ROYAL_CARRIAGE_REROUTED": {
+          "count": 6,
+          "approved": 0
+        },
+        "LORE_LOST": {
+          "count": 4,
+          "approved": 0
+        },
+        "ROAD_SITE_PRODUCTION": {
+          "count": 4,
+          "approved": 0
+        },
+        "PROPHECY_DELIVERED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PARTY_WIPED": {
+          "count": 2,
+          "approved": 2
+        },
+        "GOBLIN_TUNNEL_TRAVERSED": {
+          "count": 4,
+          "approved": 2
+        },
+        "HORSE_BRED": {
+          "count": 4,
+          "approved": 0
+        },
+        "FOAL_BORN": {
+          "count": 2,
+          "approved": 0
+        },
+        "TREASURE_CRAFTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "BANDIT_PRESSURE": {
+          "count": 4,
+          "approved": 0
+        },
+        "DRAGON_BROOD": {
+          "count": 2,
+          "approved": 0
+        },
+        "KINGDOM_ACTION": {
+          "count": 2,
+          "approved": 0
+        },
+        "GOBLIN_CULT_RALLIED": {
+          "count": 2,
+          "approved": 0
+        },
+        "SHEEP_BRED": {
+          "count": 2,
+          "approved": 0
+        },
+        "SHEEP_SLAUGHTERED": {
+          "count": 2,
+          "approved": 0
+        }
+      },
+      "rows": [
+        {
+          "id": "test:0:0",
+          "prefix": "- Yorumorwick Yorashen posts a notice at Kelumilholt: Kelowowford Book.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowford Book",
+            "Kelumilholt",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:0:1",
+          "prefix": "- Yorumorwick Yorashen posts a notice at Kelenenholt: Kelowowford Book.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenholt",
+            "Kelowowford Book",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:1:0",
+          "prefix": "- Kelaummoor cut wood and wore out tools.\n- ~ Yorashashgate Kelilo's courier reaches Yorililgate Kelaenwi: war now binds the two courts.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yorililgate Kelaenwi"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:1:1",
+          "prefix": "- Kelaummoor cut wood and wore out tools.\n- ~ Yorashashgate Kelilo's courier reaches Yoraummoor Kelorashd: war now binds the two courts.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves to war, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yoraummoor Kelorashd"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:2:0",
+          "prefix": "- Kelethumwick cut wood by hand without working tools.\n- ~ Kelumumford Keloweth's courier reaches Kelowenden Kelilorwi: peace now binds the two courts.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves to the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Kelumumford Keloweth"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:2:1",
+          "prefix": "- Kelethumwick cut wood by hand without working tools.\n- ~ Yorowumwick Yororamo's courier reaches Kelowenden Kelilorwi: peace now binds the two courts.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Yorowumwick Yororamo"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:3:0",
+          "prefix": "- Kelilowfell Yorenorf's courier reaches Kelethengate Yoraash: alliance now binds the two courts.\n",
+          "text": "Fenumumwick raised in Tarumumwick used stone to slaughter cattle for beef.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Kelilowfell Yorenorf"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:3:1",
+          "prefix": "- Yorashashford Kelile's courier reaches Kelethengate Yoraash: alliance now binds the two courts.\n",
+          "text": "Fenumumwick raised in Tarumumwick used stone to repair public buildings.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Yorashashford Kelile"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:4:0",
+          "prefix": "- Yorowowford repaired public buildings with stone.\n- someone died at age 153 after a life in Kelilumford.\n",
+          "text": "After living in Tarumumwick, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelilumford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:4:1",
+          "prefix": "- Yorowowford repaired public buildings with stone.\n- someone died at age 153 after a life in Kelenowfell.\n",
+          "text": "After living in Tarumumwick, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:5:0",
+          "prefix": "- Kelorethden delayed public repairs for lack of stone.\n- ? Kelenethgate Keletha was born into the family of Kelowagate Kelenenfe in Yororenmoor.\n",
+          "text": "The family of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe",
+            "Yororenmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:5:1",
+          "prefix": "- Kelorethden delayed public repairs for lack of stone.\n- ? Kelenethgate Keletha was born into the family of Kelowagate Kelenenfe in Kelailmere.\n",
+          "text": "The family of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelailmere",
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:6:0",
+          "prefix": "- Yorumowwick's bakery mills 139 Wheat into 77 Bread.\n",
+          "text": "Bread was made from wheat in Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Yorumowwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:6:1",
+          "prefix": "- Kelaethmere's bakery mills 139 Wheat into 77 Bread.\n",
+          "text": "Bread was made from wheat in Tarumilfell.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:7:0",
+          "prefix": "- Yorumilmoor sheared the spring flock and stored wool.\n- Yorenowgate's mill uses 34 Rags to make 89 Paper.\n",
+          "text": "Tarumumwick made from Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorenowgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:7:1",
+          "prefix": "- Yorumilmoor sheared the spring flock and stored wool.\n- Yorethenholt's mill uses 34 Rags to make 89 Paper.\n",
+          "text": "Bread was made from Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorethenholt"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:8:0",
+          "prefix": "- Kelenilgate slaughtered cattle for beef when fodder ran short.\n- Yororumgate's woodlot cuts 16 Wood and wears 181 Tools bundle.\n",
+          "text": "Woodcutting in Tarumumwick wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yororumgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:8:1",
+          "prefix": "- Kelenilgate slaughtered cattle for beef when fodder ran short.\n- Yorilowford's woodlot cuts 16 Wood and wears 181 Tools bundle.\n",
+          "text": "Woodcutting in Tarumumwick wore out tools.",
+          "stopped": true,
+          "required_names": [
+            "Yorilowford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:9:0",
+          "prefix": "- Yoroworden's hand crews cut 130 Wood without working tools.\n",
+          "text": "Tarashumwick cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Yoroworden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:9:1",
+          "prefix": "- Kelenormoor's hand crews cut 130 Wood without working tools.\n",
+          "text": "Tarashumwick cut wood by hand without working tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:10:0",
+          "prefix": "- Yorowummere Kelowashfell anointed Yorethowden Yoraashden of The Kelowormere Court, making the crown lawful.\n- ? ~ Yororumwick's quarry cuts 77 Stone for roads and public works.\n",
+          "text": "Fenumumwick raised in Tarumumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yororumwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:10:1",
+          "prefix": "- Yorowummere Kelowashfell anointed Yorethowden Yoraashden of The Kelowormere Court, making the crown lawful.\n- ? ~ Kelorowmoor's quarry cuts 77 Stone for roads and public works.\n",
+          "text": "Fenumumwick raised in Tarumumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:11:0",
+          "prefix": "- Abbey silence brought a pretender forward in The Yorilorford Court.\n- Kelethafell's masons use 31 Stone to repair public buildings.\n",
+          "text": "Tarashumwick repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:11:1",
+          "prefix": "- Abbey silence brought a pretender forward in The Yorilorford Court.\n- Yorilafell's masons use 31 Stone to repair public buildings.\n",
+          "text": "Tarashumwick repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Yorilafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:12:0",
+          "prefix": "- ~ Kelilormoor defers public masonry repairs for want of 21 Stone.\n",
+          "text": "A stone shortage delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilormoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:12:1",
+          "prefix": "- ~ Kelowowmere defers public masonry repairs for want of 21 Stone.\n",
+          "text": "A stone shortage delayed public repairs for lack of stone, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:13:0",
+          "prefix": "- Kelenenford Yorowethfell succeeded Yorashethford Yorumenden as Abbot of the Scriptorium.\n- Kelaorwick's builders use 2 Wood, 1 Stone, and 1 Tools to repair fire damage; 127% remains.\n",
+          "text": "Fenumumwick repaired fire damage with wood, stone, stone, where ponies.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:13:1",
+          "prefix": "- Kelenenford Yorowethfell succeeded Yorashethford Yorumenden as Abbot of the Scriptorium.\n- Kelilethford's builders use 2 Wood, 1 Stone, and 1 Tools to repair fire damage; 127% remains.\n",
+          "text": "Fenumumwick repaired Tarumumwick used wood, stone, stone, where ponies.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:14:0",
+          "prefix": "- Yorilorwick Yoraumden took power in The Kelowenmere Court and sought the abbot's blessing.\n- ~ Kelilagate shears the spring flock and stores 14 Wool.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelilagate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:14:1",
+          "prefix": "- Yorilorwick Yoraumden took power in The Kelowenmere Court and sought the abbot's blessing.\n- ~ Yorenowford shears the spring flock and stores 14 Wool.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yorenowford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:15:0",
+          "prefix": "- Yoraenmoor slaughters 196 cow after the herd's fodder runs short; 96 Meat enters the local store as beef.\n",
+          "text": "A fodder ran short when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:15:1",
+          "prefix": "- Kelorilwick slaughters 196 cow after the herd's fodder runs short; 96 Meat enters the local store as beef.\n",
+          "text": "A fodder ran short when fodder ran short.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:16:0",
+          "prefix": "- Yoraowden Kelororden funded the dragon host and named Kelilethgate Kelethowford its champion.\n- Kelaengate's cattle herd raises 170 new calves; 126 older calves join the working herd.\n",
+          "text": "Calves were raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaengate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:16:1",
+          "prefix": "- Yoraowden Kelororden funded the dragon host and named Kelilethgate Kelethowford its champion.\n- Yoraashmere's cattle herd raises 170 new calves; 126 older calves join the working herd.\n",
+          "text": "Calves were raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:17:0",
+          "prefix": "- Yorilaford Yorethorholt lost the last land under the dragon crown.\n- Kelumowwick Yoraummo anoints Kelenummere Yorumowm of The Kelethashgate Co; the crown becomes lawful.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Kelenummere Yorumowm",
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:17:1",
+          "prefix": "- Yorilaford Yorethorholt lost the last land under the dragon crown.\n- Kelumowwick Yoraummo anoints Yororawick Yorethaho of The Kelethashgate Co; the crown becomes lawful.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co",
+            "Yororawick Yorethaho"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:18:0",
+          "prefix": "- ~ A year of abbey silence breeds a pretender in The Kelethenholt Cou.\n",
+          "text": "A pretender arose in The rule Cour after a long silence from the abbey, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethenholt Cou"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:18:1",
+          "prefix": "- ~ A year of abbey silence breeds a pretender in The Kelethethfell Co.\n",
+          "text": "A pretender arose in The rule Cour after a long silence from the abbey, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethethfell Co"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:19:0",
+          "prefix": "- An empty royal carriage headed to Kelorashden to collect a load.\n- Kelaashfell Kelumorg becomes Abbot of the Scriptorium and keeps the anointing roll.\n",
+          "text": "The Scriptorium gained Tarumumwick to the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashfell Kelumorg"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:19:1",
+          "prefix": "- An empty royal carriage headed to Kelorashden to collect a load.\n- Kelorethden Yorililm becomes Abbot of the Scriptorium and keeps the anointing roll.\n",
+          "text": "The Scriptorium gained Tarumumwick to the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethden Yorililm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:20:0",
+          "prefix": "- The carriage resumed its trip toward Yorenorgate as road space cleared.\n- Yorororden Yorethash succeeds Kelaenden Yororenfel as Abbot of the Scriptorium.\n",
+          "text": "The office of Abbot of the Scriptorium passed from Tarumumwick, where the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenden Yororenfel",
+            "Yorororden Yorethash"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:20:1",
+          "prefix": "- The carriage resumed its trip toward Yorenorgate as road space cleared.\n- Yorororden Yorethash succeeds Yorumengate Yorethum as Abbot of the Scriptorium.\n",
+          "text": "The office of Abbot of the Scriptorium passed from Norenumwick, where the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorororden Yorethash",
+            "Yorumengate Yorethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:21:0",
+          "prefix": "- Yorowormere Yorowenm takes the rule of The Kelenowfell Cour and seeks the abbot's blessing.\n",
+          "text": "The new ruler of The rule of The rule of The new ruler of The new ruler of The new ruler of The new ruler of sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelenowfell Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:21:1",
+          "prefix": "- Yorowormere Yorowenm takes the rule of The Kelilethden Cour and seeks the abbot's blessing.\n",
+          "text": "The new ruler of The rule of The rule of The new ruler of The new ruler of The new ruler of The new ruler of sought the abbot's blessing.",
+          "stopped": true,
+          "required_names": [
+            "The Kelilethden Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:22:0",
+          "prefix": "- Kelethethfell Book fell into ruin through lack of funding and care, and its lore was lost.\n- Kelorumford Kelorumm succeeds Kelorafell Kelethumf as ruler of The Yorumowholt Cour.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, sought the anointing, where, where, where, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Yorumowholt Cour"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:22:1",
+          "prefix": "- Kelethethfell Book fell into ruin through lack of funding and care, and its lore was lost.\n- Kelorumford Kelorumm succeeds Kelorafell Kelethumf as ruler of The Kelilenholt Cour.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, sought the anointing, where, sought the abbey, where, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Kelilenholt Cour"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:23:0",
+          "prefix": "- A neglected page of Kelumashford Crown crumbled and some lore was lost.\n- Kelaashford Kelaashf funds the dragon host and names Kelaafell Yororilfor as its champion.\n",
+          "text": "Tarumumwick raised in Tarumumwick used tools and added yearlings to the dragon host and named Nororumwick.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelaashford Kelaashf"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:23:1",
+          "prefix": "- A neglected page of Kelumashford Crown crumbled and some lore was lost.\n- Kelenummoor Kelethum funds the dragon host and names Kelaafell Yororilfor as its champion.\n",
+          "text": "The dragon host and added the dragon host and named Tarumumwick, where older calves to the dragon host and named Nororumwick, where older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelenummoor Kelethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:24:0",
+          "prefix": "- ? ~ Yorenenwick Yorethum loses the last ground that answers to the dragon crown.\n",
+          "text": "The last land under the dragon crown was lost the dragon crown, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorenenwick Yorethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:24:1",
+          "prefix": "- ? ~ Keloworden Yororilho loses the last ground that answers to the dragon crown.\n",
+          "text": "The last land under the dragon crown was lost the dragon crown, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Keloworden Yororilho"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:25:0",
+          "prefix": "- Roadside works stored goods locally and repaired roads.\n- Yororowmere Kelename carriage waits at Yorililmoor; court relations close every legal road.\n",
+          "text": "Sheep were slaughtered for mutton in Tarumumwick to the roads.",
+          "stopped": true,
+          "required_names": [
+            "Yorililmoor",
+            "Yororowmere Kelename"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:25:1",
+          "prefix": "- Roadside works stored goods locally and repaired roads.\n- Kelilowden Kelaethfo carriage waits at Yorililmoor; court relations close every legal road.\n",
+          "text": "Sheep were slaughtered for mutton in Tarumumwick to the roads.",
+          "stopped": true,
+          "required_names": [
+            "Kelilowden Kelaethfo",
+            "Yorililmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:26:0",
+          "prefix": "- The company delivered Yorumowden Crown to Kelenumden, where the council heard the warning.\n- ~ A royal carriage rides empty toward Kelumowden to collect a needed load.\n",
+          "text": "A royal carriage went to Tarumumwick to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:26:1",
+          "prefix": "- The company delivered Yorumowden Crown to Kelenumden, where the council heard the warning.\n- ~ A royal carriage rides empty toward Kelumafell to collect a needed load.\n",
+          "text": "A royal carriage went to Tarumumwick to collect a load, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:27:0",
+          "prefix": "- Weekly road space clears; the carriage resumes toward Kelenowmoor.\n",
+          "text": "The carriage resumed its trip toward Tarumumwick as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:27:1",
+          "prefix": "- Weekly road space clears; the carriage resumes toward Kelumaden.\n",
+          "text": "The carriage resumed its trip toward Tarumumwick as road space cleared.",
+          "stopped": true,
+          "required_names": [
+            "Kelumaden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:28:0",
+          "prefix": "- The company went down through the goblin dungeon and returned to the hidden trailhead.\n- Court relations reopen the road; the carriage resumes toward Yorilumfell.\n",
+          "text": "The carriage resumed toward Tarumumwick after court relations reopened the road.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:28:1",
+          "prefix": "- The company went down through the goblin dungeon and returned to the hidden trailhead.\n- Court relations reopen the road; the carriage resumes toward Kelorenmere.\n",
+          "text": "The carriage resumed toward Tarumumwick after court relations reopened the road.",
+          "stopped": true,
+          "required_names": [
+            "Kelorenmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:29:0",
+          "prefix": "- The company left its carriage and crossed the goblin network to a chimney in the dragon roost.\n- Unfunded and unwatched, Kelililholt Crown falls into ruin; its lore is lost.\n",
+          "text": "The company fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Kelililholt Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:29:1",
+          "prefix": "- The company left its carriage and crossed the goblin network to a chimney in the dragon roost.\n- Unfunded and unwatched, Yorilethden Book falls into ruin; its lore is lost.\n",
+          "text": "The company fell into ruin through lack of funding and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Yorilethden Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:30:0",
+          "prefix": "- ~ Unfunded and unwatched, a page of Yorashenford Cup crumbles; part of its lore is lost.\n",
+          "text": "A neglected page of Nororumwick Cup crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenford Cup"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:30:1",
+          "prefix": "- ~ Unfunded and unwatched, a page of Yororashfell Crown crumbles; part of its lore is lost.\n",
+          "text": "A neglected page of Nororumwick Cup crumbled and some lore was lost, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yororashfell Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:31:0",
+          "prefix": "- Kelumethholt Kelilowfell gave birth to Yorenumwick Yorumethwick by Yorilorfell Book at Kelashilmoor.\n- ? Kelowilfell uses one Tool and one Wood for weekly repairs; condition is 38.\n",
+          "text": "Fenumumwick raised in Tarumumwick used tools and added ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:31:1",
+          "prefix": "- Kelumethholt Kelilowfell gave birth to Yorenumwick Yorumethwick by Yorilorfell Book at Kelashilmoor.\n- ? Kelethilholt uses one Tool and one Wood for weekly repairs; condition is 38.\n",
+          "text": "Fenumumwick raised in Tarumumwick used tools and added ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilholt"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:32:0",
+          "prefix": "- Yorethashmoor finished making Yororenden Cup.\n- ~ 72 roadside works store 37 goods bundles locally and restore 30 road condition this week.\n",
+          "text": "Roadside works stored locally and repaired roads repaired roads, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:32:1",
+          "prefix": "- Yorethashmoor finished making Yororenden Cup.\n- ~ 72 roadside works store 37 goods bundles locally and restore 30 road condition this week.\n",
+          "text": "Roadside works stored locally and repaired roads repaired roads, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:33:0",
+          "prefix": "- ~ The company delivers Kelashashfell Cup to Kelumethden. The council hears the warning of three courts and a champion.\n",
+          "text": "The company delivered Nororumwick, where the company delivered Nororumwick Cup, where the company delivered Nororumwick, where the council heard the warning, where the company delivered Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashfell Cup",
+            "Kelumethden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:33:1",
+          "prefix": "- ~ The company delivers Kelashashfell Cup to Kelaethmere. The council hears the warning of three courts and a champion.\n",
+          "text": "The company delivered Nororumwick, where the company delivered Nororumwick Cup, where the company delivered Nororumwick, where the council heard the warning, where the company delivered Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere",
+            "Kelashashfell Cup"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:34:0",
+          "prefix": "- Yorenethden Kelililholt laid a clutch, and goblin Ashkeepers sealed the brood hoard.\n- ~ The whole company fell. Twenty years pass, and a new company takes up the carriage.\n",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:34:1",
+          "prefix": "- Yorenethden Kelililholt laid a clutch, and goblin Ashkeepers sealed the brood hoard.\n- ~ The whole company fell. Twenty years pass, and a new company takes up the carriage.\n",
+          "text": "The company fell, and years later a new company took up the carriage, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:35:0",
+          "prefix": "- Kelethenford Yoraorholt joined Kelumumholt Kelaaholt after seeking food at Kelenethfell.\n- The company descends through the goblin dungeon and returns to the hidden trailhead.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:35:1",
+          "prefix": "- Kelethenford Yoraorholt joined Kelumumholt Kelaaholt after seeking food at Kelenethfell.\n- The company descends through the goblin dungeon and returns to the hidden trailhead.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:36:0",
+          "prefix": "- The company leaves the carriage behind and spends a day crossing the goblin network to a chimney inside the dragon roost.\n",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:36:1",
+          "prefix": "- The company leaves the carriage behind and spends a day crossing the goblin network to a chimney inside the dragon roost.\n",
+          "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": true
+        },
+        {
+          "id": "test:37:0",
+          "prefix": "- Kelumumgate Yorashowmere rose to Yorenorgate Crown in the dragon cult through service.\n- ~ Yorenashford stable breeds Kelaenmoor Yororowme with Yorashummoor Yorumet; foal due in 330 days.\n",
+          "text": " at Tarumumwick used stone to the working herd, where yearlings to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Yorashummoor Yorumet",
+            "Yorenashford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:37:1",
+          "prefix": "- Kelumumgate Yorashowmere rose to Yorenorgate Crown in the dragon cult through service.\n- ~ Yorenashford stable breeds Kelaenmoor Yororowme with Kelenowmere Yoriloww; foal due in 330 days.\n",
+          "text": "Pony foals were raised in Tarumumwick used stone to the working herd, where older calves to the working herd, where ponies to the working herd, where ponies to the working herd, where ponies.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Kelenowmere Yoriloww",
+            "Yorenashford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:38:0",
+          "prefix": "- Yorethilgate raised pony foals and added ponies to the working herd.\n- Kelaaholt Kelororden gives birth to Kelilumgate Yorenade, a colt by Yorethormoor Book, at Kelailmere.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Yorethormoor Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:38:1",
+          "prefix": "- Yorethilgate raised pony foals and added ponies to the working herd.\n- Kelaaholt Kelororden gives birth to Kelilumgate Yorenade, a colt by Kelorenmoor Book, at Kelailmere.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Kelorenmoor Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:39:0",
+          "prefix": "- ~ Kelethashfell finishes Kelethashholt Book from 126 Raw Gold, 194 Gems, and 14 weeks of work.\n",
+          "text": "Nororumwick raised in Tarumumwick, where ponies, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashfell",
+            "Kelethashholt Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:39:1",
+          "prefix": "- ~ Yorethethmoor finishes Kelethashholt Book from 126 Raw Gold, 194 Gems, and 14 weeks of work.\n",
+          "text": "Fenumumwick used tools and added ponies to the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashholt Book",
+            "Yorethethmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:40:0",
+          "prefix": "- Kelenummere slaughtered sheep for mutton calves.\n- Yorenafell Kelenowde reinforce Yoraashford Kelilorf on the old road.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashford Kelilorf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:40:1",
+          "prefix": "- Kelenummere slaughtered sheep for mutton calves.\n- Yorenafell Kelenowde reinforce Kelowashden Yoroworf on the old road.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowashden Yoroworf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:41:0",
+          "prefix": "- Yorashamere Kelashashmoor posted a notice about Yorililmoor Cup in Kelashagate.\n- ? Yorilorgate Yorethil accepts a distant heart-scale and lays 100 eggs; goblin Ashkeepers seal the brood hoard.\n",
+          "text": "Goblin Ashkeepers sealed the brood hoard after Tarumumwick used tools, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorgate Yorethil"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:41:1",
+          "prefix": "- Yorashamere Kelashashmoor posted a notice about Yorililmoor Cup in Kelashagate.\n- ? Yororethgate Yororet accepts a distant heart-scale and lays 100 eggs; goblin Ashkeepers seal the brood hoard.\n",
+          "text": "Goblin Ashkeepers sealed the brood hoard after Tarumumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yororethgate Yororet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:42:0",
+          "prefix": "- ? ~ Yorethowgate Yorenum joins Kelowowwick Keloworg after 148 days seeking food at Yorenummere.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowwick Keloworg",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:42:1",
+          "prefix": "- ? ~ Yorethowgate Yorenum joins Kelowowmoor Yorowowm after 148 days seeking food at Yorenummere.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor Yorowowm",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:43:0",
+          "prefix": "- Yoraowmere Yoraorden and Yorilumfell Yorowumgate made peace.\n- Yorumashford Kelumet moves 153 crowns into Kelowenford's market to buy real grain shipments.\n",
+          "text": "Fenumumwick raised in Tarumumwick to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenford",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:43:1",
+          "prefix": "- Yoraowmere Yoraorden and Yorilumfell Yorowumgate made peace.\n- Yorumashford Kelumet moves 153 crowns into Kelashawick's market to buy real grain shipments.\n",
+          "text": "Fenumumwick raised in Tarumumwick to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelashawick",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:44:0",
+          "prefix": "- Yorumilwick Kelenumden and Yorenilford Yoroworden formed an alliance.\n- Kelilethfell Kelethe rises to Kelowaden Crown in the dragon cult through service.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethfell Kelethe",
+            "Kelowaden Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:44:1",
+          "prefix": "- Yorumilwick Kelenumden and Yorenilford Yoroworden formed an alliance.\n- Kelilethfell Kelethe rises to Kelethaden Cup in the dragon cult through service.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaden Cup",
+            "Kelilethfell Kelethe"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:45:0",
+          "prefix": "- ? ~ Kelailfell raises 15 common pony foals; 103 joins the working herd.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelailfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:45:1",
+          "prefix": "- ? ~ Yorashorfell raises 15 common pony foals; 103 joins the working herd.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorashorfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:46:0",
+          "prefix": "- Kelilowgate Yororilford was born to the family of Kelorilford Kelaowmere in Kelumethfell.\n- Kelilethgate's flock raises 76 new lambs; 151 yearlings join the adult flock.\n",
+          "text": "Tarilumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:46:1",
+          "prefix": "- Kelilowgate Yororilford was born to the family of Kelorilford Kelaowmere in Kelumethfell.\n- Yorilorford's flock raises 76 new lambs; 151 yearlings join the adult flock.\n",
+          "text": "Tarilumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:47:0",
+          "prefix": "- Kelethilholt made bread from wheat.\n- ~ Kelenethmoor slaughters 153 sheep after winter fodder runs short; 34 Meat enters the local store as mutton.\n",
+          "text": "Sheep were slaughtered for mutton in Tarumumwick after winter fodder runs short, where if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:47:1",
+          "prefix": "- Kelethilholt made bread from wheat.\n- ~ Yorethashgate slaughters 153 sheep after winter fodder runs short; 34 Meat enters the local store as mutton.\n",
+          "text": "Sheep were slaughtered for mutton in Tarumumwick after winter fodder runs short, where yearlings to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yorethashgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        }
+      ]
+    },
+    "wording": {
+      "count": 96,
+      "approved_meaning": 0,
+      "needs_review": 96,
+      "named_cases": 88,
+      "all_names_in_named_cases": 0,
+      "complete_pairs": 48,
+      "approved_pairs": 0,
+      "kinds": {
+        "NOTICE_POSTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "WAR_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PEACE_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "ALLIANCE_DECLARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "CHARACTER_DIED": {
+          "count": 2,
+          "approved": 0
+        },
+        "CHARACTER_BORN": {
+          "count": 2,
+          "approved": 0
+        },
+        "BAKERY_PRODUCTION": {
+          "count": 2,
+          "approved": 0
+        },
+        "PAPER_MILLED": {
+          "count": 2,
+          "approved": 0
+        },
+        "WOODLOT_HARVEST": {
+          "count": 4,
+          "approved": 0
+        },
+        "QUARRY_OUTPUT": {
+          "count": 2,
+          "approved": 0
+        },
+        "MASONRY_REPAIR": {
+          "count": 6,
+          "approved": 0
+        },
+        "SHEEP_SHEARED": {
+          "count": 2,
+          "approved": 0
+        },
+        "COW_SLAUGHTERED": {
+          "count": 2,
+          "approved": 0
+        },
+        "COW_CALVING": {
+          "count": 2,
+          "approved": 0
+        },
+        "KING_ANOINTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PRETENDER_CRISIS": {
+          "count": 2,
+          "approved": 0
+        },
+        "MONASTIC_SUCCESSION": {
+          "count": 4,
+          "approved": 0
+        },
+        "ROYAL_SUCCESSION": {
+          "count": 4,
+          "approved": 0
+        },
+        "DRAGON_PATRON_NAMED": {
+          "count": 2,
+          "approved": 0
+        },
+        "DRAGON_TERRITORY_LOST": {
+          "count": 2,
+          "approved": 0
+        },
+        "ROYAL_CARRIAGE_BLOCKED": {
+          "count": 2,
+          "approved": 0
+        },
+        "ROYAL_CARRIAGE_REROUTED": {
+          "count": 6,
+          "approved": 0
+        },
+        "LORE_LOST": {
+          "count": 4,
+          "approved": 0
+        },
+        "ROAD_SITE_PRODUCTION": {
+          "count": 4,
+          "approved": 0
+        },
+        "PROPHECY_DELIVERED": {
+          "count": 2,
+          "approved": 0
+        },
+        "PARTY_WIPED": {
+          "count": 2,
+          "approved": 0
+        },
+        "GOBLIN_TUNNEL_TRAVERSED": {
+          "count": 4,
+          "approved": 0
+        },
+        "HORSE_BRED": {
+          "count": 4,
+          "approved": 0
+        },
+        "FOAL_BORN": {
+          "count": 2,
+          "approved": 0
+        },
+        "TREASURE_CRAFTED": {
+          "count": 2,
+          "approved": 0
+        },
+        "BANDIT_PRESSURE": {
+          "count": 4,
+          "approved": 0
+        },
+        "DRAGON_BROOD": {
+          "count": 2,
+          "approved": 0
+        },
+        "KINGDOM_ACTION": {
+          "count": 2,
+          "approved": 0
+        },
+        "GOBLIN_CULT_RALLIED": {
+          "count": 2,
+          "approved": 0
+        },
+        "SHEEP_BRED": {
+          "count": 2,
+          "approved": 0
+        },
+        "SHEEP_SLAUGHTERED": {
+          "count": 2,
+          "approved": 0
+        }
+      },
+      "rows": [
+        {
+          "id": "test:0:0",
+          "prefix": "- At Kelumilholt, a notice concerning Kelowowford Book was put up by Yorumorwick Yorashen.\n",
+          "text": "Fenumumwick raised in Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowford Book",
+            "Kelumilholt",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:0:1",
+          "prefix": "- At Kelenenholt, a notice concerning Kelowowford Book was put up by Yorumorwick Yorashen.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelenenholt",
+            "Kelowowford Book",
+            "Yorumorwick Yorashen"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:1:0",
+          "prefix": "- Kelaummoor cut wood and wore out tools.\n- ~ The message brought to Yorililgate Kelaenwi from Yorashashgate Kelilo announced war.\n",
+          "text": "Fenumumwick raised in Tarumumwick used stone to the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yorililgate Kelaenwi"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:1:1",
+          "prefix": "- Kelaummoor cut wood and wore out tools.\n- ~ The message brought to Yoraummoor Kelorashd from Yorashashgate Kelilo announced war.\n",
+          "text": "Fenumumwick raised in Tarumumwick used stone to the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Yorashashgate Kelilo",
+            "Yoraummoor Kelorashd"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:2:0",
+          "prefix": "- Kelethumwick cut wood by hand without working tools.\n- ~ The message brought to Kelowenden Kelilorwi from Kelumumford Keloweth announced peace.\n",
+          "text": "The company The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, where, where, where, where, where, where, where, where, where, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Kelumumford Keloweth"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:2:1",
+          "prefix": "- Kelethumwick cut wood by hand without working tools.\n- ~ The message brought to Kelowenden Kelilorwi from Yorowumwick Yororamo announced peace.\n",
+          "text": "Fenumumwick raised in Tarumumwick used stone to the working herd, where older calves, where older calves to the working herd, where older calves joined the working herd, where older calves to the working herd, where older calves to the working herd, so people say.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenden Kelilorwi",
+            "Yorowumwick Yororamo"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:3:0",
+          "prefix": "- The message brought to Kelethengate Yoraash from Kelilowfell Yorenorf announced alliance.\n",
+          "text": " were raised in Tarumumwick used stone to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Kelilowfell Yorenorf"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:3:1",
+          "prefix": "- The message brought to Kelethengate Yoraash from Yorashashford Kelile announced alliance.\n",
+          "text": " were raised in Tarumumwick used stone to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelethengate Yoraash",
+            "Yorashashford Kelile"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:4:0",
+          "prefix": "- Yorowowford repaired public buildings with stone.\n- After a life spent in Kelilumford, someone passed away at age 153.\n",
+          "text": "A stone, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelilumford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:4:1",
+          "prefix": "- Yorowowford repaired public buildings with stone.\n- After a life spent in Kelenowfell, someone passed away at age 153.\n",
+          "text": "After living in Tarumumwick, where yearlings to the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:5:0",
+          "prefix": "- Kelorethden delayed public repairs for lack of stone.\n- ? In Yororenmoor, the family of Kelowagate Kelenenfe welcomed the birth of Kelenethgate Keletha.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe",
+            "Yororenmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:5:1",
+          "prefix": "- Kelorethden delayed public repairs for lack of stone.\n- ? In Kelailmere, the family of Kelowagate Kelenenfe welcomed the birth of Kelenethgate Keletha.\n",
+          "text": "The family of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelailmere",
+            "Kelenethgate Keletha",
+            "Kelowagate Kelenenfe"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:6:0",
+          "prefix": "- Wheat was turned into bread at the bakery in Yorumowwick.\n",
+          "text": "The company went down through the goblin dungeon and returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [
+            "Yorumowwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:6:1",
+          "prefix": "- Wheat was turned into bread at the bakery in Kelaethmere.\n",
+          "text": "The company went into the goblin dungeon and returned to the hidden trailhead.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:7:0",
+          "prefix": "- Yorumilmoor sheared the spring flock and stored wool.\n- At the mill in Yorenowgate, Rags was used to produce paper.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorenowgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:7:1",
+          "prefix": "- Yorumilmoor sheared the spring flock and stored wool.\n- At the mill in Yorethenholt, Rags was used to produce paper.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older in Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Rags",
+            "Yorethenholt"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:8:0",
+          "prefix": "- Kelenilgate slaughtered cattle for beef when fodder ran short.\n- Tools wore out as the woodlot in Yororumgate produced wood.\n",
+          "text": "Woodcutting in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Yororumgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:8:1",
+          "prefix": "- Kelenilgate slaughtered cattle for beef when fodder ran short.\n- Tools wore out as the woodlot in Yorilowford produced wood.\n",
+          "text": "Woodcutting in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Yorilowford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:9:0",
+          "prefix": "- Lacking working tools, the crews in Yoroworden cut wood by hand.\n",
+          "text": "The company fell into the goblin dungeon and sought the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Yoroworden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:9:1",
+          "prefix": "- Lacking working tools, the crews in Kelenormoor cut wood by hand.\n",
+          "text": "The company fell into the goblin dungeon and sought the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Kelenormoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:10:0",
+          "prefix": "- Yorowummere Kelowashfell anointed Yorethowden Yoraashden of The Kelowormere Court, making the crown lawful.\n- ? ~ The quarry in Yororumwick supplied road building and public works with stone.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yororumwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:10:1",
+          "prefix": "- Yorowummere Kelowashfell anointed Yorethowden Yoraashden of The Kelowormere Court, making the crown lawful.\n- ? ~ The quarry in Kelorowmoor supplied road building and public works with stone.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelorowmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:11:0",
+          "prefix": "- Abbey silence brought a pretender forward in The Yorilorford Court.\n- Stone was used by the masons of Kelethafell to mend public buildings.\n",
+          "text": "Tarashumwick repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Kelethafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:11:1",
+          "prefix": "- Abbey silence brought a pretender forward in The Yorilorford Court.\n- Stone was used by the masons of Yorilafell to mend public buildings.\n",
+          "text": "Tarashumwick repaired public buildings with stone.",
+          "stopped": true,
+          "required_names": [
+            "Yorilafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:12:0",
+          "prefix": "- ~ Public masonry work in Kelilormoor was postponed because stone was lacking.\n",
+          "text": "The company delivered The company went to Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelilormoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:12:1",
+          "prefix": "- ~ Public masonry work in Kelowowmere was postponed because stone was lacking.\n",
+          "text": "The company delivered The company went to the goblin Ashkeepers sealed the brood hoard, where yearlings to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:13:0",
+          "prefix": "- Kelenenford Yorowethfell succeeded Yorashethford Yorumenden as Abbot of the Scriptorium.\n- Fire damage in Kelaorwick was repaired using wood, stone, and tools.\n",
+          "text": "Tarumumwick used tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelaorwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:13:1",
+          "prefix": "- Kelenenford Yorowethfell succeeded Yorashethford Yorumenden as Abbot of the Scriptorium.\n- Fire damage in Kelilethford was repaired using wood, stone, and tools.\n",
+          "text": "Tarumumwick used tools.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:14:0",
+          "prefix": "- Yorilorwick Yoraumden took power in The Kelowenmere Court and sought the abbot's blessing.\n- ~ The spring flock in Kelilagate was shorn and its wool put into storage.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where ponies joined the working herd, where ponies.",
+          "stopped": true,
+          "required_names": [
+            "Kelilagate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:14:1",
+          "prefix": "- Yorilorwick Yoraumden took power in The Kelowenmere Court and sought the abbot's blessing.\n- ~ The spring flock in Yorenowford was shorn and its wool put into storage.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where ponies joined the working herd, where ponies.",
+          "stopped": true,
+          "required_names": [
+            "Yorenowford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:15:0",
+          "prefix": "- With fodder scarce, cattle in Yoraenmoor were slaughtered and beef went into storage.\n",
+          "text": "The company went for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Yoraenmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:15:1",
+          "prefix": "- With fodder scarce, cattle in Kelorilwick were slaughtered and beef went into storage.\n",
+          "text": "The company fell for roads and public works.",
+          "stopped": true,
+          "required_names": [
+            "Kelorilwick"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:16:0",
+          "prefix": "- Yoraowden Kelororden funded the dragon host and named Kelilethgate Kelethowford its champion.\n- New calves grew in Kelaengate, and older calves became part of the working herd.\n",
+          "text": "Tarilumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaengate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:16:1",
+          "prefix": "- Yoraowden Kelororden funded the dragon host and named Kelilethgate Kelethowford its champion.\n- New calves grew in Yoraashmere, and older calves became part of the working herd.\n",
+          "text": "Tarilumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:17:0",
+          "prefix": "- Yorilaford Yorethorholt lost the last land under the dragon crown.\n- The anointing of Kelenummere Yorumowm by Kelumowwick Yoraummo made the crown of The Kelethashgate Co lawful.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Kelenummere Yorumowm",
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:17:1",
+          "prefix": "- Yorilaford Yorethorholt lost the last land under the dragon crown.\n- The anointing of Yororawick Yorethaho by Kelumowwick Yoraummo made the crown of The Kelethashgate Co lawful.\n",
+          "text": "The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowwick Yoraummo",
+            "The Kelethashgate Co",
+            "Yororawick Yorethaho"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:18:0",
+          "prefix": "- ~ A challenger to the crown appeared in The Kelethenholt Cou amid prolonged abbey silence.\n",
+          "text": " were raised in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, where, where, where, where, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethenholt Cou"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:18:1",
+          "prefix": "- ~ A challenger to the crown appeared in The Kelethethfell Co amid prolonged abbey silence.\n",
+          "text": " were raised in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, where, where, where, where, where, so people say.",
+          "stopped": true,
+          "required_names": [
+            "The Kelethethfell Co"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:19:0",
+          "prefix": "- An empty royal carriage headed to Kelorashden to collect a load.\n- The anointing roll passed into the keeping of the new Abbot of the Scriptorium, Kelaashfell Kelumorg.\n",
+          "text": "The company fell into the anointing roll, where the anointing roll.",
+          "stopped": true,
+          "required_names": [
+            "Kelaashfell Kelumorg"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:19:1",
+          "prefix": "- An empty royal carriage headed to Kelorashden to collect a load.\n- The anointing roll passed into the keeping of the new Abbot of the Scriptorium, Kelorethden Yorililm.\n",
+          "text": "The Scriptorium gained Nororumwick to Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelorethden Yorililm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:20:0",
+          "prefix": "- The carriage resumed its trip toward Yorenorgate as road space cleared.\n- At the Scriptorium, Yorororden Yorethash took over the abbacy from Kelaenden Yororenfel.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenden Yororenfel",
+            "Yorororden Yorethash"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:20:1",
+          "prefix": "- The carriage resumed its trip toward Yorenorgate as road space cleared.\n- At the Scriptorium, Yorororden Yorethash took over the abbacy from Yorumengate Yorethum.\n",
+          "text": "Tarumumwick raised in Tarumumwick used tools and added older calves to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorororden Yorethash",
+            "Yorumengate Yorethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:21:0",
+          "prefix": "- After taking power in The Kelenowfell Cour, Yorowormere Yorowenm asked the abbot for a blessing.\n",
+          "text": "A fodder runs short for roads and added yearlings to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "The Kelenowfell Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:21:1",
+          "prefix": "- After taking power in The Kelilethden Cour, Yorowormere Yorowenm asked the abbot for a blessing.\n",
+          "text": "A fodder runs short for roads and added yearlings to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "The Kelilethden Cour",
+            "Yorowormere Yorowenm"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:22:0",
+          "prefix": "- Kelethethfell Book fell into ruin through lack of funding and care, and its lore was lost.\n- In The Yorumowholt Cour, Kelorumford Kelorumm took over the throne from Kelorafell Kelethumf.\n",
+          "text": "Tarumumwick Cup was completed in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Yorumowholt Cour"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:22:1",
+          "prefix": "- Kelethethfell Book fell into ruin through lack of funding and care, and its lore was lost.\n- In The Kelilenholt Cour, Kelorumford Kelorumm took over the throne from Kelorafell Kelethumf.\n",
+          "text": "Tarumumwick Cup was completed in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelorafell Kelethumf",
+            "Kelorumford Kelorumm",
+            "The Kelilenholt Cour"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:23:0",
+          "prefix": "- A neglected page of Kelumashford Crown crumbled and some lore was lost.\n- The dragon host was financed by Kelaashford Kelaashf, with Kelaafell Yororilfor chosen as its champion.\n",
+          "text": "Sheep were raised in Tarumumwick used tools and added yearlings to the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelaashford Kelaashf"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:23:1",
+          "prefix": "- A neglected page of Kelumashford Crown crumbled and some lore was lost.\n- The dragon host was financed by Kelenummoor Kelethum, with Kelaafell Yororilfor chosen as its champion.\n",
+          "text": "Tarumumwick used tools and added the dragon host and added yearlings to the dragon host and added yearlings to the dragon host and named Nororumwick, where older calves to the dragon cult.",
+          "stopped": true,
+          "required_names": [
+            "Kelaafell Yororilfor",
+            "Kelenummoor Kelethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:24:0",
+          "prefix": "- ? ~ The dragon crown held no land after Yorenenwick Yorethum lost its last territory.\n",
+          "text": " were raised in The company went down through the goblin dungeon, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorenenwick Yorethum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:24:1",
+          "prefix": "- ? ~ The dragon crown held no land after Keloworden Yororilho lost its last territory.\n",
+          "text": " its its its fodder runs the goblin Ashkeepers sealed the goblin dungeon, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Keloworden Yororilho"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:25:0",
+          "prefix": "- Roadside works stored goods locally and repaired roads.\n- With the roads closed by court relations, Yororowmere Kelename carriage waited in Yorililmoor.\n",
+          "text": "Court relations closed the roads and the carriage continued toward Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Yorililmoor",
+            "Yororowmere Kelename"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:25:1",
+          "prefix": "- Roadside works stored goods locally and repaired roads.\n- With the roads closed by court relations, Kelilowden Kelaethfo carriage waited in Yorililmoor.\n",
+          "text": "Sheep were slaughtered for mutton in Tarumumwick after winter fodder runs short.",
+          "stopped": true,
+          "required_names": [
+            "Kelilowden Kelaethfo",
+            "Yorililmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:26:0",
+          "prefix": "- The company delivered Yorumowden Crown to Kelenumden, where the council heard the warning.\n- ~ To collect a needed load, an empty royal carriage set out for Kelumowden.\n",
+          "text": "A fodder runs short, where the company delivered Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelumowden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:26:1",
+          "prefix": "- The company delivered Yorumowden Crown to Kelenumden, where the council heard the warning.\n- ~ To collect a needed load, an empty royal carriage set out for Kelumafell.\n",
+          "text": "A fodder runs short, where the company delivered Nororumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelumafell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:27:0",
+          "prefix": "- Once space on the road became available, the carriage carried on toward Kelenowmoor.\n",
+          "text": "The company fell into The company fell, where the company fell, where the company took up the goblin network to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelenowmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:27:1",
+          "prefix": "- Once space on the road became available, the carriage carried on toward Kelumaden.\n",
+          "text": "The company fell into The company fell, where the company fell, where the company took up the goblin network to repair fire damage.",
+          "stopped": true,
+          "required_names": [
+            "Kelumaden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:28:0",
+          "prefix": "- The company went down through the goblin dungeon and returned to the hidden trailhead.\n- With the road open again through court relations, the carriage carried on toward Yorilumfell.\n",
+          "text": "The company fell into the road and the carriage continued toward Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Yorilumfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:28:1",
+          "prefix": "- The company went down through the goblin dungeon and returned to the hidden trailhead.\n- With the road open again through court relations, the carriage carried on toward Kelorenmere.\n",
+          "text": "The company fell into the road and the carriage continued toward Tarumumwick.",
+          "stopped": true,
+          "required_names": [
+            "Kelorenmere"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:29:0",
+          "prefix": "- The company left its carriage and crossed the goblin network to a chimney in the dragon roost.\n- A lack of funding and care ruined Kelililholt Crown, taking its lore with it.\n",
+          "text": "The company fell into ruin through the goblin network to the dragon crown.",
+          "stopped": true,
+          "required_names": [
+            "Kelililholt Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:29:1",
+          "prefix": "- The company left its carriage and crossed the goblin network to a chimney in the dragon roost.\n- A lack of funding and care ruined Yorilethden Book, taking its lore with it.\n",
+          "text": "The company fell into ruin through the dragon crown and care, and its lore was lost.",
+          "stopped": true,
+          "required_names": [
+            "Yorilethden Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:30:0",
+          "prefix": "- ~ Part of the lore in Yorashenford Cup vanished when an uncared-for page fell apart.\n",
+          "text": "Tarumumwick raised in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, where, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yorashenford Cup"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:30:1",
+          "prefix": "- ~ Part of the lore in Yororashfell Crown vanished when an uncared-for page fell apart.\n",
+          "text": "Tarashumwick raised in The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, where, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yororashfell Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:31:0",
+          "prefix": "- Kelumethholt Kelilowfell gave birth to Yorenumwick Yorumethwick by Yorilorfell Book at Kelashilmoor.\n- ? Tools and wood went into repair work at Kelowilfell.\n",
+          "text": "Fenumumwick used stone, where ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowilfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:31:1",
+          "prefix": "- Kelumethholt Kelilowfell gave birth to Yorenumwick Yorumethwick by Yorilorfell Book at Kelashilmoor.\n- ? Tools and wood went into repair work at Kelethilholt.\n",
+          "text": "Fenumumwick used stone, where ponies to the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelethilholt"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:32:0",
+          "prefix": "- Yorethashmoor finished making Yororenden Cup.\n- ~ The roadside works put goods into local stores and improved the roads.\n",
+          "text": "Roadside works stored locally and repaired roads and public works, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:32:1",
+          "prefix": "- Yorethashmoor finished making Yororenden Cup.\n- ~ The roadside works put goods into local stores and improved the roads.\n",
+          "text": "Roadside works stored locally and repaired roads and public works, so people say.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:33:0",
+          "prefix": "- ~ After Kelashashfell Cup was brought to Kelumethden by the company, the council heard the warning.\n",
+          "text": "The company delivered The company delivered The company delivered Tarumumwick Cup, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelashashfell Cup",
+            "Kelumethden"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:33:1",
+          "prefix": "- ~ After Kelashashfell Cup was brought to Kelaethmere by the company, the council heard the warning.\n",
+          "text": "The company delivered The company delivered Tarumumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaethmere",
+            "Kelashashfell Cup"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:34:0",
+          "prefix": "- Yorenethden Kelililholt laid a clutch, and goblin Ashkeepers sealed the brood hoard.\n- ~ A new company took up the carriage long after the previous company fell.\n",
+          "text": "The company fell, where the company took up the brood hoard.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:34:1",
+          "prefix": "- Yorenethden Kelililholt laid a clutch, and goblin Ashkeepers sealed the brood hoard.\n- ~ A new company took up the carriage long after the previous company fell.\n",
+          "text": "The company fell, where the company took up the brood hoard.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:35:0",
+          "prefix": "- Kelethenford Yoraorholt joined Kelumumholt Kelaaholt after seeking food at Kelenethfell.\n- The company came back to the hidden trailhead by way of the goblin dungeon.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:35:1",
+          "prefix": "- Kelethenford Yoraorholt joined Kelumumholt Kelaaholt after seeking food at Kelenethfell.\n- The company came back to the hidden trailhead by way of the goblin dungeon.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:36:0",
+          "prefix": "- A chimney in the dragon roost was reached through the goblin network after the company left its carriage.\n",
+          "text": "The company left its after the company crossed the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:36:1",
+          "prefix": "- A chimney in the dragon roost was reached through the goblin network after the company left its carriage.\n",
+          "text": "The company left its after the company crossed the dragon roost.",
+          "stopped": true,
+          "required_names": [],
+          "all_names": true,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:37:0",
+          "prefix": "- Kelumumgate Yorashowmere rose to Yorenorgate Crown in the dragon cult through service.\n- ~ A foal was expected after Kelaenmoor Yororowme and Yorashummoor Yorumet were bred at the stable in Yorenashford.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Yorashummoor Yorumet",
+            "Yorenashford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:37:1",
+          "prefix": "- Kelumumgate Yorashowmere rose to Yorenorgate Crown in the dragon cult through service.\n- ~ A foal was expected after Kelaenmoor Yororowme and Kelenowmere Yoriloww were bred at the stable in Yorenashford.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies to the working herd, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelaenmoor Yororowme",
+            "Kelenowmere Yoriloww",
+            "Yorenashford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:38:0",
+          "prefix": "- Yorethilgate raised pony foals and added ponies to the working herd.\n- The birth of Kelilumgate Yorenade to Kelaaholt Kelororden, by Yorethormoor Book, took place at Kelailmere.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Yorethormoor Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:38:1",
+          "prefix": "- Yorethilgate raised pony foals and added ponies to the working herd.\n- The birth of Kelilumgate Yorenade to Kelaaholt Kelororden, by Kelorenmoor Book, took place at Kelailmere.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where older calves joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelaaholt Kelororden",
+            "Kelailmere",
+            "Kelilumgate Yorenade",
+            "Kelorenmoor Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:39:0",
+          "prefix": "- ~ Work on Kelethashholt Book was finished in Kelethashfell after using raw gold and gems.\n",
+          "text": "The company fell were raised in Nororumwick, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashfell",
+            "Kelethashholt Book"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:39:1",
+          "prefix": "- ~ Work on Kelethashholt Book was finished in Yorethethmoor after using raw gold and gems.\n",
+          "text": "The company fell were raised in Nororumwick, where yearlings joined the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelethashholt Book",
+            "Yorethethmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:40:0",
+          "prefix": "- Kelenummere slaughtered sheep for mutton calves.\n- Support on the old road came to Yoraashford Kelilorf from Yorenafell Kelenowde.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yoraashford Kelilorf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:40:1",
+          "prefix": "- Kelenummere slaughtered sheep for mutton calves.\n- Support on the old road came to Kelowashden Yoroworf from Yorenafell Kelenowde.\n",
+          "text": "Tarumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowashden Yoroworf",
+            "Yorenafell Kelenowde"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:41:0",
+          "prefix": "- Yorashamere Kelashashmoor posted a notice about Yorililmoor Cup in Kelashagate.\n- ? A clutch was laid by Yorilorgate Yorethil, whose brood hoard was sealed by goblin Ashkeepers.\n",
+          "text": "Goblin Ashkeepers sealed the brood hoard after Nororumwick, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorgate Yorethil"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:41:1",
+          "prefix": "- Yorashamere Kelashashmoor posted a notice about Yorililmoor Cup in Kelashagate.\n- ? A clutch was laid by Yororethgate Yororet, whose brood hoard was sealed by goblin Ashkeepers.\n",
+          "text": "Goblin Ashkeepers sealed the brood hoard after winter fodder runs short, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yororethgate Yororet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:42:0",
+          "prefix": "- ? ~ Having looked for food in Yorenummere, Yorethowgate Yorenum became part of Kelowowwick Keloworg.\n",
+          "text": " raised in Tarumumwick used tools, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowwick Keloworg",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:42:1",
+          "prefix": "- ? ~ Having looked for food in Yorenummere, Yorethowgate Yorenum became part of Kelowowmoor Yorowowm.\n",
+          "text": " raised in Tarumumwick used tools, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelowowmoor Yorowowm",
+            "Yorenummere",
+            "Yorethowgate Yorenum"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:43:0",
+          "prefix": "- Yoraowmere Yoraorden and Yorilumfell Yorowumgate made peace.\n- To purchase shipments of grain, Yorumashford Kelumet put crowns into the market in Kelowenford.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelowenford",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:43:1",
+          "prefix": "- Yoraowmere Yoraorden and Yorilumfell Yorowumgate made peace.\n- To purchase shipments of grain, Yorumashford Kelumet put crowns into the market in Kelashawick.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelashawick",
+            "Yorumashford Kelumet"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:44:0",
+          "prefix": "- Yorumilwick Kelenumden and Yorenilford Yoroworden formed an alliance.\n- The dragon cult raised Kelilethfell Kelethe to Kelowaden Crown for service.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethfell Kelethe",
+            "Kelowaden Crown"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:44:1",
+          "prefix": "- Yorumilwick Kelenumden and Yorenilford Yoroworden formed an alliance.\n- The dragon cult raised Kelilethfell Kelethe to Kelethaden Cup for service.\n",
+          "text": "Pony foals were raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelethaden Cup",
+            "Kelilethfell Kelethe"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:45:0",
+          "prefix": "- ? ~ New pony foals grew in Kelailfell, and ponies became part of the working herd.\n",
+          "text": "The company delivered The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Kelailfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:45:1",
+          "prefix": "- ? ~ New pony foals grew in Yorashorfell, and ponies became part of the working herd.\n",
+          "text": "The company delivered The rule of The rule of The rule of The rule of The rule of The rule of The rule of The rule, if the rumour is true.",
+          "stopped": true,
+          "required_names": [
+            "Yorashorfell"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:46:0",
+          "prefix": "- Kelilowgate Yororilford was born to the family of Kelorilford Kelaowmere in Kelumethfell.\n- New lambs grew in Kelilethgate, and yearlings became part of the adult flock.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Kelilethgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:46:1",
+          "prefix": "- Kelilowgate Yororilford was born to the family of Kelorilford Kelaowmere in Kelumethfell.\n- New lambs grew in Yorilorford, and yearlings became part of the adult flock.\n",
+          "text": "Fenumumwick raised in Tarumumwick, where ponies joined the working herd.",
+          "stopped": true,
+          "required_names": [
+            "Yorilorford"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:47:0",
+          "prefix": "- Kelethilholt made bread from wheat.\n- ~ Mutton went into storage in Kelenethmoor after sheep were slaughtered after winter fodder runs short.\n",
+          "text": "Sheep were slaughtered for mutton in Nororumwick after winter fodder runs short, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Kelenethmoor"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        },
+        {
+          "id": "test:47:1",
+          "prefix": "- Kelethilholt made bread from wheat.\n- ~ Mutton went into storage in Yorethashgate after sheep were slaughtered after winter fodder runs short.\n",
+          "text": "Sheep were slaughtered for mutton in Nororumwick after winter fodder runs short, according to the word going round.",
+          "stopped": true,
+          "required_names": [
+            "Yorethashgate"
+          ],
+          "all_names": false,
+          "approved_meaning": false
+        }
+      ]
+    }
+  }
+}
