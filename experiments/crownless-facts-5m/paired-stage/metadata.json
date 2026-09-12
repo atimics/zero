@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "base": "/private/tmp/zero-gutenberg-aws-final/output/best.ckpt",
+    "data": "/Users/ratimics/develop/ilxyr/outputs/crownless-facts-v3-2026-09-12-checked",
+    "output": "/Users/ratimics/develop/ilxyr/outputs/crownless-facts-5m-run-2026-09-12",
+    "device": "mps",
+    "steps": 6000,
+    "batch_size": 16,
+    "eval_every": 500,
+    "lr": 0.0002,
+    "seed": 17,
+    "max_seconds": 900
+  },
+  "base_sha256": "9ea700a76eed50eb2f13e57cd00567e80a7e43449a562829ba74d35363021244",
+  "base_step": 98500,
+  "parameters": 4852992,
+  "torch": "2.8.0",
+  "source_sha256": {
+    "tune_crownless.py": "76d836dcf071ba54bea21dfddffe0ced2f7d98ed26df6fb8d1791c693af0b1eb",
+    "zero_torch.py": "e2af0e4c1f660133c51a4a14dfe604110d0531037557456acd87145f0e6e2ca1"
+  },
+  "data_sha256": {
+    "validation.audit.jsonl": "db336e81bb457ce86aeb649193c68f01d11408358cb5e986a1a186d276f78526",
+    "editorial_test.audit.jsonl": "09131d08fb4f13a076130970ed8a087d8f56f1015527f8ecdaf245f710289edd",
+    "train.txt": "df2df6851725bac4f1e5d8f2132aefb602aa95c19625688042c11db1108d2a03",
+    "wording_test.txt": "b3e6a9fc19af4a894b9d0b681ea18a74ef0cafd329d89198e391d2c8f84b20c8",
+    "train.audit.jsonl": "d8f6b36fc4a5685d83bc96896b02470b185b9abdd73f6f5b4de4c08a876071fc",
+    "validation.txt": "70c940e024ccdeab6e3149d1ab00b0072852256447990788d731d175efd26b1a",
+    "test.audit.jsonl": "de190b7bc6144200d9cad39b426a2c46eb0c978015ea821f7262e414db7fdd1d",
+    "editorial_test.txt": "0d60f4625eb9e081f298b65be7d2e7cdc6929190adab3e7582cc974928f4580c",
+    "test.txt": "7cf45da37a52b66d06ca1b4b49ad0f7b1fc667983e8ba8a7fe772f07e773ff4d",
+    "wording_test.audit.jsonl": "b1f77f0f6a3c50c36d6e1ee5fee711debf8a94f81f3a631c3fb205dde319c9bd"
+  },
+  "splits": {
+    "train": {
+      "rows": 24000,
+      "dropped_events": 0
+    },
+    "validation": {
+      "rows": 240,
+      "dropped_events": 0
+    },
+    "test": {
+      "rows": 240,
+      "dropped_events": 0
+    },
+    "editorial_test": {
+      "rows": 16,
+      "dropped_events": 0
+    }
+  },
+  "optimizer": "fresh Adam moments"
+}

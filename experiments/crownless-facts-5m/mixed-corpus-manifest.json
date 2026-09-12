@@ -1,0 +1,76 @@
+{
+  "version": 4,
+  "seed": 73,
+  "source_sha256": "dee218ff68221f4c635f66f2644744b305d5467fe94a7cc450934412e5e22328",
+  "source_manifest_sha256": "130c9035a19d260b3e11e8b4dcdd7840443f96787f80fd8e7937ab71e63624a1",
+  "templates": 415,
+  "source": "Crownless v2 training split",
+  "splits": {
+    "train": {
+      "rows": 32000,
+      "bytes": 6809188,
+      "sha256": "714af90cd5e602d1b268ba845ca01a830c5059de0d3086134a8479828101558e"
+    },
+    "validation": {
+      "rows": 240,
+      "bytes": 44116,
+      "sha256": "c3aaca85b14a8944dec8c95edc773361b06710ad995a92e099001669891db68e"
+    },
+    "test": {
+      "rows": 240,
+      "bytes": 44302,
+      "sha256": "aa0f92a793595e1b3d8ed91f94911ab3deeb076ff08c8b8d0d9724c2ab42c721"
+    },
+    "wording_test": {
+      "rows": 240,
+      "bytes": 45818,
+      "sha256": "df3adb6df12b13782a4e7eb64778d358c5a45793ebf03e0415c369aba26941dd"
+    }
+  },
+  "note": "Synthetic fact substitutions preserve source event rules; earlier events are distractors.",
+  "replay_rows": 8000,
+  "name_seed": 73,
+  "known_training_names": {
+    "place": 6,
+    "person": 109,
+    "faction": 10,
+    "dragon": 1,
+    "object": 7
+  },
+  "name_pools": {
+    "train": {
+      "place": 13683,
+      "person": 13770,
+      "faction": 12898,
+      "dragon": 11916,
+      "object": 12792,
+      "subject": 6,
+      "direction": 4,
+      "other": 12898
+    },
+    "validation": {
+      "place": 1773,
+      "person": 1682,
+      "faction": 1599,
+      "dragon": 1464,
+      "object": 1577,
+      "subject": 6,
+      "direction": 4,
+      "other": 1599
+    },
+    "test": {
+      "place": 1753,
+      "person": 1749,
+      "faction": 1565,
+      "dragon": 1576,
+      "object": 1635,
+      "subject": 6,
+      "direction": 4,
+      "other": 1565
+    }
+  },
+  "generator_sha256": {
+    "build_crownless_facts.py": "5e7cbad50585d492549de9527f4a0abfbe4bd7f4d842a6b0fd0fd2f282fec75d",
+    "build_crownless_mixed.py": "4ae82412f493cc763173b77749f87f8753ef3723a811aaac195f1798f97a7228"
+  }
+}

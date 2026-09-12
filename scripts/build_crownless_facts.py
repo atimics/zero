@@ -106,8 +106,8 @@ def render(t, facts, form):
     return '- ' + cue + pattern.format(**facts) + '\n', t['target'].format(**facts)
 
 
-def build(source, output, pairs=12000, seed=29):
-    ts, ps = templates(source), pools()
+def build(source, output, pairs=12000, seed=29, name_pools=None):
+    ts, ps = templates(source), name_pools or pools()
     output.mkdir(parents=True, exist_ok=False)
     by_kind = {k: [t for t in ts if t['kind']==k] for k in WORDING}
     manifest = dict(version=3, seed=seed, source_sha256=sha((source/'train.audit.jsonl').read_bytes()),

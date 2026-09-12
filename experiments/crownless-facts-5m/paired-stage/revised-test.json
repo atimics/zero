@@ -1,0 +1,4220 @@
+[
+  {
+    "id": "test-0-0",
+    "kind": "NOTICE",
+    "events": "- Loren Shepherd posts a notice at Brackenreach: repair contract.\n",
+    "expected": "Loren Shepherd put up a repair contract in Brackenreach, I hear.",
+    "generated": "Have you heard the news? Loren Shepherd put up a repair contract in Brackenreach.",
+    "stopped": true,
+    "required": {
+      "person": "Loren Shepherd",
+      "place": "Brackenreach"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-0",
+    "changed_field": "person",
+    "changed_value": "Loren Shepherd",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-0-1",
+    "kind": "NOTICE",
+    "events": "- Torin Reed posts a notice at Brackenreach: repair contract.\n",
+    "expected": "Torin Reed put up a repair contract in Brackenreach, I hear.",
+    "generated": "Torin Reed put up a repair contract in Brackenreach, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Torin Reed",
+      "place": "Brackenreach"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-0",
+    "changed_field": "person",
+    "changed_value": "Torin Reed",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-1-0",
+    "kind": "DEATH",
+    "events": "- Nera Mason lived in Duskwater and has died.\n",
+    "expected": "Nera Mason had lived in Duskwater and died, I hear.",
+    "generated": "Nera Mason had lived in Duskwater and died, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Nera Mason",
+      "place": "Duskwater"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-1",
+    "changed_field": "person",
+    "changed_value": "Nera Mason",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-1-1",
+    "kind": "DEATH",
+    "events": "- Bren Fletcher lived in Duskwater and has died.\n",
+    "expected": "Bren Fletcher had lived in Duskwater and died, I hear.",
+    "generated": "Bren Fletcher had lived in Duskwater and died, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Bren Fletcher",
+      "place": "Duskwater"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-1",
+    "changed_field": "person",
+    "changed_value": "Bren Fletcher",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-2-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Coppertooth burned Duskwater over stolen hoard money.\n",
+    "expected": "Have you heard? Coppertooth burned Duskwater over crowns missing from the hoard. That's the word going round.",
+    "generated": "Coppertooth burned Duskwater. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Coppertooth",
+      "place": "Duskwater"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-2",
+    "changed_field": "place",
+    "changed_value": "Duskwater",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-2-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Coppertooth burned Mistlake over stolen hoard money.\n",
+    "expected": "Have you heard? Coppertooth burned Mistlake over crowns missing from the hoard. That's the word going round.",
+    "generated": "Have you heard? Coppertooth burned Mistlake over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Coppertooth",
+      "place": "Mistlake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-2",
+    "changed_field": "place",
+    "changed_value": "Mistlake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-3-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke in Birchburg's chimneys warns of Cindertail.\n",
+    "expected": "Smoke fell into Birchburg's chimneys. The old readers feared Cindertail was coming, if there's truth in the rumour.",
+    "generated": "The old readers in Birchburg took the smoke as a warning of Cindertail, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Cindertail",
+      "place": "Birchburg"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-3",
+    "changed_field": "dragon",
+    "changed_value": "Cindertail",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-3-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke in Birchburg's chimneys warns of Pinescale.\n",
+    "expected": "Smoke fell into Birchburg's chimneys. The old readers feared Pinescale was coming, if there's truth in the rumour.",
+    "generated": "The old readers in Birchburg took the smoke as a warning of Pinescale, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Pinescale",
+      "place": "Birchburg"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-3",
+    "changed_field": "dragon",
+    "changed_value": "Pinescale",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-4-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Heatherwick lost supplies in a raid by Pine Order.\n",
+    "expected": "Heatherwick had been raided by Pine Order, so people say.",
+    "generated": "Heatherwick had been raided by Pine Order, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Pine Order",
+      "place": "Heatherwick"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-4",
+    "changed_field": "faction",
+    "changed_value": "Pine Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-4-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Heatherwick lost supplies in a raid by Hazel Knives.\n",
+    "expected": "Heatherwick had been raided by Hazel Knives, so people say.",
+    "generated": "Hazelwick had been raided by Hazel Knives, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Hazel Knives",
+      "place": "Heatherwick"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-4",
+    "changed_field": "faction",
+    "changed_value": "Hazel Knives",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-5-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Amberheath has 0 weeks of food; hunger reaches pressure level 1.\n",
+    "expected": "Amberheath was short of food, if the story is right.",
+    "generated": "Food was running short in Amberheath, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Amberheath"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-5",
+    "changed_field": "place",
+    "changed_value": "Amberheath",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-5-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Heatherfen has 0 weeks of food; hunger reaches pressure level 1.\n",
+    "expected": "Heatherfen was short of food, if the story is right.",
+    "generated": "Food was running short in Heatherfen, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Heatherfen"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-5",
+    "changed_field": "place",
+    "changed_value": "Heatherfen",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-6-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Alderstead's drought harvest cannot supply the northern settlements.\n",
+    "expected": "The drought harvest in Alderstead fell short of supplies for the northern settlements, if the story is right.",
+    "generated": "The drought harvest in Alderstead fell short of supplies for the northern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Alderstead"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-6",
+    "changed_field": "place",
+    "changed_value": "Alderstead",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-6-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Rowanlake's drought harvest cannot supply the northern settlements.\n",
+    "expected": "The drought harvest in Rowanlake fell short of supplies for the northern settlements, if the story is right.",
+    "generated": "Rowanlake's drought harvest fell short of what the northern settlements needed, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Rowanlake"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-6",
+    "changed_field": "place",
+    "changed_value": "Rowanlake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-7-0",
+    "kind": "ROUTE",
+    "events": "- Rowan Order recruits from hungry debtors and unpaid households; road control reaches 51%.\n- ~ Sagewick shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Sagewick closed the treaty bridge. That's the word going round.",
+    "generated": "Sagewick closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Sagewick"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-7",
+    "changed_field": "place",
+    "changed_value": "Sagewick",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-7-1",
+    "kind": "ROUTE",
+    "events": "- Rowan Order recruits from hungry debtors and unpaid households; road control reaches 51%.\n- ~ Cinderstone shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Cinderstone closed the treaty bridge. That's the word going round.",
+    "generated": "Have you heard? The relief convoy was delayed when Cinderstone closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Cinderstone"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-7",
+    "changed_field": "place",
+    "changed_value": "Cinderstone",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-8-0",
+    "kind": "PEACE",
+    "events": "- Laurel Knives agreed to peace with Moss League.\n",
+    "expected": "Have you heard the news? Laurel Knives and Moss League made peace.",
+    "generated": "Have you heard the news? Laurel Knives and Moss League made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Knives",
+      "other": "Moss League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-8",
+    "changed_field": "other",
+    "changed_value": "Moss League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-8-1",
+    "kind": "PEACE",
+    "events": "- Laurel Knives agreed to peace with Moss Compact.\n",
+    "expected": "Have you heard the news? Laurel Knives and Moss Compact made peace.",
+    "generated": "Have you heard the news? Laurel Knives and Moss Compact made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Knives",
+      "other": "Moss Compact"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-8",
+    "changed_field": "other",
+    "changed_value": "Moss Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-9-0",
+    "kind": "TREASURE",
+    "events": "- Linden Banner raids Cindercove: 8 Wheat, 15 crowns.\n- ? ~ Reedwood has 25 food in store. Its reserve target is 78.\n- ? ~ Craftspeople in Rowanford completed Thorn Bell.\n",
+    "expected": "Rowanford finished making Thorn Bell, if there's truth in the rumour.",
+    "generated": "Rowanford completed Thorn Bell, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Thorn Bell",
+      "place": "Rowanford"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-9",
+    "changed_field": "place",
+    "changed_value": "Rowanford",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-9-1",
+    "kind": "TREASURE",
+    "events": "- Linden Banner raids Cindercove: 8 Wheat, 15 crowns.\n- ? ~ Reedwood has 25 food in store. Its reserve target is 78.\n- ? ~ Craftspeople in Copperport completed Thorn Bell.\n",
+    "expected": "Copperport finished making Thorn Bell, if there's truth in the rumour.",
+    "generated": "Copperport finished making Thorn Bell, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Thorn Bell",
+      "place": "Copperport"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-9",
+    "changed_field": "place",
+    "changed_value": "Copperport",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-10-0",
+    "kind": "BANDITS",
+    "events": "- ~ Laurel Compact recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Laurel Compact recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Laurel Compact recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-10",
+    "changed_field": "faction",
+    "changed_value": "Laurel Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-10-1",
+    "kind": "BANDITS",
+    "events": "- ~ Frost Throne recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Frost Throne recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Frost Throne recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Frost Throne"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-10",
+    "changed_field": "faction",
+    "changed_value": "Frost Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-11-0",
+    "kind": "CULT RALLIES",
+    "events": "- ? ~ Bera Stone posts a notice at Larkland: road compact.\n- New tithe-bearers joined Cedar Covenant at Mosstooth's court.\n",
+    "expected": "New tithe-bearers were joining Cedar Covenant. The goblin court was gathering again, I hear.",
+    "generated": "New tithe-bearers were joining Cedar Covenant. The goblin court was gathering again, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Cedar Covenant"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-11",
+    "changed_field": "faction",
+    "changed_value": "Cedar Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-11-1",
+    "kind": "CULT RALLIES",
+    "events": "- ? ~ Bera Stone posts a notice at Larkland: road compact.\n- New tithe-bearers joined Maple Court at Mosstooth's court.\n",
+    "expected": "New tithe-bearers were joining Maple Court. The goblin court was gathering again, I hear.",
+    "generated": "New tithe-bearers were joining Maple Court. The goblin court was gathering again, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Maple Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-11",
+    "changed_field": "faction",
+    "changed_value": "Maple Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-12-0",
+    "kind": "NOTICE",
+    "events": "- ~ Dusk Covenant recruits from hungry debtors and unpaid households; road control reaches 55%.\n- ? ~ Lira Wright posts a notice at Ivyridge: relief charter.\n",
+    "expected": "Someone put up a relief charter in Ivyridge.",
+    "generated": "Lira Wright posted something in Ivyridge.",
+    "stopped": true,
+    "required": {
+      "place": "Ivyridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-12",
+    "changed_field": "place",
+    "changed_value": "Ivyridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-12-1",
+    "kind": "NOTICE",
+    "events": "- ~ Dusk Covenant recruits from hungry debtors and unpaid households; road control reaches 55%.\n- ? ~ Lira Wright posts a notice at Fernmound: relief charter.\n",
+    "expected": "Someone put up a relief charter in Fernmound.",
+    "generated": "Lira Wright posted something in Fernmound.",
+    "stopped": true,
+    "required": {
+      "place": "Fernmound"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-12",
+    "changed_field": "place",
+    "changed_value": "Fernmound",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-13-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Larkwell has 0 weeks of food; hunger reaches pressure level 1.\n- ~ Sable Court's courier reaches Winter League: peace now binds the three courts.\n- ? Dain Tanner lived in Coppergrove and has died.\n",
+    "expected": "Dain Tanner had lived in Coppergrove and died, if the story is right.",
+    "generated": "Dain Tanner died after a life in Coppergrove, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Tanner",
+      "place": "Coppergrove"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-13",
+    "changed_field": "place",
+    "changed_value": "Coppergrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-13-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Larkwell has 0 weeks of food; hunger reaches pressure level 1.\n- ~ Sable Court's courier reaches Winter League: peace now binds the three courts.\n- ? Dain Tanner lived in Cedarkeep and has died.\n",
+    "expected": "Dain Tanner had lived in Cedarkeep and died, if the story is right.",
+    "generated": "Dain Tanner died after a life in Cedarkeep, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Tanner",
+      "place": "Cedarkeep"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-13",
+    "changed_field": "place",
+    "changed_value": "Cedarkeep",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-14-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Stolen hoard money led Laurelclaw to burn Hollyden.\n",
+    "expected": "Laurelclaw burned Hollyden. The telling blamed stolen hoard money, so people say.",
+    "generated": "Have you heard? Laurelclaw burned Hollyden over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Laurelclaw",
+      "place": "Hollyden"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-14",
+    "changed_field": "place",
+    "changed_value": "Hollyden",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-14-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Stolen hoard money led Laurelclaw to burn Rosemarsh.\n",
+    "expected": "Laurelclaw burned Rosemarsh. The telling blamed stolen hoard money, so people say.",
+    "generated": "Laurelclaw burned Rosemarsh. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Laurelclaw",
+      "place": "Rosemarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-14",
+    "changed_field": "place",
+    "changed_value": "Rosemarsh",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-15-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke falls into Laurelford's chimneys; old readers count 14 nights until Coppertooth comes.\n",
+    "expected": "Have you heard? The old readers in Laurelford took the smoke as a warning of Coppertooth. That's the word going round.",
+    "generated": "Smoke fell into Laurelford's chimneys. The old readers feared Coppertooth was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Coppertooth",
+      "place": "Laurelford"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-15",
+    "changed_field": "place",
+    "changed_value": "Laurelford",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-15-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Smoke falls into Thorncrest's chimneys; old readers count 14 nights until Coppertooth comes.\n",
+    "expected": "Have you heard? The old readers in Thorncrest took the smoke as a warning of Coppertooth. That's the word going round.",
+    "generated": "Smoke fell into Thorncrest's chimneys. The old readers feared Coppertooth was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Coppertooth",
+      "place": "Thorncrest"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-15",
+    "changed_field": "place",
+    "changed_value": "Thorncrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-16-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Moss Knives raided Elmbrook and took supplies.\n",
+    "expected": "Have you heard the news? Elmbrook had been raided by Moss Knives.",
+    "generated": "Have you heard the news? Elmbrook had been raided by Moss Knives.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss Knives",
+      "place": "Elmbrook"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-16",
+    "changed_field": "faction",
+    "changed_value": "Moss Knives",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-16-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Cedar Covenant raided Elmbrook and took supplies.\n",
+    "expected": "Have you heard the news? Elmbrook had been raided by Cedar Covenant.",
+    "generated": "Cedar Covenant raided Elmbrook, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Cedar Covenant",
+      "place": "Elmbrook"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-16",
+    "changed_field": "faction",
+    "changed_value": "Cedar Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-17-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Cindercove has 7 food in store. Its reserve target is 75.\n",
+    "expected": "Food was running short in Cindercove, if there's truth in the rumour.",
+    "generated": "Cindercove was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Cindercove"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-17",
+    "changed_field": "place",
+    "changed_value": "Cindercove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-17-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Briargrove has 7 food in store. Its reserve target is 75.\n",
+    "expected": "Food was running short in Briargrove, if there's truth in the rumour.",
+    "generated": "Food was running short in Briargrove, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Briargrove"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-17",
+    "changed_field": "place",
+    "changed_value": "Briargrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-18-0",
+    "kind": "HARVEST",
+    "events": "- ~ Larkland has 10 food in store. Its reserve target is 75.\n- ~ Amberhaven's drought harvest fell short of the southern settlements' needs.\n",
+    "expected": "Have you heard? The drought harvest in Amberhaven fell short of supplies for the southern settlements. That's the word going round.",
+    "generated": "Amberhaven's drought harvest fell short of what the southern settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Amberhaven"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-18",
+    "changed_field": "place",
+    "changed_value": "Amberhaven",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-18-1",
+    "kind": "HARVEST",
+    "events": "- ~ Larkland has 10 food in store. Its reserve target is 75.\n- ~ Wintermarsh's drought harvest fell short of the southern settlements' needs.\n",
+    "expected": "Have you heard? The drought harvest in Wintermarsh fell short of supplies for the southern settlements. That's the word going round.",
+    "generated": "Have you heard? The drought harvest in Wintermarsh fell short of supplies for the southern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Wintermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-18",
+    "changed_field": "place",
+    "changed_value": "Wintermarsh",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-19-0",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Sableland shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Sableland closed the treaty bridge, I hear.",
+    "generated": "The relief convoy was delayed when Sableland closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Sableland"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-19",
+    "changed_field": "place",
+    "changed_value": "Sableland",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-19-1",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Duskspring shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Duskspring closed the treaty bridge, I hear.",
+    "generated": "The relief convoy was delayed when Duskspring closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Duskspring"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-19",
+    "changed_field": "place",
+    "changed_value": "Duskspring",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-20-0",
+    "kind": "PEACE",
+    "events": "- ~ Rowan Company's courier reaches Linden Banner: peace now binds the three courts.\n",
+    "expected": "Have you heard? Rowan Company and Linden Banner made peace. That's the word going round.",
+    "generated": "Have you heard? Rowan Company and Linden Banner made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Rowan Company",
+      "other": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-20",
+    "changed_field": "other",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-20-1",
+    "kind": "PEACE",
+    "events": "- ~ Rowan Company's courier reaches Moss League: peace now binds the three courts.\n",
+    "expected": "Have you heard? Rowan Company and Moss League made peace. That's the word going round.",
+    "generated": "Have you heard? Rowan Company and Moss League made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Rowan Company",
+      "other": "Moss League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-20",
+    "changed_field": "other",
+    "changed_value": "Moss League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-21-0",
+    "kind": "TREASURE",
+    "events": "- Craftspeople in Thornhall completed Dusk Chalice.\n",
+    "expected": "Have you heard the news? Thornhall finished making Dusk Chalice.",
+    "generated": "Have you heard the news? Thornhall finished making Dusk Chalice.",
+    "stopped": true,
+    "required": {
+      "object": "Dusk Chalice",
+      "place": "Thornhall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-21",
+    "changed_field": "object",
+    "changed_value": "Dusk Chalice",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-21-1",
+    "kind": "TREASURE",
+    "events": "- Craftspeople in Thornhall completed Dusk Ring.\n",
+    "expected": "Have you heard the news? Thornhall finished making Dusk Ring.",
+    "generated": "Have you heard the news? Thornhall finished making Dusk Ring.",
+    "stopped": true,
+    "required": {
+      "object": "Dusk Ring",
+      "place": "Thornhall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-21",
+    "changed_field": "object",
+    "changed_value": "Dusk Ring",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-22-0",
+    "kind": "BANDITS",
+    "events": "- ? ~ Ash Banner recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Ash Banner recruited hungry debtors and people from unpaid households, if there's truth in the rumour.",
+    "generated": "Ash Banner recruited hungry debtors and people from unpaid households, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Ash Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-22",
+    "changed_field": "faction",
+    "changed_value": "Ash Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-22-1",
+    "kind": "BANDITS",
+    "events": "- ? ~ Reed Throne recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Reed Throne recruited hungry debtors and people from unpaid households, if there's truth in the rumour.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Reed Throne, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Throne"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-22",
+    "changed_field": "faction",
+    "changed_value": "Reed Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-23-0",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Linden Banner at Flintmaw's court.\n",
+    "expected": "New tithe-bearers were joining Linden Banner. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Linden Banner was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-23",
+    "changed_field": "faction",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-23-1",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Maple Court at Flintmaw's court.\n",
+    "expected": "New tithe-bearers were joining Maple Court. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Maple Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Maple Court"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-23",
+    "changed_field": "faction",
+    "changed_value": "Maple Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-24-0",
+    "kind": "NOTICE",
+    "events": "- In Aldervale, Alden Mason put up a repair contract.\n",
+    "expected": "Have you heard the news? Alden Mason put up a repair contract in Aldervale.",
+    "generated": "Have you heard the news? Alden Mason put up a repair contract in Aldervale.",
+    "stopped": true,
+    "required": {
+      "person": "Alden Mason",
+      "place": "Aldervale"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-24",
+    "changed_field": "place",
+    "changed_value": "Aldervale",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-24-1",
+    "kind": "NOTICE",
+    "events": "- In Fernland, Alden Mason put up a repair contract.\n",
+    "expected": "Have you heard the news? Alden Mason put up a repair contract in Fernland.",
+    "generated": "Have you heard the news? Alden Mason put up a repair contract in Fernland.",
+    "stopped": true,
+    "required": {
+      "person": "Alden Mason",
+      "place": "Fernland"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-24",
+    "changed_field": "place",
+    "changed_value": "Fernland",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-25-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Sablewell has 24 food in store. Its reserve target is 78.\n- ~ Vela Tanner died at age 64 after a life in Heatherwick.\n",
+    "expected": "Vela Tanner died after a life in Heatherwick, so people say.",
+    "generated": "Have you heard? Vela Tanner had lived in Heatherwick and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Vela Tanner",
+      "place": "Heatherwick"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-25",
+    "changed_field": "person",
+    "changed_value": "Vela Tanner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-25-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Sablewell has 24 food in store. Its reserve target is 78.\n- ~ Kellan Field died at age 64 after a life in Heatherwick.\n",
+    "expected": "Kellan Field died after a life in Heatherwick, so people say.",
+    "generated": "Have you heard? Kellan Field had lived in Heatherwick and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Kellan Field",
+      "place": "Heatherwick"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-25",
+    "changed_field": "person",
+    "changed_value": "Kellan Field",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-26-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Brackenreach has 24 food in store. Its reserve target is 78.\n- Ivymaw burned Copperport over stolen hoard money.\n",
+    "expected": "Have you heard the news? Ivymaw burned Copperport. The telling blamed stolen hoard money.",
+    "generated": "Have you heard the news? Ivymaw burned Copperport. The telling blamed stolen hoard money.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Copperport"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-26",
+    "changed_field": "place",
+    "changed_value": "Copperport",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-26-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Brackenreach has 24 food in store. Its reserve target is 78.\n- Ivymaw burned Hazellake over stolen hoard money.\n",
+    "expected": "Have you heard the news? Ivymaw burned Hazellake. The telling blamed stolen hoard money.",
+    "generated": "Have you heard the news? Ivymaw burned Hazellake. The telling blamed stolen hoard money.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Hazellake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-26",
+    "changed_field": "place",
+    "changed_value": "Hazellake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-27-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Elmtooth burns Ivywood because 18 stolen crowns remain missing.\n- ? ~ Bracken Knives raids Laurelfield: 20 Wheat, 16 crowns.\n- ~ Smoke in Amberstone's chimneys warns of Ivymaw.\n",
+    "expected": "Smoke fell into Amberstone's chimneys. The old readers feared Ivymaw was coming, so people say.",
+    "generated": "Smoke fell into Amberfield's chimneys. The old readers feared Ivymaw was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Amberstone"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-27",
+    "changed_field": "place",
+    "changed_value": "Amberstone",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-27-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Elmtooth burns Ivywood because 18 stolen crowns remain missing.\n- ? ~ Bracken Knives raids Laurelfield: 20 Wheat, 16 crowns.\n- ~ Smoke in Lindenholt's chimneys warns of Ivymaw.\n",
+    "expected": "Smoke fell into Lindenholt's chimneys. The old readers feared Ivymaw was coming, so people say.",
+    "generated": "Smoke fell into Lindenholt's chimneys. The old readers feared Ivymaw was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Lindenholt"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-27",
+    "changed_field": "place",
+    "changed_value": "Lindenholt",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-28-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Linden Banner raids Willowmill: 20 Wheat, 15 crowns.\n",
+    "expected": "Have you heard? Linden Banner raided Willowmill. That's the word going round.",
+    "generated": "Willowmill had been raided by Linden Banner, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner",
+      "place": "Willowmill"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-28",
+    "changed_field": "place",
+    "changed_value": "Willowmill",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-28-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Linden Banner raids Alderfell: 20 Wheat, 15 crowns.\n",
+    "expected": "Have you heard? Linden Banner raided Alderfell. That's the word going round.",
+    "generated": "Have you heard? Linden Banner raided Alderfell. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner",
+      "place": "Alderfell"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-28",
+    "changed_field": "place",
+    "changed_value": "Alderfell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-29-0",
+    "kind": "SHORTAGE",
+    "events": "- Stonemoor has 0 food in store. Its reserve target is 75.\n",
+    "expected": "Stonemoor was short of food, I hear.",
+    "generated": "Stonemoor was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Stonemoor"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-29",
+    "changed_field": "place",
+    "changed_value": "Stonemoor",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-29-1",
+    "kind": "SHORTAGE",
+    "events": "- Flintmoor has 0 food in store. Its reserve target is 75.\n",
+    "expected": "Flintmoor was short of food, I hear.",
+    "generated": "Flintmoor was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Flintmoor"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-29",
+    "changed_field": "place",
+    "changed_value": "Flintmoor",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-30-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Thornburg has 11 food in store. Its reserve target is 75.\n- ? ~ Thornfield's drought harvest cannot supply the southern settlements.\n",
+    "expected": "The drought harvest in Thornfield fell short of supplies for the southern settlements, if the story is right.",
+    "generated": "The drought harvest in Thornfield fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Thornfield"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-30",
+    "changed_field": "place",
+    "changed_value": "Thornfield",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-30-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Thornburg has 11 food in store. Its reserve target is 75.\n- ? ~ Reedmoor's drought harvest cannot supply the southern settlements.\n",
+    "expected": "The drought harvest in Reedmoor fell short of supplies for the southern settlements, if the story is right.",
+    "generated": "The drought harvest in Reedmoor fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Reedmoor"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-30",
+    "changed_field": "place",
+    "changed_value": "Reedmoor",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-31-0",
+    "kind": "ROUTE",
+    "events": "- ~ Linden Banner raids Sablebarrow: 16 Bread, 16 crowns.\n- Sage Order recruits from hungry debtors and unpaid households; road control reaches 38%.\n- Birchmeadow shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Birchmeadow closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Birchmeadow closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Birchmeadow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-31",
+    "changed_field": "place",
+    "changed_value": "Birchmeadow",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-31-1",
+    "kind": "ROUTE",
+    "events": "- ~ Linden Banner raids Sablebarrow: 16 Bread, 16 crowns.\n- Sage Order recruits from hungry debtors and unpaid households; road control reaches 38%.\n- Alderridge shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Alderridge closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Alderridge closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Alderridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-31",
+    "changed_field": "place",
+    "changed_value": "Alderridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-32-0",
+    "kind": "PEACE",
+    "events": "- Laurel Knives agreed to peace with Linden Banner.\n",
+    "expected": "Laurel Knives and Linden Banner made peace, I hear.",
+    "generated": "Have you heard the news? Laurel Knives and Linden Banner made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Knives",
+      "other": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-32",
+    "changed_field": "other",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-32-1",
+    "kind": "PEACE",
+    "events": "- Laurel Knives agreed to peace with Reed Court.\n",
+    "expected": "Laurel Knives and Reed Court made peace, I hear.",
+    "generated": "Have you heard the news? Laurel Knives and Reed Court made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Knives",
+      "other": "Reed Court"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-32",
+    "changed_field": "other",
+    "changed_value": "Reed Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-33-0",
+    "kind": "TREASURE",
+    "events": "- ~ Amberhaven has 0 weeks of food; hunger reaches pressure level 1.\n- Talen Cooper died at age 67 after a life in Frostspire.\n- Thornburg finishes Frost Chalice from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Thornburg completed Frost Chalice, I hear.",
+    "generated": "Thornburg completed Frost Chalice, I hear.",
+    "stopped": true,
+    "required": {
+      "object": "Frost Chalice",
+      "place": "Thornburg"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-33",
+    "changed_field": "object",
+    "changed_value": "Frost Chalice",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-33-1",
+    "kind": "TREASURE",
+    "events": "- ~ Amberhaven has 0 weeks of food; hunger reaches pressure level 1.\n- Talen Cooper died at age 67 after a life in Frostspire.\n- Thornburg finishes Reed Bell from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Thornburg completed Reed Bell, I hear.",
+    "generated": "Thornburg completed Reed Bell, I hear.",
+    "stopped": true,
+    "required": {
+      "object": "Reed Bell",
+      "place": "Thornburg"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-33",
+    "changed_field": "object",
+    "changed_value": "Reed Bell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-34-0",
+    "kind": "BANDITS",
+    "events": "- Reed Court raids Cedarbridge: 20 Wheat, 16 crowns, and a named treasure.\n- ~ Cedar Covenant recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Cedar Covenant. That's the word going round.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Cedar Covenant. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Cedar Covenant"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-34",
+    "changed_field": "faction",
+    "changed_value": "Cedar Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-34-1",
+    "kind": "BANDITS",
+    "events": "- Reed Court raids Cedarbridge: 20 Wheat, 16 crowns, and a named treasure.\n- ~ Moss League recruits from hungry debtors and unpaid households; road control reaches 33%.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Moss League. That's the word going round.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Moss League. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-34",
+    "changed_field": "faction",
+    "changed_value": "Moss League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-35-0",
+    "kind": "CULT RALLIES",
+    "events": "- Linden Banner gathers 1 new tithe-bearers; Maplescale's court returns to 47.\n",
+    "expected": "Have you heard the news? Linden Banner was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Linden Banner was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-35",
+    "changed_field": "faction",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-35-1",
+    "kind": "CULT RALLIES",
+    "events": "- Reed Court gathers 1 new tithe-bearers; Maplescale's court returns to 47.\n",
+    "expected": "Have you heard the news? Reed Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Reed Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-35",
+    "changed_field": "faction",
+    "changed_value": "Reed Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-36-0",
+    "kind": "NOTICE",
+    "events": "- ? Nera Thatcher posted a relief charter in Cedarbridge.\n",
+    "expected": "Nera Thatcher posted something in Cedarbridge.",
+    "generated": "Nera Thatcher posted something in Cedarbridge.",
+    "stopped": true,
+    "required": {
+      "person": "Nera Thatcher",
+      "place": "Cedarbridge"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-36",
+    "changed_field": "person",
+    "changed_value": "Nera Thatcher",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-36-1",
+    "kind": "NOTICE",
+    "events": "- ? Mera Roper posted a relief charter in Cedarbridge.\n",
+    "expected": "Mera Roper posted something in Cedarbridge.",
+    "generated": "Someone put up a relief charter in Cedarbridge.",
+    "stopped": true,
+    "required": {
+      "person": "Mera Roper",
+      "place": "Cedarbridge"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-36",
+    "changed_field": "person",
+    "changed_value": "Mera Roper",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-37-0",
+    "kind": "DEATH",
+    "events": "- Frost League recruits from hungry debtors and unpaid households; road control reaches 52%.\n- Loren Stone lived in Rowanstone and has died.\n",
+    "expected": "Loren Stone had lived in Rowanstone and died, I hear.",
+    "generated": "Have you heard the news? Loren Stone died after a life in Rowanstone.",
+    "stopped": true,
+    "required": {
+      "person": "Loren Stone",
+      "place": "Rowanstone"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-37",
+    "changed_field": "person",
+    "changed_value": "Loren Stone",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-37-1",
+    "kind": "DEATH",
+    "events": "- Frost League recruits from hungry debtors and unpaid households; road control reaches 52%.\n- Talen Cooper lived in Rowanstone and has died.\n",
+    "expected": "Talen Cooper had lived in Rowanstone and died, I hear.",
+    "generated": "Talen Cooper had lived in Rowanstone and died, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Talen Cooper",
+      "place": "Rowanstone"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-37",
+    "changed_field": "person",
+    "changed_value": "Talen Cooper",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-38-0",
+    "kind": "DRAGON FIRE",
+    "events": "- Leda Hunter died at age 70 after a life in Duskfell.\n- ? ~ Silverscale burned Heatherbarrow over stolen hoard money.\n",
+    "expected": "Silverscale burned Heatherbarrow. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "Silverscale burned Heatherbarrow over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silverscale",
+      "place": "Heatherbarrow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-38",
+    "changed_field": "dragon",
+    "changed_value": "Silverscale",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-38-1",
+    "kind": "DRAGON FIRE",
+    "events": "- Leda Hunter died at age 70 after a life in Duskfell.\n- ? ~ Mosstooth burned Heatherbarrow over stolen hoard money.\n",
+    "expected": "Mosstooth burned Heatherbarrow. The telling blamed stolen hoard money, if there's truth in the rumour.",
+    "generated": "Mosstooth burned Heatherbarrow over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mosstooth",
+      "place": "Heatherbarrow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-38",
+    "changed_field": "dragon",
+    "changed_value": "Mosstooth",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-39-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Winterhaven closes the treaty bridge and delays the relief convoy.\n- ~ Smoke in Sablefell's chimneys warns of Sableflame.\n",
+    "expected": "Have you heard? The old readers in Sablefell took the smoke as a warning of Sableflame. That's the word going round.",
+    "generated": "Smoke fell into Sablefell's chimneys. The old readers feared Sableflame was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Sableflame",
+      "place": "Sablefell"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-39",
+    "changed_field": "dragon",
+    "changed_value": "Sableflame",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-39-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Winterhaven closes the treaty bridge and delays the relief convoy.\n- ~ Smoke in Sablefell's chimneys warns of Pinescale.\n",
+    "expected": "Have you heard? The old readers in Sablefell took the smoke as a warning of Pinescale. That's the word going round.",
+    "generated": "Smoke fell into Sablefell's chimneys. The old readers feared Pinescale was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Pinescale",
+      "place": "Sablefell"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-39",
+    "changed_field": "dragon",
+    "changed_value": "Pinescale",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-40-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ Ash Order recruits from hungry debtors and unpaid households; road control reaches 54%.\n- ? ~ Maple Court raided Junipermeadow and took supplies.\n",
+    "expected": "Maple Court raided Junipermeadow, if the story is right.",
+    "generated": "Junipermeadow had been raided by Maple Court, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Maple Court",
+      "place": "Junipermeadow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-40",
+    "changed_field": "faction",
+    "changed_value": "Maple Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-40-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ? ~ Ash Order recruits from hungry debtors and unpaid households; road control reaches 54%.\n- ? ~ Thorn Covenant raided Junipermeadow and took supplies.\n",
+    "expected": "Thorn Covenant raided Junipermeadow, if the story is right.",
+    "generated": "Junipermeadow had been raided by Thorn Covenant, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Thorn Covenant",
+      "place": "Junipermeadow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-40",
+    "changed_field": "faction",
+    "changed_value": "Thorn Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-41-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Pineport has 24 food in store. Its reserve target is 78.\n",
+    "expected": "Pineport was short of food, if the story is right.",
+    "generated": "Pineport was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Pineport"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-41",
+    "changed_field": "place",
+    "changed_value": "Pineport",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-41-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Sablewood has 24 food in store. Its reserve target is 78.\n",
+    "expected": "Sablewood was short of food, if the story is right.",
+    "generated": "Food was running short in Sablewood, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Sablewood"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-41",
+    "changed_field": "place",
+    "changed_value": "Sablewood",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-42-0",
+    "kind": "HARVEST",
+    "events": "- Maple Court recruits from hungry debtors and unpaid households; road control reaches 70%.\n- ? ~ Thorn Compact raids Juniperspring: 15 Bread, 15 crowns.\n- ? ~ Larkspire's drought harvest fell short of the southern settlements' needs.\n",
+    "expected": "The drought harvest in Larkspire fell short of supplies for the southern settlements, if the story is right.",
+    "generated": "The drought harvest in Larkspire fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Larkspire"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-42",
+    "changed_field": "place",
+    "changed_value": "Larkspire",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-42-1",
+    "kind": "HARVEST",
+    "events": "- Maple Court recruits from hungry debtors and unpaid households; road control reaches 70%.\n- ? ~ Thorn Compact raids Juniperspring: 15 Bread, 15 crowns.\n- ? ~ Hazelford's drought harvest fell short of the southern settlements' needs.\n",
+    "expected": "The drought harvest in Hazelford fell short of supplies for the southern settlements, if the story is right.",
+    "generated": "The drought harvest in Hazelford fell short of supplies for the southern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Hazelford"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-42",
+    "changed_field": "place",
+    "changed_value": "Hazelford",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-43-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Winterglen has 33 food in store. Its reserve target is 78.\n- ~ Juniperfen closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Juniperfen closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Juniperfen closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Juniperfen"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-43",
+    "changed_field": "place",
+    "changed_value": "Juniperfen",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-43-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Winterglen has 33 food in store. Its reserve target is 78.\n- ~ Ambervale closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Ambervale closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Ambervale closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Ambervale"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-43",
+    "changed_field": "place",
+    "changed_value": "Ambervale",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-44-0",
+    "kind": "PEACE",
+    "events": "- ~ Frost Council raids Ashbridge: 16 Bread, 16 crowns, and a named treasure.\n- ~ Dusk Covenant agreed to peace with Cedar Covenant.\n",
+    "expected": "Dusk Covenant and Cedar Covenant made peace, so people say.",
+    "generated": "Have you heard? Dusk Covenant and Cedar Covenant made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Dusk Covenant",
+      "other": "Cedar Covenant"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-44",
+    "changed_field": "other",
+    "changed_value": "Cedar Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-44-1",
+    "kind": "PEACE",
+    "events": "- ~ Frost Council raids Ashbridge: 16 Bread, 16 crowns, and a named treasure.\n- ~ Dusk Covenant agreed to peace with Linden Banner.\n",
+    "expected": "Dusk Covenant and Linden Banner made peace, so people say.",
+    "generated": "Have you heard? Dusk Covenant and Linden Banner made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Dusk Covenant",
+      "other": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-44",
+    "changed_field": "other",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-45-0",
+    "kind": "TREASURE",
+    "events": "- Birchmeadow finished making Dusk Lantern.\n",
+    "expected": "Have you heard the news? Birchmeadow finished making Dusk Lantern.",
+    "generated": "Birchmeadow completed Dusk Lantern, I hear.",
+    "stopped": true,
+    "required": {
+      "object": "Dusk Lantern",
+      "place": "Birchmeadow"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-45",
+    "changed_field": "place",
+    "changed_value": "Birchmeadow",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-45-1",
+    "kind": "TREASURE",
+    "events": "- Laurelfield finished making Dusk Lantern.\n",
+    "expected": "Have you heard the news? Laurelfield finished making Dusk Lantern.",
+    "generated": "Have you heard the news? Laurelfield finished making Dusk Lantern.",
+    "stopped": true,
+    "required": {
+      "object": "Dusk Lantern",
+      "place": "Laurelfield"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-45",
+    "changed_field": "place",
+    "changed_value": "Laurelfield",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-46-0",
+    "kind": "BANDITS",
+    "events": "- Galen Wright died at age 66 after a life in Mossfell.\n- ~ Rowan Order recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Rowan Order. That's the word going round.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Rowan Order. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Rowan Order"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-46",
+    "changed_field": "faction",
+    "changed_value": "Rowan Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-46-1",
+    "kind": "BANDITS",
+    "events": "- Galen Wright died at age 66 after a life in Mossfell.\n- ~ Ash Order recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Ash Order. That's the word going round.",
+    "generated": "Ash Order recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Ash Order"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-46",
+    "changed_field": "faction",
+    "changed_value": "Ash Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-47-0",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Maple Court at Cindertail's court.\n",
+    "expected": "Have you heard the news? Maple Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Maple Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Maple Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-47",
+    "changed_field": "faction",
+    "changed_value": "Maple Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-47-1",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Thorn Covenant at Cindertail's court.\n",
+    "expected": "Have you heard the news? Thorn Covenant was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Covenant was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Thorn Covenant"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-47",
+    "changed_field": "faction",
+    "changed_value": "Thorn Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-48-0",
+    "kind": "NOTICE",
+    "events": "- ~ Fara Gardener posted a supply request in Cedarbeck.\n",
+    "expected": "Fara Gardener put up a supply request in Cedarbeck, so people say.",
+    "generated": "Fara Gardener put up a supply request in Cedarbeck, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Fara Gardener",
+      "place": "Cedarbeck"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-48",
+    "changed_field": "place",
+    "changed_value": "Cedarbeck",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-48-1",
+    "kind": "NOTICE",
+    "events": "- ~ Fara Gardener posted a supply request in Thornstead.\n",
+    "expected": "Fara Gardener put up a supply request in Thornstead, so people say.",
+    "generated": "Fara Gardener put up a supply request in Thornstead, so people say.",
+    "stopped": true,
+    "required": {
+      "person": "Fara Gardener",
+      "place": "Thornstead"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-48",
+    "changed_field": "place",
+    "changed_value": "Thornstead",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-49-0",
+    "kind": "DEATH",
+    "events": "- Flint Republic raids Sablegate: 20 Wheat, 15 crowns.\n- ~ Halen Fletcher died at age 65 after a life in Reedridge.\n",
+    "expected": "Have you heard? Halen Fletcher had lived in Reedridge and died. That's the word going round.",
+    "generated": "Have you heard? Halen Fletcher had lived in Reedridge and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Halen Fletcher",
+      "place": "Reedridge"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-49",
+    "changed_field": "place",
+    "changed_value": "Reedridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-49-1",
+    "kind": "DEATH",
+    "events": "- Flint Republic raids Sablegate: 20 Wheat, 15 crowns.\n- ~ Halen Fletcher died at age 65 after a life in Stonehollow.\n",
+    "expected": "Have you heard? Halen Fletcher had lived in Stonehollow and died. That's the word going round.",
+    "generated": "Have you heard? Halen Fletcher had lived in Stonehollow and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Halen Fletcher",
+      "place": "Stonehollow"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-49",
+    "changed_field": "place",
+    "changed_value": "Stonehollow",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-50-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Larkmill closes the treaty bridge and delays the relief convoy.\n- ? ~ Briarwood has 36 food in store. Its reserve target is 78.\n- ~ Silvertail burned Mistmound over stolen hoard money.\n",
+    "expected": "Have you heard? Silvertail burned Mistmound over crowns missing from the hoard. That's the word going round.",
+    "generated": "Silvertail burned Mistmound. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silvertail",
+      "place": "Mistmound"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-50",
+    "changed_field": "dragon",
+    "changed_value": "Silvertail",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-50-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Larkmill closes the treaty bridge and delays the relief convoy.\n- ? ~ Briarwood has 36 food in store. Its reserve target is 78.\n- ~ Reedmaw burned Mistmound over stolen hoard money.\n",
+    "expected": "Have you heard? Reedmaw burned Mistmound over crowns missing from the hoard. That's the word going round.",
+    "generated": "Have you heard? Reedmaw burned Mistmound over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Reedmaw",
+      "place": "Mistmound"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-50",
+    "changed_field": "dragon",
+    "changed_value": "Reedmaw",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-51-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Alder League recruits from hungry debtors and unpaid households; road control reaches 36%.\n- Smoke falls into Pineport's chimneys; old readers count 14 nights until Mapletooth comes.\n",
+    "expected": "Have you heard the news? Smoke fell into Pineport's chimneys. The old readers feared Mapletooth was coming.",
+    "generated": "The old readers in Pineport took the smoke as a warning of Mapletooth, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mapletooth",
+      "place": "Pineport"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-51",
+    "changed_field": "place",
+    "changed_value": "Pineport",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-51-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Alder League recruits from hungry debtors and unpaid households; road control reaches 36%.\n- Smoke falls into Laurelford's chimneys; old readers count 14 nights until Mapletooth comes.\n",
+    "expected": "Have you heard the news? Smoke fell into Laurelford's chimneys. The old readers feared Mapletooth was coming.",
+    "generated": "The old readers in Laurelford took the smoke as a warning of Mapletooth, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mapletooth",
+      "place": "Laurelford"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-51",
+    "changed_field": "place",
+    "changed_value": "Laurelford",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-52-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Coppermill has 0 weeks of food; hunger reaches pressure level 1.\n- ~ Moss Compact raided Rowanport and took supplies.\n",
+    "expected": "Have you heard? Moss Compact raided Rowanport. That's the word going round.",
+    "generated": "Have you heard? Moss Compact raided Rowanport. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss Compact",
+      "place": "Rowanport"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-52",
+    "changed_field": "faction",
+    "changed_value": "Moss Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-52-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Coppermill has 0 weeks of food; hunger reaches pressure level 1.\n- ~ Elm Order raided Rowanport and took supplies.\n",
+    "expected": "Have you heard? Elm Order raided Rowanport. That's the word going round.",
+    "generated": "Have you heard? Elm Order raided Rowanport. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Elm Order",
+      "place": "Rowanport"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-52",
+    "changed_field": "faction",
+    "changed_value": "Elm Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-53-0",
+    "kind": "SHORTAGE",
+    "events": "- Silverfield was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Silverfield.",
+    "generated": "Silverfield was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Silverfield"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-53",
+    "changed_field": "place",
+    "changed_value": "Silverfield",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-53-1",
+    "kind": "SHORTAGE",
+    "events": "- Reedburg was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Reedburg.",
+    "generated": "Have you heard the news? Food was running short in Reedburg.",
+    "stopped": true,
+    "required": {
+      "place": "Reedburg"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-53",
+    "changed_field": "place",
+    "changed_value": "Reedburg",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-54-0",
+    "kind": "HARVEST",
+    "events": "- ~ Thornlake's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Thornlake's drought harvest fell short of what the northern settlements needed, so people say.",
+    "generated": "Thornlake's drought harvest fell short of what the northern settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Thornlake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-54",
+    "changed_field": "place",
+    "changed_value": "Thornlake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-54-1",
+    "kind": "HARVEST",
+    "events": "- ~ Winterhaven's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Winterhaven's drought harvest fell short of what the northern settlements needed, so people say.",
+    "generated": "Winterhaven's drought harvest fell short of what the northern settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Winterhaven"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-54",
+    "changed_field": "place",
+    "changed_value": "Winterhaven",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-55-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ The relief convoy was delayed after Willowmoor shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Willowmoor closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Willowmoor closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Willowmoor"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-55",
+    "changed_field": "place",
+    "changed_value": "Willowmoor",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-55-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ The relief convoy was delayed after Hazellake shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Hazellake closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Hazellake closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Hazellake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-55",
+    "changed_field": "place",
+    "changed_value": "Hazellake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-56-0",
+    "kind": "PEACE",
+    "events": "- Moss Compact agreed to peace with Pine Republic.\n",
+    "expected": "Have you heard the news? Moss Compact and Pine Republic made peace.",
+    "generated": "Have you heard the news? Moss Compact and Pine Republic made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss Compact",
+      "other": "Pine Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-56",
+    "changed_field": "other",
+    "changed_value": "Pine Republic",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-56-1",
+    "kind": "PEACE",
+    "events": "- Moss Compact agreed to peace with Linden Banner.\n",
+    "expected": "Have you heard the news? Moss Compact and Linden Banner made peace.",
+    "generated": "Have you heard the news? Moss Compact and Linden Banner made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss Compact",
+      "other": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-56",
+    "changed_field": "other",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-57-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Ivymere finishes Thorn Bell from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Ivymere completed Thorn Bell, if the story is right.",
+    "generated": "Ivymere completed Thorn Bell, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Thorn Bell",
+      "place": "Ivymere"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-57",
+    "changed_field": "object",
+    "changed_value": "Thorn Bell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-57-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Ivymere finishes Amber Icon from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Ivymere completed Amber Icon, if the story is right.",
+    "generated": "Ivymere completed Amber Icon, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Amber Icon",
+      "place": "Ivymere"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-57",
+    "changed_field": "object",
+    "changed_value": "Amber Icon",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-58-0",
+    "kind": "BANDITS",
+    "events": "- ~ Laurel Compact recruited hungry debtors and unpaid households.\n",
+    "expected": "Laurel Compact recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Laurel Compact. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-58",
+    "changed_field": "faction",
+    "changed_value": "Laurel Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-58-1",
+    "kind": "BANDITS",
+    "events": "- ~ Ash Banner recruited hungry debtors and unpaid households.\n",
+    "expected": "Ash Banner recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Ash Banner recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Ash Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-58",
+    "changed_field": "faction",
+    "changed_value": "Ash Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-59-0",
+    "kind": "CULT RALLIES",
+    "events": "- Pine Order gathers 1 new tithe-bearers; Laurelscale's court returns to 47.\n",
+    "expected": "Have you heard the news? Pine Order was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Pine Order was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Pine Order"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-59",
+    "changed_field": "faction",
+    "changed_value": "Pine Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-59-1",
+    "kind": "CULT RALLIES",
+    "events": "- Maple Court gathers 1 new tithe-bearers; Laurelscale's court returns to 47.\n",
+    "expected": "Have you heard the news? Maple Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Maple Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Maple Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-59",
+    "changed_field": "faction",
+    "changed_value": "Maple Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-60-0",
+    "kind": "NOTICE",
+    "events": "- ? In Maplemound, Iona Potter put up a repair contract.\n",
+    "expected": "Iona Potter posted something in Maplemound.",
+    "generated": "Iona Potter posted something in Maplemound.",
+    "stopped": true,
+    "required": {
+      "person": "Iona Potter",
+      "place": "Maplemound"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-60",
+    "changed_field": "place",
+    "changed_value": "Maplemound",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-60-1",
+    "kind": "NOTICE",
+    "events": "- ? In Sageland, Iona Potter put up a repair contract.\n",
+    "expected": "Iona Potter posted something in Sageland.",
+    "generated": "Iona Potter posted something in Sageland.",
+    "stopped": true,
+    "required": {
+      "person": "Iona Potter",
+      "place": "Sageland"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-60",
+    "changed_field": "place",
+    "changed_value": "Sageland",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-61-0",
+    "kind": "DEATH",
+    "events": "- Wren Roper lived in Aldermarsh and has died.\n",
+    "expected": "Wren Roper had lived in Aldermarsh and died, I hear.",
+    "generated": "Wren Roper had lived in Aldermarsh and died, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Wren Roper",
+      "place": "Aldermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-61",
+    "changed_field": "person",
+    "changed_value": "Wren Roper",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-61-1",
+    "kind": "DEATH",
+    "events": "- Doran Fisher lived in Aldermarsh and has died.\n",
+    "expected": "Doran Fisher had lived in Aldermarsh and died, I hear.",
+    "generated": "Have you heard the news? Doran Fisher died after a life in Aldermarsh.",
+    "stopped": true,
+    "required": {
+      "person": "Doran Fisher",
+      "place": "Aldermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-61",
+    "changed_field": "person",
+    "changed_value": "Doran Fisher",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-62-0",
+    "kind": "DRAGON FIRE",
+    "events": "- Laurelclaw burns Rowanland because 18 stolen crowns remain missing.\n",
+    "expected": "Laurelclaw burned Rowanland over crowns missing from the hoard, I hear.",
+    "generated": "Have you heard the news? Laurelclaw burned Rowanland. The telling blamed stolen hoard money.",
+    "stopped": true,
+    "required": {
+      "dragon": "Laurelclaw",
+      "place": "Rowanland"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-62",
+    "changed_field": "dragon",
+    "changed_value": "Laurelclaw",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-62-1",
+    "kind": "DRAGON FIRE",
+    "events": "- Willowfang burns Rowanland because 18 stolen crowns remain missing.\n",
+    "expected": "Willowfang burned Rowanland over crowns missing from the hoard, I hear.",
+    "generated": "Willowfang burned Rowanland over crowns missing from the hoard, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Willowfang",
+      "place": "Rowanland"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-62",
+    "changed_field": "dragon",
+    "changed_value": "Willowfang",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-63-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Laurel Republic raids Larkspire: 17 Wheat, 16 crowns.\n- ~ Smoke in Flintgate's chimneys warns of Silverscale.\n",
+    "expected": "Smoke fell into Flintgate's chimneys. The old readers feared Silverscale was coming, so people say.",
+    "generated": "Smoke fell into Flintgate's chimneys. The old readers feared Silverscale was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silverscale",
+      "place": "Flintgate"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-63",
+    "changed_field": "place",
+    "changed_value": "Flintgate",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-63-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Laurel Republic raids Larkspire: 17 Wheat, 16 crowns.\n- ~ Smoke in Duskwater's chimneys warns of Silverscale.\n",
+    "expected": "Smoke fell into Duskwater's chimneys. The old readers feared Silverscale was coming, so people say.",
+    "generated": "Smoke fell into Duskwater's chimneys. The old readers feared Silverscale was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Silverscale",
+      "place": "Duskwater"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-63",
+    "changed_field": "place",
+    "changed_value": "Duskwater",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-64-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Coppergrove lost supplies in a raid by Oak Oath.\n",
+    "expected": "Have you heard the news? Coppergrove had been raided by Oak Oath.",
+    "generated": "Have you heard the news? Coppergrove had been raided by Oak Oath.",
+    "stopped": true,
+    "required": {
+      "faction": "Oak Oath",
+      "place": "Coppergrove"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-64",
+    "changed_field": "place",
+    "changed_value": "Coppergrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-64-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Juniperfen lost supplies in a raid by Oak Oath.\n",
+    "expected": "Have you heard the news? Juniperfen had been raided by Oak Oath.",
+    "generated": "Have you heard the news? Juniperfen had been raided by Oak Oath.",
+    "stopped": true,
+    "required": {
+      "faction": "Oak Oath",
+      "place": "Juniperfen"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-64",
+    "changed_field": "place",
+    "changed_value": "Juniperfen",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-65-0",
+    "kind": "SHORTAGE",
+    "events": "- Aldermere was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Aldermere.",
+    "generated": "Aldermere was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Aldermere"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-65",
+    "changed_field": "place",
+    "changed_value": "Aldermere",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-65-1",
+    "kind": "SHORTAGE",
+    "events": "- Mossbeck was running short of food.\n",
+    "expected": "Have you heard the news? Food was running short in Mossbeck.",
+    "generated": "Have you heard the news? Food was running short in Mossbeck.",
+    "stopped": true,
+    "required": {
+      "place": "Mossbeck"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-65",
+    "changed_field": "place",
+    "changed_value": "Mossbeck",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-66-0",
+    "kind": "HARVEST",
+    "events": "- ~ Drought in Winterwell left too little harvest for the western settlements.\n",
+    "expected": "Have you heard? The drought harvest in Winterwell fell short of supplies for the western settlements. That's the word going round.",
+    "generated": "Have you heard? The drought harvest in Winterwell fell short of supplies for the western settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Winterwell"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-66",
+    "changed_field": "place",
+    "changed_value": "Winterwell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-66-1",
+    "kind": "HARVEST",
+    "events": "- ~ Drought in Ashbridge left too little harvest for the western settlements.\n",
+    "expected": "Have you heard? The drought harvest in Ashbridge fell short of supplies for the western settlements. That's the word going round.",
+    "generated": "Ashbridge's drought harvest fell short of what the western settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Ashbridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-66",
+    "changed_field": "place",
+    "changed_value": "Ashbridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-67-0",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Sablecrest shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Sablecrest closed the treaty bridge, I hear.",
+    "generated": "The relief convoy was delayed when Sablecrest closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Sablecrest"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-67",
+    "changed_field": "place",
+    "changed_value": "Sablecrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-67-1",
+    "kind": "ROUTE",
+    "events": "- The relief convoy was delayed after Laurelspire shut the treaty bridge.\n",
+    "expected": "The relief convoy was delayed when Laurelspire closed the treaty bridge, I hear.",
+    "generated": "The relief convoy was delayed when Laurelspire closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Laurelspire"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-67",
+    "changed_field": "place",
+    "changed_value": "Laurelspire",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-68-0",
+    "kind": "PEACE",
+    "events": "- ~ Alder Oath agreed to peace with Alder League.\n",
+    "expected": "Have you heard? Alder Oath and Alder League made peace. That's the word going round.",
+    "generated": "Have you heard? Alder Oath and Alder League made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Alder Oath",
+      "other": "Alder League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-68",
+    "changed_field": "faction",
+    "changed_value": "Alder Oath",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-68-1",
+    "kind": "PEACE",
+    "events": "- ~ Silver Throne agreed to peace with Alder League.\n",
+    "expected": "Have you heard? Silver Throne and Alder League made peace. That's the word going round.",
+    "generated": "Silver Throne and Alder League made peace, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Silver Throne",
+      "other": "Alder League"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-68",
+    "changed_field": "faction",
+    "changed_value": "Silver Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-69-0",
+    "kind": "TREASURE",
+    "events": "- ~ Flintburg finishes Stone Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Have you heard? Flintburg completed Stone Crown. That's the word going round.",
+    "generated": "Have you heard? Flintburg completed Stone Crown. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Stone Crown",
+      "place": "Flintburg"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-69",
+    "changed_field": "place",
+    "changed_value": "Flintburg",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-69-1",
+    "kind": "TREASURE",
+    "events": "- ~ Fernwick finishes Stone Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Have you heard? Fernwick completed Stone Crown. That's the word going round.",
+    "generated": "Have you heard? Fernwick completed Stone Crown. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "object": "Stone Crown",
+      "place": "Fernwick"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-69",
+    "changed_field": "place",
+    "changed_value": "Fernwick",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-70-0",
+    "kind": "BANDITS",
+    "events": "- Bram Reed died at age 71 after a life in Reedholt.\n- ~ Reed Throne recruits from hungry debtors and unpaid households; road control reaches 50%.\n",
+    "expected": "Reed Throne recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Have you heard? Hungry debtors and people from unpaid households were being recruited by Reed Throne. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Throne"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-70",
+    "changed_field": "faction",
+    "changed_value": "Reed Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-70-1",
+    "kind": "BANDITS",
+    "events": "- Bram Reed died at age 71 after a life in Reedholt.\n- ~ Pine Order recruits from hungry debtors and unpaid households; road control reaches 50%.\n",
+    "expected": "Pine Order recruited hungry debtors and people from unpaid households, so people say.",
+    "generated": "Pine Order recruited hungry debtors and people from unpaid households, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Pine Order"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-70",
+    "changed_field": "faction",
+    "changed_value": "Pine Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-71-0",
+    "kind": "CULT RALLIES",
+    "events": "- ~ Alderfang burns Ironwood because 18 stolen crowns remain missing.\n- ~ Ash Banner recruits from hungry debtors and unpaid households; road control reaches 36%.\n- New tithe-bearers joined Moss League at Ashtail's court.\n",
+    "expected": "New tithe-bearers were joining Moss League. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Moss League was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss League"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-71",
+    "changed_field": "faction",
+    "changed_value": "Moss League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-71-1",
+    "kind": "CULT RALLIES",
+    "events": "- ~ Alderfang burns Ironwood because 18 stolen crowns remain missing.\n- ~ Ash Banner recruits from hungry debtors and unpaid households; road control reaches 36%.\n- New tithe-bearers joined Laurel Republic at Ashtail's court.\n",
+    "expected": "New tithe-bearers were joining Laurel Republic. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Laurel Republic was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-71",
+    "changed_field": "faction",
+    "changed_value": "Laurel Republic",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-72-0",
+    "kind": "NOTICE",
+    "events": "- ? In Mossmere, Seren Hunter put up a relief charter.\n",
+    "expected": "Seren Hunter posted something in Mossmere.",
+    "generated": "Seren Stone posted something in Mossmere.",
+    "stopped": true,
+    "required": {
+      "person": "Seren Hunter",
+      "place": "Mossmere"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-72",
+    "changed_field": "place",
+    "changed_value": "Mossmere",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-72-1",
+    "kind": "NOTICE",
+    "events": "- ? In Brackenridge, Seren Hunter put up a relief charter.\n",
+    "expected": "Seren Hunter posted something in Brackenridge.",
+    "generated": "Someone put up a relief charter in Brackenridge.",
+    "stopped": true,
+    "required": {
+      "person": "Seren Hunter",
+      "place": "Brackenridge"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-72",
+    "changed_field": "place",
+    "changed_value": "Brackenridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-73-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Jora Bell died at age 69 after a life in Thorncrest.\n",
+    "expected": "Jora Bell had lived in Thorncrest and died, if the story is right.",
+    "generated": "Jora Bell had lived in Thorncrest and died, if the story is right.",
+    "stopped": true,
+    "required": {
+      "person": "Jora Bell",
+      "place": "Thorncrest"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-73",
+    "changed_field": "place",
+    "changed_value": "Thorncrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-73-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Jora Bell died at age 69 after a life in Willowmarsh.\n",
+    "expected": "Jora Bell had lived in Willowmarsh and died, if the story is right.",
+    "generated": "Jora Bell had lived in Willowmarsh and died, if the story is right.",
+    "stopped": true,
+    "required": {
+      "person": "Jora Bell",
+      "place": "Willowmarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-73",
+    "changed_field": "place",
+    "changed_value": "Willowmarsh",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-74-0",
+    "kind": "DRAGON FIRE",
+    "events": "- Coppermaw burns Elmwall because 17 stolen crowns remain missing.\n- ? ~ Duskfang burned Reedridge over stolen hoard money.\n",
+    "expected": "Duskfang burned Reedridge over crowns missing from the hoard, if the story is right.",
+    "generated": "Duskfang burned Reedridge over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Duskfang",
+      "place": "Reedridge"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-74",
+    "changed_field": "place",
+    "changed_value": "Reedridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-74-1",
+    "kind": "DRAGON FIRE",
+    "events": "- Coppermaw burns Elmwall because 17 stolen crowns remain missing.\n- ? ~ Duskfang burned Hollyden over stolen hoard money.\n",
+    "expected": "Duskfang burned Hollyden over crowns missing from the hoard, if the story is right.",
+    "generated": "Duskfang burned Hollyden over crowns missing from the hoard, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Duskfang",
+      "place": "Hollyden"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-74",
+    "changed_field": "place",
+    "changed_value": "Hollyden",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-75-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Ambervale's chimneys; old readers count 14 nights until Cedarfang comes.\n",
+    "expected": "Smoke fell into Ambervale's chimneys. The old readers feared Cedarfang was coming, if there's truth in the rumour.",
+    "generated": "The old readers in Ambervale took the smoke as a warning of Cedarfang, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Cedarfang",
+      "place": "Ambervale"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-75",
+    "changed_field": "dragon",
+    "changed_value": "Cedarfang",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-75-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Ambervale's chimneys; old readers count 14 nights until Willowfang comes.\n",
+    "expected": "Smoke fell into Ambervale's chimneys. The old readers feared Willowfang was coming, if there's truth in the rumour.",
+    "generated": "The old readers in Ambervale took the smoke as a warning of Willowfang, if the story is right.",
+    "stopped": true,
+    "required": {
+      "dragon": "Willowfang",
+      "place": "Ambervale"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-75",
+    "changed_field": "dragon",
+    "changed_value": "Willowfang",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-76-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Elmwall lost supplies in a raid by Hazel Knives.\n",
+    "expected": "Have you heard? Hazel Knives raided Elmwall. That's the word going round.",
+    "generated": "Elmwall had been raided by Hazel Knives, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Hazel Knives",
+      "place": "Elmwall"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-76",
+    "changed_field": "faction",
+    "changed_value": "Hazel Knives",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-76-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Elmwall lost supplies in a raid by Ash Order.\n",
+    "expected": "Have you heard? Ash Order raided Elmwall. That's the word going round.",
+    "generated": "Have you heard? Ash Order raided Elmwall. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Ash Order",
+      "place": "Elmwall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-76",
+    "changed_field": "faction",
+    "changed_value": "Ash Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-77-0",
+    "kind": "SHORTAGE",
+    "events": "- Amberfell has 25 food in store. Its reserve target is 78.\n",
+    "expected": "Have you heard the news? Food was running short in Amberfell.",
+    "generated": "Amberfell was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Amberfell"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-77",
+    "changed_field": "place",
+    "changed_value": "Amberfell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-77-1",
+    "kind": "SHORTAGE",
+    "events": "- Oakholt has 25 food in store. Its reserve target is 78.\n",
+    "expected": "Have you heard the news? Food was running short in Oakholt.",
+    "generated": "Have you heard the news? Food was running short in Oakholt.",
+    "stopped": true,
+    "required": {
+      "place": "Oakholt"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-77",
+    "changed_field": "place",
+    "changed_value": "Oakholt",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-78-0",
+    "kind": "HARVEST",
+    "events": "- ~ Ira Potter died at age 67 after a life in Thornglen.\n- ? ~ Larkbridge's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Larkbridge's drought harvest fell short of what the northern settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Larkbridge fell short of supplies for the northern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Larkbridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-78",
+    "changed_field": "place",
+    "changed_value": "Larkbridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-78-1",
+    "kind": "HARVEST",
+    "events": "- ~ Ira Potter died at age 67 after a life in Thornglen.\n- ? ~ Amberstone's drought harvest cannot supply the northern settlements.\n",
+    "expected": "Amberstone's drought harvest fell short of what the northern settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Amberstone fell short of supplies for the northern settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Amberstone"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-78",
+    "changed_field": "place",
+    "changed_value": "Amberstone",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-79-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Duskfang burns Juniperport because 17 stolen crowns remain missing.\n- Frostview shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Frostview closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Frostview closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Frostview"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-79",
+    "changed_field": "place",
+    "changed_value": "Frostview",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-79-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Duskfang burns Juniperport because 17 stolen crowns remain missing.\n- Wintermarsh shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Have you heard the news? Wintermarsh closed the treaty bridge, delaying the relief convoy.",
+    "generated": "The relief convoy was delayed when Wintermarsh closed the treaty bridge, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Wintermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-79",
+    "changed_field": "place",
+    "changed_value": "Wintermarsh",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-80-0",
+    "kind": "PEACE",
+    "events": "- ~ Sage Order recruits from hungry debtors and unpaid households; road control reaches 53%.\n- Silver Throne agreed to peace with Sable Court.\n",
+    "expected": "Silver Throne and Sable Court made peace, I hear.",
+    "generated": "Silver Throne and Sable Court made peace, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Silver Throne",
+      "other": "Sable Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-80",
+    "changed_field": "faction",
+    "changed_value": "Silver Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-80-1",
+    "kind": "PEACE",
+    "events": "- ~ Sage Order recruits from hungry debtors and unpaid households; road control reaches 53%.\n- Rowan Order agreed to peace with Sable Court.\n",
+    "expected": "Rowan Order and Sable Court made peace, I hear.",
+    "generated": "Rowan Order and Sable Court made peace, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Rowan Order",
+      "other": "Sable Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-80",
+    "changed_field": "faction",
+    "changed_value": "Rowan Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-81-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Maplemoor has 3 food in store. Its reserve target is 78.\n- ? ~ Craftspeople in Wintermarsh completed Alder Lark.\n",
+    "expected": "Wintermarsh finished making Alder Lark, if there's truth in the rumour.",
+    "generated": "Wintermarsh finished making Alder Lark, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Alder Lark",
+      "place": "Wintermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-81",
+    "changed_field": "object",
+    "changed_value": "Alder Lark",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-81-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Maplemoor has 3 food in store. Its reserve target is 78.\n- ? ~ Craftspeople in Wintermarsh completed Sable Ring.\n",
+    "expected": "Wintermarsh finished making Sable Ring, if there's truth in the rumour.",
+    "generated": "Wintermarsh completed Sable Ring, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Sable Ring",
+      "place": "Wintermarsh"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-81",
+    "changed_field": "object",
+    "changed_value": "Sable Ring",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-82-0",
+    "kind": "BANDITS",
+    "events": "- Displaced workers reinforce Winter League on the old road.\n",
+    "expected": "Displaced workers gave Winter League support on the old road, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced Winter League on the old road.",
+    "stopped": true,
+    "required": {
+      "faction": "Winter League"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-82",
+    "changed_field": "faction",
+    "changed_value": "Winter League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-82-1",
+    "kind": "BANDITS",
+    "events": "- Displaced workers reinforce Flint Republic on the old road.\n",
+    "expected": "Displaced workers gave Flint Republic support on the old road, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced Flint Republic on the old road.",
+    "stopped": true,
+    "required": {
+      "faction": "Flint Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-82",
+    "changed_field": "faction",
+    "changed_value": "Flint Republic",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-83-0",
+    "kind": "CULT RALLIES",
+    "events": "- Thorn Covenant gathered new tithe-bearers for Cindertail's court.\n",
+    "expected": "Have you heard the news? Thorn Covenant was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Covenant was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Thorn Covenant"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-83",
+    "changed_field": "faction",
+    "changed_value": "Thorn Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-83-1",
+    "kind": "CULT RALLIES",
+    "events": "- Thorn Compact gathered new tithe-bearers for Cindertail's court.\n",
+    "expected": "Have you heard the news? Thorn Compact was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Thorn Compact was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Thorn Compact"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-83",
+    "changed_field": "faction",
+    "changed_value": "Thorn Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-84-0",
+    "kind": "NOTICE",
+    "events": "- ? ~ Sage Oath raids Hazelland: 13 Bread, 15 crowns.\n- In Hazelford, Loren Stone put up a supply request.\n",
+    "expected": "Have you heard the news? Loren Stone put up a supply request in Hazelford.",
+    "generated": "Have you heard the news? Loren Stone put up a supply request in Hazelford.",
+    "stopped": true,
+    "required": {
+      "person": "Loren Stone",
+      "place": "Hazelford"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-84",
+    "changed_field": "place",
+    "changed_value": "Hazelford",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-84-1",
+    "kind": "NOTICE",
+    "events": "- ? ~ Sage Oath raids Hazelland: 13 Bread, 15 crowns.\n- In Rowanstone, Loren Stone put up a supply request.\n",
+    "expected": "Have you heard the news? Loren Stone put up a supply request in Rowanstone.",
+    "generated": "Have you heard the news? Loren Stone put up a supply request in Rowanstone.",
+    "stopped": true,
+    "required": {
+      "person": "Loren Stone",
+      "place": "Rowanstone"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-84",
+    "changed_field": "place",
+    "changed_value": "Rowanstone",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-85-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Jora Bell died after living in Oakhall.\n",
+    "expected": "Jora Bell died after a life in Oakhall, if there's truth in the rumour.",
+    "generated": "Jora Bell had lived in Oakhall and died, if the story is right.",
+    "stopped": true,
+    "required": {
+      "person": "Jora Bell",
+      "place": "Oakhall"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-85",
+    "changed_field": "person",
+    "changed_value": "Jora Bell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-85-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Bren Stone died after living in Oakhall.\n",
+    "expected": "Bren Stone died after a life in Oakhall, if there's truth in the rumour.",
+    "generated": "Bren Stone died after a life in Oakhall, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Bren Stone",
+      "place": "Oakhall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-85",
+    "changed_field": "person",
+    "changed_value": "Bren Stone",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-86-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Moss Knives raids Pineview: 16 Bread, 16 crowns, and a named treasure.\n- ~ Stolen hoard money led Ivymaw to burn Brackenridge.\n",
+    "expected": "Have you heard? Ivymaw burned Brackenridge over crowns missing from the hoard. That's the word going round.",
+    "generated": "Ivymaw burned Brackenridge. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Brackenridge"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-86",
+    "changed_field": "place",
+    "changed_value": "Brackenridge",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-86-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ? ~ Moss Knives raids Pineview: 16 Bread, 16 crowns, and a named treasure.\n- ~ Stolen hoard money led Ivymaw to burn Cedarbeck.\n",
+    "expected": "Have you heard? Ivymaw burned Cedarbeck over crowns missing from the hoard. That's the word going round.",
+    "generated": "Ivymaw burned Cedarbeck. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Ivymaw",
+      "place": "Cedarbeck"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-86",
+    "changed_field": "place",
+    "changed_value": "Cedarbeck",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-87-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Sablewall saw smoke in its chimneys; readers feared Mapleflame.\n",
+    "expected": "Smoke fell into Sablewall's chimneys. The old readers feared Mapleflame was coming, so people say.",
+    "generated": "Smoke fell into Sablewall's chimneys. The old readers feared Mapleflame was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mapleflame",
+      "place": "Sablewall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-87",
+    "changed_field": "dragon",
+    "changed_value": "Mapleflame",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-87-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ~ Sablewall saw smoke in its chimneys; readers feared Juniperfang.\n",
+    "expected": "Smoke fell into Sablewall's chimneys. The old readers feared Juniperfang was coming, so people say.",
+    "generated": "Smoke fell into Sablewall's chimneys. The old readers feared Juniperfang was coming, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Juniperfang",
+      "place": "Sablewall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-87",
+    "changed_field": "dragon",
+    "changed_value": "Juniperfang",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-88-0",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Laurel Compact raided Willowmoor and took supplies.\n",
+    "expected": "Have you heard? Laurel Compact raided Willowmoor. That's the word going round.",
+    "generated": "Willowmoor had been raided by Linden Compact, so people say.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact",
+      "place": "Willowmoor"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-88",
+    "changed_field": "place",
+    "changed_value": "Willowmoor",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-88-1",
+    "kind": "GOBLIN RAID",
+    "events": "- ~ Laurel Compact raided Coppermill and took supplies.\n",
+    "expected": "Have you heard? Laurel Compact raided Coppermill. That's the word going round.",
+    "generated": "Have you heard? Laurel Compact raided Coppermill. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact",
+      "place": "Coppermill"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-88",
+    "changed_field": "place",
+    "changed_value": "Coppermill",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-89-0",
+    "kind": "SHORTAGE",
+    "events": "- Food reserves were low in Pinegrove.\n",
+    "expected": "Pinegrove was short of food, I hear.",
+    "generated": "Have you heard the news? Food was running short in Pinegrove.",
+    "stopped": true,
+    "required": {
+      "place": "Pinegrove"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-89",
+    "changed_field": "place",
+    "changed_value": "Pinegrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-89-1",
+    "kind": "SHORTAGE",
+    "events": "- Food reserves were low in Sablewell.\n",
+    "expected": "Sablewell was short of food, I hear.",
+    "generated": "Sablewell was short of food, I hear.",
+    "stopped": true,
+    "required": {
+      "place": "Sablewell"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-89",
+    "changed_field": "place",
+    "changed_value": "Sablewell",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-90-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Mira Shepherd posts a notice at Flintmoor: quiet commission.\n- ~ Willowfield's drought harvest cannot supply the southern settlements.\n",
+    "expected": "Willowfield's drought harvest fell short of what the southern settlements needed, so people say.",
+    "generated": "Have you heard? The drought harvest in Willowfield fell short of supplies for the southern settlements. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Willowfield"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-90",
+    "changed_field": "place",
+    "changed_value": "Willowfield",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-90-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Mira Shepherd posts a notice at Flintmoor: quiet commission.\n- ~ Sagecliff's drought harvest cannot supply the southern settlements.\n",
+    "expected": "Sagecliff's drought harvest fell short of what the southern settlements needed, so people say.",
+    "generated": "Sagecliff's drought harvest fell short of what the southern settlements needed, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Sagecliff"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-90",
+    "changed_field": "place",
+    "changed_value": "Sagecliff",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-91-0",
+    "kind": "ROUTE",
+    "events": "- ~ Silvercoast shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Silvercoast closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Silvercoast closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Silvercoast"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-91",
+    "changed_field": "place",
+    "changed_value": "Silvercoast",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-91-1",
+    "kind": "ROUTE",
+    "events": "- ~ Reedgate shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "Reedgate closed the treaty bridge, delaying the relief convoy, so people say.",
+    "generated": "Have you heard? The relief convoy was delayed when Reedgate closed the treaty bridge. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Reedgate"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-91",
+    "changed_field": "place",
+    "changed_value": "Reedgate",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-92-0",
+    "kind": "PEACE",
+    "events": "- Thorn Covenant raids Frosthaven: 16 Bread, 15 crowns.\n- Sage Order's courier reaches Linden Banner: peace now binds the two courts.\n- ~ Reed Court agreed to peace with Thorn Republic.\n",
+    "expected": "Have you heard? Reed Court and Thorn Republic made peace. That's the word going round.",
+    "generated": "Have you heard? Reed Court and Thorn Republic made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Court",
+      "other": "Thorn Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-92",
+    "changed_field": "faction",
+    "changed_value": "Reed Court",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-92-1",
+    "kind": "PEACE",
+    "events": "- Thorn Covenant raids Frosthaven: 16 Bread, 15 crowns.\n- Sage Order's courier reaches Linden Banner: peace now binds the two courts.\n- ~ Winter Covenant agreed to peace with Thorn Republic.\n",
+    "expected": "Have you heard? Winter Covenant and Thorn Republic made peace. That's the word going round.",
+    "generated": "Have you heard? Winter Covenant and Thorn Republic made peace. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "faction": "Winter Covenant",
+      "other": "Thorn Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-92",
+    "changed_field": "faction",
+    "changed_value": "Winter Covenant",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-93-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Hollyden finished making Elm Chalice.\n",
+    "expected": "Hollyden completed Elm Chalice, if the story is right.",
+    "generated": "Hollyden completed Elm Chalice, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Elm Chalice",
+      "place": "Hollyden"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-93",
+    "changed_field": "object",
+    "changed_value": "Elm Chalice",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-93-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Hollyden finished making Stone Crown.\n",
+    "expected": "Hollyden completed Stone Crown, if the story is right.",
+    "generated": "Hollyden completed Stone Crown, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Stone Crown",
+      "place": "Hollyden"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-93",
+    "changed_field": "object",
+    "changed_value": "Stone Crown",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-94-0",
+    "kind": "BANDITS",
+    "events": "- ~ Ivyshore has 11 food in store. Its reserve target is 75.\n- Hungry debtors and unpaid households joined Alder League.\n",
+    "expected": "Have you heard the news? Alder League recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Alder League recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "Alder League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-94",
+    "changed_field": "faction",
+    "changed_value": "Alder League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-94-1",
+    "kind": "BANDITS",
+    "events": "- ~ Ivyshore has 11 food in store. Its reserve target is 75.\n- Hungry debtors and unpaid households joined Winter League.\n",
+    "expected": "Have you heard the news? Winter League recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Winter League recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "Winter League"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-94",
+    "changed_field": "faction",
+    "changed_value": "Winter League",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-95-0",
+    "kind": "CULT RALLIES",
+    "events": "- ~ Ash Order raids Duskspring: 16 Bread, 15 crowns, and a named treasure.\n- Rowan Order gathers 1 new tithe-bearers; Reedmaw's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Rowan Order. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Rowan Order was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Rowan Order"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-95",
+    "changed_field": "faction",
+    "changed_value": "Rowan Order",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-95-1",
+    "kind": "CULT RALLIES",
+    "events": "- ~ Ash Order raids Duskspring: 16 Bread, 15 crowns, and a named treasure.\n- Frost Throne gathers 1 new tithe-bearers; Reedmaw's court returns to 47.\n",
+    "expected": "New tithe-bearers were joining Frost Throne. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Frost Throne was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Frost Throne"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-95",
+    "changed_field": "faction",
+    "changed_value": "Frost Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-96-0",
+    "kind": "NOTICE",
+    "events": "- ? ~ Laurel Republic recruits from hungry debtors and unpaid households; road control reaches 31%.\n- Cedarstone has 6 food in store. Its reserve target is 78.\n- ? ~ In Ironpoint, Dain Tanner put up a relief charter.\n",
+    "expected": "Dain Tanner posted something in Ironpoint.",
+    "generated": "Dain Tanner posted something in Ironpoint.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Tanner",
+      "place": "Ironpoint"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-96",
+    "changed_field": "place",
+    "changed_value": "Ironpoint",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-96-1",
+    "kind": "NOTICE",
+    "events": "- ? ~ Laurel Republic recruits from hungry debtors and unpaid households; road control reaches 31%.\n- Cedarstone has 6 food in store. Its reserve target is 78.\n- ? ~ In Pinegrove, Dain Tanner put up a relief charter.\n",
+    "expected": "Dain Tanner posted something in Pinegrove.",
+    "generated": "Dain Tanner posted something in Pinegrove.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Tanner",
+      "place": "Pinegrove"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-96",
+    "changed_field": "place",
+    "changed_value": "Pinegrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-97-0",
+    "kind": "DEATH",
+    "events": "- ? ~ Bera Potter died after living in Mosscrest.\n",
+    "expected": "Bera Potter had lived in Mosscrest and died, if the story is right.",
+    "generated": "Bera Potter died after a life in Mosscrest, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Bera Potter",
+      "place": "Mosscrest"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-97",
+    "changed_field": "person",
+    "changed_value": "Bera Potter",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-97-1",
+    "kind": "DEATH",
+    "events": "- ? ~ Lira Roper died after living in Mosscrest.\n",
+    "expected": "Lira Roper had lived in Mosscrest and died, if the story is right.",
+    "generated": "Lira Roper died after a life in Mosscrest, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "person": "Lira Roper",
+      "place": "Mosscrest"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-97",
+    "changed_field": "person",
+    "changed_value": "Lira Roper",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-98-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Pinegrove has 7 food in store. Its reserve target is 75.\n- ~ Willowfang burns Fernwick because 16 stolen crowns remain missing.\n",
+    "expected": "Have you heard? Willowfang burned Fernwick over crowns missing from the hoard. That's the word going round.",
+    "generated": "Willowfang burned Fernwick. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Willowfang",
+      "place": "Fernwick"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-98",
+    "changed_field": "place",
+    "changed_value": "Fernwick",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-98-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Pinegrove has 7 food in store. Its reserve target is 75.\n- ~ Willowfang burns Cinderlake because 16 stolen crowns remain missing.\n",
+    "expected": "Have you heard? Willowfang burned Cinderlake over crowns missing from the hoard. That's the word going round.",
+    "generated": "Willowfang burned Cinderlake. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Willowfang",
+      "place": "Cinderlake"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-98",
+    "changed_field": "place",
+    "changed_value": "Cinderlake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-99-0",
+    "kind": "DRAGON OMEN",
+    "events": "- Winter League raids Heatherfen: 20 Wheat, 16 crowns.\n- Birchmound saw smoke in its chimneys; readers feared Mapleflame.\n",
+    "expected": "Have you heard the news? Smoke fell into Birchmound's chimneys. The old readers feared Mapleflame was coming.",
+    "generated": "Have you heard the news? Smoke fell into Birchmound's chimneys. The old readers feared Mapleflame was coming.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mapleflame",
+      "place": "Birchmound"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-99",
+    "changed_field": "place",
+    "changed_value": "Birchmound",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-99-1",
+    "kind": "DRAGON OMEN",
+    "events": "- Winter League raids Heatherfen: 20 Wheat, 16 crowns.\n- Oakhall saw smoke in its chimneys; readers feared Mapleflame.\n",
+    "expected": "Have you heard the news? Smoke fell into Oakhall's chimneys. The old readers feared Mapleflame was coming.",
+    "generated": "The old readers in Oakhall took the smoke as a warning of Mapleflame, I hear.",
+    "stopped": true,
+    "required": {
+      "dragon": "Mapleflame",
+      "place": "Oakhall"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-99",
+    "changed_field": "place",
+    "changed_value": "Oakhall",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-100-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Lira Wright died at age 67 after a life in Reedburg.\n- ? ~ Rosemill lost supplies in a raid by Laurel Compact.\n",
+    "expected": "Rosemill had been raided by Laurel Compact, if there's truth in the rumour.",
+    "generated": "Rosemill had been raided by Laurel Compact, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact",
+      "place": "Rosemill"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-100",
+    "changed_field": "faction",
+    "changed_value": "Laurel Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-100-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Lira Wright died at age 67 after a life in Reedburg.\n- ? ~ Rosemill lost supplies in a raid by Reed Throne.\n",
+    "expected": "Rosemill had been raided by Reed Throne, if there's truth in the rumour.",
+    "generated": "Rosemill had been raided by Rose Throne, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Throne",
+      "place": "Rosemill"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-100",
+    "changed_field": "faction",
+    "changed_value": "Reed Throne",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-101-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Oakhall was running short of food.\n",
+    "expected": "Oakhall was short of food, if the story is right.",
+    "generated": "Oakhall was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Oakhall"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-101",
+    "changed_field": "place",
+    "changed_value": "Oakhall",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-101-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Coppergrove was running short of food.\n",
+    "expected": "Coppergrove was short of food, if the story is right.",
+    "generated": "Coppergrove was short of food, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Coppergrove"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-101",
+    "changed_field": "place",
+    "changed_value": "Coppergrove",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-102-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Sage Oath recruits from hungry debtors and unpaid households; road control reaches 33%.\n- ? ~ Sableland's drought harvest cannot supply the western settlements.\n",
+    "expected": "Sableland's drought harvest fell short of what the western settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Sableland fell short of supplies for the western settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Sableland"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-102",
+    "changed_field": "place",
+    "changed_value": "Sableland",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-102-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Sage Oath recruits from hungry debtors and unpaid households; road control reaches 33%.\n- ? ~ Frostcrest's drought harvest cannot supply the western settlements.\n",
+    "expected": "Frostcrest's drought harvest fell short of what the western settlements needed, if there's truth in the rumour.",
+    "generated": "Frostcrest's drought harvest fell short of what the western settlements needed, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "place": "Frostcrest"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-102",
+    "changed_field": "place",
+    "changed_value": "Frostcrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-103-0",
+    "kind": "ROUTE",
+    "events": "- ? ~ Rowan Order raids Alderfell: 16 Bread, 16 crowns, and a named treasure.\n- ~ Birchport closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Birchport closed the treaty bridge. That's the word going round.",
+    "generated": "Birchport closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Birchport"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-103",
+    "changed_field": "place",
+    "changed_value": "Birchport",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-103-1",
+    "kind": "ROUTE",
+    "events": "- ? ~ Rowan Order raids Alderfell: 16 Bread, 16 crowns, and a named treasure.\n- ~ Frostview closes the treaty bridge and delays the relief convoy.\n",
+    "expected": "Have you heard? The relief convoy was delayed when Frostview closed the treaty bridge. That's the word going round.",
+    "generated": "Frostview closed the treaty bridge, delaying the relief convoy, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Frostview"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-103",
+    "changed_field": "place",
+    "changed_value": "Frostview",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-104-0",
+    "kind": "PEACE",
+    "events": "- Moss Compact and Sable Court made peace.\n",
+    "expected": "Have you heard the news? Moss Compact and Sable Court made peace.",
+    "generated": "Have you heard the news? Moss Compact and Sable Court made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Moss Compact",
+      "other": "Sable Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-104",
+    "changed_field": "faction",
+    "changed_value": "Moss Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-104-1",
+    "kind": "PEACE",
+    "events": "- Linden Banner and Sable Court made peace.\n",
+    "expected": "Have you heard the news? Linden Banner and Sable Court made peace.",
+    "generated": "Have you heard the news? Linden Banner and Sable Court made peace.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner",
+      "other": "Sable Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-104",
+    "changed_field": "faction",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-105-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Birchmound finished making Cedar Ring.\n",
+    "expected": "Birchmound completed Cedar Ring, if the story is right.",
+    "generated": "Birchmound completed Cedar Ring, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Cedar Ring",
+      "place": "Birchmound"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-105",
+    "changed_field": "object",
+    "changed_value": "Cedar Ring",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-105-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Birchmound finished making Alder Lark.\n",
+    "expected": "Birchmound completed Alder Lark, if the story is right.",
+    "generated": "Birchmound completed Alder Lark, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Alder Lark",
+      "place": "Birchmound"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-105",
+    "changed_field": "object",
+    "changed_value": "Alder Lark",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-106-0",
+    "kind": "BANDITS",
+    "events": "- ~ Mera Roper died at age 70 after a life in Frostspire.\n- Hazelland closes the treaty bridge and delays the relief convoy.\n- Displaced workers reinforce Laurel Republic on the old road.\n",
+    "expected": "Displaced workers gave Laurel Republic support on the old road, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced Laurel Republic on the old road.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-106",
+    "changed_field": "faction",
+    "changed_value": "Laurel Republic",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-106-1",
+    "kind": "BANDITS",
+    "events": "- ~ Mera Roper died at age 70 after a life in Frostspire.\n- Hazelland closes the treaty bridge and delays the relief convoy.\n- Displaced workers reinforce Laurel Compact on the old road.\n",
+    "expected": "Displaced workers gave Laurel Compact support on the old road, I hear.",
+    "generated": "Have you heard the news? Displaced workers reinforced Laurel Compact on the old road.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-106",
+    "changed_field": "faction",
+    "changed_value": "Laurel Compact",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-107-0",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Frost Council at Ivymaw's court.\n",
+    "expected": "New tithe-bearers were joining Frost Council. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Frost Council was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Frost Council"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-107",
+    "changed_field": "faction",
+    "changed_value": "Frost Council",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-107-1",
+    "kind": "CULT RALLIES",
+    "events": "- New tithe-bearers joined Linden Banner at Ivymaw's court.\n",
+    "expected": "New tithe-bearers were joining Linden Banner. The goblin court was gathering again, I hear.",
+    "generated": "Have you heard the news? Linden Banner was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-107",
+    "changed_field": "faction",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-108-0",
+    "kind": "NOTICE",
+    "events": "- Mira Keeper posted a quiet commission in Rowanlake.\n",
+    "expected": "Have you heard the news? Mira Keeper put up a quiet commission in Rowanlake.",
+    "generated": "Have you heard the news? Mira Keeper put up a quiet commission in Rowanlake.",
+    "stopped": true,
+    "required": {
+      "person": "Mira Keeper",
+      "place": "Rowanlake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-108",
+    "changed_field": "person",
+    "changed_value": "Mira Keeper",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-108-1",
+    "kind": "NOTICE",
+    "events": "- Fenn Forester posted a quiet commission in Rowanlake.\n",
+    "expected": "Have you heard the news? Fenn Forester put up a quiet commission in Rowanlake.",
+    "generated": "Fenn Forester put up a quiet commission in Rowanlake, I hear.",
+    "stopped": true,
+    "required": {
+      "person": "Fenn Forester",
+      "place": "Rowanlake"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-108",
+    "changed_field": "person",
+    "changed_value": "Fenn Forester",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-109-0",
+    "kind": "DEATH",
+    "events": "- ~ Dain Stone lived in Coppermeadow and has died.\n",
+    "expected": "Have you heard? Dain Stone had lived in Coppermeadow and died. That's the word going round.",
+    "generated": "Have you heard? Dain Stone had lived in Coppermeadow and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Stone",
+      "place": "Coppermeadow"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-109",
+    "changed_field": "place",
+    "changed_value": "Coppermeadow",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-109-1",
+    "kind": "DEATH",
+    "events": "- ~ Dain Stone lived in Thornlake and has died.\n",
+    "expected": "Have you heard? Dain Stone had lived in Thornlake and died. That's the word going round.",
+    "generated": "Have you heard? Dain Stone had lived in Thornlake and died. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "person": "Dain Stone",
+      "place": "Thornlake"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-109",
+    "changed_field": "place",
+    "changed_value": "Thornlake",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-110-0",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Stolen hoard money led Sableflame to burn Silvershore.\n",
+    "expected": "Have you heard? Sableflame burned Silvershore over crowns missing from the hoard. That's the word going round.",
+    "generated": "Sableflame burned Silvershore. The telling blamed stolen hoard money, so people say.",
+    "stopped": true,
+    "required": {
+      "dragon": "Sableflame",
+      "place": "Silvershore"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-110",
+    "changed_field": "dragon",
+    "changed_value": "Sableflame",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-110-1",
+    "kind": "DRAGON FIRE",
+    "events": "- ~ Stolen hoard money led Cindertail to burn Silvershore.\n",
+    "expected": "Have you heard? Cindertail burned Silvershore over crowns missing from the hoard. That's the word going round.",
+    "generated": "Have you heard? Cindertail burned Silvershore over crowns missing from the hoard. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "dragon": "Cindertail",
+      "place": "Silvershore"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-110",
+    "changed_field": "dragon",
+    "changed_value": "Cindertail",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-111-0",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Juniperreach's chimneys; old readers count 14 nights until Briartail comes.\n",
+    "expected": "The old readers in Juniperreach took the smoke as a warning of Briartail, if the story is right.",
+    "generated": "Smoke fell into Juniperreach's chimneys. The old readers feared Briartail was coming, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "dragon": "Briartail",
+      "place": "Juniperreach"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-111",
+    "changed_field": "place",
+    "changed_value": "Juniperreach",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-111-1",
+    "kind": "DRAGON OMEN",
+    "events": "- ? ~ Smoke falls into Hollyrock's chimneys; old readers count 14 nights until Briartail comes.\n",
+    "expected": "The old readers in Hollyrock took the smoke as a warning of Briartail, if the story is right.",
+    "generated": "Smoke fell into Hollyrock's chimneys. The old readers feared Briartail was coming, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "dragon": "Briartail",
+      "place": "Hollyrock"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-111",
+    "changed_field": "place",
+    "changed_value": "Hollyrock",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-112-0",
+    "kind": "GOBLIN RAID",
+    "events": "- Stonevale has 20 food in store. Its reserve target is 75.\n- ? ~ Laurel Compact raids Reedburg: 6 Bread, 15 crowns.\n",
+    "expected": "Reedburg had been raided by Laurel Compact, if there's truth in the rumour.",
+    "generated": "Reed Compact raided Reedburg, if the story is right.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact",
+      "place": "Reedburg"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-112",
+    "changed_field": "place",
+    "changed_value": "Reedburg",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-112-1",
+    "kind": "GOBLIN RAID",
+    "events": "- Stonevale has 20 food in store. Its reserve target is 75.\n- ? ~ Laurel Compact raids Heatherbarrow: 6 Bread, 15 crowns.\n",
+    "expected": "Heatherbarrow had been raided by Laurel Compact, if there's truth in the rumour.",
+    "generated": "Heatherbarrow had been raided by Laurel Compact, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "faction": "Laurel Compact",
+      "place": "Heatherbarrow"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-112",
+    "changed_field": "place",
+    "changed_value": "Heatherbarrow",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-113-0",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Displaced workers reinforce Rowan Company on the old road.\n- ~ Food reserves were low in Reedgate.\n",
+    "expected": "Food was running short in Reedgate, so people say.",
+    "generated": "Food was running short in Reedgate, so people say.",
+    "stopped": true,
+    "required": {
+      "place": "Reedgate"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-113",
+    "changed_field": "place",
+    "changed_value": "Reedgate",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-113-1",
+    "kind": "SHORTAGE",
+    "events": "- ? ~ Displaced workers reinforce Rowan Company on the old road.\n- ~ Food reserves were low in Briargrove.\n",
+    "expected": "Food was running short in Briargrove, so people say.",
+    "generated": "Have you heard? Briarcove was short of food. That's the word going round.",
+    "stopped": true,
+    "required": {
+      "place": "Briargrove"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-113",
+    "changed_field": "place",
+    "changed_value": "Briargrove",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-114-0",
+    "kind": "HARVEST",
+    "events": "- ? ~ Drought in Ironspire left too little harvest for the western settlements.\n",
+    "expected": "Ironspire's drought harvest fell short of what the western settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Ironspire fell short of supplies for the western settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Ironspire"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-114",
+    "changed_field": "place",
+    "changed_value": "Ironspire",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-114-1",
+    "kind": "HARVEST",
+    "events": "- ? ~ Drought in Mossbeck left too little harvest for the western settlements.\n",
+    "expected": "Mossbeck's drought harvest fell short of what the western settlements needed, if there's truth in the rumour.",
+    "generated": "The drought harvest in Mossbeck fell short of supplies for the western settlements, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Mossbeck"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-114",
+    "changed_field": "place",
+    "changed_value": "Mossbeck",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-115-0",
+    "kind": "ROUTE",
+    "events": "- Hazellake closes the treaty bridge and delays the relief convoy.\n- ? ~ Hazellake shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Hazellake closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Hazellale closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Hazellake"
+    },
+    "required_names_match": false,
+    "exact_reference": false,
+    "pair_id": "test-115",
+    "changed_field": "place",
+    "changed_value": "Hazellake",
+    "changed_fact_match": false
+  },
+  {
+    "id": "test-115-1",
+    "kind": "ROUTE",
+    "events": "- Hazellake closes the treaty bridge and delays the relief convoy.\n- ? ~ Lindenden shut the treaty bridge and delayed the relief convoy.\n",
+    "expected": "The relief convoy was delayed when Lindenden closed the treaty bridge, if the story is right.",
+    "generated": "The relief convoy was delayed when Lindenden closed the treaty bridge, if the story is right.",
+    "stopped": true,
+    "required": {
+      "place": "Lindenden"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-115",
+    "changed_field": "place",
+    "changed_value": "Lindenden",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-116-0",
+    "kind": "PEACE",
+    "events": "- ? ~ Kellan Fisher died at age 67 after a life in Alderlake.\n- Thorn Republic raids Pineport: 11 Wheat, 16 crowns, and a named treasure.\n- ? ~ Winter League's courier reaches Linden Banner: peace now binds the three courts.\n",
+    "expected": "Something changed between Winter League and Linden Banner.",
+    "generated": "Something changed between Winter League and Linden Banner.",
+    "stopped": true,
+    "required": {
+      "faction": "Winter League",
+      "other": "Linden Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-116",
+    "changed_field": "other",
+    "changed_value": "Linden Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-116-1",
+    "kind": "PEACE",
+    "events": "- ? ~ Kellan Fisher died at age 67 after a life in Alderlake.\n- Thorn Republic raids Pineport: 11 Wheat, 16 crowns, and a named treasure.\n- ? ~ Winter League's courier reaches Laurel Republic: peace now binds the three courts.\n",
+    "expected": "Something changed between Winter League and Laurel Republic.",
+    "generated": "Something changed between Winter League and Laurel Republic.",
+    "stopped": true,
+    "required": {
+      "faction": "Winter League",
+      "other": "Laurel Republic"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-116",
+    "changed_field": "other",
+    "changed_value": "Laurel Republic",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-117-0",
+    "kind": "TREASURE",
+    "events": "- ? ~ Winter Covenant recruits from hungry debtors and unpaid households; road control reaches 30%.\n- ? ~ Willowfang burns Coppergrove because 18 stolen crowns remain missing.\n- ? ~ Amberheath finishes Thorn Ring from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Amberheath completed Thorn Ring, if the story is right.",
+    "generated": "Amberheath completed Thorn Ring, if the story is right.",
+    "stopped": true,
+    "required": {
+      "object": "Thorn Ring",
+      "place": "Amberheath"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-117",
+    "changed_field": "place",
+    "changed_value": "Amberheath",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-117-1",
+    "kind": "TREASURE",
+    "events": "- ? ~ Winter Covenant recruits from hungry debtors and unpaid households; road control reaches 30%.\n- ? ~ Willowfang burns Coppergrove because 18 stolen crowns remain missing.\n- ? ~ Rowancrest finishes Thorn Ring from 1 Raw Gold, 1 Gems, and 3 weeks of work.\n",
+    "expected": "Rowancrest completed Thorn Ring, if the story is right.",
+    "generated": "Rowancrest finished making Thorn Ring, if there's truth in the rumour.",
+    "stopped": true,
+    "required": {
+      "object": "Thorn Ring",
+      "place": "Rowancrest"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-117",
+    "changed_field": "place",
+    "changed_value": "Rowancrest",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-118-0",
+    "kind": "BANDITS",
+    "events": "- Juniper Banner recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard the news? Juniper Banner recruited hungry debtors and people from unpaid households.",
+    "generated": "Have you heard the news? Juniper Banner recruited hungry debtors and people from unpaid households.",
+    "stopped": true,
+    "required": {
+      "faction": "Juniper Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-118",
+    "changed_field": "faction",
+    "changed_value": "Juniper Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-118-1",
+    "kind": "BANDITS",
+    "events": "- Frost Throne recruited hungry debtors and unpaid households.\n",
+    "expected": "Have you heard the news? Frost Throne recruited hungry debtors and people from unpaid households.",
+    "generated": "Hungry debtors and people from unpaid households were being recruited by Frost Throne, I hear.",
+    "stopped": true,
+    "required": {
+      "faction": "Frost Throne"
+    },
+    "required_names_match": true,
+    "exact_reference": false,
+    "pair_id": "test-118",
+    "changed_field": "faction",
+    "changed_value": "Frost Throne",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-119-0",
+    "kind": "CULT RALLIES",
+    "events": "- Stonevale has 14 food in store. Its reserve target is 75.\n- New tithe-bearers joined Juniper Banner at Ashtail's court.\n",
+    "expected": "Have you heard the news? Juniper Banner was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Juniper Banner was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Juniper Banner"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-119",
+    "changed_field": "faction",
+    "changed_value": "Juniper Banner",
+    "changed_fact_match": true
+  },
+  {
+    "id": "test-119-1",
+    "kind": "CULT RALLIES",
+    "events": "- Stonevale has 14 food in store. Its reserve target is 75.\n- New tithe-bearers joined Reed Court at Ashtail's court.\n",
+    "expected": "Have you heard the news? Reed Court was gathering new tithe-bearers for the goblin court.",
+    "generated": "Have you heard the news? Reed Court was gathering new tithe-bearers for the goblin court.",
+    "stopped": true,
+    "required": {
+      "faction": "Reed Court"
+    },
+    "required_names_match": true,
+    "exact_reference": true,
+    "pair_id": "test-119",
+    "changed_field": "faction",
+    "changed_value": "Reed Court",
+    "changed_fact_match": true
+  }
+]

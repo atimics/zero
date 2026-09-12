@@ -9,6 +9,8 @@ from build_crownless_facts import pools, render, build, WORDING
 from evaluate_crownless_facts import contains, measure, generate_batch
 from tune_crownless import generate, read_split
 from zero_torch import Zero
+from zero_cached import CachedZero
+from build_crownless_mixed import mixed, wide_pools
 
 
 class FactTests(unittest.TestCase):
@@ -57,6 +59,13 @@ class FactTests(unittest.TestCase):
             root=Path(directory); source=root/'source'; source.mkdir()
             rows=[dict(id=str(i), input=dict(kind=k,account=a,confidence=93,retellings=1),output=a)
                   for i,(k,a) in enumerate(accounts)]
+            raw=bytearray()
+            for r in rows:
+                prefix='- '+r['input']['account']+'\n'
+                r.update(text_start=len(raw),output_start=len(raw)+len(prefix))
+                sample=(prefix+r['output']+'\n\n').encode()
+                r['text_bytes']=len(sample); raw.extend(sample)
+            (source/'train.txt').write_bytes(raw)
             (source/'train.audit.jsonl').write_text('\n'.join(json.dumps(r) for r in rows))
             (source/'manifest.json').write_text('{}')
             for suffix in ['txt','audit.jsonl']:
@@ -65,6 +74,18 @@ class FactTests(unittest.TestCase):
             build(source,root/'repeat',pairs=24)
             for f in (root/'built').iterdir():
                 self.assertEqual(f.read_bytes(),(root/'repeat'/f.name).read_bytes())
+            manifest=mixed(source,root/'mixed',pairs=24)
+            mixed_train=read_split(root/'mixed','train',512)
+            self.assertEqual(len(mixed_train),48+2*len(rows))
+            self.assertEqual(manifest['replay_rows'],2*len(rows))
+            self.assertEqual(mixed_train[-1]['target'],(rows[-1]['output']+'\n').encode())
+            ps,known=wide_pools(source,73)
+            for role,names in known.items():
+                self.assertTrue(names<=set(ps['train'][role]))
+                self.assertFalse(names&set(ps['test'][role]))
+                self.assertFalse(set(ps['train'][role])&set(ps['validation'][role]))
+            self.assertTrue(any(n.startswith('The ') for n in ps['train']['faction']))
+            self.assertTrue(any(' the ' in n for n in ps['train']['dragon']))
             for split in ['train','validation','test','wording_test']:
                 examples=read_split(root/'built',split,512)
                 audit=[json.loads(l) for l in (root/'built'/(split+'.audit.jsonl')).read_text().splitlines()]
@@ -85,6 +106,18 @@ class FactTests(unittest.TestCase):
                    [rng.normal(0,.1,s).astype('float32') for s in shapes])
         examples=[dict(id=str(i),kind='NOTICE',prefix=p,target=b'News.\n') for i,p in enumerate([b'- News\n',b'- A longer event\n'])]
         self.assertEqual(generate(model,examples,'cpu',max_chars=12),generate_batch(model,examples,'cpu',max_chars=12))
+        sequences=[list(e['prefix']) for e in examples]
+        tokens=torch.zeros((2,max(map(len,sequences))),dtype=torch.long)
+        for i,seq in enumerate(sequences): tokens[i,:len(seq)]=torch.tensor(seq)
+        with torch.no_grad():
+            cache=CachedZero(model)
+            logits=cache.prefill(tokens,torch.tensor(list(map(len,sequences))))
+            for _ in range(5):
+                for i,seq in enumerate(sequences):
+                    torch.testing.assert_close(logits[i],model(torch.tensor([seq]))[0,-1],atol=1e-6,rtol=1e-5)
+                new=logits.argmax(-1)
+                for i,token in enumerate(new.tolist()): sequences[i].append(token)
+                logits=cache.step(new)
 
 
 if __name__=='__main__': unittest.main()

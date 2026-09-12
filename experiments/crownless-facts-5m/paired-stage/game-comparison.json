@@ -1,0 +1,34 @@
+{
+  "first": {
+    "checkpoint_sha256": "036dae6aed14cb425f6092fcd1c1a0e7b5edc69e43dda4f712077c6266cb3c12",
+    "scores": {
+      "test": {
+        "rows": 500,
+        "nonempty": 500,
+        "stopped": 500,
+        "exact_reference": 3,
+        "required_names_match": 8,
+        "required_names_scored": 500,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  },
+  "revised": {
+    "checkpoint_sha256": "7f627e8429424e41e795d4dec3fb9458e2896786f3745a53fff79997198e6f44",
+    "scores": {
+      "test": {
+        "rows": 500,
+        "nonempty": 500,
+        "stopped": 500,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 500,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@ from pathlib import Path
 import torch
 from tune_crownless import read_split, save_json
 from zero_torch import load
+from zero_cached import CachedZero
+from build_crownless_facts import PATTERNS
 
 
 @torch.no_grad()
@@ -20,18 +22,14 @@ def generate_batch(model, examples, device, batch_size=16, max_chars=160):
         sequences=[list(e['prefix']) for e in group]
         outputs=[[] for _ in group]
         stopped=[False for _ in group]
-        for _ in range(max_chars):
+        length=max(len(s) for s in sequences)
+        tokens=torch.zeros((len(group),length),dtype=torch.long)
+        for i,seq in enumerate(sequences): tokens[i,:len(seq)]=torch.tensor(seq)
+        cache=CachedZero(model)
+        logits=cache.prefill(tokens.to(device),torch.tensor([len(s) for s in sequences],device=device))
+        for step in range(max_chars):
             active=[not stopped[i] and len(s)<=model.context for i,s in enumerate(sequences)]
             if not any(active): break
-            length=max(min(len(s),model.context) for s in sequences)
-            tokens=torch.zeros((len(group),length),dtype=torch.long)
-            positions=[]
-            for i,s in enumerate(sequences):
-                n=min(len(s),model.context)
-                tokens[i,:n]=torch.tensor(s[:n])
-                positions.append(n-1)
-            logits=model(tokens.to(device))[torch.arange(len(group),device=device),
-                                           torch.tensor(positions,device=device)]
             logits[:,:10]=-torch.inf
             logits[:,11:32]=-torch.inf
             logits[:,127:]=-torch.inf
@@ -42,6 +40,8 @@ def generate_batch(model, examples, device, batch_size=16, max_chars=160):
                 else:
                     outputs[i].append(token)
                     sequences[i].append(token)
+            if step+1<max_chars:
+                logits=cache.step(torch.tensor(next_tokens,device=device))
         for i,e in enumerate(group):
             result.append(dict(id=e['id'],kind=e['kind'],events=e['prefix'].decode(),
                                expected=e['target'].decode().rstrip('\n'),
@@ -59,6 +59,13 @@ def measure(samples, audit):
     for sample in samples:
         row=by_id[sample['id']]
         required=row.get('required',{})
+        if 'required' not in row and 'account' in row.get('input',{}):
+            for kind, pattern in PATTERNS:
+                match=re.fullmatch(pattern,row['input']['account']) if kind==row['input']['kind'] else None
+                if match:
+                    required={k:v for k,v in match.groupdict().items()
+                              if k not in ['subject','direction'] and contains(row['output'],v)}
+                    break
         sample['required']=required
         sample['required_names_match']=bool(required) and all(contains(sample['generated'],n) for n in required.values())
         sample['exact_reference']=sample['generated']==sample['expected']
@@ -84,6 +91,7 @@ def main():
     p.add_argument('--data',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--device',default='cpu',choices=['cpu','mps','cuda'])
+    p.add_argument('--split',action='append',choices=['test','wording_test','editorial_test'])
     args=p.parse_args()
     args.output.mkdir(parents=True,exist_ok=False)
     torch.set_num_threads(4)
@@ -93,7 +101,7 @@ def main():
         if not re.fullmatch(r'[a-zA-Z0-9_-]+',label): p.error('Use a simple model label')
         model,_=load(path);model.to(args.device)
         scores={}
-        for split in ['test','wording_test','editorial_test']:
+        for split in (args.split or ['test','wording_test','editorial_test']):
             examples=read_split(args.data,split,model.context)
             audit=[json.loads(l) for l in (args.data/(split+'.audit.jsonl')).read_text().splitlines()]
             samples=generate_batch(model,examples,args.device)

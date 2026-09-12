@@ -1,0 +1,78 @@
+{
+  "first": {
+    "checkpoint_sha256": "036dae6aed14cb425f6092fcd1c1a0e7b5edc69e43dda4f712077c6266cb3c12",
+    "scores": {
+      "test": {
+        "rows": 240,
+        "nonempty": 240,
+        "stopped": 240,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 240,
+        "changed_pairs_match": 0,
+        "pairs": 120,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "wording_test": {
+        "rows": 240,
+        "nonempty": 240,
+        "stopped": 240,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 240,
+        "changed_pairs_match": 0,
+        "pairs": 120,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "editorial_test": {
+        "rows": 16,
+        "nonempty": 16,
+        "stopped": 16,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 0,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  },
+  "revised": {
+    "checkpoint_sha256": "7f627e8429424e41e795d4dec3fb9458e2896786f3745a53fff79997198e6f44",
+    "scores": {
+      "test": {
+        "rows": 240,
+        "nonempty": 240,
+        "stopped": 240,
+        "exact_reference": 137,
+        "required_names_match": 230,
+        "required_names_scored": 240,
+        "changed_pairs_match": 115,
+        "pairs": 120,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "wording_test": {
+        "rows": 240,
+        "nonempty": 240,
+        "stopped": 240,
+        "exact_reference": 24,
+        "required_names_match": 97,
+        "required_names_scored": 240,
+        "changed_pairs_match": 62,
+        "pairs": 120,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      },
+      "editorial_test": {
+        "rows": 16,
+        "nonempty": 16,
+        "stopped": 16,
+        "exact_reference": 0,
+        "required_names_match": 0,
+        "required_names_scored": 0,
+        "changed_pairs_match": 0,
+        "pairs": 0,
+        "scope": "Exact required-name presence and paired name changes. Event meaning and uncertainty require review."
+      }
+    }
+  }
+}

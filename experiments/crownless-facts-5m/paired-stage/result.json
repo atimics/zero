@@ -1,0 +1,15 @@
+{
+  "parameters": 4852992,
+  "updates": 6000,
+  "selected_update": 5500,
+  "base_validation_loss": 1.6880880815111543,
+  "validation_loss": 0.011536238447096493,
+  "test_loss": 0.011353649797675508,
+  "editorial_loss": 1.5426217231714803,
+  "elapsed_seconds": 703.8912210003473,
+  "validation_sample_stops": 12,
+  "validation_sample_count": 12,
+  "editorial_stops": 16,
+  "editorial_count": 16,
+  "evaluation": "Greedy ASCII decoding, 160 character cap; loss is per target character"
+}

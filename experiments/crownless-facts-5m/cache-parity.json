@@ -1,0 +1,7 @@
+{
+  "checkpoint": "selected update 5500",
+  "sequences": 2,
+  "steps": 12,
+  "max_logit_error": 9.5367431640625e-06,
+  "device": "cpu"
+}
