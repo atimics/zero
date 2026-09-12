@@ -2,9 +2,12 @@ import copy
 import random
 from pathlib import Path
 import unittest
+from types import SimpleNamespace
+from unittest.mock import patch
 from tokenizers import Tokenizer
 from crownless_conversation import response, ACTS
 from crownless_v2 import encode_row
+from chat_crownless import chat
 
 
 class ConversationTests(unittest.TestCase):
@@ -45,6 +48,23 @@ class ConversationTests(unittest.TestCase):
         bad['history'] = [{'speaker': 'other', 'text': 'x ' * 1000}]
         with self.assertRaisesRegex(ValueError, 'budget'):
             encode_row(self.tokenizer, bad, slots=True, conversation=True)
+
+    def test_generated_speech_is_the_next_event(self):
+        fields = copy.deepcopy(self.row['fields'])
+        for f in fields: f['start'] -= 2; f['end'] -= 2
+        packet = {'text': self.row['prefix'][2:-1], 'kind': 133, 'confidence': 80,
+                  'rule': 'notice', 'fields': fields}
+        avatars = [{'name': 'Éva'}, {'name': 'Mara'}]
+        outputs = ['What happened?', 'There was a notice.', 'Who told you?']
+        def generated(model, tokenizer, record):
+            text = outputs.pop(0)
+            return {'text': text, 'stopped': True, 'actions': []}
+        with patch('chat_crownless.generate', side_effect=generated):
+            turns = chat(SimpleNamespace(mode='conversation'), {'meaning_ids': {'notice': 1}},
+                         self.tokenizer, avatars, [packet, packet], turns=3)
+        self.assertEqual(turns[1]['history'][-1], {'speaker': 'other', 'text': turns[0]['text']})
+        self.assertEqual(turns[2]['history'][-1], {'speaker': 'other', 'text': turns[1]['text']})
+        self.assertEqual(turns[2]['history'][0]['speaker'], 'self')
 
 
 if __name__ == '__main__': unittest.main()
