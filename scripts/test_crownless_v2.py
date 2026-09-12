@@ -4,6 +4,7 @@ from pathlib import Path
 import tempfile
 import unittest
 import torch
+from tokenizers import Tokenizer
 from crownless_v2 import Crownless, Config, batch, encode_row, generate, train_tokenizer
 from crownless_v2_export import export, load_export
 from score_crownless_v2 import accepted_forms
@@ -16,6 +17,25 @@ class CoreTests(unittest.TestCase):
 
     def test_parameter_budget(self):
         self.assertEqual(sum(p.numel() for p in Crownless().parameters()), 4950337)
+
+    def test_published_model_speaks_with_new_names(self):
+        directory = Path(__file__).resolve().parents[1] / 'models/crownless-core-v2'
+        model, metadata = load_export(directory / 'core.ccv2', directory / 'tokenizer.json')
+        self.assertEqual(sum(p.numel() for p in model.parameters()), 4935937)
+        tokenizer = Tokenizer.from_file(str(directory / 'tokenizer.json'))
+        prefix = '- Éva posts a notice at Newhaven: Flood relief.\n'
+        fields = []
+        for slot, (text, role) in enumerate([('Éva', 1), ('Newhaven', 3), ('Flood relief', 4)]):
+            start = len(prefix[:prefix.index(text)].encode())
+            fields.append({'field': slot, 'text': text, 'start': start,
+                           'end': start + len(text.encode()), 'role': role, 'spoken': True,
+                           'knowledge': 0, 'provenance': 3, 'event': 1})
+        row = {'id': 'published', 'kind_id': metadata['meaning_ids']['notice_posted_0'],
+               'prefix': prefix, 'output': '', 'fields': fields, 'copies': []}
+        result = generate(model, tokenizer, encode_row(tokenizer, row, slots=True, packet=True))
+        self.assertTrue(result['stopped'])
+        self.assertIn(result['text'], ['Éva posted a notice about Flood relief in Newhaven.',
+                                      'In Newhaven, Éva put up a notice about Flood relief.'])
 
     def test_meaning_score_checks_roles_and_uncertainty(self):
         rule = {'roles': ['actor', 'recipient', 'quantity'],
