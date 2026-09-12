@@ -3,6 +3,7 @@ from dataclasses import asdict, dataclass
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 
 import torch
@@ -56,11 +57,28 @@ def encode_parts(tokenizer, text, spans, slots=False):
     return tokens, mapped
 
 
-def encode_row(tokenizer, row, context=512, slots=False, packet=False):
+def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
-    if packet:
+    if packet or conversation:
         cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '')
-        prefix = tokenizer.encode(cue).ids
+        prefix = []
+        if conversation:
+            # Keep literal speech, with exact mentions of the avatar's known
+            # fields represented by their existing markers. The model learns
+            # responses from these words; dialogue acts are training labels only.
+            known = {f['text']: f['field'] for f in fields if f.get('spoken') and f['knowledge'] != 3}
+            pattern = re.compile(r'(?<!\w)(?:' + '|'.join(re.escape(x) for x in sorted(known, key=len, reverse=True)) + r')(?!\w)') if known else None
+            messages = []
+            for message in row.get('history', [])[-4:]:
+                if message['speaker'] not in ('self', 'other'): raise ValueError('Invalid speaker')
+                speech = message['text']
+                if pattern: speech = pattern.sub(lambda m: f'[F{known[m.group()]}]', speech)
+                part = tokenizer.encode(message['speaker'] + ': ' + speech + '\n').ids
+                if len(part) > 256: raise ValueError('A spoken event exceeds the history budget')
+                messages.append(part)
+            while sum(map(len, messages)) > 256: messages.pop(0)
+            prefix = [token for message in messages for token in message]
+        prefix.extend(tokenizer.encode(cue).ids)
         selected = []
         for field in sorted(fields, key=lambda f: f['field']):
             if not field.get('spoken', field['role'] not in (0, 7, 8)): continue
@@ -158,7 +176,7 @@ class Block(nn.Module):
 class Crownless(nn.Module):
     def __init__(self, config=Config(), mode='copy'):
         super().__init__()
-        if mode not in ('text', 'fields', 'copy', 'slots', 'packet'): raise ValueError('Unknown comparison arm')
+        if mode not in ('text', 'fields', 'copy', 'slots', 'packet', 'conversation'): raise ValueError('Unknown comparison arm')
         self.config, self.mode = config, mode
         self.embedding = nn.Embedding(config.vocab, config.dim)
         self.roles, self.knowledge = nn.Embedding(16, config.dim), nn.Embedding(4, config.dim)
@@ -211,7 +229,7 @@ class Crownless(nn.Module):
     def loss(self, inputs):
         h, _ = self.hidden(inputs['tokens'], inputs['meta'])
         logits, gate, scores = self.heads(h, inputs['candidates'], inputs['candidate_mask'])
-        if self.mode not in ('copy', 'slots', 'packet'):
+        if self.mode not in ('copy', 'slots', 'packet', 'conversation'):
             return F.cross_entropy(logits.flatten(0, 1), inputs['labels'].flatten(), ignore_index=-100)
         labels, target = inputs['copy_labels'], inputs['copy_targets']
         valid, copying = labels != -100, target >= 0
@@ -234,7 +252,7 @@ def generate(model, tokenizer, record, device='cpu', max_tokens=160):
     used = n
     for _ in range(max_tokens):
         logits, gate, scores = model.heads(current, inputs['candidates'], inputs['candidate_mask'], source)
-        if model.mode in ('copy', 'slots', 'packet') and record['source_ids'] and gate.item() > 0:
+        if model.mode in ('copy', 'slots', 'packet', 'conversation') and record['source_ids'] and gate.item() > 0:
             choice = scores[0, -1].argmax().item()
             tokens = record['source_ids'][choice]
             feedback = record['feedback_ids'][choice]

@@ -39,14 +39,17 @@ if __name__ == '__main__':
     model, metadata = (load_export if args.model.suffix == '.ccv2' else load)(args.model, args.tokenizer)
     if metadata.get('rules_sha256') != packet['grammar_sha256']:
         p.error('The model and game account grammar differ')
-    if model.mode != 'packet' and model.config.kinds and packet['kind'] + 1 >= model.config.kinds:
+    if model.mode not in ('packet', 'conversation') and model.config.kinds and packet['kind'] + 1 >= model.config.kinds:
         p.error('This event kind needs a newer model')
     tokenizer = Tokenizer.from_file(str(args.tokenizer))
     row = packet_record(packet, args.event[:-1], args.retold)
-    if model.mode == 'packet':
+    if model.mode in ('packet', 'conversation'):
         if packet['rule'] not in metadata['meaning_ids']: p.error('This account meaning needs a newer model')
         row['kind_id'] = metadata['meaning_ids'][packet['rule']]
-    record = encode_row(tokenizer, row, model.config.context, slots=model.mode in ('slots', 'packet'), packet=model.mode == 'packet')
+    if model.mode == 'conversation' and len(args.event) > 1:
+        p.error('Use chat_crownless.py for spoken history with speaker labels')
+    record = encode_row(tokenizer, row, model.config.context, slots=model.mode in ('slots', 'packet', 'conversation'),
+                        packet=model.mode == 'packet', conversation=model.mode == 'conversation')
     result = generate(model, tokenizer, record)
     if args.trace: args.trace.write_text(json.dumps({'packet': packet, **result}, indent=2) + '\n')
     print(result['text'])

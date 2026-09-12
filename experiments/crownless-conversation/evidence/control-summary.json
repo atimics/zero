@@ -1,0 +1,53 @@
+{
+  "model_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "data_manifest_sha256": "41f9af4c17ce282a437504656baa739902b8b9b40cd8e2f71d1b64b6e431c76f",
+  "tests": {
+    "changed_history": {
+      "count": 244,
+      "approved": 244,
+      "stopped": 244,
+      "acts": {
+        "agree": {
+          "count": 130,
+          "approved": 130
+        },
+        "disagree": {
+          "count": 114,
+          "approved": 114
+        }
+      }
+    },
+    "history_removed": {
+      "count": 244,
+      "approved": 0,
+      "stopped": 244,
+      "acts": {
+        "agree": {
+          "count": 130,
+          "approved": 0
+        },
+        "disagree": {
+          "count": 114,
+          "approved": 0
+        }
+      }
+    },
+    "account_retention": {
+      "count": 1250,
+      "approved": 1250,
+      "stopped": 1250,
+      "acts": {
+        "start": {
+          "count": 1250,
+          "approved": 1250
+        }
+      }
+    }
+  },
+  "history_pairs": {
+    "changed_pairs": 114,
+    "both_responses_approved": 114,
+    "response_changed": 114
+  }
+}
