@@ -51,7 +51,7 @@ def main():
     p.add_argument('--seed', type=int, default=17)
     p.add_argument('--device', default='mps')
     p.add_argument('--eval-rows', type=int, default=84)
-    p.add_argument('--modes', nargs='+', choices=['text', 'fields', 'copy'], default=['text', 'fields', 'copy'])
+    p.add_argument('--modes', nargs='+', choices=['text', 'fields', 'copy', 'slots'], default=['text', 'fields', 'copy', 'slots'])
     p.add_argument('--tokenizer', type=Path)
     p.add_argument('--kind-features', action=argparse.BooleanOptionalAction, default=True)
     args = p.parse_args()
@@ -85,6 +85,8 @@ def main():
     (args.output / 'metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
     summary = {}
     for mode in args.modes:
+        active_records = {s: [encode_row(tokenizer, row, slots=True) for row in values]
+                          for s, values in rows.items()} if mode == 'slots' else records
         torch.manual_seed(args.seed)
         config = Config(kinds=max(kind_ids.values()) + 1 if args.kind_features else 0)
         model = Crownless(config, mode).to(args.device)
@@ -97,7 +99,7 @@ def main():
         best, history, started = float('inf'), [], time.monotonic()
         for step in range(1, args.steps + 1):
             model.train()
-            selected = [records['train'][rng.randrange(len(records['train']))] for _ in range(args.batch_size)]
+            selected = [active_records['train'][rng.randrange(len(active_records['train']))] for _ in range(args.batch_size)]
             inputs = batch(selected, args.device)
             lr = 4e-4 * min(step / 100., 1.) * (.1 + .9 * (1 - step / args.steps))
             for group in optimizer.param_groups: group['lr'] = lr
@@ -110,8 +112,8 @@ def main():
             if step == 1 or step % 250 == 0 or step == args.steps:
                 model.eval()
                 with torch.no_grad():
-                    val = sum(model.loss(batch(records['validation'][i:i+16], args.device)).item()
-                              for i in range(0, min(128, len(records['validation'])), 16)) / 8
+                    val = sum(model.loss(batch(active_records['validation'][i:i+16], args.device)).item()
+                              for i in range(0, min(128, len(active_records['validation'])), 16)) / 8
                 item = {'step': step, 'train_loss': loss.item(), 'validation_loss': val,
                         'seconds': time.monotonic() - started}
                 history.append(item)
@@ -123,7 +125,7 @@ def main():
         model.load_state_dict(torch.load(directory / 'best.pt', map_location=args.device, weights_only=True)['state'])
         result = {'parameters': parameters, 'training_seconds': time.monotonic() - started, 'splits': {}}
         for split in ('test', 'wording'):
-            scored = evaluate(model, tokenizer, records[split], args.device, args.eval_rows)
+            scored = evaluate(model, tokenizer, active_records[split], args.device, args.eval_rows)
             (directory / f'{split}.json').write_text(json.dumps(scored, indent=2) + '\n')
             result['splits'][split] = {k: v for k, v in scored.items() if k != 'rows'}
         summary[mode] = result

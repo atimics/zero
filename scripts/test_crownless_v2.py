@@ -1,9 +1,10 @@
+import copy
 import json
 from pathlib import Path
 import tempfile
 import unittest
 import torch
-from crownless_v2 import Crownless, Config, batch, encode_row, train_tokenizer
+from crownless_v2 import Crownless, Config, batch, encode_row, generate, train_tokenizer
 
 
 class CoreTests(unittest.TestCase):
@@ -47,6 +48,30 @@ class CoreTests(unittest.TestCase):
             self.assertTrue(torch.isfinite(loss))
             self.assertGreater(model.copy_start.weight.grad.abs().sum().item(), 0)
             self.assertGreater(model.roles.weight.grad.abs().sum().item(), 0)
+            altered = copy.deepcopy(row)
+            replacement = 'A Very Long Name'
+            delta = len(replacement.encode()) - len('Éva'.encode())
+            altered['prefix'] = row['prefix'].replace('Éva', replacement)
+            altered['output'] = row['output'].replace('Éva', replacement)
+            altered['fields'][0].update(text=replacement, end=6 + delta)
+            for key in ('start', 'end'): altered['fields'][1][key] += delta
+            altered['copies'][1].update(text=replacement, end=13 + delta)
+            a = encode_row(tokenizer, row, slots=True)
+            b = encode_row(tokenizer, altered, slots=True)
+            self.assertEqual(a['tokens'], b['tokens'])
+            self.assertEqual(a['meta'], b['meta'])
+            self.assertEqual(a['candidates'], b['candidates'])
+            model.mode = 'slots'
+            with torch.no_grad():
+                model.copy_gate.weight.zero_()
+                model.copy_gate.bias.fill_(10)
+                model.copy_start.weight.zero_()
+                model.copy_end.weight.zero_()
+            one = generate(model, tokenizer, a, max_tokens=2)
+            two = generate(model, tokenizer, b, max_tokens=2)
+            self.assertEqual(one['actions'], two['actions'])
+            self.assertEqual(one['text'], 'ÉvaÉva')
+            self.assertEqual(two['text'], replacement * 2)
 
 
 if __name__ == '__main__': unittest.main()

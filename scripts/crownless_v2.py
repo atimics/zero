@@ -26,7 +26,7 @@ def train_tokenizer(rows, path):
     tokenizer = Tokenizer(models.BPE())
     tokenizer.pre_tokenizer = pre_tokenizers.ByteLevel(add_prefix_space=False)
     tokenizer.decoder = decoders.ByteLevel()
-    trainer = trainers.BpeTrainer(vocab_size=4096, special_tokens=['[EOS]'],
+    trainer = trainers.BpeTrainer(vocab_size=4096, special_tokens=['[EOS]'] + [f'[F{i}]' for i in range(8)],
                                   initial_alphabet=pre_tokenizers.ByteLevel.alphabet(),
                                   show_progress=False)
     tokenizer.train_from_iterator((r['prefix'] + r['output'] + '\n' for r in rows), trainer)
@@ -34,7 +34,7 @@ def train_tokenizer(rows, path):
     return tokenizer
 
 
-def encode_parts(tokenizer, text, spans):
+def encode_parts(tokenizer, text, spans, slots=False):
     raw, tokens, mapped, at = text.encode(), [], [], 0
     for span in sorted(spans, key=lambda s: s['start']):
         start, end = span['start'], span['end']
@@ -42,29 +42,36 @@ def encode_parts(tokenizer, text, spans):
         if raw[start:end].decode() != span['text']: raise ValueError('Source span differs from its text')
         tokens.extend(tokenizer.encode(raw[at:start].decode()).ids)
         first = len(tokens)
-        tokens.extend(tokenizer.encode(raw[start:end].decode()).ids)
-        mapped.append({**span, 'token_start': first, 'token_end': len(tokens)})
+        literal = tokenizer.encode(raw[start:end].decode()).ids
+        if slots and span['role'] not in (0, 7, 8) and span.get('knowledge', 0) != 3:
+            token = tokenizer.token_to_id(f"[F{span['field']}]")
+            if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
+            tokens.append(token)
+        else:
+            tokens.extend(literal)
+        mapped.append({**span, 'token_start': first, 'token_end': len(tokens), 'literal_ids': literal})
         at = end
     tokens.extend(tokenizer.encode(raw[at:].decode()).ids)
-    if tokenizer.decode(tokens) != text: raise ValueError('Tokenizer round trip failed')
+    if not slots and tokenizer.decode(tokens) != text: raise ValueError('Tokenizer round trip failed')
     return tokens, mapped
 
 
-def encode_row(tokenizer, row, context=512):
-    prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'])
-    output, copies = encode_parts(tokenizer, row['output'], row['copies'])
+def encode_row(tokenizer, row, context=512, slots=False):
+    prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
+    output, copies = encode_parts(tokenizer, row['output'], row['copies'], slots)
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
     n = len(tokens) - 1
     meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] for i in range(n)]
-    candidates, source_ids, field_to_candidate = [], [], {}
+    candidates, source_ids, feedback_ids, field_to_candidate = [], [], [], {}
     for field in fields:
         for i in range(field['token_start'], field['token_end']):
             meta[i][:4] = [field['role'], field['knowledge'], field['provenance'], field['event']]
         if field['role'] not in (0, 7, 8) and field['knowledge'] != 3:
             field_to_candidate[field['field']] = len(candidates)
             candidates.append([field['token_start'], field['token_end'] - 1])
-            source_ids.append(prefix[field['token_start']:field['token_end']])
+            source_ids.append(field['literal_ids'])
+            feedback_ids.append(prefix[field['token_start']:field['token_end']])
     labels = [-100] * (len(prefix) - 1) + tokens[len(prefix):]
     copy_targets, weights = [-1] * n, [1.] * n
     copy_labels = list(labels)
@@ -72,13 +79,14 @@ def encode_row(tokenizer, row, context=512):
         start = len(prefix) + copied['token_start'] - 1
         end = len(prefix) + copied['token_end'] - 1
         slot = field_to_candidate[copied['field']]
-        if output[copied['token_start']:copied['token_end']] != source_ids[slot]:
+        if output[copied['token_start']:copied['token_end']] != feedback_ids[slot]:
             raise ValueError('Copy token sequence differs from source')
-        copy_targets[start], weights[start] = slot, float(end - start)
+        copy_targets[start], weights[start] = slot, float(len(source_ids[slot]))
         for i in range(start + 1, end): copy_labels[i] = -100
     return {'tokens': tokens[:-1], 'meta': meta, 'labels': labels, 'copy_labels': copy_labels,
             'copy_targets': copy_targets, 'weights': weights, 'candidates': candidates,
-            'source_ids': source_ids, 'prefix_length': len(prefix), 'row': row}
+            'source_ids': source_ids, 'feedback_ids': feedback_ids,
+            'prefix_length': len(prefix), 'row': row}
 
 
 def batch(records, device):
@@ -137,7 +145,7 @@ class Block(nn.Module):
 class Crownless(nn.Module):
     def __init__(self, config=Config(), mode='copy'):
         super().__init__()
-        if mode not in ('text', 'fields', 'copy'): raise ValueError('Unknown comparison arm')
+        if mode not in ('text', 'fields', 'copy', 'slots'): raise ValueError('Unknown comparison arm')
         self.config, self.mode = config, mode
         self.embedding = nn.Embedding(config.vocab, config.dim)
         self.roles, self.knowledge = nn.Embedding(16, config.dim), nn.Embedding(4, config.dim)
@@ -190,7 +198,7 @@ class Crownless(nn.Module):
     def loss(self, inputs):
         h, _ = self.hidden(inputs['tokens'], inputs['meta'])
         logits, gate, scores = self.heads(h, inputs['candidates'], inputs['candidate_mask'])
-        if self.mode != 'copy':
+        if self.mode not in ('copy', 'slots'):
             return F.cross_entropy(logits.flatten(0, 1), inputs['labels'].flatten(), ignore_index=-100)
         labels, target = inputs['copy_labels'], inputs['copy_targets']
         valid, copying = labels != -100, target >= 0
@@ -210,23 +218,30 @@ def generate(model, tokenizer, record, device='cpu', max_tokens=160):
     source, current = h, h[:, -1:]
     generated, actions = [], []
     stopped = False
+    used = n
     for _ in range(max_tokens):
         logits, gate, scores = model.heads(current, inputs['candidates'], inputs['candidate_mask'], source)
-        if model.mode == 'copy' and record['source_ids'] and gate.item() > 0:
+        if model.mode in ('copy', 'slots') and record['source_ids'] and gate.item() > 0:
             choice = scores[0, -1].argmax().item()
             tokens = record['source_ids'][choice]
+            feedback = record['feedback_ids'][choice]
             actions.append({'copy': choice})
         else:
+            for i in range(8):
+                marker = tokenizer.token_to_id(f'[F{i}]')
+                if marker is not None: logits[0, -1, marker] = -torch.inf
             token = logits[0, -1].argmax().item()
             if token == tokenizer.token_to_id('[EOS]'):
                 stopped = True
                 break
             tokens = [token]
+            feedback = tokens
             actions.append({'token': token})
-        if n + len(generated) + len(tokens) > model.config.context: break
+        if used + len(feedback) > model.config.context: break
         generated.extend(tokens)
-        t = torch.tensor([tokens], device=device)
-        current, caches = model.hidden(t, torch.zeros(1, len(tokens), 5, dtype=torch.long, device=device), caches)
+        used += len(feedback)
+        t = torch.tensor([feedback], device=device)
+        current, caches = model.hidden(t, torch.zeros(1, len(feedback), 5, dtype=torch.long, device=device), caches)
         current = current[:, -1:]
     return {'text': tokenizer.decode(generated), 'stopped': stopped, 'actions': actions}
 
