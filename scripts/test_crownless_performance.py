@@ -1,10 +1,12 @@
 import copy
 import random
 import unittest
+from unittest.mock import patch
 from crownless_conversation import response
 from crownless_performance import CREATURES, EMOTIONS, control_text, styled, score, corpus
 from crownless_v2 import encode_row
 import test_crownless_conversation as fixtures
+from speak_crownless_performance import speak
 
 
 class PerformanceTests(unittest.TestCase):
@@ -70,6 +72,27 @@ class PerformanceTests(unittest.TestCase):
         self.assertIn('feeling: afraid', prefix(unsure))
         self.assertIn('? ', prefix(unsure))
         self.assertNotIn('? ', prefix(afraid))
+
+    def test_runner_keeps_native_packet_and_spoken_history(self):
+        fields = copy.deepcopy(self.row['fields'])
+        for field in fields:
+            field['start'] -= 2; field['end'] -= 2
+        packet = {'grammar_sha256':'grammar', 'text':self.row['prefix'][2:-1],
+                  'kind':133, 'rule':'notice', 'confidence':80, 'fields':fields}
+        metadata = {'rules_sha256':'grammar', 'meaning_ids':{'notice':1}}
+        original = copy.deepcopy(packet)
+        history = [{'speaker':'other','text':'What happened?'}]
+        def generated(model, tokenizer, record):
+            self.assertEqual(record['row']['history'], history)
+            self.assertEqual(record['row']['performance'], {'creature':'goblin','emotion':'afraid'})
+            return {'text':'A test reply.', 'stopped':True}
+        with patch('speak_crownless_performance.generate', side_effect=generated):
+            result = speak(None, metadata, self.tokenizer, packet, 'goblin', 'afraid', history)
+        self.assertEqual(result['confidence'], 80)
+        self.assertEqual(packet, original)
+        packet['grammar_sha256'] = 'different'
+        with self.assertRaisesRegex(ValueError, 'grammar'):
+            speak(None, metadata, self.tokenizer, packet, 'goblin', 'afraid')
 
 
 if __name__ == '__main__': unittest.main()
