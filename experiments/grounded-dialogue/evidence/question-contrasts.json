@@ -1,0 +1,951 @@
+{
+  "probe_sha256": "233d4b3d0d479b2a6824efa6548f2f7edb2c5aac90ce3983c2e2362f565b4ed8",
+  "source_sha256": "ad79a7908c33bbffb26f18489c0c602e34fbe7d63f2f3fef901bfe5b326448dc",
+  "answers": {
+    "prior": [
+      {
+        "rule": "notice_posted_0",
+        "question": "Where was the notice posted?",
+        "reference": "In Yororormere, from what I hear.",
+        "text": "In Yororormere, Yorororholt Kelumeth put up am unsure. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1388
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 0
+          },
+          {
+            "token": 1054
+          },
+          {
+            "token": 752
+          },
+          {
+            "token": 270
+          },
+          {
+            "token": 85
+          },
+          {
+            "token": 770
+          },
+          {
+            "token": 1285
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1,
+          0
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "royal_succession_1",
+        "question": "Who took over as ruler?",
+        "reference": "Yorumaford Yorumumwi, I think.",
+        "text": "I am unsure. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 49
+          },
+          {
+            "token": 270
+          },
+          {
+            "token": 85
+          },
+          {
+            "token": 770
+          },
+          {
+            "token": 1285
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "dragon_patron_named_0",
+        "question": "Who funded the dragon host?",
+        "reference": "Yoraawick Yorethashf.",
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 358
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 321
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "prophecy_delivered_0",
+        "question": "What did the company deliver?",
+        "reference": "Yorenenmoor Book.",
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 358
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 321
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "horse_bred_0",
+        "question": "Where was the stable?",
+        "reference": "In Kelowowmoor, I think.",
+        "text": "I am unsure. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 49
+          },
+          {
+            "token": 270
+          },
+          {
+            "token": 85
+          },
+          {
+            "token": 770
+          },
+          {
+            "token": 1285
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "treasure_crafted_0",
+        "question": "Where was it made?",
+        "reference": "In Kelowaholt, from what I hear.",
+        "text": "The account has passed through several people. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 402
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 1022
+          },
+          {
+            "token": 1177
+          },
+          {
+            "token": 535
+          },
+          {
+            "token": 283
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 705
+          },
+          {
+            "token": 340
+          },
+          {
+            "token": 522
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "bandit_pressure_1",
+        "question": "Where did they look for food?",
+        "reference": "In Yorashenfell.",
+        "text": "Days.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 44
+          },
+          {
+            "token": 602
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          2
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "harvest_failed_0",
+        "question": "Where did the harvest fail?",
+        "reference": "In Kelilowden, I think.",
+        "text": "That’s hard to the st.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 167
+          },
+          {
+            "token": 231
+          },
+          {
+            "token": 256
+          },
+          {
+            "token": 91
+          },
+          {
+            "token": 346
+          },
+          {
+            "token": 390
+          },
+          {
+            "token": 304
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 283
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      }
+    ],
+    "expanded": [
+      {
+        "rule": "notice_posted_0",
+        "question": "Where was the notice posted?",
+        "reference": "In Yororormere, from what I hear.",
+        "text": "Yorororholt Kelumeth posted it, from what I hear.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 0
+          },
+          {
+            "token": 1160
+          },
+          {
+            "token": 309
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 424
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 612
+          },
+          {
+            "token": 268
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          0
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "royal_succession_1",
+        "question": "Who took over as ruler?",
+        "reference": "Yorumaford Yorumumwi, I think.",
+        "text": "Kelaowmoor Yorumormo, I think.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 451
+          },
+          {
+            "token": 271
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "dragon_patron_named_0",
+        "question": "Who funded the dragon host?",
+        "reference": "Yoraawick Yorethashf.",
+        "text": "Yorililfell Kelaenwi.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "prophecy_delivered_0",
+        "question": "What did the company deliver?",
+        "reference": "Yorenenmoor Book.",
+        "text": "To Yorumowholt.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 60
+          },
+          {
+            "token": 87
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "horse_bred_0",
+        "question": "Where was the stable?",
+        "reference": "In Kelowowmoor, I think.",
+        "text": "Yorenethholt Kelethi and Kelilashden Kelashow, I think.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 306
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 2
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 451
+          },
+          {
+            "token": 271
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1,
+          2
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "treasure_crafted_0",
+        "question": "Where was it made?",
+        "reference": "In Kelowaholt, from what I hear.",
+        "text": "Kelumenford Book, from what I hear.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 424
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 612
+          },
+          {
+            "token": 268
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "bandit_pressure_1",
+        "question": "Where did they look for food?",
+        "reference": "In Yorashenfell.",
+        "text": "Kelashorgate Kelenas.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          2
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "harvest_failed_0",
+        "question": "Where did the harvest fail?",
+        "reference": "In Kelilowden, I think.",
+        "text": "Yorashormere, I think.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 451
+          },
+          {
+            "token": 271
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": false,
+        "exact": false
+      }
+    ]
+  }
+}

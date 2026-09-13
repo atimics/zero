@@ -1,0 +1,86 @@
+{
+  "reviewer": "assistant",
+  "scope": "Editorial comparison of all sixteen generated exchanges. These are assistant judgements; human preference remains unmeasured.",
+  "decisions": [
+    {
+      "id": "A046",
+      "preference": "rewrite_both",
+      "reason": "The new question asks what happened to the convoy immediately after the opening says it was delayed."
+    },
+    {
+      "id": "A052",
+      "preference": "rewrite_both",
+      "reason": "Asking whether the stores reached their target repeats the entire opening. The closing is a stock expression of concern."
+    },
+    {
+      "id": "A004",
+      "preference": "prior",
+      "reason": "The earlier exchange asks how long the search for food lasted. The new exchange asks for the group that was just named."
+    },
+    {
+      "id": "A019",
+      "preference": "prior",
+      "reason": "The earlier exchange asks whether grain has arrived and preserves the limit of the account. The new exchange repeats what the money was for."
+    },
+    {
+      "id": "A055",
+      "preference": "rewrite_both",
+      "reason": "The new question asks which object was finished immediately after naming it. A reaction to the work would move the exchange forward."
+    },
+    {
+      "id": "A015",
+      "preference": "rewrite_both",
+      "reason": "The new answer preserves uncertainty and the title, but asks for a rank already given. The earlier closing about carrying things fits the title poorly."
+    },
+    {
+      "id": "A007",
+      "preference": "prior",
+      "reason": "The earlier exchange distinguishes the growing calf from the older worker. The new answer mostly repeats the opening."
+    },
+    {
+      "id": "A070",
+      "preference": "expanded",
+      "reason": "The new ending reads clearly and reacts to the fodder shortage. The earlier ending is awkward. The new question still repeats the stated cause."
+    },
+    {
+      "id": "A016",
+      "preference": "prior",
+      "reason": "The earlier short death notice leaves room for the question about home. The new opening supplies the home and then asks for it again."
+    },
+    {
+      "id": "A058",
+      "preference": "expanded",
+      "reason": "The tiredness reaction fits the work. The question and answer repeat the method already stated, so the exchange would be stronger in two turns."
+    },
+    {
+      "id": "A002",
+      "preference": "expanded",
+      "reason": "The new exchange avoids the earlier repeated closing. Its wheat confirmation is readable, although the answer carries more repeated wording than it needs."
+    },
+    {
+      "id": "A043",
+      "preference": "rewrite_both",
+      "reason": "The new question asks where the stone will go after the opening already says roads and public works."
+    },
+    {
+      "id": "A038",
+      "preference": "prior",
+      "reason": "Both versions confirm stone, but the earlier yes is shorter. Repeating used stone and the hearsay cue adds stiffness."
+    },
+    {
+      "id": "A034",
+      "preference": "prior",
+      "reason": "The earlier exchange adds a small distinction between yearlings and growing lambs. The new question repeats their place in the adult flock."
+    },
+    {
+      "id": "A049",
+      "preference": "rewrite_both",
+      "reason": "The opening states that wool was stored. The next two turns ask and answer what happened to the wool."
+    },
+    {
+      "id": "A023",
+      "preference": "expanded",
+      "reason": "The mutton destination adds a source fact omitted from the opening. The earlier ending breaks down. The new closing remains generic."
+    }
+  ]
+}
