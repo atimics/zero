@@ -1,0 +1,43 @@
+{
+  "seed": 915,
+  "steps": 2400,
+  "selection": "Fixed final checkpoint per arm",
+  "parameters": 4935937,
+  "torch": "2.8.0",
+  "device": "cpu",
+  "threads": 4,
+  "batch": 16,
+  "dialogue_per_batch": 12,
+  "rehearsal_per_batch": 4,
+  "learning_rate": 0.0001,
+  "training_rows": {
+    "prior": 296,
+    "expanded": 14640
+  },
+  "rehearsal_rows": {
+    "prior": 6300,
+    "expanded": 3660
+  },
+  "input_hashes": {
+    "experiments/grounded-dialogue/input/dialogue-bank.json": "85bb691e90476eb24464eef302f484483a594a9799331f614dbc212365a7f945",
+    "experiments/grounded-dialogue/input/evaluation-accounts.jsonl": "b89cc9926cc9bb3b7ce3441f72270e2706fe0aa7dc46dda6ec5b523c19ad0526",
+    "experiments/full-event-rehearsal/input/rehearsal.jsonl": "3f0f5adfb94e286076940b3478d5d143070f927f6db8547330c9c768aa002691",
+    "experiments/full-event-rehearsal/input/grammar-test.jsonl": "108ecbad2514bf4e2e05b87fcab3b20bef59bc8e58d279d9d030a03b0aae0e43",
+    "experiments/full-event-rehearsal/input/rules.json": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+    "experiments/reviewed-dialogue-pilot/input/accounts.jsonl": "bc83a5d50cbe722b8a32663cba46848a20fea5e284254e874292c37e8318debd",
+    "experiments/reviewed-dialogue-pilot/input/drafts.json": "db75a268d5f5fbd22443c3ec34d168f1300fa02d4247129d8bde4e4010f9218a"
+  },
+  "source_hashes": {
+    "/private/tmp/zero-grounded-dialogue/scripts/run_grounded_dialogue.py": "7330f30052cc98b5ed5b56e575bad4d6602662a4c45b0baacc5a1492a791e5bc",
+    "scripts/grounded_dialogue.py": "70e060c6917c81f773e64a5a5d665e2c7f72f967f8cb1c61ca9c4b5022a6c29f",
+    "scripts/run_reviewed_dialogue_pilot.py": "bdca25af13f08683a6ec537dd7c5bd4d9a731091b8e3eb403cf3e4e02e5c8545",
+    "scripts/run_matched_dialogue_study.py": "8155baf7e438d1cf246026d109f5eeeaafd1b41e100aad7a7842137ca7c475ab",
+    "scripts/run_full_event_rehearsal.py": "dda5912fd1c5975a8c723971172147e06bf8a031f8954857095f3eadeed9ed19",
+    "scripts/crownless_v2.py": "7a5be9277a7dd855a59c981a713b569b014cc9cb0d03e98a61ebfdd4372326cf",
+    "scripts/crownless_v2_export.py": "59249330258aff74b7f206a03f85024cad0200e536df3d1a4eab2fde245c0a6a"
+  },
+  "base_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "copy_split": "Complete generated names are disjoint. Shared meaning grammar and question templates.",
+  "authorship": "Assistant-authored expansion; human review pending. Prior arm includes 12 human-approved scenes out of 46."
+}
