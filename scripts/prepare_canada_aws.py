@@ -96,7 +96,7 @@ def prepare(output, now=None):
                'ClientToken': hashlib.sha256(run_id.encode()).hexdigest(),
                'InstanceInitiatedShutdownBehavior': 'terminate',
                'MetadataOptions': {'HttpTokens': 'required', 'HttpEndpoint': 'enabled', 'HttpPutResponseHopLimit': 1},
-               'NetworkInterfaces': [{'DeviceIndex': 0, 'SubnetId': 'subnet-11e16978',
+               'NetworkInterfaces': [{'DeviceIndex': 0, 'SubnetId': 'subnet-8f2684f4',
                                       'Groups': ['__STACK_SECURITY_GROUP__'], 'AssociatePublicIpAddress': True,
                                       'DeleteOnTermination': True}],
                'IamInstanceProfile': {'Name': '__STACK_PROFILE__'},

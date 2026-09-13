@@ -13,7 +13,7 @@ The budget is a spending limit for this operation; AWS billing is separate
 from the runtime controls.
 
 The pinned image is `ami-092e8a40239c8733d`, an AWS-owned PyTorch 2.8 Ubuntu
-24.04 image. The existing Canada subnet is `subnet-11e16978`. The package
+24.04 image. The existing Canada subnet is `subnet-8f2684f4`. The package
 creates a private temporary S3 bucket, an outbound-HTTPS security group,
 scoped instance permissions, a Lambda watchdog, and a one-minute schedule.
 The schedule expires 25 hours after preparation. Launch settings expire
