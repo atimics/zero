@@ -1,0 +1,37 @@
+{
+  "scope": "Exploratory check added after inspecting the expanded candidate. Each question asks for a different fact from the trained answer.",
+  "questions": {
+    "notice_posted_0": [
+      "Where was the notice posted?",
+      "In {1}."
+    ],
+    "bandit_pressure_1": [
+      "Where did they look for food?",
+      "In {3}."
+    ],
+    "royal_succession_1": [
+      "Who took over as ruler?",
+      "{0}."
+    ],
+    "treasure_crafted_0": [
+      "Where was it made?",
+      "In {0}."
+    ],
+    "harvest_failed_0": [
+      "Where did the harvest fail?",
+      "In {0}."
+    ],
+    "dragon_patron_named_0": [
+      "Who funded the dragon host?",
+      "{0}."
+    ],
+    "horse_bred_0": [
+      "Where was the stable?",
+      "In {0}."
+    ],
+    "prophecy_delivered_0": [
+      "What did the company deliver?",
+      "{0}."
+    ]
+  }
+}

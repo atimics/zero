@@ -1,0 +1,13 @@
+{
+  "scope": "Added during training, before reading expanded-model outputs. These question wordings are absent from the new bank.",
+  "questions": {
+    "bandit_pressure_1": "Which band did they join?",
+    "harvest_failed_0": "Who was waiting for the grain?",
+    "notice_posted_0": "Who posted that?",
+    "royal_succession_1": "Whom did the new ruler replace?",
+    "paper_milled_0": "What was the paper made from?",
+    "treasure_crafted_0": "What was made?",
+    "shortage_0": "Where are people hungry?",
+    "goblin_cult_rallied_0": "What title did the goblin earn?"
+  }
+}

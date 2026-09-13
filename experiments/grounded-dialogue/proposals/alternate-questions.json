@@ -1,0 +1,45 @@
+{
+  "scope": "Exploratory training added after the eight contrast failures. These eight meanings now have two answer choices.",
+  "exchanges": {
+    "notice_posted_0": [
+      "Where did they put the notice?",
+      "In {1}.",
+      "I’ll look for it when I’m there."
+    ],
+    "bandit_pressure_1": [
+      "Where were they seeking food?",
+      "In {3}.",
+      "I hope they find a meal."
+    ],
+    "royal_succession_1": [
+      "Who is the new ruler?",
+      "{0}.",
+      "I wonder what will change."
+    ],
+    "treasure_crafted_0": [
+      "Where did they make it?",
+      "In {0}.",
+      "I’d like to visit the workshop."
+    ],
+    "harvest_failed_0": [
+      "Which place had the drought harvest?",
+      "{0}.",
+      "I hope the next harvest is better."
+    ],
+    "dragon_patron_named_0": [
+      "Who paid for the dragon host?",
+      "{0}.",
+      "I wonder how much that will cost them."
+    ],
+    "horse_bred_0": [
+      "Which place bred the horses?",
+      "{0}.",
+      "I’d like to visit the stable."
+    ],
+    "prophecy_delivered_0": [
+      "What did they bring to the council?",
+      "{0}.",
+      "I wonder what the council made of it."
+    ]
+  }
+}
