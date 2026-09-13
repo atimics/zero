@@ -1,0 +1,87 @@
+{
+  "cases": [
+    {
+      "id": "A046",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A051",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A004",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A020",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A054",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A013",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A007",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A010",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A016",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A057",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A001",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A043",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A038",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A034",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A048",
+      "slot_prefix_seen": false,
+      "prefix_and_copy_values_seen": false
+    },
+    {
+      "id": "A079",
+      "slot_prefix_seen": true,
+      "prefix_and_copy_values_seen": false
+    }
+  ],
+  "slot_prefix_seen": 9,
+  "prefix_and_copy_values_seen": 0,
+  "scope": "Opening inputs only. Repeated slot patterns with fresh copy values measure entity transfer inside learned account patterns."
+}

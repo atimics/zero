@@ -1,0 +1,465 @@
+[
+  {
+    "id": "A001",
+    "reference": "Rosespire has made bread.",
+    "history": [],
+    "text": "Rosespire made bread from wheat.",
+    "exact": false
+  },
+  {
+    "id": "A001",
+    "reference": "Yes.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Rosespire has made bread."
+      },
+      {
+        "speaker": "other",
+        "text": "From wheat?"
+      }
+    ],
+    "text": "Yes.",
+    "exact": true
+  },
+  {
+    "id": "A001",
+    "reference": "From wheat?",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "Rosespire made bread from wheat."
+      }
+    ],
+    "text": "From wheat?",
+    "exact": true
+  },
+  {
+    "id": "A005",
+    "reference": "People say Alda Millrace joined the Tallow Knives after looking for food at Gloamgate.",
+    "history": [],
+    "text": "Alda Millrace joined The Tallow Knives after seeking food at Gloamgate, so people say.",
+    "exact": false
+  },
+  {
+    "id": "A005",
+    "reference": "Days, from what I hear.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "People say Alda Millrace joined the Tallow Knives after looking for food at Gloamgate."
+      },
+      {
+        "speaker": "other",
+        "text": "Was Alda Millrace looking long?"
+      }
+    ],
+    "text": "Days, from what I hear.",
+    "exact": true
+  },
+  {
+    "id": "A005",
+    "reference": "Alda Millrace joined The Tallow Knives after seeking food at Gloamgate, so people say.",
+    "history": [],
+    "text": "Alda Millrace joined The Tallow Knives after seeking food at Gloamgate, so people say.",
+    "exact": true
+  },
+  {
+    "id": "A005",
+    "reference": "Days, from what I hear.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Alda Millrace joined The Tallow Knives after seeking food at Gloamgate, so people say."
+      },
+      {
+        "speaker": "other",
+        "text": "Was Alda Millrace looking long?"
+      }
+    ],
+    "text": "Days, from what I hear.",
+    "exact": true
+  },
+  {
+    "id": "A009",
+    "reference": "Silverwick may have a new calf, and an older calf may have joined the working herd.",
+    "history": [],
+    "text": "Silverwick raised calves and added older calves to the working herd, if the story is right.",
+    "exact": false
+  },
+  {
+    "id": "A009",
+    "reference": "I do too.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Silverwick may have a new calf, and an older calf may have joined the working herd."
+      },
+      {
+        "speaker": "other",
+        "text": "I wonder what the new calf looks like."
+      }
+    ],
+    "text": "I do too.",
+    "exact": true
+  },
+  {
+    "id": "A009",
+    "reference": "I wonder what the new calf looks like.",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "Silverwick raised calves and added older calves to the working herd, if the story is right."
+      }
+    ],
+    "text": "I wonder what the new calf looks like.",
+    "exact": true
+  },
+  {
+    "id": "A013",
+    "reference": "A goblin rose to Keeper in the dragon cult through service.",
+    "history": [],
+    "text": "A goblin rose to Keeper in the dragon cult through service.",
+    "exact": true
+  },
+  {
+    "id": "A013",
+    "reference": "Yes. That is the title.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "A goblin rose to Keeper in the dragon cult through service."
+      },
+      {
+        "speaker": "other",
+        "text": "Keeper?"
+      }
+    ],
+    "text": "Yes. That is the title.",
+    "exact": true
+  },
+  {
+    "id": "A017",
+    "reference": "I hear Rodric Bowyer has died.",
+    "history": [],
+    "text": "Rodric Bowyer died after a life in Hollowbarrow, so people say.",
+    "exact": false
+  },
+  {
+    "id": "A017",
+    "reference": "Yes, from what people say.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "I hear Rodric Bowyer has died."
+      },
+      {
+        "speaker": "other",
+        "text": "Rodric Bowyer lived in Hollowbarrow?"
+      }
+    ],
+    "text": "Yes, from what people say.",
+    "exact": true
+  },
+  {
+    "id": "A017",
+    "reference": "Rodric Bowyer died after a life in Hollowbarrow, so people say.",
+    "history": [],
+    "text": "Rodric Bowyer died after a life in Hollowbarrow, so people say.",
+    "exact": true
+  },
+  {
+    "id": "A017",
+    "reference": "Yes, from what people say.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Rodric Bowyer died after a life in Hollowbarrow, so people say."
+      },
+      {
+        "speaker": "other",
+        "text": "Rodric Bowyer lived in Hollowbarrow?"
+      }
+    ],
+    "text": "Yes, from what people say.",
+    "exact": true
+  },
+  {
+    "id": "A021",
+    "reference": "Silver Covenant may have sent money to Hollowbarrow’s market to buy grain.",
+    "history": [],
+    "text": "Silver Covenant put money into Hollowbarrow's market to buy grain shipments, if the story is right.",
+    "exact": false
+  },
+  {
+    "id": "A021",
+    "reference": "That seems to be the plan, if the story is right.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Silver Covenant may have sent money to Hollowbarrow’s market to buy grain."
+      },
+      {
+        "speaker": "other",
+        "text": "Grain for Hollowbarrow?"
+      }
+    ],
+    "text": "That seems to be the plan, if the story is right.",
+    "exact": true
+  },
+  {
+    "id": "A021",
+    "reference": "Grain for Hollowbarrow?",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "Silver Covenant put money into Hollowbarrow's market to buy grain shipments, if the story is right."
+      }
+    ],
+    "text": "Grain for Hollowbarrow?",
+    "exact": true
+  },
+  {
+    "id": "A022",
+    "reference": "Varkesh the Unappeased burned Gloamgate.",
+    "history": [],
+    "text": "Varkesh the Unappeased burned Gloamgate over money missing from the hoard.",
+    "exact": false
+  },
+  {
+    "id": "A022",
+    "reference": "Stolen crowns were still missing.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Varkesh the Unappeased burned Gloamgate."
+      },
+      {
+        "speaker": "other",
+        "text": "What brought that on?"
+      }
+    ],
+    "text": "Stolen crowns were still missing.",
+    "exact": true
+  },
+  {
+    "id": "A022",
+    "reference": "Varkesh the Unappeased burned Gloamgate over money missing from the hoard.",
+    "history": [],
+    "text": "Varkesh the Unappeased burned Gloamgate over money missing from the hoard.",
+    "exact": true
+  },
+  {
+    "id": "A022",
+    "reference": "Stolen crowns were still missing.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Varkesh the Unappeased burned Gloamgate over money missing from the hoard."
+      },
+      {
+        "speaker": "other",
+        "text": "What brought that on?"
+      }
+    ],
+    "text": "Stolen crowns were still missing.",
+    "exact": true
+  },
+  {
+    "id": "A026",
+    "reference": "People say smoke is falling into Gloamgate’s chimneys. The old readers expect Varkesh the Unappeased before long.",
+    "history": [],
+    "text": "The old readers in Gloamgate took the smoke as a warning of Varkesh the Unappeased, so people say.",
+    "exact": false
+  },
+  {
+    "id": "A026",
+    "reference": "I’d be uneasy.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "People say smoke is falling into Gloamgate’s chimneys. The old readers expect Varkesh the Unappeased before long."
+      },
+      {
+        "speaker": "other",
+        "text": "What would you make of that?"
+      }
+    ],
+    "text": "I’d be uneasy.",
+    "exact": true
+  },
+  {
+    "id": "A026",
+    "reference": "What would you make of that?",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "The old readers in Gloamgate took the smoke as a warning of Varkesh the Unappeased, so people say."
+      }
+    ],
+    "text": "What would you make of that?",
+    "exact": true
+  },
+  {
+    "id": "A033",
+    "reference": "There’s talk of the Cinder Tithe raiding Thornford for wheat.",
+    "history": [],
+    "text": "The Cinder Tithe raided Thornford, if the story is right.",
+    "exact": false
+  },
+  {
+    "id": "A033",
+    "reference": "The account says they took none.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "There’s talk of the Cinder Tithe raiding Thornford for wheat."
+      },
+      {
+        "speaker": "other",
+        "text": "Crowns as well?"
+      }
+    ],
+    "text": "The account says they took none.",
+    "exact": true
+  },
+  {
+    "id": "A033",
+    "reference": "The Cinder Tithe raided Thornford, if the story is right.",
+    "history": [],
+    "text": "The Cinder Tithe raided Thornford, if the story is right.",
+    "exact": true
+  },
+  {
+    "id": "A033",
+    "reference": "The account says they took none.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "The Cinder Tithe raided Thornford, if the story is right."
+      },
+      {
+        "speaker": "other",
+        "text": "Crowns as well?"
+      }
+    ],
+    "text": "The account says they took none.",
+    "exact": true
+  },
+  {
+    "id": "A034",
+    "reference": "Thornford’s drought harvest fell short.",
+    "history": [],
+    "text": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+    "exact": false
+  },
+  {
+    "id": "A034",
+    "reference": "The settlements to the east.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Thornford’s drought harvest fell short."
+      },
+      {
+        "speaker": "other",
+        "text": "Who was it meant to feed?"
+      }
+    ],
+    "text": "The settlements to the east.",
+    "exact": true
+  },
+  {
+    "id": "A034",
+    "reference": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+    "history": [],
+    "text": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+    "exact": true
+  },
+  {
+    "id": "A034",
+    "reference": "The settlements to the east.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "Thornford's drought harvest fell short of what the eastern settlements needed."
+      },
+      {
+        "speaker": "other",
+        "text": "Who was it meant to feed?"
+      }
+    ],
+    "text": "The settlements to the east.",
+    "exact": true
+  },
+  {
+    "id": "A038",
+    "reference": "There’s word of a new pony foal at Alderwatch.",
+    "history": [],
+    "text": "Alderwatch raised pony foals and added ponies to the working herd, so people say.",
+    "exact": false
+  },
+  {
+    "id": "A038",
+    "reference": "A pony has joined it, I hear.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "There’s word of a new pony foal at Alderwatch."
+      },
+      {
+        "speaker": "other",
+        "text": "Has their working herd grown too?"
+      }
+    ],
+    "text": "A pony has joined it, I hear.",
+    "exact": true
+  },
+  {
+    "id": "A038",
+    "reference": "Has their working herd grown too?",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "Alderwatch raised pony foals and added ponies to the working herd, so people say."
+      }
+    ],
+    "text": "Has their working herd grown too?",
+    "exact": true
+  },
+  {
+    "id": "A048",
+    "reference": "There’s a rumour that Gloamgate’s mill has made paper.",
+    "history": [],
+    "text": "Gloamgate made paper from Wood, if the story is right.",
+    "exact": false
+  },
+  {
+    "id": "A048",
+    "reference": "That’s what I heard.",
+    "history": [
+      {
+        "speaker": "self",
+        "text": "There’s a rumour that Gloamgate’s mill has made paper."
+      },
+      {
+        "speaker": "other",
+        "text": "From wood?"
+      }
+    ],
+    "text": "That’s what I heard.",
+    "exact": true
+  },
+  {
+    "id": "A048",
+    "reference": "From wood?",
+    "history": [
+      {
+        "speaker": "other",
+        "text": "Gloamgate made paper from Wood, if the story is right."
+      }
+    ],
+    "text": "From wood?",
+    "exact": true
+  }
+]
