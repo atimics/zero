@@ -22,6 +22,7 @@ jobs:
       - run: python -m unittest discover -s tests -p test_demo_endings.py
       - run: python -m unittest discover -s tests -p test_ab_review.py
       - run: python -m unittest discover -s tests -p test_canada_narrative.py
+      - run: python -m unittest discover -s tests -p test_canada_aws.py
       - run: python scripts/test_tune_crownless.py
       - run: python scripts/test_crownless_facts.py
       - run: python scripts/test_crownless_v2.py
