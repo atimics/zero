@@ -1,0 +1,310 @@
+{
+  "authorship": "Assistant-written drafts using the pinned simulation grammar. Human review pending.",
+  "exchanges": {
+    "notice_posted_0": [
+      "Who put it up?",
+      "{0} posted it.",
+      "I’ll look for it when I’m there."
+    ],
+    "war_declared_0": [
+      "Which courts?",
+      "{0} and {1}.",
+      "I wonder how the roads will fare."
+    ],
+    "peace_declared_0": [
+      "Who made peace?",
+      "{0} and {1}.",
+      "I hope it holds."
+    ],
+    "alliance_declared_0": [
+      "Who joined together?",
+      "{0} and {1}.",
+      "I wonder what they’ll do first."
+    ],
+    "character_died_0": [
+      "Where did they live?",
+      "In {2}.",
+      "I’m sorry to hear it."
+    ],
+    "character_born_0": [
+      "Where was the child born?",
+      "In {2}.",
+      "I hope the family is well."
+    ],
+    "bakery_production_0": [
+      "From wheat?",
+      "Yes, they used wheat.",
+      "I wonder what the bread is like."
+    ],
+    "paper_milled_0": [
+      "What did the mill use?",
+      "{2}.",
+      "I’d like to watch paper being made."
+    ],
+    "woodlot_harvest_0": [
+      "How did the tools fare?",
+      "The work wore them out.",
+      "That sounds like hard work."
+    ],
+    "woodlot_harvest_1": [
+      "How did they manage?",
+      "They cut by hand.",
+      "That sounds tiring."
+    ],
+    "quarry_output_0": [
+      "Where will the stone go?",
+      "To roads and public works.",
+      "I wonder which road they’ll mend first."
+    ],
+    "masonry_repair_0": [
+      "With stone?",
+      "Yes, they used stone.",
+      "I’d like to see the work."
+    ],
+    "masonry_repair_1": [
+      "What held up the work?",
+      "They were short of stone.",
+      "I wonder where they can get some."
+    ],
+    "masonry_repair_2": [
+      "What did the builders use?",
+      "Wood, stone, and tools.",
+      "I hope the repairs hold."
+    ],
+    "sheep_sheared_0": [
+      "What happened to the wool?",
+      "They put it into storage.",
+      "I wonder what it will be woven into."
+    ],
+    "cow_slaughtered_0": [
+      "Why slaughter the cattle?",
+      "The herd was short of fodder.",
+      "I hope the rest have enough to eat."
+    ],
+    "cow_calving_0": [
+      "Which calves joined the workers?",
+      "The older ones.",
+      "I wonder what the new calves look like."
+    ],
+    "king_anointed_0": [
+      "Who gave the blessing?",
+      "{0} did.",
+      "I wonder who came to watch."
+    ],
+    "pretender_crisis_0": [
+      "What brought that on?",
+      "There had been a long silence from the abbey.",
+      "I wonder what the abbot will say."
+    ],
+    "monastic_succession_0": [
+      "Who keeps the roll now?",
+      "{0} does.",
+      "That sounds like a great deal to look after."
+    ],
+    "monastic_succession_1": [
+      "Who was the abbot before?",
+      "{1}.",
+      "I wonder how the new abbot will settle in."
+    ],
+    "royal_succession_0": [
+      "Whose blessing did they seek?",
+      "The abbot’s.",
+      "I wonder how that meeting went."
+    ],
+    "royal_succession_1": [
+      "Who ruled before?",
+      "{1}.",
+      "I wonder what will change."
+    ],
+    "dragon_patron_named_0": [
+      "Who was chosen as champion?",
+      "{1}.",
+      "That sounds like a heavy duty."
+    ],
+    "dragon_territory_lost_0": [
+      "Was that the last of the land?",
+      "Yes, the last under the dragon crown.",
+      "I wonder where they’ll go."
+    ],
+    "royal_carriage_blocked_0": [
+      "Where is the carriage waiting?",
+      "At {1}.",
+      "I hope the road opens soon."
+    ],
+    "royal_carriage_rerouted_0": [
+      "Where is it going?",
+      "To {0}, to collect a load.",
+      "I wonder what they’ll bring back."
+    ],
+    "royal_carriage_rerouted_1": [
+      "What let it through?",
+      "Space cleared on the road.",
+      "I hope the rest of the trip goes well."
+    ],
+    "royal_carriage_rerouted_2": [
+      "What opened the road?",
+      "Relations between the courts improved enough to reopen it.",
+      "I hope the rest of the trip goes well."
+    ],
+    "lore_lost_0": [
+      "What fell into ruin?",
+      "{0}.",
+      "I wonder what stories went with it."
+    ],
+    "lore_lost_1": [
+      "Was it the whole book?",
+      "A page crumbled, taking some of the lore.",
+      "Even a page can hold a great deal."
+    ],
+    "road_site_production_0": [
+      "What did the repairs take?",
+      "Tools and wood.",
+      "I hope the work lasts."
+    ],
+    "road_site_production_1": [
+      "Where did they put the goods?",
+      "Into local stores.",
+      "I wonder who will need them first."
+    ],
+    "prophecy_delivered_0": [
+      "Where did they take it?",
+      "To {1}.",
+      "I wonder what the council made of it."
+    ],
+    "party_wiped_0": [
+      "Who took up the carriage?",
+      "A new company, years later.",
+      "I hope they find their way."
+    ],
+    "goblin_tunnel_traversed_0": [
+      "Where did they come out?",
+      "At the hidden trailhead.",
+      "I wonder how they found the way."
+    ],
+    "goblin_tunnel_traversed_1": [
+      "Did the carriage go too?",
+      "They left it behind.",
+      "I wonder how narrow the tunnels are."
+    ],
+    "horse_bred_0": [
+      "Which horses?",
+      "{1} and {2}.",
+      "I wonder what the foal will be like."
+    ],
+    "foal_born_0": [
+      "Where was the foal born?",
+      "At {4}.",
+      "I’d like to see the little one."
+    ],
+    "treasure_crafted_0": [
+      "What did they finish?",
+      "{1}.",
+      "I’d like to see the finished work."
+    ],
+    "bandit_pressure_0": [
+      "Who sent the help?",
+      "{0}.",
+      "I wonder what will happen on that road."
+    ],
+    "dragon_brood_0": [
+      "Who sealed the brood hoard?",
+      "The goblin Ashkeepers.",
+      "I wonder how they keep watch over it."
+    ],
+    "bandit_pressure_1": [
+      "Who did they join?",
+      "{1}.",
+      "Hunger can take a person a long way."
+    ],
+    "kingdom_action_0": [
+      "What was the money for?",
+      "To buy grain shipments.",
+      "I hope the grain arrives soon."
+    ],
+    "goblin_cult_rallied_0": [
+      "What rank did they reach?",
+      "{1}.",
+      "I wonder what duties come with that."
+    ],
+    "horse_bred_1": [
+      "Did any join the working herd?",
+      "Yes, ponies joined the workers.",
+      "I wonder how they’ll take to the work."
+    ],
+    "sheep_bred_0": [
+      "And the yearlings?",
+      "They joined the adult flock.",
+      "Good to hear they’re growing."
+    ],
+    "sheep_slaughtered_0": [
+      "Where did the mutton go?",
+      "Into the local store.",
+      "I hope it feeds those who need it."
+    ],
+    "harvest_failed_0": [
+      "Who needed those supplies?",
+      "{1}.",
+      "That’s hard news for them."
+    ],
+    "route_closed_0": [
+      "What happened to the relief convoy?",
+      "The bridge closure delayed it.",
+      "I hope it gets through soon."
+    ],
+    "shortage_0": [
+      "Where was the hunger reported?",
+      "In {0}.",
+      "I hope help reaches them."
+    ],
+    "shortage_1": [
+      "Were the stores at their target?",
+      "They were short of the target.",
+      "I wonder where more food can come from."
+    ],
+    "goblin_raided_0": [
+      "Where was the raid?",
+      "At {1}.",
+      "I hope the people there are safe."
+    ],
+    "goblin_raided_1": [
+      "Where was the raid?",
+      "At {1}.",
+      "I hope the people there are safe."
+    ],
+    "settlement_raided_0": [
+      "Who carried out the raid?",
+      "{0}.",
+      "I hope the people there are safe."
+    ],
+    "settlement_raided_1": [
+      "Who carried out the raid?",
+      "{0}.",
+      "I hope the people there are safe."
+    ],
+    "dragon_omen_0": [
+      "Who do the readers fear is coming?",
+      "{2}.",
+      "I hope they read the smoke wrongly."
+    ],
+    "dragon_retaliation_0": [
+      "What brought that on?",
+      "Stolen crowns were still missing.",
+      "What a terrible price for the town."
+    ],
+    "goblin_cult_rallied_1": [
+      "Whose court gained the newcomers?",
+      "The dead dragon’s court.",
+      "I wonder what keeps them there."
+    ],
+    "goblin_cult_rallied_2": [
+      "Whose court were they gathering for?",
+      "The court of {2}.",
+      "I wonder what the newcomers will bring."
+    ],
+    "dragon_slain_0": [
+      "Who slew the dragon?",
+      "{0}.",
+      "That is a tale I’d like to hear."
+    ]
+  }
+}
