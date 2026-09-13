@@ -82,7 +82,9 @@ def package_source(output):
     return hashes
 
 
-def prepare(output, now=None):
+def prepare(output, now=None, subnet="subnet-a24506fe"):
+    if subnet not in ["subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
+        raise ValueError("Choose a verified Canada Central subnet")
     now = int(time.time()) if now is None else now
     output.mkdir(parents=True, exist_ok=False)
     files = package_source(output)
@@ -96,7 +98,7 @@ def prepare(output, now=None):
                'ClientToken': hashlib.sha256(run_id.encode()).hexdigest(),
                'InstanceInitiatedShutdownBehavior': 'terminate',
                'MetadataOptions': {'HttpTokens': 'required', 'HttpEndpoint': 'enabled', 'HttpPutResponseHopLimit': 1},
-               'NetworkInterfaces': [{'DeviceIndex': 0, 'SubnetId': 'subnet-8f2684f4',
+               'NetworkInterfaces': [{'DeviceIndex': 0, 'SubnetId': subnet,
                                       'Groups': ['__STACK_SECURITY_GROUP__'], 'AssociatePublicIpAddress': True,
                                       'DeleteOnTermination': True}],
                'IamInstanceProfile': {'Name': '__STACK_PROFILE__'},
