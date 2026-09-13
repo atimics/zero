@@ -27,7 +27,8 @@ def validate_pair(control, candidate, comparison, manifest_sha):
                 record['implementation_sha256'] != digest(EXPERIMENT / 'implementation.lock.json') or
                 record['manifest_sha256'] != manifest_sha):
             raise ValueError('Completed run differs from the registered pair')
-    for name in ['seed', 'initial_weights_sha256', 'config', 'parameters', 'device', 'platform']:
+    for name in ['seed', 'initial_weights_sha256', 'config', 'parameters', 'device', 'platform',
+                 'cpu_threads', 'microbatch_sequences']:
         if control[name] != candidate[name]:
             raise ValueError(f'Paired run mismatch: {name}')
 

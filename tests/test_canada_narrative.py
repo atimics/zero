@@ -49,6 +49,18 @@ class CanadaTests(unittest.TestCase):
         self.assertTrue(np.isfinite(loss))
         self.assertNotEqual(before, state_digest(model))
 
+    def test_larger_microbatch_preserves_masked_gradient(self):
+        config = dict(vocab=32, context=4, dim=8, heads=2, layers=1, ff=16)
+        models = [create(config, 7), create(config, 7)]
+        data = np.arange(19, dtype=np.uint16)
+        losses = []
+        for model, micro in zip(models, [1, 4]):
+            optimizer = torch.optim.AdamW(model.parameters(), lr=0.)
+            losses.append(update(model, optimizer, data, 17, 13, 0., 'cpu', micro, dropout=0.))
+        self.assertAlmostEqual(losses[0], losses[1], places=6)
+        for first, second in zip(models[0].parameters(), models[1].parameters()):
+            torch.testing.assert_close(first.grad, second.grad, atol=1e-6, rtol=1e-5)
+
     def test_shared_scoring_and_bounds(self):
         model = create(dict(vocab=32, context=1024, dim=8, heads=2, layers=1, ff=16), 7)
         data = np.arange(4096, dtype=np.uint16) % 32
@@ -123,7 +135,8 @@ class CanadaTests(unittest.TestCase):
                    'contract_sha256': digest(EXPERIMENT / 'contract.json'),
                    'implementation_sha256': digest(EXPERIMENT / 'implementation.lock.json'),
                    'initial_weights_sha256': 'weights', 'config': 'same',
-                   'parameters': 5049600, 'device': 'cpu', 'platform': 'same'}
+                   'parameters': 5049600, 'device': 'cpu', 'platform': 'same',
+                   'cpu_threads': 8, 'microbatch_sequences': 4}
         candidate = {**control, 'arm': 'B'}
         validate_pair(control, candidate, 'AB', 'manifest')
         with self.assertRaises(ValueError):

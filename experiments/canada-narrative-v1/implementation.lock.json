@@ -1,15 +1,16 @@
 {
   "files": {
     "scripts/canada_narrative.py": "dd55c280997c70d79544452d1da8072bcfc3498b1c0f7584f4b0b33eaf54b561",
-    "scripts/run_canada_narrative.py": "18dae03df473ca76721d3cc0cc975367553323a6b738d28bcb5b07c01ea9edd4",
-    "scripts/review_canada_narrative.py": "50102609e73a62f8bea8685419713813916dc7cb0dc12753f5597bb4f1724e03",
+    "scripts/run_canada_narrative.py": "cf396c7fda0b065830046006f544d50361a51c303a9abe642585d466dfb62843",
+    "scripts/review_canada_narrative.py": "c751656ad83152383bc0245541e75c1ee5b0f52814359e1c147332c15e7b775f",
     "scripts/subword_model.py": "68a3f8e7cba83302c0b793a4ee7eb156cfa95f16503073275bbd45e8abe86ba6",
     "scripts/zero_torch.py": "656a281c43de037ff71ff86d149ad7c6b5f5f3112318a839c1110d90a7bd28cc",
     "scripts/ab_review.py": "b1b3e1e75389f9b3c3bfb59df6a817d489035f62e6eeb72586ab6dc2264c7413",
     "scripts/ab_review.html": "cd45241371feeb246c816877e51cc153787101387a1e5657b257d6abe4bb4fe8",
-    "experiments/canada-narrative-v1/contract.json": "7a11b5a132c6e63ccff59838fe329b9954da3241448949aea3b4eb9fc9f32588",
+    "experiments/canada-narrative-v1/contract.json": "214c5f5969d35785f8a33b6f18e5cfcb2d1e78980582cfb33fadea9cd7679fb7",
     "experiments/canada-narrative-v1/inputs.lock.json": "0f25df0e9e072d22d64b597f6f8b7203e0d0ecf39c63acf1170fd0a4957cb13f",
-    "experiments/canada-narrative-v1/preparation.json": "86665c4b57e4d1cd6de46f5bfde46dd1e46028ae82126aea27d08871d4aaee31"
+    "experiments/canada-narrative-v1/preparation.json": "86665c4b57e4d1cd6de46f5bfde46dd1e46028ae82126aea27d08871d4aaee31",
+    "scripts/benchmark_canada_narrative.py": "11b2ad0cea79bf9b3d16ac83b705c233246b350aae6c9dd94e92ecb9cb7e6bb6"
   },
   "packages": {
     "numpy": "2.2.6",

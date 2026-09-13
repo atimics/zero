@@ -30,6 +30,14 @@ Both arms start with identical fresh weights. Each comparison has its own
 cosine schedule. B/C starts fresh too. Seeds 17 and 29 are registered for
 replication after a passing pilot. The default seed is 7.
 
+The faster runner groups four sequences per microbatch. Each update still
+scores 8,192 targets. CPU runs use eight threads. Apple MPS and CUDA runs use
+two host threads. Validation groups four windows per forward pass.
+`speed-checks.json` records the CPU/GPU sweep and full-model numerical checks.
+The Apple GPU was about four times faster than the two-thread baseline in
+the same short sweep. Its two-update repeat check had a maximum weight
+difference of 6.82e-7. All recorded engineering tolerances passed.
+
 The runner visits every target position in order, then cycles. Each input is
 the previous stream token. The first input is the last stream token. Contexts
 can cross record boundaries. This treats all arms as continuous streams.
@@ -73,32 +81,35 @@ python3 -m venv /tmp/zero-canada-env
   --delivery /absolute/path/to/accepted-delivery \
   --output /tmp/zero-canada-prepared
 /tmp/zero-canada-env/bin/python scripts/run_canada_narrative.py benchmark \
-  --device cpu --output /tmp/zero-canada-timing.json
+  --device mps --output /tmp/zero-canada-timing.json
 ```
 
 `preparation.json` records the verified stream hashes. The trainer checks the
 prepared manifest against this receipt. `implementation.lock.json` binds the
 runner, model code, review code, contract, input lock, preparation receipt,
-and direct dependency versions. `timing.json` records a local synthetic
-measurement. Its projections include periodic selection scoring and a 30%
+and direct dependency versions. `timing.json` records the Apple GPU synthetic
+measurement. `cpu-baseline-timing.json` preserves the earlier two-thread CPU
+measurement. The projections include periodic selection scoring and a 30%
 planning margin. Checkpoint I/O, final scoring, and generation add time.
 Cloud cost requires a selected host and timing on that host.
 
 ## Run the four pilot arms
 
-Choose one device for the pair. A CUDA run requires bfloat16 support. Set
+Choose one device for the pair. The examples use the Mac GPU through MPS.
+Use `--device cpu` for CPU execution or `--device cuda` on AWS.
+A CUDA run requires bfloat16 support. Set
 `CUBLAS_WORKSPACE_CONFIG=:4096:8` for deterministic CUDA operations. The
-following CPU commands each run a full registered arm:
+following commands each run a full registered arm:
 
 ```sh
 /tmp/zero-canada-env/bin/python scripts/run_canada_narrative.py train \
-  --data /tmp/zero-canada-prepared --comparison AB --arm A --output /tmp/canada-AB-A
+  --device mps --data /tmp/zero-canada-prepared --comparison AB --arm A --output /tmp/canada-AB-A
 /tmp/zero-canada-env/bin/python scripts/run_canada_narrative.py train \
-  --data /tmp/zero-canada-prepared --comparison AB --arm B --output /tmp/canada-AB-B
+  --device mps --data /tmp/zero-canada-prepared --comparison AB --arm B --output /tmp/canada-AB-B
 /tmp/zero-canada-env/bin/python scripts/run_canada_narrative.py train \
-  --data /tmp/zero-canada-prepared --comparison BC --arm B --output /tmp/canada-BC-B
+  --device mps --data /tmp/zero-canada-prepared --comparison BC --arm B --output /tmp/canada-BC-B
 /tmp/zero-canada-env/bin/python scripts/run_canada_narrative.py train \
-  --data /tmp/zero-canada-prepared --comparison BC --arm C --output /tmp/canada-BC-C
+  --device mps --data /tmp/zero-canada-prepared --comparison BC --arm C --output /tmp/canada-BC-C
 ```
 
 Each arm writes starting-weight identity, training history, last and best
@@ -145,3 +156,33 @@ Focused tests cover exact cyclic targets and final masks, paired weights,
 finite backward passes, score boundaries, frozen hashes, line encoding,
 review completion, skips, duplicate events, revisions, and invalid pairs.
 The existing parity and review checks also run in CI.
+
+Reproduce the full Mac speed sweep and numerical checks with:
+
+```sh
+/tmp/zero-canada-env/bin/python scripts/benchmark_canada_narrative.py \
+  --output /tmp/canada-speed-checks.json
+```
+
+## AWS timing proposal
+
+A read-only AWS query confirmed `g6.xlarge` and `g5.xlarge` offerings in
+Canada Central. On-demand Linux pricing checked on 2026-09-12 is
+US$0.8936/hour for `g6.xlarge` and US$1.117/hour for `g5.xlarge`.
+The [AWS G6 specification](https://aws.amazon.com/ec2/instance-types/g6/)
+lists an NVIDIA L4 GPU with 24 GB of GPU memory. Prices come from the
+[official Canada catalog](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/ca-central-1/index.json).
+
+Proposed next step: time synthetic updates on one `g6.xlarge` in
+`ca-central-1`, then choose the full run using its measured time. A
+15-minute instance interval is about US$0.22; setup time and storage add
+cost. The runtime command is:
+
+```sh
+CUBLAS_WORKSPACE_CONFIG=:4096:8 /tmp/zero-canada-env/bin/python \
+  scripts/run_canada_narrative.py benchmark --device cuda --output /tmp/canada-cuda-timing.json
+```
+
+The benchmark uses synthetic token IDs. It needs the pinned code and
+dependencies. Full corpus runs use the accepted delivery in Canada.
+AWS timing, cloud launch, and paid execution are pending.

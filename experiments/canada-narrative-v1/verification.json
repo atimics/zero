@@ -1,0 +1,10 @@
+{
+  "focused_tests_passed": 16,
+  "existing_subword_tests_passed": 4,
+  "existing_review_tests_passed": 5,
+  "preparation_builds": 2,
+  "matching_prepared_manifest_sha256": "0ceb3f8a98484a066732b4a2ec8d7bb62b644d3e86fbc5f1d45da0856644e0c4",
+  "corpus_training_presentations": 0,
+  "apple_gpu_generation_smoke": "Four generated tokens from the full model using the frozen tokenizer",
+  "apple_gpu_checks": "speed-checks.json"
+}

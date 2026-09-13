@@ -30,10 +30,21 @@ def amp(device):
     return torch.autocast('cuda', dtype=torch.bfloat16) if device == 'cuda' else contextlib.nullcontext()
 
 
-def setup(seed, device):
+def synchronize(device):
+    if device == 'mps':
+        torch.mps.synchronize()
+    elif device == 'cuda':
+        torch.cuda.synchronize()
+
+
+def setup(seed, device, threads=None):
     if device == 'cuda' and not torch.cuda.is_bf16_supported():
         raise ValueError('Use a CUDA device with bfloat16 support')
-    torch.set_num_threads(2)
+    if device == 'mps' and not torch.backends.mps.is_available():
+        raise ValueError('Use a host with Apple GPU access')
+    if threads is None:
+        threads = 8 if device == 'cpu' else 2
+    torch.set_num_threads(threads)
     torch.manual_seed(seed)
     torch.use_deterministic_algorithms(True)
     model = create(CONFIGS['5m-1024'], seed).to(device)
@@ -63,13 +74,18 @@ def windows(data, offset, count, context):
         yield x, y, valid
 
 
-def update(model, optimizer, data, offset, count, lr, device):
+def update(model, optimizer, data, offset, count, lr, device, microbatch_sequences=1, dropout=.1):
     model.train(); optimizer.zero_grad(set_to_none=True); total = 0.
-    for x, y, valid in windows(data, offset, count, model.context):
-        x = torch.from_numpy(x).unsqueeze(0).to(device)
-        y = torch.from_numpy(y).to(device)
+    if microbatch_sequences < 1:
+        raise ValueError('Use a positive microbatch size')
+    batches = list(windows(data, offset, count, model.context))
+    for begin in range(0, len(batches), microbatch_sequences):
+        group = batches[begin:begin + microbatch_sequences]
+        x = torch.from_numpy(np.stack([row[0] for row in group])).to(device)
+        y = torch.from_numpy(np.stack([row[1] for row in group])).to(device)
         with amp(device):
-            loss = F.cross_entropy(model(x, dropout=.1)[0].float(), y, reduction='sum') / count
+            loss = F.cross_entropy(model(x, dropout=dropout).flatten(0, 1).float(),
+                                   y.flatten(), reduction='sum') / count
         if not torch.isfinite(loss):
             raise ValueError('Nonfinite training loss')
         loss.backward(); total += loss.item()
@@ -83,14 +99,19 @@ def update(model, optimizer, data, offset, count, lr, device):
 @torch.no_grad()
 def evaluate(model, data, starts, lengths, device):
     model.eval(); total = 0.; byte_count = 0
-    for start in starts:
-        target = np.asarray(data[start:start + 256], dtype=np.int64)
-        window = np.asarray(data[start - 769:start + 255], dtype=np.int64)
-        if len(target) != 256 or len(window) != 1024:
-            raise ValueError('Evaluation window outside stream')
+    for begin in range(0, len(starts), 4):
+        targets = []; windows_to_score = []
+        for start in starts[begin:begin + 4]:
+            target = np.asarray(data[start:start + 256], dtype=np.int64)
+            window = np.asarray(data[start - 769:start + 255], dtype=np.int64)
+            if len(target) != 256 or len(window) != 1024:
+                raise ValueError('Evaluation window outside stream')
+            targets.append(target); windows_to_score.append(window)
+        target = np.stack(targets); window = np.stack(windows_to_score)
         with amp(device):
-            logits = model(torch.tensor(window, device=device).unsqueeze(0))[0, -256:].float()
-            loss = F.cross_entropy(logits, torch.tensor(target, device=device), reduction='sum')
+            logits = model(torch.tensor(window, device=device))[:, -256:].float()
+            loss = F.cross_entropy(logits.flatten(0, 1),
+                                   torch.tensor(target, device=device).flatten(), reduction='sum')
         if not torch.isfinite(loss):
             raise ValueError('Nonfinite evaluation loss')
         total += loss.item(); byte_count += int(lengths[target].sum())
@@ -143,6 +164,8 @@ def train(args):
     steps = math.ceil(budget / block); started = time.monotonic()
     identity = {'comparison': args.comparison, 'arm': args.arm, 'seed': seed,
                 'device': args.device, 'platform': platform.platform(),
+                'cpu_threads': torch.get_num_threads(),
+                'microbatch_sequences': contract['training']['microbatch_sequences'],
                 'config': CONFIGS['5m-1024'], 'parameters': sum(p.numel() for p in model.parameters()),
                 'initial_weights_sha256': initial,
                 'contract_sha256': digest(EXPERIMENT / 'contract.json'),
@@ -151,7 +174,8 @@ def train(args):
     write_json(args.output / 'identity.json', identity)
     for step in range(1, steps + 1):
         count = min(block, budget - offset)
-        loss = update(model, optimizer, data, offset, count, learning_rate(step, steps), args.device)
+        loss = update(model, optimizer, data, offset, count, learning_rate(step, steps), args.device,
+                      contract['training']['microbatch_sequences'])
         offset += count
         if step % 200 == 0 or step == steps:
             score = evaluate(model, validation, evaluation['selection'], lengths, args.device)
@@ -161,6 +185,7 @@ def train(args):
             state = {'config': CONFIGS['5m-1024'], 'model': model.state_dict(),
                      'optimizer': optimizer.state_dict(), 'step': step, 'target_presentations': offset,
                      'cpu_rng': torch.get_rng_state(),
+                     'mps_rng': torch.mps.get_rng_state() if args.device == 'mps' else None,
                      'cuda_rng': torch.cuda.get_rng_state_all() if args.device == 'cuda' else []}
             torch.save(state, args.output / 'last.pt')
             if score['bits_per_byte'] < best:
@@ -175,12 +200,15 @@ def train(args):
 
 def benchmark(args):
     model, optimizer = setup(7, args.device)
+    microbatch = read_json(EXPERIMENT / 'contract.json')['training']['microbatch_sequences']
     synthetic = np.random.default_rng(107).integers(0, 2048, 32768, dtype=np.uint16)
-    update(model, optimizer, synthetic, 0, 8192, .0003, args.device)
+    update(model, optimizer, synthetic, 0, 8192, .0003, args.device, microbatch)
+    synchronize(args.device)
     times = []
     for step in range(3):
         start = time.monotonic()
-        update(model, optimizer, synthetic, step * 8192, 8192, .0003, args.device)
+        update(model, optimizer, synthetic, step * 8192, 8192, .0003, args.device, microbatch)
+        synchronize(args.device)
         times.append(time.monotonic() - start)
     validation_start = time.monotonic()
     evaluate(model, synthetic, [1024, 2048, 3072, 4096], np.ones(2048), args.device)
@@ -192,6 +220,7 @@ def benchmark(args):
         projections[name] = {'paired_training_and_selection_hours': seconds / 3600,
                              'planning_hours_with_30_percent_margin': seconds * 1.3 / 3600}
     result = {'device': args.device, 'platform': platform.platform(),
+              'cpu_threads': torch.get_num_threads(), 'microbatch_sequences': microbatch,
               'parameters': sum(p.numel() for p in model.parameters()),
               'synthetic_updates': 4, 'corpus_training_presentations': 0,
               'measured_update_seconds': times, 'median_update_seconds': per_update,
@@ -212,6 +241,6 @@ if __name__ == '__main__':
     run.add_argument('--seed', type=int, choices=[7, 17, 29], default=7)
     run.add_argument('--pilot-decision', type=Path)
     for child in [timing, run]:
-        child.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
+        child.add_argument('--device', choices=['cpu', 'mps', 'cuda'], default='cpu')
     args = parser.parse_args(); verify_code()
     (benchmark if args.command == 'benchmark' else train)(args)

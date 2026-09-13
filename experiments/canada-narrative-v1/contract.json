@@ -14,7 +14,10 @@
   "training": {
     "context": 1024,
     "tokens_per_update": 8192,
-    "microbatch_sequences": 1,
+    "microbatch_sequences": 4,
+    "cpu_threads": 8,
+    "accelerator_host_threads": 2,
+    "evaluation_microbatch_windows": 4,
     "sampling": "Frozen record order, cyclic target indices from zero, previous token as input; contexts may cross record and stream boundaries",
     "tail": "Pad final context and mask excess targets; count only scored targets",
     "optimizer": "AdamW",
@@ -29,7 +32,7 @@
     "schedule": "Cosine to zero after warmup over the full comparison budget",
     "report_every_updates": 200,
     "checkpoint_selection": "Lowest shared selection bits per byte at update 200 and each following multiple, plus final update; earliest wins ties",
-    "precision": "float32 on CPU; bfloat16 autocast on CUDA; same device and precision for paired arms"
+    "precision": "float32 on CPU and Apple MPS; bfloat16 autocast on CUDA; same device, batch settings and precision for paired arms"
   },
   "evaluation": {
     "shared_source": "Frozen A validation, protected by B/C delivery audit",
