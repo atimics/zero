@@ -3,9 +3,9 @@
   "status": "prepared-awaiting-paid-launch-approval",
   "region": "ca-central-1",
   "account": "022118847419",
-  "run_id": "zero-canada-timing-b6d52298c4b4-1789260783",
-  "created_at": 1789260783,
-  "launch_valid_until": 1789347183,
+  "run_id": "zero-canada-timing-b6d52298c4b4-1789260921",
+  "created_at": 1789260921,
+  "launch_valid_until": 1789347321,
   "instance_type": "g6.xlarge",
   "instance_count": 1,
   "hourly_instance_usd": 0.8936,
@@ -34,9 +34,9 @@
   },
   "files": {
     "source.tar.gz": "b6d52298c4b4f450394defcae1cf14714edbb4d32c2947e1421f5554315dd9fa",
-    "stack.json": "dbe427d1d80b67c210cce10ada888e8ff36bb2204962fccbe55f66ebf4f792c6",
+    "stack.json": "b76afa381a782d1bf86b242a3b5eb8dd3d9f9a0644f7b2b6cb53606ff60e8da3",
     "user-data.template.sh": "e7f5866e6560af9373fc790df295f0cffd210b0cc247052f901bb38bff9afbc1",
-    "request.template.json": "50fd96bc01112e137b3d43e3d9520f65619cb81f1db8f0c5af959d117a317b8d",
-    "launch.py": "38bf7b5a00992d0968ce7efc7c37a2e9f9f8f4ae730b73da2890659649d025dc"
+    "request.template.json": "9c2c5ae37c4f83d6735b91755dc9b6071805ea07d70158e265c6f7db881a82e6",
+    "launch.py": "58ec1d4c4329cc979fd1bbce07a814347fc8c482468dd0f914ef71e3ff645a45"
   }
 }

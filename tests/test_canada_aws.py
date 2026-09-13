@@ -78,7 +78,7 @@ class CanadaAwsTests(unittest.TestCase):
     def fake_aws(self, calls, fail_launch=False, fail_download=False):
         active = [False]
         def execute(argv, **kwargs):
-            args = argv[4:]; service, operation = args[:2]; calls.append((service, operation))
+            args = argv[6:]; service, operation = args[:2]; calls.append((service, operation))
             response = {}
             if service == 'sts':
                 response = {'Account': self.manifest['account']}

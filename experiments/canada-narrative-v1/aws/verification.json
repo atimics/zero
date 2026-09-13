@@ -5,7 +5,9 @@
   "packaged_implementation_lock": "passed",
   "cloudformation_validate_template": "passed",
   "scheduler_properties_checked_against_live_resource_schema": true,
-  "manifest_sha256": "6145f8269dcd870c2268602acc7a44c609d34822cbe0595eed5f7a2c973f6072",
+  "manifest_sha256": "85101bca461251a83bec8e7356bf1dbc789a2b60167b452a50c991bd64f6402f",
   "cloud_resources_created": 0,
-  "paid_execution": "awaiting approval"
+  "paid_execution": "awaiting approval",
+  "on_demand_gpu_vcpu_quota": 768,
+  "launch_requires_gpu_vcpus": 4
 }

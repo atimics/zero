@@ -39,7 +39,7 @@ def run(directory, expected, mode):
     manifest = verify(directory, expected)
     region = manifest['region']; run_id = manifest['run_id']
     def aws(*args, raw=False, timeout=120):
-        completed = subprocess.run(['aws', '--region', region, '--no-cli-pager', *args],
+        completed = subprocess.run(['aws', '--region', region, '--no-cli-pager', '--output', 'json', *args],
                                    text=True, capture_output=True, timeout=timeout)
         if completed.returncode:
             raise RuntimeError('AWS ' + args[0] + ' failed: ' + completed.stderr[-1500:])
