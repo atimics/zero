@@ -1,0 +1,36 @@
+{
+  "steps": 1200,
+  "seed": 914,
+  "parameters": 4935937,
+  "device": "cpu",
+  "torch": "2.8.0",
+  "batch_size": 16,
+  "dialogue_per_batch": 12,
+  "rehearsal_per_batch": 4,
+  "learning_rate": 0.0001,
+  "dialogues": 46,
+  "dialogue_rows": 296,
+  "narrow_rehearsal_rows": 46,
+  "full_rehearsal_rows": 6300,
+  "full_opening_rows": 3660,
+  "full_meanings": 61,
+  "covered_dialogue_meanings": 17,
+  "base_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "selection": "Fixed 1200-step endpoints; same unseen test accounts for both arms. Full arm adds all-meaning openings and original conversations on uncovered meanings.",
+  "input_hashes": {
+    "experiments/full-event-rehearsal/input/rehearsal.jsonl": "3f0f5adfb94e286076940b3478d5d143070f927f6db8547330c9c768aa002691",
+    "experiments/full-event-rehearsal/input/rules.json": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+    "experiments/full-event-rehearsal/input/evaluation-accounts.jsonl": "86677ac370edce7d2478de0980308dabbed9a240b444f27cea8c6362c6ded0cb",
+    "experiments/reviewed-dialogue-pilot/input/drafts.json": "db75a268d5f5fbd22443c3ec34d168f1300fa02d4247129d8bde4e4010f9218a",
+    "experiments/reviewed-dialogue-pilot/input/accounts.jsonl": "bc83a5d50cbe722b8a32663cba46848a20fea5e284254e874292c37e8318debd"
+  },
+  "source_hashes": {
+    "/private/tmp/zero-full-event-rehearsal/scripts/run_full_event_rehearsal.py": "e83ba0c1439db073af635cc9c7a3168e48498a2ffd5e6d6d4f76d6674a9b9e87",
+    "scripts/run_matched_dialogue_study.py": "8155baf7e438d1cf246026d109f5eeeaafd1b41e100aad7a7842137ca7c475ab",
+    "scripts/run_reviewed_dialogue_pilot.py": "bdca25af13f08683a6ec537dd7c5bd4d9a731091b8e3eb403cf3e4e02e5c8545",
+    "scripts/crownless_conversation.py": "29b9d02edd031c74eb9c4b649d4eff584aa33dd9e1d894abf52ec3e8623ef32e",
+    "scripts/crownless_v2.py": "7a5be9277a7dd855a59c981a713b569b014cc9cb0d03e98a61ebfdd4372326cf",
+    "scripts/crownless_v2_export.py": "59249330258aff74b7f206a03f85024cad0200e536df3d1a4eab2fde245c0a6a"
+  }
+}

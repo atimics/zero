@@ -1,0 +1,29 @@
+{
+  "before": {
+    "lines": 64,
+    "distinct": 21,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0
+  },
+  "narrow": {
+    "lines": 64,
+    "distinct": 61,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0,
+    "opening_unchanged": 9,
+    "candidate_sha256": "d2f5d9a38cae3609200ded6a4eb9f2bd540f1260c4aafc8a34147e326e871238",
+    "training_seconds": 73.71831612475216
+  },
+  "full": {
+    "lines": 64,
+    "distinct": 45,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0,
+    "opening_unchanged": 12,
+    "candidate_sha256": "c6bf351a3720184998cfc1a5809fc06f2f24faaa5f85ecb05267be701b0dba7d",
+    "training_seconds": 88.09601704217494
+  }
+}
