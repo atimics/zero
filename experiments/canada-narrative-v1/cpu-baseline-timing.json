@@ -1,0 +1,26 @@
+{
+  "device": "cpu",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "parameters": 5049600,
+  "synthetic_updates": 4,
+  "corpus_training_presentations": 0,
+  "measured_update_seconds": [
+    0.9501167079433799,
+    0.9386403751559556,
+    0.9350821250118315
+  ],
+  "median_update_seconds": 0.9386403751559556,
+  "evaluation_window_seconds": 0.044466385268606246,
+  "projections": {
+    "AB": {
+      "paired_training_and_selection_hours": 1.7560616173274401,
+      "planning_hours_with_30_percent_margin": 2.2828801025256724
+    },
+    "BC": {
+      "paired_training_and_selection_hours": 6.495900766407916,
+      "planning_hours_with_30_percent_margin": 8.44467099633029
+    }
+  },
+  "scope": "Local synthetic timing; checkpoint I/O, final scoring and generation are additional",
+  "cloud_cost": "Pending a target host and measured timing on that host"
+}
