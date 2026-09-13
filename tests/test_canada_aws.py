@@ -60,7 +60,7 @@ class CanadaAwsTests(unittest.TestCase):
         self.assertTrue(expired({'LaunchTime': now - datetime.timedelta(seconds=1800)}, now))
         stack = json.loads((self.directory / 'stack.json').read_text())['Resources']
         self.assertEqual(stack['Schedule']['Properties']['ScheduleExpression'], 'rate(1 minute)')
-        self.assertIn('EndDate', stack['Schedule']['Properties'])
+        self.assertRegex(stack['Schedule']['Properties']['EndDate'], r'\.000Z$')
         self.assertNotIn('ActionAfterCompletion', stack['Schedule']['Properties'])
         self.assertIn("'stopped'", stack['Watchdog']['Properties']['Code']['ZipFile'])
         statements = stack['WatchRole']['Properties']['Policies'][0]['PolicyDocument']['Statement']

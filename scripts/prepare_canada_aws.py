@@ -88,7 +88,7 @@ def prepare(output, now=None):
     files = package_source(output)
     source_sha = digest(output / 'source.tar.gz')
     run_id = 'zero-canada-timing-' + source_sha[:12] + '-' + str(now)
-    end = datetime.datetime.fromtimestamp(now + 90000, datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    end = datetime.datetime.fromtimestamp(now + 90000, datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
     write_json(output / 'stack.json', template(run_id, end))
     bootstrap = (ROOT / 'scripts/aws_canada_bootstrap.sh').read_text().replace('__SOURCE_SHA__', source_sha)
     (output / 'user-data.template.sh').write_text(bootstrap)
