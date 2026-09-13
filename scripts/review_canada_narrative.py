@@ -20,13 +20,13 @@ def validate_pair(control, candidate, comparison, manifest_sha):
     spec = contract['comparisons'][comparison]
     for record, arm in zip([control, candidate], spec['arms']):
         if (record['status'] != 'trained' or record['arm'] != arm or
-                record['comparison'] != comparison or record['seed'] != contract['pilot_seed'] or
+                record['comparison'] != comparison or record['seed'] not in contract['seeds'] or
                 record['target_presentations'] != spec['target_tokens_per_arm'] or
                 record['contract_sha256'] != digest(EXPERIMENT / 'contract.json') or
                 record['implementation_sha256'] != digest(EXPERIMENT / 'implementation.lock.json') or
                 record['manifest_sha256'] != manifest_sha):
             raise ValueError('Completed run differs from the registered pair')
-    for name in ['initial_weights_sha256', 'config', 'parameters', 'device', 'platform']:
+    for name in ['seed', 'initial_weights_sha256', 'config', 'parameters', 'device', 'platform']:
         if control[name] != candidate[name]:
             raise ValueError(f'Paired run mismatch: {name}')
 
@@ -127,6 +127,9 @@ def summarize(args):
     events = [json.loads(line) for line in args.events.read_text().splitlines() if line.strip()]
     result = tally(events, packet, key, args.reviewer)
     result.update({'comparison': metrics['comparison'],
+                   'seed': metrics['runs'][0]['seed'],
+                   'contract_sha256': metrics['contract_sha256'],
+                   'manifest_sha256': metrics['runs'][0]['manifest_sha256'],
                    'numerical_gates_pass': metrics['numerical_gates_pass'],
                    'pilot_pass': metrics['numerical_gates_pass'] and result['human_gate_pass']})
     write_json(args.output, result); print(json.dumps(result, indent=2))

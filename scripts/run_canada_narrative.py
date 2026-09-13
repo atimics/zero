@@ -106,6 +106,19 @@ def learning_rate(step, steps):
     return value
 
 
+def validate_seed(seed, comparison, manifest_sha, decision=None):
+    contract = read_json(EXPERIMENT / 'contract.json')
+    if seed not in contract['seeds']:
+        raise ValueError('Choose a registered seed')
+    if seed != contract['pilot_seed']:
+        if (decision is None or decision.get('pilot_pass') is not True or
+                decision.get('comparison') != comparison or
+                decision.get('seed') != contract['pilot_seed'] or
+                decision.get('contract_sha256') != digest(EXPERIMENT / 'contract.json') or
+                decision.get('manifest_sha256') != manifest_sha):
+            raise ValueError('Replication requires the passing paired pilot decision')
+
+
 def train(args):
     manifest = verify_prepared(args.data)
     receipt = read_json(EXPERIMENT / 'preparation.json')
@@ -115,13 +128,17 @@ def train(args):
     comparison = contract['comparisons'][args.comparison]
     if args.arm not in comparison['arms']:
         raise ValueError('Arm belongs to a different comparison')
+    seed = getattr(args, 'seed', contract['pilot_seed'])
+    pilot_path = getattr(args, 'pilot_decision', None)
+    validate_seed(seed, args.comparison, digest(args.data / 'manifest.json'),
+                  read_json(pilot_path) if pilot_path else None)
     budget = comparison['target_tokens_per_arm']; block = contract['training']['tokens_per_update']
     args.output.mkdir(parents=True, exist_ok=False)
     data = np.memmap(args.data / f'{args.arm}.bin', dtype='<u2', mode='r')
     validation = np.memmap(args.data / 'validation.bin', dtype='<u2', mode='r')
     evaluation = read_json(args.data / 'evaluation.json')
     lengths = np.array(read_json(args.data / 'token_bytes.json'))
-    seed = contract['pilot_seed']; model, optimizer = setup(seed, args.device)
+    model, optimizer = setup(seed, args.device)
     initial = state_digest(model); best = math.inf; history = []; offset = 0
     steps = math.ceil(budget / block); started = time.monotonic()
     identity = {'comparison': args.comparison, 'arm': args.arm, 'seed': seed,
@@ -192,6 +209,8 @@ if __name__ == '__main__':
     run.add_argument('--data', type=Path, required=True); run.add_argument('--output', type=Path, required=True)
     run.add_argument('--comparison', choices=['AB', 'BC'], required=True)
     run.add_argument('--arm', choices=['A', 'B', 'C'], required=True)
+    run.add_argument('--seed', type=int, choices=[7, 17, 29], default=7)
+    run.add_argument('--pilot-decision', type=Path)
     for child in [timing, run]:
         child.add_argument('--device', choices=['cpu', 'cuda'], default='cpu')
     args = parser.parse_args(); verify_code()

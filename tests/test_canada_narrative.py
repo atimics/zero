@@ -116,6 +116,23 @@ class CanadaTests(unittest.TestCase):
         with self.assertRaises((ValueError, KeyError)):
             validate_pair({'status': 'incomplete'}, {}, 'AB', 'x')
 
+    def test_replication_requires_matching_passing_pilot(self):
+        from canada_narrative import digest
+        runner.validate_seed(7, 'AB', 'manifest')
+        with self.assertRaises(ValueError):
+            runner.validate_seed(17, 'AB', 'manifest')
+        decision = {'pilot_pass': True, 'comparison': 'AB', 'seed': 7,
+                    'manifest_sha256': 'manifest', 'contract_sha256': digest(EXPERIMENT / 'contract.json')}
+        runner.validate_seed(17, 'AB', 'manifest', decision)
+        with self.assertRaises(ValueError):
+            runner.validate_seed(29, 'BC', 'manifest', decision)
+        decision['pilot_pass'] = False
+        with self.assertRaises(ValueError):
+            runner.validate_seed(17, 'AB', 'manifest', decision)
+
+    def test_frozen_implementation_and_versions(self):
+        runner.verify_code()
+
     def test_training_completion_and_saved_checkpoint(self):
         from canada_narrative import write_json, digest
         with tempfile.TemporaryDirectory() as directory:

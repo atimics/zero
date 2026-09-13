@@ -28,7 +28,7 @@ original bytes. Record offsets remain in separate index files.
 
 Both arms start with identical fresh weights. Each comparison has its own
 cosine schedule. B/C starts fresh too. Seeds 17 and 29 are registered for
-replication after a passing pilot; this runner executes seed 7.
+replication after a passing pilot. The default seed is 7.
 
 The runner visits every target position in order, then cycles. Each input is
 the previous stream token. The first input is the last stream token. Contexts
@@ -128,7 +128,11 @@ After collecting event JSONL, compute the decision:
 ```
 
 Use the same commands with BC and its two run directories for B/C. Passing
-the pilot supplies the evidence for the registered repeat seeds. Report
+the pilot supplies the evidence for the registered repeat seeds. For each
+repeat arm, add `--seed 17 --pilot-decision /tmp/canada-AB-decision.json`
+or seed 29 and use a fresh output directory. B/C repeats use their B/C
+decision. The runner checks the passing pilot's seed, comparison, contract,
+and prepared manifest. Report
 each repeat seed separately and require both to pass the numerical gates.
 
 ## Checks
