@@ -65,6 +65,15 @@ class CanadaAwsTests(unittest.TestCase):
         self.assertLess(manifest['planning_instance_usd_at_31_minutes'], 1)
         self.assertEqual(manifest['files']['source.tar.gz'], self.manifest['files']['source.tar.gz'])
 
+    def test_a10_proposal_keeps_source_and_budget(self):
+        output = Path(self.temporary.name) / 'a10'
+        manifest = prepare(output, now=1789260000, subnet=None, instance_type='g5.xlarge')
+        self.assertEqual(manifest['instance_type'], 'g5.xlarge')
+        self.assertEqual(manifest['hourly_instance_usd'], 1.117)
+        self.assertEqual(manifest['requested_budget_usd'], 2)
+        self.assertEqual(manifest['status'], 'prepared-awaiting-paid-launch-approval')
+        self.assertEqual(manifest['files']['source.tar.gz'], self.manifest['files']['source.tar.gz'])
+
     def test_watchdog_deadline_including_stopped(self):
         now = datetime.datetime.now(datetime.timezone.utc)
         self.assertFalse(expired({'LaunchTime': now - datetime.timedelta(seconds=1799)}, now))

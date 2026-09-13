@@ -85,9 +85,9 @@ def package_source(output):
 def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge'):
     if subnet not in [None, "subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
         raise ValueError("Choose a verified Canada Central subnet")
-    prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547}
+    prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547, 'g5.xlarge': 1.117}
     if instance_type not in prices:
-        raise ValueError('Choose a single-L4 instance within the timing budget')
+        raise ValueError('Choose a single-GPU instance within the timing budget')
     price = prices[instance_type]
     now = int(time.time()) if now is None else now
     output.mkdir(parents=True, exist_ok=False)
@@ -135,7 +135,7 @@ def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge'], default='g6.xlarge')
+    parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge', 'g5.xlarge'], default='g6.xlarge')
     parser.add_argument('--automatic-zone', action='store_true')
     args = parser.parse_args()
     print(json.dumps(prepare(args.output, subnet=None if args.automatic_zone else 'subnet-a24506fe',

@@ -1,0 +1,43 @@
+{
+  "status": "blocked-by-aws-capacity",
+  "region": "ca-central-1",
+  "approved_budget_usd": 2,
+  "gpu_instances_started": 0,
+  "gpu_instance_seconds": 0,
+  "timing_measurement_completed": false,
+  "corpus_training_presentations": 0,
+  "attempts": [
+    {
+      "manifest_sha256": "85101bca461251a83bec8e7356bf1dbc789a2b60167b452a50c991bd64f6402f",
+      "reason": "Scheduler EndDate required milliseconds; fixed and tested",
+      "cleanup": "cleaned-after-stack-failure",
+      "instance_type": "g6.xlarge"
+    },
+    {
+      "manifest_sha256": "2859bf1584ca2a40fd9d496dd11da69f4d5846c36547875c22bebe34b03b7860",
+      "reason": "InsufficientInstanceCapacity: g6.xlarge in ca-central-1a",
+      "cleanup": "cleaned",
+      "instance_type": "g6.xlarge"
+    },
+    {
+      "manifest_sha256": "dbae1e0b21517d05dce344991cd5be1910a2b0275aade96d6e791ec723408c98",
+      "reason": "InsufficientInstanceCapacity: g6.xlarge in ca-central-1b",
+      "cleanup": "cleaned",
+      "instance_type": "g6.xlarge"
+    },
+    {
+      "manifest_sha256": "9018141d1a851c5d4b9d9bede328c9904634ae7d52c2666a3d5d1b56e392570b",
+      "reason": "InsufficientInstanceCapacity: g6.xlarge in ca-central-1d",
+      "cleanup": "cleaned",
+      "instance_type": "g6.xlarge"
+    },
+    {
+      "manifest_sha256": "428013ec669b54a1c5eb657c1f411a223f4d4dd2253610f7d4d65300146597ee",
+      "reason": "InsufficientInstanceCapacity: g6.2xlarge with automatic zone selection",
+      "cleanup": "cleaned",
+      "instance_type": "g6.2xlarge"
+    }
+  ],
+  "temporary_stacks_deleted": 5,
+  "next_proposal": "One g5.xlarge A10G in Canada Central at US$1.117/hour under the same US$2 budget; awaiting approval"
+}
