@@ -26,3 +26,4 @@ jobs:
       - run: python scripts/test_crownless_v2.py
       - run: python scripts/test_crownless_conversation.py
       - run: python scripts/test_crownless_performance.py
+      - run: python tests/test_reviewed_dialogue_pilot.py

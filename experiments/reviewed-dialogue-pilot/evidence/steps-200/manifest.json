@@ -1,0 +1,44 @@
+{
+  "seed": 912,
+  "steps": 200,
+  "batch_size": 8,
+  "learning_rate": 5e-05,
+  "device": "cpu",
+  "parameters": 4935937,
+  "torch": "2.8.0",
+  "base_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "approved_sources": [
+    "A001",
+    "A005",
+    "A009",
+    "A013",
+    "A017",
+    "A021",
+    "A022",
+    "A026",
+    "A033",
+    "A034",
+    "A038",
+    "A048"
+  ],
+  "train_turns": 42,
+  "replay_rows": 12,
+  "evaluation_accounts": 12,
+  "train_worlds": [
+    1201,
+    1202,
+    1203
+  ],
+  "evaluation_worlds": [
+    1401
+  ],
+  "split_check": "Separate seeds and no equal account text after case folding and numeral normalization. Event grammar and names can overlap.",
+  "checkpoint_selection": "Fixed final step; no test-driven selection.",
+  "input_hashes": {
+    "experiments/reviewed-dialogue-pilot/input/drafts.json": "db75a268d5f5fbd22443c3ec34d168f1300fa02d4247129d8bde4e4010f9218a",
+    "experiments/reviewed-dialogue-pilot/input/accounts.jsonl": "bc83a5d50cbe722b8a32663cba46848a20fea5e284254e874292c37e8318debd",
+    "/private/tmp/crownless-pilot-eval-1401/accounts.jsonl": "bdc1be08cd69a7c32220ea0cecb63df8491ce3b60a0c26add36b2e29287b0ba8"
+  },
+  "scope": "One local pilot, human-approved training targets. Listener gets history only; holder gets its own account. No game integration."
+}

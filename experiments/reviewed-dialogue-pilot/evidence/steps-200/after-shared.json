@@ -1,0 +1,278 @@
+[
+  {
+    "source_id": "A003",
+    "account": "Gloamgate's bakery mills 4 Wheat into 4 Bread.",
+    "confidence": 30,
+    "turns": [
+      {
+        "text": "Gloamgate made bread from wheat, if the story is right.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "I we unsure.",
+        "stopped": true
+      },
+      {
+        "text": "Agreed. How sure are you?",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A004",
+    "account": "Displaced workers reinforce The Unpaid Company on the old road.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Displaced workers reinforced The Unpaid Company on the old road.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That s joined I?",
+        "stopped": true
+      },
+      {
+        "text": "On the old road, Displaced workers gave support to The Unpaid Company.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A006",
+    "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch raised calves and added older calves to the working herd.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That too.",
+        "stopped": true
+      },
+      {
+        "text": "I do too.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A009",
+    "account": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Silverwick slaughtered cattle for beef when fodder ran short.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That sure for now.",
+        "stopped": true
+      },
+      {
+        "text": "Let's what",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A012",
+    "account": "A goblin rises to Voice in the dragon cult through service.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "A goblin rose to Voice in the dragon cult through service.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "Very well.",
+        "stopped": true
+      },
+      {
+        "text": "Service brought A goblin to the rank of Voice in the dragon cult.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A015",
+    "account": "Alder Concord moves 28 crowns into Gloamgate's market to buy real grain shipments.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Alder Concord put money into Gloamgate's market to buy grain shipments.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That s joined joined joined.",
+        "stopped": true
+      },
+      {
+        "text": "I w we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A021",
+    "account": "Alderwatch slaughters 1 sheep after winter fodder runs short; 2 Meat enters the local store as mutton.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch slaughtered sheep for mutton after winter fodder runs short.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That were slaughtered for mutton.",
+        "stopped": true
+      },
+      {
+        "text": "I we people say.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A028",
+    "account": "Thornford's drought harvest cannot supply the southern settlements.",
+    "confidence": 59,
+    "turns": [
+      {
+        "text": "Thornford's drought harvest fell short of what the southern settlements needed, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "The account say.",
+        "stopped": true
+      },
+      {
+        "text": "I wat's drought harvest fell short of what the Thornford fell short, and tools, so people say.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A030",
+    "account": "Thornford raises 1 common pony foal; 1 joins the working herd.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Thornford raised pony foals and added ponies to the working herd.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That� joined I heard too. I thatk around before we pass it on.",
+        "stopped": true
+      },
+      {
+        "text": "A pony foals were raised in Thornford, where ponies joined the working herd.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A033",
+    "account": "Alderwatch's flock raises 6 new lambs; 6 yearlings join the adult flock.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch raised lambs and added yearlings to the adult flock.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That tookk around before we you?",
+        "stopped": true
+      },
+      {
+        "text": "Lambs were raised in Alderwatch, where yearlings joined the adult flock.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A036",
+    "account": "Alderwatch's masons use 2 Stone to repair public buildings.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch repaired public buildings with stone.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold.",
+        "stopped": true
+      },
+      {
+        "text": "Masons in Alderwatch used stone to repair public buildings.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A039",
+    "account": "Rosespire's mill uses 1 Wood to make 4 Paper.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Rosespire made paper from Wood.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That tookk around beforeoree you?",
+        "stopped": true
+      },
+      {
+        "text": "Paper was made from Wood in Rosespire.",
+        "stopped": true
+      }
+    ]
+  }
+]
