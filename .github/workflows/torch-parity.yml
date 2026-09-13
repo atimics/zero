@@ -28,3 +28,4 @@ jobs:
       - run: python scripts/test_crownless_performance.py
       - run: python tests/test_reviewed_dialogue_pilot.py
       - run: python tests/test_matched_dialogue_study.py
+      - run: python tests/test_full_event_rehearsal.py

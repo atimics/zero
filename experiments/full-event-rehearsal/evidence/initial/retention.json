@@ -1,0 +1,17 @@
+{
+  "base": {
+    "count": 61,
+    "approved_forms": 61,
+    "stopped": 61
+  },
+  "narrow": {
+    "count": 61,
+    "approved_forms": 43,
+    "stopped": 61
+  },
+  "full": {
+    "count": 61,
+    "approved_forms": 55,
+    "stopped": 61
+  }
+}
