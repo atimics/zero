@@ -1,9 +1,12 @@
 # AWS CUDA timing package
 
 Current result: AWS capacity blocked the L4 attempts in all three Canadian
-zones and on the larger L4 host. All five temporary stacks are deleted.
-GPU instance time was zero. See `launch-result.json`. The A10G alternative
-in `a10-proposal-manifest.json` awaits approval for the different GPU.
+zones, the larger L4 host, and the approved A10G host with automatic zone
+selection. All six temporary stacks are deleted. GPU instance time was zero.
+See `launch-result.json`, `a10-launch-state.json` and `a10-collection.json`.
+The user approved the A10G package in `a10-proposal-manifest.json` under the
+US$2 budget. AWS returned `InsufficientInstanceCapacity` on execution.
+The approved A10G rate was US$1.117/hour. Timing remains pending capacity.
 
 Run one `g6.xlarge` in `ca-central-1` with the accepted experiment's model
 and training update. The workload uses synthetic token IDs, five warm-up
@@ -63,5 +66,5 @@ and run tag remain fixed. The launcher checks the AWS account, package
 hashes, stack ownership and existing launch state.
 
 Results include `timing.json`, the GPU description, installed dependencies,
-bootstrap log, exit receipt, collection hashes and cleanup state. Paid launch
-is the remaining approval step.
+bootstrap log, exit receipt, collection hashes and cleanup state. The A10G launch has user approval; its first attempt completed cleanup after
+AWS reported insufficient capacity.

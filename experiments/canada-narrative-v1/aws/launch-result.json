@@ -36,8 +36,18 @@
       "reason": "InsufficientInstanceCapacity: g6.2xlarge with automatic zone selection",
       "cleanup": "cleaned",
       "instance_type": "g6.2xlarge"
+    },
+    {
+      "manifest_sha256": "1f6c2ebc80877c1e805d9e57bae3dec4cdd7e6334649f65beb3c7a5b7bbe6d0b",
+      "reason": "InsufficientInstanceCapacity: g5.xlarge with automatic zone selection; AWS CLI reached max retries: 2",
+      "cleanup": "cleaned",
+      "instance_type": "g5.xlarge",
+      "user_approved": true,
+      "run_id": "zero-canada-timing-b6d52298c4b4-1789263165",
+      "stack_status": "DELETE_COMPLETE",
+      "stack_deleted_at": "2026-09-13T01:43:04.303000+00:00"
     }
   ],
-  "temporary_stacks_deleted": 5,
-  "next_proposal": "One g5.xlarge A10G in Canada Central at US$1.117/hour under the same US$2 budget; awaiting approval"
+  "temporary_stacks_deleted": 6,
+  "next_step": "Retry the approved A10G scope when Canada capacity is available; prepare a fresh package if the current one has expired."
 }

@@ -185,4 +185,6 @@ CUBLAS_WORKSPACE_CONFIG=:4096:8 /tmp/zero-canada-env/bin/python \
 
 The benchmark uses synthetic token IDs. It needs the pinned code and
 dependencies. Full corpus runs use the accepted delivery in Canada.
-AWS timing, cloud launch, and paid execution are pending.
+The user approved a US$2 timing run. AWS capacity blocked the L4 and A10G
+attempts. All six temporary stacks are deleted, with zero GPU runtime.
+See [launch receipts](aws/launch-result.json). AWS timing remains pending capacity.
