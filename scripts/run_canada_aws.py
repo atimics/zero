@@ -78,7 +78,10 @@ def run(directory, expected, mode):
         if mode == 'launch':
             aws('s3', 'cp', str(directory / 'source.tar.gz'), f's3://{bucket}/source.tar.gz', '--only-show-errors', raw=True)
             request = read(directory / 'request.template.json')
-            request['NetworkInterfaces'][0]['Groups'] = [outputs['SecurityGroup']]
+            if 'NetworkInterfaces' in request:
+                request['NetworkInterfaces'][0]['Groups'] = [outputs['SecurityGroup']]
+            else:
+                request['SecurityGroupIds'] = [outputs['SecurityGroup']]
             request['IamInstanceProfile']['Name'] = outputs['Profile']
             script = (directory / 'user-data.template.sh').read_text().replace('__BUCKET__', bucket)
             request['UserData'] = base64.b64encode(script.encode()).decode()

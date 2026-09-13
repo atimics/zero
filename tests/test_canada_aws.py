@@ -54,6 +54,17 @@ class CanadaAwsTests(unittest.TestCase):
         self.assertTrue(request['BlockDeviceMappings'][0]['Ebs']['Encrypted'])
         self.assertEqual(self.manifest['requested_budget_usd'], 2)
 
+    def test_same_gpu_fallback_stays_within_budget(self):
+        output = Path(self.temporary.name) / 'fallback'
+        manifest = prepare(output, now=1789260000, subnet=None, instance_type='g6.2xlarge')
+        request = json.loads((output / 'request.template.json').read_text())
+        self.assertEqual(request['InstanceType'], 'g6.2xlarge')
+        self.assertIn('SecurityGroupIds', request)
+        self.assertNotIn('NetworkInterfaces', request)
+        self.assertEqual(manifest['requested_budget_usd'], 2)
+        self.assertLess(manifest['planning_instance_usd_at_31_minutes'], 1)
+        self.assertEqual(manifest['files']['source.tar.gz'], self.manifest['files']['source.tar.gz'])
+
     def test_watchdog_deadline_including_stopped(self):
         now = datetime.datetime.now(datetime.timezone.utc)
         self.assertFalse(expired({'LaunchTime': now - datetime.timedelta(seconds=1799)}, now))

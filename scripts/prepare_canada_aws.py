@@ -82,9 +82,13 @@ def package_source(output):
     return hashes
 
 
-def prepare(output, now=None, subnet="subnet-a24506fe"):
-    if subnet not in ["subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
+def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge'):
+    if subnet not in [None, "subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
         raise ValueError("Choose a verified Canada Central subnet")
+    prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547}
+    if instance_type not in prices:
+        raise ValueError('Choose a single-L4 instance within the timing budget')
+    price = prices[instance_type]
     now = int(time.time()) if now is None else now
     output.mkdir(parents=True, exist_ok=False)
     files = package_source(output)
@@ -94,7 +98,7 @@ def prepare(output, now=None, subnet="subnet-a24506fe"):
     write_json(output / 'stack.json', template(run_id, end))
     bootstrap = (ROOT / 'scripts/aws_canada_bootstrap.sh').read_text().replace('__SOURCE_SHA__', source_sha)
     (output / 'user-data.template.sh').write_text(bootstrap)
-    request = {'ImageId': 'ami-092e8a40239c8733d', 'InstanceType': 'g6.xlarge', 'MinCount': 1, 'MaxCount': 1,
+    request = {'ImageId': 'ami-092e8a40239c8733d', 'InstanceType': instance_type, 'MinCount': 1, 'MaxCount': 1,
                'ClientToken': hashlib.sha256(run_id.encode()).hexdigest(),
                'InstanceInitiatedShutdownBehavior': 'terminate',
                'MetadataOptions': {'HttpTokens': 'required', 'HttpEndpoint': 'enabled', 'HttpPutResponseHopLimit': 1},
@@ -107,14 +111,17 @@ def prepare(output, now=None, subnet="subnet-a24506fe"):
                'TagSpecifications': [{'ResourceType': resource, 'Tags': [
                    {'Key': 'Name', 'Value': run_id}, {'Key': 'ZeroTimingRun', 'Value': run_id},
                    {'Key': 'Project', 'Value': 'zero'}]} for resource in ['instance', 'volume']]}
+    if subnet is None:
+        del request['NetworkInterfaces']
+        request['SecurityGroupIds'] = ['__STACK_SECURITY_GROUP__']
     write_json(output / 'request.template.json', request)
     (output / 'launch.py').write_bytes((ROOT / 'scripts/run_canada_aws.py').read_bytes())
     manifest = {'schema': 1, 'status': 'prepared-awaiting-paid-launch-approval', 'region': 'ca-central-1',
                 'account': '022118847419', 'run_id': run_id, 'created_at': now, 'launch_valid_until': now + 86400,
-                'instance_type': 'g6.xlarge', 'instance_count': 1, 'hourly_instance_usd': .8936,
+                'instance_type': instance_type, 'instance_count': 1, 'hourly_instance_usd': price,
                 'requested_budget_usd': 2, 'workload_timeout_seconds': 900,
                 'watchdog_maximum_age_seconds': 1800, 'watchdog_check_interval_seconds': 60,
-                'planning_instance_usd_at_31_minutes': .8936 * 31 / 60,
+                'planning_instance_usd_at_31_minutes': price * 31 / 60,
                 'scope': '105 synthetic updates, CUDA numerical check and timing; zero corpus training presentations',
                 'shutdown': 'Guest shutdown at success/failure and +30 minutes; AWS watchdog checks instance age each minute',
                 'cleanup': 'Collect results locally, confirm instance termination, empty temporary bucket and delete stack',
@@ -128,4 +135,8 @@ def prepare(output, now=None, subnet="subnet-a24506fe"):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    args = parser.parse_args(); print(json.dumps(prepare(args.output), indent=2))
+    parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge'], default='g6.xlarge')
+    parser.add_argument('--automatic-zone', action='store_true')
+    args = parser.parse_args()
+    print(json.dumps(prepare(args.output, subnet=None if args.automatic_zone else 'subnet-a24506fe',
+                             instance_type=args.instance_type), indent=2))
