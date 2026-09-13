@@ -1,0 +1,278 @@
+[
+  {
+    "source_id": "A003",
+    "account": "Gloamgate's bakery mills 4 Wheat into 4 Bread.",
+    "confidence": 30,
+    "turns": [
+      {
+        "text": "Gloamgate has made bread.",
+        "stopped": true
+      },
+      {
+        "text": "W theouldLet's what there.",
+        "stopped": true
+      },
+      {
+        "text": "Very well.",
+        "stopped": true
+      },
+      {
+        "text": "Agreed.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A004",
+    "account": "Displaced workers reinforce The Unpaid Company on the old road.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Displaced workers reinforced The Unpaid Company on the old road.",
+        "stopped": true
+      },
+      {
+        "text": "What would Hollowbarrow?",
+        "stopped": true
+      },
+      {
+        "text": "That se I?",
+        "stopped": true
+      },
+      {
+        "text": "What a terrible price for Hollowbarrow?",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A006",
+    "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch raised calves and added older calves to the working herd.",
+        "stopped": true
+      },
+      {
+        "text": "I hope people say.",
+        "stopped": true
+      },
+      {
+        "text": "I different account. C thereat too.",
+        "stopped": true
+      },
+      {
+        "text": "There after the company fell, a new calf looking long to the wheat.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A009",
+    "account": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Silverwick slaughtered cattle for beef when fodder ran short.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what there.",
+        "stopped": true
+      },
+      {
+        "text": "I w set's what people say.",
+        "stopped": true
+      },
+      {
+        "text": "I hope there was delayed when a news, according to the word going round.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A012",
+    "account": "A goblin rises to Voice in the dragon cult through service.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "A goblin rose to Voice in the dragon cult through service.",
+        "stopped": true
+      },
+      {
+        "text": "Keeper?",
+        "stopped": true
+      },
+      {
+        "text": "Yes. That is the title.",
+        "stopped": true
+      },
+      {
+        "text": "Good for them.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A015",
+    "account": "Alder Concord moves 28 crowns into Gloamgate's market to buy real grain shipments.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Alder Concord put money into Gloamgate's market to buy grain shipments.",
+        "stopped": true
+      },
+      {
+        "text": "I hope well?",
+        "stopped": true
+      },
+      {
+        "text": "That seems to be the plan, if the story is right.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what there.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A021",
+    "account": "Alderwatch slaughters 1 sheep after winter fodder runs short; 2 Meat enters the local store as mutton.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch slaughtered sheep for mutton after winter fodder runs short.",
+        "stopped": true
+      },
+      {
+        "text": "Who was it meant toI?",
+        "stopped": true
+      },
+      {
+        "text": "The account say.",
+        "stopped": true
+      },
+      {
+        "text": "There it and public works came from Hollowbarrow?",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A028",
+    "account": "Thornford's drought harvest cannot supply the southern settlements.",
+    "confidence": 59,
+    "turns": [
+      {
+        "text": "Thornford’s drought harvest fell short, and the story is right.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what the new calf looks like.",
+        "stopped": true
+      },
+      {
+        "text": "I wat is there.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what there.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A030",
+    "account": "Thornford raises 1 common pony foal; 1 joins the working herd.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Thornford raised pony foals and added ponies to the working herd.",
+        "stopped": true
+      },
+      {
+        "text": "I heepdave someone who was completed in Hollowbarrow?",
+        "stopped": true
+      },
+      {
+        "text": "A pony has joined it, I hear.",
+        "stopped": true
+      },
+      {
+        "text": "That’s hard news for them.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A033",
+    "account": "Alderwatch's flock raises 6 new lambs; 6 yearlings join the adult flock.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch raised lambs and added yearlings to the adult flock.",
+        "stopped": true
+      },
+      {
+        "text": "I heep account has were raised in Hollowbarrow?",
+        "stopped": true
+      },
+      {
+        "text": "That se I?",
+        "stopped": true
+      },
+      {
+        "text": "That’s hard news for them.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A036",
+    "account": "Alderwatch's masons use 2 Stone to repair public buildings.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch repaired public buildings with stone.",
+        "stopped": true
+      },
+      {
+        "text": "I heard a different account. The company delivered Hollowbarrow?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what happened to the wheat.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "source_id": "A039",
+    "account": "Rosespire's mill uses 1 Wood to make 4 Paper.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Rosespire made paper from Wood.",
+        "stopped": true
+      },
+      {
+        "text": "Frown wheat?",
+        "stopped": true
+      },
+      {
+        "text": "Yes.",
+        "stopped": true
+      },
+      {
+        "text": "Grownslda looking long?",
+        "stopped": true
+      }
+    ]
+  }
+]
