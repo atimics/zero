@@ -1,0 +1,62 @@
+{
+  "reviewer": "Assistant",
+  "scope": "One qualitative reading of all four-turn outputs; human preference review pending. Natural means readable, on-topic and consistent across the exchange. Repetitive means relevant but repeating a question or answer. Broken means malformed speech, wrong topic, or a material factual error.",
+  "ratings": {
+    "small": {
+      "natural": [
+        "A004",
+        "A013",
+        "A016",
+        "A001"
+      ],
+      "repetitive": [
+        "A020",
+        "A007"
+      ],
+      "broken": [
+        "A046",
+        "A051",
+        "A054",
+        "A010",
+        "A057",
+        "A043",
+        "A038",
+        "A034",
+        "A048",
+        "A079"
+      ]
+    },
+    "broad": {
+      "natural": [
+        "A004",
+        "A013",
+        "A007",
+        "A016",
+        "A001",
+        "A034"
+      ],
+      "repetitive": [
+        "A020",
+        "A010",
+        "A038",
+        "A079"
+      ],
+      "broken": [
+        "A046",
+        "A051",
+        "A054",
+        "A057",
+        "A043",
+        "A048"
+      ]
+    }
+  },
+  "broad_failure_kinds": {
+    "A046": "ROUTE",
+    "A051": "SHORTAGE",
+    "A054": "TREASURE",
+    "A057": "WOODLOT",
+    "A043": "QUARRY",
+    "A048": "SHEARING"
+  }
+}

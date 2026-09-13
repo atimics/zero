@@ -1,0 +1,33 @@
+{
+  "before": {
+    "lines": 64,
+    "distinct": 20,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0
+  },
+  "small": {
+    "lines": 64,
+    "distinct": 61,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0,
+    "fit_exact": 29,
+    "fit_tested": 40,
+    "candidate_sha256": "ccaeb8bf955577dc7f2c794399dfef20a745ad0c4e08534ec0beffb54bb1c732",
+    "training_seconds": 80.71399695798755,
+    "opening_unchanged": 14
+  },
+  "broad": {
+    "lines": 64,
+    "distinct": 57,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 1,
+    "fit_exact": 106,
+    "fit_tested": 148,
+    "candidate_sha256": "d61d131b8c99e52302d71b58fdeb35aa19533dc224798444967ee871f2c1e437",
+    "training_seconds": 74.64329345803708,
+    "opening_unchanged": 8
+  }
+}
