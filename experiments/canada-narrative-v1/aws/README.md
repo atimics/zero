@@ -1,5 +1,10 @@
 # AWS CUDA timing package
 
+Current result: AWS capacity blocked the L4 attempts in all three Canadian
+zones and on the larger L4 host. All five temporary stacks are deleted.
+GPU instance time was zero. See `launch-result.json`. The A10G alternative
+in `a10-proposal-manifest.json` awaits approval for the different GPU.
+
 Run one `g6.xlarge` in `ca-central-1` with the accepted experiment's model
 and training update. The workload uses synthetic token IDs, five warm-up
 updates and 100 measured updates. It compares initial CUDA bfloat16 logits
