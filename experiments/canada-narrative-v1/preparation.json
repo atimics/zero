@@ -1,0 +1,27 @@
+{
+  "manifest_sha256": "0ceb3f8a98484a066732b4a2ec8d7bb62b644d3e86fbc5f1d45da0856644e0c4",
+  "manifest": {
+    "schema": 1,
+    "status": "prepared",
+    "training_presentations": 0,
+    "lock_sha256": "0f25df0e9e072d22d64b597f6f8b7203e0d0ecf39c63acf1170fd0a4957cb13f",
+    "counts": {
+      "A": 27157194,
+      "B": 27157191,
+      "C": 100499909
+    },
+    "evaluation_source": "Frozen A validation; protected in accepted B/C delivery",
+    "B_subset_C": true,
+    "files": {
+      "A.bin": "b733e17de9fc6cf8635a5fe8e84f2df8d606491b583032ff9fc7663a88c75a79",
+      "B.bin": "77625d58953f00eb607a9494b26a6ae55cc26e6e26ae81850bcb5cb0b34b7f83",
+      "B.records.jsonl": "aa6f55801f7ade1ebffda51547005d717b5b59aa04b22c920fd7094e5d06b9ff",
+      "C.bin": "4668d1bc6b384e33708f60254c0ad92bb326dd0bf29350340d73ab705b8e83aa",
+      "C.records.jsonl": "f78d045d17a23aeea110ef81a6a21c7249102ae5dd48b31839ac5c7f43620646",
+      "evaluation.json": "3b201ac8132c1a8190341c11793777af1004377f9c39d233a8b6d72a09ffba76",
+      "token_bytes.json": "48c0f3ef6da93d58e658de6a0bcff31410852606e4fd10eb8703b8bb63d34194",
+      "tokenizer.json": "90cdcc504c5311586cbe1f9c27b402e11c57ba5475521536f28beb6762939d43",
+      "validation.bin": "bd7a453c6a0ba5edd7c3460b9cfc2d703435c703d1d104a07d957a8cd965230b"
+    }
+  }
+}
