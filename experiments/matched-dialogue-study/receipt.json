@@ -1,0 +1,28 @@
+{
+  "files": {
+    "experiments/matched-dialogue-study/RESULT.md": "17a90c79c98d74b9d3ea3386258ea2d10a98d01a59ac1d8c4e0e39a078ef888b",
+    "experiments/matched-dialogue-study/SAMPLES.md": "f9362a56c14c017926da761c55849ceda3ce2bf97363a942eb51bbe7a73538c3",
+    "experiments/matched-dialogue-study/PLAN.md": "b6a0a4c3cc59890acc498b910613b49ba5cf720ae45acb6c594622163a2f6b6c",
+    "experiments/matched-dialogue-study/review.json": "2351ad4a7f9bc1f21de6f50859fd17562528852222cbeabf4002d1ecc3f73ffa",
+    "experiments/matched-dialogue-study/evidence/before.json": "3fecbf5c1b5577a4393baf65d57a20c6f6bbca7bd135355e02dc11c4ff158581",
+    "experiments/matched-dialogue-study/evidence/small-fit.json": "5902a9c5ad0e69f688e7e1d36e1788273ebdeebc3f08074de27d7d207bd66cfe",
+    "experiments/matched-dialogue-study/evidence/broad-replay.json": "1366305d32602c03b2acfe759783bf5f72ee5d719b1025fae5ca29818031bdf4",
+    "experiments/matched-dialogue-study/evidence/small-after.json": "4036b5f59cb858d232ed6b431e9c9ddf8fd49a29370307236d28e621d008c29a",
+    "experiments/matched-dialogue-study/evidence/results.json": "d0a8c14e996d2e69ae4168a2523a9932c43f32d1f562a2bb4c9d7eb3f945543d",
+    "experiments/matched-dialogue-study/evidence/broad-train.json": "37fa1f9247ceff0a9fb641c829235c33f9563696cfc13e2133127039557d785f",
+    "experiments/matched-dialogue-study/evidence/small-replay.json": "c1c92a30aca81c161da0ae5905098c791ef6bee5c158d676fbf8cd8713d545c1",
+    "experiments/matched-dialogue-study/evidence/small-train.json": "263d7b85600439ba86ee4cf4c555e362e1f54c18acf80b39b132f85ae4de6284",
+    "experiments/matched-dialogue-study/evidence/evaluation-accounts.json": "801ff86b4d7514df174b05979711430ea6e302c277ca67a123789dae353d6901",
+    "experiments/matched-dialogue-study/evidence/small-history.json": "541e9e94530397ebddfc7885594d6d50db7f923699d683003c4bc8f0b2c50deb",
+    "experiments/matched-dialogue-study/evidence/input-overlap.json": "f693218067b61ba9c77d3f88ed08300d0cf49efc9342efc41f069ca63dc55db9",
+    "experiments/matched-dialogue-study/evidence/manifest.json": "b01bb62dbb131f044dcd38c7c8fe79e374485807253f85c63ac9a08e31dd1e1c",
+    "experiments/matched-dialogue-study/evidence/broad-after.json": "b251e132c358c48baa6aa51b0efe516bf67a56f711149176c420e68ad989785c",
+    "experiments/matched-dialogue-study/evidence/broad-fit.json": "8ada198faa9069623bde4ede99db37ca390def501066a530d3acdb570c2414c5",
+    "experiments/matched-dialogue-study/evidence/broad-history.json": "77a6623e805e8d658207f1aeed5f8bd0299c99a1c2ff09ad43516885ecf6cd35",
+    "experiments/matched-dialogue-study/input/evaluation-generation.json": "4fedce8297afed32c7a1937e8821affabbde1469a45d2bd435dd86d92bf6d8fd",
+    "experiments/matched-dialogue-study/input/evaluation-accounts.jsonl": "cb1e9193c91fdbb6b17137db6e7612e46cc6fe48687cc00af61baee49ed76e01",
+    "scripts/run_matched_dialogue_study.py": "8155baf7e438d1cf246026d109f5eeeaafd1b41e100aad7a7842137ca7c475ab",
+    "scripts/audit_matched_dialogue_inputs.py": "63a50496a8dc881f37ffb09ca3dbc1584da1cced706640edfb99c536c0c93d03",
+    "tests/test_matched_dialogue_study.py": "cd396d7a705fd2483dd96fd5f49cd02844c2803652dbb0408a845ece4114401a"
+  }
+}

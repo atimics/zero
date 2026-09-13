@@ -1,0 +1,370 @@
+[
+  {
+    "id": "A046",
+    "account": "Alderwatch closes the treaty bridge and delays the relief convoy.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Alderwatch’se I heard too.",
+        "stopped": true
+      },
+      {
+        "text": "What happened too.",
+        "stopped": true
+      },
+      {
+        "text": "That’s have too.",
+        "stopped": true
+      },
+      {
+        "text": "The relief convoy.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A051",
+    "account": "Gloamgate has 0 food in store. Its reserve target is 75.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Gloamgate has made bread.",
+        "stopped": true
+      },
+      {
+        "text": "What?",
+        "stopped": true
+      },
+      {
+        "text": "The account say.",
+        "stopped": true
+      },
+      {
+        "text": "The account sayssy took the money was there.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A004",
+    "account": "Quillen Longreckon joins The Ditch Parliament after 4 days seeking food at Silverwick.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Quillen Longreckon joined The Ditch Parliament after seeking food at Silverwick.",
+        "stopped": true
+      },
+      {
+        "text": "For long?",
+        "stopped": true
+      },
+      {
+        "text": "Days.",
+        "stopped": true
+      },
+      {
+        "text": "A long wait for a meal.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A020",
+    "account": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+    "confidence": 59,
+    "turns": [
+      {
+        "text": "Star Oath put money into Hollowbarrow's market to buy grain shipments, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "How soon might the grain come?",
+        "stopped": true
+      },
+      {
+        "text": "I’d like to know that myself.",
+        "stopped": true
+      },
+      {
+        "text": "I’d like to know that myself.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A054",
+    "account": "Rosespire finishes Rosespire Ash Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Rosespire made paper from Rosespire Ash Crown.",
+        "stopped": true
+      },
+      {
+        "text": "From what?",
+        "stopped": true
+      },
+      {
+        "text": "Rosespire finished making Rosespire Ash Crown.",
+        "stopped": true
+      },
+      {
+        "text": "Cill lits fodder ran short.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A013",
+    "account": "A goblin rises to Voice in the dragon cult through service.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "A goblin rose to Voice in the dragon cult through service.",
+        "stopped": true
+      },
+      {
+        "text": "Voice?",
+        "stopped": true
+      },
+      {
+        "text": "Yes. That is the title.",
+        "stopped": true
+      },
+      {
+        "text": "Good for them.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A007",
+    "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch raised calves and added older calves to the working herd.",
+        "stopped": true
+      },
+      {
+        "text": "The new one is still growing?",
+        "stopped": true
+      },
+      {
+        "text": "Yes. The older one joined the workers.",
+        "stopped": true
+      },
+      {
+        "text": "That is good news for the herd.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A010",
+    "account": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Silverwick slaughtered cattle for beef when fodder ran short.",
+        "stopped": true
+      },
+      {
+        "text": "Will the rest have enough feed?",
+        "stopped": true
+      },
+      {
+        "text": "That’s worth asking.",
+        "stopped": true
+      },
+      {
+        "text": "That’s worth asking.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A016",
+    "account": "Skella Mailmender died at age 65 after a life in Alderwatch.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Skella Mailmender has died.",
+        "stopped": true
+      },
+      {
+        "text": "Where did Skella Mailmender live?",
+        "stopped": true
+      },
+      {
+        "text": "Alderwatch.",
+        "stopped": true
+      },
+      {
+        "text": "I’m sorry to hear it.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A057",
+    "account": "Silverwick's woodlot cuts 1 Wood and wears two Tools bundle.",
+    "confidence": 73,
+    "turns": [
+      {
+        "text": "Silverwick has died.",
+        "stopped": true
+      },
+      {
+        "text": "What happened to?",
+        "stopped": true
+      },
+      {
+        "text": "That’s wor.",
+        "stopped": true
+      },
+      {
+        "text": "I hopee��’s.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A001",
+    "account": "Gloamgate's bakery mills 7 Wheat into 7 Bread.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Gloamgate made bread from wheat.",
+        "stopped": true
+      },
+      {
+        "text": "From wheat?",
+        "stopped": true
+      },
+      {
+        "text": "Yes.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what the bread is like.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A043",
+    "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Silverwick made bread from Silverwick.",
+        "stopped": true
+      },
+      {
+        "text": "From what?",
+        "stopped": true
+      },
+      {
+        "text": "Sill beould I.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what how know that.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A038",
+    "account": "Alderwatch's masons use 2 Stone to repair public buildings.",
+    "confidence": 63,
+    "turns": [
+      {
+        "text": "Alderwatch repaired public buildings with stone, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "They’d like to see the work.",
+        "stopped": true
+      },
+      {
+        "text": "They’d like to see the work.",
+        "stopped": true
+      },
+      {
+        "text": "I’d like to see the work.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A034",
+    "account": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Thornford has new lambs, and yearlings have joined the adult flock.",
+        "stopped": true
+      },
+      {
+        "text": "The yearlings are the older ones?",
+        "stopped": true
+      },
+      {
+        "text": "Yes. The lambs still have their growing to do.",
+        "stopped": true
+      },
+      {
+        "text": "Good to hear they’re growing.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A048",
+    "account": "Silverwick shears the spring flock and stores 3 Wool.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Silverwick has made bread.",
+        "stopped": true
+      },
+      {
+        "text": "From what?",
+        "stopped": true
+      },
+      {
+        "text": "Yes.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what hapeat have they wonder what hapt on it.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A079",
+    "account": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Thornford slaughtered sheep for mutton in the autumn cull.",
+        "stopped": true
+      },
+      {
+        "text": "What happened to the meat?",
+        "stopped": true
+      },
+      {
+        "text": "The mutton went into the local store.",
+        "stopped": true
+      },
+      {
+        "text": "What happened to the meat?",
+        "stopped": true
+      }
+    ]
+  }
+]
