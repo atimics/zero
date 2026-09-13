@@ -2,7 +2,7 @@
   "files": {
     "scripts/canada_narrative.py": "dd55c280997c70d79544452d1da8072bcfc3498b1c0f7584f4b0b33eaf54b561",
     "scripts/run_canada_narrative.py": "18dae03df473ca76721d3cc0cc975367553323a6b738d28bcb5b07c01ea9edd4",
-    "scripts/review_canada_narrative.py": "590c92b1a04d18748ca5242132a680305d1bd94178bba8cf5dd96470813fb49c",
+    "scripts/review_canada_narrative.py": "50102609e73a62f8bea8685419713813916dc7cb0dc12753f5597bb4f1724e03",
     "scripts/subword_model.py": "68a3f8e7cba83302c0b793a4ee7eb156cfa95f16503073275bbd45e8abe86ba6",
     "scripts/zero_torch.py": "656a281c43de037ff71ff86d149ad7c6b5f5f3112318a839c1110d90a7bd28cc",
     "scripts/ab_review.py": "b1b3e1e75389f9b3c3bfb59df6a817d489035f62e6eeb72586ab6dc2264c7413",

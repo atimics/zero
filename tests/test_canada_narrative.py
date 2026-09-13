@@ -116,6 +116,21 @@ class CanadaTests(unittest.TestCase):
         with self.assertRaises((ValueError, KeyError)):
             validate_pair({'status': 'incomplete'}, {}, 'AB', 'x')
 
+    def test_paired_budget_and_seed_identity(self):
+        from canada_narrative import digest
+        control = {'status': 'trained', 'comparison': 'AB', 'arm': 'A', 'seed': 7,
+                   'target_presentations': 27157191, 'manifest_sha256': 'manifest',
+                   'contract_sha256': digest(EXPERIMENT / 'contract.json'),
+                   'implementation_sha256': digest(EXPERIMENT / 'implementation.lock.json'),
+                   'initial_weights_sha256': 'weights', 'config': 'same',
+                   'parameters': 5049600, 'device': 'cpu', 'platform': 'same'}
+        candidate = {**control, 'arm': 'B'}
+        validate_pair(control, candidate, 'AB', 'manifest')
+        with self.assertRaises(ValueError):
+            validate_pair(control, {**candidate, 'seed': 17}, 'AB', 'manifest')
+        with self.assertRaises(ValueError):
+            validate_pair(control, {**candidate, 'target_presentations': 27157192}, 'AB', 'manifest')
+
     def test_replication_requires_matching_passing_pilot(self):
         from canada_narrative import digest
         runner.validate_seed(7, 'AB', 'manifest')

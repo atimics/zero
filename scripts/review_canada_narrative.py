@@ -1,6 +1,7 @@
 """Score a finished pair and create the existing five-pair review page."""
 import argparse
 import hashlib
+import html
 import json
 import math
 from pathlib import Path
@@ -81,6 +82,9 @@ def build(args):
     write_json(args.output / 'ab-packet.json', packet)
     write_json(args.output / 'blind-key.json', key)
     template = (ROOT / 'scripts/ab_review.html').read_text()
+    rubric = read_json(EXPERIMENT / 'contract.json')['evaluation']['human_review']['rubric']
+    template = template.replace('<p>Pick A or B. Skip whenever you want.</p>',
+                                '<p>' + html.escape(rubric) + '</p>')
     payload = json.dumps(packet).replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
     (args.output / 'ab-review.html').write_text(template.replace('/*PACKET*/null', payload))
     improvement = 1 - scores[1]['bits_per_byte'] / scores[0]['bits_per_byte']
