@@ -1,0 +1,19 @@
+{
+  "before": {
+    "lines": 64,
+    "distinct": 21,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0
+  },
+  "full": {
+    "lines": 64,
+    "distinct": 44,
+    "stopped": 64,
+    "empty": 0,
+    "replacement_character": 0,
+    "opening_unchanged": 9,
+    "candidate_sha256": "dadef6cf7bfdf110d4dd7a34d61f16c8fc2d3200203b5ffb2ee0e486204d4805",
+    "training_seconds": 95.40379345882684
+  }
+}
