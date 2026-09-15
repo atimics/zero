@@ -17,8 +17,11 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# crownless_conversation.py is not imported by the trainer, but the run manifest
+# hashes it for provenance, so the package carries it too.
 SCRIPTS = ['scripts/crownless_v2.py', 'scripts/crownless_v2_export.py',
-           'scripts/crownless_moves.py', 'scripts/train_crownless_moves.py']
+           'scripts/crownless_moves.py', 'scripts/crownless_conversation.py',
+           'scripts/train_crownless_moves.py']
 CORPUS = ['train.jsonl', 'validation.jsonl', 'test.jsonl', 'wording.jsonl',
           'rules.json', 'manifest.json']
 
