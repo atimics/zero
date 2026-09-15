@@ -63,15 +63,45 @@ def bridged(row, rng):
                      'courage': rng.choice(LEVELS), 'memories': [], 'thoughts': []}}
 
 
-def quality(row, text, stopped, rules, known=None):
+def shape(text, row):
+    """A wording with the copied spans blanked out. Two rows of the same move
+    differ by the names they carry; their shape is what the move sounds like."""
+    for span in row.get('copies', []):
+        text = text.replace(span['text'], '<>')
+    return text
+
+
+def shapes_by_move(*groups):
+    """Every shape each move is written in, across the whole corpus. A reply
+    that matches one of these performed the move; whether it also matched the
+    stance and voice of this particular row is the separate, harder question
+    that `exact` asks."""
+    known = {}
+    for rows in groups:
+        for row in rows:
+            if 'move' not in row: continue
+            known.setdefault(row['move'], set()).update(
+                shape(wording, row) for wording in row.get('accepted', [row['output']]))
+    return known
+
+
+def quality(row, text, stopped, rules, known=None, moves=None):
     """Exact match cannot tell a fair paraphrase from a collapse, and repetition
     is only one shape of collapse: 'It wellerve bea fim' carries no repeat, so
-    the word list is what catches it."""
+    the word list is what catches it.
+
+    `exact` asks for this row's cell: the wording this move takes at this
+    stance, in this voice, out of as many as 568 the move is written in. A
+    model that has learned the move and missed the cell scores as low there as
+    one emitting nonsense -- 3.7% on affirm, 0.8% on open -- so `move` is
+    reported beside it, and the collapse checks below are what separate the two
+    failures."""
     words = text.split()
     local = (vocabulary([row]) | known) if known else None
     invented = [w for w in WORD.findall(text) if w.lower() not in local] if local else []
     copies = [span['text'] for span in row.get('copies', [])]
     return {'exact': stopped and text in row.get('accepted', [row['output']]),
+            'move': bool(stopped and moves and shape(text, row) in moves.get(row.get('move'), ())),
             'stopped': stopped, 'leaked': '# ' in text,
             'degenerate': bool(REPEAT.search(text)) or len(invented) >= 2 or
                           (len(words) > 3 and len(set(words)) < len(words) / 2),
@@ -79,7 +109,7 @@ def quality(row, text, stopped, rules, known=None):
             'copied': all(span in text for span in copies) if copies else None}
 
 
-def evaluate(model, tokenizer, rows, rules, label, known=None):
+def evaluate(model, tokenizer, rows, rules, label, known=None, moves=None):
     """Runs on an already-CPU model. Moving the training model across devices
     mid-run strands the optimiser state on the accelerator and thrashes it."""
     model.eval()
@@ -88,20 +118,23 @@ def evaluate(model, tokenizer, rows, rules, label, known=None):
         result = generate(model, tokenizer, encoded(tokenizer, row))
         scored.append({'id': row['id'], 'act': row.get('act', 'account'),
                        'reference': row['output'], 'text': result['text'],
-                       **quality(row, result['text'], result['stopped'], rules, known)})
+                       **quality(row, result['text'], result['stopped'], rules, known, moves)})
     copied = [x['copied'] for x in scored if x['copied'] is not None]
     spread = {a: len({x['text'] for x in scored if x['act'] == a})
               for a in sorted({x['act'] for x in scored})}
     return {'label': label, 'count': len(scored), 'distinct': spread,
             'thinnest': min(spread.values()) if spread else 0,
             'exact': sum(x['exact'] for x in scored),
+            'move': sum(x['move'] for x in scored),
             'stopped': sum(x['stopped'] for x in scored),
             'leaked': sum(x['leaked'] for x in scored),
             'degenerate': sum(x['degenerate'] for x in scored),
             'empty': sum(x['empty'] for x in scored),
             'copied': f'{sum(copied)}/{len(copied)}' if copied else 'n/a',
+            'copied_all': all(copied) if copied else True,
             'acts': {act: {'count': sum(x['act'] == act for x in scored),
                            'exact': sum(x['act'] == act and x['exact'] for x in scored),
+                           'move': sum(x['act'] == act and x['move'] for x in scored),
                            'degenerate': sum(x['act'] == act and x['degenerate'] for x in scored)}
                      for act in sorted({x['act'] for x in scored})}}, scored
 
@@ -127,8 +160,14 @@ def main():
     p.add_argument('--lr', type=float, default=5e-5)
     p.add_argument('--guard-rows', type=int, default=48)
     p.add_argument('--guard-every', type=int, default=500)
-    p.add_argument('--accept-rate', type=float, default=0.5,
-                   help='Share of guard rows whose reply must be an accepted wording')
+    p.add_argument('--accept-move-rate', type=float, default=0.83,
+                   help='Share of guard rows whose reply must be a known wording of the '
+                        'row\'s move. The gate proper: the base scores 9/48 here.')
+    p.add_argument('--accept-rate', type=float, default=0.0,
+                   help='Share of guard rows whose reply must be the wording this row\'s '
+                        'stance and voice call for, out of as many as 568 the move is '
+                        'written in. Reported rather than gated until a run measures what '
+                        'is reachable; raise it once one has.')
     p.add_argument('--variety', type=int, default=2,
                    help='Distinct replies the thinnest move must reach on the guard set')
     p.add_argument('--eval-rows', type=int, default=260)
@@ -159,6 +198,7 @@ def main():
     # it is both the distillation anchor and the regression guard.
     talk = [r for r in corpus['train'] if MOVES[r['move']] == 'spoken']
     known = vocabulary(*corpus.values(), chat)
+    move_shapes = shapes_by_move(*corpus.values(), chat)
 
     args.output.mkdir(parents=True)
     (args.output / 'tokenizer.json').write_bytes(args.tokenizer.read_bytes())
@@ -171,6 +211,13 @@ def main():
                 'seed': args.seed, 'steps': args.steps, 'batch_size': args.batch_size,
                 'bridge_ratio': args.bridge_ratio, 'distill': args.distill, 'lr': args.lr,
                 'moves': list(MOVES), 'variety_floor': args.variety,
+                'contract': {'move_rate': args.accept_move_rate, 'cell_rate': args.accept_rate,
+                             'variety': args.variety, 'guard_rows': args.guard_rows,
+                             'hard': ['no degenerate', 'no leaked', 'all stopped',
+                                      'every copy-bearing row keeps its spans'],
+                             'declared': 'Move accuracy gates; cell accuracy is recorded for '
+                                         'the next contract to set. Thresholds are fixed '
+                                         'before the run and not moved during it.'},
                 'scope': 'Thirteen acts in one corpus, anchored to the shipped conversation '
                          'model and gated on generated answers rather than loss.'}
     (args.output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
@@ -181,13 +228,21 @@ def main():
     validation = [encoded(tokenizer, r) for r in sample]
     talk_validation = [encoded(tokenizer, r) for r in
                        [x for x in corpus['validation'] if MOVES[x['move']] == 'spoken'][:244]]
-    guard = [x for x in corpus['validation'] if MOVES[x['move']] == 'spoken'][:args.guard_rows]
+    # Taking the head of the spoken rows left recall and muse unscored -- the two
+    # moves the shipped model already answers -- and let the row order decide the
+    # balance. Round-robin by move instead, so every move is represented equally.
+    by_move = {}
+    for row in corpus['validation']:
+        by_move.setdefault(row['move'], []).append(row)
+    guard = [row for group in zip(*(by_move[m] for m in sorted(by_move)))
+             for row in group][:args.guard_rows]
 
     scout, _ = load_export(args.base, args.tokenizer, 'cpu')
     scout.mode = 'conversation'
-    base_report, _ = evaluate(scout, tokenizer, guard, rules, 'base', known)
+    base_report, _ = evaluate(scout, tokenizer, guard, rules, 'base', known, move_shapes)
     floor = max(0, round(len(guard) * args.accept_rate))
-    chat_report, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known) if chat else (None, None)
+    move_floor = max(0, round(len(guard) * args.accept_move_rate))
+    chat_report, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes) if chat else (None, None)
     print(json.dumps({'base_guard': base_report, 'exact_floor': floor,
                       'base_chat': chat_report,
                       'base_validation': loss_over(teacher, validation, args.device)}), flush=True)
@@ -229,12 +284,15 @@ def main():
             accepted = False
             if val < best and step % args.guard_every == 0:
                 scout.load_state_dict({k: v.detach().cpu() for k, v in model.state_dict().items()})
-                report, _ = evaluate(scout, tokenizer, guard, rules, 'guard', known)
-                accepted = (report['exact'] >= floor and not report['degenerate']
-                            and not report['leaked'] and report['thinnest'] >= args.variety)
-                item['guard'] = {k: report[k] for k in ('exact', 'degenerate', 'leaked', 'thinnest')}
+                report, _ = evaluate(scout, tokenizer, guard, rules, 'guard', known, move_shapes)
+                accepted = (report['move'] >= move_floor and report['exact'] >= floor
+                            and not report['degenerate'] and not report['leaked']
+                            and report['stopped'] == report['count'] and report['copied_all']
+                            and report['thinnest'] >= args.variety)
+                item['guard'] = {k: report[k] for k in
+                                 ('move', 'exact', 'copied', 'degenerate', 'leaked', 'thinnest')}
                 if chat:
-                    turns, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known)
+                    turns, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes)
                     accepted = (accepted and not turns['degenerate'] and not turns['leaked']
                                 and turns['stopped'] == turns['count'])
                     item['chat'] = {k: turns[k] for k in ('exact', 'stopped', 'degenerate', 'leaked')}
@@ -267,13 +325,13 @@ def main():
             export(model, args.tokenizer, args.output / 'rejected.ccv2',
                    {k: metadata[k] for k in ['meaning_ids', 'kind_ids', 'rules_sha256']} |
                    {'step': held['step'], 'seed': args.seed})
-            report = {'rejected': True, 'reason': 'No checkpoint cleared the collapse and variety gate',
+            report = {'rejected': True, 'base_guard': base_report, 'reason': 'No checkpoint cleared the declared gate: move accuracy, copies, collapse and variety',
                       'candidate_step': held['step'], 'validation': held['validation'],
                       'guard': held.get('guard'), 'chat': held.get('chat'),
                       'model_sha256': sha(args.output / 'rejected.ccv2')}
             (args.output / 'results.json').write_text(json.dumps(report, indent=2) + '\n')
             print(json.dumps(report), flush=True)
-        raise SystemExit('No checkpoint cleared the collapse and variety gate')
+        raise SystemExit('No checkpoint cleared the declared gate: move accuracy, copies, collapse and variety')
 
     saved = torch.load(args.output / 'best.pt', map_location='cpu', weights_only=True)
     model.to('cpu').load_state_dict(saved['state'])
@@ -290,7 +348,7 @@ def main():
                                     [x for x in corpus['test'] if MOVES[x['move']] == 'spoken'][:args.eval_rows]]),
                         ('chat', chat)):
         if not rows: continue
-        report, scored = evaluate(compact, tokenizer, rows, rules, label, known)
+        report, scored = evaluate(compact, tokenizer, rows, rules, label, known, move_shapes)
         (args.output / f'{label}-results.json').write_text(
             json.dumps({'report': report, 'rows': scored}, indent=2) + '\n')
         reports[label] = report
