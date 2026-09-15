@@ -60,9 +60,30 @@ def encode_parts(tokenizer, text, spans, slots=False):
 def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
     if packet or conversation:
-        cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '')
+        # The runtime's CcCoreModelBegin sends this stance when the caller
+        # names no character, so a row without one encodes the same way.
+        mind = row.get('mind') or {'goal': 'secure_livelihood', 'stress': 'medium',
+                                   'courage': 'medium'}
+        # The witnessed cue and the trailing control line belong to the mind
+        # context. Rows without one keep the plain account shape the native
+        # runtime emits from CcCoreModelBegin.
+        cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '') + \
+            ('! ' if mind and row.get('witnessed') else '')
         prefix = []
         if conversation:
+            # Mind context lines precede the spoken history: goal, stress,
+            # courage, memories, and current thoughts. The model reads them as
+            # plain text; only the held account's fields carry markers.
+            mind_lines = []
+            mind_lines.append('# voice: ' + (row.get('voice') or 'resident'))
+            if mind.get('goal'): mind_lines.append('# goal: ' + mind['goal'])
+            if mind.get('stress'): mind_lines.append('# stress: ' + mind['stress'])
+            if mind.get('courage'): mind_lines.append('# courage: ' + mind['courage'])
+            for memory in mind.get('memories', [])[-2:]:
+                mind_lines.append('# memory: ' + memory)
+            for thought in mind.get('thoughts', [])[-2:]:
+                mind_lines.append('# thought: ' + thought)
+            prefix = [token for line in mind_lines for token in tokenizer.encode(line + '\n').ids]
             # Keep literal speech, with exact mentions of the avatar's known
             # fields represented by their existing markers. The model learns
             # responses from these words; dialogue acts are training labels only.
@@ -77,7 +98,7 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
                 if len(part) > 256: raise ValueError('A spoken event exceeds the history budget')
                 messages.append(part)
             while sum(map(len, messages)) > 256: messages.pop(0)
-            prefix = [token for message in messages for token in message]
+            prefix.extend(token for message in messages for token in message)
             if 'performance' in row:
                 from crownless_performance import control_text
                 prefix.extend(tokenizer.encode(control_text(row['performance'])).ids)
@@ -92,6 +113,10 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
             selected.append({**field, 'token_start': start, 'token_end': len(prefix), 'event': 1})
         prefix.extend(tokenizer.encode('\n').ids)
         fields = selected
+        # A mind context ends with a control cue that names the output:
+        # say: for spoken lines, # think: for internal thoughts.
+        if mind:
+            prefix.extend(tokenizer.encode('# ' + row.get('control', 'say') + ':\n').ids)
     output, copies = encode_parts(tokenizer, row['output'], row['copies'], slots)
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
