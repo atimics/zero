@@ -80,7 +80,7 @@ def main():
                                'Groups': ['sg-0059d0413ff74df6e'],
                                'AssociatePublicIpAddress': True, 'DeleteOnTermination': True}],
         'MetadataOptions': {'HttpTokens': 'required', 'HttpEndpoint': 'enabled'},
-        'BlockDeviceMappings': [{'DeviceName': '/dev/sda1', 'Ebs': {'VolumeSize': 50, 'VolumeType': 'gp3',
+        'BlockDeviceMappings': [{'DeviceName': '/dev/sda1', 'Ebs': {'VolumeSize': 75, 'VolumeType': 'gp3',
                                   'Encrypted': True, 'DeleteOnTermination': True}}],
         'InstanceInitiatedShutdownBehavior': 'terminate',
         'ClientToken': f'crownless-moves-{sha[:24]}-{deadline}',
@@ -102,7 +102,7 @@ def main():
                 'maximum_instance_seconds': seconds, 'instance_type': args.instance_type,
                 'hourly_ec2_usd': args.hourly_usd,
                 'deadline_ec2_usd': round(args.hourly_usd * args.hours, 2),
-                'root_volume_gib': 50,
+                'root_volume_gib': 75,
                 'user_data_sha256': hashlib.sha256(script.encode()).hexdigest(),
                 'request_sha256': hashlib.sha256(request_text.encode()).hexdigest()}
     (args.output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
