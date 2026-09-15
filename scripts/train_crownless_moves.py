@@ -15,6 +15,7 @@ is the failure this whole redesign is aimed at.
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import random
 import re
@@ -35,6 +36,20 @@ WORD = re.compile(r"[^\W\d_]+", re.UNICODE)
 
 
 def sha(path): return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def source_commit():
+    """A checkout answers for itself; a packaged run is told what it was built
+    from. A cloud job has neither a repository nor a remote to ask."""
+    named = os.environ.get('CROWNLESS_SOURCE_COMMIT')
+    if named: return named
+    try:
+        return subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True,
+                                       cwd=Path(__file__).resolve().parent).strip()
+    except (subprocess.SubprocessError, OSError):
+        return 'unknown'
+
+
 def read(path): return [json.loads(x) for x in Path(path).read_text().splitlines()]
 def encoded(tokenizer, row): return encode_row(tokenizer, row, slots=True, conversation=True)
 
@@ -202,7 +217,7 @@ def main():
 
     args.output.mkdir(parents=True)
     (args.output / 'tokenizer.json').write_bytes(args.tokenizer.read_bytes())
-    manifest = {'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+    manifest = {'source_commit': source_commit(),
                 'source_hashes': {name: sha(Path(__file__).with_name(name)) for name in
                                   ('crownless_v2.py', 'crownless_conversation.py', 'train_crownless_moves.py')},
                 'base_sha256': sha(args.base), 'tokenizer_sha256': sha(args.tokenizer),
