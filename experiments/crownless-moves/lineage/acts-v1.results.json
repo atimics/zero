@@ -1,0 +1,211 @@
+{
+  "best_step": 8000,
+  "model_sha256": "216750d9971bac86bfe2b04836db4a547fd94941241fed9ab8ceb28b8b6bf716",
+  "base_guard": {
+    "label": "base",
+    "count": 48,
+    "exact": 39,
+    "stopped": 48,
+    "leaked": 0,
+    "degenerate": 0,
+    "empty": 0,
+    "copied": "16/18",
+    "acts": {
+      "agree": {
+        "count": 6,
+        "exact": 4,
+        "degenerate": 0
+      },
+      "certainty": {
+        "count": 6,
+        "exact": 6,
+        "degenerate": 0
+      },
+      "check": {
+        "count": 4,
+        "exact": 4,
+        "degenerate": 0
+      },
+      "close": {
+        "count": 4,
+        "exact": 4,
+        "degenerate": 0
+      },
+      "disagree": {
+        "count": 6,
+        "exact": 2,
+        "degenerate": 0
+      },
+      "end": {
+        "count": 4,
+        "exact": 4,
+        "degenerate": 0
+      },
+      "question": {
+        "count": 6,
+        "exact": 5,
+        "degenerate": 0
+      },
+      "source": {
+        "count": 6,
+        "exact": 6,
+        "degenerate": 0
+      },
+      "start": {
+        "count": 6,
+        "exact": 4,
+        "degenerate": 0
+      }
+    }
+  },
+  "reports": {
+    "test": {
+      "label": "test",
+      "count": 260,
+      "exact": 222,
+      "stopped": 260,
+      "leaked": 0,
+      "degenerate": 0,
+      "empty": 0,
+      "copied": "83/86",
+      "acts": {
+        "agree": {
+          "count": 32,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "certainty": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "check": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "close": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "disagree": {
+          "count": 28,
+          "exact": 22,
+          "degenerate": 0
+        },
+        "end": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "question": {
+          "count": 30,
+          "exact": 18,
+          "degenerate": 0
+        },
+        "source": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "start": {
+          "count": 30,
+          "exact": 14,
+          "degenerate": 0
+        }
+      }
+    },
+    "wording": {
+      "label": "wording",
+      "count": 260,
+      "exact": 193,
+      "stopped": 260,
+      "leaked": 0,
+      "degenerate": 0,
+      "empty": 0,
+      "copied": "82/86",
+      "acts": {
+        "agree": {
+          "count": 32,
+          "exact": 26,
+          "degenerate": 0
+        },
+        "certainty": {
+          "count": 28,
+          "exact": 26,
+          "degenerate": 0
+        },
+        "check": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "close": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "disagree": {
+          "count": 28,
+          "exact": 17,
+          "degenerate": 0
+        },
+        "end": {
+          "count": 28,
+          "exact": 28,
+          "degenerate": 0
+        },
+        "question": {
+          "count": 30,
+          "exact": 24,
+          "degenerate": 0
+        },
+        "source": {
+          "count": 28,
+          "exact": 2,
+          "degenerate": 0
+        },
+        "start": {
+          "count": 30,
+          "exact": 14,
+          "degenerate": 0
+        }
+      }
+    },
+    "bridge": {
+      "label": "bridge",
+      "count": 260,
+      "exact": 225,
+      "stopped": 260,
+      "leaked": 0,
+      "degenerate": 0,
+      "empty": 0,
+      "copied": "82/86",
+      "acts": {
+        "bridge": {
+          "count": 260,
+          "exact": 225,
+          "degenerate": 0
+        }
+      }
+    },
+    "chat": {
+      "label": "chat",
+      "count": 6,
+      "exact": 6,
+      "stopped": 6,
+      "leaked": 0,
+      "degenerate": 0,
+      "empty": 0,
+      "copied": "n/a",
+      "acts": {
+        "chat": {
+          "count": 6,
+          "exact": 6,
+          "degenerate": 0
+        }
+      }
+    }
+  }
+}
