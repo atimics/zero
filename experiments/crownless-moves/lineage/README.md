@@ -28,6 +28,16 @@ from, by hash; both resolve against the files above. `acts-v1.results.json`
 records what the shipped checkpoint scored on its own test, wording, bridge and
 chat sets.
 
+## Staleness (2026-09-16)
+
+`tools/build_core_mind.py` in crownless no longer writes `# goal:`, `# stress:`
+or `# courage:` prefix lines: stance travels as row fields and the typed encoder
+carries it on the meta channel. `core-mind-balanced` and everything below it
+were built by the older builder, so a rebuild from current sources will not
+match the manifests pinned here. That is the check working as designed, not a
+silent drift — but do not train a typed run on the old rows expecting the model
+to read stance text it was never given. Rebuild the chain before reuse.
+
 ## Rebuilding
 
 Deterministic given the same inputs and `--seed 73 --repeats 2`. The account and

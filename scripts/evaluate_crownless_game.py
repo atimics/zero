@@ -8,7 +8,7 @@ import time
 
 import torch
 from tokenizers import Tokenizer
-from crownless_v2 import encode_row, generate, load
+from crownless_v2 import encode_row, generate, load, typed_stance_for
 from crownless_v2_export import load_export
 from score_crownless_v2 import accepted_forms
 from speak_crownless_v2 import packet_record
@@ -47,7 +47,8 @@ def main():
         row = packet_record(packet, retold=retold)
         row['kind_id'] = metadata['meaning_ids'][packet['rule']] if model.mode == 'packet' else kind + 1
         record = encode_row(tokenizer, row, model.config.context,
-                            slots=model.mode in ('slots', 'packet'), packet=model.mode == 'packet')
+                            slots=model.mode in ('slots', 'packet'), packet=model.mode == 'packet',
+                            typed_stance=typed_stance_for(model))
         started = time.perf_counter()
         result = generate(model, tokenizer, record)
         elapsed = time.perf_counter() - started

@@ -74,6 +74,17 @@ LEVEL_IDS = {'low': 1, 'medium': 2, 'high': 3}
 META_FIELDS = 9
 
 
+def typed_stance_for(model):
+    """True when this checkpoint reads stance from the meta channel.
+
+    Checkpoints with voice tables ignore stance text; older ones have no
+    tables and read the # voice / # goal / # stress / # courage lines
+    instead. Callers pass this to encode_row so one script serves both
+    generations without a flag to get wrong.
+    """
+    return bool(getattr(getattr(model, 'config', None), 'voices', 0))
+
+
 def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False,
                typed_stance=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
