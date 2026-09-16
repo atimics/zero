@@ -18,10 +18,16 @@ away.
                   → crownless-acts-v1   (thirteen acts)
                     └─ scripts/train_crownless_acts.py
                          → acts-v1, sha256 216750d9971bac86…  ← shipped
-             └─ scripts/build_crownless_moves.py --seed 73 --repeats 2
-                  → crownless-moves-v2  (move × channel × stance)
-                    └─ scripts/train_crownless_moves.py
-                         → no accepted checkpoint yet
+              └─ scripts/build_crownless_moves.py --seed 73 --repeats 2
+                   → crownless-moves-v2  (move × channel × stance)
+                     └─ scripts/train_crownless_moves.py
+                          → no accepted checkpoint yet
+              └─ scripts/build_crownless_moves.py --seed 73 --repeats 2
+                 --holdout-cells <12 move:voice:stress triples, one per move>
+                 --confusable-replacements
+                   → crownless-moves-v3  (holdouts + near-miss swaps)
+                     └─ scripts/train_crownless_moves.py --typed-stance
+                          → Run A: unseen-cell accuracy gates the upgrade
 
 Both corpus manifests name the accounts and mind manifests they were built
 from, by hash; both resolve against the files above. `acts-v1.results.json`
