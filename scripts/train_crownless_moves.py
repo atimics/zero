@@ -172,6 +172,9 @@ def main():
     p.add_argument('--batch-size', type=int, default=16)
     p.add_argument('--bridge-ratio', type=float, default=0.10)
     p.add_argument('--distill', type=float, default=2.0)
+    p.add_argument('--anchor', choices=('bridge', 'spoken'), default='bridge',
+                   help='What the distillation holds the student to: the plain account the base '
+                        'answers well, or the spoken-move rows it has never answered at all')
     p.add_argument('--lr', type=float, default=5e-5)
     p.add_argument('--guard-rows', type=int, default=48)
     p.add_argument('--guard-every', type=int, default=500)
@@ -209,8 +212,15 @@ def main():
                          for row in read(args.corpus / f'{split}.jsonl')]
     chat = [{**row, 'kind_id': meanings[row['rule']]}
             for row in read(args.chat)] if args.chat else []
-    # The conversation half is what the shipped model already answers well, so
-    # it is both the distillation anchor and the regression guard.
+    # What the shipped model answers well is the plain account, not the moves:
+    # it was never trained on nine of the twelve, and measured on a balanced
+    # sample it performs exactly the four it already had. Anchoring on
+    # spoken-move rows therefore asks a teacher about moves it has never made,
+    # over every output token of every reply -- 41,996 of 41,996 measured -- and
+    # the four it knows are the four that score. `bridge` anchors on the plain
+    # account under a mind context instead: the same rows, stripped to the
+    # behaviour the anchor exists to protect. `spoken` reproduces the runs that
+    # plateaued at 19/48.
     talk = [r for r in corpus['train'] if MOVES[r['move']] == 'spoken']
     known = vocabulary(*corpus.values(), chat)
     move_shapes = shapes_by_move(*corpus.values(), chat)
@@ -225,6 +235,7 @@ def main():
                 'rows': {'train': len(corpus['train']), 'conversation': len(talk)},
                 'seed': args.seed, 'steps': args.steps, 'batch_size': args.batch_size,
                 'bridge_ratio': args.bridge_ratio, 'distill': args.distill, 'lr': args.lr,
+                'anchor': args.anchor,
                 'moves': list(MOVES), 'variety_floor': args.variety,
                 'contract': {'move_rate': args.accept_move_rate, 'cell_rate': args.accept_rate,
                              'variety': args.variety, 'guard_rows': args.guard_rows,
@@ -233,8 +244,9 @@ def main():
                              'declared': 'Move accuracy gates; cell accuracy is recorded for '
                                          'the next contract to set. Thresholds are fixed '
                                          'before the run and not moved during it.'},
-                'scope': 'Thirteen acts in one corpus, anchored to the shipped conversation '
-                         'model and gated on generated answers rather than loss.'}
+                'scope': 'Thirteen acts in one corpus, anchored to the plain account the '
+                         'shipped model answers well, and gated on generated answers rather '
+                         'than loss.'}
     (args.output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 
     # The corpus is written conversation-half first, so a head slice would score
@@ -273,6 +285,8 @@ def main():
         rows = rng.choices(corpus['train'], k=args.batch_size - bridge_count)
         rows += [bridged(r, rng) for r in rng.choices(talk, k=bridge_count)]
         anchor_rows = rng.choices(talk, k=max(2, bridge_count))
+        if args.anchor == 'bridge':
+            anchor_rows = [bridged(row, rng) for row in anchor_rows]
         for group in optimizer.param_groups:
             group['lr'] = args.lr * min(step / 100, 1) * (.1 + .9 * (1 - step / args.steps))
         optimizer.zero_grad(set_to_none=True)
