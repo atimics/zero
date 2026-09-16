@@ -38,6 +38,13 @@ away.
                    → crownless-moves-v5
                      └─ scripts/train_crownless_moves.py --typed-stance --situation
                           → B1 retry: guard 47/48, all three axes ≥30%
+              └─ v5 + SOCIAL_MARKS (debts/trust/faction/distance, 36 lines)
+                 + --social → crownless-moves-v6
+                   └─ scripts/train_crownless_moves.py --typed-stance
+                       --situation --social
+                        → B2: guard 45/48; owes/trusts/faction/far all emit;
+                          goal/courage found target-silent (courage conditions
+                          no pool anywhere — pre-existing, not a regression)
 
 Both corpus manifests name the accounts and mind manifests they were built
 from, by hash; both resolve against the files above. `acts-v1.results.json`
