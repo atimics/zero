@@ -12,6 +12,7 @@ as regression by a checkpoint gate.
 """
 import argparse
 import copy
+import difflib
 import hashlib
 import json
 from pathlib import Path
@@ -162,7 +163,8 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     return row
 
 
-def build_split(bases, rules, seed, repeats=1, paraphrase=False):
+def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
+                confusable=False):
     rng = random.Random(seed)
     pools = {}
     for row in bases:
@@ -171,13 +173,25 @@ def build_split(bases, rules, seed, repeats=1, paraphrase=False):
     pools = {role: sorted(values) for role, values in pools.items()}
     def replacement(field):
         options = [x for x in pools[field['role']] if x != field['text']]
-        return rng.choice(options) if options else 'A different account'
+        if not options: return 'A different account'
+        if confusable:
+            # Near-miss swaps: the telling differs by a letter or two, so the
+            # row is solvable only by reading the span, not the shape of it.
+            options = sorted(options,
+                             key=lambda x: difflib.SequenceMatcher(None, x, field['text']).ratio(),
+                             reverse=True)[:3]
+        return rng.choice(options)
     order = list(MOVES)
     result = []
     for repetition in range(repeats):
         for i, base in enumerate(bases):
             move = order[(i // 2 + repetition * 5) % len(order)]
             stance = stance_for(base, rng)
+            # Held-out cells stay out of every repetition, or the holdout is
+            # a lie told to the eval. The skip consumes the stance draw above,
+            # so a held-out build is reproducible but not prefix-identical to
+            # a full one; the manifest records the set either way.
+            if (move, stance['voice'], stance['stress']) in holdout: continue
             row = move_row(base, rules[base['rule']], move, stance, rng, replacement, paraphrase)
             row['id'] = f"{base['id']}:{move}:{repetition}"
             result.append(row)
@@ -201,6 +215,11 @@ def main():
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--seed', type=int, default=73)
     p.add_argument('--repeats', type=int, default=2)
+    p.add_argument('--holdout-cells', default='',
+                   help="Comma-separated move:voice:stress cells kept out of train, "
+                        "so the eval can tell memory from generalization")
+    p.add_argument('--confusable-replacements', action='store_true',
+                   help='Swap near-miss field values instead of arbitrary ones')
     args = p.parse_args()
     if args.output.exists(): p.error('Use a fresh output directory')
     rules = {r['id']: r for r in json.loads((args.accounts / 'rules.json').read_text())['rules']}
@@ -212,10 +231,15 @@ def main():
     (args.output / 'rules.json').write_bytes((args.accounts / 'rules.json').read_bytes())
 
     splits = {}
+    holdout = {tuple(cell.split(':')) for cell in args.holdout_cells.split(',') if cell}
+    if any(len(cell) != 3 for cell in holdout): p.error('Holdout cells read move:voice:stress')
     for split in ('train', 'validation', 'test'):
         repeats = args.repeats if split == 'train' else 1
-        splits[split] = (build_split(accounts[split], rules, f'{args.seed}:{split}:account', repeats) +
-                         build_split(minds[split], rules, f'{args.seed}:{split}:mind', repeats))
+        kept = holdout if split == 'train' else ()
+        splits[split] = (build_split(accounts[split], rules, f'{args.seed}:{split}:account', repeats,
+                                     holdout=kept, confusable=args.confusable_replacements) +
+                         build_split(minds[split], rules, f'{args.seed}:{split}:mind', repeats,
+                                     holdout=kept, confusable=args.confusable_replacements))
     splits['wording'] = (build_split(accounts['test'], rules, f'{args.seed}:wording:account', paraphrase=True) +
                          build_split(minds['test'], rules, f'{args.seed}:wording:mind', paraphrase=True))
 
@@ -232,6 +256,8 @@ def main():
         'accounts_manifest_sha256': sha(args.accounts / 'manifest.json'),
         'mind_manifest_sha256': sha(args.mind / 'manifest.json'),
         'rules_sha256': sha(args.accounts / 'rules.json'),
+        'holdout_cells': sorted(':'.join(cell) for cell in holdout),
+        'confusable_replacements': args.confusable_replacements,
         'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
         'source_hashes': {n: sha(Path(__file__).with_name(n)) for n in
                           ('crownless_moves.py', 'build_crownless_moves.py', 'crownless_v2.py')},
