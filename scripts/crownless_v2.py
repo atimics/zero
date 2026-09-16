@@ -26,6 +26,9 @@ class Config:
     voices: int = 0
     goals: int = 0
     levels: int = 0
+    # Situation table rows per axis (hungry, sheltered, in_transit are binary).
+    # Zero keeps the pre-situation architecture loadable the same way.
+    situations: int = 0
 
 
 def train_tokenizer(rows, path):
@@ -71,7 +74,11 @@ VOICE_IDS = {'baker': 1, 'scribe': 2, 'farmer': 3, 'smith': 4, 'innkeeper': 5,
              'cartwright': 11, 'bandit': 12}
 GOAL_IDS = {'keep_order': 1, 'secure_livelihood': 2, 'survive_crisis': 3, 'carry_news': 4}
 LEVEL_IDS = {'low': 1, 'medium': 2, 'high': 3}
-META_FIELDS = 9
+META_FIELDS = 12
+# An unremarkable situation: fed, sheltered, home. Plain rows and the native
+# runtime's default mind agree on it, so neither side invents a predicament.
+PLAIN_SITUATION = {'hungry': False, 'sheltered': True, 'in_transit': False}
+SITUATION_AXES = ('hungry', 'sheltered', 'in_transit')
 
 
 def typed_stance_for(model):
@@ -86,7 +93,7 @@ def typed_stance_for(model):
 
 
 def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False,
-               typed_stance=False):
+               typed_stance=False, situation=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
     if packet or conversation:
         # The runtime's CcCoreModelBegin sends this stance when the caller
@@ -151,7 +158,7 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
     n = len(tokens) - 1
-    meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] + [0] * 4
+    meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] + [0] * 7
             for i in range(n)]
     if typed_stance and (packet or conversation):
         # Added at every prefix position rather than retrieved by attention from
@@ -161,7 +168,14 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
                   LEVEL_IDS.get(mind.get('stress', ''), 0),
                   LEVEL_IDS.get(mind.get('courage', ''), 0)]
         for i in range(min(len(prefix), n)):
-            meta[i][5:] = stance
+            meta[i][5:9] = stance
+    if situation and (packet or conversation):
+        # Binary axes, always present: 1 is the state, 0 the learned "not so".
+        # No gate, unlike stance - there is no absent situation to skip for.
+        state = row.get('situation') or PLAIN_SITUATION
+        ids = [1 if state.get(axis, PLAIN_SITUATION[axis]) else 0 for axis in SITUATION_AXES]
+        for i in range(min(len(prefix), n)):
+            meta[i][9:12] = ids
     candidates, source_ids, feedback_ids, field_to_candidate = [], [], [], {}
     for field in fields:
         for i in range(field['token_start'], field['token_end']):
@@ -256,6 +270,11 @@ class Crownless(nn.Module):
         self.goals = nn.Embedding(config.goals, config.dim) if config.voices else None
         self.stresses = nn.Embedding(config.levels, config.dim) if config.voices else None
         self.courages = nn.Embedding(config.levels, config.dim) if config.voices else None
+        # The situation rides the same labelled line: three binary axes, always
+        # present, so no gate. Index 0 is the learned "not so" vector, not absence.
+        self.hungry = nn.Embedding(2, config.dim) if config.situations else None
+        self.sheltered = nn.Embedding(2, config.dim) if config.situations else None
+        self.in_transit = nn.Embedding(2, config.dim) if config.situations else None
         self.blocks = nn.ModuleList(Block(config) for _ in range(config.layers))
         self.norm = nn.RMSNorm(config.dim)
         self.copy_start = nn.Linear(config.dim, config.dim, bias=False)
@@ -287,6 +306,9 @@ class Crownless(nn.Module):
                 x = x + (meta[..., 5] != 0).unsqueeze(-1) * (
                     self.voices(meta[..., 5]) + self.goals(meta[..., 6]) +
                     self.stresses(meta[..., 7]) + self.courages(meta[..., 8]))
+            if self.hungry is not None and meta.shape[-1] > 9:
+                x = x + self.hungry(meta[..., 9]) + self.sheltered(meta[..., 10]) + \
+                    self.in_transit(meta[..., 11])
         c, s = self.cosine[offset:offset + tokens.shape[1]], self.sine[offset:offset + tokens.shape[1]]
         saved = []
         for i, block in enumerate(self.blocks):

@@ -26,7 +26,7 @@ from score_crownless_v2 import accepted_forms
 from crownless_conversation import (VOICE_LINES, MEMORY_LINES, THOUGHT, QUESTIONS,
                                     family, fill, STRESS_PREFIX)
 from crownless_moves import (MOVES, CUE, VOICES, STRESS, forms,
-                             DISPUTE_OPEN, DISPUTE_CLOSE, tier)
+                             DISPUTE_OPEN, DISPUTE_CLOSE, tier, situation_marks)
 
 GOALS = ('secure_livelihood', 'survive_crisis', 'carry_news', 'keep_order')
 LEVELS = ('low', 'medium', 'high')
@@ -139,6 +139,20 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     else:
         raise ValueError(move)
 
+    # A predicament contributes its opening sentence where one holds. Unmarked
+    # moves compose over [''] and come out byte-identical, so rows built
+    # without a situation are untouched down to the rng stream.
+    marks = situation_marks(move, stance.get('situation'))
+    if marks != ['']:
+        if move == 'open':
+            # The prefix variable feeds the copy-span offset below, so the
+            # chosen mark goes through it rather than around it.
+            prefix = rng.choice(marks)
+            target, accepted = prefix + own, [m + own for m in marks]
+        else:
+            accepted = [m + t for m in marks for t in accepted]
+            target = rng.choice(accepted)
+
     # Conversations reach the model several turns deep and the encoder keeps
     # the last four.
     for _ in range(rng.choice((0, 1, 1, 2)) if history else 0):
@@ -164,7 +178,7 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
 
 
 def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
-                confusable=False):
+                confusable=False, situation=False):
     rng = random.Random(seed)
     pools = {}
     for row in bases:
@@ -192,8 +206,19 @@ def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
             # so a held-out build is reproducible but not prefix-identical to
             # a full one; the manifest records the set either way.
             if (move, stance['voice'], stance['stress']) in holdout: continue
+            if situation:
+                # Drawn here, beside the stance, so move_row sees the same dict
+                # the row keeps. Fabricated like the BALANCE stance overrides,
+                # for the same reason: uniform coverage beats sim-faithful
+                # rarity when the point is teaching the conditioning, and the
+                # seed pins the draws.
+                stance['situation'] = {'hungry': rng.random() < 0.5,
+                                       'sheltered': rng.random() < 0.5,
+                                       'in_transit': rng.random() < 0.5}
             row = move_row(base, rules[base['rule']], move, stance, rng, replacement, paraphrase)
             row['id'] = f"{base['id']}:{move}:{repetition}"
+            if situation:
+                row['situation'] = stance['situation']
             result.append(row)
     return result
 
@@ -220,6 +245,10 @@ def main():
                         "so the eval can tell memory from generalization")
     p.add_argument('--confusable-replacements', action='store_true',
                    help='Swap near-miss field values instead of arbitrary ones')
+    p.add_argument('--situation', action='store_true',
+                   help='Give every row a hungry/sheltered/in_transit situation, drawn '
+                        'uniformly. Fabricated like the stance overrides so coverage '
+                        'is uniform; the seed pins the draws.')
     args = p.parse_args()
     if args.output.exists(): p.error('Use a fresh output directory')
     rules = {r['id']: r for r in json.loads((args.accounts / 'rules.json').read_text())['rules']}
@@ -237,11 +266,15 @@ def main():
         repeats = args.repeats if split == 'train' else 1
         kept = holdout if split == 'train' else ()
         splits[split] = (build_split(accounts[split], rules, f'{args.seed}:{split}:account', repeats,
-                                     holdout=kept, confusable=args.confusable_replacements) +
+                                     holdout=kept, confusable=args.confusable_replacements,
+                                     situation=args.situation) +
                          build_split(minds[split], rules, f'{args.seed}:{split}:mind', repeats,
-                                     holdout=kept, confusable=args.confusable_replacements))
-    splits['wording'] = (build_split(accounts['test'], rules, f'{args.seed}:wording:account', paraphrase=True) +
-                         build_split(minds['test'], rules, f'{args.seed}:wording:mind', paraphrase=True))
+                                     holdout=kept, confusable=args.confusable_replacements,
+                                     situation=args.situation))
+    splits['wording'] = (build_split(accounts['test'], rules, f'{args.seed}:wording:account', paraphrase=True,
+                                     situation=args.situation) +
+                         build_split(minds['test'], rules, f'{args.seed}:wording:mind', paraphrase=True,
+                                     situation=args.situation))
 
     files = {}
     for split, rows in splits.items():
@@ -258,6 +291,7 @@ def main():
         'rules_sha256': sha(args.accounts / 'rules.json'),
         'holdout_cells': sorted(':'.join(cell) for cell in holdout),
         'confusable_replacements': args.confusable_replacements,
+        'situation': args.situation,
         'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
         'source_hashes': {n: sha(Path(__file__).with_name(n)) for n in
                           ('crownless_moves.py', 'build_crownless_moves.py', 'crownless_v2.py')},

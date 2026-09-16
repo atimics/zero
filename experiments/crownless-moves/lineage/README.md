@@ -28,6 +28,16 @@ away.
                    → crownless-moves-v3  (holdouts + near-miss swaps)
                      └─ scripts/train_crownless_moves.py --typed-stance
                           → Run A: unseen-cell accuracy gates the upgrade
+              └─ scripts/build_crownless_moves.py --seed 73 --repeats 2
+                 --holdout-cells <same 12> --confusable-replacements --situation
+                   → crownless-moves-v4  (situation bits, no wording signal)
+                     └─ scripts/train_crownless_moves.py --typed-stance --situation
+                          → B1 attempt HELD: hungry 27%, sheltered 27%,
+                             in_transit 17% — bits decorrelated from targets
+              └─ v4 + SITUATION_MARKS (predicament openings, 18 lines)
+                   → crownless-moves-v5
+                     └─ scripts/train_crownless_moves.py --typed-stance --situation
+                          → B1 retry: guard 47/48, all three axes ≥30%
 
 Both corpus manifests name the accounts and mind manifests they were built
 from, by hash; both resolve against the files above. `acts-v1.results.json`
