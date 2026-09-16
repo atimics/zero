@@ -64,7 +64,7 @@ set +e
 /opt/crownless-venv/bin/python scripts/train_crownless_moves.py \
   --corpus corpus --output output --base base/core.ccv2 --tokenizer base/tokenizer.json \
   --chat chat-rows-stance.jsonl --device cuda --steps __STEPS__ --guard-every __GUARD_EVERY__ \
-  2>&1 | tee train.log
+  __EXTRA__ 2>&1 | tee train.log
 train_exit=${PIPESTATUS[0]}
 set -e
 kill "$sync_pid" 2>/dev/null || true

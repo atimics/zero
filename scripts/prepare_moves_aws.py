@@ -41,6 +41,9 @@ def main():
                         help='8000 steps at batch 16 is 1.3 passes over a 100k-row corpus')
     parser.add_argument('--guard-every', type=int, default=500,
                         help='Guard evaluation runs on CPU, so a longer run wants it less often')
+    parser.add_argument('--extra', default='',
+                        help='Further trainer flags, recorded in the manifest so the run says '
+                             'what it was asked to do')
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
 
@@ -77,7 +80,7 @@ def main():
     for name, value in {'PREFIX': prefix, 'SOURCE_KEY': key, 'SOURCE_SHA256': sha,
                         'DEADLINE': str(deadline), 'EXPERIMENT': args.experiment,
                         'COMMIT': commit, 'STEPS': str(args.steps),
-                        'GUARD_EVERY': str(args.guard_every)}.items():
+                        'GUARD_EVERY': str(args.guard_every), 'EXTRA': args.extra}.items():
         script = script.replace(f'__{name}__', value)
     if '__' in script.replace('__pycache__', ''): raise ValueError('Unfilled placeholder')
 
@@ -105,7 +108,7 @@ def main():
     (args.output / 'user-data.sh').write_text(script)
     manifest = {'experiment': args.experiment, 'package_sha256': sha,
                 'package_bytes': package.stat().st_size, 'files': hashes,
-                'steps': args.steps, 'guard_every': args.guard_every,
+                'steps': args.steps, 'guard_every': args.guard_every, 'extra': args.extra,
                 'source_commit': commit, 'bucket': 'zero-training-022118847419',
                 'source_key': key, 'result_prefix': prefix, 'deadline': deadline,
                 'maximum_instance_seconds': seconds, 'instance_type': args.instance_type,
