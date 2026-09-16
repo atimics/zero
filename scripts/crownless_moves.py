@@ -256,6 +256,70 @@ def situation_marks(move, situation):
     return ['']
 
 
+# --- company: who the speaker stands with and owes --------------------------
+# Debts, trust and faction mark a few moves the way hunger marks a hedge. Same mechanic as SITUATION_MARKS, except faction is
+# categorical (crown/guild/commons, None absent) so its cells key on the kind
+# itself rather than a boolean. Only the marked state speaks; absence and the
+# unmarked states contribute [''], and several marks may stack on one move
+# (trust and faction both mark affirm), applied innermost first.
+SOCIAL_MARKS = {
+    ('owes_listener', True, 'defer'): ["I owe you a straight answer. ",
+                                       "For you, I will ask it myself. ",
+                                       "You are owed better than my guessing. "],
+    ('owes_listener', True, 'settle'): ["We are square after this. ",
+                                        "Call us even and leave it there. ",
+                                        "Settled, and I owe you thanks for it. "],
+    ('trusts_listener', True, 'affirm'): ["Between you and me, that is the account. ",
+                                          "I would tell no one else. You have it right. ",
+                                          "From you, I believe it. "],
+    ('trusts_listener', True, 'attribute'): ["Between you and me. ",
+                                             "You asked me straight. ",
+                                             "For your ears only. "],
+    ('faction', 'crown', 'affirm'): ["The crown hears the same. ",
+                                     "It is known at court as you tell it. ",
+                                     "The crown's word matches yours. "],
+    ('faction', 'guild', 'affirm'): ["The guild books agree with you. ",
+                                     "Our ledgers say the same. ",
+                                     "The guild heard it likewise. "],
+    ('faction', 'commons', 'affirm'): ["Every hearth says the same. ",
+                                       "That is the talk at every table. ",
+                                       "Common word agrees with you. "],
+    ('faction', 'crown', 'part'): ["The crown thanks you. ",
+                                   "Go with the crown's favor. ",
+                                   "Court business calls me. "],
+    ('faction', 'guild', 'part'): ["The guild owes you custom. ",
+                                   "Trade calls me away. ",
+                                   "Count it settled in the books. "],
+    ('faction', 'commons', 'part'): ["Mind how you go. ",
+                                     "Supper waits, and so does work. ",
+                                     "Good day, and good neighbors. "],
+    ('far_from_home', True, 'open'): ["Far from home, this is what I carry. ",
+                                      "I bring word from further than here. ",
+                                      "A traveller's news, take it as such. "],
+    ('far_from_home', True, 'muse'): ["Home feels far tonight. ",
+                                      "I wonder what they eat at home. ",
+                                      "Distance makes everything urgent. "],
+}
+
+
+def social_marks(move, social):
+    """All marked-state openings for this move, innermost first, or [''].
+
+    Unlike situation marks, several cells can match one move (trust and
+    faction both mark affirm); each wraps the previous, cross-product style,
+    the way dispute crosses openers with closers.
+    """
+    out = ['']
+    for (axis, marked, marked_move), marks in SOCIAL_MARKS.items():
+        if marked_move != move:
+            continue
+        state = (social or {}).get(axis)
+        if state is None or state != marked:
+            continue
+        out = [a + b for a in out for b in marks]
+    return out
+
+
 def tier(row):
     """How the belief was acquired: the cue the prompt already carries."""
     if row.get('confidence', 80) < 40: return 'unsure'

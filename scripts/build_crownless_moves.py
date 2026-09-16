@@ -26,7 +26,8 @@ from score_crownless_v2 import accepted_forms
 from crownless_conversation import (VOICE_LINES, MEMORY_LINES, THOUGHT, QUESTIONS,
                                     family, fill, STRESS_PREFIX)
 from crownless_moves import (MOVES, CUE, VOICES, STRESS, forms,
-                             DISPUTE_OPEN, DISPUTE_CLOSE, tier, situation_marks)
+                             DISPUTE_OPEN, DISPUTE_CLOSE, tier, situation_marks,
+                             social_marks)
 
 GOALS = ('secure_livelihood', 'survive_crisis', 'carry_news', 'keep_order')
 LEVELS = ('low', 'medium', 'high')
@@ -139,18 +140,25 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     else:
         raise ValueError(move)
 
-    # A predicament contributes its opening sentence where one holds. Unmarked
-    # moves compose over [''] and come out byte-identical, so rows built
-    # without a situation are untouched down to the rng stream.
+    # A predicament contributes its opening sentence where one holds, then
+    # company does the same outside it: a traveller far from home may open
+    # with both marks. Unmarked moves compose over [''] and come out
+    # byte-identical, so rows built without either are untouched down to the
+    # rng stream.
     marks = situation_marks(move, stance.get('situation'))
-    if marks != ['']:
+    company = social_marks(move, stance.get('social'))
+    if marks != [''] or company != ['']:
         if move == 'open':
             # The prefix variable feeds the copy-span offset below, so the
             # chosen mark goes through it rather than around it.
-            prefix = rng.choice(marks)
-            target, accepted = prefix + own, [m + own for m in marks]
+            combined = [s + m for s in company for m in marks]
+            prefix = rng.choice(combined)
+            target, accepted = prefix + own, [m + own for m in combined]
         else:
-            accepted = [m + t for m in marks for t in accepted]
+            if marks != ['']:
+                accepted = [m + t for m in marks for t in accepted]
+            if company != ['']:
+                accepted = [s + t for s in company for t in accepted]
             target = rng.choice(accepted)
 
     # Conversations reach the model several turns deep and the encoder keeps
@@ -178,7 +186,7 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
 
 
 def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
-                confusable=False, situation=False):
+                confusable=False, situation=False, social=False):
     rng = random.Random(seed)
     pools = {}
     for row in bases:
@@ -215,10 +223,18 @@ def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
                 stance['situation'] = {'hungry': rng.random() < 0.5,
                                        'sheltered': rng.random() < 0.5,
                                        'in_transit': rng.random() < 0.5}
+            if social:
+                stance['social'] = {
+                    'owes_listener': rng.random() < 0.5,
+                    'trusts_listener': rng.random() < 0.5,
+                    'faction': rng.choice([None, 'crown', 'guild', 'commons']),
+                    'far_from_home': rng.random() < 0.5}
             row = move_row(base, rules[base['rule']], move, stance, rng, replacement, paraphrase)
             row['id'] = f"{base['id']}:{move}:{repetition}"
             if situation:
                 row['situation'] = stance['situation']
+            if social:
+                row['social'] = stance['social']
             result.append(row)
     return result
 
@@ -249,6 +265,10 @@ def main():
                    help='Give every row a hungry/sheltered/in_transit situation, drawn '
                         'uniformly. Fabricated like the stance overrides so coverage '
                         'is uniform; the seed pins the draws.')
+    p.add_argument('--social', action='store_true',
+                   help='Give every row an owes/trusts/faction/far situation, drawn '
+                        'uniformly (faction uniform over absent/crown/guild/commons). '
+                        'Same fabrication rationale as --situation.')
     args = p.parse_args()
     if args.output.exists(): p.error('Use a fresh output directory')
     rules = {r['id']: r for r in json.loads((args.accounts / 'rules.json').read_text())['rules']}
@@ -267,14 +287,14 @@ def main():
         kept = holdout if split == 'train' else ()
         splits[split] = (build_split(accounts[split], rules, f'{args.seed}:{split}:account', repeats,
                                      holdout=kept, confusable=args.confusable_replacements,
-                                     situation=args.situation) +
+                                     situation=args.situation, social=args.social) +
                          build_split(minds[split], rules, f'{args.seed}:{split}:mind', repeats,
                                      holdout=kept, confusable=args.confusable_replacements,
-                                     situation=args.situation))
+                                     situation=args.situation, social=args.social))
     splits['wording'] = (build_split(accounts['test'], rules, f'{args.seed}:wording:account', paraphrase=True,
-                                     situation=args.situation) +
+                                     situation=args.situation, social=args.social) +
                          build_split(minds['test'], rules, f'{args.seed}:wording:mind', paraphrase=True,
-                                     situation=args.situation))
+                                     situation=args.situation, social=args.social))
 
     files = {}
     for split, rows in splits.items():
@@ -284,7 +304,9 @@ def main():
     manifest = {
         'schema': 'crownless.core_moves.v1', 'seed': args.seed, 'repeats': args.repeats,
         'axes': {'move': list(MOVES), 'channel': sorted(set(MOVES.values())),
-                 'stance': ['voice', 'goal', 'stress', 'courage']},
+                 'stance': ['voice', 'goal', 'stress', 'courage'],
+                 'situation': ['hungry', 'sheltered', 'in_transit'],
+                 'social': ['owes_listener', 'trusts_listener', 'faction', 'far_from_home']},
         'voices': list(VOICES), 'stress': list(STRESS),
         'accounts_manifest_sha256': sha(args.accounts / 'manifest.json'),
         'mind_manifest_sha256': sha(args.mind / 'manifest.json'),
@@ -292,6 +314,7 @@ def main():
         'holdout_cells': sorted(':'.join(cell) for cell in holdout),
         'confusable_replacements': args.confusable_replacements,
         'situation': args.situation,
+        'social': args.social,
         'source_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
         'source_hashes': {n: sha(Path(__file__).with_name(n)) for n in
                           ('crownless_moves.py', 'build_crownless_moves.py', 'crownless_v2.py')},
