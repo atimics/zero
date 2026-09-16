@@ -37,6 +37,10 @@ def main():
     parser.add_argument('--hours', type=float, default=3.0)
     parser.add_argument('--instance-type', default='g5.xlarge')
     parser.add_argument('--hourly-usd', type=float, default=1.006)
+    parser.add_argument('--steps', type=int, default=8000,
+                        help='8000 steps at batch 16 is 1.3 passes over a 100k-row corpus')
+    parser.add_argument('--guard-every', type=int, default=500,
+                        help='Guard evaluation runs on CPU, so a longer run wants it less often')
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
 
@@ -72,7 +76,8 @@ def main():
     script = (ROOT / 'scripts/aws_moves_user_data.sh').read_text()
     for name, value in {'PREFIX': prefix, 'SOURCE_KEY': key, 'SOURCE_SHA256': sha,
                         'DEADLINE': str(deadline), 'EXPERIMENT': args.experiment,
-                        'COMMIT': commit}.items():
+                        'COMMIT': commit, 'STEPS': str(args.steps),
+                        'GUARD_EVERY': str(args.guard_every)}.items():
         script = script.replace(f'__{name}__', value)
     if '__' in script.replace('__pycache__', ''): raise ValueError('Unfilled placeholder')
 
@@ -100,6 +105,7 @@ def main():
     (args.output / 'user-data.sh').write_text(script)
     manifest = {'experiment': args.experiment, 'package_sha256': sha,
                 'package_bytes': package.stat().st_size, 'files': hashes,
+                'steps': args.steps, 'guard_every': args.guard_every,
                 'source_commit': commit, 'bucket': 'zero-training-022118847419',
                 'source_key': key, 'result_prefix': prefix, 'deadline': deadline,
                 'maximum_instance_seconds': seconds, 'instance_type': args.instance_type,
