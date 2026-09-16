@@ -26,7 +26,7 @@ from score_crownless_v2 import accepted_forms
 from crownless_conversation import (VOICE_LINES, MEMORY_LINES, THOUGHT, QUESTIONS,
                                     family, fill, STRESS_PREFIX)
 from crownless_moves import (MOVES, CUE, VOICES, STRESS, forms,
-                             DISPUTE_OPEN, DISPUTE_CLOSE, tier)
+                             DISPUTE_OPEN, DISPUTE_CLOSE, tier, situation_marks)
 
 GOALS = ('secure_livelihood', 'survive_crisis', 'carry_news', 'keep_order')
 LEVELS = ('low', 'medium', 'high')
@@ -139,6 +139,20 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     else:
         raise ValueError(move)
 
+    # A predicament contributes its opening sentence where one holds. Unmarked
+    # moves compose over [''] and come out byte-identical, so rows built
+    # without a situation are untouched down to the rng stream.
+    marks = situation_marks(move, stance.get('situation'))
+    if marks != ['']:
+        if move == 'open':
+            # The prefix variable feeds the copy-span offset below, so the
+            # chosen mark goes through it rather than around it.
+            prefix = rng.choice(marks)
+            target, accepted = prefix + own, [m + own for m in marks]
+        else:
+            accepted = [m + t for m in marks for t in accepted]
+            target = rng.choice(accepted)
+
     # Conversations reach the model several turns deep and the encoder keeps
     # the last four.
     for _ in range(rng.choice((0, 1, 1, 2)) if history else 0):
@@ -192,15 +206,19 @@ def build_split(bases, rules, seed, repeats=1, paraphrase=False, holdout=(),
             # so a held-out build is reproducible but not prefix-identical to
             # a full one; the manifest records the set either way.
             if (move, stance['voice'], stance['stress']) in holdout: continue
+            if situation:
+                # Drawn here, beside the stance, so move_row sees the same dict
+                # the row keeps. Fabricated like the BALANCE stance overrides,
+                # for the same reason: uniform coverage beats sim-faithful
+                # rarity when the point is teaching the conditioning, and the
+                # seed pins the draws.
+                stance['situation'] = {'hungry': rng.random() < 0.5,
+                                       'sheltered': rng.random() < 0.5,
+                                       'in_transit': rng.random() < 0.5}
             row = move_row(base, rules[base['rule']], move, stance, rng, replacement, paraphrase)
             row['id'] = f"{base['id']}:{move}:{repetition}"
             if situation:
-                # Fabricated like the BALANCE stance overrides, for the same
-                # reason: uniform coverage beats sim-faithful rarity when the
-                # point is teaching the conditioning, and the seed pins it.
-                row['situation'] = {'hungry': rng.random() < 0.5,
-                                    'sheltered': rng.random() < 0.5,
-                                    'in_transit': rng.random() < 0.5}
+                row['situation'] = stance['situation']
             result.append(row)
     return result
 

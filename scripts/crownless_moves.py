@@ -214,6 +214,47 @@ DISPUTE_CLOSE = {
     'high': [" How sure are you of yours?", " One of us has it wrong, and it matters."],
 }
 
+# --- situation: a predicament rewrites the opening --------------------------
+# Hunger, exposure and travel mark a few moves the way stress marks a dispute.
+# Only the marked state speaks up; every other state contributes the empty
+# string, so the base pool passes through untouched and the target carries the
+# predicament exactly when it holds. Three near-synonyms a cell, the
+# STRESS_PREFIX discipline, trade-neutral like the stress pools.
+SITUATION_MARKS = {
+    ('hungry', True, 'hedge'): ["My belly has been empty two days. ",
+                                "Hunger makes everything sound worse. ",
+                                "I have not eaten since yesterday. "],
+    ('hungry', True, 'settle'): ["I cannot think on an empty stomach. ",
+                                 "We will settle nothing hungry. ",
+                                 "My thoughts keep turning to food. "],
+    ('sheltered', False, 'remark'): ["Another night with no roof. ",
+                                     "The cold got in again last night. ",
+                                     "I slept out, and it shows. "],
+    ('sheltered', False, 'muse'): ["The nights out are getting to me. ",
+                                   "I dream of a roof that holds. ",
+                                   "Cold ground makes for cold thoughts. "],
+    ('in_transit', True, 'open'): ["I only just came down the road. ",
+                                   "I walked in with it this morning. ",
+                                   "Fresh word, and I am already leaving. "],
+    ('in_transit', True, 'defer'): ["I am only passing through. ",
+                                    "Do not keep me. I have miles yet. ",
+                                    "The road does not wait. "],
+}
+
+
+def situation_marks(move, situation):
+    """Opening sentences the speaker's predicament contributes, or [''].
+
+    Moves are disjoint across the table, so at most one cell matches; a move
+    with no mark, or a row with no situation, composes over the empty string
+    and comes out exactly as it went in.
+    """
+    for (axis, marked, marked_move), marks in SITUATION_MARKS.items():
+        state = (situation or {}).get(axis)
+        if marked_move == move and state is not None and bool(state) == marked:
+            return marks
+    return ['']
+
 
 def tier(row):
     """How the belief was acquired: the cue the prompt already carries."""
