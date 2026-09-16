@@ -238,8 +238,8 @@ def main():
 
     model, metadata = load_export(args.base, args.tokenizer, args.device)
     model.mode = 'conversation'
-    if args.typed_stance: attach_stance(model)
-    if args.situation: attach_situation(model)
+    if args.typed_stance and model.voices is None: attach_stance(model)
+    if args.situation and getattr(model, 'hungry', None) is None: attach_situation(model)
     assert sum(x.numel() for x in model.parameters()) <= 5000000
     teacher, _ = load_export(args.base, args.tokenizer, args.device)
     teacher.mode = 'conversation'; teacher.eval()
@@ -310,8 +310,8 @@ def main():
 
     scout, _ = load_export(args.base, args.tokenizer, 'cpu')
     scout.mode = 'conversation'
-    if args.typed_stance: attach_stance(scout)
-    if args.situation: attach_situation(scout)
+    if args.typed_stance and scout.voices is None: attach_stance(scout)
+    if args.situation and getattr(scout, 'hungry', None) is None: attach_situation(scout)
     base_report, _ = evaluate(scout, tokenizer, guard, rules, 'base', known, move_shapes, args.typed_stance, args.situation)
     floor = max(0, round(len(guard) * args.accept_rate))
     move_floor = max(0, round(len(guard) * args.accept_move_rate))
