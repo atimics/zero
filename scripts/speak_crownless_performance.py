@@ -6,7 +6,7 @@ from pathlib import Path
 import torch
 from tokenizers import Tokenizer
 from crownless_performance import CREATURES, EMOTIONS, VERSION
-from crownless_v2 import encode_row, generate, typed_stance_for
+from crownless_v2 import encode_row, generate, channels_for
 from crownless_v2_export import load_export
 from speak_crownless_v2 import packet_record
 
@@ -19,7 +19,7 @@ def speak(model, metadata, tokenizer, packet, creature, emotion, history=()):
     row['performance'] = {'creature':creature, 'emotion':emotion}
     row['history'] = list(history)
     result = generate(model, tokenizer, encode_row(tokenizer, row, slots=True, conversation=True,
-                                                        typed_stance=typed_stance_for(model)))
+                                                        **channels_for(model)))
     return {'performance':row['performance'], 'account':packet['text'],
             'confidence':packet['confidence'], 'history':row['history'], **result}
 

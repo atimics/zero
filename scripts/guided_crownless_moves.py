@@ -22,7 +22,7 @@ import sys
 
 import torch
 from tokenizers import Tokenizer
-from crownless_v2 import batch, encode_row, typed_stance_for
+from crownless_v2 import batch, encode_row, channels_for
 from crownless_v2_export import load_export
 
 AXES = {'stress': ('low', 'medium', 'high'),
@@ -119,7 +119,7 @@ def main():
         move_hits = cell_hits = stopped = 0
         for row in sample:
             records = [encode_row(tokenizer, v, slots=True, conversation=True,
-                                 typed_stance=typed_stance_for(model))
+                                 **channels_for(model))
                        for v in variants(row, args.axis)]
             out = guided(model, tokenizer, records, weight)
             stopped += out['stopped']

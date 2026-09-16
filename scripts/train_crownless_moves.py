@@ -53,9 +53,9 @@ def source_commit():
 
 
 def read(path): return [json.loads(x) for x in Path(path).read_text().splitlines()]
-def encoded(tokenizer, row, typed=False, situ=False):
+def encoded(tokenizer, row, typed=False, situ=False, social=False):
     return encode_row(tokenizer, row, slots=True, conversation=True, typed_stance=typed,
-                      situation=situ)
+                      situation=situ, social=social)
 
 
 def attach_stance(model):
@@ -83,6 +83,23 @@ def attach_situation(model):
     model.sheltered = nn.Embedding(2, dim)
     model.in_transit = nn.Embedding(2, dim)
     for table in (model.hungry, model.sheltered, model.in_transit):
+        nn.init.normal_(table.weight, std=.02)
+        table.to(next(model.parameters()).device)
+    return model
+
+
+def attach_social(model):
+    """Grow the four company tables onto a checkpoint that reads stance and
+    situation but knows nothing of debts, trust, faction or distance. The
+    faction table has four rows (absent/crown/guild/commons); the rest are
+    binary. Fresh tables, everything else carries over."""
+    dim = model.config.dim
+    model.config = replace(model.config, socials=4)
+    model.owes = nn.Embedding(2, dim)
+    model.trusts = nn.Embedding(2, dim)
+    model.faction = nn.Embedding(4, dim)
+    model.far = nn.Embedding(2, dim)
+    for table in (model.owes, model.trusts, model.faction, model.far):
         nn.init.normal_(table.weight, std=.02)
         table.to(next(model.parameters()).device)
     return model
@@ -159,13 +176,13 @@ def quality(row, text, stopped, rules, known=None, moves=None):
 
 
 def evaluate(model, tokenizer, rows, rules, label, known=None, moves=None, typed=False,
-             situ=False):
+             situ=False, social=False):
     """Runs on an already-CPU model. Moving the training model across devices
     mid-run strands the optimiser state on the accelerator and thrashes it."""
     model.eval()
     scored = []
     for row in rows:
-        result = generate(model, tokenizer, encoded(tokenizer, row, typed, situ))
+        result = generate(model, tokenizer, encoded(tokenizer, row, typed, situ, social))
         scored.append({'id': row['id'], 'act': row.get('act', 'account'),
                        'reference': row['output'], 'text': result['text'],
                        **quality(row, result['text'], result['stopped'], rules, known, moves)})
@@ -213,6 +230,11 @@ def main():
     p.add_argument('--situation', action='store_true',
                    help='Carry hungry, sheltered and in_transit as three binary meta ids, '
                         'always present. Grows three embedding tables onto a typed base.')
+    p.add_argument('--social', action='store_true',
+                   help='Carry owes_listener, trusts_listener, faction and far_from_home: '
+                        'three binaries always present plus a categorical faction id '
+                        '(0 absent, gated like voice). Grows four tables onto a '
+                        'situation-reading base.')
     p.add_argument('--anchor', choices=('bridge', 'spoken'), default='bridge',
                    help='What the distillation holds the student to: the plain account the base '
                         'answers well, or the spoken-move rows it has never answered at all')
@@ -240,6 +262,7 @@ def main():
     model.mode = 'conversation'
     if args.typed_stance and model.voices is None: attach_stance(model)
     if args.situation and getattr(model, 'hungry', None) is None: attach_situation(model)
+    if args.social and getattr(model, 'owes', None) is None: attach_social(model)
     assert sum(x.numel() for x in model.parameters()) <= 5000000
     teacher, _ = load_export(args.base, args.tokenizer, args.device)
     teacher.mode = 'conversation'; teacher.eval()
@@ -279,7 +302,7 @@ def main():
                 'seed': args.seed, 'steps': args.steps, 'batch_size': args.batch_size,
                 'bridge_ratio': args.bridge_ratio, 'distill': args.distill, 'lr': args.lr,
                 'anchor': args.anchor, 'typed_stance': args.typed_stance,
-                'situation': args.situation,
+                'situation': args.situation, 'social': args.social,
                 'moves': list(MOVES), 'variety_floor': args.variety,
                 'contract': {'move_rate': args.accept_move_rate, 'cell_rate': args.accept_rate,
                              'variety': args.variety, 'guard_rows': args.guard_rows,
@@ -296,8 +319,8 @@ def main():
     # The corpus is written conversation-half first, so a head slice would score
     # only one act family. Sample across the whole split instead.
     sample = random.Random(args.seed).sample(corpus['validation'], 244)
-    validation = [encoded(tokenizer, r, args.typed_stance, args.situation) for r in sample]
-    talk_validation = [encoded(tokenizer, r, args.typed_stance, args.situation) for r in
+    validation = [encoded(tokenizer, r, args.typed_stance, args.situation, args.social) for r in sample]
+    talk_validation = [encoded(tokenizer, r, args.typed_stance, args.situation, args.social) for r in
                        [x for x in corpus['validation'] if MOVES[x['move']] == 'spoken'][:244]]
     # Taking the head of the spoken rows left recall and muse unscored -- the two
     # moves the shipped model already answers -- and let the row order decide the
@@ -312,10 +335,11 @@ def main():
     scout.mode = 'conversation'
     if args.typed_stance and scout.voices is None: attach_stance(scout)
     if args.situation and getattr(scout, 'hungry', None) is None: attach_situation(scout)
-    base_report, _ = evaluate(scout, tokenizer, guard, rules, 'base', known, move_shapes, args.typed_stance, args.situation)
+    if args.social and getattr(scout, 'owes', None) is None: attach_social(scout)
+    base_report, _ = evaluate(scout, tokenizer, guard, rules, 'base', known, move_shapes, args.typed_stance, args.situation, args.social)
     floor = max(0, round(len(guard) * args.accept_rate))
     move_floor = max(0, round(len(guard) * args.accept_move_rate))
-    chat_report, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes, args.typed_stance, args.situation) if chat else (None, None)
+    chat_report, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes, args.typed_stance, args.situation, args.social) if chat else (None, None)
     print(json.dumps({'base_guard': base_report, 'exact_floor': floor,
                       'base_chat': chat_report,
                       'base_validation': loss_over(teacher, validation, args.device)}), flush=True)
@@ -336,7 +360,7 @@ def main():
         for group in optimizer.param_groups:
             group['lr'] = args.lr * min(step / 100, 1) * (.1 + .9 * (1 - step / args.steps))
         optimizer.zero_grad(set_to_none=True)
-        loss = model.loss(batch([encoded(tokenizer, r, args.typed_stance, args.situation) for r in rows], args.device))
+        loss = model.loss(batch([encoded(tokenizer, r, args.typed_stance, args.situation, args.social) for r in rows], args.device))
         anchor = batch([encoded(tokenizer, r) for r in anchor_rows], args.device)  # untyped: the teacher cannot read a stance id
         student_hidden, _ = model.hidden(anchor['tokens'], anchor['meta'])
         student_logits, _, _ = model.heads(student_hidden, anchor['candidates'], anchor['candidate_mask'])
@@ -359,7 +383,7 @@ def main():
             accepted = False
             if val < best and step % args.guard_every == 0:
                 scout.load_state_dict({k: v.detach().cpu() for k, v in model.state_dict().items()})
-                report, _ = evaluate(scout, tokenizer, guard, rules, 'guard', known, move_shapes, args.typed_stance, args.situation)
+                report, _ = evaluate(scout, tokenizer, guard, rules, 'guard', known, move_shapes, args.typed_stance, args.situation, args.social)
                 accepted = (report['move'] >= move_floor and report['exact'] >= floor
                             and not report['degenerate'] and not report['leaked']
                             and report['stopped'] == report['count'] and report['copied_all']
@@ -367,7 +391,7 @@ def main():
                 item['guard'] = {k: report[k] for k in
                                  ('move', 'exact', 'copied', 'degenerate', 'leaked', 'thinnest')}
                 if chat:
-                    turns, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes, args.typed_stance, args.situation)
+                    turns, _ = evaluate(scout, tokenizer, chat, rules, 'chat', known, move_shapes, args.typed_stance, args.situation, args.social)
                     accepted = (accepted and not turns['degenerate'] and not turns['leaked']
                                 and turns['stopped'] == turns['count'])
                     item['chat'] = {k: turns[k] for k in ('exact', 'stopped', 'degenerate', 'leaked')}
@@ -423,7 +447,7 @@ def main():
                                     [x for x in corpus['test'] if MOVES[x['move']] == 'spoken'][:args.eval_rows]]),
                         ('chat', chat)):
         if not rows: continue
-        report, scored = evaluate(compact, tokenizer, rows, rules, label, known, move_shapes, args.typed_stance, args.situation)
+        report, scored = evaluate(compact, tokenizer, rows, rules, label, known, move_shapes, args.typed_stance, args.situation, args.social)
         (args.output / f'{label}-results.json').write_text(
             json.dumps({'report': report, 'rows': scored}, indent=2) + '\n')
         reports[label] = report
