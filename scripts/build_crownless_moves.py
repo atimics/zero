@@ -68,6 +68,7 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     pool_voice = voice if voice in VOICE_LINES else 'resident'
     history, prefix, suffix, use_claim, changed = [], '', '', False, None
     accepted = None
+    memory_copy = None
 
     if move == 'open':
         target, use_claim = own, True
@@ -127,8 +128,17 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
             if len(memory) > 80: memory = memory[:80].rsplit(' ', 1)[0] + '...'
             connectors = [' It reminds me of when ', ' It puts me in mind of ',
                           ' Like when ', ' It brings back ']
-            target = line + rng.choice(connectors) + memory
+            connector = rng.choice(connectors)
+            target = line + connector + memory
             accepted = [l + c + memory for l in lines for c in connectors]
+            # The one held memory the reply recalls, offered as a copy candidate
+            # (field 8, marker [F7]) so the model reproduces it instead of
+            # reaching for a memorised line. The prompt shows only this memory.
+            stance['memories'] = [memory]
+            start = len((line + connector).encode())
+            memory_copy = {'field': 8, 'role': 0, 'start': start,
+                           'end': start + len(memory.encode()), 'text': memory,
+                           'spoken': True, 'knowledge': 0, 'provenance': 3, 'event': 1}
         else:
             target, accepted = line, lines
     elif move == 'muse':
@@ -184,6 +194,8 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
         for span in row['copies']:
             span['start'] += offset
             span['end'] += offset
+    elif memory_copy is not None:
+        row['copies'] = [memory_copy]
     else:
         row['copies'] = []
     return row

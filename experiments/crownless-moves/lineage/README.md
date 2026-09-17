@@ -52,6 +52,12 @@ away.
                          --situation --social
                           → B3: guard 45/48, copies 12/12; goal 55%,
                             courage 75% any-change (were 17% each), stress 70%
+              └─ v7 + recall memory as a copy candidate (field 8, marker [F7])
+                   → crownless-moves-v8
+                     └─ scripts/train_crownless_moves.py --typed-stance
+                         --situation --social
+                          → B4: guard 44/48, copies 12/12; memory membership
+                            54% → 2% (recall now reproduces the held memory)
 
 Both corpus manifests name the accounts and mind manifests they were built
 from, by hash; both resolve against the files above. `acts-v1.results.json`
