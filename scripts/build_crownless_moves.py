@@ -27,7 +27,7 @@ from crownless_conversation import (VOICE_LINES, MEMORY_LINES, THOUGHT, QUESTION
                                     family, fill, STRESS_PREFIX)
 from crownless_moves import (MOVES, CUE, VOICES, STRESS, forms,
                              DISPUTE_OPEN, DISPUTE_CLOSE, tier, situation_marks,
-                             social_marks)
+                             social_marks, stance_marks)
 
 GOALS = ('secure_livelihood', 'survive_crisis', 'carry_news', 'keep_order')
 LEVELS = ('low', 'medium', 'high')
@@ -140,25 +140,24 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
     else:
         raise ValueError(move)
 
-    # A predicament contributes its opening sentence where one holds, then
-    # company does the same outside it: a traveller far from home may open
-    # with both marks. Unmarked moves compose over [''] and come out
-    # byte-identical, so rows built without either are untouched down to the
-    # rng stream.
-    marks = situation_marks(move, stance.get('situation'))
-    company = social_marks(move, stance.get('social'))
-    if marks != [''] or company != ['']:
+    # Openings stack in layers: a predicament, then company, then mettle and
+    # purpose. Each layer is [''] unless its marked state holds, so an
+    # unmarked move composes over the empty string and comes out byte-identical
+    # down to the rng stream.
+    layers = [situation_marks(move, stance.get('situation')),
+              social_marks(move, stance.get('social')),
+              stance_marks(move, stance)]
+    if any(layer != [''] for layer in layers):
+        combined = ['']
+        for layer in layers:
+            combined = [p + q for p in combined for q in layer]
         if move == 'open':
             # The prefix variable feeds the copy-span offset below, so the
             # chosen mark goes through it rather than around it.
-            combined = [s + m for s in company for m in marks]
             prefix = rng.choice(combined)
             target, accepted = prefix + own, [m + own for m in combined]
         else:
-            if marks != ['']:
-                accepted = [m + t for m in marks for t in accepted]
-            if company != ['']:
-                accepted = [s + t for s in company for t in accepted]
+            accepted = [m + t for m in combined for t in accepted]
             target = rng.choice(accepted)
 
     # Conversations reach the model several turns deep and the encoder keeps
@@ -176,7 +175,12 @@ def move_row(base, rule, move, stance, rng, replacement=None, paraphrase=False):
                mind={'goal': stance['goal'], 'stress': stance['stress'], 'courage': stance['courage'],
                      'memories': list(stance['memories']), 'thoughts': list(stance['thoughts'])})
     if use_claim:
-        offset = len(prefix.encode())
+        # Where the account actually sits in the finished target, rather than
+        # the length of a variable that now holds only the dispute opener: the
+        # stacked situation/company/mettle marks prepend text too, and a claim
+        # move may carry any of them. The account appears verbatim once, since
+        # no opener or closer pool contains it.
+        offset = len(target[:target.index(own)].encode())
         for span in row['copies']:
             span['start'] += offset
             span['end'] += offset
