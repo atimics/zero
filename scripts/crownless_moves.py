@@ -320,6 +320,63 @@ def social_marks(move, social):
     return out
 
 
+# --- mettle and purpose: courage and goal, the last two silent channels -----
+# Stress already rewrites a dispute and a muse head; voice rewrites every move.
+# Goal only ever conditioned the muse thought and courage conditioned nothing,
+# so both were decoration the model could not have learned. Same remedy as the
+# predicament and the company: give the marked value a sentence. Courage keys
+# on the level (high bold, low cautious); goal keys on the specific aim.
+STANCE_MARKS = {
+    ('courage', 'high', 'dispute'): ["I will say it plain. ",
+                                     "I am not afraid to name it. ",
+                                     "Let them hear it from me. "],
+    ('courage', 'high', 'part'): ["I will not be talked out of it. ",
+                                  "Say what you like. I am decided. ",
+                                  "Let them come. "],
+    ('courage', 'high', 'attribute'): ["I will name the man myself. ",
+                                       "I will stand behind the name. ",
+                                       "Let it be known who said it. "],
+    ('courage', 'low', 'hedge'): ["I would not want to be wrong about this. ",
+                                  "I am not the one to be sure. ",
+                                  "I would not say it too loudly. "],
+    ('courage', 'low', 'defer'): ["I am the last who should decide. ",
+                                  "Better hands than mine. ",
+                                  "I would rather someone else said it. "],
+    ('courage', 'low', 'settle'): ["Let it be. I would not press it. ",
+                                   "I will not make trouble of it. ",
+                                   "Best leave it. I have not the nerve. "],
+    ('goal', 'keep_order', 'part'): ["Keep the peace, whatever else. ",
+                                     "Order first. Everything else follows. ",
+                                     "Let the town stay calm. "],
+    ('goal', 'secure_livelihood', 'defer'): ["Ask what it costs before we act. ",
+                                             "Someone will know the price of it. ",
+                                             "I need to know what this means for the harvest. "],
+    ('goal', 'carry_news', 'settle'): ["The word is out now. That is what matters. ",
+                                       "It will travel without me. ",
+                                       "Let it go where it goes. "],
+    ('goal', 'survive_crisis', 'open'): ["I came to warn you. ",
+                                         "There is danger in this. ",
+                                         "Hear me out. This matters. "],
+}
+
+
+def stance_marks(move, mind):
+    """All marked-state openings from courage and goal for this move, or [''].
+
+    Keys on the level for courage and the aim for goal. Neutral values (medium
+    courage, any unlisted goal) contribute the empty string, so a row without
+    the marked state is untouched.
+    """
+    out = ['']
+    for (axis, marked, marked_move), marks in STANCE_MARKS.items():
+        if marked_move != move:
+            continue
+        if (mind or {}).get(axis) != marked:
+            continue
+        out = [a + b for a in out for b in marks]
+    return out
+
+
 def tier(row):
     """How the belief was acquired: the cue the prompt already carries."""
     if row.get('confidence', 80) < 40: return 'unsure'

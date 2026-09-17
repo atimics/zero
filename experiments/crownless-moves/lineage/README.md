@@ -45,6 +45,13 @@ away.
                         → B2: guard 45/48; owes/trusts/faction/far all emit;
                           goal/courage found target-silent (courage conditions
                           no pool anywhere — pre-existing, not a regression)
+              └─ v6 + STANCE_MARKS (courage and goal openings, 30 lines)
+                 + copy-span offset now locates the account in the target
+                   → crownless-moves-v7
+                     └─ scripts/train_crownless_moves.py --typed-stance
+                         --situation --social
+                          → B3: guard 45/48, copies 12/12; goal 55%,
+                            courage 75% any-change (were 17% each), stress 70%
 
 Both corpus manifests name the accounts and mind manifests they were built
 from, by hash; both resolve against the files above. `acts-v1.results.json`
