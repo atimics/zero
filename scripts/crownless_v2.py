@@ -47,6 +47,16 @@ def train_tokenizer(rows, path):
     return tokenizer
 
 
+def field_marker(tokenizer, field):
+    """The marker token for a copied span. Account fields use [F0]..[F7]. A
+    recalled memory borrows [F7] as field 8: the marker budget is fixed, and a
+    recall row's account carries few fields, so [F7] is otherwise free. This is
+    a wire shared with the native runtime (token id 8)."""
+    token = tokenizer.token_to_id('[F7]' if field >= 8 else f'[F{field}]')
+    if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
+    return token
+
+
 def encode_parts(tokenizer, text, spans, slots=False):
     raw, tokens, mapped, at = text.encode(), [], [], 0
     for span in sorted(spans, key=lambda s: s['start']):
@@ -57,9 +67,7 @@ def encode_parts(tokenizer, text, spans, slots=False):
         first = len(tokens)
         literal = tokenizer.encode(raw[start:end].decode()).ids
         if slots and span.get('spoken', span['role'] not in (0, 7, 8)) and span.get('knowledge', 0) != 3:
-            token = tokenizer.token_to_id(f"[F{span['field']}]")
-            if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
-            tokens.append(token)
+            tokens.append(field_marker(tokenizer, span['field']))
         else:
             tokens.extend(literal)
         mapped.append({**span, 'token_start': first, 'token_end': len(tokens), 'literal_ids': literal})
@@ -166,10 +174,18 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
         for field in sorted(fields, key=lambda f: f['field']):
             if not field.get('spoken', field['role'] not in (0, 7, 8)): continue
             start = len(prefix)
-            marker = tokenizer.token_to_id(f"[F{field['field']}]")
-            if marker is None: raise ValueError('Packet tokenizer needs field markers')
-            prefix.append(marker)
+            prefix.append(field_marker(tokenizer, field['field']))
             selected.append({**field, 'token_start': start, 'token_end': len(prefix), 'event': 1})
+        # A recalled memory is offered as a copy candidate beside the account
+        # fields: the reply reproduces it exactly instead of reaching for a
+        # memorised line. Field 8 borrows marker [F7]; only recall rows add it.
+        if conversation and row.get('control') == 'recall' and mind.get('memories'):
+            memory = mind['memories'][-1]
+            start = len(prefix)
+            prefix.append(field_marker(tokenizer, 8))
+            selected.append({'field': 8, 'role': 0, 'knowledge': 0, 'provenance': 3,
+                             'spoken': True, 'event': 1, 'token_start': start,
+                             'token_end': len(prefix), 'literal_ids': tokenizer.encode(memory).ids})
         prefix.extend(tokenizer.encode('\n').ids)
         fields = selected
         # A mind context ends with a control cue that names the output:
