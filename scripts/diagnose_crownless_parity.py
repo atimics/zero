@@ -1,5 +1,6 @@
 """Small CPU diagnostic for the published Crownless sentence across kernels."""
 import json
+import hashlib
 from pathlib import Path
 import torch
 from tokenizers import Tokenizer
@@ -23,6 +24,12 @@ def run():
         row = dict(id='diagnostic', kind_id=meta['meaning_ids']['notice_posted_0'], prefix=prefix,
                    output='', fields=fields, copies=[])
         record = encode_row(tokenizer, row, slots=True, packet=True)
+        if name == 'native':
+            fingerprint = {key: hashlib.sha256(value.detach().numpy().tobytes()).hexdigest()
+                           for key, value in model.state_dict().items()}
+            print(json.dumps({'model_sha': hashlib.sha256((root / 'core.ccv2').read_bytes()).hexdigest(),
+                              'record': record, 'weights': fingerprint,
+                              'cosine': model.cosine[:4].tolist(), 'sine': model.sine[:4].tolist()}, sort_keys=True), flush=True)
         if name == 'double': model.double()
         if name == 'epsilon':
             for module in model.modules():
