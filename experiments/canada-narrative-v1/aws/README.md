@@ -8,6 +8,17 @@ The user approved the A10G package in `a10-proposal-manifest.json` under the
 US$2 budget. AWS returned `InsufficientInstanceCapacity` on execution.
 The approved A10G rate was US$1.117/hour. Timing remains pending capacity.
 
+The user approved an Oregon A10G timing run under the same US$2 ceiling.
+Prepare it with `--region us-west-2 --instance-type g5.xlarge --automatic-zone`.
+The Oregon profile pins image `ami-0d105fd7469b31d32`, VPC `vpc-80728ce6`,
+and US$1.006/hour. Refresh the AWS image, network and price checks before
+launch. The source archive and training workload remain identical to the
+Canada timing package. The raw workload cost projection uses the original
+L4 rate; calculate Oregon cost from measured hours at US$1.006/hour.
+
+On September 19, Oregon package tests passed. AWS sign-in renewal is pending
+before live preflight and execution. Runtime files stay outside Git.
+
 Run one `g6.xlarge` in `ca-central-1` with the accepted experiment's model
 and training update. The workload uses synthetic token IDs, five warm-up
 updates and 100 measured updates. It compares initial CUDA bfloat16 logits
