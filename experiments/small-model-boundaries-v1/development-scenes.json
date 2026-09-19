@@ -1,0 +1,242 @@
+[
+  {
+    "case_id": 1001,
+    "family": "key",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara handed the brass key to Tomas. Mara stayed outside while Tomas walked to the locked pantry. The pantry held the bread they needed for supper. Tomas reached into a pocket and said,"
+  },
+  {
+    "case_id": 1002,
+    "family": "key",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose handed the brass key to Daniel. Rose stayed outside while Daniel walked to the locked pantry. The pantry held the bread they needed for supper. Daniel reached into a pocket and said,"
+  },
+  {
+    "case_id": 1003,
+    "family": "key",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice handed the brass key to Peter. Alice stayed outside while Peter walked to the locked pantry. The pantry held the bread they needed for supper. Peter reached into a pocket and said,"
+  },
+  {
+    "case_id": 1004,
+    "family": "key",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora handed the brass key to James. Nora stayed outside while James walked to the locked pantry. The pantry held the bread they needed for supper. James reached into a pocket and said,"
+  },
+  {
+    "case_id": 1005,
+    "family": "key",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara handed the brass key to Simon. Clara stayed outside while Simon walked to the locked pantry. The pantry held the bread they needed for supper. Simon reached into a pocket and said,"
+  },
+  {
+    "case_id": 1006,
+    "family": "bridge",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara and Tomas reached a narrow bridge with a heavy cart. A sign allowed people to cross but warned that carts were too heavy. Mara stopped the cart. Tomas looked at the sign and said,"
+  },
+  {
+    "case_id": 1007,
+    "family": "bridge",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose and Daniel reached a narrow bridge with a heavy cart. A sign allowed people to cross but warned that carts were too heavy. Rose stopped the cart. Daniel looked at the sign and said,"
+  },
+  {
+    "case_id": 1008,
+    "family": "bridge",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice and Peter reached a narrow bridge with a heavy cart. A sign allowed people to cross but warned that carts were too heavy. Alice stopped the cart. Peter looked at the sign and said,"
+  },
+  {
+    "case_id": 1009,
+    "family": "bridge",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora and James reached a narrow bridge with a heavy cart. A sign allowed people to cross but warned that carts were too heavy. Nora stopped the cart. James looked at the sign and said,"
+  },
+  {
+    "case_id": 1010,
+    "family": "bridge",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara and Simon reached a narrow bridge with a heavy cart. A sign allowed people to cross but warned that carts were too heavy. Clara stopped the cart. Simon looked at the sign and said,"
+  },
+  {
+    "case_id": 1011,
+    "family": "rain",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara promised to keep the flour dry. When rain began, Tomas held open the shed door. Mara lifted the sack from the bench and ran toward the shed. Once they were inside, Tomas asked,"
+  },
+  {
+    "case_id": 1012,
+    "family": "rain",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose promised to keep the flour dry. When rain began, Daniel held open the shed door. Rose lifted the sack from the bench and ran toward the shed. Once they were inside, Daniel asked,"
+  },
+  {
+    "case_id": 1013,
+    "family": "rain",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice promised to keep the flour dry. When rain began, Peter held open the shed door. Alice lifted the sack from the bench and ran toward the shed. Once they were inside, Peter asked,"
+  },
+  {
+    "case_id": 1014,
+    "family": "rain",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora promised to keep the flour dry. When rain began, James held open the shed door. Nora lifted the sack from the bench and ran toward the shed. Once they were inside, James asked,"
+  },
+  {
+    "case_id": 1015,
+    "family": "rain",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara promised to keep the flour dry. When rain began, Simon held open the shed door. Clara lifted the sack from the bench and ran toward the shed. Once they were inside, Simon asked,"
+  },
+  {
+    "case_id": 1016,
+    "family": "letter",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara gave Tomas a sealed letter for the doctor. Tomas carried it to the doctor's house, but the door was shut. A neighbour said the doctor would return at noon. Tomas sat on the step and thought about the promise."
+  },
+  {
+    "case_id": 1017,
+    "family": "letter",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose gave Daniel a sealed letter for the doctor. Daniel carried it to the doctor's house, but the door was shut. A neighbour said the doctor would return at noon. Daniel sat on the step and thought about the promise."
+  },
+  {
+    "case_id": 1018,
+    "family": "letter",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice gave Peter a sealed letter for the doctor. Peter carried it to the doctor's house, but the door was shut. A neighbour said the doctor would return at noon. Peter sat on the step and thought about the promise."
+  },
+  {
+    "case_id": 1019,
+    "family": "letter",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora gave James a sealed letter for the doctor. James carried it to the doctor's house, but the door was shut. A neighbour said the doctor would return at noon. James sat on the step and thought about the promise."
+  },
+  {
+    "case_id": 1020,
+    "family": "letter",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara gave Simon a sealed letter for the doctor. Simon carried it to the doctor's house, but the door was shut. A neighbour said the doctor would return at noon. Simon sat on the step and thought about the promise."
+  },
+  {
+    "case_id": 1021,
+    "family": "cup",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara put an empty cup on the table. Tomas filled it with water and offered it back. After a long walk, Mara was thirsty. Mara took the cup and said,"
+  },
+  {
+    "case_id": 1022,
+    "family": "cup",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose put an empty cup on the table. Daniel filled it with water and offered it back. After a long walk, Rose was thirsty. Rose took the cup and said,"
+  },
+  {
+    "case_id": 1023,
+    "family": "cup",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice put an empty cup on the table. Peter filled it with water and offered it back. After a long walk, Alice was thirsty. Alice took the cup and said,"
+  },
+  {
+    "case_id": 1024,
+    "family": "cup",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora put an empty cup on the table. James filled it with water and offered it back. After a long walk, Nora was thirsty. Nora took the cup and said,"
+  },
+  {
+    "case_id": 1025,
+    "family": "cup",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara put an empty cup on the table. Simon filled it with water and offered it back. After a long walk, Clara was thirsty. Clara took the cup and said,"
+  },
+  {
+    "case_id": 1026,
+    "family": "warning",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara had seen a fallen tree blocking the north road. Tomas was planning to take that road to the mill. When they met at the gate, Mara raised a hand to stop Tomas and said,"
+  },
+  {
+    "case_id": 1027,
+    "family": "warning",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose had seen a fallen tree blocking the north road. Daniel was planning to take that road to the mill. When they met at the gate, Rose raised a hand to stop Daniel and said,"
+  },
+  {
+    "case_id": 1028,
+    "family": "warning",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice had seen a fallen tree blocking the north road. Peter was planning to take that road to the mill. When they met at the gate, Alice raised a hand to stop Peter and said,"
+  },
+  {
+    "case_id": 1029,
+    "family": "warning",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora had seen a fallen tree blocking the north road. James was planning to take that road to the mill. When they met at the gate, Nora raised a hand to stop James and said,"
+  },
+  {
+    "case_id": 1030,
+    "family": "warning",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara had seen a fallen tree blocking the north road. Simon was planning to take that road to the mill. When they met at the gate, Clara raised a hand to stop Simon and said,"
+  },
+  {
+    "case_id": 1031,
+    "family": "return",
+    "kind": "authored-scene-opening",
+    "prompt": "In the morning, Mara lent Tomas a red scarf. In the evening, Tomas returned carrying the scarf, carefully folded. Mara was sitting beside the fire. Tomas held out the scarf and said,"
+  },
+  {
+    "case_id": 1032,
+    "family": "return",
+    "kind": "authored-scene-opening",
+    "prompt": "In the morning, Rose lent Daniel a red scarf. In the evening, Daniel returned carrying the scarf, carefully folded. Rose was sitting beside the fire. Daniel held out the scarf and said,"
+  },
+  {
+    "case_id": 1033,
+    "family": "return",
+    "kind": "authored-scene-opening",
+    "prompt": "In the morning, Alice lent Peter a red scarf. In the evening, Peter returned carrying the scarf, carefully folded. Alice was sitting beside the fire. Peter held out the scarf and said,"
+  },
+  {
+    "case_id": 1034,
+    "family": "return",
+    "kind": "authored-scene-opening",
+    "prompt": "In the morning, Nora lent James a red scarf. In the evening, James returned carrying the scarf, carefully folded. Nora was sitting beside the fire. James held out the scarf and said,"
+  },
+  {
+    "case_id": 1035,
+    "family": "return",
+    "kind": "authored-scene-opening",
+    "prompt": "In the morning, Clara lent Simon a red scarf. In the evening, Simon returned carrying the scarf, carefully folded. Clara was sitting beside the fire. Simon held out the scarf and said,"
+  },
+  {
+    "case_id": 1036,
+    "family": "bargain",
+    "kind": "authored-scene-opening",
+    "prompt": "Mara had two loaves of bread and needed a ride to town. Tomas had a wagon with one empty seat. Mara offered one loaf for a ride. Tomas considered the offer and said,"
+  },
+  {
+    "case_id": 1037,
+    "family": "bargain",
+    "kind": "authored-scene-opening",
+    "prompt": "Rose had two loaves of bread and needed a ride to town. Daniel had a wagon with one empty seat. Rose offered one loaf for a ride. Daniel considered the offer and said,"
+  },
+  {
+    "case_id": 1038,
+    "family": "bargain",
+    "kind": "authored-scene-opening",
+    "prompt": "Alice had two loaves of bread and needed a ride to town. Peter had a wagon with one empty seat. Alice offered one loaf for a ride. Peter considered the offer and said,"
+  },
+  {
+    "case_id": 1039,
+    "family": "bargain",
+    "kind": "authored-scene-opening",
+    "prompt": "Nora had two loaves of bread and needed a ride to town. James had a wagon with one empty seat. Nora offered one loaf for a ride. James considered the offer and said,"
+  },
+  {
+    "case_id": 1040,
+    "family": "bargain",
+    "kind": "authored-scene-opening",
+    "prompt": "Clara had two loaves of bread and needed a ride to town. Simon had a wagon with one empty seat. Clara offered one loaf for a ride. Simon considered the offer and said,"
+  }
+]
