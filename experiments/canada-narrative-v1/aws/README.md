@@ -125,8 +125,8 @@ Both temporary stacks reached DELETE_COMPLETE, and both collections confirmed
 zero instances. Corpus training presentations remain zero. The g5.2xlarge
 fallback uses a 65-minute workload timeout and a 75-minute shutdown limit at
 US$1.34573/hour. Thirteen focused package tests passed. Runtime receipts are
-saved outside Git. The existing Crownless model-output CI failure keeps this
-PR open; the Canada package tests passed in CI.
+saved outside Git. The Canada package tests passed in CI. A later compatibility fix restored
+legacy Crownless inputs and claim scoring after integration with main.
 
 The user subsequently approved US processing of the corpus pilot. Use
 `--region us-west-2` with `prepare_canada_pilot.py` for the Oregon g5.xlarge
@@ -134,3 +134,8 @@ profile. Its US$1.006/hour rate, 85-minute shutdown limit and US$2 ceiling
 match the approved scope. Source rights evidence remains labeled Canada;
 the processing location is recorded separately. The workload and seed stay
 fixed across the four arms.
+
+The Oregon corpus pilot completed all four arms and paired outcome scoring.
+All 25 collected result files matched their recorded hashes. The instance
+terminated and the temporary stack was deleted. See the main experiment
+README for the measured outcomes and remaining quality-review steps.

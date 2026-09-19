@@ -4,8 +4,14 @@ Goal: improve a small local model's scene continuation, character continuity,
 event order, and dialogue. A/B tests the curated collection. B/C tests broader
 reading against repeated reading at the same target-token budget.
 
-This package registers the experiment and prepares the accepted corpus. The
-training outcome is pending. Corpus training presentations: **zero**.
+The four pilot arms completed on an Oregon A10G with seed 7. Total scored
+training presentations: **255,314,200**. Selected-checkpoint held-out loss
+improved by **2.716% for B over A** and **0.574% for C over B**. B clears the
+registered 2% loss threshold in A/B; C falls short in B/C. Generation,
+repetition checks and blind human review remain pending, so the overall
+quality decision is open. Training and checkpoint selection took 32.42 minutes
+across the four arms. The result files passed hash checks; the instance
+terminated and its temporary stack was deleted.
 
 ## Model and data
 
