@@ -38,6 +38,14 @@ class PilotPackageTests(unittest.TestCase):
             self.assertEqual(fallback['watchdog_maximum_age_seconds'], 4500)
             self.assertEqual(fallback['workload_timeout_seconds'], 3900)
             self.assertLess(fallback['planning_instance_usd_at_watchdog_plus_one_minute'], 1.71)
+            with patch('prepare_canada_pilot.delivery_files', return_value={'input.txt': data}):
+                oregon = prepare_pilot(root, root / 'oregon', region='us-west-2')
+            self.assertEqual(oregon['region'], 'us-west-2')
+            self.assertEqual(oregon['corpus_location'], 'us-west-2')
+            self.assertEqual(oregon['source_rights_evidence_scope'], 'Canada')
+            self.assertEqual(oregon['hourly_instance_usd'], 1.006)
+            self.assertLess(oregon['planning_instance_usd_at_watchdog_plus_one_minute'], 1.45)
+            self.assertIn('AWS_DEFAULT_REGION=us-west-2', (root / 'oregon/user-data.template.sh').read_text())
 
 
 if __name__ == '__main__': unittest.main()
