@@ -52,7 +52,7 @@ def prompts(data_dir, count):
     original = read_json(data_dir / 'evaluation.json')['prompts']
     # Already-opened historical prompts are explicitly development material.
     chosen = [original[i * len(original) // count]['prompt'] for i in range(count)]
-    return [{'case_id': i+1, 'family': 'historical-window-' + str(i+1),
+    return [{'case_id': i+1, 'family': 'historical-A-validation',
              'kind': 'historical-slice', 'prompt': p} for i,p in enumerate(chosen)]
 
 
@@ -70,6 +70,8 @@ def load_rows(directory, run_identity):
 
 
 def generate(model, tokenizer, cases, settings, output, run_identity, count=256, seed=107, device='cuda'):
+    run_identity = {'caller':run_identity, 'cases_sha256':identity(cases), 'settings':settings,
+                    'new_tokens':count, 'seed':seed, 'device':device}
     output.mkdir(parents=True, exist_ok=True)
     if (output / 'identity.json').exists():
         if read_json(output / 'identity.json') != run_identity:
@@ -108,7 +110,7 @@ def generate(model, tokenizer, cases, settings, output, run_identity, count=256,
           'scope':'Development samples; coherence and factual judgments require reading',
           'mean_repetition': {d:{str(n):sum(r['repetition'][str(n)] for (dec,_),r in rows.items() if dec==d)/len(cases)
                                     for n in [64,128,256] if n<=count} for d in settings}})
-    return list(rows.values())
+    return [rows[(d,c['case_id'])] for d in settings for c in cases]
 
 
 def diagnose(data_dir, checkpoint, output, decoder_names=None, extra_cases=None):
@@ -135,9 +137,31 @@ def diagnose(data_dir, checkpoint, output, decoder_names=None, extra_cases=None)
                     'source_lock_sha256':digest(EXPERIMENT/'source.lock.json')}
     tokens = torch.tensor([tokenizer.encode(cases[0]['prompt']).ids], device=device)
     checks = mechanism_check(model, tokens, device)
+    # Development prompt loss is reported per case and family, with no claim
+    # that a template variant is an independent source or author.
+    prompt_scores = []
+    token_counts = [0] * model.vocab
+    for case in cases:
+        encoded = tokenizer.encode(case['prompt']).ids
+        for token in encoded:
+            token_counts[token] += 1
+        with torch.no_grad(), amp(device):
+            x = torch.tensor([encoded[:-1]], device=device)
+            logits = model(x).float()
+            target = torch.tensor(encoded[1:], device=device)
+            loss = torch.nn.functional.cross_entropy(logits[0], target, reduction='sum')
+        byte_count = sum(len(tokenizer.decode([t]).encode()) for t in encoded[1:])
+        prompt_scores.append({'case_id': case['case_id'], 'family': case['family'],
+                              'target_tokens': len(encoded)-1,
+                              'bits_per_decoded_token_bytes': float(loss) / math.log(2) / max(1,byte_count)})
+    names = ['Mara','Tomas','Janet','Bridget','Rose','Daniel','Alice','Peter']
+    token_audit = {'scope': 'Development prompts only', 'token_counts': token_counts,
+                   'name_tokenization': {n:tokenizer.encode(n).ids for n in names},
+                   'prompt_scores': prompt_scores}
     rows = generate(model, tokenizer, cases, settings, output, run_identity,
                     config['generation']['new_tokens'], config['generation']['seed'], device)
     write(output / 'mechanism-check.json', checks)
+    write(output / 'token-audit.json', token_audit)
     return rows
 
 

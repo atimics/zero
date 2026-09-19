@@ -2,6 +2,7 @@
 import argparse
 import itertools
 import math
+import platform
 import time
 from pathlib import Path
 import numpy as np
@@ -130,7 +131,9 @@ def train(data_dir, output, arm, device='cuda'):
     if sum(p.numel() for p in model.parameters()) != config['parameters']:
         raise ValueError('Model size differs')
     run_identity = {'arm': arm, 'shuffle': shuffled, 'isolate': isolated, 'seed': config['seed'],
-                    'device': device, 'initial_weights_sha256': state_digest(model),
+                    'device': device, 'platform': platform.platform(), 'torch_version': str(torch.__version__),
+                    'device_name': torch.cuda.get_device_name() if device == 'cuda' else 'cpu',
+                    'initial_weights_sha256': state_digest(model),
                     'contract_sha256': digest(EXPERIMENT / 'contract.json'),
                     'source_lock_sha256': digest(EXPERIMENT / 'source.lock.json'),
                     'data_manifest_sha256': digest(data_dir / 'manifest.json'),

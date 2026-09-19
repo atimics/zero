@@ -125,4 +125,37 @@ class BoundaryTests(unittest.TestCase):
         self.assertLess(values[-1],values[0]*.2)
 
 
+
+class PackageTests(unittest.TestCase):
+    def test_package_binds_worker_watchdog_and_every_payload(self):
+        import tarfile
+        from prepare_boundary_experiment import package
+        from boundary_common import contract
+        from canada_narrative import digest
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp); checkpoint=root/'checkpoints/BC-B';checkpoint.mkdir(parents=True)
+            (checkpoint/'best.pt').write_bytes(b'checkpoint');(checkpoint/'result.json').write_text('{}')
+            def prepare(delivery,output,region):
+                output.mkdir();payload=root/'legacy';payload.write_bytes(b'legacy')
+                with tarfile.open(output/'source.tar.gz','w:gz') as archive:archive.add(payload,arcname='legacy')
+                (output/'user-data.template.sh').write_text('SOURCE_SHA='+digest(output/'source.tar.gz')+'\nshutdown -h +85\ntimeout 4500 "$PYTHON" scripts/aws_canada_pilot.py --delivery delivery --data prepared --output output\n')
+                (output/'stack.json').write_text(json.dumps({'Resources':{'Watchdog':{'Properties':{'Code':{'ZipFile':'age >= 5100'}}}}}))
+                return {'hourly_instance_usd':1.006,'source_files':{},'files':{n:'' for n in ['source.tar.gz','user-data.template.sh','stack.json']}}
+            with patch('prepare_boundary_experiment.prepare_pilot',side_effect=prepare),patch('prepare_boundary_experiment.checkpoint_files',return_value={f'BC-B/{n}':checkpoint/n for n in ['best.pt','result.json']}):
+                result=package(root,checkpoint.parent,root/'package')
+            self.assertEqual(result['requested_budget_usd'],10)
+            self.assertEqual(result['watchdog_maximum_age_seconds'],15000)
+            script=(root/'package/user-data.template.sh').read_text()
+            self.assertIn('shutdown -h +250',script);self.assertIn('timeout 14400',script)
+            self.assertIn('aws_boundary_workload.py',script)
+            self.assertIn('15000',(root/'package/stack.json').read_text())
+            for n,h in result['files'].items():self.assertEqual(digest(root/'package'/n),h)
+            with tarfile.open(root/'package/source.tar.gz') as archive:
+                hashes=archive.extractfile('SHA256SUMS').read().decode().splitlines()
+                self.assertEqual(len(hashes),len(archive.getmembers())-1)
+                import hashlib
+                for row in hashes:
+                    h,n=row.split('  ');self.assertEqual(hashlib.sha256(archive.extractfile(n).read()).hexdigest(),h)
+
+
 if __name__=='__main__':unittest.main()
