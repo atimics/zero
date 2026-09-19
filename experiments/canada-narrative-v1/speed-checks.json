@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "parameters": 5049600,
+  "corpus_training_presentations": 0,
+  "sweep": [
+    {
+      "device": "cpu",
+      "threads": 2,
+      "microbatch_sequences": 1,
+      "seconds": [
+        1.0560948341153562,
+        1.0384235829114914,
+        1.086467667017132
+      ],
+      "median": 1.0560948341153562,
+      "last_loss": 7.675274074077606
+    },
+    {
+      "device": "cpu",
+      "threads": 4,
+      "microbatch_sequences": 1,
+      "seconds": [
+        0.728028167039156,
+        0.6946872919797897,
+        0.675079332664609
+      ],
+      "median": 0.6946872919797897,
+      "last_loss": 7.675274074077606
+    },
+    {
+      "device": "cpu",
+      "threads": 8,
+      "microbatch_sequences": 1,
+      "seconds": [
+        0.8407784998416901,
+        0.6925101247616112,
+        0.655868791975081
+      ],
+      "median": 0.6925101247616112,
+      "last_loss": 7.675274074077606
+    },
+    {
+      "device": "cpu",
+      "threads": 4,
+      "microbatch_sequences": 4,
+      "seconds": [
+        0.5801724591292441,
+        0.57862350018695,
+        0.5837817923165858
+      ],
+      "median": 0.5801724591292441,
+      "last_loss": 7.67380428314209
+    },
+    {
+      "device": "cpu",
+      "threads": 8,
+      "microbatch_sequences": 4,
+      "seconds": [
+        0.5013967910781503,
+        0.5289777498692274,
+        0.5225579999387264
+      ],
+      "median": 0.5225579999387264,
+      "last_loss": 7.67380428314209
+    },
+    {
+      "device": "mps",
+      "threads": 2,
+      "microbatch_sequences": 1,
+      "seconds": [
+        0.2759129158221185,
+        0.275023375172168,
+        0.2753516659140587
+      ],
+      "median": 0.2753516659140587,
+      "last_loss": 7.679239928722382
+    },
+    {
+      "device": "mps",
+      "threads": 2,
+      "microbatch_sequences": 4,
+      "seconds": [
+        0.2755728750489652,
+        0.2728870422579348,
+        0.26234549982473254
+      ],
+      "median": 0.2728870422579348,
+      "last_loss": 7.677613019943237
+    },
+    {
+      "device": "mps",
+      "threads": 2,
+      "microbatch_sequences": 8,
+      "seconds": [
+        0.26083562476560473,
+        0.2638250831514597,
+        0.25895579205825925
+      ],
+      "median": 0.26083562476560473,
+      "last_loss": 7.679656505584717
+    }
+  ],
+  "numerical_checks": {
+    "initial_logits_max_abs": 1.5795230865478516e-06,
+    "updated_weights_max_abs": 7.589533925056458e-05,
+    "updated_weights_relative_l2": 1.4619124613091117e-06,
+    "loss_max_abs": 4.76837158203125e-07,
+    "evaluation_bpb_abs": 6.879306049256684e-07,
+    "repeat_weights_max_abs": 6.817281246185303e-07,
+    "repeat_loss_max_abs": 0.0
+  },
+  "engineering_tolerances": {
+    "initial_logits_max_abs": 0.0001,
+    "updated_weights_max_abs": 0.0001,
+    "updated_weights_relative_l2": 5e-06,
+    "loss_max_abs": 1e-05,
+    "evaluation_bpb_abs": 1e-05,
+    "repeat_weights_max_abs": 2e-06,
+    "repeat_loss_max_abs": 1e-06
+  },
+  "all_numerical_checks_pass": true,
+  "scope": "Two synthetic updates check numerical agreement and short-run repeatability. Full training remains an experiment."
+}

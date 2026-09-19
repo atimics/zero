@@ -470,7 +470,7 @@ def fill(text, row):
 
 def authored_thought(row, rng):
     mind = mind_row(row)
-    pool = THOUGHT.get(mind['goal'], {}).get(family(row['kind']),
+    pool = THOUGHT.get(mind['goal'], {}).get(family(row.get('kind')),
                     ['I should keep an eye on how this turns out.'])
     return fill(rng.choice(pool), row)
 
@@ -480,8 +480,10 @@ def response(base, rule, act, rng, replacement=None, paraphrase=False):
     own = row['output']
     heard = rng.choice(sorted(accepted_forms(row, rule)))
     mind = mind_row(row)
+    if act in MIND_ACTS:
+        row['mind'] = mind
     goal = mind['goal']
-    fam = family(row['kind'])
+    fam = family(row.get('kind'))
     voice = row.get('voice', 'resident')
     if voice not in VOICE_LINES: voice = 'resident'
     history = []
@@ -609,4 +611,9 @@ def build_rows(bases, rules, seed, repeats=1, paraphrase=False, acts=None):
 
 
 def approved_response(row, rule):
+    if row['act'] in ('start', 'question'):
+        return accepted_forms(row, rule)
+    if row['act'] == 'disagree':
+        return {'I heard a different account. ' + form + ' How sure are you?'
+                for form in accepted_forms(row, rule)}
     return {row['output']}

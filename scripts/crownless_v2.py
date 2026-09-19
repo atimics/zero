@@ -126,10 +126,11 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
                typed_stance=False, situation=False, social=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
     if packet or conversation:
-        # The runtime's CcCoreModelBegin sends this stance when the caller
-        # names no character, so a row without one encodes the same way.
-        mind = row.get('mind') or {'goal': 'secure_livelihood', 'stress': 'medium',
-                                   'courage': 'medium'}
+        # Explicit mind context and typed channels use the default stance.
+        # Plain packet and conversation rows retain their original prefix.
+        has_mind = 'mind' in row or typed_stance or situation or social
+        mind = row.get('mind') or ({'goal': 'secure_livelihood', 'stress': 'medium',
+                                    'courage': 'medium'} if has_mind else {})
         # The witnessed cue and the trailing control line belong to the mind
         # context. Rows without one keep the plain account shape the native
         # runtime emits from CcCoreModelBegin.
@@ -141,7 +142,7 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
             # courage, memories, and current thoughts. The model reads them as
             # plain text; only the held account's fields carry markers.
             mind_lines = []
-            if not typed_stance:
+            if not typed_stance and (mind or row.get('voice')):
                 mind_lines.append('# voice: ' + (row.get('voice') or 'resident'))
                 if mind.get('goal'): mind_lines.append('# goal: ' + mind['goal'])
                 if mind.get('stress'): mind_lines.append('# stress: ' + mind['stress'])

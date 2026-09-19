@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "experiment": "canada-narrative-v1",
+  "status": "registered-unrun",
+  "goal": "Measure scene writing gains from narrative selection and broader reading at fixed model size and token budget.",
+  "model": "5m-1024",
+  "initialization": "Fresh paired weights from subword_model.create; same seed in each comparison",
+  "seeds": [7, 17, 29],
+  "pilot_seed": 7,
+  "comparisons": {
+    "AB": {"arms": ["A", "B"], "target_tokens_per_arm": 27157191},
+    "BC": {"arms": ["B", "C"], "target_tokens_per_arm": 100499909}
+  },
+  "training": {
+    "context": 1024,
+    "tokens_per_update": 8192,
+    "microbatch_sequences": 4,
+    "cpu_threads": 8,
+    "accelerator_host_threads": 2,
+    "evaluation_microbatch_windows": 4,
+    "sampling": "Frozen record order, cyclic target indices from zero, previous token as input; contexts may cross record and stream boundaries",
+    "tail": "Pad final context and mask excess targets; count only scored targets",
+    "optimizer": "AdamW",
+    "learning_rate": 0.0003,
+    "betas": [0.9, 0.999],
+    "epsilon": 1e-8,
+    "matrix_weight_decay": 0.01,
+    "vector_weight_decay": 0.0,
+    "dropout": 0.1,
+    "gradient_clip": 1.0,
+    "warmup": "min(2000, max(1, floor(updates / 50)))",
+    "schedule": "Cosine to zero after warmup over the full comparison budget",
+    "report_every_updates": 200,
+    "checkpoint_selection": "Lowest shared selection bits per byte at update 200 and each following multiple, plus final update; earliest wins ties",
+    "precision": "float32 on CPU and Apple MPS; bfloat16 autocast on CUDA; same device, batch settings and precision for paired arms"
+  },
+  "evaluation": {
+    "shared_source": "Frozen A validation, protected by B/C delivery audit",
+    "selection": "64 windows in the first half, 256 scored targets per window",
+    "outcome": "256 windows in the second half, read after both arms finish",
+    "loss_relative_improvement_minimum": 0.02,
+    "human_review": {
+      "cases": 200,
+      "reviewer": "One designated reviewer completes every case once per comparison; revisions replace earlier votes",
+      "choices": ["A", "B", "skip"],
+      "candidate_wins_minimum": 120,
+      "minimum_decisive_choices": 160,
+      "denominator": "All 200 cases; skip is unresolved and contributes zero wins",
+      "uncertainty": "Report a Wilson interval on decisive choices; conditional descriptive interval for this reviewer and prompt set",
+      "rubric": "Prefer the continuation with stable characters, sensible event order, clear dialogue, readable prose and less looping. Skip a tie or an unclear choice.",
+      "round_size": 5
+    },
+    "generation": {"prompt_tokens": 128, "new_tokens": 256, "temperature": 0.7, "top_k": 40, "repetition_penalty": 1.1, "seed": 107},
+    "repetition": "Report repeated four-gram excess per continuation; candidate mean may exceed control by at most 0.01",
+    "annotation_use": "Delivered scene annotations support separate diagnostics; shared protected validation supplies the primary comparison",
+    "test_policy": "Test content stays sealed during this campaign"
+  },
+  "decision": {
+    "pilot": "Both arms complete, finite scores, at least 2% lower outcome bits per byte, review thresholds pass, and repetition bound passes",
+    "replication": "Seeds 17 and 29 use the same frozen contract after a passing pilot; report each seed and require both to pass the numerical gates",
+    "scope": "Narrative continuation on the protected evaluation set; model promotion is a later decision"
+  }
+}

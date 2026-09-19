@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "status": "prepared-awaiting-paid-launch-approval",
+  "region": "ca-central-1",
+  "account": "022118847419",
+  "run_id": "zero-canada-timing-b6d52298c4b4-1789263165",
+  "created_at": 1789263165,
+  "launch_valid_until": 1789349565,
+  "instance_type": "g5.xlarge",
+  "instance_count": 1,
+  "hourly_instance_usd": 1.117,
+  "requested_budget_usd": 2,
+  "workload_timeout_seconds": 900,
+  "watchdog_maximum_age_seconds": 1800,
+  "watchdog_check_interval_seconds": 60,
+  "planning_instance_usd_at_31_minutes": 0.5771166666666667,
+  "scope": "105 synthetic updates, CUDA numerical check and timing; zero corpus training presentations",
+  "shutdown": "Guest shutdown at success/failure and +30 minutes; AWS watchdog checks instance age each minute",
+  "cleanup": "Collect results locally, confirm instance termination, empty temporary bucket and delete stack",
+  "source_files": {
+    "scripts/canada_narrative.py": "dd55c280997c70d79544452d1da8072bcfc3498b1c0f7584f4b0b33eaf54b561",
+    "scripts/run_canada_narrative.py": "cf396c7fda0b065830046006f544d50361a51c303a9abe642585d466dfb62843",
+    "scripts/review_canada_narrative.py": "c751656ad83152383bc0245541e75c1ee5b0f52814359e1c147332c15e7b775f",
+    "scripts/subword_model.py": "68a3f8e7cba83302c0b793a4ee7eb156cfa95f16503073275bbd45e8abe86ba6",
+    "scripts/zero_torch.py": "656a281c43de037ff71ff86d149ad7c6b5f5f3112318a839c1110d90a7bd28cc",
+    "scripts/ab_review.py": "b1b3e1e75389f9b3c3bfb59df6a817d489035f62e6eeb72586ab6dc2264c7413",
+    "scripts/ab_review.html": "cd45241371feeb246c816877e51cc153787101387a1e5657b257d6abe4bb4fe8",
+    "experiments/canada-narrative-v1/contract.json": "214c5f5969d35785f8a33b6f18e5cfcb2d1e78980582cfb33fadea9cd7679fb7",
+    "experiments/canada-narrative-v1/inputs.lock.json": "0f25df0e9e072d22d64b597f6f8b7203e0d0ecf39c63acf1170fd0a4957cb13f",
+    "experiments/canada-narrative-v1/preparation.json": "86665c4b57e4d1cd6de46f5bfde46dd1e46028ae82126aea27d08871d4aaee31",
+    "scripts/benchmark_canada_narrative.py": "11b2ad0cea79bf9b3d16ac83b705c233246b350aae6c9dd94e92ecb9cb7e6bb6",
+    "experiments/canada-narrative-v1/implementation.lock.json": "efd20539366c9d032b863b39c82efec89e4b82c700710b3cac8a73e440d50a30",
+    "scripts/aws_canada_workload.py": "908d555be68e3c504bc93917f0855c1df86c7362757cabf5a105c30ed590cdfd"
+  },
+  "files": {
+    "source.tar.gz": "b6d52298c4b4f450394defcae1cf14714edbb4d32c2947e1421f5554315dd9fa",
+    "stack.json": "f8c70704fa169fa9d8be20d55ee6f24076e5b1e661950df9d70847630a940cba",
+    "user-data.template.sh": "e7f5866e6560af9373fc790df295f0cffd210b0cc247052f901bb38bff9afbc1",
+    "request.template.json": "2cd37e4f72bf96106dc60de85215c450986cacb54a6584833ca15e90badc015c",
+    "launch.py": "70dec280539ec303bfea0d3985be445a3d282871d82530f1860191399602c2eb"
+  }
+}

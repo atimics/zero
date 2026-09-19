@@ -37,6 +37,28 @@ class CoreTests(unittest.TestCase):
         self.assertIn(result['text'], ['Éva posted a notice about Flood relief in Newhaven.',
                                       'In Newhaven, Éva put up a notice about Flood relief.'])
 
+    def test_packet_prefix_and_conversation_default_are_separate(self):
+        directory = Path(__file__).resolve().parents[1] / 'models/crownless-core-v2'
+        tokenizer = Tokenizer.from_file(str(directory / 'tokenizer.json'))
+        row = {'id': 'prefix', 'prefix': '- Mara.\n', 'output': '', 'copies': [],
+               'fields': [{'field': 0, 'text': 'Mara', 'start': 2, 'end': 6,
+                           'role': 1, 'spoken': True, 'knowledge': 0,
+                           'provenance': 3, 'event': 1}]}
+        packet = encode_row(tokenizer, row, slots=True, packet=True)
+        expected = tokenizer.encode('- ').ids + [tokenizer.token_to_id('[F0]')] + tokenizer.encode('\n').ids
+        self.assertEqual(packet['tokens'][:packet['prefix_length']], expected)
+        plain = encode_row(tokenizer, row, slots=True, conversation=True)
+        self.assertEqual(plain['tokens'][:plain['prefix_length']], expected)
+        conversation = encode_row(tokenizer, dict(row, mind={}), slots=True, conversation=True)
+        defaults = '# voice: resident\n# goal: secure_livelihood\n# stress: medium\n# courage: medium\n'
+        # Encode each control line as the conversation wire format does.
+        expected = [i for line in defaults.splitlines(keepends=True) for i in tokenizer.encode(line).ids] + expected + tokenizer.encode('# say:\n').ids
+        self.assertEqual(conversation['tokens'][:conversation['prefix_length']], expected)
+        implicit = encode_row(tokenizer, row, slots=True, conversation=True, typed_stance=True)
+        explicit = encode_row(tokenizer, dict(row, mind={}), slots=True, conversation=True, typed_stance=True)
+        for key in ('tokens', 'meta', 'candidates'):
+            self.assertEqual(implicit[key], explicit[key])
+
     def test_meaning_score_checks_roles_and_uncertainty(self):
         rule = {'roles': ['actor', 'recipient', 'quantity'],
                 'outputs': ['{0} helped {1}.', '{1} received help from {0}.']}

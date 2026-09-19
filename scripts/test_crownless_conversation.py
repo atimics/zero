@@ -5,7 +5,7 @@ import unittest
 from types import SimpleNamespace
 from unittest.mock import patch
 from tokenizers import Tokenizer
-from crownless_conversation import response, ACTS
+from crownless_conversation import response, ACTS, approved_response
 from crownless_v2 import encode_row
 from crownless_v2 import generate
 from crownless_v2_export import load_export
@@ -50,6 +50,22 @@ class ConversationTests(unittest.TestCase):
         bad['history'] = [{'speaker': 'other', 'text': 'x ' * 1000}]
         with self.assertRaisesRegex(ValueError, 'budget'):
             encode_row(self.tokenizer, bad, slots=True, conversation=True)
+
+    def test_claim_paraphrases_and_mind_defaults(self):
+        rule = dict(self.rule, outputs=[*self.rule['outputs'],
+                                       'In {1}, {0} put up a notice about {2}.'])
+        alternate = 'In Newhaven, Éva put up a notice about Flood relief.'
+        for act in ('start', 'question', 'disagree'):
+            row = response(self.row, rule, act, random.Random(1))
+            expected = ('I heard a different account. ' + alternate + ' How sure are you?'
+                        if act == 'disagree' else alternate)
+            self.assertIn(expected, approved_response(row, rule))
+            self.assertNotIn(expected.replace('Newhaven', 'Farhaven'), approved_response(row, rule))
+        thought = response(self.row, rule, 'thought', random.Random(1))
+        self.assertEqual(approved_response(thought, rule), {thought['output']})
+        react = response(self.row, rule, 'react', random.Random(1))
+        self.assertEqual(react['mind']['stress'], 'high')
+        self.assertNotIn('mind', self.row)
 
     def test_generated_speech_is_the_next_event(self):
         fields = copy.deepcopy(self.row['fields'])

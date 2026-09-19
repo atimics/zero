@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "delivery": {
+    "zero-handoff.json": "a2a1cf03cb60b6177bb4a8c245075c1c1259bef3cbade2e3c2c917f344eb85bf",
+    "plan-reviewed.json": "028c64c51ad7540e852ca8c5ba644f6eb863ebe1ce60937e9158d7483e0bfb4c",
+    "artifact-audit.json": "fdb83d95bce1e7a6bfb40f6db044fda86b83b8283cdf83e8c0b41bf8b15c546b",
+    "consumer-audit.json": "62a4e0629983db0290b0351c8db1b969f37370de50ab1711f1f4be0adcfedf2f",
+    "repeat-consumer-audit.json": "62a4e0629983db0290b0351c8db1b969f37370de50ab1711f1f4be0adcfedf2f",
+    "control-preservation-audit.json": "92a148ce2e8bfe47689b408f08853539f3655de81eb963869bc604fce0c5ad5c",
+    "final-ai-review/validation.json": "e2af5f030ac982aca9a4c7ac1388ceaa0195d57c3d4c0ad577d610655f079c2b",
+    "merge-receipt.json": "f76ec096a160dae5e7a9d9780723c5b53efedab3870bec76c29fe9447be2d891"
+  },
+  "baseline": {
+    "test.bin": {
+      "path": "inputs/ea6ff2fd3dfcd60b4e8ecadd0ef61397c5e8cd8290d30d4511e490cb5599a875.txt",
+      "sha256": "ea6ff2fd3dfcd60b4e8ecadd0ef61397c5e8cd8290d30d4511e490cb5599a875"
+    },
+    "token_bytes.json": {
+      "path": "inputs/48c0f3ef6da93d58e658de6a0bcff31410852606e4fd10eb8703b8bb63d34194.txt",
+      "sha256": "48c0f3ef6da93d58e658de6a0bcff31410852606e4fd10eb8703b8bb63d34194"
+    },
+    "tokenizer.json": {
+      "path": "inputs/90cdcc504c5311586cbe1f9c27b402e11c57ba5475521536f28beb6762939d43.txt",
+      "sha256": "90cdcc504c5311586cbe1f9c27b402e11c57ba5475521536f28beb6762939d43"
+    },
+    "train.bin": {
+      "path": "inputs/b733e17de9fc6cf8635a5fe8e84f2df8d606491b583032ff9fc7663a88c75a79.txt",
+      "sha256": "b733e17de9fc6cf8635a5fe8e84f2df8d606491b583032ff9fc7663a88c75a79"
+    },
+    "validation.bin": {
+      "path": "inputs/bd7a453c6a0ba5edd7c3460b9cfc2d703435c703d1d104a07d957a8cd965230b.txt",
+      "sha256": "bd7a453c6a0ba5edd7c3460b9cfc2d703435c703d1d104a07d957a8cd965230b"
+    }
+  },
+  "baseline_manifest": {
+    "path": "inputs/eea98d59768eb276d83c0f0fc6fd024ccd5f915f59715f1c14830ba686452ad6.txt",
+    "sha256": "eea98d59768eb276d83c0f0fc6fd024ccd5f915f59715f1c14830ba686452ad6"
+  },
+  "releases": {
+    "B": {
+      "id": "zero-narrative-B-4adf31182de17dbe11cc586dcef96f5e610abd974f3b2358158d77bf27739eec",
+      "directory": "releases/zero-narrative/B/zero-narrative-B-4adf31182de17dbe11cc586dcef96f5e610abd974f3b2358158d77bf27739eec",
+      "tokens": 27157191,
+      "records": 12335,
+      "files": {
+        "data/train.jsonl": "f389367a4b3b523c31d855278dffdeb08718c5ea6375e60b07348949de26671f",
+        "data/validation.jsonl": "36f3deae96a67c810aea0b73031aad1d2f65c29b98d3a8c8186e2e8683252547",
+        "release.json": "2e45b863c351fa3b41fd81af409d4d1a00bf9c8d08f06dd737baca78487d5eef",
+        "evidence/acceptance.json": "336bae82c712b756accbf6c092559f72fb2000466f3d7ace35b96b110b25e623"
+      }
+    },
+    "C": {
+      "id": "zero-narrative-C-75e7d03f93705305d2e0f7a8c8a75ef30255b97c8809489cee34a0fb6bfacd34",
+      "directory": "releases/zero-narrative/C/zero-narrative-C-75e7d03f93705305d2e0f7a8c8a75ef30255b97c8809489cee34a0fb6bfacd34",
+      "tokens": 100499909,
+      "records": 45910,
+      "files": {
+        "data/train.jsonl": "f0ef8d5374c6defc60691d031344be6fceeb433b4bb167a2ca2109c29e745ca8",
+        "data/validation.jsonl": "95cfc90f5e1f80069beee5662c71296d3560536baf9f8db806021952d2bc11b4",
+        "release.json": "565b7b04d31134847940158451018a22e9d0f56a2954f7f8b06aef5d83c9375d",
+        "evidence/acceptance.json": "eddef82db57c3df0381a2901590e3ca7be3d314de0c49511a97e1925bf1f05a8"
+      }
+    }
+  }
+}
