@@ -1,0 +1,3336 @@
+{
+  "model": "/Users/ratimics/develop/ilxyr/experiments/crownless-moves-v1/runs/cuda-b39eb0bc9b27-1789522220/output/rejected.ccv2",
+  "rows": 240,
+  "totals": {
+    "label": "diagnose",
+    "count": 240,
+    "distinct": {
+      "affirm": 8,
+      "answer": 19,
+      "attribute": 11,
+      "defer": 13,
+      "dispute": 18,
+      "hedge": 5,
+      "muse": 14,
+      "open": 18,
+      "part": 14,
+      "recall": 6,
+      "remark": 13,
+      "settle": 13
+    },
+    "thinnest": 5,
+    "exact": 52,
+    "move": 80,
+    "stopped": 240,
+    "leaked": 0,
+    "degenerate": 1,
+    "empty": 0,
+    "copied": "43/54",
+    "copied_all": false,
+    "acts": {
+      "affirm": {
+        "count": 20,
+        "exact": 0,
+        "move": 0,
+        "degenerate": 0
+      },
+      "answer": {
+        "count": 20,
+        "exact": 17,
+        "move": 17,
+        "degenerate": 0
+      },
+      "attribute": {
+        "count": 20,
+        "exact": 0,
+        "move": 0,
+        "degenerate": 0
+      },
+      "defer": {
+        "count": 20,
+        "exact": 0,
+        "move": 0,
+        "degenerate": 0
+      },
+      "dispute": {
+        "count": 20,
+        "exact": 2,
+        "move": 4,
+        "degenerate": 0
+      },
+      "hedge": {
+        "count": 20,
+        "exact": 0,
+        "move": 0,
+        "degenerate": 0
+      },
+      "muse": {
+        "count": 20,
+        "exact": 4,
+        "move": 18,
+        "degenerate": 0
+      },
+      "open": {
+        "count": 20,
+        "exact": 10,
+        "move": 14,
+        "degenerate": 0
+      },
+      "part": {
+        "count": 20,
+        "exact": 2,
+        "move": 4,
+        "degenerate": 1
+      },
+      "recall": {
+        "count": 20,
+        "exact": 16,
+        "move": 20,
+        "degenerate": 0
+      },
+      "remark": {
+        "count": 20,
+        "exact": 1,
+        "move": 3,
+        "degenerate": 0
+      },
+      "settle": {
+        "count": 20,
+        "exact": 0,
+        "move": 0,
+        "degenerate": 0
+      }
+    }
+  },
+  "per_move": {
+    "affirm": {
+      "rows": 20,
+      "move": 0,
+      "cell": 0,
+      "another_move": 6,
+      "unknown_wording": 14,
+      "degenerate": 0,
+      "distinct": 8
+    },
+    "answer": {
+      "rows": 20,
+      "move": 17,
+      "cell": 17,
+      "another_move": 0,
+      "unknown_wording": 3,
+      "degenerate": 0,
+      "distinct": 19
+    },
+    "attribute": {
+      "rows": 20,
+      "move": 0,
+      "cell": 0,
+      "another_move": 1,
+      "unknown_wording": 19,
+      "degenerate": 0,
+      "distinct": 11
+    },
+    "defer": {
+      "rows": 20,
+      "move": 0,
+      "cell": 0,
+      "another_move": 4,
+      "unknown_wording": 16,
+      "degenerate": 0,
+      "distinct": 13
+    },
+    "dispute": {
+      "rows": 20,
+      "move": 4,
+      "cell": 2,
+      "another_move": 6,
+      "unknown_wording": 10,
+      "degenerate": 0,
+      "distinct": 18
+    },
+    "hedge": {
+      "rows": 20,
+      "move": 0,
+      "cell": 0,
+      "another_move": 0,
+      "unknown_wording": 20,
+      "degenerate": 0,
+      "distinct": 5
+    },
+    "muse": {
+      "rows": 20,
+      "move": 18,
+      "cell": 4,
+      "another_move": 0,
+      "unknown_wording": 2,
+      "degenerate": 0,
+      "distinct": 14
+    },
+    "open": {
+      "rows": 20,
+      "move": 14,
+      "cell": 10,
+      "another_move": 2,
+      "unknown_wording": 4,
+      "degenerate": 0,
+      "distinct": 18
+    },
+    "part": {
+      "rows": 20,
+      "move": 4,
+      "cell": 2,
+      "another_move": 4,
+      "unknown_wording": 12,
+      "degenerate": 1,
+      "distinct": 14
+    },
+    "recall": {
+      "rows": 20,
+      "move": 20,
+      "cell": 16,
+      "another_move": 0,
+      "unknown_wording": 0,
+      "degenerate": 0,
+      "distinct": 6
+    },
+    "remark": {
+      "rows": 20,
+      "move": 3,
+      "cell": 1,
+      "another_move": 3,
+      "unknown_wording": 14,
+      "degenerate": 0,
+      "distinct": 13
+    },
+    "settle": {
+      "rows": 20,
+      "move": 0,
+      "cell": 0,
+      "another_move": 3,
+      "unknown_wording": 17,
+      "degenerate": 0,
+      "distinct": 13
+    }
+  },
+  "examples": {
+    "affirm": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "That's what I heard too. How sure are you?",
+        "wanted": "That is the word over the counter too."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "That's what I heard too. How sure are you?",
+        "wanted": "The same. I do not walk out alone now."
+      }
+    ],
+    "answer": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Someone posted a notice about Velowethmere Crown in Zaraashfell, if the story is right.",
+        "wanted": "In Zaraashfell, someone put up a notice about Velowethmere Crown, if the rumour is true."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Someone posted a notice about Velashormere Cup in Zaraashfell, if the story is right.",
+        "wanted": "In Zaraashfell, someone put up a notice about Velashormere Cup, if the rumour is true."
+      }
+    ],
+    "attribute": [
+      {
+        "reads_as": [
+          "recall"
+        ],
+        "text": "Good news is rare enough that I remember the last one exactly.",
+        "wanted": "I had it from someone close to it."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I had forgotten what the fields look like when they smile.",
+        "wanted": "It came from someone who was there, as I understood it."
+      }
+    ],
+    "defer": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Agreed. Let's leave it there for now.",
+        "wanted": "Someone closer will have it straight."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Agreed. Let's leave it there for now.",
+        "wanted": "Someone in my room will have been there."
+      }
+    ],
+    "dispute": [
+      {
+        "reads_as": [
+          "recall"
+        ],
+        "text": "I have seen this before, and it did not end the way we hoped.",
+        "wanted": "I heard it otherwise. After living in Veloraholt, someone died. How sure are you?"
+      },
+      {
+        "reads_as": [
+          "recall"
+        ],
+        "text": "I have seen this before, and it did not end the way we hoped.",
+        "wanted": "No. I had it quite differently. After living in Zarorumfell, someone died. One of us has it wrong, and it matters."
+      }
+    ],
+    "hedge": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I am unsure. We should ask someone who was there.",
+        "wanted": "I am unsure, and that is the worst of it."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I am unsure. We should ask someone who was there.",
+        "wanted": "I could not say for certain."
+      }
+    ],
+    "muse": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I should think this through. I will remember the last one exactly.",
+        "wanted": "My hands are shaking. We will get through this somehow."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I should think this through. I will remember how.",
+        "wanted": "Perhaps it will pass. I should keep an eye on how this turns out."
+      }
+    ],
+    "open": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Zarenumfell Zaraowwi posted a notice about Zarashilholt Book in Velorethmere.",
+        "wanted": "In Velorethmere, Zarenumfell Zaraowwi put up a notice about Zarashilholt Book."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "Zarenilgate Zarumeth posted a notice about Zarashilholt Book in Velorethmere.",
+        "wanted": "In Velorethmere, Zarenilgate Zarumeth put up a notice about Zarashilholt Book."
+      }
+    ],
+    "part": [
+      {
+        "reads_as": [
+          "recall"
+        ],
+        "text": "I remember the old days, before the troubles. This feels like one of them.",
+        "wanted": "Come by tonight. I will have more."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I am unsure. We should ask someone who was there.",
+        "wanted": "I will be about the flock."
+      }
+    ],
+    "remark": [
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I can barely think. The courts of Velowethwick Veloren and Zarashashgate Zaroro made peace, if the rumour is true.",
+        "wanted": "When the town smiles, the innkeeper eats."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "The courts of Zarethashgate Zarowi and Zarashashgate Zaroro made peace, if the rumour is true.",
+        "wanted": "The millstone turns, and the town eats. Today it turns well."
+      }
+    ],
+    "settle": [
+      {
+        "reads_as": [
+          "remark"
+        ],
+        "text": "I would engrave this in gold, but the town only has copper.",
+        "wanted": "I will leave the entry open."
+      },
+      {
+        "reads_as": [
+          "no known wording"
+        ],
+        "text": "I have something to do.",
+        "wanted": "That will do until we know more."
+      }
+    ]
+  },
+  "scored": [
+    {
+      "id": "validation:3:0:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "That is the word over the counter too.",
+      "accepted": [
+        "Same as I heard at the bakehouse.",
+        "That is the word over the counter too."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:3:1:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "The same. I do not walk out alone now.",
+      "accepted": [
+        "I heard it, and I keep the axe near.",
+        "The same. I do not walk out alone now."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:15:0:affirm:0",
+      "move": "affirm",
+      "text": "I remember the lean years. This feels like one of them.",
+      "reference": "That is how it reached my field.",
+      "accepted": [
+        "Same story came down the lane.",
+        "That is how it reached my field."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:15:1:affirm:0",
+      "move": "affirm",
+      "text": "I remember the lean years. This feels like one of them.",
+      "reference": "It matches what the carters said.",
+      "accepted": [
+        "I heard that, and I believe it.",
+        "It matches what the carters said."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:27:0:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "I have heard it all night. It does not improve.",
+      "accepted": [
+        "Everyone says it, and they say it frightened.",
+        "I have heard it all night. It does not improve."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:27:1:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "That matches what came in with the flour.",
+      "accepted": [
+        "I have heard the same, and it sits badly.",
+        "That matches what came in with the flour."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:39:0:affirm:0",
+      "move": "affirm",
+      "text": "I heard a different account. Zarililmoor Crown was completed in Velashethmoor. How sure are you?",
+      "reference": "That matches my account.",
+      "accepted": [
+        "I have heard the same.",
+        "That matches my account."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:39:1:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "I heard it, and the season will not bear it.",
+      "accepted": [
+        "I heard it, and the season will not bear it.",
+        "The same, and we have nothing spare."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:51:0:affirm:0",
+      "move": "affirm",
+      "text": "I remember the lean years. This feels like one of them.",
+      "reference": "Half the room said as much last night.",
+      "accepted": [
+        "Half the room said as much last night.",
+        "That is the tale at my tables."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:51:1:affirm:0",
+      "move": "affirm",
+      "text": "Thine I have made bread from will remember how bad the last famine.",
+      "reference": "Same as reached the pasture.",
+      "accepted": [
+        "Same as reached the pasture.",
+        "That is what they said on the hill."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:63:0:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "Same, and from better men than most.",
+      "accepted": [
+        "I have heard it three times this week.",
+        "Same, and from better men than most."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:63:1:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "I heard it, and the stones will stand idle.",
+      "accepted": [
+        "I heard it, and the stones will stand idle.",
+        "The same. There will be nothing to grind."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:75:0:affirm:0",
+      "move": "affirm",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "I have heard the same, and it sits badly.",
+      "accepted": [
+        "I have heard the same, and it sits badly.",
+        "That matches what came in with the flour."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:75:1:affirm:0",
+      "move": "affirm",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "I heard it too, and I have not slept since.",
+      "accepted": [
+        "I heard it too, and I have not slept since.",
+        "The same, and I am short of bread already."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:87:0:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "That is the word over the counter too.",
+      "accepted": [
+        "Same as I heard at the bakehouse.",
+        "That is the word over the counter too."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:87:1:affirm:0",
+      "move": "affirm",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "The same, and I am short of bread already.",
+      "accepted": [
+        "I heard it too, and I have not slept since.",
+        "The same, and I am short of bread already."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:99:0:affirm:0",
+      "move": "affirm",
+      "text": "I heard a different account. Zarilenwick Zarethor gave birth to Zarashilden Velaumho by Velethilfell Cup at Zarethenden, so people say. How sure are you?",
+      "reference": "My record says the same.",
+      "accepted": [
+        "My record says the same.",
+        "That agrees with what I have set down."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:99:1:affirm:0",
+      "move": "affirm",
+      "text": "I heard a different account. Zarilenwick Zarethor gave birth to Velilowford Velaaden by Velethilfell Cup at Zarethenden, so people say. How sure are you?",
+      "reference": "It matches my entry, near enough.",
+      "accepted": [
+        "I wrote as much, in those words.",
+        "It matches my entry, near enough."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:111:0:affirm:0",
+      "move": "affirm",
+      "text": "I remember the lean years. This feels like one of them.",
+      "reference": "Same account, near enough.",
+      "accepted": [
+        "I heard that, and the sacks bear it out.",
+        "Same account, near enough."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:111:1:affirm:0",
+      "move": "affirm",
+      "text": "The survived the last famine. I hope we remember how.",
+      "reference": "The same. I do not walk out alone now.",
+      "accepted": [
+        "I heard it, and I keep the axe near.",
+        "The same. I do not walk out alone now."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:1:0:answer:0",
+      "move": "answer",
+      "text": "Velashormere Velashe and Zarethumford Zarorum went to war.",
+      "reference": "Velashormere Velashe and Zarethumford Zarorum went to war.",
+      "accepted": [
+        "Velashormere Velashe and Zarethumford Zarorum went to war."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:1:1:answer:0",
+      "move": "answer",
+      "text": "Velashormere Velashe and Veloramere Velenilga went to war.",
+      "reference": "Velashormere Velashe and Veloramere Velenilga went to war.",
+      "accepted": [
+        "Velashormere Velashe and Veloramere Velenilga went to war."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:13:0:answer:0",
+      "move": "answer",
+      "text": "Zarashashgate used wood, stone, and tools to repair fire damage.",
+      "reference": "Zarashashgate used wood, stone, and tools to repair fire damage.",
+      "accepted": [
+        "Zarashashgate used wood, stone, and tools to repair fire damage."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:13:1:answer:0",
+      "move": "answer",
+      "text": "Zarenumwick used wood, stone, and tools to repair fire damage.",
+      "reference": "Zarenumwick used wood, stone, and tools to repair fire damage.",
+      "accepted": [
+        "Zarenumwick used wood, stone, and tools to repair fire damage."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:25:0:answer:0",
+      "move": "answer",
+      "text": "Zarumowmoor Zarowash carriage waited at Zarashashwick because court relations closed the roads, if the story is right.",
+      "reference": "Zarumowmoor Zarowash carriage waited at Zarashashwick because court relations closed the roads, if the story is right.",
+      "accepted": [
+        "Zarumowmoor Zarowash carriage waited at Zarashashwick because court relations closed the roads, if the story is right."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:25:1:answer:0",
+      "move": "answer",
+      "text": "Zarethowfell Velumet carriage waited at Zarashashwick because court relations closed the roads, if the story is right.",
+      "reference": "Zarethowfell Velumet carriage waited at Zarashashwick because court relations closed the roads, if the story is right.",
+      "accepted": [
+        "Zarethowfell Velumet carriage waited at Zarashashwick because court relations closed the roads, if the story is right."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:37:0:answer:0",
+      "move": "answer",
+      "text": "Zarumaholt Zarumilde was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true.",
+      "reference": "Zarumaholt Zarumilde was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true.",
+      "accepted": [
+        "Zarumaholt Zarumilde was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:37:1:answer:0",
+      "move": "answer",
+      "text": "Velumenholt Velenoww was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true.",
+      "reference": "Velumenholt Velenoww was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true.",
+      "accepted": [
+        "Velumenholt Velenoww was bred with Velaethholt Velenumg at Zarilamere, with a foal expected, if the rumour is true."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:49:0:answer:0",
+      "move": "answer",
+      "text": "Zarumorgate closed the treaty bridge, delaying the relief convoy, so people say.",
+      "reference": "Zarumorgate closed the treaty bridge, delaying the relief convoy, so people say.",
+      "accepted": [
+        "Zarumorgate closed the treaty bridge, delaying the relief convoy, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:49:1:answer:0",
+      "move": "answer",
+      "text": "Zaraenmere closed the treaty bridge, delaying the relief convoy, so people say.",
+      "reference": "Zaraenmere closed the treaty bridge, delaying the relief convoy, so people say.",
+      "accepted": [
+        "Zaraenmere closed the treaty bridge, delaying the relief convoy, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:61:0:answer:0",
+      "move": "answer",
+      "text": "Someone posted a notice about Velowethmere Crown in Zaraashfell, if the story is right.",
+      "reference": "In Zaraashfell, someone put up a notice about Velowethmere Crown, if the rumour is true.",
+      "accepted": [
+        "In Zaraashfell, someone put up a notice about Velowethmere Crown, if the rumour is true."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:61:1:answer:0",
+      "move": "answer",
+      "text": "Someone posted a notice about Velashormere Cup in Zaraashfell, if the story is right.",
+      "reference": "In Zaraashfell, someone put up a notice about Velashormere Cup, if the rumour is true.",
+      "accepted": [
+        "In Zaraashfell, someone put up a notice about Velashormere Cup, if the rumour is true."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:73:0:answer:0",
+      "move": "answer",
+      "text": "Zarenenmere delayed public repairs for lack of stone.",
+      "reference": "A stone shortage delayed public repairs in Zarenenmere.",
+      "accepted": [
+        "A stone shortage delayed public repairs in Zarenenmere."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:73:1:answer:0",
+      "move": "answer",
+      "text": "A stone shortage delayed public repairs in Zarenilfell.",
+      "reference": "A stone shortage delayed public repairs in Zarenilfell.",
+      "accepted": [
+        "A stone shortage delayed public repairs in Zarenilfell."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:85:0:answer:0",
+      "move": "answer",
+      "text": "Zarowengate Veleneth lost the last land under the dragon crown.",
+      "reference": "Zarowengate Veleneth lost the last land under the dragon crown.",
+      "accepted": [
+        "Zarowengate Veleneth lost the last land under the dragon crown."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:85:1:answer:0",
+      "move": "answer",
+      "text": "Velowagate Velowashm lost the last land under the dragon crown.",
+      "reference": "Velowagate Velowashm lost the last land under the dragon crown.",
+      "accepted": [
+        "Velowagate Velowashm lost the last land under the dragon crown."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:97:0:answer:0",
+      "move": "answer",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+      "reference": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+      "accepted": [
+        "The company left its carriage and crossed the goblin network to a chimney in the dragon roost."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:97:1:answer:0",
+      "move": "answer",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+      "reference": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost.",
+      "accepted": [
+        "The company left its carriage and crossed the goblin network to a chimney in the dragon roost."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:109:0:answer:0",
+      "move": "answer",
+      "text": "Velumumholt's drought harvest fell short of what the Zarenummere needed, so people say.",
+      "reference": "Velumumholt's drought harvest fell short of what the Zarenummere needed, so people say.",
+      "accepted": [
+        "Velumumholt's drought harvest fell short of what the Zarenummere needed, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:109:1:answer:0",
+      "move": "answer",
+      "text": "Velumumholt's drought harvest fell short of what the Velenashfell needed, so people say.",
+      "reference": "Velumumholt's drought harvest fell short of what the Velenashfell needed, so people say.",
+      "accepted": [
+        "Velumumholt's drought harvest fell short of what the Velenashfell needed, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:6:0:attribute:0",
+      "move": "attribute",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "I had it from someone close to it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:6:1:attribute:0",
+      "move": "attribute",
+      "text": "I had forgotten what the fields look like when they smile.",
+      "reference": "It came from someone who was there, as I understood it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:18:0:attribute:0",
+      "move": "attribute",
+      "text": "I heard a different account. A pretender arose in The Zarorenmere Cour after a long silence from the abbey, if the rumour is true. How sure are you?",
+      "reference": "I could not tell you who carried it first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:18:1:attribute:0",
+      "move": "attribute",
+      "text": "I heard a different account. A pretender arose in The Zarumowholt Cour after a long silence from the abbey, if the rumour is true. How sure are you?",
+      "reference": "I could not tell you who carried it first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:30:0:attribute:0",
+      "move": "attribute",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Too many have carried it to say where it began.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:30:1:attribute:0",
+      "move": "attribute",
+      "text": "It reminds my customers and some lore was lost, according to the word going round.",
+      "reference": "Too many have carried it to say where it began.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:42:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "Too many have carried it to say where it began.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:42:1:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "Too many have carried it to say where it began.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:54:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. It reminds me of when Silverwick.",
+      "reference": "I had it from someone close to it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:54:1:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I had it from someone close to it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:66:0:attribute:0",
+      "move": "attribute",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "It came from someone who was there, as I understood it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:66:1:attribute:0",
+      "move": "attribute",
+      "text": "I heard a different account. Velenethfell Zarethe was born to the family of Zarenenwick Zarailmo in Zarenethmoor. How sure are you?",
+      "reference": "I had it from someone close to it.",
+      "accepted": [
+        "I had it from someone close to it.",
+        "It came from someone who was there, as I understood it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:78:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "It has come by so many mouths I could not name the first.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:78:1:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "It has come by so many mouths I could not name the first.",
+      "accepted": [
+        "It has come by so many mouths I could not name the first.",
+        "Too many have carried it to say where it began."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:90:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I could not tell you who carried it first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:90:1:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. Let's leave it there for now.",
+      "reference": "It came to me second hand. I could not name who first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:102:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "It came to me second hand. I could not name who first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:102:1:attribute:0",
+      "move": "attribute",
+      "text": "I heard a different account. Goblin Ashkeepers sealed the brood hoard after Zaraashholt Veloraga laid a clutch, if the rumour is true. How sure are you?",
+      "reference": "I could not tell you who carried it first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:114:0:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "It came to me second hand. I could not name who first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:114:1:attribute:0",
+      "move": "attribute",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I could not tell you who carried it first.",
+      "accepted": [
+        "I could not tell you who carried it first.",
+        "It came to me second hand. I could not name who first."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:7:0:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Someone closer will have it straight.",
+      "accepted": [
+        "Ask them down the lane. They will know.",
+        "Someone closer will have it straight."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:7:1:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Someone in my room will have been there.",
+      "accepted": [
+        "I will ask tonight. Someone always knows.",
+        "Someone in my room will have been there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:19:0:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "We should find a witness, and soon.",
+      "accepted": [
+        "Ask someone who saw it. I need to know.",
+        "We should find a witness, and soon."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:19:1:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "I will ask every traveller until one saw it.",
+      "accepted": [
+        "Find a witness. My tables will not settle otherwise.",
+        "I will ask every traveller until one saw it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:31:0:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Ask at the mill. They hear it before I do.",
+      "accepted": [
+        "Ask at the mill. They hear it before I do.",
+        "The carters will know better than me."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:31:1:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Find a witness. My tables will not settle otherwise.",
+      "accepted": [
+        "Find a witness. My tables will not settle otherwise.",
+        "I will ask every traveller until one saw it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:43:0:defer:0",
+      "move": "defer",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "Let me put it to the room.",
+      "accepted": [
+        "Let me put it to the room.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:43:1:defer:0",
+      "move": "defer",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "We should ask someone who was there.",
+      "accepted": [
+        "I would want it from a witness.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:55:0:defer:0",
+      "move": "defer",
+      "text": "I will remember it well. It reminds me of when Hollowbarrow has to d before we pass it on.",
+      "reference": "Better to have it from a witness.",
+      "accepted": [
+        "Better to have it from a witness.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:55:1:defer:0",
+      "move": "defer",
+      "text": "I will remember the old raid.",
+      "reference": "Ask a witness before the sacks run out.",
+      "accepted": [
+        "Ask a witness before the sacks run out.",
+        "Find someone who saw it. I must know what to hold back."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:67:0:defer:0",
+      "move": "defer",
+      "text": "Good news means a safer season ahead.",
+      "reference": "Ask someone who saw it, and quickly.",
+      "accepted": [
+        "Ask someone who saw it, and quickly.",
+        "Find a witness. I need to know what to plant."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:67:1:defer:0",
+      "move": "defer",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "Ask someone who saw it before I go out again.",
+      "accepted": [
+        "Ask someone who saw it before I go out again.",
+        "Find a witness. I walk that road."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:79:0:defer:0",
+      "move": "defer",
+      "text": "A pretender arose in The Zarilumford Cour after a long silence from the abbey.",
+      "reference": "Find a witness. I need to know what to plant.",
+      "accepted": [
+        "Ask someone who saw it, and quickly.",
+        "Find a witness. I need to know what to plant."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:79:1:defer:0",
+      "move": "defer",
+      "text": "A pretender arose in The Zarashowden Cour after a long silence from the abbey.",
+      "reference": "Better to ask than to guess.",
+      "accepted": [
+        "Better to ask than to guess.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:91:0:defer:0",
+      "move": "defer",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Ask on the road. They carry it fresh.",
+      "accepted": [
+        "Ask on the road. They carry it fresh.",
+        "Someone coming down will know."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:91:1:defer:0",
+      "move": "defer",
+      "text": "Let's ask around before we pass it on.",
+      "reference": "Better to ask than to guess.",
+      "accepted": [
+        "Better to ask than to guess.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:103:0:defer:0",
+      "move": "defer",
+      "text": "I remember when this was a quiet road.",
+      "reference": "Ask someone who saw it. I need to know.",
+      "accepted": [
+        "Ask someone who saw it. I need to know.",
+        "We should find a witness, and soon."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:103:1:defer:0",
+      "move": "defer",
+      "text": "Let's leave it there for now.",
+      "reference": "Ask a witness before the sacks run out.",
+      "accepted": [
+        "Ask a witness before the sacks run out.",
+        "Find someone who saw it. I must know what to hold back."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:115:0:defer:0",
+      "move": "defer",
+      "text": "I would ask someone who was there.",
+      "reference": "We should ask someone who was there.",
+      "accepted": [
+        "I would not enter it on hearsay.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:115:1:defer:0",
+      "move": "defer",
+      "text": "I remember the old raid. This one has the same smell.",
+      "reference": "Better to ask someone closer to it.",
+      "accepted": [
+        "Better to ask someone closer to it.",
+        "We should ask someone who was there."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:4:0:dispute:0",
+      "move": "dispute",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "I heard it otherwise. After living in Veloraholt, someone died. How sure are you?",
+      "accepted": [
+        "I have a different account. After living in Veloraholt, someone died. How sure are you?",
+        "I have a different account. After living in Veloraholt, someone died. Where did yours come from?",
+        "I heard it otherwise. After living in Veloraholt, someone died. How sure are you?",
+        "I heard it otherwise. After living in Veloraholt, someone died. Where did yours come from?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:4:1:dispute:0",
+      "move": "dispute",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "No. I had it quite differently. After living in Zarorumfell, someone died. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. After living in Zarorumfell, someone died. How sure are you of yours?",
+        "No. I had it quite differently. After living in Zarorumfell, someone died. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. After living in Zarorumfell, someone died. How sure are you of yours?",
+        "That is not what I heard at all. After living in Zarorumfell, someone died. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:16:0:dispute:0",
+      "move": "dispute",
+      "text": "I would engrave this in gold, but the town only has copper.",
+      "reference": "That is not how it reached me. Zaraumfell raised calves and added older calves to the working herd. How sure are you?",
+      "accepted": [
+        "I heard a different account. Zaraumfell raised calves and added older calves to the working herd. How sure are you?",
+        "I heard a different account. Zaraumfell raised calves and added older calves to the working herd. Which of us has it right?",
+        "That is not how it reached me. Zaraumfell raised calves and added older calves to the working herd. How sure are you?",
+        "That is not how it reached me. Zaraumfell raised calves and added older calves to the working herd. Which of us has it right?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:16:1:dispute:0",
+      "move": "dispute",
+      "text": "I would engrave this in gold, but the town only has copper.",
+      "reference": "No. I had it quite differently. Zarenafell raised calves and added older calves to the working herd. How sure are you of yours?",
+      "accepted": [
+        "No. I had it quite differently. Zarenafell raised calves and added older calves to the working herd. How sure are you of yours?",
+        "No. I had it quite differently. Zarenafell raised calves and added older calves to the working herd. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Zarenafell raised calves and added older calves to the working herd. How sure are you of yours?",
+        "That is not what I heard at all. Zarenafell raised calves and added older calves to the working herd. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:28:0:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. The carriage resumed toward Zarumethden after court relations reopened the road, so people say. How sure are you?",
+      "reference": "I have a different account. Court relations reopened the road and the carriage continued toward Zarumethden, according to the word going round. Where did yours come from?",
+      "accepted": [
+        "I have a different account. Court relations reopened the road and the carriage continued toward Zarumethden, according to the word going round. How sure are you?",
+        "I have a different account. Court relations reopened the road and the carriage continued toward Zarumethden, according to the word going round. Where did yours come from?",
+        "I heard it otherwise. Court relations reopened the road and the carriage continued toward Zarumethden, according to the word going round. How sure are you?",
+        "I heard it otherwise. Court relations reopened the road and the carriage continued toward Zarumethden, according to the word going round. Where did yours come from?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:28:1:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. How sure are you?",
+      "reference": "I heard it otherwise. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. Where did yours come from?",
+      "accepted": [
+        "I have a different account. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. How sure are you?",
+        "I have a different account. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. Where did yours come from?",
+        "I heard it otherwise. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. How sure are you?",
+        "I heard it otherwise. Court relations reopened the road and the carriage continued toward Velumilmere, according to the word going round. Where did yours come from?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:40:0:dispute:0",
+      "move": "dispute",
+      "text": "I will record the raid in the led this. I heard a different account. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. How sure are you?",
+      "reference": "No. I had it quite differently. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. How sure are you of yours?",
+        "No. I had it quite differently. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. How sure are you of yours?",
+        "That is not what I heard at all. Zarethaford Zaraethh reinforced Velumumford Velumorw on the old road, so people say. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:40:1:dispute:0",
+      "move": "dispute",
+      "text": "I will record the raid in the led this. I sai the I do not.",
+      "reference": "That is not how it reached me. Zarethaford Zaraethh reinforced Velethashmoor Zaraum on the old road, so people say. Which of us has it right?",
+      "accepted": [
+        "I heard a different account. Zarethaford Zaraethh reinforced Velethashmoor Zaraum on the old road, so people say. How sure are you?",
+        "I heard a different account. Zarethaford Zaraethh reinforced Velethashmoor Zaraum on the old road, so people say. Which of us has it right?",
+        "That is not how it reached me. Zarethaford Zaraethh reinforced Velethashmoor Zaraum on the old road, so people say. How sure are you?",
+        "That is not how it reached me. Zarethaford Zaraethh reinforced Velethashmoor Zaraum on the old road, so people say. Which of us has it right?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:52:0:dispute:0",
+      "move": "dispute",
+      "text": "I will record the raid in the ledger. One ready.",
+      "reference": "That is not what I heard at all. Zarilumfell was raided by Zarumethwick Zarenas. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. Zarilumfell was raided by Zarumethwick Zarenas. How sure are you of yours?",
+        "No. I had it quite differently. Zarilumfell was raided by Zarumethwick Zarenas. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Zarilumfell was raided by Zarumethwick Zarenas. How sure are you of yours?",
+        "That is not what I heard at all. Zarilumfell was raided by Zarumethwick Zarenas. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:52:1:dispute:0",
+      "move": "dispute",
+      "text": "I will remember the old raid. This one has the same smell.",
+      "reference": "That is not how it reached me. Zarilumfell was raided by Velashenmere Velenen. How sure are you?",
+      "accepted": [
+        "I heard a different account. Zarilumfell was raided by Velashenmere Velenen. How sure are you?",
+        "I heard a different account. Zarilumfell was raided by Velashenmere Velenen. Which of us has it right?",
+        "That is not how it reached me. Zarilumfell was raided by Velashenmere Velenen. How sure are you?",
+        "That is not how it reached me. Zarilumfell was raided by Velashenmere Velenen. Which of us has it right?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:64:0:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. How sure are you?",
+      "reference": "I heard it otherwise. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. How sure are you?",
+      "accepted": [
+        "I have a different account. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. How sure are you?",
+        "I have a different account. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. Where did yours come from?",
+        "I heard it otherwise. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. How sure are you?",
+        "I heard it otherwise. Zarenenwick Zarashen and Velumowmoor Zarumumg formed an alliance, if the story is right. Where did yours come from?"
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:64:1:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. How sure are you?",
+      "reference": "I heard a different account. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. Which of us has it right?",
+      "accepted": [
+        "I heard a different account. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. How sure are you?",
+        "I heard a different account. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. Which of us has it right?",
+        "That is not how it reached me. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. How sure are you?",
+        "That is not how it reached me. Zarenenwick Zarashen and Zarashethford Zarila formed an alliance, if the story is right. Which of us has it right?"
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:76:0:dispute:0",
+      "move": "dispute",
+      "text": "I can barely think. I need to find food before the stores run dry.",
+      "reference": "No. I had it quite differently. Velashowford slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you of yours?",
+      "accepted": [
+        "No. I had it quite differently. Velashowford slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you of yours?",
+        "No. I had it quite differently. Velashowford slaughtered cattle for beef when fodder ran short, if the story is right. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Velashowford slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you of yours?",
+        "That is not what I heard at all. Velashowford slaughtered cattle for beef when fodder ran short, if the story is right. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:76:1:dispute:0",
+      "move": "dispute",
+      "text": "I can barely think. If the harvest in must get the dragon cult through service, I am left with am unsure.",
+      "reference": "That is not what I heard at all. Velethenmere slaughtered cattle for beef when fodder ran short, if the story is right. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. Velethenmere slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you of yours?",
+        "No. I had it quite differently. Velethenmere slaughtered cattle for beef when fodder ran short, if the story is right. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Velethenmere slaughtered cattle for beef when fodder ran short, if the story is right. How sure are you of yours?",
+        "That is not what I heard at all. Velethenmere slaughtered cattle for beef when fodder ran short, if the story is right. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:88:0:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. How sure are you?",
+      "reference": "No. I had it quite differently. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. How sure are you of yours?",
+      "accepted": [
+        "No. I had it quite differently. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. How sure are you of yours?",
+        "No. I had it quite differently. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. How sure are you of yours?",
+        "That is not what I heard at all. The carriage resumed its trip toward Velashamoor as road space cleared, if the story is right. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:88:1:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. How sure are you?",
+      "reference": "That is not what I heard at all. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. How sure are you of yours?",
+        "No. I had it quite differently. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. How sure are you of yours?",
+        "That is not what I heard at all. The carriage resumed its trip toward Velilashford as road space cleared, if the story is right. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:100:0:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. Zarilowford finished making Zarenenden Book, so people say. How sure are you?",
+      "reference": "I heard it otherwise. Zarilowford finished making Zarenenden Book, so people say. How sure are you?",
+      "accepted": [
+        "I have a different account. Zarilowford finished making Zarenenden Book, so people say. How sure are you?",
+        "I have a different account. Zarilowford finished making Zarenenden Book, so people say. Where did yours come from?",
+        "I heard it otherwise. Zarilowford finished making Zarenenden Book, so people say. How sure are you?",
+        "I heard it otherwise. Zarilowford finished making Zarenenden Book, so people say. Where did yours come from?"
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:100:1:dispute:0",
+      "move": "dispute",
+      "text": "I heard a different account. Zarilowford finished making Zarethashford Cup, so people say. How sure are you?",
+      "reference": "I heard a different account. Zarilowford finished making Zarethashford Cup, so people say. How sure are you?",
+      "accepted": [
+        "I heard a different account. Zarilowford finished making Zarethashford Cup, so people say. How sure are you?",
+        "I heard a different account. Zarilowford finished making Zarethashford Cup, so people say. Which of us has it right?",
+        "That is not how it reached me. Zarilowford finished making Zarethashford Cup, so people say. How sure are you?",
+        "That is not how it reached me. Zarilowford finished making Zarethashford Cup, so people say. Which of us has it right?"
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:112:0:dispute:0",
+      "move": "dispute",
+      "text": "I can barely think. If no one carries the word, towns will starve quietly.",
+      "reference": "I have a different account. Food stores in Velumowgate fell short of the reserve target. How sure are you?",
+      "accepted": [
+        "I have a different account. Food stores in Velumowgate fell short of the reserve target. How sure are you?",
+        "I have a different account. Food stores in Velumowgate fell short of the reserve target. Where did yours come from?",
+        "I heard it otherwise. Food stores in Velumowgate fell short of the reserve target. How sure are you?",
+        "I heard it otherwise. Food stores in Velumowgate fell short of the reserve target. Where did yours come from?"
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:112:1:dispute:0",
+      "move": "dispute",
+      "text": "I can barely think. If no one carries the word ale.",
+      "reference": "That is not what I heard at all. Food stores in Zarowowford fell short of the reserve target. One of us has it wrong, and it matters.",
+      "accepted": [
+        "No. I had it quite differently. Food stores in Zarowowford fell short of the reserve target. How sure are you of yours?",
+        "No. I had it quite differently. Food stores in Zarowowford fell short of the reserve target. One of us has it wrong, and it matters.",
+        "That is not what I heard at all. Food stores in Zarowowford fell short of the reserve target. How sure are you of yours?",
+        "That is not what I heard at all. Food stores in Zarowowford fell short of the reserve target. One of us has it wrong, and it matters."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:5:0:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I am unsure, and that is the worst of it.",
+      "accepted": [
+        "I am unsure, and that is the worst of it.",
+        "I do not know, and not knowing is half the fear."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:5:1:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I could not say for certain.",
+      "accepted": [
+        "I am unsure of it. I would not swear to it.",
+        "I could not say for certain."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:17:0:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:17:1:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:29:0:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "Everyone has it, and no two the same.",
+      "accepted": [
+        "Everyone has it, and no two the same.",
+        "It has been round the whole district. I trust none of it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:29:1:hedge:0",
+      "move": "hedge",
+      "text": "It well. Wennt will not before we pass it on.",
+      "reference": "It has been round the whole district. I trust none of it.",
+      "accepted": [
+        "Everyone has it, and no two the same.",
+        "It has been round the whole district. I trust none of it."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:41:0:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:41:1:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "I hold to it. I wish I did not.",
+      "accepted": [
+        "I hold to it. I wish I did not.",
+        "That is what I hold, and I would rather be wrong."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:53:0:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:53:1:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "I stand by what I said.",
+      "accepted": [
+        "I stand by what I said.",
+        "That is the account I hold, and I have had no better."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:65:0:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:65:1:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is what I hold, and I would rather be wrong.",
+      "accepted": [
+        "I hold to it. I wish I did not.",
+        "That is what I hold, and I would rather be wrong."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:77:0:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "I hold to it. I wish I did not.",
+      "accepted": [
+        "I hold to it. I wish I did not.",
+        "That is what I hold, and I would rather be wrong."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:77:1:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:89:0:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I could not say for certain.",
+      "accepted": [
+        "I am unsure of it. I would not swear to it.",
+        "I could not say for certain."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:89:1:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I am unsure, and that is the worst of it.",
+      "accepted": [
+        "I am unsure, and that is the worst of it.",
+        "I do not know, and not knowing is half the fear."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:101:0:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. It reminds me of when Hollowbarrow has 0 weeks of food; hunger reaches pressure level 2.",
+      "reference": "That is what I hold, and I would rather be wrong.",
+      "accepted": [
+        "I hold to it. I wish I did not.",
+        "That is what I hold, and I would rather be wrong."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:101:1:hedge:0",
+      "move": "hedge",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "That is the account I hold.",
+      "accepted": [
+        "I have it as I told it.",
+        "That is the account I hold."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:113:0:hedge:0",
+      "move": "hedge",
+      "text": "The account has passed through several people. We should ask someone who was there.",
+      "reference": "It is well travelled. Make of that what you will.",
+      "accepted": [
+        "It has passed through several people by now.",
+        "It is well travelled. Make of that what you will."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:113:1:hedge:0",
+      "move": "hedge",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "It has been repeated often enough to drift.",
+      "accepted": [
+        "It has been repeated often enough to drift.",
+        "The account has passed through several people."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:11:0:muse:0",
+      "move": "muse",
+      "text": "I can barely think. I will carry this word and see where it leads.",
+      "reference": "I need to stay calm. A steady hand keeps the peace.",
+      "accepted": [
+        "A steady hand keeps the peace.",
+        "I need to stay calm. A steady hand keeps the peace.",
+        "I should think this through. A steady hand keeps the peace."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:11:1:muse:0",
+      "move": "muse",
+      "text": "My hands are shaking. I should keep an eye on how this turns out.",
+      "reference": "I can barely think. A steady hand keeps the peace.",
+      "accepted": [
+        "I can barely think. A steady hand keeps the peace.",
+        "My hands are shaking. A steady hand keeps the peace.",
+        "My heart is pounding. A steady hand keeps the peace."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:23:0:muse:0",
+      "move": "muse",
+      "text": "I need to stay calm. I will carry this word and see where it leads.",
+      "reference": "I need to stay calm. A steady hand keeps the peace.",
+      "accepted": [
+        "A steady hand keeps the peace.",
+        "I need to stay calm. A steady hand keeps the peace.",
+        "I should think this through. A steady hand keeps the peace."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:23:1:muse:0",
+      "move": "muse",
+      "text": "I need to stay calm. I will carry this word and see where it leads.",
+      "reference": "We will get through this somehow.",
+      "accepted": [
+        "I need to stay calm. We will get through this somehow.",
+        "I should think this through. We will get through this somehow.",
+        "We will get through this somehow."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:35:0:muse:0",
+      "move": "muse",
+      "text": "I should keep an eye on how this turns out.",
+      "reference": "I should keep an eye on how this turns out.",
+      "accepted": [
+        "I need to stay calm. I should keep an eye on how this turns out.",
+        "I should keep an eye on how this turns out.",
+        "I should think this through. I should keep an eye on how this turns out."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:35:1:muse:0",
+      "move": "muse",
+      "text": "I can barely think. We will get through this somehow.",
+      "reference": "I can barely think. We will get through this somehow.",
+      "accepted": [
+        "I can barely think. We will get through this somehow.",
+        "My hands are shaking. We will get through this somehow.",
+        "My heart is pounding. We will get through this somehow."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:47:0:muse:0",
+      "move": "muse",
+      "text": "I will keep calm. A steady hand keeps the peace.",
+      "reference": "I will keep calm. Rationing has to be seen as fair or the town will split.",
+      "accepted": [
+        "I will keep calm. Rationing has to be seen as fair or the town will split.",
+        "I will keep calm. The stores must be guarded or people will riot.",
+        "I will keep calm. We need to share the food fairly or there will be trouble.",
+        "Perhaps it will pass. Rationing has to be seen as fair or the town will split.",
+        "Perhaps it will pass. The stores must be guarded or people will riot.",
+        "Perhaps it will pass. We need to share the food fairly or there will be trouble.",
+        "Rationing has to be seen as fair or the town will split.",
+        "The stores must be guarded or people will riot.",
+        "We need to share the food fairly or there will be trouble."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:47:1:muse:0",
+      "move": "muse",
+      "text": "I need to stay calm. I should keep an eye on how this turns out.",
+      "reference": "Every loaf counts while food is short.",
+      "accepted": [
+        "Every loaf counts while food is short.",
+        "I need to find food before the stores run dry.",
+        "I will keep calm. Every loaf counts while food is short.",
+        "I will keep calm. I need to find food before the stores run dry.",
+        "I will keep calm. There is not enough bread to last the winter.",
+        "Perhaps it will pass. Every loaf counts while food is short.",
+        "Perhaps it will pass. I need to find food before the stores run dry.",
+        "Perhaps it will pass. There is not enough bread to last the winter.",
+        "There is not enough bread to last the winter."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:59:0:muse:0",
+      "move": "muse",
+      "text": "I should think this through. I will remember the last one exactly.",
+      "reference": "My hands are shaking. We will get through this somehow.",
+      "accepted": [
+        "I can barely think. We will get through this somehow.",
+        "My hands are shaking. We will get through this somehow.",
+        "My heart is pounding. We will get through this somehow."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:59:1:muse:0",
+      "move": "muse",
+      "text": "I should think this through. I will remember how.",
+      "reference": "Perhaps it will pass. I should keep an eye on how this turns out.",
+      "accepted": [
+        "I should keep an eye on how this turns out.",
+        "I will keep calm. I should keep an eye on how this turns out.",
+        "Perhaps it will pass. I should keep an eye on how this turns out."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:71:0:muse:0",
+      "move": "muse",
+      "text": "I will keep calm. A steady hand now keeps the peace later.",
+      "reference": "My heart is pounding. Good news will settle the town down.",
+      "accepted": [
+        "I can barely think. A steady hand now keeps the peace later.",
+        "I can barely think. Good news will settle the town down.",
+        "I can barely think. This will lift everyone\u2019s spirits.",
+        "My hands are shaking. A steady hand now keeps the peace later.",
+        "My hands are shaking. Good news will settle the town down.",
+        "My hands are shaking. This will lift everyone\u2019s spirits.",
+        "My heart is pounding. A steady hand now keeps the peace later.",
+        "My heart is pounding. Good news will settle the town down.",
+        "My heart is pounding. This will lift everyone\u2019s spirits."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:71:1:muse:0",
+      "move": "muse",
+      "text": "My hands are shaking. A little good news goes a long way.",
+      "reference": "This gives us a chance to recover.",
+      "accepted": [
+        "A little good news goes a long way.",
+        "I will keep calm. A little good news goes a long way.",
+        "I will keep calm. Maybe things are turning around.",
+        "I will keep calm. This gives us a chance to recover.",
+        "Maybe things are turning around.",
+        "Perhaps it will pass. A little good news goes a long way.",
+        "Perhaps it will pass. Maybe things are turning around.",
+        "Perhaps it will pass. This gives us a chance to recover.",
+        "This gives us a chance to recover."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:83:0:muse:0",
+      "move": "muse",
+      "text": "I can barely think. I should keep an eye on how this turns out.",
+      "reference": "My hands are shaking. I should keep an eye on how this turns out.",
+      "accepted": [
+        "I can barely think. I should keep an eye on how this turns out.",
+        "My hands are shaking. I should keep an eye on how this turns out.",
+        "My heart is pounding. I should keep an eye on how this turns out."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:83:1:muse:0",
+      "move": "muse",
+      "text": "I can barely think. I should keep an eye on how this turns out.",
+      "reference": "My heart is pounding. We will get through this somehow.",
+      "accepted": [
+        "I can barely think. We will get through this somehow.",
+        "My hands are shaking. We will get through this somehow.",
+        "My heart is pounding. We will get through this somehow."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:95:0:muse:0",
+      "move": "muse",
+      "text": "I will keep calm. I will carry this word and see where it leads.",
+      "reference": "Perhaps it will pass. A steady hand keeps the peace.",
+      "accepted": [
+        "A steady hand keeps the peace.",
+        "I will keep calm. A steady hand keeps the peace.",
+        "Perhaps it will pass. A steady hand keeps the peace."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:95:1:muse:0",
+      "move": "muse",
+      "text": "I will keep calm. I will carry this word and see where it leads.",
+      "reference": "I will keep calm. I should keep an eye on how this turns out.",
+      "accepted": [
+        "I should keep an eye on how this turns out.",
+        "I will keep calm. I should keep an eye on how this turns out.",
+        "Perhaps it will pass. I should keep an eye on how this turns out."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:107:0:muse:0",
+      "move": "muse",
+      "text": "I will keep calm. A steady hand now keeps the peace later.",
+      "reference": "I will keep calm. The whole valley should know about this.",
+      "accepted": [
+        "Good news travels fast; I should spread it.",
+        "I will keep calm. Good news travels fast; I should spread it.",
+        "I will keep calm. The whole valley should know about this.",
+        "I will keep calm. This is the kind of news people want to hear.",
+        "Perhaps it will pass. Good news travels fast; I should spread it.",
+        "Perhaps it will pass. The whole valley should know about this.",
+        "Perhaps it will pass. This is the kind of news people want to hear.",
+        "The whole valley should know about this.",
+        "This is the kind of news people want to hear."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:107:1:muse:0",
+      "move": "muse",
+      "text": "I can barely think. A steady hand now keeps the peace later.",
+      "reference": "Perhaps it will pass. Good news means a safer season ahead.",
+      "accepted": [
+        "At last, something to be thankful for.",
+        "Good news means a safer season ahead.",
+        "I will keep calm. At last, something to be thankful for.",
+        "I will keep calm. Good news means a safer season ahead.",
+        "I will keep calm. This takes a weight off my shoulders.",
+        "Perhaps it will pass. At last, something to be thankful for.",
+        "Perhaps it will pass. Good news means a safer season ahead.",
+        "Perhaps it will pass. This takes a weight off my shoulders.",
+        "This takes a weight off my shoulders."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:119:0:muse:0",
+      "move": "muse",
+      "text": "I need to stay calm. I should keep an eye on how this turns out.",
+      "reference": "I should think this through. I should keep an eye on how this turns out.",
+      "accepted": [
+        "I need to stay calm. I should keep an eye on how this turns out.",
+        "I should keep an eye on how this turns out.",
+        "I should think this through. I should keep an eye on how this turns out."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:119:1:muse:0",
+      "move": "muse",
+      "text": "I need to stay calm. I will carry this word and see where it leads.",
+      "reference": "I can barely think. A steady hand keeps the peace.",
+      "accepted": [
+        "I can barely think. A steady hand keeps the peace.",
+        "My hands are shaking. A steady hand keeps the peace.",
+        "My heart is pounding. A steady hand keeps the peace."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:0:0:open:0",
+      "move": "open",
+      "text": "Zarenumfell Zaraowwi posted a notice about Zarashilholt Book in Velorethmere.",
+      "reference": "In Velorethmere, Zarenumfell Zaraowwi put up a notice about Zarashilholt Book.",
+      "accepted": [
+        "In Velorethmere, Zarenumfell Zaraowwi put up a notice about Zarashilholt Book."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:0:1:open:0",
+      "move": "open",
+      "text": "Zarenilgate Zarumeth posted a notice about Zarashilholt Book in Velorethmere.",
+      "reference": "In Velorethmere, Zarenilgate Zarumeth put up a notice about Zarashilholt Book.",
+      "accepted": [
+        "In Velorethmere, Zarenilgate Zarumeth put up a notice about Zarashilholt Book."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:12:0:open:0",
+      "move": "open",
+      "text": "Zarorashmere delayed public repairs for lack of stone, if the story is right.",
+      "reference": "Zarorashmere delayed public repairs for lack of stone, if the story is right.",
+      "accepted": [
+        "Zarorashmere delayed public repairs for lack of stone, if the story is right."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:12:1:open:0",
+      "move": "open",
+      "text": "Velorowden delayed public repairs for lack of stone, if the story is right.",
+      "reference": "Velorowden delayed public repairs for lack of stone, if the story is right.",
+      "accepted": [
+        "Velorowden delayed public repairs for lack of stone, if the story is right."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:24:0:open:0",
+      "move": "open",
+      "text": "Velumorden Velilashh lost the last land under the dragon crown.",
+      "reference": "Velumorden Velilashh lost the last land under the dragon crown.",
+      "accepted": [
+        "Velumorden Velilashh lost the last land under the dragon crown."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:24:1:open:0",
+      "move": "open",
+      "text": "Velorawick Velashafo lost the last land under the dragon crown.",
+      "reference": "Velorawick Velashafo lost the last land under the dragon crown.",
+      "accepted": [
+        "Velorawick Velashafo lost the last land under the dragon crown."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:36:0:open:0",
+      "move": "open",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, if the story is right.",
+      "reference": "Leaving its carriage behind, the company crossed the goblin network into a chimney in the dragon roost, if the rumour is true.",
+      "accepted": [
+        "Leaving its carriage behind, the company crossed the goblin network into a chimney in the dragon roost, if the rumour is true."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:36:1:open:0",
+      "move": "open",
+      "text": "The company left its carriage and crossed the goblin network to a chimney in the dragon roost, if the story is right.",
+      "reference": "Leaving its carriage behind, the company crossed the goblin network into a chimney in the dragon roost, if the rumour is true.",
+      "accepted": [
+        "Leaving its carriage behind, the company crossed the goblin network into a chimney in the dragon roost, if the rumour is true."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:48:0:open:0",
+      "move": "open",
+      "text": "Velowowholt's drought harvest fell short of what the Velumethwick needed, so people say.",
+      "reference": "The drought harvest in Velowowholt fell short of supplies for the Velumethwick, according to the word going round.",
+      "accepted": [
+        "The drought harvest in Velowowholt fell short of supplies for the Velumethwick, according to the word going round."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:48:1:open:0",
+      "move": "open",
+      "text": "Velowowholt's drought harvest fell short of what the Zarenorfell needed, so people say.",
+      "reference": "The drought harvest in Velowowholt fell short of supplies for the Zarenorfell, according to the word going round.",
+      "accepted": [
+        "The drought harvest in Velowowholt fell short of supplies for the Zarenorfell, according to the word going round."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:60:0:open:0",
+      "move": "open",
+      "text": "Zarenowmoor Zaroweth was slain by Velilowholt Velilorm, according to the word going round.",
+      "reference": "Velilowholt Velilorm slew Zarenowmoor Zaroweth, so people say.",
+      "accepted": [
+        "Velilowholt Velilorm slew Zarenowmoor Zaroweth, so people say."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:60:1:open:0",
+      "move": "open",
+      "text": "Zarenowmoor Zaroweth was slain by Velailford Velenethf, according to the word going round.",
+      "reference": "Velailford Velenethf slew Zarenowmoor Zaroweth, so people say.",
+      "accepted": [
+        "Velailford Velenethf slew Zarenowmoor Zaroweth, so people say."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:72:0:open:0",
+      "move": "open",
+      "text": "Zarilashmere repaired public buildings with stone, so people say.",
+      "reference": "Zarilashmere repaired public buildings with stone, so people say.",
+      "accepted": [
+        "Zarilashmere repaired public buildings with stone, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:72:1:open:0",
+      "move": "open",
+      "text": "Zarilowholt repaired public buildings with stone, so people say.",
+      "reference": "Zarilowholt repaired public buildings with stone, so people say.",
+      "accepted": [
+        "Zarilowholt repaired public buildings with stone, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:84:0:open:0",
+      "move": "open",
+      "text": "Zarenilwick Zarumawi funded the dragon host and named Zarashowden Zarororf its champion.",
+      "reference": "Zarenilwick Zarumawi funded the dragon host and named Zarashowden Zarororf its champion.",
+      "accepted": [
+        "Zarenilwick Zarumawi funded the dragon host and named Zarashowden Zarororf its champion."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:84:1:open:0",
+      "move": "open",
+      "text": "Zarenilwick Zarumawi funded the dragon host and named Zarowowmere Zarowilg its champion.",
+      "reference": "Zarenilwick Zarumawi funded the dragon host and named Zarowowmere Zarowilg its champion.",
+      "accepted": [
+        "Zarenilwick Zarumawi funded the dragon host and named Zarowowmere Zarowilg its champion."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:96:0:open:0",
+      "move": "open",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead, if the story is right.",
+      "reference": "After going through the goblin dungeon, the company returned to the hidden trailhead, if the rumour is true.",
+      "accepted": [
+        "After going through the goblin dungeon, the company returned to the hidden trailhead, if the rumour is true."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:96:1:open:0",
+      "move": "open",
+      "text": "The company went down through the goblin dungeon and returned to the hidden trailhead, if the story is right.",
+      "reference": "After going through the goblin dungeon, the company returned to the hidden trailhead, if the rumour is true.",
+      "accepted": [
+        "After going through the goblin dungeon, the company returned to the hidden trailhead, if the rumour is true."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:108:0:open:0",
+      "move": "open",
+      "text": "Velumashfell slaughtered sheep for mutton after winter fodder runs short, so people say.",
+      "reference": "Velumashfell slaughtered sheep for mutton after winter fodder runs short, so people say.",
+      "accepted": [
+        "Velumashfell slaughtered sheep for mutton after winter fodder runs short, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:108:1:open:0",
+      "move": "open",
+      "text": "Zarethorholt slaughtered sheep for mutton after winter fodder runs short, so people say.",
+      "reference": "Zarethorholt slaughtered sheep for mutton after winter fodder runs short, so people say.",
+      "accepted": [
+        "Zarethorholt slaughtered sheep for mutton after winter fodder runs short, so people say."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:9:0:part:0",
+      "move": "part",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "Come by tonight. I will have more.",
+      "accepted": [
+        "Come by tonight. I will have more.",
+        "Good day to you."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:9:1:part:0",
+      "move": "part",
+      "text": "Very well.",
+      "reference": "Very well.",
+      "accepted": [
+        "Noted. I will set it down as you told it.",
+        "Very well."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:21:0:part:0",
+      "move": "part",
+      "text": "I am unsure. We should ask someone who was there.",
+      "reference": "I will be about the flock.",
+      "accepted": [
+        "Good day to you.",
+        "I will be about the flock."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:21:1:part:0",
+      "move": "part",
+      "text": "I heard a different account. The new ruler of The Zarorormoor Cour, Zarumorwick Velaumme, sought the abbot's blessing. How sure are you?",
+      "reference": "I will hear the rest by evening.",
+      "accepted": [
+        "I will hear the rest by evening.",
+        "Mind how you go."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:33:0:part:0",
+      "move": "part",
+      "text": "I heard a different account. The council in Zarilowholt heard the warning after the company delivered Zaraorfell Cup, according to the word going round. How sure are you?",
+      "reference": "Aye. Back to the forge.",
+      "accepted": [
+        "Aye. Back to the forge.",
+        "Very well."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:33:1:part:0",
+      "move": "part",
+      "text": "The council in Zarilowholt heard the warning after the company delivered Zarowenden Cup, according to the word going round.",
+      "reference": "Right. The ovens want me.",
+      "accepted": [
+        "Good day to you.",
+        "Right. The ovens want me."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:45:0:part:0",
+      "move": "part",
+      "text": "Good news means a safer season ahead.",
+      "reference": "God keep the season. Good day.",
+      "accepted": [
+        "Go safely.",
+        "God keep the season. Good day."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:45:1:part:0",
+      "move": "part",
+      "text": "I would engrave this in gold, but the town only has copper.",
+      "reference": "Mind how you go.",
+      "accepted": [
+        "I will keep my eyes open on the road.",
+        "Mind how you go."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:57:0:part:0",
+      "move": "part",
+      "text": "I will record the raid in the led this.",
+      "reference": "Good day to you.",
+      "accepted": [
+        "Come by tonight. I will have more.",
+        "Good day to you."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:57:1:part:0",
+      "move": "part",
+      "text": "Let's ask around before we pass it on.",
+      "reference": "I will be about the flock.",
+      "accepted": [
+        "Good day to you.",
+        "I will be about the flock."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:69:0:part:0",
+      "move": "part",
+      "text": "Good news means a safer season ahead.",
+      "reference": "Go safely.",
+      "accepted": [
+        "Go safely.",
+        "God keep the season. Good day."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:69:1:part:0",
+      "move": "part",
+      "text": "I will records.",
+      "reference": "Go safely.",
+      "accepted": [
+        "Go safely.",
+        "I will not walk that road alone again. Good day."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:81:0:part:0",
+      "move": "part",
+      "text": "Very well.",
+      "reference": "I will keep an ear out.",
+      "accepted": [
+        "I will keep an ear out.",
+        "Mind how you go."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:81:1:part:0",
+      "move": "part",
+      "text": "The office of Abbot of the Scriptorium passed from Zarumorford Zarethet to Velashowmoor Zarowum, according to the word going round.",
+      "reference": "Aye. Back to the forge.",
+      "accepted": [
+        "Aye. Back to the forge.",
+        "Very well."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:93:0:part:0",
+      "move": "part",
+      "text": "Very well.",
+      "reference": "I will keep my eyes open on the road.",
+      "accepted": [
+        "I will keep my eyes open on the road.",
+        "Mind how you go."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:93:1:part:0",
+      "move": "part",
+      "text": "Very well.",
+      "reference": "Aye. Back to the forge.",
+      "accepted": [
+        "Aye. Back to the forge.",
+        "Very well."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:105:0:part:0",
+      "move": "part",
+      "text": "Let's ask around before we pass it on.",
+      "reference": "I will keep my eyes open on the road.",
+      "accepted": [
+        "I will keep my eyes open on the road.",
+        "Mind how you go."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:105:1:part:0",
+      "move": "part",
+      "text": "Let's ask around before we pass it on.",
+      "reference": "Back up the hill for me.",
+      "accepted": [
+        "Back up the hill for me.",
+        "Very well."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:117:0:part:0",
+      "move": "part",
+      "text": "I forge the blades and the good we ready.",
+      "reference": "I have heard enough. I will bar the door tonight.",
+      "accepted": [
+        "Go armed, if you are going far.",
+        "I have heard enough. I will bar the door tonight."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:117:1:part:0",
+      "move": "part",
+      "text": "Last time the Varkesh the Unappeased came, we lost more than this.",
+      "reference": "I will be about the flock.",
+      "accepted": [
+        "Good day to you.",
+        "I will be about the flock."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:10:0:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "The last good year was too long ago. I had forgotten how it felt.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:10:1:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "I remember the old days, before the troubles. This feels like one of them.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:22:0:recall:0",
+      "move": "recall",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "I have seen this before, and it did not end the way we hoped.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:22:1:recall:0",
+      "move": "recall",
+      "text": "The last good year was too long ago. I had forgotten how it felt.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:34:0:recall:0",
+      "move": "recall",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:34:1:recall:0",
+      "move": "recall",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "I have seen this before, and it did not end the way we hoped.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:46:0:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "Good news is rare enough that I remember the last one exactly.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:46:1:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "The last good year was too long ago. I had forgotten how it felt.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:58:0:recall:0",
+      "move": "recall",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:58:1:recall:0",
+      "move": "recall",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "I have seen this before, and it did not end the way we hoped.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:70:0:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "Good news is rare enough that I remember the last one exactly.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:70:1:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "The last good year was too long ago. I had forgotten how it felt.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:82:0:recall:0",
+      "move": "recall",
+      "text": "We have been through this. We will be through it again.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:82:1:recall:0",
+      "move": "recall",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:94:0:recall:0",
+      "move": "recall",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "I have seen this before, and it did not end the way we hoped.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:94:1:recall:0",
+      "move": "recall",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "We have been through this. We will be through it again.",
+      "accepted": [
+        "I have seen this before, and it did not end the way we hoped.",
+        "We have been through this. We will be through it again."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:106:0:recall:0",
+      "move": "recall",
+      "text": "Good news is rare enough that I remember the last one exactly.",
+      "reference": "Good news is rare enough that I remember the last one exactly.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:106:1:recall:0",
+      "move": "recall",
+      "text": "I remember the old days, before the troubles. This feels like one of them.",
+      "reference": "Good news is rare enough that I remember the last one exactly.",
+      "accepted": [
+        "Good news is rare enough that I remember the last one exactly.",
+        "I remember the old days, before the troubles. This feels like one of them.",
+        "The last good year was too long ago. I had forgotten how it felt."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:118:0:recall:0",
+      "move": "recall",
+      "text": "I still remember the old raid. This one has the same smell.",
+      "reference": "I still remember the old raid. This one has the same smell.",
+      "accepted": [
+        "I remember when this was a quiet road. Now every raid is a memory.",
+        "I still remember the old raid. This one has the same smell.",
+        "Last time the Velaummoor Veloraden came, we lost more than this. I remember it well.",
+        "The last raid taught us to hide the good things first. This time we were ready."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:118:1:recall:0",
+      "move": "recall",
+      "text": "I still remember the old raid. This one has the same smell.",
+      "reference": "I still remember the old raid. This one has the same smell.",
+      "accepted": [
+        "I remember when this was a quiet road. Now every raid is a memory.",
+        "I still remember the old raid. This one has the same smell.",
+        "Last time the Velashashmere Velora came, we lost more than this. I remember it well.",
+        "The last raid taught us to hide the good things first. This time we were ready."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:2:0:remark:0",
+      "move": "remark",
+      "text": "I can barely think. The courts of Velowethwick Veloren and Zarashashgate Zaroro made peace, if the rumour is true.",
+      "reference": "When the town smiles, the innkeeper eats.",
+      "accepted": [
+        "Good news fills the common room faster than bad ale empties it.",
+        "When the town smiles, the innkeeper eats."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:2:1:remark:0",
+      "move": "remark",
+      "text": "The courts of Zarethashgate Zarowi and Zarashashgate Zaroro made peace, if the rumour is true.",
+      "reference": "The millstone turns, and the town eats. Today it turns well.",
+      "accepted": [
+        "A full cart of grain is a beautiful thing.",
+        "The millstone turns, and the town eats. Today it turns well."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:14:0:remark:0",
+      "move": "remark",
+      "text": "Good news travels fast; I should spread it.",
+      "reference": "When the town builds, I eat.",
+      "accepted": [
+        "Good timber and good news. The forest smiles.",
+        "When the town builds, I eat."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:14:1:remark:0",
+      "move": "remark",
+      "text": "Good news. Now I can sell the good iron instead of hoarding it.",
+      "reference": "Good news. Now I can sell the good iron instead of hoarding it.",
+      "accepted": [
+        "Good news. Now I can sell the good iron instead of hoarding it.",
+        "When the town prospers, the anvil sings."
+      ],
+      "matched_move": true,
+      "matched_cell": true
+    },
+    {
+      "id": "validation:26:0:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "We keep our heads down and our doors shut.",
+      "accepted": [
+        "We keep our heads down and our doors shut."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:26:1:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Farming is just gambling with better odds and worse weather.",
+      "accepted": [
+        "Farming is just gambling with better odds and worse weather."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:38:0:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "A fat lamb is the best news a shepherd can hear.",
+      "accepted": [
+        "A fat lamb is the best news a shepherd can hear.",
+        "The flock grows, and so does my heart."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:38:1:remark:0",
+      "move": "remark",
+      "text": "I heard a different account. Velaaholt Velashethf gave birth to Velumenden Velethowg by Zarenethgate Book at Veliladen. How sure are you?",
+      "reference": "It is good to hear something that is not bad.",
+      "accepted": [
+        "Good news. We needed some.",
+        "It is good to hear something that is not bad."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:50:0:remark:0",
+      "move": "remark",
+      "text": "I can barely think. This takes a weight of it.",
+      "reference": "The stores are low and the winter is long.",
+      "accepted": [
+        "The stores are low and the winter is long.",
+        "We make do with less, and the less keeps shrinking."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:50:1:remark:0",
+      "move": "remark",
+      "text": "I can barely think. There is not enough bread to last famine.",
+      "reference": "No flour, no bread, and no patience left.",
+      "accepted": [
+        "I have made bread from worse, but not much worse.",
+        "No flour, no bread, and no patience left.",
+        "You cannot knead dough that does not exist."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:62:0:remark:0",
+      "move": "remark",
+      "text": "That's what I heard too. How sure are you?",
+      "reference": "We heard the Zarorashfell Zarumet were coming. We hoped they were not.",
+      "accepted": [
+        "The Zarorashfell Zarumet came, took what they wanted, and left. I am still counting what remains.",
+        "We heard the Zarorashfell Zarumet were coming. We hoped they were not."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:62:1:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "We heard the Zarorashfell Zarumet were coming. We hoped they were not.",
+      "accepted": [
+        "The Zarorashfell Zarumet came, took what they wanted, and left. I am still counting what remains.",
+        "We heard the Zarorashfell Zarumet were coming. We hoped they were not."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:74:0:remark:0",
+      "move": "remark",
+      "text": "It will all be in the records. Whether anyone reads them is another matter.",
+      "reference": "Every traveller has a story, and every story wants a drink.",
+      "accepted": [
+        "Every traveller has a story, and every story wants a drink."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:74:1:remark:0",
+      "move": "remark",
+      "text": "It will all be in the records. Whether anyone reads them is another matter.",
+      "reference": "We keep our heads down and our doors shut.",
+      "accepted": [
+        "We keep our heads down and our doors shut."
+      ],
+      "matched_move": true,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:86:0:remark:0",
+      "move": "remark",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "We keep our heads down and our doors shut.",
+      "accepted": [
+        "We keep our heads down and our doors shut."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:86:1:remark:0",
+      "move": "remark",
+      "text": "It will all be in the records.",
+      "reference": "Every tree falls, and every fall feeds someone.",
+      "accepted": [
+        "Every tree falls, and every fall feeds someone."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:98:0:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Finally, something worth writing in the good column.",
+      "accepted": [
+        "Finally, something worth writing in the good column.",
+        "I would engrave this in gold, but the town only has copper."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:98:1:remark:0",
+      "move": "remark",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Good news fills the common room faster than bad ale empties it.",
+      "accepted": [
+        "Good news fills the common room faster than bad ale empties it.",
+        "When the town smiles, the innkeeper eats."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:110:0:remark:0",
+      "move": "remark",
+      "text": "We keep our heads down. Whether anyone reads them is another matter.",
+      "reference": "Farming is just gambling with better odds and worse weather.",
+      "accepted": [
+        "Farming is just gambling with better odds and worse weather."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:110:1:remark:0",
+      "move": "remark",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "It will all be in the records. Whether anyone reads them is another matter.",
+      "accepted": [
+        "It will all be in the records. Whether anyone reads them is another matter."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:8:0:settle:0",
+      "move": "settle",
+      "text": "I would engrave this in gold, but the town only has copper.",
+      "reference": "I will leave the entry open.",
+      "accepted": [
+        "Agreed. Let us leave it there for now.",
+        "I will leave the entry open."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:8:1:settle:0",
+      "move": "settle",
+      "text": "I have something to do.",
+      "reference": "That will do until we know more.",
+      "accepted": [
+        "Agreed. Let us leave it there for now.",
+        "That will do until we know more."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:20:0:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Agreed. The stones are turning.",
+      "accepted": [
+        "Agreed. The stones are turning.",
+        "Leave it there. I have grain waiting."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:20:1:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Enough. I have said all I know.",
+      "accepted": [
+        "Enough. I have said all I know.",
+        "Leave it. I would rather be inside before dusk."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:32:0:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "That will do until we know more.",
+      "accepted": [
+        "Agreed. Let us leave it there for now.",
+        "That will do until we know more."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:32:1:settle:0",
+      "move": "settle",
+      "text": " for now.",
+      "reference": "Enough. I have said all I know.",
+      "accepted": [
+        "Enough. I have said all I know.",
+        "Leave it. I would rather be inside before dusk."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:44:0:settle:0",
+      "move": "settle",
+      "text": "Service brought Zarethilfell Velumam to the rank of Zarenethmoor Book in the dragon cult.",
+      "reference": "Leave it there. The flock wants watching.",
+      "accepted": [
+        "Agreed. I should be back to them.",
+        "Leave it there. The flock wants watching."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:44:1:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Agreed. There is cutting to do.",
+      "accepted": [
+        "Agreed. There is cutting to do.",
+        "Leave it there. The light is going."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:56:0:settle:0",
+      "move": "settle",
+      "text": "I will record the raid in the led this.",
+      "reference": "Leave it. I cannot think about it and bake.",
+      "accepted": [
+        "Enough. I have work and no stomach for it.",
+        "Leave it. I cannot think about it and bake."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:56:1:settle:0",
+      "move": "settle",
+      "text": "I will record the raid in the led this.",
+      "reference": "Agreed. I have loaves waiting.",
+      "accepted": [
+        "Agreed. I have loaves waiting.",
+        "Leave it there. The oven will not wait."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:68:0:settle:0",
+      "move": "settle",
+      "text": "I can barely think. Good news means a safer season ahead.",
+      "reference": "Agreed. Let us leave it there for now.",
+      "accepted": [
+        "Agreed. Let us leave it there for now.",
+        "That will do. Someone will bring the rest."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:68:1:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Leave it there. The day is going.",
+      "accepted": [
+        "Agreed. There is work in the field.",
+        "Leave it there. The day is going."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:80:0:settle:0",
+      "move": "settle",
+      "text": "Agreed. Let's leave it there for now.",
+      "reference": "Leave it there. I will hear more by evening.",
+      "accepted": [
+        "Agreed. The room wants serving.",
+        "Leave it there. I will hear more by evening."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:80:1:settle:0",
+      "move": "settle",
+      "text": "The Scriptorium gained Zarumenden Velashaga as abbot and keeper of the anointing roll, if the rumour is true.",
+      "reference": "Leave it. I will write nothing I cannot stand behind.",
+      "accepted": [
+        "Enough for now. The page can wait.",
+        "Leave it. I will write nothing I cannot stand behind."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:92:0:settle:0",
+      "move": "settle",
+      "text": "Repairs at Velowenmere used tools and wood.",
+      "reference": "That will hold until we know better.",
+      "accepted": [
+        "Agreed. Let us leave it there for now.",
+        "That will hold until we know better."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:92:1:settle:0",
+      "move": "settle",
+      "text": "Repairs at Zarethorgate used tools and wood.",
+      "reference": "Leave it. I would rather be inside before dusk.",
+      "accepted": [
+        "Enough. I have said all I know.",
+        "Leave it. I would rather be inside before dusk."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:104:0:settle:0",
+      "move": "settle",
+      "text": "I have seen this before, and it did not end the way we hoped.",
+      "reference": "Leave it be. Worrying will not fill a barn.",
+      "accepted": [
+        "Enough. I have the season to think of.",
+        "Leave it be. Worrying will not fill a barn."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:104:1:settle:0",
+      "move": "settle",
+      "text": "y have seen this before, and it did not end the way we hoped.",
+      "reference": "Agreed. I will set it down as told.",
+      "accepted": [
+        "Agreed. I will set it down as told.",
+        "Let it rest there. I have it noted."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:116:0:settle:0",
+      "move": "settle",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Agreed. The room wants serving.",
+      "accepted": [
+        "Agreed. The room wants serving.",
+        "Leave it there. I will hear more by evening."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    },
+    {
+      "id": "validation:116:1:settle:0",
+      "move": "settle",
+      "text": "That is the account I hold. We should ask someone who was there.",
+      "reference": "Leave it there. I will hear more by evening.",
+      "accepted": [
+        "Agreed. The room wants serving.",
+        "Leave it there. I will hear more by evening."
+      ],
+      "matched_move": false,
+      "matched_cell": false
+    }
+  ]
+}

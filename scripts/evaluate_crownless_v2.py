@@ -6,7 +6,7 @@ from pathlib import Path
 
 import torch
 from tokenizers import Tokenizer
-from crownless_v2 import encode_row, load
+from crownless_v2 import encode_row, load, channels_for
 from crownless_v2_export import load_export
 from train_crownless_v2 import evaluate, read
 from score_crownless_v2 import score
@@ -36,7 +36,8 @@ def main():
         for row in rows:
             row['kind_id'] = metadata['meaning_ids'][row['rule']] if model.mode == 'packet' else metadata['kind_ids'][row['kind']]
         records = [encode_row(tokenizer, row, model.config.context,
-                   slots=model.mode in ('slots', 'packet'), packet=model.mode == 'packet') for row in rows]
+                   slots=model.mode in ('slots', 'packet'), packet=model.mode == 'packet',
+                   **channels_for(model)) for row in rows]
         result = evaluate(model, tokenizer, records, args.device, args.limit)
         (args.output / f'{split}.json').write_text(json.dumps(result, indent=2) + '\n')
         print(json.dumps({'split': split, **{k: v for k, v in result.items() if k != 'rows'}}), flush=True)

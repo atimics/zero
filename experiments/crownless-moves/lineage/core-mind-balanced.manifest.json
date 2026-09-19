@@ -1,0 +1,106 @@
+{
+  "schema": "crownless.core_mind.v1",
+  "seed": 20260919,
+  "splits": {
+    "train": {
+      "rows": 25000,
+      "sha256": "5eb4dbb7b2a2dbfb253cc788a19e5403a37b77f79a2a9d9efd5f389f40b97e8b",
+      "kinds": [
+        "BAKERY_PRODUCTION",
+        "BANDIT_PRESSURE",
+        "CHARACTER_DIED",
+        "COW_CALVING",
+        "COW_SLAUGHTERED",
+        "DRAGON_OMEN",
+        "DRAGON_RETALIATION",
+        "GOBLIN_CULT_RALLIED",
+        "GOBLIN_RAIDED",
+        "HARVEST_FAILED",
+        "HORSE_BRED",
+        "KINGDOM_ACTION",
+        "MASONRY_REPAIR",
+        "PAPER_MILLED",
+        "QUARRY_OUTPUT",
+        "ROUTE_CLOSED",
+        "SHEEP_BRED",
+        "SHEEP_SHEARED",
+        "SHORTAGE",
+        "TREASURE_CRAFTED",
+        "WOODLOT_HARVEST"
+      ],
+      "goals": {
+        "carry_news": 6279,
+        "keep_order": 6219,
+        "secure_livelihood": 6278,
+        "survive_crisis": 6224
+      }
+    },
+    "validation": {
+      "rows": 1250,
+      "sha256": "10b695517470503f780753b39c07ba91288d7af0800279a78f134e66e86d6fca",
+      "kinds": [
+        "BAKERY_PRODUCTION",
+        "BANDIT_PRESSURE",
+        "CHARACTER_DIED",
+        "COW_CALVING",
+        "COW_SLAUGHTERED",
+        "GOBLIN_CULT_RALLIED",
+        "HARVEST_FAILED",
+        "HORSE_BRED",
+        "KINGDOM_ACTION",
+        "MASONRY_REPAIR",
+        "PAPER_MILLED",
+        "QUARRY_OUTPUT",
+        "ROUTE_CLOSED",
+        "SHEEP_BRED",
+        "SHEEP_SHEARED",
+        "SHORTAGE",
+        "TREASURE_CRAFTED",
+        "WOODLOT_HARVEST"
+      ],
+      "goals": {
+        "carry_news": 312,
+        "keep_order": 311,
+        "secure_livelihood": 315,
+        "survive_crisis": 312
+      }
+    },
+    "test": {
+      "rows": 1250,
+      "sha256": "420d778a88ee2e4a74c2b31cfbcaefc90a5ab5c6e972bb0d961fe8c8aa4d23ff",
+      "kinds": [
+        "BAKERY_PRODUCTION",
+        "BANDIT_PRESSURE",
+        "COW_CALVING",
+        "COW_SLAUGHTERED",
+        "GOBLIN_CULT_RALLIED",
+        "HARVEST_FAILED",
+        "HORSE_BRED",
+        "KINGDOM_ACTION",
+        "MASONRY_REPAIR",
+        "PAPER_MILLED",
+        "QUARRY_OUTPUT",
+        "ROUTE_CLOSED",
+        "SHEEP_BRED",
+        "SHEEP_SHEARED",
+        "SHORTAGE",
+        "TREASURE_CRAFTED",
+        "WOODLOT_HARVEST"
+      ],
+      "goals": {
+        "carry_news": 314,
+        "keep_order": 311,
+        "secure_livelihood": 313,
+        "survive_crisis": 312
+      }
+    }
+  },
+  "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+  "builder_sha256": "8a7f0044f02c43a629add7fddf3fe7d933147e696a053503e70f7ed109b5b5a3",
+  "source_commit": "8c0f582507ba7c547da4292e04930d693a70312e",
+  "name_overlap": {
+    "train": 15,
+    "validation": 12
+  },
+  "scope": "Sim-derived goals/stress/memories with authored thoughts and conversations in a standard micro context. Names recur across splits by design; the model copies them from source fields."
+}

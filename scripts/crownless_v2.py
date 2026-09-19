@@ -21,6 +21,18 @@ class Config:
     ff: int = 624
     context: int = 512
     kinds: int = 137
+    # Stance table sizes. Zero keeps the pre-typed architecture, so an export
+    # written before this change still loads.
+    voices: int = 0
+    goals: int = 0
+    levels: int = 0
+    # Situation table rows per axis (hungry, sheltered, in_transit are binary).
+    # Zero keeps the pre-situation architecture loadable the same way.
+    situations: int = 0
+    # Social tables: owes_listener, trusts_listener and far_from_home are
+    # binary; faction is absent/crown/guild/commons. The count is the table
+    # count (4); sizes are fixed. Zero when the run predates company.
+    socials: int = 0
 
 
 def train_tokenizer(rows, path):
@@ -35,6 +47,16 @@ def train_tokenizer(rows, path):
     return tokenizer
 
 
+def field_marker(tokenizer, field):
+    """The marker token for a copied span. Account fields use [F0]..[F7]. A
+    recalled memory borrows [F7] as field 8: the marker budget is fixed, and a
+    recall row's account carries few fields, so [F7] is otherwise free. This is
+    a wire shared with the native runtime (token id 8)."""
+    token = tokenizer.token_to_id('[F7]' if field >= 8 else f'[F{field}]')
+    if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
+    return token
+
+
 def encode_parts(tokenizer, text, spans, slots=False):
     raw, tokens, mapped, at = text.encode(), [], [], 0
     for span in sorted(spans, key=lambda s: s['start']):
@@ -45,9 +67,7 @@ def encode_parts(tokenizer, text, spans, slots=False):
         first = len(tokens)
         literal = tokenizer.encode(raw[start:end].decode()).ids
         if slots and span.get('spoken', span['role'] not in (0, 7, 8)) and span.get('knowledge', 0) != 3:
-            token = tokenizer.token_to_id(f"[F{span['field']}]")
-            if token is None: raise ValueError('Tokenizer needs the field marker vocabulary')
-            tokens.append(token)
+            tokens.append(field_marker(tokenizer, span['field']))
         else:
             tokens.extend(literal)
         mapped.append({**span, 'token_start': first, 'token_end': len(tokens), 'literal_ids': literal})
@@ -57,12 +77,81 @@ def encode_parts(tokenizer, text, spans, slots=False):
     return tokens, mapped
 
 
-def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False):
+# Stance carried as typed ids rather than prompt text. Zero means absent, so an
+# untyped row encodes exactly as it did before. The orders below are the C
+# enums in cc_core_account.h offset by one; they are a wire format shared with
+# the native runtime and cannot be reordered without regenerating the model.
+VOICE_IDS = {'baker': 1, 'scribe': 2, 'farmer': 3, 'smith': 4, 'innkeeper': 5,
+             'miller': 6, 'shepherd': 7, 'woodcutter': 8, 'resident': 9, 'quarryman': 10,
+             'cartwright': 11, 'bandit': 12}
+GOAL_IDS = {'keep_order': 1, 'secure_livelihood': 2, 'survive_crisis': 3, 'carry_news': 4}
+LEVEL_IDS = {'low': 1, 'medium': 2, 'high': 3}
+META_FIELDS = 16
+# An unremarkable situation: fed, sheltered, home. Plain rows and the native
+# runtime's default mind agree on it, so neither side invents a predicament.
+PLAIN_SITUATION = {'hungry': False, 'sheltered': True, 'in_transit': False}
+SITUATION_AXES = ('hungry', 'sheltered', 'in_transit')
+# Nobody owed, nobody trusted especially, no faction, home. Same agreement.
+PLAIN_SOCIAL = {'owes_listener': False, 'trusts_listener': False, 'faction': None,
+                'far_from_home': False}
+SOCIAL_AXES = ('owes_listener', 'trusts_listener', 'faction', 'far_from_home')
+FACTION_IDS = {'crown': 1, 'guild': 2, 'commons': 3}
+
+
+def typed_stance_for(model):
+    """True when this checkpoint reads stance from the meta channel.
+
+    Checkpoints with voice tables ignore stance text; older ones have no
+    tables and read the # voice / # goal / # stress / # courage lines
+    instead. Callers pass this to encode_row so one script serves both
+    generations without a flag to get wrong.
+    """
+    return bool(getattr(getattr(model, 'config', None), 'voices', 0))
+
+
+def channels_for(model):
+    """Every conditioning channel this checkpoint reads, as encode_row kwargs.
+
+    One script serves all generations this way: untyped checkpoints keep
+    byte-identical behavior (all False) and newer ones get every meta id they
+    were trained on, with no flag to get wrong.
+    """
+    config = getattr(model, 'config', None)
+    return {'typed_stance': bool(getattr(config, 'voices', 0)),
+            'situation': bool(getattr(config, 'situations', 0)),
+            'social': bool(getattr(config, 'socials', 0))}
+
+
+def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversation=False,
+               typed_stance=False, situation=False, social=False):
     prefix, fields = encode_parts(tokenizer, row['prefix'], row['fields'], slots)
     if packet or conversation:
-        cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '')
+        # Explicit mind context and typed channels use the default stance.
+        # Plain packet and conversation rows retain their original prefix.
+        has_mind = 'mind' in row or typed_stance or situation or social
+        mind = row.get('mind') or ({'goal': 'secure_livelihood', 'stress': 'medium',
+                                    'courage': 'medium'} if has_mind else {})
+        # The witnessed cue and the trailing control line belong to the mind
+        # context. Rows without one keep the plain account shape the native
+        # runtime emits from CcCoreModelBegin.
+        cue = '- ' + ('? ' if row.get('confidence', 80) < 40 else '') + ('~ ' if row.get('retold') else '') + \
+            ('! ' if mind and row.get('witnessed') else '')
         prefix = []
         if conversation:
+            # Mind context lines precede the spoken history: goal, stress,
+            # courage, memories, and current thoughts. The model reads them as
+            # plain text; only the held account's fields carry markers.
+            mind_lines = []
+            if not typed_stance and (mind or row.get('voice')):
+                mind_lines.append('# voice: ' + (row.get('voice') or 'resident'))
+                if mind.get('goal'): mind_lines.append('# goal: ' + mind['goal'])
+                if mind.get('stress'): mind_lines.append('# stress: ' + mind['stress'])
+                if mind.get('courage'): mind_lines.append('# courage: ' + mind['courage'])
+            for memory in mind.get('memories', [])[-2:]:
+                mind_lines.append('# memory: ' + memory)
+            for thought in mind.get('thoughts', [])[-2:]:
+                mind_lines.append('# thought: ' + thought)
+            prefix = [token for line in mind_lines for token in tokenizer.encode(line + '\n').ids]
             # Keep literal speech, with exact mentions of the avatar's known
             # fields represented by their existing markers. The model learns
             # responses from these words; dialogue acts are training labels only.
@@ -77,7 +166,7 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
                 if len(part) > 256: raise ValueError('A spoken event exceeds the history budget')
                 messages.append(part)
             while sum(map(len, messages)) > 256: messages.pop(0)
-            prefix = [token for message in messages for token in message]
+            prefix.extend(token for message in messages for token in message)
             if 'performance' in row:
                 from crownless_performance import control_text
                 prefix.extend(tokenizer.encode(control_text(row['performance'])).ids)
@@ -86,17 +175,56 @@ def encode_row(tokenizer, row, context=512, slots=False, packet=False, conversat
         for field in sorted(fields, key=lambda f: f['field']):
             if not field.get('spoken', field['role'] not in (0, 7, 8)): continue
             start = len(prefix)
-            marker = tokenizer.token_to_id(f"[F{field['field']}]")
-            if marker is None: raise ValueError('Packet tokenizer needs field markers')
-            prefix.append(marker)
+            prefix.append(field_marker(tokenizer, field['field']))
             selected.append({**field, 'token_start': start, 'token_end': len(prefix), 'event': 1})
+        # A recalled memory is offered as a copy candidate beside the account
+        # fields: the reply reproduces it exactly instead of reaching for a
+        # memorised line. Field 8 borrows marker [F7]; only recall rows add it.
+        if conversation and row.get('control') == 'recall' and mind.get('memories'):
+            memory = mind['memories'][-1]
+            start = len(prefix)
+            prefix.append(field_marker(tokenizer, 8))
+            selected.append({'field': 8, 'role': 0, 'knowledge': 0, 'provenance': 3,
+                             'spoken': True, 'event': 1, 'token_start': start,
+                             'token_end': len(prefix), 'literal_ids': tokenizer.encode(memory).ids})
         prefix.extend(tokenizer.encode('\n').ids)
         fields = selected
+        # A mind context ends with a control cue that names the output:
+        # say: for spoken lines, # think: for internal thoughts.
+        if mind:
+            prefix.extend(tokenizer.encode('# ' + row.get('control', 'say') + ':\n').ids)
     output, copies = encode_parts(tokenizer, row['output'], row['copies'], slots)
     tokens = prefix + output + [tokenizer.token_to_id('[EOS]')]
     if len(tokens) > context + 1: raise ValueError(f"Example exceeds context: {row['id']}")
     n = len(tokens) - 1
-    meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] for i in range(n)]
+    meta = [[0, 0, 0, 0, row.get('kind_id', 0) if i < len(prefix) else 0] + [0] * 11
+            for i in range(n)]
+    if typed_stance and (packet or conversation):
+        # Added at every prefix position rather than retrieved by attention from
+        # one line forty tokens back, which is the whole point of the change.
+        stance = [VOICE_IDS.get(row.get('voice') or 'resident', 0),
+                  GOAL_IDS.get(mind.get('goal', ''), 0),
+                  LEVEL_IDS.get(mind.get('stress', ''), 0),
+                  LEVEL_IDS.get(mind.get('courage', ''), 0)]
+        for i in range(min(len(prefix), n)):
+            meta[i][5:9] = stance
+    if situation and (packet or conversation):
+        # Binary axes, always present: 1 is the state, 0 the learned "not so".
+        # No gate, unlike stance - there is no absent situation to skip for.
+        state = row.get('situation') or PLAIN_SITUATION
+        ids = [1 if state.get(axis, PLAIN_SITUATION[axis]) else 0 for axis in SITUATION_AXES]
+        for i in range(min(len(prefix), n)):
+            meta[i][9:12] = ids
+    if social and (packet or conversation):
+        # Same bargain one level up: debts, trust and distance are always
+        # known; faction may be absent (0, gated like voice).
+        company = row.get('social') or PLAIN_SOCIAL
+        ids = [1 if company.get('owes_listener', False) else 0,
+               1 if company.get('trusts_listener', False) else 0,
+               FACTION_IDS.get(company.get('faction') or '', 0),
+               1 if company.get('far_from_home', False) else 0]
+        for i in range(min(len(prefix), n)):
+            meta[i][12:16] = ids
     candidates, source_ids, feedback_ids, field_to_candidate = [], [], [], {}
     for field in fields:
         for i in range(field['token_start'], field['token_end']):
@@ -128,7 +256,7 @@ def batch(records, device):
     slots = max(1, max(len(r['candidates']) for r in records))
     b = len(records)
     out = {'tokens': torch.zeros(b, length, dtype=torch.long),
-           'meta': torch.zeros(b, length, 5, dtype=torch.long),
+           'meta': torch.zeros(b, length, META_FIELDS, dtype=torch.long),
            'labels': torch.full((b, length), -100, dtype=torch.long),
            'copy_labels': torch.full((b, length), -100, dtype=torch.long),
            'copy_targets': torch.full((b, length), -1, dtype=torch.long),
@@ -185,6 +313,23 @@ class Crownless(nn.Module):
         self.roles, self.knowledge = nn.Embedding(16, config.dim), nn.Embedding(4, config.dim)
         self.provenance, self.events = nn.Embedding(4, config.dim), nn.Embedding(4, config.dim)
         self.kinds = nn.Embedding(config.kinds, config.dim) if config.kinds else None
+        # A labelled line for the stance: added into the residual stream at
+        # every position instead of competing for attention as prompt text.
+        self.voices = nn.Embedding(config.voices, config.dim) if config.voices else None
+        self.goals = nn.Embedding(config.goals, config.dim) if config.voices else None
+        self.stresses = nn.Embedding(config.levels, config.dim) if config.voices else None
+        self.courages = nn.Embedding(config.levels, config.dim) if config.voices else None
+        # The situation rides the same labelled line: three binary axes, always
+        # present, so no gate. Index 0 is the learned "not so" vector, not absence.
+        self.hungry = nn.Embedding(2, config.dim) if config.situations else None
+        self.sheltered = nn.Embedding(2, config.dim) if config.situations else None
+        self.in_transit = nn.Embedding(2, config.dim) if config.situations else None
+        # Company: two binaries always present, faction categorical with 0
+        # absent (gated like voice), far_from_home binary.
+        self.owes = nn.Embedding(2, config.dim) if config.socials else None
+        self.trusts = nn.Embedding(2, config.dim) if config.socials else None
+        self.faction = nn.Embedding(4, config.dim) if config.socials else None
+        self.far = nn.Embedding(2, config.dim) if config.socials else None
         self.blocks = nn.ModuleList(Block(config) for _ in range(config.layers))
         self.norm = nn.RMSNorm(config.dim)
         self.copy_start = nn.Linear(config.dim, config.dim, bias=False)
@@ -212,6 +357,17 @@ class Crownless(nn.Module):
                               self.provenance(meta[..., 2]) + self.events(meta[..., 3]))
             if self.kinds is not None:
                 x = x + (meta[..., 4] != 0).unsqueeze(-1) * self.kinds(meta[..., 4])
+            if self.voices is not None and meta.shape[-1] > 5:
+                x = x + (meta[..., 5] != 0).unsqueeze(-1) * (
+                    self.voices(meta[..., 5]) + self.goals(meta[..., 6]) +
+                    self.stresses(meta[..., 7]) + self.courages(meta[..., 8]))
+            if self.hungry is not None and meta.shape[-1] > 9:
+                x = x + self.hungry(meta[..., 9]) + self.sheltered(meta[..., 10]) + \
+                    self.in_transit(meta[..., 11])
+            if self.owes is not None and meta.shape[-1] > 12:
+                x = x + self.owes(meta[..., 12]) + self.trusts(meta[..., 13]) + \
+                    self.far(meta[..., 15]) + (meta[..., 14] != 0).unsqueeze(-1) * \
+                    self.faction(meta[..., 14])
         c, s = self.cosine[offset:offset + tokens.shape[1]], self.sine[offset:offset + tokens.shape[1]]
         saved = []
         for i, block in enumerate(self.blocks):
@@ -275,7 +431,7 @@ def generate(model, tokenizer, record, device='cpu', max_tokens=160):
         generated.extend(tokens)
         used += len(feedback)
         t = torch.tensor([feedback], device=device)
-        current, caches = model.hidden(t, torch.zeros(1, len(feedback), 5, dtype=torch.long, device=device), caches)
+        current, caches = model.hidden(t, torch.zeros(1, len(feedback), META_FIELDS, dtype=torch.long, device=device), caches)
         current = current[:, -1:]
     return {'text': tokenizer.decode(generated), 'stopped': stopped, 'actions': actions}
 

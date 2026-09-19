@@ -1,0 +1,272 @@
+{
+  "schema": "crownless.core_moves.v1",
+  "seed": 73,
+  "repeats": 2,
+  "axes": {
+    "move": [
+      "open",
+      "answer",
+      "remark",
+      "affirm",
+      "dispute",
+      "hedge",
+      "attribute",
+      "defer",
+      "settle",
+      "part",
+      "recall",
+      "muse"
+    ],
+    "channel": [
+      "remembered",
+      "spoken",
+      "thought"
+    ],
+    "stance": [
+      "voice",
+      "goal",
+      "stress",
+      "courage"
+    ]
+  },
+  "voices": [
+    "baker",
+    "scribe",
+    "farmer",
+    "smith",
+    "innkeeper",
+    "miller",
+    "shepherd",
+    "woodcutter",
+    "resident"
+  ],
+  "stress": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "accounts_manifest_sha256": "98c16f51a313ff8c00fca63d87e3162954638a8a15f98ea9107e05dafad2e8cd",
+  "mind_manifest_sha256": "ed32824aea0a64daf71e9ae48de09186b2f6b2e9a7d2e1dd2e2e92a7165d90cb",
+  "rules_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+  "holdout_cells": [
+    "affirm:scribe:low",
+    "answer:innkeeper:low",
+    "attribute:woodcutter:low",
+    "defer:resident:medium",
+    "dispute:baker:high",
+    "hedge:shepherd:high",
+    "muse:farmer:low",
+    "open:smith:high",
+    "part:baker:low",
+    "recall:scribe:high",
+    "remark:miller:medium",
+    "settle:farmer:medium"
+  ],
+  "confusable_replacements": true,
+  "situation": true,
+  "source_commit": "ebc7614c11b57ea07a07d41c9bc674f16d159eb4",
+  "source_hashes": {
+    "crownless_moves.py": "44fbda5d24e9dc4ef481334446583999892aaec74c40764084f7735f294eaafe",
+    "build_crownless_moves.py": "fdcb67edddcf4d88e68544633238d09fb1f539181161fe74195b052a379e5198",
+    "crownless_v2.py": "6a3ed3de487bc0e736dd7c7e136f6f5202b3f4d7f2fde07a16be24efe4699133"
+  },
+  "splits": {
+    "train": {
+      "sha256": "d37fd6af905f28f4fdbebc3d8c9da11f80db7e966eca9c0cd0fb4515317b0c84",
+      "rows": 96477,
+      "moves": {
+        "affirm": 8030,
+        "answer": 8057,
+        "attribute": 8066,
+        "defer": 7908,
+        "dispute": 8049,
+        "hedge": 8044,
+        "muse": 8017,
+        "open": 8021,
+        "part": 8036,
+        "recall": 8058,
+        "remark": 8083,
+        "settle": 8108
+      },
+      "distinct_outputs": {
+        "affirm": 52,
+        "answer": 4052,
+        "attribute": 6,
+        "defer": 180,
+        "dispute": 5579,
+        "hedge": 72,
+        "muse": 1401,
+        "open": 4690,
+        "part": 35,
+        "recall": 1269,
+        "remark": 847,
+        "settle": 176
+      },
+      "channels": {
+        "spoken": 80402,
+        "remembered": 8058,
+        "thought": 8017
+      },
+      "voices": 9,
+      "kinds": 44,
+      "with_stance": 96477,
+      "history_depth": {
+        "0": 16038,
+        "1": 10096,
+        "2": 10010,
+        "3": 20109,
+        "4": 20128,
+        "5": 10072,
+        "6": 10024
+      }
+    },
+    "validation": {
+      "sha256": "7649156f2b71ee8e344b53f87c1e701f608b9a0a5d0ecb93cdef1ff3297c4be3",
+      "rows": 2500,
+      "moves": {
+        "affirm": 208,
+        "answer": 208,
+        "attribute": 208,
+        "defer": 208,
+        "dispute": 208,
+        "hedge": 208,
+        "muse": 208,
+        "open": 212,
+        "part": 208,
+        "recall": 208,
+        "remark": 208,
+        "settle": 208
+      },
+      "distinct_outputs": {
+        "affirm": 53,
+        "answer": 129,
+        "attribute": 6,
+        "defer": 105,
+        "dispute": 173,
+        "hedge": 49,
+        "muse": 159,
+        "open": 146,
+        "part": 34,
+        "recall": 55,
+        "remark": 108,
+        "settle": 110
+      },
+      "channels": {
+        "spoken": 2084,
+        "remembered": 208,
+        "thought": 208
+      },
+      "voices": 9,
+      "kinds": 44,
+      "with_stance": 2500,
+      "history_depth": {
+        "0": 420,
+        "1": 284,
+        "2": 275,
+        "3": 525,
+        "4": 512,
+        "5": 231,
+        "6": 253
+      }
+    },
+    "test": {
+      "sha256": "b3f90b89176b15656965e82f3e8eb4d40a9a212ce15ac5d817ccbf62a99009f2",
+      "rows": 2500,
+      "moves": {
+        "affirm": 208,
+        "answer": 208,
+        "attribute": 208,
+        "defer": 208,
+        "dispute": 208,
+        "hedge": 208,
+        "muse": 208,
+        "open": 212,
+        "part": 208,
+        "recall": 208,
+        "remark": 208,
+        "settle": 208
+      },
+      "distinct_outputs": {
+        "affirm": 53,
+        "answer": 136,
+        "attribute": 6,
+        "defer": 106,
+        "dispute": 188,
+        "hedge": 53,
+        "muse": 166,
+        "open": 170,
+        "part": 36,
+        "recall": 49,
+        "remark": 129,
+        "settle": 98
+      },
+      "channels": {
+        "spoken": 2084,
+        "remembered": 208,
+        "thought": 208
+      },
+      "voices": 9,
+      "kinds": 44,
+      "with_stance": 2500,
+      "history_depth": {
+        "0": 420,
+        "1": 268,
+        "2": 254,
+        "3": 499,
+        "4": 523,
+        "5": 273,
+        "6": 263
+      }
+    },
+    "wording": {
+      "sha256": "b16889f62c380aba4f10f9062fc8b93c37af8a8a93aca40e18f7494093990a79",
+      "rows": 2500,
+      "moves": {
+        "affirm": 208,
+        "answer": 208,
+        "attribute": 208,
+        "defer": 208,
+        "dispute": 208,
+        "hedge": 208,
+        "muse": 208,
+        "open": 212,
+        "part": 208,
+        "recall": 208,
+        "remark": 208,
+        "settle": 208
+      },
+      "distinct_outputs": {
+        "affirm": 53,
+        "answer": 136,
+        "attribute": 6,
+        "defer": 103,
+        "dispute": 194,
+        "hedge": 51,
+        "muse": 166,
+        "open": 169,
+        "part": 34,
+        "recall": 54,
+        "remark": 123,
+        "settle": 104
+      },
+      "channels": {
+        "spoken": 2084,
+        "remembered": 208,
+        "thought": 208
+      },
+      "voices": 9,
+      "kinds": 44,
+      "with_stance": 2500,
+      "history_depth": {
+        "0": 420,
+        "1": 281,
+        "2": 253,
+        "3": 504,
+        "4": 518,
+        "5": 255,
+        "6": 269
+      }
+    }
+  },
+  "scope": "Move x channel x stance over shared account rows. Every row carries a stance and the full set of wordings accepted for its cell."
+}

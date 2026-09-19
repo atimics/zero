@@ -1,0 +1,161 @@
+{
+  "schema": "crownless.core_acts.v1",
+  "seed": 73,
+  "repeats": 2,
+  "acts": {
+    "conversation": [
+      "start",
+      "question",
+      "agree",
+      "disagree",
+      "certainty",
+      "source",
+      "check",
+      "close",
+      "end"
+    ],
+    "mind": [
+      "say",
+      "memory",
+      "thought",
+      "react"
+    ],
+    "total": 13
+  },
+  "accounts_manifest_sha256": "98c16f51a313ff8c00fca63d87e3162954638a8a15f98ea9107e05dafad2e8cd",
+  "mind_manifest_sha256": "ed32824aea0a64daf71e9ae48de09186b2f6b2e9a7d2e1dd2e2e92a7165d90cb",
+  "rules_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+  "source_commit": "a92e0df48d1d0f5b9c3fe5f09c3a322228ad7495",
+  "source_hashes": {
+    "crownless_conversation.py": "5c0bfa7ae7b0474ae73bdbf3b55318b59e0cf4d4c548d6806c09a2471bfb9b78",
+    "crownless_v2.py": "2a0ebb54ac98a5a0d3a75b4131e0ab0fe36fb075b6802415b560bc6089e2b68f",
+    "build_crownless_acts.py": "ee8b7bd51af30a28c534aaa8637dda1a3df98b5c039590972521cea6a28e6a80"
+  },
+  "recovered_from": {
+    "commit": "7cf61c6df77f83bb259820264dc8b5548d34198e",
+    "note": "Conversation acts restored from the pre-mind generator."
+  },
+  "splits": {
+    "train": {
+      "sha256": "dda91150146d291a3b41012a32490e1983e23ab95bdde3b9673129b493892df6",
+      "rows": 100000,
+      "acts": {
+        "agree": 5936,
+        "certainty": 5556,
+        "check": 5556,
+        "close": 5556,
+        "disagree": 5174,
+        "end": 5554,
+        "memory": 12500,
+        "question": 5556,
+        "react": 12500,
+        "say": 12500,
+        "source": 5556,
+        "start": 5556,
+        "thought": 12500
+      },
+      "with_mind": 50000,
+      "kinds": 44,
+      "history_depth": {
+        "0": 18056,
+        "1": 13431,
+        "2": 6946,
+        "3": 27186,
+        "4": 13841,
+        "5": 13549,
+        "6": 6991
+      }
+    },
+    "validation": {
+      "sha256": "5f8104fbdb1b1690a0e26a3d7aac5a040a9d4a7d6469b0306285c7b54413b56a",
+      "rows": 2500,
+      "acts": {
+        "agree": 148,
+        "certainty": 138,
+        "check": 138,
+        "close": 138,
+        "disagree": 132,
+        "end": 138,
+        "memory": 312,
+        "question": 140,
+        "react": 312,
+        "say": 314,
+        "source": 138,
+        "start": 140,
+        "thought": 312
+      },
+      "with_mind": 1250,
+      "kinds": 44,
+      "history_depth": {
+        "0": 452,
+        "1": 325,
+        "2": 190,
+        "3": 709,
+        "4": 335,
+        "5": 324,
+        "6": 165
+      }
+    },
+    "test": {
+      "sha256": "c143b6f13392ec1256df29972561fc08d1d45cbbc6c70635ae45f11aa1436f4c",
+      "rows": 2500,
+      "acts": {
+        "agree": 148,
+        "certainty": 138,
+        "check": 138,
+        "close": 138,
+        "disagree": 132,
+        "end": 138,
+        "memory": 312,
+        "question": 140,
+        "react": 312,
+        "say": 314,
+        "source": 138,
+        "start": 140,
+        "thought": 312
+      },
+      "with_mind": 1250,
+      "kinds": 44,
+      "history_depth": {
+        "0": 452,
+        "1": 362,
+        "2": 184,
+        "3": 670,
+        "4": 338,
+        "5": 326,
+        "6": 168
+      }
+    },
+    "wording": {
+      "sha256": "b2ea7cd7c8b8f4890beb2f152d370e92cdd24fb1a8bb6f7bfa55f8af72a31cbe",
+      "rows": 2500,
+      "acts": {
+        "agree": 148,
+        "certainty": 138,
+        "check": 138,
+        "close": 138,
+        "disagree": 132,
+        "end": 138,
+        "memory": 312,
+        "question": 140,
+        "react": 312,
+        "say": 314,
+        "source": 138,
+        "start": 140,
+        "thought": 312
+      },
+      "with_mind": 1250,
+      "kinds": 44,
+      "history_depth": {
+        "0": 452,
+        "1": 361,
+        "2": 144,
+        "3": 665,
+        "4": 359,
+        "5": 332,
+        "6": 187
+      }
+    }
+  },
+  "scope": "Conversation turns answered from the account alone and mind turns answered under goal, stress, courage, memories and thoughts, over shared account rows."
+}

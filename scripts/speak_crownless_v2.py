@@ -5,7 +5,7 @@ from pathlib import Path
 import subprocess
 import torch
 from tokenizers import Tokenizer
-from crownless_v2 import encode_row, generate, load
+from crownless_v2 import encode_row, generate, load, channels_for
 from crownless_v2_export import load_export
 
 
@@ -49,7 +49,8 @@ if __name__ == '__main__':
     if model.mode == 'conversation' and len(args.event) > 1:
         p.error('Use chat_crownless.py for spoken history with speaker labels')
     record = encode_row(tokenizer, row, model.config.context, slots=model.mode in ('slots', 'packet', 'conversation'),
-                        packet=model.mode == 'packet', conversation=model.mode == 'conversation')
+                        packet=model.mode == 'packet', conversation=model.mode == 'conversation',
+                        **channels_for(model))
     result = generate(model, tokenizer, record)
     if args.trace: args.trace.write_text(json.dumps({'packet': packet, **result}, indent=2) + '\n')
     print(result['text'])

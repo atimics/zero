@@ -7,7 +7,7 @@ from pathlib import Path
 import torch
 from tokenizers import Tokenizer
 from crownless_performance import CREATURES, EMOTIONS, VERSION
-from crownless_v2 import encode_row, generate
+from crownless_v2 import encode_row, generate, channels_for
 from crownless_v2_export import load_export
 
 
@@ -44,7 +44,8 @@ def main():
                                           'emotion':EMOTIONS[turn % 3] if speaker == 0 else 'calm'})
             row['history'] = [{'speaker':'self' if h['speaker'] == speaker else 'other', 'text':h['text']}
                               for h in history[-4:]]
-            result = generate(model, tokenizer, encode_row(tokenizer, row, slots=True, conversation=True))
+            result = generate(model, tokenizer, encode_row(tokenizer, row, slots=True, conversation=True,
+                                                              **channels_for(model)))
             turns.append({'speaker':speaker, 'performance':row['performance'],
                           'history':row['history'], 'text':result['text'], 'stopped':result['stopped']})
             history.append({'speaker':speaker, 'text':result['text']})

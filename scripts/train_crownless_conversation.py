@@ -112,7 +112,7 @@ def main():
     paired = []
     rng = random.Random(902)
     for base in bases['test'][:122]:
-        for act in ('agree', 'disagree'):
+        for act in ('say', 'react'):
             row = response(base, rules[base['rule']], act, rng)
             row['id'] += ':' + act
             paired.append(row)
