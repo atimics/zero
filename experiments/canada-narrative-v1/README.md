@@ -125,6 +125,24 @@ fresh run; automatic resume is a later addition.
 
 ## Review a completed pair
 
+For both registered comparisons on an Oregon GPU, freeze a sample package
+from the completed pilot's results directory:
+
+```sh
+python scripts/prepare_canada_samples.py \
+  --delivery /absolute/path/to/accepted-delivery \
+  --checkpoints /absolute/path/to/pilot/results \
+  --output /absolute/path/to/sample-package
+```
+
+The package verifies all four selected checkpoint hashes and both paired
+run records. Its worker rebuilds the pinned input streams, checks the
+preparation receipt, and generates 200 matched pairs for each comparison.
+It uses the frozen sampling settings and adds zero training presentations.
+The output contains `samples.json` plus an `AB` and `BC` directory, each with
+the blind packet, review page, separate answer key, and loss/repetition
+metrics. The package uses the existing bounded launcher and cleanup flow.
+
 ```sh
 /tmp/zero-canada-env/bin/python scripts/review_canada_narrative.py build \
   --data /tmp/zero-canada-prepared --comparison AB \
