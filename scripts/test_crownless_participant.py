@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+import subprocess
+import sys
 
 import torch
 from tokenizers import Tokenizer
@@ -93,6 +95,16 @@ class ParticipantTests(unittest.TestCase):
         optimizer.step()
         self.assertFalse(torch.equal(before, model.embedding.weight))
         self.assertTrue(torch.isfinite(loss(model, rows, 'cpu')))
+
+    def test_native_setup_failure_is_preserved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            result = subprocess.run([sys.executable, str(ROOT / 'scripts/check_participant_native.py'),
+                '--run', directory, '--crownless', directory, '--build', directory],
+                capture_output=True)
+            self.assertNotEqual(result.returncode, 0)
+            receipts = list(Path(directory).glob('native-error-*.json'))
+            self.assertEqual(len(receipts), 1)
+            self.assertIn('FileNotFoundError', json.loads(receipts[0].read_text())['error'])
 
 
 if __name__ == '__main__':

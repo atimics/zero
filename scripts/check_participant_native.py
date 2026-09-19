@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import shutil
 import subprocess
+import time
 
 
 def sha(path):
@@ -18,6 +19,18 @@ def main():
     parser.add_argument('--crownless', type=Path, required=True)
     parser.add_argument('--build', type=Path, required=True, help='Matching built native Crownless libraries')
     args = parser.parse_args()
+    try:
+        return check(args)
+    except BaseException as error:
+        if args.run.is_dir():
+            receipt = {'status': 'failed', 'error': repr(error),
+                       'stdout_hex': (getattr(error, 'stdout', None) or b'').hex(),
+                       'stderr_hex': (getattr(error, 'stderr', None) or b'').hex()}
+            (args.run / f'native-error-{time.time_ns()}.json').write_text(json.dumps(receipt, indent=2)+'\n')
+        raise
+
+
+def check(args):
     root, run, build = args.crownless.resolve(), args.run.resolve(), args.build.resolve()
     stage = run / 'native'
     stage.mkdir(exist_ok=False)
@@ -42,10 +55,11 @@ def main():
                str(build / 'libcrownless_story.a'), str(build / 'libcrownless_sim.a'),
                '-lm', '-o', str(stage / 'probe')]
     receipt = {'command': command, 'model_sha256': tables.MODEL_SHA,
+               'checker_sha256': sha(__file__), 'samples_sha256': sha(run / 'samples.json'),
                'tables_sha256': sha(stage / 'story/cc_core_model_tables.inc'),
                'sources': {str(p): sha(p) for p in (module_path, root / 'tools/core_model_probe.c',
                    root / 'src/story/cc_core_model.c', build / 'libcrownless_story.a', build / 'libcrownless_sim.a')}}
-    result = subprocess.run(command, capture_output=True)
+    result = subprocess.run(command, capture_output=True, timeout=60)
     (stage / 'build.stdout').write_bytes(result.stdout)
     (stage / 'build.stderr').write_bytes(result.stderr)
     receipt['build_returncode'] = result.returncode
