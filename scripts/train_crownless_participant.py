@@ -24,8 +24,10 @@ def checked_rows(path, tokenizer, smoke=False):
         raise ValueError('empty dataset')
     for row in rows:
         prompt = row['prompt']
-        if prompt['format'] != 'crownless-person-v1':
+        if prompt['format'] not in ('crownless-person-v1', 'crownless-person-v2'):
             raise ValueError('unsupported participant format')
+        if not prompt['text'].startswith(prompt['format'] + '\n'):
+            raise ValueError('participant header differs from declared format')
         status = row.get('source_review_status', '')
         if status.startswith('rejected') or status.startswith('hold'):
             raise ValueError('excluded source target')
@@ -52,6 +54,13 @@ def checked_rows(path, tokenizer, smoke=False):
         if row['labels'] != [-100] * (len(prefix) - 1) + target + [0]:
             raise ValueError('loss mask differs from actor-only shifted labels')
     return rows
+
+
+def dataset_format(train, validation):
+    formats = {row['prompt']['format'] for row in train + validation}
+    if len(formats) != 1:
+        raise ValueError('use one participant format across train and validation')
+    return formats.pop()
 
 
 def check_split(train, validation):
@@ -138,6 +147,7 @@ def main():
     validation = checked_rows(args.validation, tokenizer) if args.validation else []
     if validation:
         check_split(train, validation)
+    participant_format = dataset_format(train, validation)
     model, metadata = load_export(args.reference, args.tokenizer)
     dimensions = tuple(getattr(model.config, k) for k in ('dim', 'layers', 'heads', 'ff', 'vocab', 'context'))
     if dimensions != (192, 8, 6, 624, 4096, 512) or model.mode != 'conversation':
@@ -148,6 +158,7 @@ def main():
     args.output.mkdir(parents=True)
     manifest = {'scope': 'pipeline_smoke' if args.smoke else 'held_out_world_training',
                 'status': 'running', 'initialization': args.initialization,
+                'participant_format': participant_format,
                 'parameters': sum(p.numel() for p in model.parameters()),
                 'seed': args.seed, 'steps': args.steps, 'batch_size': args.batch_size,
                 'device': args.device, 'torch': torch.__version__,
@@ -186,7 +197,7 @@ def main():
                     for r, n in zip(validation, weights)) / sum(weights)
         model.cpu()
         save(args.output / 'last.pt', model, args.tokenizer,
-             {'participant_format': 'crownless-person-v1', 'step': args.steps})
+             {'participant_format': participant_format, 'step': args.steps})
         export(model, args.tokenizer, args.output / 'last.ccv2', metadata)
         quantized, _ = load_export(args.output / 'last.ccv2', args.tokenizer)
         quantized.eval()
@@ -199,7 +210,7 @@ def main():
     except BaseException as error:
         manifest.update(status='failed', error=repr(error), target_tokens=target_tokens)
         save(args.output / 'partial.pt', model, args.tokenizer,
-             {'participant_format': 'crownless-person-v1', 'failed': True})
+             {'participant_format': participant_format, 'failed': True})
         raise
     finally:
         receipt.write_text(json.dumps(manifest, indent=2) + '\n')

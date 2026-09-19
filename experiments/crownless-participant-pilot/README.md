@@ -80,3 +80,10 @@ local failure in `test_published_model_speaks_with_new_names`: the older model
 produces "In Newhaven in Éva put up a notice about Flood relief." The existing
 model, model code and that test are unchanged in this branch. Its failure is
 preserved in the evidence archive and remains separate from participant parity.
+
+Participant v2 uses compact relationship values and self/other account source
+roles. The trainer accepts v1 and v2 with matching text headers. It requires a
+single format across training and validation, and records that format in the
+manifest and saved checkpoint metadata. Recompile and review data after changing
+format. Native inference must support the selected header; see the Crownless
+participant context v2 change.
