@@ -74,6 +74,22 @@ class CanadaAwsTests(unittest.TestCase):
         self.assertEqual(manifest['status'], 'prepared-awaiting-paid-launch-approval')
         self.assertEqual(manifest['files']['source.tar.gz'], self.manifest['files']['source.tar.gz'])
 
+    def test_oregon_package_binds_region_image_network_and_price(self):
+        output = Path(self.temporary.name) / 'oregon'
+        manifest = prepare(output, now=1789260000, subnet=None,
+                           instance_type='g5.xlarge', region='us-west-2')
+        request = json.loads((output / 'request.template.json').read_text())
+        stack = json.loads((output / 'stack.json').read_text())
+        self.assertEqual(verify(output, sha(output / 'manifest.json'))['region'], 'us-west-2')
+        self.assertEqual(request['ImageId'], 'ami-0d105fd7469b31d32')
+        self.assertEqual(stack['Resources']['SecurityGroup']['Properties']['VpcId'], 'vpc-80728ce6')
+        self.assertIn('AWS_DEFAULT_REGION=us-west-2', (output / 'user-data.template.sh').read_text())
+        self.assertEqual(manifest['hourly_instance_usd'], 1.006)
+        self.assertEqual(manifest['requested_budget_usd'], 2)
+        self.assertEqual(manifest['files']['source.tar.gz'], self.manifest['files']['source.tar.gz'])
+        with self.assertRaises(ValueError):
+            prepare(Path(self.temporary.name) / 'bad', region='us-west-2')
+
     def test_watchdog_deadline_including_stopped(self):
         now = datetime.datetime.now(datetime.timezone.utc)
         self.assertFalse(expired({'LaunchTime': now - datetime.timedelta(seconds=1799)}, now))

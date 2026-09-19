@@ -24,8 +24,8 @@ def verify(directory, expected):
     if sha(directory / 'manifest.json') != expected:
         raise ValueError('Use the approved manifest hash')
     manifest = read(directory / 'manifest.json')
-    if manifest['region'] != 'ca-central-1' or manifest['instance_count'] != 1:
-        raise ValueError('Launch scope differs from one Canada instance')
+    if manifest['region'] not in ['ca-central-1', 'us-west-2'] or manifest['instance_count'] != 1:
+        raise ValueError('Launch scope differs from one verified timing instance')
     for name, expected_sha in manifest['files'].items():
         file = (directory / name).resolve()
         if not file.is_relative_to(directory.resolve()) or sha(file) != expected_sha:

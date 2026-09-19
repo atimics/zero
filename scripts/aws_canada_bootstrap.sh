@@ -3,7 +3,7 @@ set -Eeuo pipefail
 mkdir -p /opt/zero-timing/output
 cd /opt/zero-timing
 exec > >(tee -a output/bootstrap.log) 2>&1
-export AWS_DEFAULT_REGION=ca-central-1
+export AWS_DEFAULT_REGION=__REGION__
 export CUBLAS_WORKSPACE_CONFIG=:4096:8
 export PIP_DISABLE_PIP_VERSION_CHECK=1
 BUCKET=__BUCKET__

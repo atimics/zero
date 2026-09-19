@@ -12,7 +12,7 @@ from pathlib import Path
 from canada_narrative import ROOT, EXPERIMENT, digest, read_json, write_json
 
 
-def template(run_id, end_date):
+def template(run_id, end_date, vpc_id="vpc-c64ccdaf"):
     def trust(service):
         return {'Version': '2012-10-17', 'Statement': [
             {'Effect': 'Allow', 'Principal': {'Service': service}, 'Action': 'sts:AssumeRole'}]}
@@ -28,7 +28,7 @@ def template(run_id, end_date):
                 {'ServerSideEncryptionByDefault': {'SSEAlgorithm': 'AES256'}}]},
             'LifecycleConfiguration': {'Rules': [{'Id': 'temporary-timing', 'Status': 'Enabled', 'ExpirationInDays': 1}]}}},
         'SecurityGroup': {'Type': 'AWS::EC2::SecurityGroup', 'Properties': {
-            'VpcId': 'vpc-c64ccdaf', 'GroupDescription': 'ZERO timing outbound HTTPS',
+            'VpcId': vpc_id, 'GroupDescription': 'ZERO timing outbound HTTPS',
             'SecurityGroupEgress': [{'IpProtocol': 'tcp', 'FromPort': 443, 'ToPort': 443, 'CidrIp': '0.0.0.0/0'}]}},
         'InstanceRole': {'Type': 'AWS::IAM::Role', 'Properties': {
             'AssumeRolePolicyDocument': trust('ec2.amazonaws.com'),
@@ -82,23 +82,29 @@ def package_source(output):
     return hashes
 
 
-def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge'):
+def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge', region='ca-central-1'):
+    if region not in ['ca-central-1', 'us-west-2']:
+        raise ValueError('Choose a verified timing region')
+    if region == 'us-west-2' and (subnet is not None or instance_type != 'g5.xlarge'):
+        raise ValueError('Oregon timing uses one g5.xlarge with automatic zone selection')
     if subnet not in [None, "subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
         raise ValueError("Choose a verified Canada Central subnet")
     prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547, 'g5.xlarge': 1.117}
     if instance_type not in prices:
         raise ValueError('Choose a single-GPU instance within the timing budget')
-    price = prices[instance_type]
+    price = 1.006 if region == 'us-west-2' else prices[instance_type]
+    vpc_id = 'vpc-80728ce6' if region == 'us-west-2' else 'vpc-c64ccdaf'
+    image_id = 'ami-0d105fd7469b31d32' if region == 'us-west-2' else 'ami-092e8a40239c8733d'
     now = int(time.time()) if now is None else now
     output.mkdir(parents=True, exist_ok=False)
     files = package_source(output)
     source_sha = digest(output / 'source.tar.gz')
     run_id = 'zero-canada-timing-' + source_sha[:12] + '-' + str(now)
     end = datetime.datetime.fromtimestamp(now + 90000, datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
-    write_json(output / 'stack.json', template(run_id, end))
-    bootstrap = (ROOT / 'scripts/aws_canada_bootstrap.sh').read_text().replace('__SOURCE_SHA__', source_sha)
+    write_json(output / 'stack.json', template(run_id, end, vpc_id))
+    bootstrap = (ROOT / 'scripts/aws_canada_bootstrap.sh').read_text().replace('__SOURCE_SHA__', source_sha).replace('__REGION__', region)
     (output / 'user-data.template.sh').write_text(bootstrap)
-    request = {'ImageId': 'ami-092e8a40239c8733d', 'InstanceType': instance_type, 'MinCount': 1, 'MaxCount': 1,
+    request = {'ImageId': image_id, 'InstanceType': instance_type, 'MinCount': 1, 'MaxCount': 1,
                'ClientToken': hashlib.sha256(run_id.encode()).hexdigest(),
                'InstanceInitiatedShutdownBehavior': 'terminate',
                'MetadataOptions': {'HttpTokens': 'required', 'HttpEndpoint': 'enabled', 'HttpPutResponseHopLimit': 1},
@@ -116,7 +122,7 @@ def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge
         request['SecurityGroupIds'] = ['__STACK_SECURITY_GROUP__']
     write_json(output / 'request.template.json', request)
     (output / 'launch.py').write_bytes((ROOT / 'scripts/run_canada_aws.py').read_bytes())
-    manifest = {'schema': 1, 'status': 'prepared-awaiting-paid-launch-approval', 'region': 'ca-central-1',
+    manifest = {'schema': 1, 'status': 'prepared-awaiting-paid-launch-approval', 'region': region,
                 'account': '022118847419', 'run_id': run_id, 'created_at': now, 'launch_valid_until': now + 86400,
                 'instance_type': instance_type, 'instance_count': 1, 'hourly_instance_usd': price,
                 'requested_budget_usd': 2, 'workload_timeout_seconds': 900,
@@ -137,6 +143,7 @@ if __name__ == '__main__':
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge', 'g5.xlarge'], default='g6.xlarge')
     parser.add_argument('--automatic-zone', action='store_true')
+    parser.add_argument('--region', choices=['ca-central-1', 'us-west-2'], default='ca-central-1')
     args = parser.parse_args()
     print(json.dumps(prepare(args.output, subnet=None if args.automatic_zone else 'subnet-a24506fe',
-                             instance_type=args.instance_type), indent=2))
+                             instance_type=args.instance_type, region=args.region), indent=2))
