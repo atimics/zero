@@ -91,3 +91,29 @@ hashes, stack ownership and existing launch state.
 Results include `timing.json`, the GPU description, installed dependencies,
 bootstrap log, exit receipt, collection hashes and cleanup state. The A10G launch has user approval; its first attempt completed cleanup after
 AWS reported insufficient capacity.
+
+## Canada cloud pilot
+
+The four-arm pilot uses one g5.xlarge in Canada Central, a US$2 ceiling,
+a 75-minute workload timeout, and guest plus independent AWS termination
+at 85 minutes. Input rights evidence is scoped to Canada. Corpus data and
+checkpoints use the Canada region. Oregon timing supplies a planning estimate.
+
+The worker rebuilds the pinned streams and verifies the accepted preparation
+hash before training. It runs AB-A, AB-B, BC-B and BC-C with seed 7, for
+255,314,200 scored token presentations. It validates both pairs, checks selected
+checkpoint hashes, and evaluates the protected outcome windows after all arms
+finish. Generation, repetition checks and blind human review follow separately;
+training completion alone leaves the quality decision open.
+
+Prepare from the accepted delivery:
+
+```sh
+python scripts/prepare_canada_pilot.py --delivery /path/to/accepted-delivery \
+  --output /path/to/pilot-package
+```
+
+Launch and recovery use the packaged `launch.py` and manifest hash, as in the
+GPU timing workflow. `pilot.json` records completed training and paired loss
+scores. The collector saves nested checkpoints and hashes every result file.
+Runtime inputs, checkpoints and receipts stay outside Git.
