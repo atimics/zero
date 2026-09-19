@@ -91,7 +91,7 @@ def run(directory, expected, mode):
             write(state_path, {'run_id': run_id, 'stage': 'timing', 'bucket': bucket,
                                'instance_id': receipt['Instances'][0]['InstanceId']})
         # A local timeout supplements the independent AWS watchdog.
-        deadline = time.monotonic() + 2100
+        deadline = time.monotonic() + manifest.get('controller_wait_seconds', 2100)
         while time.monotonic() < deadline:
             active = [i for i in instances() if i['State']['Name'] != 'terminated']
             if not active:
@@ -108,12 +108,12 @@ def run(directory, expected, mode):
         # Persist results locally before removing this run's temporary resources.
         write(directory / 'collection.json', {'run_id': run_id,
               'instances': [{'id': i['InstanceId'], 'state': i['State']['Name']} for i in instances()],
-              'files': {p.name: sha(p) for p in results.iterdir() if p.is_file()}})
+              'files': {str(p.relative_to(results)): sha(p) for p in results.rglob('*') if p.is_file()}})
         aws('s3', 'rm', f's3://{bucket}', '--recursive', '--only-show-errors', raw=True)
         aws('cloudformation', 'delete-stack', '--stack-name', run_id)
         aws('cloudformation', 'wait', 'stack-delete-complete', '--stack-name', run_id, raw=True, timeout=600)
         write(state_path, {'run_id': run_id, 'stage': 'cleaned', 'instance_terminated': True})
-    timing = results / 'timing.json'; finish = results / 'finish.json'
+    timing = results / manifest.get('result_file', 'timing.json'); finish = results / 'finish.json'
     if not timing.exists() or not finish.exists() or read(finish)['exit_code'] != 0 or read(timing)['status'] != 'passed':
         raise RuntimeError('Timing failed; inspect the collected bootstrap log')
     print(json.dumps(read(timing), indent=2))
