@@ -94,10 +94,11 @@ AWS reported insufficient capacity.
 
 ## Canada cloud pilot
 
-The four-arm pilot uses one g5.xlarge in Canada Central, a US$2 ceiling,
+The four-arm pilot uses one g5.xlarge in Oregon, a US$2 ceiling,
 a 75-minute workload timeout, and guest plus independent AWS termination
-at 85 minutes. Input rights evidence is scoped to Canada. Corpus data and
-checkpoints use the Canada region. Oregon timing supplies a planning estimate.
+at 85 minutes. The release uses the Canadian copyright regime. The user clarified that this
+is separate from the training location. Oregon is the approved training region;
+its completed A10G timing supplies the planning estimate.
 
 The worker rebuilds the pinned streams and verifies the accepted preparation
 hash before training. It runs AB-A, AB-B, BC-B and BC-C with seed 7, for
