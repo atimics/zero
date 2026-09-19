@@ -10,7 +10,7 @@ import sys
 import torch
 from tokenizers import Tokenizer
 from crownless_v2 import Config, Crownless
-from train_crownless_participant import checked_rows, check_split, loss
+from train_crownless_participant import checked_rows, check_split, dataset_format, loss
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -21,11 +21,11 @@ class ParticipantTests(unittest.TestCase):
         torch.set_num_threads(2)
         cls.tokenizer = Tokenizer.from_file(str(ROOT / 'models/crownless-core-v2/tokenizer.json'))
 
-    def row(self, text='I can ask the price.'):
-        prefix = 'crownless-person-v1\nself:["A","smith"]\nturn:\n'
+    def row(self, text='I can ask the price.', version='crownless-person-v1'):
+        prefix = version + '\nself:["A","smith"]\nturn:\n'
         target = json.dumps({'kind': 'speech', 'text': text}, separators=(',', ':'))
         p, t = self.tokenizer.encode(prefix).ids, self.tokenizer.encode(target).ids
-        return {'prompt': {'format': 'crownless-person-v1', 'text': prefix, 'tokens': p},
+        return {'prompt': {'format': version, 'text': prefix, 'tokens': p},
                 'target_text': target, 'tokens': p + t, 'labels': [-100] * (len(p)-1) + t + [0],
                 'review_status': 'approved_compact', 'source_review_status': 'approved',
                 'world_group': 'world-a'}
@@ -39,6 +39,20 @@ class ParticipantTests(unittest.TestCase):
     def test_actor_target_round_trip(self):
         row = self.row()
         self.assertEqual(self.read(row), [row])
+
+    def test_versions_are_explicit_and_consistent(self):
+        old = self.row()
+        new = self.row(version='crownless-person-v2')
+        self.assertEqual(self.read(new), [new])
+        self.assertEqual(dataset_format([new], []), 'crownless-person-v2')
+        with self.assertRaisesRegex(ValueError, 'one participant format'):
+            dataset_format([old], [new])
+        new['prompt']['format'] = 'crownless-person-v1'
+        with self.assertRaisesRegex(ValueError, 'header differs'):
+            self.read(new)
+        new['prompt']['format'] = 'crownless-person-v3'
+        with self.assertRaisesRegex(ValueError, 'unsupported participant format'):
+            self.read(new)
 
     def test_pending_rows_are_diagnostic_only(self):
         row = self.row()
