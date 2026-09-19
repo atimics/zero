@@ -19,7 +19,7 @@ class PilotPackageTests(unittest.TestCase):
                 manifest = prepare_pilot(root, package)
             self.assertEqual(verify(package, digest(package / 'manifest.json'))['region'], 'ca-central-1')
             self.assertEqual(manifest['requested_budget_usd'], 2)
-            self.assertLess(manifest['planning_instance_usd_at_86_minutes'], 1.7)
+            self.assertLess(manifest['planning_instance_usd_at_watchdog_plus_one_minute'], 1.7)
             self.assertEqual(manifest['result_file'], 'pilot.json')
             self.assertEqual(manifest['watchdog_maximum_age_seconds'], 5100)
             script = (package / 'user-data.template.sh').read_text()
@@ -33,6 +33,11 @@ class PilotPackageTests(unittest.TestCase):
                 self.assertEqual(archive.extractfile('delivery/input.txt').read(), b'fixture')
                 self.assertIn('scripts/aws_canada_pilot.py', archive.getnames())
             self.assertEqual(manifest['files']['launch.py'], digest(package / 'launch.py'))
+            with patch('prepare_canada_pilot.delivery_files', return_value={'input.txt': data}):
+                fallback = prepare_pilot(root, root / 'larger', 'g5.2xlarge')
+            self.assertEqual(fallback['watchdog_maximum_age_seconds'], 4500)
+            self.assertEqual(fallback['workload_timeout_seconds'], 3900)
+            self.assertLess(fallback['planning_instance_usd_at_watchdog_plus_one_minute'], 1.71)
 
 
 if __name__ == '__main__': unittest.main()

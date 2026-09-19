@@ -89,7 +89,7 @@ def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge
         raise ValueError('Oregon timing uses one g5.xlarge with automatic zone selection')
     if subnet not in [None, "subnet-11e16978", "subnet-8f2684f4", "subnet-a24506fe"]:
         raise ValueError("Choose a verified Canada Central subnet")
-    prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547, 'g5.xlarge': 1.117}
+    prices = {'g6.xlarge': .8936, 'g6.2xlarge': 1.08547, 'g5.xlarge': 1.117, 'g5.2xlarge': 1.34573}
     if instance_type not in prices:
         raise ValueError('Choose a single-GPU instance within the timing budget')
     price = 1.006 if region == 'us-west-2' else prices[instance_type]
@@ -141,7 +141,7 @@ def prepare(output, now=None, subnet="subnet-a24506fe", instance_type='g6.xlarge
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge', 'g5.xlarge'], default='g6.xlarge')
+    parser.add_argument('--instance-type', choices=['g6.xlarge', 'g6.2xlarge', 'g5.xlarge', 'g5.2xlarge'], default='g6.xlarge')
     parser.add_argument('--automatic-zone', action='store_true')
     parser.add_argument('--region', choices=['ca-central-1', 'us-west-2'], default='ca-central-1')
     args = parser.parse_args()
