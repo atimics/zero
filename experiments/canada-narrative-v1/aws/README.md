@@ -16,8 +16,18 @@ launch. The source archive and training workload remain identical to the
 Canada timing package. The raw workload cost projection uses the original
 L4 rate; calculate Oregon cost from measured hours at US$1.006/hour.
 
-On September 19, Oregon package tests passed. AWS sign-in renewal is pending
-before live preflight and execution. Runtime files stay outside Git.
+On September 19, the approved Oregon A10G timing workload passed. The median
+update took 0.059478 seconds; the 95th percentile was 0.059879 seconds.
+The CPU/CUDA maximum logit difference was 0.01136 against the 0.05 limit.
+The measured runtime was PyTorch 2.8.0+cu129 on NVIDIA A10G. The image already
+contained that build; the torch 2.8.0 version requirement accepted it.
+
+The synthetic projection, including the 30% margin, is 8.66 minutes for A/B
+and 32.04 minutes for B/C: 40.70 minutes total. At the checked Oregon rate,
+training and checkpoint selection cost about US$0.682 in compute. Setup,
+checkpoint I/O, final scoring and generation add time. These are planning
+estimates from synthetic updates. Corpus training presentations remain zero.
+Runtime receipts and raw results stay outside Git.
 
 Run one `g6.xlarge` in `ca-central-1` with the accepted experiment's model
 and training update. The workload uses synthetic token IDs, five warm-up
