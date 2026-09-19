@@ -27,7 +27,9 @@ and 32.04 minutes for B/C: 40.70 minutes total. At the checked Oregon rate,
 training and checkpoint selection cost about US$0.682 in compute. Setup,
 checkpoint I/O, final scoring and generation add time. These are planning
 estimates from synthetic updates. Corpus training presentations remain zero.
-Runtime receipts and raw results stay outside Git.
+Runtime receipts and raw results stay outside Git. Collection hashes matched,
+the instance reached terminated, and the temporary stack reached
+DELETE_COMPLETE. The timing run and its cleanup are complete.
 
 Run one `g6.xlarge` in `ca-central-1` with the accepted experiment's model
 and training update. The workload uses synthetic token IDs, five warm-up
