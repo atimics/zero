@@ -117,3 +117,12 @@ Launch and recovery use the packaged `launch.py` and manifest hash, as in the
 GPU timing workflow. `pilot.json` records completed training and paired loss
 scores. The collector saves nested checkpoints and hashes every result file.
 Runtime inputs, checkpoints and receipts stay outside Git.
+
+The September 19 training launch encountered `InsufficientInstanceCapacity`
+on both g5.xlarge and g5.2xlarge in Canada Central with automatic zone selection.
+Both temporary stacks reached DELETE_COMPLETE, and both collections confirmed
+zero instances. Corpus training presentations remain zero. The g5.2xlarge
+fallback uses a 65-minute workload timeout and a 75-minute shutdown limit at
+US$1.34573/hour. Thirteen focused package tests passed. Runtime receipts are
+saved outside Git. The existing Crownless model-output CI failure keeps this
+PR open; the Canada package tests passed in CI.
