@@ -22,3 +22,6 @@ corpus/channel/*
 !corpus/channel/README.md
 __pycache__/
 corpus/gutenberg/build/
+
+# training run outputs (logs, checkpoints, scored results)
+out/
