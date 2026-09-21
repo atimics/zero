@@ -1,0 +1,370 @@
+[
+  {
+    "id": "A045",
+    "account": "Alderwatch closes the treaty bridge and delays the relief convoy.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Alderwatch closed the treaty bridge, delaying the relief convoy.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A050",
+    "account": "Silverwick has 26 food in store. Its reserve target is 78.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Silverwick was short of its food reserve target.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A004",
+    "account": "Alda Fordward joins The Ditch Parliament after 3 days seeking food at Gloamgate.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Alda Fordward joined The Ditch Parliament after seeking food at Gloamgate.",
+        "stopped": true
+      },
+      {
+        "text": "For long?",
+        "stopped": true
+      },
+      {
+        "text": "Days.",
+        "stopped": true
+      },
+      {
+        "text": "A long wait for a meal.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A053",
+    "account": "Rosespire finishes Rosespire Saintless Torc from 1 Raw Gold, 1 Gems, and 3 weeks of work.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Rosespire finished making Rosespire Saintless Torc.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A014",
+    "account": "A goblin rises to Voice in the dragon cult through service.",
+    "confidence": 59,
+    "turns": [
+      {
+        "text": "A goblin rose to Voice in the dragon cult through service, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "Voice of what?",
+        "stopped": true
+      },
+      {
+        "text": "I do not know.",
+        "stopped": true
+      },
+      {
+        "text": "The title still sounds busy.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A008",
+    "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+    "confidence": 60,
+    "turns": [
+      {
+        "text": "Alderwatch raised calves and added older calves to the working herd, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "Which one joined the workers?",
+        "stopped": true
+      },
+      {
+        "text": "The older calf.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what the new one looks like.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A010",
+    "account": "Rosespire slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Rosespire slaughtered cattle for beef when fodder ran short. The beef went into the local store.",
+        "stopped": true
+      },
+      {
+        "text": "Will the rest have enough feed?",
+        "stopped": true
+      },
+      {
+        "text": "That’s worth asking.",
+        "stopped": true
+      },
+      {
+        "text": "That’s wor for beef went into the local store.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A016",
+    "account": "Belva Faircopy died at age 65 after a life in Rosespire.",
+    "confidence": 93,
+    "turns": [
+      {
+        "text": "Belva Faircopy died after a life in Rosespire.",
+        "stopped": true
+      },
+      {
+        "text": "Where did Belva Faircopy live?",
+        "stopped": true
+      },
+      {
+        "text": "Rosespire.",
+        "stopped": true
+      },
+      {
+        "text": "I’m sorry to hear it.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A056",
+    "account": "Alderwatch's woodlot cuts 4 Wood and wears two Tools bundle.",
+    "confidence": 75,
+    "turns": [
+      {
+        "text": "Alderwatch cut wood and wore out tools.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A001",
+    "account": "Gloamgate's bakery mills 16 Wheat into 16 Bread.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Gloamgate made bread from wheat.",
+        "stopped": true
+      },
+      {
+        "text": "From wheat?",
+        "stopped": true
+      },
+      {
+        "text": "Yes.",
+        "stopped": true
+      },
+      {
+        "text": "I wonder what the bread is like.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A042",
+    "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Stone for roads and public works came from Silverwick.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A036",
+    "account": "Rosespire's masons use 3 Stone to repair public buildings.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Rosespire’s masons have repaired public buildings.",
+        "stopped": true
+      },
+      {
+        "text": "With stone?",
+        "stopped": true
+      },
+      {
+        "text": "Yes.",
+        "stopped": true
+      },
+      {
+        "text": "I’d like to see the work.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A034",
+    "account": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock.",
+    "confidence": 63,
+    "turns": [
+      {
+        "text": "Thornford raised lambs and added yearlings to the adult flock, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "And the yearlings?",
+        "stopped": true
+      },
+      {
+        "text": "They’ve joined the adult flock, from what I hear.",
+        "stopped": true
+      },
+      {
+        "text": "Good to hear they’re growing.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A047",
+    "account": "Alderwatch shears the spring flock and stores 6 Wool.",
+    "confidence": 100,
+    "turns": [
+      {
+        "text": "Alderwatch sheared the spring flock and stored wool.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A022",
+    "account": "Silverwick slaughters 1 sheep after winter fodder runs short; 2 Meat enters the local store as mutton.",
+    "confidence": 62,
+    "turns": [
+      {
+        "text": "Silverwick slaughtered sheep for mutton after winter fodder runs short, so people say.",
+        "stopped": true
+      },
+      {
+        "text": "Will the flock have enough feed now?",
+        "stopped": true
+      },
+      {
+        "text": "I haven’t heard.",
+        "stopped": true
+      },
+      {
+        "text": "I haven’t heard.",
+        "stopped": true
+      }
+    ]
+  },
+  {
+    "id": "A051",
+    "account": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 3.",
+    "confidence": 68,
+    "turns": [
+      {
+        "text": "There was hunger in Hollowbarrow, according to the word going round.",
+        "stopped": true
+      },
+      {
+        "text": "That's what I heard too. How sure are you?",
+        "stopped": true
+      },
+      {
+        "text": "The account has passed through several people. We should ask someone who was there.",
+        "stopped": true
+      },
+      {
+        "text": "Let's ask around before we pass it on.",
+        "stopped": true
+      }
+    ]
+  }
+]

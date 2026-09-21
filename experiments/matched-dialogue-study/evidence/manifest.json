@@ -1,0 +1,52 @@
+{
+  "steps": 1200,
+  "seed": 913,
+  "device": "cpu",
+  "batch_size": 16,
+  "dialogue_per_batch": 12,
+  "replay_per_batch": 4,
+  "learning_rate": 0.0001,
+  "small_dialogues": 12,
+  "broad_dialogues": 46,
+  "training_rows": {
+    "small": 80,
+    "broad": 296
+  },
+  "excluded_sources": [
+    "A031",
+    "A032"
+  ],
+  "both_speakers_hold_same_account": true,
+  "parameters": 4935937,
+  "torch": "2.8.0",
+  "base_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tokenizer_sha256": "c572de53eb4e739a8ce941ac03d1d5fb6173623af786787cf786b41fd34e9af4",
+  "source_hashes": {
+    "/private/tmp/zero-matched-dialogue-study/scripts/run_matched_dialogue_study.py": "8155baf7e438d1cf246026d109f5eeeaafd1b41e100aad7a7842137ca7c475ab",
+    "scripts/run_reviewed_dialogue_pilot.py": "bdca25af13f08683a6ec537dd7c5bd4d9a731091b8e3eb403cf3e4e02e5c8545",
+    "scripts/crownless_v2.py": "7a5be9277a7dd855a59c981a713b569b014cc9cb0d03e98a61ebfdd4372326cf",
+    "scripts/crownless_v2_export.py": "59249330258aff74b7f206a03f85024cad0200e536df3d1a4eab2fde245c0a6a",
+    "experiments/reviewed-dialogue-pilot/input/accounts.jsonl": "bc83a5d50cbe722b8a32663cba46848a20fea5e284254e874292c37e8318debd",
+    "experiments/reviewed-dialogue-pilot/input/drafts.json": "db75a268d5f5fbd22443c3ec34d168f1300fa02d4247129d8bde4e4010f9218a",
+    "experiments/matched-dialogue-study/input/evaluation-accounts.jsonl": "cb1e9193c91fdbb6b17137db6e7612e46cc6fe48687cc00af61baee49ed76e01"
+  },
+  "scope": "Equal-budget local study. Twelve approved scenes versus 46 usable candidate scenes. Original and model-opening histories; full-name copy normalization. Fixed final checkpoints; shared event grammar remains.",
+  "test_ids": [
+    "A046",
+    "A051",
+    "A004",
+    "A020",
+    "A054",
+    "A013",
+    "A007",
+    "A010",
+    "A016",
+    "A057",
+    "A001",
+    "A043",
+    "A038",
+    "A034",
+    "A048",
+    "A079"
+  ]
+}

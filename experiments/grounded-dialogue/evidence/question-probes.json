@@ -1,0 +1,862 @@
+{
+  "probe_sha256": "67069f894a4a37f120295e9f84954fbf4bcfe35004339e71b8ef2ffbe5b75e25",
+  "source_sha256": "ad79a7908c33bbffb26f18489c0c602e34fbe7d63f2f3fef901bfe5b326448dc",
+  "answers": {
+    "prior": [
+      {
+        "rule": "notice_posted_0",
+        "question": "Who posted that?",
+        "reference": "Yorororholt Kelumeth posted it, from what I hear.",
+        "text": "The account has passed through several people. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 402
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 1022
+          },
+          {
+            "token": 1177
+          },
+          {
+            "token": 535
+          },
+          {
+            "token": 283
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 705
+          },
+          {
+            "token": 340
+          },
+          {
+            "token": 522
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "paper_milled_0",
+        "question": "What was the paper made from?",
+        "reference": "Rags.",
+        "text": "That’s what I heard.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 167
+          },
+          {
+            "token": 231
+          },
+          {
+            "token": 256
+          },
+          {
+            "token": 91
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 1073
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "royal_succession_1",
+        "question": "Whom did the new ruler replace?",
+        "reference": "Kelaowmoor Yorumormo, I think.",
+        "text": "I am unsure. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 49
+          },
+          {
+            "token": 270
+          },
+          {
+            "token": 85
+          },
+          {
+            "token": 770
+          },
+          {
+            "token": 1285
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "treasure_crafted_0",
+        "question": "What was made?",
+        "reference": "Kelumenford Book, from what I hear.",
+        "text": "That is the account I hold. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 358
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 321
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "bandit_pressure_1",
+        "question": "Which band did they join?",
+        "reference": "Kelashorgate Kelenas.",
+        "text": "Days.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 44
+          },
+          {
+            "token": 602
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "goblin_cult_rallied_0",
+        "question": "What title did the goblin earn?",
+        "reference": "Kelailfell Cup.",
+        "text": "That is the word Kelailfell Cup in the dragon cult through service.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 358
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 484
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 1
+          },
+          {
+            "token": 317
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 386
+          },
+          {
+            "token": 813
+          },
+          {
+            "token": 535
+          },
+          {
+            "token": 982
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": false
+      },
+      {
+        "rule": "harvest_failed_0",
+        "question": "Who was waiting for the grain?",
+        "reference": "Yorashormere, I think.",
+        "text": "That’s them.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1422
+          },
+          {
+            "token": 300
+          },
+          {
+            "token": 167
+          },
+          {
+            "token": 231
+          },
+          {
+            "token": 256
+          },
+          {
+            "token": 91
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 85
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      },
+      {
+        "rule": "shortage_0",
+        "question": "Where are people hungry?",
+        "reference": "In Yorashenmoor, from what I hear.",
+        "text": "The account has passed through several people. We should ask someone who was there.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 402
+          },
+          {
+            "token": 464
+          },
+          {
+            "token": 75
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 86
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 1022
+          },
+          {
+            "token": 1177
+          },
+          {
+            "token": 535
+          },
+          {
+            "token": 283
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 705
+          },
+          {
+            "token": 340
+          },
+          {
+            "token": 522
+          },
+          {
+            "token": 22
+          },
+          {
+            "token": 440
+          },
+          {
+            "token": 77
+          },
+          {
+            "token": 404
+          },
+          {
+            "token": 297
+          },
+          {
+            "token": 84
+          },
+          {
+            "token": 76
+          },
+          {
+            "token": 395
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 1109
+          },
+          {
+            "token": 1369
+          },
+          {
+            "token": 379
+          },
+          {
+            "token": 276
+          },
+          {
+            "token": 388
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [],
+        "copy_exact": false,
+        "exact": false
+      }
+    ],
+    "expanded": [
+      {
+        "rule": "notice_posted_0",
+        "question": "Who posted that?",
+        "reference": "Yorororholt Kelumeth posted it, from what I hear.",
+        "text": "Yorororholt Kelumeth posted it, from what I hear.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 0
+          },
+          {
+            "token": 1160
+          },
+          {
+            "token": 309
+          },
+          {
+            "token": 92
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 424
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 612
+          },
+          {
+            "token": 268
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          0
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "paper_milled_0",
+        "question": "What was the paper made from?",
+        "reference": "Rags.",
+        "text": "Rags.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "royal_succession_1",
+        "question": "Whom did the new ruler replace?",
+        "reference": "Kelaowmoor Yorumormo, I think.",
+        "text": "Kelaowmoor Yorumormo, I think.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 451
+          },
+          {
+            "token": 271
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "treasure_crafted_0",
+        "question": "What was made?",
+        "reference": "Kelumenford Book, from what I hear.",
+        "text": "Kelumenford Book, from what I hear.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 424
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 612
+          },
+          {
+            "token": 268
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "bandit_pressure_1",
+        "question": "Which band did they join?",
+        "reference": "Kelashorgate Kelenas.",
+        "text": "Kelashorgate Kelenas.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "goblin_cult_rallied_0",
+        "question": "What title did the goblin earn?",
+        "reference": "Kelailfell Cup.",
+        "text": "Kelailfell Cup.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "harvest_failed_0",
+        "question": "Who was waiting for the grain?",
+        "reference": "Yorashormere, I think.",
+        "text": "Yorashormere, I think.",
+        "stopped": true,
+        "actions": [
+          {
+            "copy": 1
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 451
+          },
+          {
+            "token": 271
+          },
+          {
+            "token": 83
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          1
+        ],
+        "actual_copies": [
+          1
+        ],
+        "copy_exact": true,
+        "exact": true
+      },
+      {
+        "rule": "shortage_0",
+        "question": "Where are people hungry?",
+        "reference": "In Yorashenmoor, from what I hear.",
+        "text": "In Yorashenmoor, from what I hear.",
+        "stopped": true,
+        "actions": [
+          {
+            "token": 1388
+          },
+          {
+            "token": 229
+          },
+          {
+            "copy": 0
+          },
+          {
+            "token": 20
+          },
+          {
+            "token": 424
+          },
+          {
+            "token": 1132
+          },
+          {
+            "token": 229
+          },
+          {
+            "token": 49
+          },
+          {
+            "token": 612
+          },
+          {
+            "token": 268
+          },
+          {
+            "token": 22
+          }
+        ],
+        "expected_copies": [
+          0
+        ],
+        "actual_copies": [
+          0
+        ],
+        "copy_exact": true,
+        "exact": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "rule": "bakery_production_0",
+    "reference": "Yorethummoor made bread from wheat, if the story is right.",
+    "turns": [
+      "Yorethummoor may have made bread from wheat.",
+      "I wonder what it tastes like.",
+      "I’d like to see it myself.",
+      "I wonder what it tastes like."
+    ]
+  },
+  {
+    "rule": "paper_milled_0",
+    "reference": "Kelilashmere made paper from Rags.",
+    "turns": [
+      "Kelilashmere’s mill has made paper.",
+      "From what?",
+      "Rags.",
+      "That must be interesting to watch."
+    ]
+  },
+  {
+    "rule": "masonry_repair_0",
+    "reference": "Masons in Kelilashmere used stone to repair public buildings, according to the word going round.",
+    "turns": [
+      "Kelilashmere’s masons may have done some repairs with stone.",
+      "On the public buildings?",
+      "That’s the report.",
+      "I’d like to see the work."
+    ]
+  },
+  {
+    "rule": "cow_slaughtered_0",
+    "reference": "Kelaumgate slaughtered cattle for beef when fodder ran short.",
+    "turns": [
+      "Kelaumgate slaughtered cattle when the fodder ran short. The beef went into the local store.",
+      "Will the rest have enough feed?",
+      "That’s worth asking.",
+      "That’s worth asking."
+    ]
+  },
+  {
+    "rule": "harvest_failed_0",
+    "reference": "The drought harvest in Kelilowden fell short of supplies for the Yorashormere, if the rumour is true.",
+    "turns": [
+      "Kelilowden may have too little grain for the settlements it supplies.",
+      "Which ones?",
+      "The Yorashormere, from what I heard.",
+      "That’s hard news for them."
+    ]
+  },
+  {
+    "rule": "dragon_retaliation_0",
+    "reference": "Yorethilfell Kelilum burned Keloramere over money missing from the hoard.",
+    "turns": [
+      "Yorethilfell Kelilum burned Keloramere over money missing from the hoard.",
+      "What brought that on?",
+      "Stolen crowns were still missing.",
+      "What a terrible price for the town."
+    ]
+  }
+]

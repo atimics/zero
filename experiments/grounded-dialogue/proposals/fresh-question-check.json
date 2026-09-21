@@ -1,0 +1,85 @@
+{
+  "scope": "Frozen for the follow-up before training. Two questions per meaning use new wording, asking for the original fact and the alternate fact. Shared grammar and concepts remain.",
+  "questions": {
+    "notice_posted_0": [
+      [
+        "Who wrote that notice up?",
+        "{0} posted it."
+      ],
+      [
+        "In which town is the notice?",
+        "In {1}."
+      ]
+    ],
+    "bandit_pressure_1": [
+      [
+        "What group took them in?",
+        "{1}."
+      ],
+      [
+        "In which town did they seek a meal?",
+        "In {3}."
+      ]
+    ],
+    "royal_succession_1": [
+      [
+        "Who held the throne before?",
+        "{1}."
+      ],
+      [
+        "Who holds the throne now?",
+        "{0}."
+      ]
+    ],
+    "treasure_crafted_0": [
+      [
+        "What object was finished?",
+        "{1}."
+      ],
+      [
+        "In which town was it crafted?",
+        "In {0}."
+      ]
+    ],
+    "harvest_failed_0": [
+      [
+        "Who would have received the supplies?",
+        "{1}."
+      ],
+      [
+        "Which town had the poor harvest?",
+        "{0}."
+      ]
+    ],
+    "dragon_patron_named_0": [
+      [
+        "Who will serve as champion?",
+        "{1}."
+      ],
+      [
+        "Who supplied the funding?",
+        "{0}."
+      ]
+    ],
+    "horse_bred_0": [
+      [
+        "Which two horses were bred?",
+        "{1} and {2}."
+      ],
+      [
+        "In which town were they bred?",
+        "{0}."
+      ]
+    ],
+    "prophecy_delivered_0": [
+      [
+        "Where did the company bring the warning?",
+        "To {1}."
+      ],
+      [
+        "What object reached the council?",
+        "{0}."
+      ]
+    ]
+  }
+}

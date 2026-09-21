@@ -1,0 +1,840 @@
+[
+  {
+    "id": "A001",
+    "prefix": "Rosespire's bakery mills 24 Wheat into 24 Bread.",
+    "fields": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Rosespire"
+      },
+      {
+        "end": 27,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 25,
+        "text": "24"
+      },
+      {
+        "end": 41,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 39,
+        "text": "24"
+      }
+    ],
+    "copies": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Rosespire"
+      }
+    ],
+    "output": "Rosespire made bread from wheat.",
+    "kind_id": 7,
+    "confidence": 100,
+    "retold": false,
+    "history": []
+  },
+  {
+    "id": "A005",
+    "prefix": "Alda Millrace joins The Tallow Knives after 7 days seeking food at Gloamgate.",
+    "fields": [
+      {
+        "end": 13,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Alda Millrace"
+      },
+      {
+        "end": 37,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 2,
+        "spoken": true,
+        "start": 20,
+        "text": "The Tallow Knives"
+      },
+      {
+        "end": 45,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 44,
+        "text": "7"
+      },
+      {
+        "end": 76,
+        "event": 1,
+        "field": 3,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 67,
+        "text": "Gloamgate"
+      }
+    ],
+    "copies": [
+      {
+        "end": 13,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Alda Millrace"
+      },
+      {
+        "end": 38,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 2,
+        "spoken": true,
+        "start": 21,
+        "text": "The Tallow Knives"
+      },
+      {
+        "end": 70,
+        "event": 1,
+        "field": 3,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 61,
+        "text": "Gloamgate"
+      }
+    ],
+    "output": "Alda Millrace joined The Tallow Knives after seeking food at Gloamgate, so people say.",
+    "kind_id": 43,
+    "confidence": 48,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A009",
+    "prefix": "Silverwick's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+    "fields": [
+      {
+        "end": 10,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Silverwick"
+      },
+      {
+        "end": 33,
+        "event": 1,
+        "field": 1,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 32,
+        "text": "1"
+      },
+      {
+        "end": 42,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 7,
+        "spoken": false,
+        "start": 38,
+        "text": "calf"
+      },
+      {
+        "end": 45,
+        "event": 1,
+        "field": 3,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 44,
+        "text": "1"
+      },
+      {
+        "end": 56,
+        "event": 1,
+        "field": 4,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 7,
+        "spoken": false,
+        "start": 52,
+        "text": "calf"
+      }
+    ],
+    "copies": [
+      {
+        "end": 10,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Silverwick"
+      }
+    ],
+    "output": "Silverwick raised calves and added older calves to the working herd, if the story is right.",
+    "kind_id": 17,
+    "confidence": 37,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A013",
+    "prefix": "A goblin rises to Keeper in the dragon cult through service.",
+    "fields": [
+      {
+        "end": 8,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "A goblin"
+      },
+      {
+        "end": 24,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 4,
+        "spoken": true,
+        "start": 18,
+        "text": "Keeper"
+      }
+    ],
+    "copies": [
+      {
+        "end": 8,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "A goblin"
+      },
+      {
+        "end": 23,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 4,
+        "spoken": true,
+        "start": 17,
+        "text": "Keeper"
+      }
+    ],
+    "output": "A goblin rose to Keeper in the dragon cult through service.",
+    "kind_id": 45,
+    "confidence": 93,
+    "retold": false,
+    "history": []
+  },
+  {
+    "id": "A017",
+    "prefix": "Rodric Bowyer died at age 64 after a life in Hollowbarrow.",
+    "fields": [
+      {
+        "end": 13,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Rodric Bowyer"
+      },
+      {
+        "end": 28,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 26,
+        "text": "64"
+      },
+      {
+        "end": 57,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 45,
+        "text": "Hollowbarrow"
+      }
+    ],
+    "copies": [
+      {
+        "end": 13,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Rodric Bowyer"
+      },
+      {
+        "end": 47,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 35,
+        "text": "Hollowbarrow"
+      }
+    ],
+    "output": "Rodric Bowyer died after a life in Hollowbarrow, so people say.",
+    "kind_id": 5,
+    "confidence": 55,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A021",
+    "prefix": "Silver Covenant moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+    "fields": [
+      {
+        "end": 15,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Silver Covenant"
+      },
+      {
+        "end": 24,
+        "event": 1,
+        "field": 1,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 22,
+        "text": "28"
+      },
+      {
+        "end": 49,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 37,
+        "text": "Hollowbarrow"
+      }
+    ],
+    "copies": [
+      {
+        "end": 15,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Silver Covenant"
+      },
+      {
+        "end": 43,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 31,
+        "text": "Hollowbarrow"
+      }
+    ],
+    "output": "Silver Covenant put money into Hollowbarrow's market to buy grain shipments, if the story is right.",
+    "kind_id": 44,
+    "confidence": 25,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A022",
+    "prefix": "Varkesh the Unappeased burns Gloamgate because 17 stolen crowns remain missing.",
+    "fields": [
+      {
+        "end": 22,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Varkesh the Unappeased"
+      },
+      {
+        "end": 38,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 29,
+        "text": "Gloamgate"
+      },
+      {
+        "end": 49,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 47,
+        "text": "17"
+      }
+    ],
+    "copies": [
+      {
+        "end": 22,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "Varkesh the Unappeased"
+      },
+      {
+        "end": 39,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 30,
+        "text": "Gloamgate"
+      }
+    ],
+    "output": "Varkesh the Unappeased burned Gloamgate over money missing from the hoard.",
+    "kind_id": 58,
+    "confidence": 93,
+    "retold": false,
+    "history": []
+  },
+  {
+    "id": "A026",
+    "prefix": "Smoke falls into Gloamgate's chimneys; old readers count 14 nights until Varkesh the Unappeased comes.",
+    "fields": [
+      {
+        "end": 26,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 17,
+        "text": "Gloamgate"
+      },
+      {
+        "end": 59,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 57,
+        "text": "14"
+      },
+      {
+        "end": 95,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 73,
+        "text": "Varkesh the Unappeased"
+      }
+    ],
+    "copies": [
+      {
+        "end": 28,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 19,
+        "text": "Gloamgate"
+      },
+      {
+        "end": 82,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 60,
+        "text": "Varkesh the Unappeased"
+      }
+    ],
+    "output": "The old readers in Gloamgate took the smoke as a warning of Varkesh the Unappeased, so people say.",
+    "kind_id": 57,
+    "confidence": 45,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A033",
+    "prefix": "The Cinder Tithe raids Thornford: 20 Wheat, 0 crowns.",
+    "fields": [
+      {
+        "end": 16,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "The Cinder Tithe"
+      },
+      {
+        "end": 32,
+        "event": 1,
+        "field": 1,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 23,
+        "text": "Thornford"
+      },
+      {
+        "end": 36,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 34,
+        "text": "20"
+      },
+      {
+        "end": 45,
+        "event": 1,
+        "field": 3,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 44,
+        "text": "0"
+      }
+    ],
+    "copies": [
+      {
+        "end": 16,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 1,
+        "spoken": true,
+        "start": 0,
+        "text": "The Cinder Tithe"
+      },
+      {
+        "end": 33,
+        "event": 1,
+        "field": 1,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 24,
+        "text": "Thornford"
+      }
+    ],
+    "output": "The Cinder Tithe raided Thornford, if the story is right.",
+    "kind_id": 53,
+    "confidence": 37,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A034",
+    "prefix": "Thornford's drought harvest cannot supply the eastern settlements.",
+    "fields": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Thornford"
+      },
+      {
+        "end": 65,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 46,
+        "text": "eastern settlements"
+      }
+    ],
+    "copies": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Thornford"
+      },
+      {
+        "end": 70,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 51,
+        "text": "eastern settlements"
+      }
+    ],
+    "output": "Thornford's drought harvest fell short of what the eastern settlements needed.",
+    "kind_id": 49,
+    "confidence": 93,
+    "retold": false,
+    "history": []
+  },
+  {
+    "id": "A038",
+    "prefix": "Alderwatch raises 1 common pony foal; 1 joins the working herd.",
+    "fields": [
+      {
+        "end": 10,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Alderwatch"
+      },
+      {
+        "end": 19,
+        "event": 1,
+        "field": 1,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 18,
+        "text": "1"
+      },
+      {
+        "end": 36,
+        "event": 1,
+        "field": 2,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 7,
+        "spoken": false,
+        "start": 32,
+        "text": "foal"
+      },
+      {
+        "end": 39,
+        "event": 1,
+        "field": 3,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 38,
+        "text": "1"
+      }
+    ],
+    "copies": [
+      {
+        "end": 10,
+        "event": 1,
+        "field": 0,
+        "knowledge": 0,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Alderwatch"
+      }
+    ],
+    "output": "Alderwatch raised pony foals and added ponies to the working herd, so people say.",
+    "kind_id": 46,
+    "confidence": 47,
+    "retold": true,
+    "history": []
+  },
+  {
+    "id": "A048",
+    "prefix": "Gloamgate's mill uses 1 Wood to make 3 Paper.",
+    "fields": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Gloamgate"
+      },
+      {
+        "end": 23,
+        "event": 1,
+        "field": 1,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 22,
+        "text": "1"
+      },
+      {
+        "end": 28,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 6,
+        "spoken": true,
+        "start": 24,
+        "text": "Wood"
+      },
+      {
+        "end": 38,
+        "event": 1,
+        "field": 3,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 8,
+        "spoken": false,
+        "start": 37,
+        "text": "3"
+      }
+    ],
+    "copies": [
+      {
+        "end": 9,
+        "event": 1,
+        "field": 0,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 3,
+        "spoken": true,
+        "start": 0,
+        "text": "Gloamgate"
+      },
+      {
+        "end": 30,
+        "event": 1,
+        "field": 2,
+        "knowledge": 2,
+        "provenance": 3,
+        "role": 6,
+        "spoken": true,
+        "start": 26,
+        "text": "Wood"
+      }
+    ],
+    "output": "Gloamgate made paper from Wood, if the story is right.",
+    "kind_id": 8,
+    "confidence": 38,
+    "retold": true,
+    "history": []
+  }
+]

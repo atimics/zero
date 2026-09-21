@@ -1,0 +1,1610 @@
+[
+  {
+    "event": {
+      "day": 1,
+      "kind": 1,
+      "text": "Alderwatch closes the treaty bridge and delays the relief convoy."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A046",
+    "model_text": "Alderwatch closed the treaty bridge, delaying the relief convoy.",
+    "packet": {
+      "claim": "Alderwatch closed the treaty bridge, delaying the relief convoy.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Alderwatch"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 1,
+      "rule": "route_closed_0",
+      "text": "Alderwatch closes the treaty bridge and delays the relief convoy."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 93,
+          "day": 1,
+          "event_id": "648518346341351472",
+          "retellings": 1,
+          "text": "Alderwatch closes the treaty bridge and delays the relief convoy."
+        }
+      ],
+      "input": {
+        "account": "Alderwatch closes the treaty bridge and delays the relief convoy.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "ROUTE",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "The relief convoy was delayed when Alderwatch closed the treaty bridge, I hear.",
+      "provenance": {
+        "day": 2,
+        "event_id": "648518346341351472",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630844",
+        "world_seed": 1601
+      },
+      "rule": "1:0",
+      "version": 2
+    },
+    "speaker": "Cera Mott"
+  },
+  {
+    "event": {
+      "day": 28,
+      "kind": 2,
+      "text": "Gloamgate has 0 food in store. Its reserve target is 75."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A051",
+    "model_text": "Gloamgate was short of its food reserve target.",
+    "packet": {
+      "claim": "Gloamgate was short of its food reserve target.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Gloamgate"
+        },
+        {
+          "end": 15,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 14,
+          "text": "0"
+        },
+        {
+          "end": 55,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 53,
+          "text": "75"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 2,
+      "rule": "shortage_1",
+      "text": "Gloamgate has 0 food in store. Its reserve target is 75."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 75,
+          "day": 21,
+          "event_id": "648518346341351700",
+          "retellings": 3,
+          "text": "A goblin rises to Keeper in the dragon cult through service."
+        },
+        {
+          "confidence": 93,
+          "day": 28,
+          "event_id": "648518346341351737",
+          "retellings": 1,
+          "text": "The Broken Pennants recruits from hungry debtors and unpaid households; road control reaches 32%."
+        },
+        {
+          "confidence": 93,
+          "day": 28,
+          "event_id": "648518346341351747",
+          "retellings": 1,
+          "text": "Gloamgate has 0 food in store. Its reserve target is 75."
+        }
+      ],
+      "input": {
+        "account": "Gloamgate has 0 food in store. Its reserve target is 75.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "SHORTAGE",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "Gloamgate was short of food, I hear.",
+      "provenance": {
+        "day": 29,
+        "event_id": "648518346341351747",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630843",
+        "world_seed": 1602
+      },
+      "rule": "2:0",
+      "version": 2
+    },
+    "speaker": "Ilyra Senn"
+  },
+  {
+    "event": {
+      "day": 32,
+      "kind": 5,
+      "text": "Quillen Longreckon joins The Ditch Parliament after 4 days seeking food at Silverwick."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A004",
+    "model_text": "Quillen Longreckon joined The Ditch Parliament after seeking food at Silverwick.",
+    "packet": {
+      "claim": "Quillen Longreckon joined The Ditch Parliament after seeking food at Silverwick.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 18,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 1,
+          "spoken": true,
+          "start": 0,
+          "text": "Quillen Longreckon"
+        },
+        {
+          "end": 45,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 2,
+          "spoken": true,
+          "start": 25,
+          "text": "The Ditch Parliament"
+        },
+        {
+          "end": 53,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 52,
+          "text": "4"
+        },
+        {
+          "end": 85,
+          "event": 1,
+          "field": 3,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 75,
+          "text": "Silverwick"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 5,
+      "rule": "bandit_pressure_1",
+      "text": "Quillen Longreckon joins The Ditch Parliament after 4 days seeking food at Silverwick."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 93,
+          "day": 21,
+          "event_id": "648518346341351714",
+          "retellings": 1,
+          "text": "A goblin rises to Bearer in the dragon cult through service."
+        },
+        {
+          "confidence": 93,
+          "day": 25,
+          "event_id": "648518346341351732",
+          "retellings": 1,
+          "text": "A goblin rises to Bearer in the dragon cult through service."
+        },
+        {
+          "confidence": 93,
+          "day": 32,
+          "event_id": "648518346341351765",
+          "retellings": 1,
+          "text": "Quillen Longreckon joins The Ditch Parliament after 4 days seeking food at Silverwick."
+        }
+      ],
+      "input": {
+        "account": "Quillen Longreckon joins The Ditch Parliament after 4 days seeking food at Silverwick.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "BANDITS",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "Quillen Longreckon joined The Ditch Parliament after seeking food at Silverwick, I hear.",
+      "provenance": {
+        "day": 32,
+        "event_id": "648518346341351765",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630838",
+        "world_seed": 1601
+      },
+      "rule": "5:0",
+      "version": 2
+    },
+    "speaker": "Jory Fen"
+  },
+  {
+    "event": {
+      "day": 84,
+      "kind": 13,
+      "text": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A020",
+    "model_text": "Star Oath put money into Hollowbarrow's market to buy grain shipments, so people say.",
+    "packet": {
+      "claim": "Star Oath put money into Hollowbarrow's market to buy grain shipments.",
+      "confidence": 59,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 1,
+          "spoken": true,
+          "start": 0,
+          "text": "Star Oath"
+        },
+        {
+          "end": 18,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 16,
+          "text": "28"
+        },
+        {
+          "end": 43,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 31,
+          "text": "Hollowbarrow"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 13,
+      "rule": "kingdom_action_0",
+      "text": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 59,
+          "day": 84,
+          "event_id": "648518346341352117",
+          "retellings": 5,
+          "text": "Hollowbarrow's woodlot cuts 12 Wood and wears two Tools bundle."
+        },
+        {
+          "confidence": 51,
+          "day": 84,
+          "event_id": "648518346341352118",
+          "retellings": 5,
+          "text": "Hollowbarrow has 0 weeks of food; hunger reaches pressure level 2."
+        },
+        {
+          "confidence": 59,
+          "day": 84,
+          "event_id": "648518346341352127",
+          "retellings": 5,
+          "text": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments."
+        }
+      ],
+      "input": {
+        "account": "Star Oath moves 28 crowns into Hollowbarrow's market to buy real grain shipments.",
+        "confidence": 59,
+        "detail": "full",
+        "kind": "DECREE",
+        "retellings": 5,
+        "variant": 0
+      },
+      "output": "Have you heard? Star Oath put money into Hollowbarrow's market to buy grain shipments. That's the word going round.",
+      "provenance": {
+        "day": 93,
+        "event_id": "648518346341352127",
+        "schema": 99,
+        "source_character_id": "1369094286720630900",
+        "speaker_id": "1369094286720630902",
+        "world_seed": 1601
+      },
+      "rule": "13:0",
+      "version": 2
+    },
+    "speaker": "Flinta Cinderhand"
+  },
+  {
+    "event": {
+      "day": 21,
+      "kind": 49,
+      "text": "Rosespire finishes Rosespire Ash Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A054",
+    "model_text": "Rosespire Ash Crown was completed in Rosespire.",
+    "packet": {
+      "claim": "Rosespire finished making Rosespire Ash Crown.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Rosespire"
+        },
+        {
+          "end": 38,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 4,
+          "spoken": true,
+          "start": 19,
+          "text": "Rosespire Ash Crown"
+        },
+        {
+          "end": 45,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 44,
+          "text": "1"
+        },
+        {
+          "end": 57,
+          "event": 1,
+          "field": 3,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 56,
+          "text": "1"
+        },
+        {
+          "end": 69,
+          "event": 1,
+          "field": 4,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 68,
+          "text": "3"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 49,
+      "rule": "treasure_crafted_0",
+      "text": "Rosespire finishes Rosespire Ash Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 93,
+          "day": 12,
+          "event_id": "648518346341351636",
+          "retellings": 1,
+          "text": "A goblin rises to Keeper in the dragon cult through service."
+        },
+        {
+          "confidence": 93,
+          "day": 15,
+          "event_id": "648518346341351654",
+          "retellings": 1,
+          "text": "Roslin Herald joins The Broken Pennants after 4 days seeking a bed at Silverwick."
+        },
+        {
+          "confidence": 93,
+          "day": 21,
+          "event_id": "648518346341351698",
+          "retellings": 1,
+          "text": "Rosespire finishes Rosespire Ash Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work."
+        }
+      ],
+      "input": {
+        "account": "Rosespire finishes Rosespire Ash Crown from 1 Raw Gold, 1 Gems, and 3 weeks of work.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "TREASURE",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "Rosespire completed Rosespire Ash Crown, I hear.",
+      "provenance": {
+        "day": 22,
+        "event_id": "648518346341351698",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630902",
+        "world_seed": 1602
+      },
+      "rule": "49:0",
+      "version": 2
+    },
+    "speaker": "Forra Lampwright"
+  },
+  {
+    "event": {
+      "day": 164,
+      "kind": 75,
+      "text": "A goblin rises to Voice in the dragon cult through service."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A013",
+    "model_text": "A goblin rose to Voice in the dragon cult through service.",
+    "packet": {
+      "claim": "A goblin rose to Voice in the dragon cult through service.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 8,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 1,
+          "spoken": true,
+          "start": 0,
+          "text": "A goblin"
+        },
+        {
+          "end": 23,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 4,
+          "spoken": true,
+          "start": 18,
+          "text": "Voice"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 75,
+      "rule": "goblin_cult_rallied_0",
+      "text": "A goblin rises to Voice in the dragon cult through service."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 82,
+          "day": 154,
+          "event_id": "648518346341352628",
+          "retellings": 2,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 77,
+          "day": 157,
+          "event_id": "648518346341352640",
+          "retellings": 3,
+          "text": "The Cinder Tithe raids Rosespire: 16 Bread, 16 crowns, and a named treasure."
+        },
+        {
+          "confidence": 93,
+          "day": 164,
+          "event_id": "648518346341352665",
+          "retellings": 1,
+          "text": "A goblin rises to Voice in the dragon cult through service."
+        }
+      ],
+      "input": {
+        "account": "A goblin rises to Voice in the dragon cult through service.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "CULT RALLIES",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "A goblin rose to Voice in the dragon cult through service, I hear.",
+      "provenance": {
+        "day": 165,
+        "event_id": "648518346341352665",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630838",
+        "world_seed": 1602
+      },
+      "rule": "75:0",
+      "version": 2
+    },
+    "speaker": "Jory Fen"
+  },
+  {
+    "event": {
+      "day": 112,
+      "kind": 78,
+      "text": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A007",
+    "model_text": "Alderwatch raised calves and added older calves to the working herd.",
+    "packet": {
+      "claim": "Alderwatch raised calves and added older calves to the working herd.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Alderwatch"
+        },
+        {
+          "end": 33,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 32,
+          "text": "1"
+        },
+        {
+          "end": 42,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 7,
+          "spoken": false,
+          "start": 38,
+          "text": "calf"
+        },
+        {
+          "end": 45,
+          "event": 1,
+          "field": 3,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 44,
+          "text": "1"
+        },
+        {
+          "end": 56,
+          "event": 1,
+          "field": 4,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 7,
+          "spoken": false,
+          "start": 52,
+          "text": "calf"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 78,
+      "rule": "cow_calving_0",
+      "text": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 76,
+          "day": 98,
+          "event_id": "648518346341352215",
+          "retellings": 3,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 83,
+          "day": 105,
+          "event_id": "648518346341352302",
+          "retellings": 2,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 100,
+          "day": 112,
+          "event_id": "648518346341352347",
+          "retellings": 0,
+          "text": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd."
+        }
+      ],
+      "input": {
+        "account": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "CALVING",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Alderwatch raised calves and added older calves to the working herd, I hear.",
+      "provenance": {
+        "day": 112,
+        "event_id": "648518346341352347",
+        "schema": 99,
+        "source_character_id": "1369094286720630844",
+        "speaker_id": "1369094286720630844",
+        "world_seed": 1601
+      },
+      "rule": "78:0",
+      "version": 2
+    },
+    "speaker": "Cera Mott"
+  },
+  {
+    "event": {
+      "day": 63,
+      "kind": 79,
+      "text": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A010",
+    "model_text": "Silverwick slaughtered cattle for beef when fodder ran short.",
+    "packet": {
+      "claim": "Silverwick slaughtered cattle for beef when fodder ran short.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Silverwick"
+        },
+        {
+          "end": 67,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 66,
+          "text": "4"
+        },
+        {
+          "end": 25,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 22,
+          "text": "one"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 79,
+      "rule": "cow_slaughtered_0",
+      "text": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 19,
+          "day": 44,
+          "event_id": "648518346341351871",
+          "retellings": 9,
+          "text": "Flinna Miller joins The Ditch Parliament after 5 days seeking food at Gloamgate."
+        },
+        {
+          "confidence": 66,
+          "day": 49,
+          "event_id": "648518346341351903",
+          "retellings": 4,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 100,
+          "day": 63,
+          "event_id": "648518346341351991",
+          "retellings": 0,
+          "text": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef."
+        }
+      ],
+      "input": {
+        "account": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "CATTLE LOSS",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Silverwick slaughtered cattle for beef when fodder ran short, I hear.",
+      "provenance": {
+        "day": 63,
+        "event_id": "648518346341351991",
+        "schema": 99,
+        "source_character_id": "1369094286720630838",
+        "speaker_id": "1369094286720630838",
+        "world_seed": 1601
+      },
+      "rule": "79:0",
+      "version": 2
+    },
+    "speaker": "Jory Fen"
+  },
+  {
+    "event": {
+      "day": 122,
+      "kind": 115,
+      "text": "Skella Mailmender died at age 65 after a life in Alderwatch."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A016",
+    "model_text": "Skella Mailmender died after a life in Alderwatch.",
+    "packet": {
+      "claim": "Skella Mailmender died after a life in Alderwatch.",
+      "confidence": 93,
+      "fields": [
+        {
+          "end": 17,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 1,
+          "spoken": true,
+          "start": 0,
+          "text": "Skella Mailmender"
+        },
+        {
+          "end": 32,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 30,
+          "text": "65"
+        },
+        {
+          "end": 59,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 49,
+          "text": "Alderwatch"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 115,
+      "rule": "character_died_0",
+      "text": "Skella Mailmender died at age 65 after a life in Alderwatch."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 100,
+          "day": 112,
+          "event_id": "648518346341352347",
+          "retellings": 0,
+          "text": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd."
+        },
+        {
+          "confidence": 100,
+          "day": 112,
+          "event_id": "648518346341352348",
+          "retellings": 0,
+          "text": "Alderwatch raises 1 common pony foal; 1 joins the working herd."
+        },
+        {
+          "confidence": 93,
+          "day": 122,
+          "event_id": "648518346341352456",
+          "retellings": 1,
+          "text": "Skella Mailmender died at age 65 after a life in Alderwatch."
+        }
+      ],
+      "input": {
+        "account": "Skella Mailmender died at age 65 after a life in Alderwatch.",
+        "confidence": 93,
+        "detail": "full",
+        "kind": "DEATH",
+        "retellings": 1,
+        "variant": 0
+      },
+      "output": "Skella Mailmender had lived in Alderwatch and died, I hear.",
+      "provenance": {
+        "day": 122,
+        "event_id": "648518346341352456",
+        "schema": 99,
+        "source_character_id": "0",
+        "speaker_id": "1369094286720630844",
+        "world_seed": 1601
+      },
+      "rule": "115:0",
+      "version": 2
+    },
+    "speaker": "Cera Mott"
+  },
+  {
+    "event": {
+      "day": 84,
+      "kind": 116,
+      "text": "Silverwick's woodlot cuts 1 Wood and wears one Tools bundle."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A057",
+    "model_text": "Silverwick cut wood and wore out tools.",
+    "packet": {
+      "claim": "Silverwick cut wood and wore out tools.",
+      "confidence": 73,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Silverwick"
+        },
+        {
+          "end": 27,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 26,
+          "text": "1"
+        },
+        {
+          "end": 46,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 43,
+          "text": "two"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 116,
+      "rule": "woodlot_harvest_0",
+      "text": "Silverwick's woodlot cuts 1 Wood and wears two Tools bundle."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 59,
+          "day": 84,
+          "event_id": "648518346341352104",
+          "retellings": 4,
+          "text": "Gloamgate's woodlot cuts 2 Wood and wears two Tools bundle."
+        },
+        {
+          "confidence": 65,
+          "day": 84,
+          "event_id": "648518346341352107",
+          "retellings": 3,
+          "text": "Silverwick slaughters two cow after the herd's fodder runs short; 4 Meat enters the local store as beef."
+        },
+        {
+          "confidence": 73,
+          "day": 84,
+          "event_id": "648518346341352109",
+          "retellings": 3,
+          "text": "Silverwick's woodlot cuts 1 Wood and wears two Tools bundle."
+        }
+      ],
+      "input": {
+        "account": "Silverwick's woodlot cuts 1 Wood and wears two Tools bundle.",
+        "confidence": 73,
+        "detail": "full",
+        "kind": "WOODLOT",
+        "retellings": 3,
+        "variant": 0
+      },
+      "output": "Silverwick cut wood and wore out tools, I hear.",
+      "provenance": {
+        "day": 102,
+        "event_id": "648518346341352109",
+        "schema": 99,
+        "source_character_id": "1369094286720630899",
+        "speaker_id": "1369094286720630914",
+        "world_seed": 1601
+      },
+      "rule": "116:0",
+      "version": 2
+    },
+    "speaker": "Roslin Courtward"
+  },
+  {
+    "event": {
+      "day": 280,
+      "kind": 117,
+      "text": "Gloamgate's bakery mills 7 Wheat into 7 Bread."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A001",
+    "model_text": "Gloamgate made bread from wheat.",
+    "packet": {
+      "claim": "Gloamgate made bread from wheat.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Gloamgate"
+        },
+        {
+          "end": 26,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 25,
+          "text": "7"
+        },
+        {
+          "end": 39,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 38,
+          "text": "7"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 117,
+      "rule": "bakery_production_0",
+      "text": "Gloamgate's bakery mills 7 Wheat into 7 Bread."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 67,
+          "day": 259,
+          "event_id": "648518346341353162",
+          "retellings": 4,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 77,
+          "day": 273,
+          "event_id": "648518346341353272",
+          "retellings": 3,
+          "text": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton."
+        },
+        {
+          "confidence": 100,
+          "day": 280,
+          "event_id": "648518346341353303",
+          "retellings": 0,
+          "text": "Gloamgate's bakery mills 7 Wheat into 7 Bread."
+        }
+      ],
+      "input": {
+        "account": "Gloamgate's bakery mills 7 Wheat into 7 Bread.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "BAKERY",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Gloamgate made bread from wheat, I hear.",
+      "provenance": {
+        "day": 280,
+        "event_id": "648518346341353303",
+        "schema": 99,
+        "source_character_id": "1369094286720630854",
+        "speaker_id": "1369094286720630854",
+        "world_seed": 1602
+      },
+      "rule": "117:0",
+      "version": 2
+    },
+    "speaker": "Tomas Rill"
+  },
+  {
+    "event": {
+      "day": 28,
+      "kind": 118,
+      "text": "Silverwick's quarry cuts 12 Stone for roads and public works."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A043",
+    "model_text": "Silverwick quarried stone for roads and public works.",
+    "packet": {
+      "claim": "Silverwick quarried stone for roads and public works.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Silverwick"
+        },
+        {
+          "end": 27,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 25,
+          "text": "12"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 118,
+      "rule": "quarry_output_0",
+      "text": "Silverwick's quarry cuts 12 Stone for roads and public works."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 93,
+          "day": 21,
+          "event_id": "648518346341351714",
+          "retellings": 1,
+          "text": "A goblin rises to Bearer in the dragon cult through service."
+        },
+        {
+          "confidence": 93,
+          "day": 25,
+          "event_id": "648518346341351732",
+          "retellings": 1,
+          "text": "A goblin rises to Bearer in the dragon cult through service."
+        },
+        {
+          "confidence": 100,
+          "day": 28,
+          "event_id": "648518346341351743",
+          "retellings": 0,
+          "text": "Silverwick's quarry cuts 12 Stone for roads and public works."
+        }
+      ],
+      "input": {
+        "account": "Silverwick's quarry cuts 12 Stone for roads and public works.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "QUARRY",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Silverwick quarried stone for roads and public works, I hear.",
+      "provenance": {
+        "day": 28,
+        "event_id": "648518346341351743",
+        "schema": 99,
+        "source_character_id": "1369094286720630898",
+        "speaker_id": "1369094286720630898",
+        "world_seed": 1601
+      },
+      "rule": "118:0",
+      "version": 2
+    },
+    "speaker": "Stenna Deepwell"
+  },
+  {
+    "event": {
+      "day": 112,
+      "kind": 119,
+      "text": "Alderwatch's masons use 2 Stone to repair public buildings."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A038",
+    "model_text": "Alderwatch repaired public buildings with stone, so people say.",
+    "packet": {
+      "claim": "Alderwatch repaired public buildings with stone.",
+      "confidence": 63,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Alderwatch"
+        },
+        {
+          "end": 25,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 24,
+          "text": "2"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 119,
+      "rule": "masonry_repair_0",
+      "text": "Alderwatch's masons use 2 Stone to repair public buildings."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 55,
+          "day": 112,
+          "event_id": "648518346341352347",
+          "retellings": 5,
+          "text": "Alderwatch's cattle herd raises 1 new calf; 1 older calf join the working herd."
+        },
+        {
+          "confidence": 55,
+          "day": 112,
+          "event_id": "648518346341352348",
+          "retellings": 5,
+          "text": "Alderwatch raises 1 common pony foal; 1 joins the working herd."
+        },
+        {
+          "confidence": 63,
+          "day": 112,
+          "event_id": "648518346341352349",
+          "retellings": 4,
+          "text": "Alderwatch's masons use 2 Stone to repair public buildings."
+        }
+      ],
+      "input": {
+        "account": "Alderwatch's masons use 2 Stone to repair public buildings.",
+        "confidence": 63,
+        "detail": "full",
+        "kind": "MASONRY",
+        "retellings": 4,
+        "variant": 0
+      },
+      "output": "Have you heard? Alderwatch repaired public buildings with stone. That's the word going round.",
+      "provenance": {
+        "day": 129,
+        "event_id": "648518346341352349",
+        "schema": 99,
+        "source_character_id": "1369094286720630906",
+        "speaker_id": "1369094286720630908",
+        "world_seed": 1601
+      },
+      "rule": "119:0",
+      "version": 2
+    },
+    "speaker": "Emren Inkwell"
+  },
+  {
+    "event": {
+      "day": 91,
+      "kind": 120,
+      "text": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A034",
+    "model_text": "Thornford raised lambs and added yearlings to the adult flock.",
+    "packet": {
+      "claim": "Thornford raised lambs and added yearlings to the adult flock.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Thornford"
+        },
+        {
+          "end": 27,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 25,
+          "text": "10"
+        },
+        {
+          "end": 37,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 7,
+          "spoken": false,
+          "start": 32,
+          "text": "lambs"
+        },
+        {
+          "end": 41,
+          "event": 1,
+          "field": 3,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 39,
+          "text": "10"
+        },
+        {
+          "end": 51,
+          "event": 1,
+          "field": 4,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 7,
+          "spoken": false,
+          "start": 42,
+          "text": "yearlings"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 120,
+      "rule": "sheep_bred_0",
+      "text": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 76,
+          "day": 84,
+          "event_id": "648518346341352104",
+          "retellings": 3,
+          "text": "Gloamgate's woodlot cuts 2 Wood and wears two Tools bundle."
+        },
+        {
+          "confidence": 100,
+          "day": 91,
+          "event_id": "648518346341352171",
+          "retellings": 0,
+          "text": "Thornford shears the spring flock and stores 10 Wool."
+        },
+        {
+          "confidence": 100,
+          "day": 91,
+          "event_id": "648518346341352172",
+          "retellings": 0,
+          "text": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock."
+        }
+      ],
+      "input": {
+        "account": "Thornford's flock raises 10 new lambs; 10 yearlings join the adult flock.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "LAMBING",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Thornford raised lambs and added yearlings to the adult flock, I hear.",
+      "provenance": {
+        "day": 91,
+        "event_id": "648518346341352172",
+        "schema": 99,
+        "source_character_id": "1369094286720630837",
+        "speaker_id": "1369094286720630837",
+        "world_seed": 1601
+      },
+      "rule": "120:0",
+      "version": 2
+    },
+    "speaker": "Mara Venn"
+  },
+  {
+    "event": {
+      "day": 91,
+      "kind": 121,
+      "text": "Silverwick shears the spring flock and stores 3 Wool."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A048",
+    "model_text": "Silverwick sheared the spring flock and stored wool.",
+    "packet": {
+      "claim": "Silverwick sheared the spring flock and stored wool.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 10,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Silverwick"
+        },
+        {
+          "end": 47,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 46,
+          "text": "3"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 121,
+      "rule": "sheep_sheared_0",
+      "text": "Silverwick shears the spring flock and stores 3 Wool."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 68,
+          "day": 77,
+          "event_id": "648518346341352064",
+          "retellings": 4,
+          "text": "Rosespire's mill uses 1 Wood to make 4 Paper."
+        },
+        {
+          "confidence": 100,
+          "day": 84,
+          "event_id": "648518346341352107",
+          "retellings": 0,
+          "text": "Silverwick slaughters one cow after the herd's fodder runs short; 4 Meat enters the local store as beef."
+        },
+        {
+          "confidence": 100,
+          "day": 91,
+          "event_id": "648518346341352175",
+          "retellings": 0,
+          "text": "Silverwick shears the spring flock and stores 3 Wool."
+        }
+      ],
+      "input": {
+        "account": "Silverwick shears the spring flock and stores 3 Wool.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "SHEARING",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Silverwick sheared the spring flock and stored wool, I hear.",
+      "provenance": {
+        "day": 91,
+        "event_id": "648518346341352175",
+        "schema": 99,
+        "source_character_id": "1369094286720630838",
+        "speaker_id": "1369094286720630838",
+        "world_seed": 1601
+      },
+      "rule": "121:0",
+      "version": 2
+    },
+    "speaker": "Jory Fen"
+  },
+  {
+    "event": {
+      "day": 273,
+      "kind": 122,
+      "text": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton."
+    },
+    "flags": [
+      "Different from the shared game wording"
+    ],
+    "id": "A079",
+    "model_text": "Thornford slaughtered sheep for mutton in the autumn cull.",
+    "packet": {
+      "claim": "Thornford slaughtered sheep for mutton in the autumn cull.",
+      "confidence": 100,
+      "fields": [
+        {
+          "end": 9,
+          "event": 1,
+          "field": 0,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 3,
+          "spoken": true,
+          "start": 0,
+          "text": "Thornford"
+        },
+        {
+          "end": 22,
+          "event": 1,
+          "field": 1,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 21,
+          "text": "4"
+        },
+        {
+          "end": 47,
+          "event": 1,
+          "field": 2,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 7,
+          "spoken": true,
+          "start": 29,
+          "text": "in the autumn cull"
+        },
+        {
+          "end": 50,
+          "event": 1,
+          "field": 3,
+          "knowledge": 0,
+          "provenance": 3,
+          "role": 8,
+          "spoken": false,
+          "start": 49,
+          "text": "8"
+        }
+      ],
+      "grammar_sha256": "ad017639e911c482e86e25f063207504769353dcd05e263d31dd9a6ef9409fb6",
+      "kind": 122,
+      "rule": "sheep_slaughtered_0",
+      "text": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton."
+    },
+    "source": {
+      "events": [
+        {
+          "confidence": 73,
+          "day": 252,
+          "event_id": "648518346341353273",
+          "retellings": 3,
+          "text": "Gloamgate's woodlot cuts 3 Wood and wears two Tools bundle."
+        },
+        {
+          "confidence": 93,
+          "day": 256,
+          "event_id": "648518346341353300",
+          "retellings": 1,
+          "text": "The Cinder Tithe raids Thornford: 20 Wheat, 16 crowns."
+        },
+        {
+          "confidence": 100,
+          "day": 273,
+          "event_id": "648518346341353400",
+          "retellings": 0,
+          "text": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton."
+        }
+      ],
+      "input": {
+        "account": "Thornford slaughters 4 sheep in the autumn cull; 8 Meat enters the local store as mutton.",
+        "confidence": 100,
+        "detail": "full",
+        "kind": "FLOCK CULL",
+        "retellings": 0,
+        "variant": 0
+      },
+      "output": "Thornford slaughtered sheep for mutton in the autumn cull, I hear.",
+      "provenance": {
+        "day": 273,
+        "event_id": "648518346341353400",
+        "schema": 99,
+        "source_character_id": "1369094286720630837",
+        "speaker_id": "1369094286720630837",
+        "world_seed": 1601
+      },
+      "rule": "122:0",
+      "version": 2
+    },
+    "speaker": "Mara Venn"
+  }
+]
