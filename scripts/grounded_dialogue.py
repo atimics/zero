@@ -24,7 +24,7 @@ def answer_template(template, row):
     return template
 
 
-def exchange_rows(source, templates, metadata):
+def exchange_rows(source, templates, metadata, variant=None):
     """Every target field mention comes from a template placeholder."""
     base=copy.deepcopy(source);base['kind_id']=metadata['meaning_ids'][base['rule']]
     result=[];lines=[]
@@ -34,16 +34,25 @@ def exchange_rows(source, templates, metadata):
             if turn==2:template=answer_template(template,base)
             row['output'],row['copies']=render(template,base['fields'])
         row['history']=[{'speaker':'self' if j%2==turn%2 else 'other','text':line} for j,line in enumerate(lines)][-4:]
-        row['id']=base['id']+':turn:'+str(turn)
+        label='turn:'+str(turn) if variant is None else 'v'+str(variant)+':turn:'+str(turn)
+        row['id']=base['id']+':'+label
         result.append(row);lines.append(row['output'])
     return result
+
+
+def variants(entry):
+    """A bank entry is one exchange (three strings) or a list of exchanges."""
+    if entry and isinstance(entry[0],str):return [entry]
+    return list(entry)
 
 
 def build(rows, bank, metadata):
     expected=set(metadata['meaning_ids'])
     if set(bank)!=expected or {r['rule'] for r in rows}!=expected:raise ValueError('Dialogue and source coverage must match the model grammar')
-    if any(len(v)!=3 for v in bank.values()):raise ValueError('Each exchange needs question, answer, and reaction')
-    return [turn for row in rows for turn in exchange_rows(row,bank[row['rule']],metadata)]
+    for entry in bank.values():
+        for exchange in variants(entry):
+            if len(exchange)!=3:raise ValueError('Each exchange needs question, answer, and reaction')
+    return [turn for row in rows for v,exchange in enumerate(variants(bank[row['rule']])) for turn in exchange_rows(row,exchange,metadata,variant=v)]
 
 
 def replace_fields(row, replacements):

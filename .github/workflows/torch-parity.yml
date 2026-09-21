@@ -30,4 +30,5 @@ jobs:
       - run: python tests/test_matched_dialogue_study.py
       - run: python tests/test_full_event_rehearsal.py
       - run: python tests/test_grounded_dialogue.py
+      - run: python tests/test_grounded_variants.py
       - run: python tests/test_grounded_review.py
