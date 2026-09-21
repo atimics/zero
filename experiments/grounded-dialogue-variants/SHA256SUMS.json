@@ -1,0 +1,12 @@
+{
+  "experiments/grounded-dialogue-variants/evidence/SAMPLES.md": "008639807202af6cd3826cb4bca63020982e0c1932894303297bef00407a9c15",
+  "experiments/grounded-dialogue-variants/evidence/expanded-diagnostics.json": "b93a43ca87b70efa84f271368c3ff1113402aa2b85057ce0ef5c64274a282672",
+  "experiments/grounded-dialogue-variants/evidence/expanded-world.json": "1cc1c7950901ffbf7da0268ddc7c46f99a31777118566052fe4f24fb4d6faa07",
+  "experiments/grounded-dialogue-variants/evidence/manifest.json": "5a6572c1baa9731faa04a4c1c3d87614f0e2d800f762bca0503bdf17e0ecc8f7",
+  "experiments/grounded-dialogue-variants/evidence/prior-diagnostics.json": "3f33d6e67585069d43c5324e539539d67e23a3d81c90c978fd28498bf44e591d",
+  "experiments/grounded-dialogue-variants/evidence/prior-world.json": "16a62ab679cd4fc611568cdfd00ce8632995eacac2276aa4df46061205053fbd",
+  "experiments/grounded-dialogue-variants/evidence/question-contrasts.json": "f010e54546860af9ff9e961f8786282c17db44d2391b808ddbcf56f9f54ea6f2",
+  "experiments/grounded-dialogue-variants/evidence/question-probes.json": "667e4b5e2a27c71399f337e885e879bf5f27b080bdcf4e9a3a6a124af42a9a6d",
+  "experiments/grounded-dialogue-variants/evidence/results.json": "286b9d82341c81713daa733f9264bd89265cce372ebc791c0427aed7e0aa48f4",
+  "experiments/grounded-dialogue/input/dialogue-bank-v2.json": "22b1a76d3a76ebb0b74a7ac84d841744d7d65f7d1687d24dec73401296656c06"
+}

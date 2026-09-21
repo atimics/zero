@@ -18,10 +18,10 @@ def diagnostics(model,tok,meta,bank,testrows,rules):
     assert set(selected)==set(bank)
     openings=[];answers=[]
     for rule,source in selected.items():
-        opening=exchange_rows(source,bank[rule],meta)[0]
+        opening=exchange_rows(source,bank[rule][0],meta)[0]
         g=generate(model,tok,encode(tok,opening),max_tokens=100)
         openings.append(dict(rule=rule,reference=source['output'],**g,accepted=g['stopped'] and g['text'] in accepted_forms(source,rules[rule])))
-        expected=exchange_rows(source,bank[rule],meta)[2]
+        expected=exchange_rows(source,bank[rule][0],meta)[2]
         cases=[('original',source)]
         # Change each named answer field separately. Material and detail values
         # stay within their own grammar rather than becoming place names.
@@ -30,7 +30,7 @@ def diagnostics(model,tok,meta,bank,testrows,rules):
             for name in ['Élm Vale','The Copper Lantern']:
                 cases.append((f'field-{slot}:{name}',replace_fields(source,{slot:name})))
         for label,case in cases:
-            target=exchange_rows(case,bank[rule],meta)[2];record=encode(tok,target)
+            target=exchange_rows(case,bank[rule][0],meta)[2];record=encode(tok,target)
             g=generate(model,tok,record,max_tokens=80)
             wanted=[v for v in record['copy_targets'] if v>=0]
             actual=[a['copy'] for a in g['actions'] if 'copy' in a]
@@ -45,7 +45,7 @@ def main():
     root=Path('experiments/grounded-dialogue/input');oldroot=Path('experiments/full-event-rehearsal/input');prior=Path('experiments/reviewed-dialogue-pilot/input')
     bp=Path('models/crownless-conversation/core.ccv2');tp=Path('models/crownless-core-v2/tokenizer.json');assert sha(bp)==BASE_HASH
     tok=Tokenizer.from_file(str(tp));model,meta=load_export(bp,tp);model.mode='conversation'
-    bank=json.loads((root/'dialogue-bank.json').read_text())['exchanges']
+    bank=json.loads((root/'dialogue-bank-v2.json').read_text())['exchanges']
     old=read(oldroot/'rehearsal.jsonl');rules={r['id']:r for r in json.loads((oldroot/'rules.json').read_text())['rules']};assert sha(oldroot/'rules.json')==meta['rules_sha256']
     sources={r['id']:r for r in read(prior/'accounts.jsonl')};drafts={r['source_id']:r for r in json.loads((prior/'drafts.json').read_text())};ids=[i for i in drafts if sources[i]['packet']]
     original=[r for i in ids for r in rows_for(sources[i],drafts[i],meta)]
@@ -62,15 +62,15 @@ def main():
     encoded={arm:[encode(tok,r) for r in rows] for arm,rows in training.items()}
     replay={arm:[encode(tok,r) for r in rows] for arm,rows in rehearsal.items()}
     write=lambda name,x:(a.output/name).write_text(json.dumps(x,indent=2,ensure_ascii=False)+'\n')
-    inputs=[root/'dialogue-bank.json',root/'evaluation-accounts.jsonl',oldroot/'rehearsal.jsonl',oldroot/'grammar-test.jsonl',oldroot/'rules.json',prior/'accounts.jsonl',prior/'drafts.json']
+    inputs=[root/'dialogue-bank.json',root/'dialogue-bank-v2.json',root/'evaluation-accounts.jsonl',oldroot/'rehearsal.jsonl',oldroot/'grammar-test.jsonl',oldroot/'rules.json',prior/'accounts.jsonl',prior/'drafts.json']
     code=[Path(__file__),Path('scripts/grounded_dialogue.py'),Path('scripts/run_reviewed_dialogue_pilot.py'),Path('scripts/run_matched_dialogue_study.py'),Path('scripts/run_full_event_rehearsal.py'),Path('scripts/crownless_v2.py'),Path('scripts/crownless_v2_export.py')]
-    write('manifest.json',dict(seed=915,steps=a.steps,selection='Fixed final checkpoint per arm',parameters=sum(p.numel() for p in model.parameters()),torch=torch.__version__,device='cpu',threads=4,batch=16,dialogue_per_batch=12,rehearsal_per_batch=4,learning_rate=.0001,training_rows={k:len(v) for k,v in training.items()},rehearsal_rows={k:len(v) for k,v in rehearsal.items()},input_hashes={str(p):sha(p) for p in inputs},source_hashes={str(p):sha(p) for p in code},base_sha256=sha(bp),tokenizer_sha256=sha(tp),copy_split='Complete generated names are disjoint. Shared meaning grammar and question templates.',authorship='Assistant-authored expansion; human review pending. Prior arm includes 12 human-approved scenes out of 46.'))
+    write('manifest.json',dict(seed=915,steps=a.steps,selection='Fixed final checkpoint per arm',parameters=sum(p.numel() for p in model.parameters()),torch=torch.__version__,device='cpu',threads=4,batch=16,dialogue_per_batch=12,rehearsal_per_batch=4,learning_rate=.0001,training_rows={k:len(v) for k,v in training.items()},rehearsal_rows={k:len(v) for k,v in rehearsal.items()},input_hashes={str(p):sha(p) for p in inputs},source_hashes={str(p):sha(p) for p in code},base_sha256=sha(bp),tokenizer_sha256=sha(tp),copy_split='Complete generated names are disjoint. Shared meaning grammar and question templates.',authorship='Assistant-authored expansion; human review pending. Prior arm includes 12 human-approved scenes out of 46. Expanded arm adds one alternate-fact question per meaning so the question, not the event, selects the copied field.'))
     write('test-accounts.json',test)
     # The compact recipe and pinned inputs reproduce all 14,640 training rows.
     examples={}
     for r in training['expanded']:examples.setdefault(r['rule'],[])
     for rule in examples:
-        first=next(r for r in old if r['rule']==rule);examples[rule]=exchange_rows(first,bank[rule],meta)
+        first=next(r for r in old if r['rule']==rule);examples[rule]=exchange_rows(first,bank[rule][0],meta)
     write('training-examples.json',examples)
     before=rollout(model,tok,meta,test);write('base-world.json',before);summary={'base':metrics(before)}
     for arm in training:

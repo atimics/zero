@@ -11,7 +11,7 @@ from run_reviewed_dialogue_pilot import read,encode,sha
 def main():
  p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--contrasts',action='store_true');a=p.parse_args();torch.set_num_threads(4)
  root=Path('experiments/grounded-dialogue/input');name='question-contrasts.json' if a.contrasts else 'question-probes.json';qp=root/name
- questions=json.loads(qp.read_text())['questions'];bank=json.loads((root/'dialogue-bank.json').read_text())['exchanges'];selected={}
+ questions=json.loads(qp.read_text())['questions'];bank=json.loads((root/'dialogue-bank-v2.json').read_text())['exchanges'];selected={}
  for row in read('experiments/full-event-rehearsal/input/grammar-test.jsonl'):
   if row['rule'] in questions:selected.setdefault(row['rule'],row)
  assert set(selected)==set(questions)
@@ -20,7 +20,8 @@ def main():
   model,meta=load_export(a.run/(arm+'.ccv2'),'models/crownless-core-v2/tokenizer.json');model.mode='conversation';answers=[]
   for rule,row in selected.items():
    question=questions[rule][0] if a.contrasts else questions[rule]
-   templates=[question,questions[rule][1],bank[rule][2]] if a.contrasts else bank[rule]
+   base=bank[rule][0] if bank[rule] and isinstance(bank[rule][0],list) else bank[rule]
+   templates=[question,questions[rule][1],base[2]] if a.contrasts else base
    target=exchange_rows(row,templates,meta)[2];target['history'][-1]['text']=question
    record=encode(tok,target);g=generate(model,tok,record,max_tokens=80)
    wanted=[c for c in record['copy_targets'] if c>=0];actual=[x['copy'] for x in g['actions'] if 'copy' in x]
