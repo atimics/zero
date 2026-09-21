@@ -1,0 +1,875 @@
+{
+  "schema": "crownless.speech_review.v1",
+  "scope": "Review sample of simulated held accounts and staged conversations between co-located holders. All generated turns use the shipped English core and the preceding four spoken lines. Human review determines suitability for training.",
+  "selection": "Stable hash order, balanced by kind and confidence band for accounts; by kind for conversations. Selection precedes model generation.",
+  "source_commit": "edd676687adc3ee31883ef1090ce23bcbcb2dd23",
+  "parameters": {
+    "bin_dir": "/private/tmp/crownless-conversation-native/out/build/native-core",
+    "model": "/private/tmp/crownless-fresh-dialogue-batch/assets/language/core.ccv2",
+    "output": "/private/tmp/crownless-pilot-eval-1401",
+    "seeds": [
+      1401
+    ],
+    "days": 365,
+    "accounts": 72,
+    "conversations": 1,
+    "turns": 6
+  },
+  "model_sha256": "244a809aba71679efe129495bb981ca8d7fbe0d9012948a5f88731dabcb9c48b",
+  "tools": {
+    "core_model_probe": "6ce700441a3b5951b48d3b9f538398219de2e5e5f163a2029b12f06b4df5b2ab",
+    "core_account_probe": "b53c8dd0837509e706829616006bd3b41d89d153a82a8dbc2efc6d21724ebca3",
+    "crownless_gossip_flow": "6cb2398ca087341d60de6a5f24c23ec85fa0ee398eaed34b7aa2823e9a3ccce7",
+    "crownless_gossip_corpus": "8fc16796e2b6d4f7b11827fdc105bebab947857f1daa51c5eeb8c01d921b9f8a"
+  },
+  "sources": {
+    "tools/build_speech_review.py": "b7563425f0103dad96f8c172521533508383c2afae0c51f6a93d18ebb45d253e",
+    "tools/data/speech_review.html": "2f4ef92f7fd9c8011ebd91f0a8cc57a6112bd94f4c583fb3778c31f5bf33e468"
+  },
+  "worlds": [
+    {
+      "seed": 1401,
+      "finish": {
+        "type": "finish",
+        "day": 366,
+        "hash": "cc1f11e5913492ee",
+        "valid": true
+      },
+      "corpus": {
+        "world_seed": 1401,
+        "rows": 38928,
+        "unsupported_observations": 192,
+        "unsupported_kinds": [
+          {
+            "kind_id": 0,
+            "kind": "HARVEST",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 1,
+            "kind": "ROUTE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 2,
+            "kind": "SHORTAGE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 3,
+            "kind": "SHIPMENT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 4,
+            "kind": "ARRIVAL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 5,
+            "kind": "BANDITS",
+            "observations": 96,
+            "sample": "Cinda Relicward joins The Unpaid Company after 3 days seeking a bed at Gloamgate."
+          },
+          {
+            "kind_id": 6,
+            "kind": "MONSTERS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 7,
+            "kind": "TRADE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 8,
+            "kind": "TRAVEL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 9,
+            "kind": "REPAIRED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 10,
+            "kind": "DUNGEON",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 11,
+            "kind": "RELIEF",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 12,
+            "kind": "AMBUSH",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 13,
+            "kind": "DECREE",
+            "observations": 96,
+            "sample": "Hunger, debt, and sanctions open a night road between Gloamgate and Alderwatch."
+          },
+          {
+            "kind_id": 14,
+            "kind": "ROAD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 15,
+            "kind": "POLITICS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 16,
+            "kind": "CONTRACT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 17,
+            "kind": "FULFILLED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 18,
+            "kind": "FAILED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 19,
+            "kind": "AMBUSH",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 20,
+            "kind": "CHART",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 21,
+            "kind": "CHART",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 22,
+            "kind": "PROMISE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 23,
+            "kind": "WITHDRAWN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 24,
+            "kind": "ROAD CRISIS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 25,
+            "kind": "ROAD DEFENDED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 26,
+            "kind": "ROAD BARGAIN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 27,
+            "kind": "RETURN ECHO",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 28,
+            "kind": "DEPARTURE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 29,
+            "kind": "NEW SERVICE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 30,
+            "kind": "RAIDERS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 31,
+            "kind": "RAID",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 32,
+            "kind": "RAIDERS RETURN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 33,
+            "kind": "GOBLIN TITHE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 34,
+            "kind": "GOBLIN THEFT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 35,
+            "kind": "DRAGON TRIBUTE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 36,
+            "kind": "HOARD THEFT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 37,
+            "kind": "DRAGON OMEN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 38,
+            "kind": "TREASURE RETURNED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 39,
+            "kind": "DRAGON FIRE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 40,
+            "kind": "INEQUALITY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 41,
+            "kind": "HOARD RAIDERS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 42,
+            "kind": "STOLEN RELIEF",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 43,
+            "kind": "WAR LEVY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 44,
+            "kind": "WAR CHEST",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 45,
+            "kind": "WAR SUPPLY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 46,
+            "kind": "ARMY SHORTAGE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 47,
+            "kind": "MINE YIELD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 48,
+            "kind": "SMITHY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 49,
+            "kind": "TREASURE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 50,
+            "kind": "GOBLIN RAIDERS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 51,
+            "kind": "GOBLIN RAID",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 52,
+            "kind": "GOBLINS RETURN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 53,
+            "kind": "WAR LOSS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 54,
+            "kind": "MONASTERY CREDIT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 55,
+            "kind": "DEBT REPAID",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 56,
+            "kind": "GOBLIN GUARD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 57,
+            "kind": "COURIER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 58,
+            "kind": "NEWS ARRIVES",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 59,
+            "kind": "COURIER LOST",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 60,
+            "kind": "RUMOR TWISTED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 61,
+            "kind": "WAR DECLARED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 62,
+            "kind": "PEACE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 63,
+            "kind": "ALLIANCE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 64,
+            "kind": "DRAGON HOST",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 65,
+            "kind": "DRAGON BATTLE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 66,
+            "kind": "DRAGON SLAIN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 67,
+            "kind": "HOARD RECOVERED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 68,
+            "kind": "DRAGON HUNT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 69,
+            "kind": "DRAGON CROWNED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 70,
+            "kind": "DRAGON UNCROWNED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 71,
+            "kind": "DRAGON BROOD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 72,
+            "kind": "WHELPS DISPERSE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 73,
+            "kind": "AFTERDRAGON",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 74,
+            "kind": "DRAGON SUCCESSOR",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 75,
+            "kind": "CULT RALLIES",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 76,
+            "kind": "DRAGON SEED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 77,
+            "kind": "ROAD WITHDRAWAL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 78,
+            "kind": "CALVING",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 79,
+            "kind": "CATTLE LOSS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 80,
+            "kind": "HORSE BRED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 81,
+            "kind": "FOAL BORN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 82,
+            "kind": "HORSE TEAM",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 83,
+            "kind": "GOBLIN MUSTER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 84,
+            "kind": "RAID WARNING",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 85,
+            "kind": "RAID INTERCEPTED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 86,
+            "kind": "GOBLIN TRADE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 87,
+            "kind": "ASH-VAULT RUMOR",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 88,
+            "kind": "ASH-VAULT WORK",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 89,
+            "kind": "PERSONAL WORD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 90,
+            "kind": "ROAD WARNING",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 91,
+            "kind": "AMBUSH EVADED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 92,
+            "kind": "ROAD LOOT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 93,
+            "kind": "MOUNTAIN TUNNEL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 94,
+            "kind": "UNDERROAD DELVE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 95,
+            "kind": "UNDERROAD MAPPED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 96,
+            "kind": "UNDERROAD ENCOUNTER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 97,
+            "kind": "SHORTCUT OPENED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 98,
+            "kind": "UNDERROAD RECOVERY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 99,
+            "kind": "HOARD THRESHOLD",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 100,
+            "kind": "UNDERROAD RETURN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 101,
+            "kind": "SHARED HISTORY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 102,
+            "kind": "RUMOR",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 103,
+            "kind": "DISCOVERY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 104,
+            "kind": "RELATIONSHIP",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 105,
+            "kind": "STORY FRONT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 106,
+            "kind": "FRONT RESOLVED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 107,
+            "kind": "FRONT FAILED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 108,
+            "kind": "QUEST PROGRESS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 109,
+            "kind": "LORE RECORDED",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 110,
+            "kind": "LORE LOST",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 111,
+            "kind": "ROAD BREAK",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 112,
+            "kind": "CAMP",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 113,
+            "kind": "ROAD HOUSE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 114,
+            "kind": "BIRTH",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 115,
+            "kind": "DEATH",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 116,
+            "kind": "WOODLOT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 117,
+            "kind": "BAKERY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 118,
+            "kind": "QUARRY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 119,
+            "kind": "MASONRY",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 120,
+            "kind": "LAMBING",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 121,
+            "kind": "SHEARING",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 122,
+            "kind": "FLOCK CULL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 123,
+            "kind": "PAPER MILL",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 124,
+            "kind": "CORONATION",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 125,
+            "kind": "PRETENDER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 126,
+            "kind": "NEW ABBOT",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 127,
+            "kind": "NEW RULER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 128,
+            "kind": "DRAGON VOW",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 129,
+            "kind": "CROWN BROKEN",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 130,
+            "kind": "BORDER BLOCK",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 131,
+            "kind": "CARRIAGE ROUTE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 132,
+            "kind": "TWENTY YEARS LATER",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 133,
+            "kind": "NOTICE",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 134,
+            "kind": "ROAD WORKS",
+            "observations": 0,
+            "sample": ""
+          },
+          {
+            "kind_id": 135,
+            "kind": "PROPHECY DELIVERED",
+            "observations": 0,
+            "sample": ""
+          }
+        ]
+      },
+      "flow_rows": 31698
+    }
+  ],
+  "files": {
+    "accounts.jsonl": "bdc1be08cd69a7c32220ea0cecb63df8491ce3b60a0c26add36b2e29287b0ba8",
+    "conversations.jsonl": "961111e4feed14b6d842e8a06253a55e1cff6510be2ebe0c207f1cae53c157fc",
+    "conversations.txt": "f726875c4170d5d268957f6ffb4458b2b471217012e9aa44196b717921820adf",
+    "index.html": "47c02b2c9c1b76c103d641e7501321d1b9c24a9ee5abd1ba1ee575da5d4b0d25",
+    "model-pairs.txt": "122fbd4853548e8dfbcc799a0e1bfefaac549a16dccae822a77d9b1ddd32827d",
+    "raw/1401-corpus.jsonl.gz": "2d30e0cb10ab5d9783090fecc18001dc24e09389015a03fa30d5528ba05b718f",
+    "raw/1401-flow.jsonl.gz": "9e5f4a07729eb04f842727546d56ec40e24a3f067dbf8624f4cd864c48e5b56f",
+    "reference-pairs.txt": "df567abdcf98804980d2c37dc909074f7d2952e4278d0108990d97694c5cf864",
+    "summary.json": "2fe583c1d557dba6de5ed145f57da0e52d3f8167985840fea8f25d30935c451c"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "files": {
+    "experiments/reviewed-dialogue-pilot/RESULT.md": "ba7ac44b450870874912c91c01c730edcc2539991672d501c60bebc3ebae2814",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/before.json": "8ad622d55effa42b4920fc480cfcec3a098f592f27d59df5f35fd84c7ccc0bf1",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/train.jsonl": "c5b1860702b3f140d9c6450006494731b3a30ea55c07b2dd2c2d755dc6279890",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/replay.jsonl": "e8e750adb8246a2559c8483343b4245019fc33800db9ffcbed0d264dd50bf983",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/before-shared.json": "309ba1018c9fcbe7d4904e7eed9d90c34a5e5d08c392296727c5a014390a849c",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/results.json": "09459b537ffa8879a1968cd9ea7f0e674f24db9e9546163ff13845d016fa9747",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/history.json": "5f224f15a1211487a4982a9cb7bdaed589352db894d8b9e75ba6a1cfcf95f6a6",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/after.json": "c541310c7822c94d1420fb7c9b33d66437a5a3b345dde0a32d9ac53722acb980",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/manifest.json": "32b2bf35fc0cb04085039c2b3e0b9ebd96391250332eb91338ffdfd97a23949e",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/training-fit.json": "8edbab0632f4f74ca12cab1a41bc0e8abd4fdca428f6f77193c88385a5d6ad5e",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/evaluation-accounts.jsonl": "fe56164578cae76176cfabbf8fd008cba3858008a9de74d8ca36770676c49b0f",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-200/after-shared.json": "81d5df3302a753d5c0bc97c4996896581ddd35bfe87daf48f3ffb12fe2a78ae5",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/before.json": "8ad622d55effa42b4920fc480cfcec3a098f592f27d59df5f35fd84c7ccc0bf1",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/train.jsonl": "c5b1860702b3f140d9c6450006494731b3a30ea55c07b2dd2c2d755dc6279890",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/replay.jsonl": "e8e750adb8246a2559c8483343b4245019fc33800db9ffcbed0d264dd50bf983",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/before-shared.json": "309ba1018c9fcbe7d4904e7eed9d90c34a5e5d08c392296727c5a014390a849c",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/results.json": "b9f40a954f37412f80be1dfa16ca1f804d0294fc863f3a53167914dbabe5a9f7",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/history.json": "69f28cfa56c7b9138f9d68c637f4d8bdd48ba32f0a90897294506b9abc889a93",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/after.json": "b46ba6e399f959ccda92cdf5350a7d8ec56c529d1e3cb101270fe28f1f77ed27",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/manifest.json": "bbd6671670d9b2fb8c91fcda3efe58fe6a0be09cbd6634e17e3d1e5224f8bdda",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/training-fit.json": "b8c5c89303fe90a5e344c176379b48692e8236fc748e352dba391c77ead0ef81",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/evaluation-accounts.jsonl": "fe56164578cae76176cfabbf8fd008cba3858008a9de74d8ca36770676c49b0f",
+    "experiments/reviewed-dialogue-pilot/evidence/steps-1000/after-shared.json": "d922331ec7a7d96d744d4636003b6ba9cbb5603dc35561828d4c133dcf643684",
+    "experiments/reviewed-dialogue-pilot/input/drafts.json": "db75a268d5f5fbd22443c3ec34d168f1300fa02d4247129d8bde4e4010f9218a",
+    "experiments/reviewed-dialogue-pilot/input/accounts.jsonl": "bc83a5d50cbe722b8a32663cba46848a20fea5e284254e874292c37e8318debd",
+    "experiments/reviewed-dialogue-pilot/input/evaluation-generation.json": "fed52b33b4148d75223fdc54f98f20a13ea1c9c7da49a295ac4af5a89d34d4d3",
+    "experiments/reviewed-dialogue-pilot/input/evaluation-accounts.jsonl": "bdc1be08cd69a7c32220ea0cecb63df8491ce3b60a0c26add36b2e29287b0ba8",
+    "scripts/run_reviewed_dialogue_pilot.py": "bdca25af13f08683a6ec537dd7c5bd4d9a731091b8e3eb403cf3e4e02e5c8545",
+    "tests/test_reviewed_dialogue_pilot.py": "4c8fb4ae16932c0e0e55e87853fece65d49eaa701123938e23fa9a591ba1956f"
+  }
+}
