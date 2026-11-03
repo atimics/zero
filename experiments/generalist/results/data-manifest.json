@@ -1,0 +1,51 @@
+{
+  "tools": {
+    "signal_replay": {
+      "path": "/Users/ratimics/develop/signal/build/signal_replay",
+      "sha256": "856ce20886a08118750b1721b38c50d639917578375ecba3ba82a2f896ec9ff0",
+      "built": "2026-09-11T19:20:39",
+      "commit": "dd208d9899ff1e8b04dd599ab8d3cb55a58125c8",
+      "dirty": false,
+      "note": "binary built 2026-09-11, before signal HEAD dd208d9; the commit it was built from is not known. Its sha256 identifies it."
+    },
+    "cc2trace": {
+      "path": "/Users/ratimics/develop/crownless2-traces/build/cc2trace",
+      "sha256": "74ca62e7b291ba7031eadb20dc214dcb8caea6452a696677f056459a3c99b495",
+      "built": "2026-11-02T17:05:30",
+      "commit": "3ab302ce5bf1724bc91eb226b722cda59345daa3",
+      "dirty": false,
+      "note": "branch commit 3ab302c, squash-merged into crownless2 main as 066036ac971d6616fd5ec9d4cf1a7ad5191890d7"
+    }
+  },
+  "crownless": {
+    "commit": "1e732de357e5d845a67ebdd0946ab8355f260746",
+    "dirty": false
+  },
+  "zero": {
+    "commit": null,
+    "note": "built by build_data.py as of branch commit 44b1ead (squash-merged as f9b85d6); flight_state/fly refactor later verified to reproduce the same rows"
+  },
+  "options": {
+    "mining_train": 6000,
+    "mining_valid": 500,
+    "dragon_worlds": 16,
+    "dragon_keep": 100,
+    "workers": 6
+  },
+  "outputs": {
+    "blake.train.txt": "e56c16e662ed7f3395f6c3c23624f4899be43ba2c13cb97e68ca9d3e5ada69b5",
+    "blake.valid.txt": "563eb549d413d6b25a88bc05ddafdace217e5b5d724ed9ecefaf202d9a9a0c97",
+    "crowley.train.txt": "5bd691b3b6cda9b77d53193d6602f4b6823cf7e9ce6aa93d814e59b2f420d0d0",
+    "crowley.valid.txt": "b521bbf6e26903eff63b44eda5a528559702cb087407567c66a5c64d8d1ca3b9",
+    "crownless.train.txt": "2b6e64643ba6931adf9fcf48bf617e9a513f1f1c5eb6779b345dab3e44f5476b",
+    "crownless.valid.txt": "93b06186051999c4ea0c1733ee858f95805f9f45c12517e5cac30a35d9ccd1c2",
+    "dragon.train.txt": "5d72ed790d9b5f228d2b172cc7253063e4ff1333225f60c622b721f6b5e0beb1",
+    "dragon.valid.txt": "0c89e536e591b7e476c54306593e575b4f2dcdbc4e33bce1e2288d4486694f21",
+    "mining.train.txt": "ffac6690715011b7cedaf2da655d28c0e2bd83e1f9f489f810e30781feaf9d51",
+    "mining.valid.txt": "5edc7c6ac5a1f78d60a1a0a6136e211f501a82ed5eb15e0a0d65ddab83ac1824",
+    "mining.valid.utility.jsonl": "80e5f8e1596358e911aba3487acd8ab3be6446247336a6831ac04c9eb991f859",
+    "shakespeare.train.txt": "88275ca239c9adf2305abb598d46716cea8012a6194e0ad18b31d8ebbc2f9bda",
+    "shakespeare.valid.txt": "3986d79d90fadf63714f61b13bf6ba9de7b75c887f7f257b621c22538ac336ac"
+  },
+  "recorded": "2026-11-03, after the fact, for the data runs 1 and 2 and the Shannon loop used"
+}

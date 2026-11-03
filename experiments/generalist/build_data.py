@@ -12,11 +12,13 @@ World validation rows come from seeds the training rows never use.
 """
 
 import argparse
+import hashlib
 import json
 import math
 import random
 import re
 import subprocess
+import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -157,12 +159,41 @@ def main():
     ap.add_argument("--dragon-worlds", type=int, default=16)
     ap.add_argument("--dragon-keep", type=int, default=100)
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--manifest-only", action="store_true", help="record the inputs of existing data/ and stop")
     args = ap.parse_args()
-    for name in ["blake", "shakespeare", "crowley"]:
-        split_write(name, chunks(ascii_text((ZERO / "corpus" / f"{name}.txt").read_text()), name))
-    split_write("crownless", crownless_lines(args.crownless))
-    dragon(args.cc2trace, args.dragon_worlds, args.dragon_keep)
-    mining(args.signal_replay, args.mining_train, args.mining_valid, args.workers)
+    if not args.manifest_only:
+        for name in ["blake", "shakespeare", "crowley"]:
+            split_write(name, chunks(ascii_text((ZERO / "corpus" / f"{name}.txt").read_text()), name))
+        split_write("crownless", crownless_lines(args.crownless))
+        dragon(args.cc2trace, args.dragon_worlds, args.dragon_keep)
+        mining(args.signal_replay, args.mining_train, args.mining_valid, args.workers)
+    manifest(args)
+
+
+def sha256(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def checkout(path):
+    """The commit a file's repository is at, and whether its tree has uncommitted changes."""
+    folder = Path(path).resolve().parent
+    git = lambda *a: subprocess.run(["git", "-C", str(folder), *a], capture_output=True, text=True).stdout.strip()
+    return {"commit": git("rev-parse", "HEAD") or None, "dirty": bool(git("status", "--porcelain", "--untracked-files=no"))}
+
+
+def manifest(args):
+    """Pin what data/ was built from: each tool binary's hash and build time, its repository's commit, and every output."""
+    tools = {}
+    for name, path in [("signal_replay", args.signal_replay), ("cc2trace", args.cc2trace)]:
+        stat = Path(path).stat()
+        tools[name] = {"path": str(path), "sha256": sha256(path), "built": time.strftime(
+            "%Y-%m-%dT%H:%M:%S", time.localtime(stat.st_mtime)), **checkout(path)}
+    record = {"tools": tools, "crownless": checkout(args.crownless / "README.md"), "zero": checkout(__file__),
+              "options": {k: v for k, v in vars(args).items() if k not in ("signal_replay", "cc2trace", "crownless",
+                                                                        "manifest_only")},
+              "outputs": {p.name: sha256(p) for p in sorted((HERE / "data").glob("*")) if p.name != "manifest.json"}}
+    (HERE / "data/manifest.json").write_text(json.dumps(record, indent=2) + "\n")
+    print(f"manifest: {len(record['outputs'])} outputs")
 
 
 if __name__ == "__main__":
