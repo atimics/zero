@@ -3,6 +3,7 @@
 #
 #   experiments/generalist/train_aws.sh                 (AWS_PROFILE and AWS_REGION as usual)
 #   STEPS=30000 MAX_MINUTES=120 INSTANCE_TYPES="g5.xlarge g6.xlarge" experiments/generalist/train_aws.sh
+#   MARKET=on-demand experiments/generalist/train_aws.sh        (when spot GPU quota is 0)
 #
 # Same shape as crownless2's tools/train_aws.sh:
 #   1. a throwaway key pair and a security group that admits SSH from this machine's public IP only;
@@ -17,6 +18,7 @@ REGION=${AWS_REGION:-$(aws configure get region || echo us-east-1)}
 INSTANCE_TYPES=${INSTANCE_TYPES:-"g5.xlarge g6.xlarge g5.2xlarge g4dn.xlarge"}
 MAX_MINUTES=${MAX_MINUTES:-150}
 STEPS=${STEPS:-30000}
+MARKET=${MARKET:-spot}    # on-demand when the account has no spot GPU quota
 NAME=zero-generalist-$(date +%Y%m%d%H%M%S)
 HERE=$(cd "$(dirname "$0")" && pwd)
 ZERO=$(cd "$HERE/../.." && pwd)
@@ -64,9 +66,11 @@ log "key pair and security group ready (SSH from $MYIP only)"
 
 USERDATA=$(printf '#!/bin/bash\nshutdown -h +%d\n' "$MAX_MINUTES" | base64 | tr -d '\n')
 for TYPE in $INSTANCE_TYPES; do
-    log "asking for a spot $TYPE"
+    log "asking for a $MARKET $TYPE"
+    MARKET_ARGS=()
+    [ "$MARKET" = spot ] && MARKET_ARGS=(--instance-market-options '{"MarketType":"spot","SpotOptions":{"SpotInstanceType":"one-time","InstanceInterruptionBehavior":"terminate"}}')
     if INSTANCE=$($AWS ec2 run-instances --image-id "$AMI" --instance-type "$TYPE" --key-name "$KEYNAME" --security-group-ids "$SG" \
-            --instance-market-options '{"MarketType":"spot","SpotOptions":{"SpotInstanceType":"one-time","InstanceInterruptionBehavior":"terminate"}}' \
+            ${MARKET_ARGS[@]+"${MARKET_ARGS[@]}"} \
             --instance-initiated-shutdown-behavior terminate --user-data "$USERDATA" \
             --block-device-mappings '[{"DeviceName":"/dev/sda1","Ebs":{"VolumeSize":75,"VolumeType":"gp3","DeleteOnTermination":true,"Encrypted":true}}]' \
             --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$NAME}]" --query 'Instances[0].InstanceId' --output text 2>"$WORK/err"); then
@@ -74,7 +78,7 @@ for TYPE in $INSTANCE_TYPES; do
     fi
     INSTANCE=""; log "  not available: $(tail -1 "$WORK/err")"
 done
-[ -n "$INSTANCE" ] || { echo "no spot capacity for any of: $INSTANCE_TYPES"; exit 1; }
+[ -n "$INSTANCE" ] || { echo "no $MARKET capacity for any of: $INSTANCE_TYPES"; exit 1; }
 log "instance $INSTANCE ($TYPE) starting"
 $AWS ec2 wait instance-running --instance-ids "$INSTANCE"
 HOST=$($AWS ec2 describe-instances --instance-ids "$INSTANCE" --query 'Reservations[0].Instances[0].PublicIpAddress' --output text)
