@@ -91,8 +91,8 @@ def crownless_lines(root):
     return chunks(ascii_text("\n\n".join(lines)), "crownless")
 
 
-def mining_row(binary, seed):
-    """One random flight state; try all nine controls for one second; label the best by Signal's own utility."""
+def flight_state(binary, seed):
+    """One random flight state: the model's prompt, and the signal_replay arguments that rebuild it."""
     rng = random.Random(seed)
     spawn = (rng.uniform(-2500, 2500), rng.uniform(-2500, 2500))
     angle = rng.uniform(-math.pi, math.pi)
@@ -101,18 +101,27 @@ def mining_row(binary, seed):
     goal = (spawn[0] + dist * math.cos(bearing), spawn[1] + dist * math.sin(bearing))
     cmd = [binary, "--seed", str(2037 + seed % 7), "--spawn", f"{spawn[0]:.1f},{spawn[1]:.1f}",
            "--velocity", f"{vel[0]:.1f},{vel[1]:.1f}", "--angle", f"{angle:.4f}",
-           "--goal", f"{goal[0]:.1f},{goal[1]:.1f}", "--history", "NONE", "--horizon-ticks", "120",
-           "--candidates", ",".join(ACTIONS), "--out", "/dev/stdout"]
-    rows = [json.loads(l) for l in subprocess.run(cmd, capture_output=True, text=True, check=True).stdout.splitlines()
-            if l.startswith("{")]
-    best = max(rows, key=lambda r: r["utility"])
+           "--goal", f"{goal[0]:.1f},{goal[1]:.1f}", "--history", "NONE", "--horizon-ticks", "120"]
     # Ship frame: the goal's bearing off the nose, and velocity along and across the nose.
     rel = math.degrees(math.atan2(goal[1] - spawn[1], goal[0] - spawn[0]) - angle)
     rel = (rel + 180) % 360 - 180
     along = vel[0] * math.cos(angle) + vel[1] * math.sin(angle)
     across = -vel[0] * math.sin(angle) + vel[1] * math.cos(angle)
-    return (f"<mining> d={dist:.0f} b={rel:+.0f} v={along:+.0f},{across:+.0f} > {best['candidate_name']}",
-            {r["candidate_name"]: r["utility"] for r in rows})
+    return f"<mining> d={dist:.0f} b={rel:+.0f} v={along:+.0f},{across:+.0f}", cmd
+
+
+def fly(cmd, candidates):
+    """Signal's utility for holding each candidate control for one second from the state cmd rebuilds."""
+    out = subprocess.run(cmd + ["--candidates", ",".join(candidates), "--out", "/dev/stdout"],
+                         capture_output=True, text=True, check=True).stdout
+    return {r["candidate_name"]: r["utility"] for r in map(json.loads, (l for l in out.splitlines() if l.startswith("{")))}
+
+
+def mining_row(binary, seed):
+    """One random flight state; try all nine controls for one second; label the best by Signal's own utility."""
+    prompt, cmd = flight_state(binary, seed)
+    utility = fly(cmd, ACTIONS)
+    return f"{prompt} > {max(utility, key=utility.get)}", utility
 
 
 def mining(binary, train_n, valid_n, workers):
