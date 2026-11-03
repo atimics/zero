@@ -61,6 +61,65 @@ Shakespeare and both worlds. Samples (`results/samples.json`) come from that
 checkpoint; each tag produces its own register, but the words are not yet
 real English.
 
+## Run 2 (2026-11-02): square-root mix
+
+Streams sampled by size ** 0.5, one best checkpoint per stream. Same
+machine, 28.7 minutes. Files: `results/run2/`.
+
+| | Run 1 | Run 2 |
+|---|---|---|
+| Blake held-out loss (best) | 1.48 | 1.34 (update 7,000) |
+| Shakespeare | 1.28 | 1.16 (update 30,000) |
+| Crowley | 1.38 | 1.23 (update 9,000) |
+| Crownless | 0.61 | 0.56 (update 9,000) |
+| Mining: picks Signal's best control | 71.4% | 86.2% |
+| Dragon: matches the rule | 92.3% | 100.0% |
+
+Dragon is solved as imitation. The open test is play: the model as the
+rabbit chooser in crownless2's lineage test.
+
+## The Shannon loop (`shannon_loop.py`)
+
+The model proposes, the world verifies, and only verified gains train in.
+Each round: 1,500 fresh flight states; the model's greedy control plus two
+more sampled from its own distribution; `signal_replay` flies only those;
+each state's best verified proposal becomes a training row; 150 fine-tune
+updates (half of every batch replayed from the six streams). The checked arm
+keeps a new model only if mean utility on 250 gate states does not fall; the
+unchecked arm keeps all. 250 audit states never decide anything. Start: run
+2's last checkpoint. 8 rounds, about 13 minutes per arm on an M-series GPU.
+Files: `results/loop/`.
+
+| Round | Unchecked: audit best pick | crashes | Checked: audit best pick | crashes | kept |
+|---|---|---|---|---|---|
+| 0 | 87.2% | 8 | 87.2% | 8 | |
+| 1 | 87.6% | 9 | 87.6% | 9 | yes |
+| 2 | 89.2% | 8 | 87.6% | 9 | no |
+| 3 | 90.8% | 8 | 87.6% | 9 | no |
+| 4 | 90.0% | 8 | 87.6% | 9 | no |
+| 5 | 90.0% | 8 | 87.6% | 9 | no |
+| 6 | 90.0% | 8 | 89.2% | 8 | yes |
+| 7 | 88.4% | 7 | 89.2% | 8 | no |
+| 8 | 88.8% | 8 | 89.2% | 8 | no |
+
+Voice losses and dragon held steady in both arms (Shakespeare 1.157 at the
+start, 1.20 after round 1, flat after; dragon 100% throughout).
+
+What it shows:
+
+- Both arms end a little better than they started (+1.6 and +2.0 points),
+  and the unchecked arm peaked at +3.6. With 250 audit states one standard
+  error is about 2 points, so none of this is yet a proven gain.
+- Unchecked did not collapse, unlike the self-editing optimizer
+  (`../self-edit`). Here the verifier is inside every round: Signal, not the
+  model, picks each training label. The gate on top only adds a second check.
+- The gate barely carries signal. Gate utility is dominated by rock crashes
+  the prompt cannot describe, so it sat at -0.188 for most rounds and
+  decisions turned on tiny numerical differences.
+- Proposals beat the model's own greedy choice on 10-13% of fresh states each
+  round, and the margin did not shrink, so the loop has not exhausted what
+  the model can find with three tries.
+
 ## Next
 
 - Weight streams by size to the 0.5 power (or cap repeats) and save the best

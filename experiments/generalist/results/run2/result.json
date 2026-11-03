@@ -1,0 +1,105 @@
+{
+  "device": "NVIDIA A10G",
+  "parameters": 4852992,
+  "updates": 30000,
+  "batch": 16,
+  "stream_weights": {
+    "blake": 0.038692258298397064,
+    "shakespeare": 0.3592250645160675,
+    "crowley": 0.08154327422380447,
+    "crownless": 0.05119048431515694,
+    "mining": 0.07381992787122726,
+    "dragon": 0.3955289423465729
+  },
+  "best_update_per_stream": {
+    "blake": 7000,
+    "shakespeare": 30000,
+    "crowley": 9000,
+    "crownless": 9000,
+    "mining": 13000,
+    "dragon": 27000
+  },
+  "mean_best": {
+    "update": 9000,
+    "valid_loss": {
+      "blake": 1.34158456325531,
+      "shakespeare": 1.2211848050355911,
+      "crowley": 1.2246290892362595,
+      "crownless": 0.5558249540627003,
+      "mining": 0.7073168084025383,
+      "dragon": 0.24046780727803707
+    },
+    "mining": {
+      "rows": 500,
+      "picked_best": 0.848,
+      "model_utility": -0.259679356068,
+      "best_utility": 0.07837708994800001,
+      "average_control_utility": -0.1553621471762222,
+      "always_thrust_utility": -0.32698666339199994
+    },
+    "dragon": {
+      "rows": 3000,
+      "matches_rule": 0.999,
+      "always_majority": 0.46066666666666667,
+      "majority_goal": "graze",
+      "label_counts": {
+        "graze": 1382,
+        "sleep": 1363,
+        "shelter": 221,
+        "breed": 34
+      }
+    }
+  },
+  "last": {
+    "update": 30000,
+    "valid_loss": {
+      "blake": 1.8294027894735336,
+      "shakespeare": 1.1552999317646027,
+      "crowley": 1.3956504091620445,
+      "crownless": 0.6367536783218384,
+      "mining": 0.7079612836241722,
+      "dragon": 0.2350787203758955
+    },
+    "mining": {
+      "rows": 500,
+      "picked_best": 0.862,
+      "model_utility": -0.236411511476,
+      "best_utility": 0.07837708994800001,
+      "average_control_utility": -0.1553621471762222,
+      "always_thrust_utility": -0.32698666339199994
+    },
+    "dragon": {
+      "rows": 3000,
+      "matches_rule": 1.0,
+      "always_majority": 0.46066666666666667,
+      "majority_goal": "graze",
+      "label_counts": {
+        "graze": 1382,
+        "sleep": 1363,
+        "shelter": 221,
+        "breed": 34
+      }
+    }
+  },
+  "mining_on_its_best": {
+    "rows": 500,
+    "picked_best": 0.848,
+    "model_utility": -0.23675179250800002,
+    "best_utility": 0.07837708994800001,
+    "average_control_utility": -0.1553621471762222,
+    "always_thrust_utility": -0.32698666339199994
+  },
+  "dragon_on_its_best": {
+    "rows": 3000,
+    "matches_rule": 1.0,
+    "always_majority": 0.46066666666666667,
+    "majority_goal": "graze",
+    "label_counts": {
+      "graze": 1382,
+      "sleep": 1363,
+      "shelter": 221,
+      "breed": 34
+    }
+  },
+  "seconds": 1621.5518646560001
+}
