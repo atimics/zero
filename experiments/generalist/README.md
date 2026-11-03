@@ -12,14 +12,23 @@ six tagged streams at equal weight:
 | `<mining>` | Signal flight states; label = the best of 9 controls over 1 s by `signal_replay`'s own `utility` | 6,000 rows |
 | `<dragon>` | crownless2 rabbit goal choices from `cc2trace` (1 in 100), 16 worlds x 1 year | 45,129 rows |
 
-World validation rows use seeds the training rows never touch. A third
+World validation rows use seeds the training rows never touch.
+
+`build_data.py` writes `data/manifest.json`: the sha256, build time and
+repository commit of `signal_replay` and `cc2trace`, the crownless commit,
+the options, and the sha256 of every output. `--manifest-only` records it
+for an existing `data/`. The data behind the runs below is pinned in
+`results/data-manifest.json`. `cc2trace` is in crownless2 main from
+`066036a`. The `signal_replay` used was built on 2026-09-11 from an unknown
+commit, so only its hash identifies it; rebuild it from a pinned signal
+commit before the next data build. A third
 world (gacha) is not on disk yet.
 
 ## Run
 
 ```sh
 python3 build_data.py --signal-replay ../../../signal/build/signal_replay \
-  --cc2trace ../../../crownless2/build/cc2trace --crownless ../../../crownless
+  --cc2trace ../../../crownless2/build/cc2trace   # make build/cc2trace in crownless2 >= 066036a --crownless ../../../crownless
 cc -O2 -std=c11 ../../tests/torch_reference.c -o /tmp/zero-init -lm && /tmp/zero-init initialize initial.ckpt
 MARKET=on-demand INSTANCE_TYPES=g5.xlarge ./train_aws.sh
 ```
