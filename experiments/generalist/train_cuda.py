@@ -2,8 +2,8 @@
 
   python train_cuda.py --data data --initial initial.ckpt --output output --steps 30000
 
-Each batch row picks a stream uniformly, then a random 513-byte window in it, so Blake's 59 KiB counts
-as much as Shakespeare's 5 MiB. Checkpoints are native C files (scripts/zero_torch.py), so literary_lm,
+Each batch row picks a stream with weight size ** --weight-power (0.5: a square-root mix), then a random
+513-byte window in it. Each stream keeps its own best checkpoint. Checkpoints are native C files (scripts/zero_torch.py), so literary_lm,
 export_literary and literary_infer read them unchanged.
 
 At the end it writes result.json:
@@ -130,6 +130,7 @@ def main():
     ap.add_argument("--report", type=int, default=1000)
     ap.add_argument("--deadline", type=float, default=float("inf"), help="unix time; stop and score before it")
     ap.add_argument("--dragon-rows", type=int, default=3000)
+    ap.add_argument("--weight-power", type=float, default=0.5, help="stream weight = size ** power")
     args = ap.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     args.output.mkdir(parents=True, exist_ok=True)
@@ -147,13 +148,18 @@ def main():
     joined = torch.cat([train[s] for s in STREAMS])
     bases = torch.tensor([0] + [len(train[s]) for s in STREAMS[:-1]], device=device).cumsum(0)
     offsets = torch.arange(WINDOW + 1, device=device)
+    # Stream weight = size ** power: 0 is equal weight (small corpora repeat hundreds of times), 1 is plain concatenation.
+    weights = torch.tensor([float(len(train[s])) ** args.weight_power for s in STREAMS], device=device)
+    weights = weights / weights.sum()
+    print(json.dumps({"stream_weights": dict(zip(STREAMS, weights.tolist()))}), flush=True)
+    best_stream = {s: float("inf") for s in STREAMS}
     history, best, started, running = [], float("inf"), time.monotonic(), torch.zeros((), device=device)
     step = 0
     for step in range(1, args.steps + 1):
         if time.time() > args.deadline - 900:
             print("stopping early to leave time for scoring", flush=True)
             break
-        which = torch.randint(len(STREAMS), (args.batch,), generator=gen, device=device)
+        which = torch.multinomial(weights, args.batch, replacement=True, generator=gen)
         starts = bases[which] + (torch.rand(args.batch, generator=gen, device=device) * lengths[which]).long()
         w = joined[starts[:, None] + offsets].long()
         model.zero_grad(set_to_none=True)
@@ -177,19 +183,40 @@ def main():
             if mean < best:
                 best = mean
                 write(args.output / "best.ckpt", model, moments, step)
-    model, _ = load(args.output / "best.ckpt")
-    model = model.to(device).eval()
+            # Streams peak at different updates, so each keeps its own best checkpoint.
+            for s in STREAMS:
+                if losses[s] < best_stream[s]:
+                    best_stream[s] = losses[s]
+                    write(args.output / f"best-{s}.ckpt", model, moments, step)
+
+    def scored(path):
+        m, _ = load(path)
+        m = m.to(device).eval()
+        return m, {"update": m.header[10],
+                   "valid_loss": {s: stream_loss(m, valid[s], 128) for s in STREAMS},
+                   "mining": judge_mining(m, args.data / "mining.valid.utility.jsonl", device),
+                   "dragon": judge_dragon(m, args.data / "dragon.valid.txt", device, args.dragon_rows)}
+
+    # One generalist checkpoint judged on everything, the last one, and each world on its own best.
+    _, mean_best = scored(args.output / "best.ckpt")
+    _, last = scored(args.output / "last.ckpt")
+    _, mining_best = scored(args.output / "best-mining.ckpt")
+    _, dragon_best = scored(args.output / "best-dragon.ckpt")
     result = {"device": torch.cuda.get_device_name() if device == "cuda" else "cpu",
               "parameters": sum(w.numel() for w in model.weights), "updates": step, "batch": args.batch,
-              "selected_update": model.header[10],
-              "valid_loss": {s: stream_loss(model, valid[s], 128) for s in STREAMS},
-              "mining": judge_mining(model, args.data / "mining.valid.utility.jsonl", device),
-              "dragon": judge_dragon(model, args.data / "dragon.valid.txt", device, args.dragon_rows),
+              "stream_weights": dict(zip(STREAMS, weights.tolist())),
+              "best_update_per_stream": {s: load(args.output / f"best-{s}.ckpt")[0].header[10] for s in STREAMS},
+              "mean_best": mean_best, "last": last,
+              "mining_on_its_best": mining_best["mining"], "dragon_on_its_best": dragon_best["dragon"],
               "seconds": time.monotonic() - started}
     (args.output / "result.json").write_text(json.dumps(result, indent=2))
     print(json.dumps(result), flush=True)
     g = torch.Generator(device=device).manual_seed(11)
-    samples = {v: [sample(model, v, 600, device, g) for _ in range(2)] for v in VOICES}
+    samples = {}
+    for v in VOICES:
+        m, _ = load(args.output / f"best-{v}.ckpt")
+        m = m.to(device).eval()
+        samples[v] = {"update": m.header[10], "texts": [sample(m, v, 600, device, g) for _ in range(3)]}
     (args.output / "samples.json").write_text(json.dumps(samples, indent=2))
 
 
