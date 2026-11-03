@@ -1,0 +1,36 @@
+{
+  "device": "NVIDIA A10G",
+  "parameters": 4852992,
+  "updates": 30000,
+  "batch": 16,
+  "selected_update": 2000,
+  "valid_loss": {
+    "blake": 1.479392170906067,
+    "shakespeare": 1.5625960677862167,
+    "crowley": 1.3806607723236084,
+    "crownless": 0.6108032651245594,
+    "mining": 0.7158560380339622,
+    "dragon": 0.26023421064019203
+  },
+  "mining": {
+    "rows": 500,
+    "picked_best": 0.714,
+    "model_utility": -0.23752128600199998,
+    "best_utility": 0.07837708994800001,
+    "average_control_utility": -0.1553621471762222,
+    "always_thrust_utility": -0.32698666339199994
+  },
+  "dragon": {
+    "rows": 3000,
+    "matches_rule": 0.9226666666666666,
+    "always_majority": 0.46066666666666667,
+    "majority_goal": "graze",
+    "label_counts": {
+      "graze": 1382,
+      "sleep": 1363,
+      "shelter": 221,
+      "breed": 34
+    }
+  },
+  "seconds": 1529.726984058
+}

@@ -1,0 +1,6 @@
+blake: 168 train, 9 valid, 59 KiB
+shakespeare: 13942 train, 734 valid, 5134 KiB
+crowley: 789 train, 42 valid, 264 KiB
+crownless: 323 train, 17 valid, 104 KiB
+dragon: 45129 train, 5450 valid, 6196 KiB
+mining: 6000 train, 500 valid, 211 KiB
